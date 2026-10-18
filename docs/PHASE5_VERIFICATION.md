@@ -1,31 +1,59 @@
-# Phase V verification — 2026-10-19
+# Phase V live verification — 2026-10-19 (Asia/Kolkata)
 
-## Environment and commands actually run
+## Startup diagnosis and fixes
 
-Host architecture: `x86_64` Intel Mac. `docker --version`, `docker compose version` and `docker info` all returned `zsh: command not found: docker`. `sysctl -n hw.memsize` returned `Operation not permitted`; available RAM and Docker allocation were not measurable. No pre-existing Docker configuration was found in this project. PowerShell was not available, so the Windows launcher received only source inspection, not an execution check.
+Docker Desktop 29.8.2 was running on this Intel Mac (`x86_64`, 8,217,882,624 bytes allocated). No Phase V containers existed initially. The first `docker compose ... up` build failed at `sudo apt-get: command not found`: Apache Hadoop 3.4.2 was based on CentOS 7. Replacing `apt-get` with `yum` failed because the CentOS 7.6.1810 mirror URLs returned 404 and `No package python3 available`.
 
-Before editing: `.venv/bin/python -m pytest -q` → **61 passed**; `python3 scripts/verify_phase1_outputs.py` → **PASS, zero errors**. Prepared sources present: heart 303, diabetes 520, stroke 5,110, Synthea patients 1,171, encounters 53,346.
+The pinned Apache Hadoop image was updated to **3.4.3**, whose inspected Ubuntu 22.04 image already contains Python 3; the unnecessary derived Dockerfile was removed. With that image, MongoDB and YARN started, but NameNode reported `Directory /tmp/hadoop-hadoop/dfs/name ... does not exist or is not accessible`, followed by `NameNode is not formatted`. Compose had mounted the NameNode volume at `/tmp/hadoop-root/dfs/name`. DataNode reported `EPERM: Operation not permitted` and `Too many failed volumes` on its root-owned named volume.
 
-After implementation: `.venv/bin/python -m pytest -q` → **75 passed, 3 skipped** (the three skips are opt-in live Docker integration tests). `python3 scripts/verify_phase1_outputs.py` → **PASS, zero errors** again, and `.venv/bin/pip check` found no broken requirements. `bash -n scripts/setup_bigdata_macos.sh scripts/stop_bigdata.sh big_data/hadoop/run_job.sh` and `.venv/bin/python -m compileall -q big_data scripts/verify_bigdata.py` passed. Ruby's YAML parser loaded the Compose file and confirmed all five declared services; Docker Compose validation itself was blocked. `python -m scripts.generate_phase5_source_evidence` generated source-only tables and a chart. `python -m mediscope bigdata status` reported Docker/MongoDB/HDFS/YARN **BLOCKED**. `python -m mediscope bigdata import --dataset heart` failed clearly because MongoDB was unavailable; `python -m mediscope bigdata mapreduce --job encounter_counts` failed clearly because Docker was absent. These failures are real attempts, not claimed service execution.
+The NameNode mount now matches Hadoop's configured path. `docker/init_hdfs.sh` sets the Hadoop volume ownership and permissions, formats a **confirmed-empty** NameNode volume on first use, and refuses a nonempty unformatted volume. Before the one-time live format, both named HDFS volumes were inspected and contained no files. No Docker volume was deleted or reset. A later setup run logged `Existing formatted NameNode volume preserved.` The initializer was also tested on an ephemeral container with no persistent volume. The original MongoDB volume was retained.
 
-## Decision matrix
+## Live services and data
 
-| Requirement | Decision | Evidence / remaining gate |
+`bash scripts/setup_bigdata_macos.sh` completed successfully. `docker compose ... ps -a` showed MongoDB 7.0.41, NameNode, DataNode and ResourceManager healthy; NodeManager was running. The one-shot volume initializer exited 0. `mediscope bigdata status` reported PASS for Docker, MongoDB, HDFS (`Live datanodes (1)`), and YARN (`Total Nodes:1`, NodeManager `RUNNING`). Host bindings were `127.0.0.1:27017`, `127.0.0.1:9870`, and `127.0.0.1:8088`. Machine-readable status is in `reports/bigdata/service_status.json`.
+
+`mediscope bigdata import --dataset all` imported the verified Phase I tables. `mediscope bigdata verify` matched all five source row counts, all eight MongoDB aggregations and all required indexes against pandas. A controlled CRUD record was created, read, updated and deleted in `phase5_demo` without touching imported rows. Repeat import in the live integration test returned identical counts.
+
+| Required collection | Live documents |
+|---|---:|
+| `dataset_metadata` | 9 |
+| `heart_disease_records` | 303 |
+| `diabetes_records` | 520 |
+| `stroke_records` | 5,110 |
+| `hospital_patients` | 1,171 |
+| `hospital_encounters` | 53,346 |
+| `data_quality_reports` | 4 |
+| `model_experiments` | 3 |
+
+The live MongoDB encounter-class aggregation returned ambulatory 18,936; emergency 2,090; inpatient 1,838; outpatient 9,003; urgentcare 2,373; wellness 19,106. These are **encounter counts**, totaling 53,346, not distinct-patient counts. Results and all-query reconciliation are in `reports/bigdata/mongodb_encounters_by_class.json` and `mongodb_reconciliation.json`.
+
+## Genuine HDFS and MapReduce evidence
+
+`mediscope bigdata mapreduce --job encounter_counts` uploaded `/mediscope/input/encounter_classes.txt` (544,666 bytes), listed it in HDFS, submitted Hadoop Streaming through YARN, retrieved the reducer part file, and checked every count against pandas. A second real run passed in the integration test. The final job log records application `application_1792354467390_0002`, map 100%, reduce 100%, and `completed successfully`. HDFS contained `/mediscope/output/encounter_counts/_SUCCESS` and `part-00000` (94 bytes). The six reducer counts exactly matched the MongoDB counts above and the source pandas table. The final job's measured execution time was **20.0007 s**.
+
+Evidence: `reports/bigdata/hadoop_job.log`, `hadoop_encounter_counts.tsv`, and `hadoop_verification.json`. The source SHA-256 reconciled across preparation and output verification: `c38b5c2f8a9440a00cd8470c397e47a44d4cc0dee3880c9906a0165932bbbd3f`.
+
+## Timings, tests, and limits
+
+One local wall-clock observation from `mediscope bigdata benchmark`: pandas aggregation **0.2696 s**, MongoDB aggregation **0.0569 s**, Hadoop Streaming job **20.0007 s**, and separate Hadoop output validation **0.2917 s**. These timings are not controlled repetitions, exclude different setup costs, and cannot establish distributed scalability with about 53,000 encounters. The measured record is `reports/bigdata/processing_comparison.json`.
+
+The fast full suite reported **75 passed, 3 skipped** (the skipped tests are explicitly Docker-dependent). With `MEDISCOPE_BIGDATA_INTEGRATION=1`, the live integration suite reported **3 passed**, including idempotent import and a real job. The independent Phase I verifier reported **PASS, zero errors**. Phase I–IV data and models were not changed. Shell syntax, Compose configuration and the macOS setup script were checked. The PowerShell setup remains **NOT TESTED on Windows**.
+
+## Requirement decision matrix
+
+| Gate | Decision | Evidence |
 |---|---|---|
-| MongoDB running | BLOCKED | Docker absent; PyMongo ping cannot connect |
-| Required records imported | BLOCKED | Import code and source validation tested; no live DB |
-| CRUD and database queries work | BLOCKED | Query implementations exist; no live DB |
-| Aggregations match source data | BLOCKED | Pandas reference tables exist; live reconciliation not run |
-| HDFS operational | BLOCKED | Docker absent |
-| Hadoop architecture documented | PASS | `HADOOP_ARCHITECTURE.md`, Compose, diagrams |
-| Genuine MapReduce job executed | BLOCKED | Docker absent; no job output/log claimed |
-| Reducer outputs verified | BLOCKED | Local component/pandas test passed; no Hadoop output |
-| Windows setup documented and checked | NOT TESTED | PowerShell launcher documented; no Windows/PowerShell runtime check |
-| macOS setup documented and checked | BLOCKED | Shell syntax passed; Docker startup cannot run |
-| Previous phases functional | PASS | Full 75-pass suite includes original 61 tests; Phase I verifier passed before edits |
-| Report-ready evidence generated | PARTIAL / BLOCKED | Source tables, chart and architecture diagrams exist; service/job evidence unavailable |
-| Live benchmark | BLOCKED | No MongoDB or Hadoop runtime; no timing invented |
+| MongoDB running and port reachable | PASS | PyMongo ping, Compose health, loopback port |
+| Required records imported | PASS | Eight live collection counts above |
+| CRUD and database queries | PASS | Controlled CRUD; saved aggregation result |
+| Aggregations match source | PASS | Eight live comparisons in `mongodb_reconciliation.json` |
+| HDFS operational | PASS | One live DataNode; input/output HDFS listings |
+| Hadoop architecture documented | PASS | `HADOOP_ARCHITECTURE.md` and Compose |
+| Genuine MapReduce executed | PASS | YARN application/job log and `_SUCCESS` |
+| Reducer outputs verified | PASS | Exact six-class pandas reconciliation |
+| Windows setup documented and checked | NOT TESTED | Script documented; no Windows runtime available |
+| macOS setup documented and checked | PASS | Actual setup script completed successfully |
+| Previous phases functional | PASS | 75-pass full suite, Phase I verifier PASS |
+| Report-ready evidence generated | PASS | Live status, DB reconciliation, job log, reducer output, timing JSON |
 
-## Verification decision
-
-**Phase V implementation is incomplete as a live demonstration.** Source validation, local mapper/reducer logic, CLI failure reporting, scripts, documentation and regression suite are checked. MongoDB imports/queries, HDFS operations, YARN execution, Windows runtime and actual cross-system timings remain open. Run the documented live integration workflow on a Docker-equipped x64 machine before claiming full Phase V acceptance.
+**Decision:** Phase V passes its live local Intel Mac demonstration gates. Windows runtime portability is still unverified. This is a one-laptop development cluster and the disease models remain research-only, not clinical tools.

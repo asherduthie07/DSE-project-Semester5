@@ -1,2 +1,86 @@
 
-FAIL: Command unavailable or timed out: ['docker', 'compose', '-f', 'docker/compose.bigdata.yml', 'exec', '-T', 'namenode', 'hdfs', 'dfs', '-mkdir', '-p', '/mediscope/input']: [Errno 2] No such file or directory: 'docker'
+
+Found 1 items
+-rw-r--r--   1 hadoop supergroup     544666 2026-10-18 20:56 /mediscope/input/encounter_classes.txt
+
+packageJobJar: [/tmp/hadoop-unjar1399029333901724010/] [] /tmp/streamjob739095650796519476.jar tmpDir=null
+2026-10-18 20:56:56 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.19.0.3:8032
+2026-10-18 20:56:56 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.19.0.3:8032
+2026-10-18 20:56:57 INFO  JobResourceUploader:907 - Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0002
+2026-10-18 20:56:57 INFO  FileInputFormat:267 - Total input files to process : 1
+2026-10-18 20:56:57 INFO  JobSubmitter:203 - number of splits:2
+2026-10-18 20:56:58 INFO  JobSubmitter:299 - Submitting tokens for job: job_1792354467390_0002
+2026-10-18 20:56:58 INFO  JobSubmitter:300 - Executing with tokens: []
+2026-10-18 20:56:58 INFO  Configuration:2898 - resource-types.xml not found
+2026-10-18 20:56:58 INFO  ResourceUtils:476 - Unable to find 'resource-types.xml'.
+2026-10-18 20:56:58 INFO  YarnClientImpl:356 - Submitted application application_1792354467390_0002
+2026-10-18 20:56:58 INFO  Job:1681 - The url to track the job: http://resourcemanager:8088/proxy/application_1792354467390_0002/
+2026-10-18 20:56:58 INFO  Job:1726 - Running job: job_1792354467390_0002
+2026-10-18 20:57:04 INFO  Job:1747 - Job job_1792354467390_0002 running in uber mode : false
+2026-10-18 20:57:04 INFO  Job:1754 -  map 0% reduce 0%
+2026-10-18 20:57:09 INFO  Job:1754 -  map 50% reduce 0%
+2026-10-18 20:57:10 INFO  Job:1754 -  map 100% reduce 0%
+2026-10-18 20:57:14 INFO  Job:1754 -  map 100% reduce 100%
+2026-10-18 20:57:14 INFO  Job:1765 - Job job_1792354467390_0002 completed successfully
+2026-10-18 20:57:14 INFO  Job:1772 - Counters: 54
+	File System Counters
+		FILE: Number of bytes read=758056
+		FILE: Number of bytes written=2458504
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=548982
+		HDFS: Number of bytes written=94
+		HDFS: Number of read operations=11
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Rack-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=18240
+		Total time spent by all reduces in occupied slots (ms)=8804
+		Total time spent by all map tasks (ms)=4560
+		Total time spent by all reduce tasks (ms)=2201
+		Total vcore-milliseconds taken by all map tasks=4560
+		Total vcore-milliseconds taken by all reduce tasks=2201
+		Total megabyte-milliseconds taken by all map tasks=4669440
+		Total megabyte-milliseconds taken by all reduce tasks=2253824
+	Map-Reduce Framework
+		Map input records=53346
+		Map output records=53346
+		Map output bytes=651358
+		Map output materialized bytes=758062
+		Input split bytes=220
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6
+		Reduce shuffle bytes=758062
+		Reduce input records=53346
+		Reduce output records=6
+		Spilled Records=106692
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=182
+		CPU time spent (ms)=3100
+		Physical memory (bytes) snapshot=703770624
+		Virtual memory (bytes) snapshot=8028790784
+		Total committed heap usage (bytes)=357191680
+		Peak Map Physical memory (bytes)=276516864
+		Peak Map Virtual memory (bytes)=2674630656
+		Peak Reduce Physical memory (bytes)=162271232
+		Peak Reduce Virtual memory (bytes)=2680201216
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=548762
+	File Output Format Counters 
+		Bytes Written=94
+2026-10-18 20:57:14 INFO  StreamJob:1029 - Output directory: /mediscope/output/encounter_counts

@@ -4,7 +4,7 @@ Research-only Smart Healthcare Analytics and Disease Prediction System. Any late
 
 ## Phase V: MongoDB and Hadoop
 
-Phase V adds checksummed, idempotent PyMongo ingestion, documented aggregations, a local Docker Compose topology and a Python Hadoop Streaming encounter-count job. The prepared-source reference has 53,346 synthetic encounters. **Live MongoDB and Hadoop execution is blocked in the current workspace because Docker is unavailable**; source-only counts are not database or Hadoop results. Start with the [Phase V run guide](docs/HOW_TO_RUN_PHASE5.md), [verification matrix](docs/PHASE5_VERIFICATION.md), [database schema](docs/MONGODB_SCHEMA.md) and [Hadoop architecture](docs/HADOOP_ARCHITECTURE.md). Phase VI integration has not started.
+Phase V adds checksummed, idempotent PyMongo ingestion, documented aggregations, a local Docker Compose topology and a Python Hadoop Streaming encounter-count job. The local Intel Mac stack has been run: MongoDB, one HDFS DataNode and one YARN NodeManager are healthy, and a real Streaming job counted all 53,346 synthetic encounters with exact pandas reconciliation. Windows runtime remains untested. Start with the [Phase V run guide](docs/HOW_TO_RUN_PHASE5.md), [live verification matrix](docs/PHASE5_VERIFICATION.md), [database schema](docs/MONGODB_SCHEMA.md) and [Hadoop architecture](docs/HADOOP_ARCHITECTURE.md). Phase VI integration has not started.
 
 ## Phase IV: research-only disease classification
 

@@ -1,13 +1,13 @@
 # Project status
 
-Updated: 2026-10-19 (Phase V implementation; live runtime blocked)
+Updated: 2026-10-19 (Phase V live Intel Mac verification)
 
 ## Phase V: MongoDB and Hadoop/MapReduce
 
 - Added PyMongo source-validated, SHA-256-checked, idempotent import code for five prepared tables, dataset metadata, quality summaries and Phase IV experiment metadata. Synthea patient/encounter keys are preserved; synthetic names and identity/address fields are excluded. Added eight aggregation queries, controlled CRUD, source/database reconciliation, and CLI commands.
-- Added a pinned local Compose configuration for MongoDB and Apache Hadoop 3.4.2, cross-platform setup/verification tools, sanitized encounter-class input preparation, Hadoop Streaming mapper/reducer, HDFS job driver and output verification. Added source reference tables, a chart, architecture diagrams and run instructions.
+- Added a pinned local Compose configuration for MongoDB 7.0.41 and Apache Hadoop 3.4.3, cross-platform setup/verification tools, sanitized encounter-class input preparation, Hadoop Streaming mapper/reducer, HDFS job driver and output verification. Added source reference tables, a chart, architecture diagrams and run instructions. A guarded one-shot initializer formats only an empty NameNode volume and preserves existing HDFS data.
 - Baseline before changes: 61 tests passed and Phase I integrity verifier passed. After implementation: 75 tests passed and 3 live integration tests skipped. The local mapper/reducer pipeline reconciled all 53,346 source encounters with pandas.
-- **Live service gates are BLOCKED:** Docker is absent from PATH on this Intel Mac, so MongoDB and Hadoop did not run; no actual database counts, Hadoop reducer output or cross-system benchmark is claimed. Windows PowerShell runtime is NOT TESTED. See `PHASE5_VERIFICATION.md` for the decision matrix and exact attempted commands. Phase VI has not started.
+- **Live Intel Mac gates passed:** Docker, MongoDB, HDFS and YARN are running; all five prepared tables were imported and eight MongoDB aggregations reconciled with pandas. A genuine Hadoop Streaming job completed through YARN and returned six encounter-class counts totaling 53,346, exactly matching pandas. Live integration tests: 3 passed. The complete fast suite: 75 passed, 3 live tests skipped. Windows PowerShell runtime remains NOT TESTED. See `PHASE5_VERIFICATION.md` for startup diagnosis, measurements and decision matrix. Phase VI has not started.
 
 ## Phase IV: machine learning and research-only prediction
 

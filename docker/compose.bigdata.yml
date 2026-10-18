@@ -1,15 +1,21 @@
 name: mediscope-bigdata
 x-hadoop: &hadoop
-  build:
-    context: .
-    dockerfile: Hadoop.Dockerfile
-  image: mediscope-hadoop:3.4.2-python3
+  image: apache/hadoop:3.4.3
   env_file: hadoop.env
   restart: unless-stopped
   volumes:
     - ../:/workspace:ro
   mem_limit: 1500m
 services:
+  hadoop-volume-init:
+    image: apache/hadoop:3.4.3
+    user: "0:0"
+    entrypoint: ["sh", "/workspace/docker/init_hdfs.sh"]
+    restart: "no"
+    volumes:
+      - namenode_data:/tmp/hadoop-hadoop/dfs/name
+      - datanode_data:/tmp/hadoop-hadoop/dfs/data
+      - ../:/workspace:ro
   mongodb:
     image: mongo:7.0.41-jammy
     restart: unless-stopped
@@ -28,11 +34,14 @@ services:
     hostname: namenode
     command: ["hdfs", "namenode"]
     environment:
-      ENSURE_NAMENODE_DIR: /tmp/hadoop-root/dfs/name
+      ENSURE_NAMENODE_DIR: /tmp/hadoop-hadoop/dfs/name
+    depends_on:
+      hadoop-volume-init:
+        condition: service_completed_successfully
     ports:
       - "127.0.0.1:9870:9870"
     volumes:
-      - namenode_data:/tmp/hadoop-root/dfs/name
+      - namenode_data:/tmp/hadoop-hadoop/dfs/name
       - ../:/workspace:ro
     healthcheck:
       test: ["CMD-SHELL", "hdfs dfsadmin -report | grep -q 'Live datanodes (1)'" ]
@@ -45,7 +54,10 @@ services:
     hostname: datanode
     command: ["hdfs", "datanode"]
     depends_on:
-      - namenode
+      hadoop-volume-init:
+        condition: service_completed_successfully
+      namenode:
+        condition: service_started
     volumes:
       - datanode_data:/tmp/hadoop-hadoop/dfs/data
       - ../:/workspace:ro

@@ -14,4 +14,4 @@ flowchart LR
 
 The Python driver `big_data/hadoop/run_job.py` uploads to `/mediscope/input/encounter_classes.txt`, lists the HDFS directory, removes only its prior output path, invokes the actual Streaming JAR through YARN, retrieves the HDFS part file, and checks every class against pandas. It writes `reports/bigdata/hadoop_job.log`, `hadoop_encounter_counts.tsv` and `hadoop_verification.json` only after the corresponding steps. A failed run raises an error and cannot be marked successful. The shell wrapper is for macOS/Linux; the CLI driver works through `subprocess` on Windows too.
 
-The current workspace has **no Docker executable**, so no HDFS upload, Hadoop job, reducer output or live job log has been produced. The source-only reference counts in `reports/bigdata/source_reference.json` are not Hadoop results.
+On the local Intel Mac, HDFS upload/list/read, YARN execution, reducer retrieval and exact pandas reconciliation passed. The live job log, reducer table and verification JSON are in `reports/bigdata/`. The separate source-only reference counts in `source_reference.json` remain labeled as pandas results.
