@@ -145,6 +145,13 @@ def main(argv: list[str] | None = None) -> int:
     eda.add_argument("--alpha", type=float, default=0.05, help="Preregistered significance level (default: 0.05)")
     eda.add_argument("--output-root", type=Path, default=PROJECT_ROOT)
     ml = subcommands.add_parser("ml", help="Run Phase IV research-only classification experiments")
+    bigdata = subcommands.add_parser("bigdata", help="Run Phase V MongoDB and Hadoop tools")
+    bigdata_actions = bigdata.add_subparsers(dest="bigdata_action", required=True)
+    for action in ("status", "import", "verify", "aggregate", "crud", "mapreduce", "benchmark"):
+        bigdata_actions.add_parser(action, help=f"Phase V {action}")
+    bigdata_actions.choices["import"].add_argument("--dataset", default="all", choices=["all", "heart", "diabetes", "stroke", "patients", "encounters"])
+    bigdata_actions.choices["aggregate"].add_argument("--query", default="encounters_by_class")
+    bigdata_actions.choices["mapreduce"].add_argument("--job", default="encounter_counts", choices=["encounter_counts"])
     ml_actions = ml.add_subparsers(dest="ml_action", required=True)
     for action in ("train", "evaluate", "compare", "explain", "predict"):
         command = ml_actions.add_parser(action, help=f"ML {action} action")
@@ -224,6 +231,61 @@ def main(argv: list[str] | None = None) -> int:
                           for name in selected]
         except (MLError, OSError, ValueError, KeyError) as error:
             parser.exit(2, f"ML failed: {error}\n")
+    elif args.command == "bigdata":
+        from big_data.mongodb.connection import BigDataError, connect
+        from big_data.mongodb.import_data import COLLECTIONS, import_all, import_dataset, import_summaries, read_source
+        from big_data.mongodb.aggregations import aggregate, crud_demo, reconcile
+        from big_data.mongodb.schema import create_indexes
+
+        if args.bigdata_action == "status":
+            from big_data.status import main as verify_services
+            return verify_services()
+        if args.bigdata_action == "mapreduce":
+            from big_data.hadoop.run_job import run
+            try:
+                print(json.dumps(run(), indent=2))
+                return 0
+            except BigDataError as error:
+                parser.exit(2, f"MapReduce failed: {error}\n")
+        try:
+            client = connect()
+            db = client["mediscope_healthcare"]
+            if args.bigdata_action == "import":
+                if args.dataset == "all":
+                    report = import_all(db)
+                else:
+                    create_indexes(db)
+                    report = import_dataset(db, args.dataset)
+                    import_summaries(db)
+            elif args.bigdata_action == "verify":
+                report = {}
+                for name, (collection, _, _, _) in COLLECTIONS.items():
+                    source, digest = read_source(name)
+                    actual = db[collection].count_documents({"source_dataset": name, "source_sha256": digest})
+                    report[name] = {"source_rows": len(source), "database_rows": actual, "match": actual == len(source)}
+                if not all(item["match"] for item in report.values()):
+                    raise BigDataError(f"Source/database mismatch: {report}")
+                report["aggregations"] = reconcile(db)
+                from big_data.mongodb.schema import INDEXES
+                report["indexes"] = {collection: db[collection].index_information() for collection in INDEXES}
+                for collection, specs in INDEXES.items():
+                    present = {tuple(tuple(pair) for pair in item["key"]) for item in report["indexes"][collection].values()}
+                    if any((spec,) not in present for spec in specs):
+                        raise BigDataError(f"Missing required index in {collection}")
+            elif args.bigdata_action == "aggregate":
+                report = aggregate(db, args.query)
+                output = PROJECT_ROOT / "reports/bigdata" / f"mongodb_{args.query}.json"
+                output.parent.mkdir(parents=True, exist_ok=True)
+                output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+            elif args.bigdata_action == "crud":
+                report = crud_demo(db)
+            else:
+                from big_data.benchmarks.compare_processing import compare, save
+                report = compare(db, PROJECT_ROOT / "reports/bigdata/hadoop_encounter_counts.tsv")
+                save(report)
+            client.close()
+        except (BigDataError, OSError, ValueError) as error:
+            parser.exit(2, f"Big data failed: {error}\n")
     else:
         from .preparation import PreparationError, load_config, prepare_dataset
         from .reports import export_dataset

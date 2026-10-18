@@ -1,0 +1,46 @@
+{
+  "heart": {
+    "source_sha256": "36b51c189bc5e5edf72f83152e9243f0b0801494951c73af290c44a68a3a1b53",
+    "rows": 303,
+    "counts": {
+      "0": 164,
+      "1": 139
+    }
+  },
+  "diabetes": {
+    "source_sha256": "fba09cdce359ada29bf87d8def1a7a32d956f793e2176c9fdcf7d004aba2f76e",
+    "rows": 520,
+    "counts": {
+      "Negative": 200,
+      "Positive": 320
+    }
+  },
+  "stroke": {
+    "source_sha256": "8031625058cfddb391e93633d50b9519775d796c7ad2e1000c813c359be9f1ed",
+    "rows": 5110,
+    "counts": {
+      "0": 4861,
+      "1": 249
+    }
+  },
+  "patients": {
+    "source_sha256": "f9506feaf8eed0725d99d3421122424dbc5ed692cebb3cad6ef4eafa97f090d5",
+    "rows": 1171,
+    "counts": {
+      "F": 609,
+      "M": 562
+    }
+  },
+  "encounters": {
+    "source_sha256": "c38b5c2f8a9440a00cd8470c397e47a44d4cc0dee3880c9906a0165932bbbd3f",
+    "rows": 53346,
+    "counts": {
+      "ambulatory": 18936,
+      "emergency": 2090,
+      "inpatient": 1838,
+      "outpatient": 9003,
+      "urgentcare": 2373,
+      "wellness": 19106
+    }
+  }
+}

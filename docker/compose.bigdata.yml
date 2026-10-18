@@ -1,0 +1,81 @@
+name: mediscope-bigdata
+x-hadoop: &hadoop
+  build:
+    context: .
+    dockerfile: Hadoop.Dockerfile
+  image: mediscope-hadoop:3.4.2-python3
+  env_file: hadoop.env
+  restart: unless-stopped
+  volumes:
+    - ../:/workspace:ro
+  mem_limit: 1500m
+services:
+  mongodb:
+    image: mongo:7.0.41-jammy
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+    mem_limit: 1000m
+  namenode:
+    <<: *hadoop
+    hostname: namenode
+    command: ["hdfs", "namenode"]
+    environment:
+      ENSURE_NAMENODE_DIR: /tmp/hadoop-root/dfs/name
+    ports:
+      - "127.0.0.1:9870:9870"
+    volumes:
+      - namenode_data:/tmp/hadoop-root/dfs/name
+      - ../:/workspace:ro
+    healthcheck:
+      test: ["CMD-SHELL", "hdfs dfsadmin -report | grep -q 'Live datanodes (1)'" ]
+      interval: 20s
+      timeout: 10s
+      retries: 15
+    mem_limit: 1500m
+  datanode:
+    <<: *hadoop
+    hostname: datanode
+    command: ["hdfs", "datanode"]
+    depends_on:
+      - namenode
+    volumes:
+      - datanode_data:/tmp/hadoop-hadoop/dfs/data
+      - ../:/workspace:ro
+    healthcheck:
+      test: ["CMD-SHELL", "hdfs dfsadmin -report | grep -q 'Live datanodes (1)'" ]
+      interval: 20s
+      timeout: 10s
+      retries: 15
+    mem_limit: 1500m
+  resourcemanager:
+    <<: *hadoop
+    hostname: resourcemanager
+    command: ["yarn", "resourcemanager"]
+    ports:
+      - "127.0.0.1:8088:8088"
+    healthcheck:
+      test: ["CMD-SHELL", "yarn node -list 2>/dev/null | grep -Eq 'Total Nodes: *1'" ]
+      interval: 20s
+      timeout: 10s
+      retries: 15
+    mem_limit: 1500m
+  nodemanager:
+    <<: *hadoop
+    hostname: nodemanager
+    command: ["yarn", "nodemanager"]
+    depends_on:
+      - resourcemanager
+      - datanode
+    mem_limit: 1500m
+volumes:
+  mongo_data:
+  namenode_data:
+  datanode_data:

@@ -2,6 +2,10 @@
 
 Research-only Smart Healthcare Analytics and Disease Prediction System. Any later model output is for academic demonstration and is not clinically validated or medical advice.
 
+## Phase V: MongoDB and Hadoop
+
+Phase V adds checksummed, idempotent PyMongo ingestion, documented aggregations, a local Docker Compose topology and a Python Hadoop Streaming encounter-count job. The prepared-source reference has 53,346 synthetic encounters. **Live MongoDB and Hadoop execution is blocked in the current workspace because Docker is unavailable**; source-only counts are not database or Hadoop results. Start with the [Phase V run guide](docs/HOW_TO_RUN_PHASE5.md), [verification matrix](docs/PHASE5_VERIFICATION.md), [database schema](docs/MONGODB_SCHEMA.md) and [Hadoop architecture](docs/HADOOP_ARCHITECTURE.md). Phase VI integration has not started.
+
 ## Phase IV: research-only disease classification
 
 Three separate tasks use the verified Phase I prepared CSVs. Four compulsory algorithms and a dummy baseline run on each task. The final comparison uses five development folds and untouched test partitions; diabetes keeps identical predictor profiles together. Models are research artifacts, **not clinically validated diagnostic tools**.

@@ -1,0 +1,5 @@
+# Phase V findings
+
+Prepared-source reference counts, verified by the Phase I manifest and pandas: heart target 0/1 = 164/139; diabetes Negative/Positive = 200/320; stroke 0/1 = 4,861/249. The synthetic cohort has 1,171 patient rows (F 609, M 562) and 53,346 encounter rows. Encounter class counts are ambulatory 18,936, emergency 2,090, inpatient 1,838, outpatient 9,003, urgentcare 2,373, wellness 19,106. These sum to 53,346 **encounters**, not unique people. See `reports/tables/bigdata/` and `reports/figures/bigdata/source_encounters_by_class.png`.
+
+Live MongoDB collection counts, query output, Hadoop reducer counts and processing timings are **BLOCKED** because Docker is absent on this host. The source reference tables must not be presented as database or Hadoop execution results. Synthea is synthetic; heart and diabetes source provenance is described in the registry; stroke collection provenance and Synthea generator version/seed remain uncertain. These data and the Phase IV predictors are for research and education, not clinical advice.

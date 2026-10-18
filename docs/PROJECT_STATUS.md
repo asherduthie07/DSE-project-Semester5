@@ -1,6 +1,13 @@
 # Project status
 
-Updated: 2026-10-18 (Phase IV)
+Updated: 2026-10-19 (Phase V implementation; live runtime blocked)
+
+## Phase V: MongoDB and Hadoop/MapReduce
+
+- Added PyMongo source-validated, SHA-256-checked, idempotent import code for five prepared tables, dataset metadata, quality summaries and Phase IV experiment metadata. Synthea patient/encounter keys are preserved; synthetic names and identity/address fields are excluded. Added eight aggregation queries, controlled CRUD, source/database reconciliation, and CLI commands.
+- Added a pinned local Compose configuration for MongoDB and Apache Hadoop 3.4.2, cross-platform setup/verification tools, sanitized encounter-class input preparation, Hadoop Streaming mapper/reducer, HDFS job driver and output verification. Added source reference tables, a chart, architecture diagrams and run instructions.
+- Baseline before changes: 61 tests passed and Phase I integrity verifier passed. After implementation: 75 tests passed and 3 live integration tests skipped. The local mapper/reducer pipeline reconciled all 53,346 source encounters with pandas.
+- **Live service gates are BLOCKED:** Docker is absent from PATH on this Intel Mac, so MongoDB and Hadoop did not run; no actual database counts, Hadoop reducer output or cross-system benchmark is claimed. Windows PowerShell runtime is NOT TESTED. See `PHASE5_VERIFICATION.md` for the decision matrix and exact attempted commands. Phase VI has not started.
 
 ## Phase IV: machine learning and research-only prediction
 

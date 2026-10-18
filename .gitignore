@@ -32,6 +32,9 @@ ml/models/quick/
 ml/registry_quick.json
 reports/ml/quick/
 
+# Recreated from the verified Phase I encounter table for each Hadoop run.
+reports/bigdata/encounter_classes.txt
+
 # Machine-specific Power BI project copies, caches and Desktop binaries.
 powerbi/.local/
 powerbi/**/*.pbi/
