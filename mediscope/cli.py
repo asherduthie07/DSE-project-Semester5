@@ -144,6 +144,16 @@ def main(argv: list[str] | None = None) -> int:
     eda.add_argument("--dataset", default="all", help="Registry dataset ID or 'all' (default)")
     eda.add_argument("--alpha", type=float, default=0.05, help="Preregistered significance level (default: 0.05)")
     eda.add_argument("--output-root", type=Path, default=PROJECT_ROOT)
+    ml = subcommands.add_parser("ml", help="Run Phase IV research-only classification experiments")
+    ml_actions = ml.add_subparsers(dest="ml_action", required=True)
+    for action in ("train", "evaluate", "compare", "explain", "predict"):
+        command = ml_actions.add_parser(action, help=f"ML {action} action")
+        command.add_argument("--dataset", default="all" if action != "predict" else None,
+                             help="heart, diabetes, stroke, or all (except predict)")
+        if action in ("train", "evaluate", "compare", "explain"):
+            command.add_argument("--quick", action="store_true", help="Use separate three-fold pipeline smoke artifacts")
+        if action == "predict":
+            command.add_argument("--input", type=Path, required=True, help="JSON feature dictionary")
     args = parser.parse_args(argv)
     if args.command == "health":
         report: Any = health()
@@ -162,6 +172,58 @@ def main(argv: list[str] | None = None) -> int:
             report = run_eda(args.dataset, args.alpha, args.output_root)
         except (EDAError, OSError, ValueError) as error:
             parser.exit(2, f"EDA failed: {error}\n")
+    elif args.command == "ml":
+        from .ml.tasks import MLError, TASKS
+
+        try:
+            selected = list(TASKS) if args.dataset == "all" else [args.dataset]
+            if any(name not in TASKS for name in selected):
+                raise MLError(f"Unknown ML dataset {args.dataset!r}; choose {list(TASKS)} or all")
+            if args.ml_action == "predict":
+                if len(selected) != 1:
+                    raise MLError("Predict requires --dataset heart, diabetes, or stroke")
+                from .ml.prediction import predict_case
+
+                case = json.loads(args.input.read_text(encoding="utf-8"))
+                if not isinstance(case, dict):
+                    raise MLError("Prediction input must be a JSON feature dictionary")
+                report = predict_case(selected[0], case)
+            elif args.ml_action == "train":
+                from .ml.training import train_task
+
+                report = [train_task(name, quick=args.quick) for name in selected]
+            elif args.ml_action == "evaluate":
+                from .ml.registry import load_model, read_registry
+
+                registry = read_registry(quick=args.quick)
+                for name in selected:
+                    for algorithm in registry["tasks"][name]["trials"]:
+                        load_model(name, algorithm, quick=args.quick)
+                summary_keys = ("accuracy", "precision", "recall", "f1", "specificity", "balanced_accuracy",
+                                "roc_auc", "average_precision", "brier", "confusion_matrix")
+                report = {name: {"selected_by_cv": registry["tasks"][name]["selected_model"],
+                                 "selection_score": registry["tasks"][name]["selection_score"],
+                                 "experiments": {key: {"cv_mean": value["cv_mean"], "cv_std": value["cv_std"],
+                                                        "threshold": value["threshold_selection"]["threshold"],
+                                                        "test": {metric: value["test"][metric] for metric in summary_keys}}
+                                                 for key, value in registry["tasks"][name]["trials"].items()}}
+                          for name in selected}
+            elif args.ml_action == "compare":
+                if args.quick:
+                    raise MLError("Comparison figures require full five-fold experiments")
+                from .ml.reporting import create_comparison
+
+                report = [create_comparison(name) for name in selected]
+            else:
+                if args.quick:
+                    raise MLError("Explanations require full five-fold experiments")
+                from .ml.explainability import global_explanations
+                from .ml.training import ALGORITHMS
+
+                report = [{"task": name, "algorithms": [global_explanations(name, algorithm)["algorithm"] for algorithm in ALGORITHMS]}
+                          for name in selected]
+        except (MLError, OSError, ValueError, KeyError) as error:
+            parser.exit(2, f"ML failed: {error}\n")
     else:
         from .preparation import PreparationError, load_config, prepare_dataset
         from .reports import export_dataset

@@ -1,0 +1,33 @@
+# Phase IV preregistered experiment protocol
+
+**Protocol frozen before any model comparisons or test scores were computed, 2026-10-18.** Phase IV is research-only. Results are not clinically validated probabilities or medical advice. Phase III Power BI runtime gates remain separate and unresolved.
+
+## Tasks and inputs
+
+| Task | Verified prepared input | Positive class | Excluded predictors | Selection score |
+|---|---|---|---|---|
+| heart | `data/processed/heart.csv` | `heart_disease_binary=1` | `num`, derived target | F1 |
+| diabetes | `data/processed/diabetes.csv` | `class=Positive` | class target | Balanced accuracy |
+| stroke | `data/processed/stroke.csv` | `stroke=1` | `id`, target | Average precision |
+
+Read inputs through `mediscope.eda.runner.load_prepared`, which verifies checksums, ordered output schemas and target values against Phase I quality reports. Preserve the original heart `num` in the table for audit only. Use only the Phase I `feature_roles` and `build_preprocessor` factory for model features. All features are selected by those roles; identifiers and outcomes are absent from X. Broad Phase I domain bounds screen impossible values. Stroke `Unknown` smoking responses are already null in the prepared table and are imputed inside training folds. No full-data imputation, scaling, encoding, clipping, feature selection or resampling is allowed.
+
+## Split and validation
+
+Seed **42**. Heart and stroke: one 80/20 `train_test_split(..., stratify=y)` holdout, then five fixed `StratifiedKFold(shuffle=True, random_state=42)` folds on development rows. Diabetes: define profile groups from every model predictor, **excluding the outcome**, using canonical raw prepared feature tuples. The data have 251 distinct profiles, 269 repeated rows and no conflicting-label profile (observed before model scoring). Use fold 0 of `StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)` as the untouched approximately 20% holdout; use a fresh five-fold `StratifiedGroupKFold` on development rows for tuning. Persist row indices, profile count, overlap checks and a split checksum. Check both classes and zero profile overlap in every partition. Do not revise a split after viewing results.
+
+Four compulsory algorithms on each task: Logistic Regression, Decision Tree, Random Forest and KNN (**12 primary experiments**). Add a `DummyClassifier(strategy='prior')` baseline per task. Every candidate is an sklearn `Pipeline(preprocess, estimator)`. Logistic Regression and KNN use standard numerical scaling; trees use no numerical scaling. All use fold-local median numeric and most-frequent categorical imputation plus Phase I binary/one-hot mappings. Unseen nominal categories use `handle_unknown='ignore'`; unknown binary categories encode `-1` for research exploration but prediction-service inputs are validated against known categories.
+
+## Search, imbalance and selection
+
+Use `GridSearchCV` with fixed shared fold indices, `n_jobs=1`, estimator `n_jobs=1`, no nested parallelism, and `refit=True`. Full mode uses five folds and modest grids recorded in `data/metadata/ml_experiment_config.json`; quick mode uses three folds and one candidate per algorithm for pipeline smoke. Compulsory final conclusions come only from full mode. Do not remove required algorithms based on quick results. For stroke, compare class-weight choices in Logistic Regression and trees against unweighted candidates; KNN has no class weight. No sampler is used, so there is no pre-CV resampling or test rebalancing. The held-out stroke prevalence stays natural. Sampling is deferred because class weighting and training-only threshold choice provide a lighter first analysis; the absence of sampler comparison is documented as a limitation.
+
+Model selection is based **only on primary development CV score**: heart F1, diabetes balanced accuracy, stroke average precision. Ties resolve by algorithm name in fixed alphabetical order. Record all fold scores, mean, SD and chosen hyperparameters. No test metric participates in selection. For heart and diabetes the decision threshold is 0.5. For stroke, after candidate hyperparameters are chosen, obtain out-of-fold development probabilities using the same fixed CV folds, then select the threshold maximizing F2 among thresholds with OOF precision ≥0.15; if none qualify, use 0.5 and flag it. This threshold is exploratory, optimized only on development rows and may not calibrate to clinical use. Save the threshold and OOF tradeoff. The same held-out test is opened once per fitted primary candidate only after hyperparameters and thresholds are fixed. Do not select the final model by test ranking.
+
+The primary test report records accuracy, precision, recall, F1, specificity, balanced accuracy, ROC-AUC, average precision, Brier score, 2×2 confusion matrix, FP/FN, calibration bins, group counts and class prevalence. Undefined metrics become `null` with explicit reason; `zero_division=0` is used for precision/recall/F1. No accuracy-only or causal conclusions. Calibration curves are descriptive, especially for small positive classes. The diabetes sensitivity experiment removes exact predictor duplicates **from development rows only**, keeps the original untouched group-disjoint test, and refits each algorithm with its primary CV-chosen hyperparameters. The sensitivity comparison is not used for final model selection. This tests dependence on repeated profiles without claiming repeated profiles are the same people.
+
+## Explanations and artifacts
+
+For selected models, compute permutation importance on a development validation fold, using the selection metric and multiple seeded repeats; do not use held-out test labels. Save transformed feature names, Logistic Regression coefficients where applicable, impurity-based Random Forest importances with bias caveat, a Decision Tree graphic, and a one-at-a-time local score-change explanation against a development-derived median/mode reference record. Local score changes are nonadditive and not causal. SHAP is optional; if absent or impractical, mark it not performed rather than fabricate output. Persist the **complete fitted pipeline** with joblib plus a SHA-256 and strict local registry path; load only trusted artifacts from this repository. Do not train on prediction requests or store entered feature values. Prediction output uses “estimated model score,” not clinical risk probability.
+
+Software versions, timing, complete grids, input SHA-256, split hashes, results, test counts and generated paths are to be recorded in Phase IV verification. No Phase III output is modified.

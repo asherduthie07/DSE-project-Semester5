@@ -1,0 +1,128 @@
+{
+  "algorithm": "knn",
+  "caveat": "Importance and local score changes are descriptive, noncausal and not clinical explanations; one-hot coefficients refer to encoded levels.",
+  "encoded_importance": [],
+  "local_development_example": [
+    {
+      "feature": "oldpeak",
+      "reference": 0.8,
+      "score_change": -0.2,
+      "value": "0.0"
+    },
+    {
+      "feature": "cp",
+      "reference": "4",
+      "score_change": -0.2,
+      "value": "2.0"
+    },
+    {
+      "feature": "age",
+      "reference": 56.0,
+      "score_change": 0.0,
+      "value": "54.0"
+    },
+    {
+      "feature": "trestbps",
+      "reference": 130.0,
+      "score_change": 0.0,
+      "value": "108.0"
+    },
+    {
+      "feature": "chol",
+      "reference": 244.5,
+      "score_change": 0.0,
+      "value": "309.0"
+    },
+    {
+      "feature": "thalach",
+      "reference": 153.5,
+      "score_change": 0.0,
+      "value": "156.0"
+    },
+    {
+      "feature": "sex",
+      "reference": "1",
+      "score_change": 0.0,
+      "value": "1.0"
+    },
+    {
+      "feature": "fbs",
+      "reference": "0",
+      "score_change": 0.0,
+      "value": "0.0"
+    }
+  ],
+  "method": "five-repeat permutation on first development CV validation fold",
+  "permutation": [
+    {
+      "feature": "thal",
+      "mean_score_drop": 0.13228912622992178,
+      "std": 0.0467406972303383
+    },
+    {
+      "feature": "ca",
+      "mean_score_drop": 0.11096281968622397,
+      "std": 0.03750400447958722
+    },
+    {
+      "feature": "trestbps",
+      "mean_score_drop": 0.03185116661527394,
+      "std": 0.03049277591928508
+    },
+    {
+      "feature": "cp",
+      "mean_score_drop": 0.026630752208376386,
+      "std": 0.023425248514184985
+    },
+    {
+      "feature": "restecg",
+      "mean_score_drop": 0.023968736430742533,
+      "std": 0.0197773938394383
+    },
+    {
+      "feature": "slope",
+      "mean_score_drop": 0.02310842000018687,
+      "std": 0.01836521976819258
+    },
+    {
+      "feature": "oldpeak",
+      "mean_score_drop": 0.018890294323094636,
+      "std": 0.01583027484284647
+    },
+    {
+      "feature": "sex",
+      "mean_score_drop": 0.012568235546958939,
+      "std": 0.021605403782045025
+    },
+    {
+      "feature": "age",
+      "mean_score_drop": 0.00554002026342455,
+      "std": 0.009794255338805643
+    },
+    {
+      "feature": "chol",
+      "mean_score_drop": 4.933703361087449e-05,
+      "std": 0.02475693408789878
+    },
+    {
+      "feature": "fbs",
+      "mean_score_drop": -0.0037002775208140547,
+      "std": 0.0074005550416281094
+    },
+    {
+      "feature": "exang",
+      "mean_score_drop": -0.012006079027355598,
+      "std": 0.009990595257884234
+    },
+    {
+      "feature": "thalach",
+      "mean_score_drop": -0.015789252375746354,
+      "std": 0.008941453871127481
+    }
+  ],
+  "scoring": "f1",
+  "selected_by_cv": false,
+  "shap": "not performed; optional dependency unavailable",
+  "task": "heart",
+  "validation_rows": 49
+}

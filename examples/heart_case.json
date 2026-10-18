@@ -1,0 +1,15 @@
+{
+  "age": 55,
+  "trestbps": 130,
+  "chol": 240,
+  "thalach": 150,
+  "oldpeak": 1.0,
+  "sex": "1",
+  "fbs": "0",
+  "exang": "0",
+  "cp": "4",
+  "restecg": "0",
+  "slope": "2",
+  "ca": "0",
+  "thal": "3"
+}

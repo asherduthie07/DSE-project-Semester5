@@ -1,0 +1,209 @@
+{
+  "algorithm": "logistic_regression",
+  "caveat": "Importance and local score changes are descriptive, noncausal and not clinical explanations; one-hot coefficients refer to encoded levels.",
+  "encoded_importance": [
+    {
+      "coefficient": 1.534057074683168,
+      "encoded_feature": "numeric__age",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.18053949670573743,
+      "encoded_feature": "numeric__avg_glucose_level",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.014454597223826549,
+      "encoded_feature": "numeric__bmi",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.40786274833709446,
+      "encoded_feature": "binary__hypertension",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.1928144044999096,
+      "encoded_feature": "binary__heart_disease",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.3703102557360087,
+      "encoded_feature": "binary__ever_married",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.7196955935871147,
+      "encoded_feature": "nominal__gender_Female",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.6477909305493408,
+      "encoded_feature": "nominal__gender_Male",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.006101528260737648,
+      "encoded_feature": "nominal__gender_Other",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.35198778841633027,
+      "encoded_feature": "nominal__work_type_Govt_job",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.021369203381201917,
+      "encoded_feature": "nominal__work_type_Never_worked",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.3278354635640895,
+      "encoded_feature": "nominal__work_type_Private",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.5414194079615051,
+      "encoded_feature": "nominal__work_type_Self-employed",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.13097618907403694,
+      "encoded_feature": "nominal__work_type_children",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.7256386575905822,
+      "encoded_feature": "nominal__Residence_type_Rural",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.6479493948066133,
+      "encoded_feature": "nominal__Residence_type_Urban",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.42067795445943046,
+      "encoded_feature": "nominal__smoking_status_formerly smoked",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.6285614998988024,
+      "encoded_feature": "nominal__smoking_status_never smoked",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.32434859803895755,
+      "encoded_feature": "nominal__smoking_status_smokes",
+      "kind": "log_odds_coefficient"
+    }
+  ],
+  "local_development_example": [
+    {
+      "feature": "age",
+      "reference": 45.0,
+      "score_change": -0.022418026459328416,
+      "value": "14.0"
+    },
+    {
+      "feature": "ever_married",
+      "reference": "Yes",
+      "score_change": 0.0009860077542031987,
+      "value": "No"
+    },
+    {
+      "feature": "gender",
+      "reference": "Female",
+      "score_change": 0.00022087745148157431,
+      "value": "Male"
+    },
+    {
+      "feature": "avg_glucose_level",
+      "reference": 91.945,
+      "score_change": -0.00012431489681658794,
+      "value": "82.34"
+    },
+    {
+      "feature": "work_type",
+      "reference": "Private",
+      "score_change": -7.780341457018372e-05,
+      "value": "Govt_job"
+    },
+    {
+      "feature": "bmi",
+      "reference": 28.0,
+      "score_change": -2.1406524750045355e-05,
+      "value": "31.6"
+    },
+    {
+      "feature": "hypertension",
+      "reference": "0",
+      "score_change": 0.0,
+      "value": "0"
+    },
+    {
+      "feature": "heart_disease",
+      "reference": "0",
+      "score_change": 0.0,
+      "value": "0"
+    }
+  ],
+  "method": "five-repeat permutation on first development CV validation fold",
+  "permutation": [
+    {
+      "feature": "age",
+      "mean_score_drop": 0.12467724475793443,
+      "std": 0.00742853469860787
+    },
+    {
+      "feature": "work_type",
+      "mean_score_drop": 0.007922318619046747,
+      "std": 0.006892167341215634
+    },
+    {
+      "feature": "bmi",
+      "mean_score_drop": 0.002716878513364651,
+      "std": 0.002278794722996321
+    },
+    {
+      "feature": "Residence_type",
+      "mean_score_drop": -0.00037192211194773673,
+      "std": 0.0033132772982608777
+    },
+    {
+      "feature": "smoking_status",
+      "mean_score_drop": -0.00046221773054225257,
+      "std": 0.008827623045554919
+    },
+    {
+      "feature": "gender",
+      "mean_score_drop": -0.0010312212855719371,
+      "std": 0.0007224361654888676
+    },
+    {
+      "feature": "ever_married",
+      "mean_score_drop": -0.0017343590953484366,
+      "std": 0.016462433132265315
+    },
+    {
+      "feature": "avg_glucose_level",
+      "mean_score_drop": -0.00479363763829691,
+      "std": 0.013048569147293652
+    },
+    {
+      "feature": "heart_disease",
+      "mean_score_drop": -0.009608976440389456,
+      "std": 0.006153337411974589
+    },
+    {
+      "feature": "hypertension",
+      "mean_score_drop": -0.012026019820239164,
+      "std": 0.01567628998536436
+    }
+  ],
+  "scoring": "average_precision",
+  "selected_by_cv": true,
+  "shap": "not performed; optional dependency unavailable",
+  "task": "stroke",
+  "validation_rows": 818
+}

@@ -1,0 +1,229 @@
+{
+  "algorithm": "random_forest",
+  "caveat": "Importance and local score changes are descriptive, noncausal and not clinical explanations; one-hot coefficients refer to encoded levels.",
+  "encoded_importance": [
+    {
+      "encoded_feature": "numeric__Age",
+      "importance": 0.07455962084724295,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__Polyuria",
+      "importance": 0.2276362439512041,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__Polydipsia",
+      "importance": 0.2059747539483986,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__sudden weight loss",
+      "importance": 0.06346977441069088,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__weakness",
+      "importance": 0.011993412363813067,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__Polyphagia",
+      "importance": 0.018802361188342016,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__Genital thrush",
+      "importance": 0.015024664135205965,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__visual blurring",
+      "importance": 0.019956218697233647,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__Itching",
+      "importance": 0.02998074353385994,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__Irritability",
+      "importance": 0.04244688516561496,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__delayed healing",
+      "importance": 0.030126057316724488,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__partial paresis",
+      "importance": 0.043558396374243476,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__muscle stiffness",
+      "importance": 0.025014799796078534,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__Alopecia",
+      "importance": 0.052266122327985776,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__Obesity",
+      "importance": 0.010325755788170039,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__Gender_Female",
+      "importance": 0.054679352990610004,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__Gender_Male",
+      "importance": 0.07418483716458175,
+      "kind": "impurity_importance"
+    }
+  ],
+  "local_development_example": [
+    {
+      "feature": "Polydipsia",
+      "reference": "No",
+      "score_change": 0.43081677085610326,
+      "value": "Yes"
+    },
+    {
+      "feature": "Obesity",
+      "reference": "No",
+      "score_change": 0.18842854622886374,
+      "value": "Yes"
+    },
+    {
+      "feature": "delayed healing",
+      "reference": "No",
+      "score_change": 0.09999999999999998,
+      "value": "Yes"
+    },
+    {
+      "feature": "Alopecia",
+      "reference": "No",
+      "score_change": 0.07355769230769227,
+      "value": "Yes"
+    },
+    {
+      "feature": "muscle stiffness",
+      "reference": "No",
+      "score_change": -0.05823317776643966,
+      "value": "Yes"
+    },
+    {
+      "feature": "Age",
+      "reference": 48.0,
+      "score_change": 0.052653575297941346,
+      "value": "40"
+    },
+    {
+      "feature": "Polyuria",
+      "reference": "No",
+      "score_change": 0.0,
+      "value": "No"
+    },
+    {
+      "feature": "sudden weight loss",
+      "reference": "No",
+      "score_change": 0.0,
+      "value": "No"
+    }
+  ],
+  "method": "five-repeat permutation on first development CV validation fold",
+  "permutation": [
+    {
+      "feature": "Polyuria",
+      "mean_score_drop": 0.20649038461538458,
+      "std": 0.03909780209549159
+    },
+    {
+      "feature": "Polydipsia",
+      "mean_score_drop": 0.19134615384615383,
+      "std": 0.025546450181266018
+    },
+    {
+      "feature": "Alopecia",
+      "mean_score_drop": 0.07644230769230767,
+      "std": 0.024201371055102342
+    },
+    {
+      "feature": "Gender",
+      "mean_score_drop": 0.05576923076923075,
+      "std": 0.03200457333721293
+    },
+    {
+      "feature": "Itching",
+      "mean_score_drop": 0.053125,
+      "std": 0.0125
+    },
+    {
+      "feature": "sudden weight loss",
+      "mean_score_drop": 0.033413461538461496,
+      "std": 0.02120840865395458
+    },
+    {
+      "feature": "Irritability",
+      "mean_score_drop": 0.01274038461538458,
+      "std": 0.00625
+    },
+    {
+      "feature": "Polyphagia",
+      "mean_score_drop": 0.008894230769230748,
+      "std": 0.005019378129283916
+    },
+    {
+      "feature": "Genital thrush",
+      "mean_score_drop": 0.0,
+      "std": 0.0
+    },
+    {
+      "feature": "weakness",
+      "mean_score_drop": 0.0,
+      "std": 0.0
+    },
+    {
+      "feature": "muscle stiffness",
+      "mean_score_drop": 0.0,
+      "std": 0.0
+    },
+    {
+      "feature": "delayed healing",
+      "mean_score_drop": 0.0,
+      "std": 0.0
+    },
+    {
+      "feature": "Obesity",
+      "mean_score_drop": -0.0019230769230769384,
+      "std": 0.0038461538461538767
+    },
+    {
+      "feature": "visual blurring",
+      "mean_score_drop": -0.007932692307692358,
+      "std": 0.019119268101104033
+    },
+    {
+      "feature": "partial paresis",
+      "mean_score_drop": -0.025000000000000088,
+      "std": 0.009805806756909214
+    },
+    {
+      "feature": "Age",
+      "mean_score_drop": -0.04038461538461546,
+      "std": 0.007195494974565246
+    }
+  ],
+  "scoring": "balanced_accuracy",
+  "selected_by_cv": false,
+  "shap": "not performed; optional dependency unavailable",
+  "task": "diabetes",
+  "validation_rows": 84
+}

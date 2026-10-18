@@ -1,0 +1,254 @@
+{
+  "algorithm": "random_forest",
+  "caveat": "Importance and local score changes are descriptive, noncausal and not clinical explanations; one-hot coefficients refer to encoded levels.",
+  "encoded_importance": [
+    {
+      "encoded_feature": "numeric__age",
+      "importance": 0.06759779914122338,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "numeric__trestbps",
+      "importance": 0.05941230937014962,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "numeric__chol",
+      "importance": 0.07558711751564894,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "numeric__thalach",
+      "importance": 0.09886780554697609,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "numeric__oldpeak",
+      "importance": 0.08338772984381092,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__sex",
+      "importance": 0.03279937691415088,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__fbs",
+      "importance": 0.01067417563157521,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "binary__exang",
+      "importance": 0.04261947123734107,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__cp_1",
+      "importance": 0.017636161178943954,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__cp_2",
+      "importance": 0.009984823570006655,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__cp_3",
+      "importance": 0.021989983619734695,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__cp_4",
+      "importance": 0.08861151820194303,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__restecg_0",
+      "importance": 0.011073424857262685,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__restecg_1",
+      "importance": 0.00040427495752011147,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__restecg_2",
+      "importance": 0.01577408481118882,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__slope_1",
+      "importance": 0.030309517048525147,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__slope_2",
+      "importance": 0.025024629585491936,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__slope_3",
+      "importance": 0.0031573988999689657,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__ca_0",
+      "importance": 0.0813411018764896,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__ca_1",
+      "importance": 0.02113758147581037,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__ca_2",
+      "importance": 0.008616325615477309,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__ca_3",
+      "importance": 0.008823638478158138,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__thal_3",
+      "importance": 0.08843279133634782,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__thal_6",
+      "importance": 0.003993877099061757,
+      "kind": "impurity_importance"
+    },
+    {
+      "encoded_feature": "nominal__thal_7",
+      "importance": 0.09274308218719274,
+      "kind": "impurity_importance"
+    }
+  ],
+  "local_development_example": [
+    {
+      "feature": "cp",
+      "reference": "4",
+      "score_change": -0.21942460317460316,
+      "value": "2.0"
+    },
+    {
+      "feature": "oldpeak",
+      "reference": 0.8,
+      "score_change": -0.1966666666666667,
+      "value": "0.0"
+    },
+    {
+      "feature": "ca",
+      "reference": "0.0",
+      "score_change": -0.1508452380952381,
+      "value": "0.0"
+    },
+    {
+      "feature": "chol",
+      "reference": 244.5,
+      "score_change": -0.06022222222222226,
+      "value": "309.0"
+    },
+    {
+      "feature": "thal",
+      "reference": "3.0",
+      "score_change": 0.05239743589743587,
+      "value": "7.0"
+    },
+    {
+      "feature": "trestbps",
+      "reference": 130.0,
+      "score_change": -0.05222222222222225,
+      "value": "108.0"
+    },
+    {
+      "feature": "age",
+      "reference": 56.0,
+      "score_change": -0.030000000000000054,
+      "value": "54.0"
+    },
+    {
+      "feature": "thalach",
+      "reference": 153.5,
+      "score_change": -0.030000000000000054,
+      "value": "156.0"
+    }
+  ],
+  "method": "five-repeat permutation on first development CV validation fold",
+  "permutation": [
+    {
+      "feature": "ca",
+      "mean_score_drop": 0.11323570046974296,
+      "std": 0.01868465946624651
+    },
+    {
+      "feature": "thal",
+      "mean_score_drop": 0.10024388478795768,
+      "std": 0.03205563918782131
+    },
+    {
+      "feature": "slope",
+      "mean_score_drop": 0.06231871471993047,
+      "std": 0.02077406665673848
+    },
+    {
+      "feature": "sex",
+      "mean_score_drop": 0.04446578631452576,
+      "std": 0.010679713609325662
+    },
+    {
+      "feature": "oldpeak",
+      "mean_score_drop": 0.030192630898513227,
+      "std": 0.012123238515451903
+    },
+    {
+      "feature": "cp",
+      "mean_score_drop": 0.0209523809523809,
+      "std": 0.020995626366712917
+    },
+    {
+      "feature": "restecg",
+      "mean_score_drop": 0.006857142857142851,
+      "std": 0.008398250546685174
+    },
+    {
+      "feature": "fbs",
+      "mean_score_drop": 0.0,
+      "std": 0.0
+    },
+    {
+      "feature": "chol",
+      "mean_score_drop": -0.003571428571428581,
+      "std": 0.007142857142857162
+    },
+    {
+      "feature": "trestbps",
+      "mean_score_drop": -0.007142857142857162,
+      "std": 0.008748177652797088
+    },
+    {
+      "feature": "thalach",
+      "mean_score_drop": -0.007398205659075252,
+      "std": 0.010048309178743952
+    },
+    {
+      "feature": "exang",
+      "mean_score_drop": -0.010714285714285742,
+      "std": 0.008748177652797088
+    },
+    {
+      "feature": "age",
+      "mean_score_drop": -0.010714285714285742,
+      "std": 0.008748177652797088
+    }
+  ],
+  "scoring": "f1",
+  "selected_by_cv": false,
+  "shap": "not performed; optional dependency unavailable",
+  "task": "heart",
+  "validation_rows": 49
+}

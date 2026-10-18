@@ -28,9 +28,22 @@ def _numeric_array(X: Any) -> np.ndarray:
 
 
 def _categorical_array(X: Any) -> np.ndarray:
-    """Convert pandas NA in categoricals to NumPy NaN without learning values."""
+    """Canonicalize stored numeric codes and nulls without learning categories.
+
+    ``read_csv`` infers source codes such as 0/1 as integers. The registered
+    binary mappings use their source string forms; leaving the integers in an
+    object array silently encoded every such value as unknown (-1).
+    """
     frame = pd.DataFrame(X).astype(object)
-    return frame.where(pd.notna(frame), np.nan).to_numpy(dtype=object)
+    def canonical(value: Any) -> Any:
+        if pd.isna(value):
+            return np.nan
+        if isinstance(value, (int, float, np.integer, np.floating)):
+            number = float(value)
+            return str(int(number)) if number.is_integer() else str(value)
+        return str(value)
+
+    return frame.map(canonical).to_numpy(dtype=object)
 
 
 class IQRClipper(TransformerMixin, BaseEstimator):

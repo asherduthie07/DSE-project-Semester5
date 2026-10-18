@@ -1,6 +1,18 @@
 # Project status
 
-Updated: 2026-10-18 (Phase III)
+Updated: 2026-10-18 (Phase IV)
+
+## Phase IV: machine learning and research-only prediction
+
+- Registered a prereviewed three-task, five-fold experiment protocol with seed 42, separate untouched test splits, and diabetes predictor-profile grouping. Original heart `num`, derived heart target, stroke `id`, and all targets are excluded from predictors.
+- Reused Phase I fold-local preprocessing in complete scikit-learn pipelines. Corrected numeric-coded binary category canonicalization so registered 0/1 values are encoded as 0/1 rather than unknown `-1`. Added controlled leakage and encoding tests.
+- Completed **12/12 compulsory full model experiments** (Logistic Regression, Decision Tree, Random Forest and KNN on each task), **3/3 dummy baselines**, modest GridSearchCV, and separately isolated quick smoke runs. Saved 12 complete fitted preprocessing pipelines and three dummy estimators with checksums, a structured registry, split definitions, full metric/curve records, 3 comparison CSVs and 51 PNG figures.
+- Selected Logistic Regression on development CV for heart (F1 .8473), diabetes (balanced accuracy .9348), and stroke (average precision .1945). Held-out test confusion matrices are respectively `[[27,6],[2,26]]`, `[[27,13],[3,61]]` and `[[772,200],[10,40]]`. The rare stroke outcome has a substantial false-positive burden; these are research results, not clinical diagnostic claims.
+- Confirmed diabetes has 251 predictor profiles, 269 repeated rows and zero conflicting-label profiles. The group-disjoint split and five CV folds had zero profile overlap. A development-only deduplicated sensitivity analysis removed 214 repeated development rows without changing the primary test split or selection.
+- Added research-only validation and prediction CLI, global development-fold permutation importance, transformed coefficients/importance, tree visualizations and local score-change explanations. SHAP and resampling sensitivity were not performed. Full results and limitations are in `PHASE4_FINDINGS.md`, `MODEL_COMPARISON.md`, `MODEL_LIMITATIONS.md` and `PHASE4_VERIFICATION.md`.
+- Repeated the full training run: split hashes, selected models, parameters, thresholds, CV and test metrics were identical. Independent verifier reloaded all 15 estimators and recomputed held-out metrics. Phase I and Phase III static regression checks passed. Final full suite: **61 passed in 31.04s**.
+- Phase III Power BI Desktop runtime, PBIX and Service upload gates remain open; Phase IV did not change Power BI deliverables.
+- Fresh virtual-environment installation of the new `ml` extra is **BLOCKED/NOT TESTED in this sandbox** because pip could not reach its package index for build-time `setuptools`. The existing environment resolved dependencies, passed `pip check`, and executed training, prediction and tests.
 
 ## Phase III: visualization and Power BI portability
 
@@ -56,7 +68,6 @@ Updated: 2026-10-18 (Phase III)
 
 ## Upcoming, pending approval
 
-- Leakage-safe model training and experimental evaluation.
 - MongoDB, Hadoop/HDFS/MapReduce.
 - Angular + FastAPI demonstration.
 

@@ -1,0 +1,83 @@
+{
+  "artifact_version": "phase4-v1",
+  "random_seed": 42,
+  "holdout_fraction": 0.2,
+  "full_folds": 5,
+  "quick_folds": 3,
+  "model_selection": {
+    "heart": "f1",
+    "diabetes": "balanced_accuracy",
+    "stroke": "average_precision"
+  },
+  "thresholds": {
+    "heart": 0.5,
+    "diabetes": 0.5,
+    "stroke_min_precision": 0.15,
+    "stroke_objective": "f2_on_development_oof"
+  },
+  "grids": {
+    "logistic_regression": {
+      "model__C": [
+        0.3,
+        3.0
+      ],
+      "model__class_weight": [
+        null,
+        "balanced"
+      ]
+    },
+    "decision_tree": {
+      "model__max_depth": [
+        4,
+        null
+      ],
+      "model__min_samples_leaf": [
+        1,
+        5
+      ],
+      "model__class_weight": [
+        null,
+        "balanced"
+      ]
+    },
+    "random_forest": {
+      "model__n_estimators": [
+        100
+      ],
+      "model__max_depth": [
+        null,
+        8
+      ],
+      "model__min_samples_leaf": [
+        1,
+        4
+      ],
+      "model__max_features": [
+        "sqrt"
+      ],
+      "model__class_weight": [
+        null,
+        "balanced_subsample"
+      ]
+    },
+    "knn": {
+      "model__n_neighbors": [
+        5,
+        15
+      ],
+      "model__weights": [
+        "uniform",
+        "distance"
+      ],
+      "model__p": [
+        1,
+        2
+      ]
+    }
+  },
+  "resource_policy": {
+    "search_n_jobs": 1,
+    "forest_n_jobs": 1,
+    "pre_dispatch": 1
+  }
+}

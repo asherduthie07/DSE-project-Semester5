@@ -27,6 +27,11 @@ powerbi/*.pbix
 powerbi/*.pbit
 dashboard/__pycache__/
 
+# Exploratory smoke-mode models are locally reproducible; full artifacts remain trackable.
+ml/models/quick/
+ml/registry_quick.json
+reports/ml/quick/
+
 # Machine-specific Power BI project copies, caches and Desktop binaries.
 powerbi/.local/
 powerbi/**/*.pbi/

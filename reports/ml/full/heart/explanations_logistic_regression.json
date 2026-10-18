@@ -1,0 +1,254 @@
+{
+  "algorithm": "logistic_regression",
+  "caveat": "Importance and local score changes are descriptive, noncausal and not clinical explanations; one-hot coefficients refer to encoded levels.",
+  "encoded_importance": [
+    {
+      "coefficient": -0.022607081936904843,
+      "encoded_feature": "numeric__age",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.24183039795073613,
+      "encoded_feature": "numeric__trestbps",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.12261800866720361,
+      "encoded_feature": "numeric__chol",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.35893164050137144,
+      "encoded_feature": "numeric__thalach",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.2748594118085956,
+      "encoded_feature": "numeric__oldpeak",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.8208089338055975,
+      "encoded_feature": "binary__sex",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.08017544706694966,
+      "encoded_feature": "binary__fbs",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.4192756161411737,
+      "encoded_feature": "binary__exang",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.3766933679555988,
+      "encoded_feature": "nominal__cp_1",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.037257261711693676,
+      "encoded_feature": "nominal__cp_2",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.5113185858833648,
+      "encoded_feature": "nominal__cp_3",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.7836612927360244,
+      "encoded_feature": "nominal__cp_4",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.21784825105457836,
+      "encoded_feature": "nominal__restecg_0",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.04575095025871809,
+      "encoded_feature": "nominal__restecg_1",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.12199127849866236,
+      "encoded_feature": "nominal__restecg_2",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.35688509560115084,
+      "encoded_feature": "nominal__slope_1",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.3563639289253112,
+      "encoded_feature": "nominal__slope_2",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.14108675613879498,
+      "encoded_feature": "nominal__slope_3",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -1.1331284532824701,
+      "encoded_feature": "nominal__ca_0",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.3275323488968073,
+      "encoded_feature": "nominal__ca_1",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.38682242064732286,
+      "encoded_feature": "nominal__ca_2",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.2771657609237076,
+      "encoded_feature": "nominal__ca_3",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.6502487756813559,
+      "encoded_feature": "nominal__thal_3",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": -0.12741519388724193,
+      "encoded_feature": "nominal__thal_6",
+      "kind": "log_odds_coefficient"
+    },
+    {
+      "coefficient": 0.6360560467539648,
+      "encoded_feature": "nominal__thal_7",
+      "kind": "log_odds_coefficient"
+    }
+  ],
+  "local_development_example": [
+    {
+      "feature": "ca",
+      "reference": "0.0",
+      "score_change": -0.26689008177372525,
+      "value": "0.0"
+    },
+    {
+      "feature": "cp",
+      "reference": "4",
+      "score_change": -0.1890126831969705,
+      "value": "2.0"
+    },
+    {
+      "feature": "thal",
+      "reference": "3.0",
+      "score_change": 0.10910011692125765,
+      "value": "7.0"
+    },
+    {
+      "feature": "trestbps",
+      "reference": 130.0,
+      "score_change": -0.06473726010352049,
+      "value": "108.0"
+    },
+    {
+      "feature": "oldpeak",
+      "reference": 0.8,
+      "score_change": -0.04115585518169612,
+      "value": "0.0"
+    },
+    {
+      "feature": "chol",
+      "reference": 244.5,
+      "score_change": 0.02917402261754909,
+      "value": "309.0"
+    },
+    {
+      "feature": "thalach",
+      "reference": 153.5,
+      "score_change": -0.008049428989857998,
+      "value": "156.0"
+    },
+    {
+      "feature": "age",
+      "reference": 56.0,
+      "score_change": 0.0010127864103520179,
+      "value": "54.0"
+    }
+  ],
+  "method": "five-repeat permutation on first development CV validation fold",
+  "permutation": [
+    {
+      "feature": "thal",
+      "mean_score_drop": 0.10658508664587688,
+      "std": 0.019225610790447715
+    },
+    {
+      "feature": "ca",
+      "mean_score_drop": 0.09316462688010192,
+      "std": 0.027734759980179834
+    },
+    {
+      "feature": "thalach",
+      "mean_score_drop": 0.06074416692363036,
+      "std": 0.023097525346685563
+    },
+    {
+      "feature": "cp",
+      "mean_score_drop": 0.05452686162346525,
+      "std": 0.039098305371788836
+    },
+    {
+      "feature": "oldpeak",
+      "mean_score_drop": 0.05348473635522662,
+      "std": 0.022505437175465774
+    },
+    {
+      "feature": "slope",
+      "mean_score_drop": 0.04757169287696574,
+      "std": 0.025392648979161325
+    },
+    {
+      "feature": "trestbps",
+      "mean_score_drop": 0.03994207303643007,
+      "std": 0.01758890259480865
+    },
+    {
+      "feature": "sex",
+      "mean_score_drop": 0.028431166428391184,
+      "std": 0.02510930411238904
+    },
+    {
+      "feature": "chol",
+      "mean_score_drop": 0.02218844984802428,
+      "std": 0.007142857142857162
+    },
+    {
+      "feature": "age",
+      "mean_score_drop": 0.022036474164133724,
+      "std": 0.013607977755740023
+    },
+    {
+      "feature": "restecg",
+      "mean_score_drop": 0.013344125809435692,
+      "std": 0.011074687836648157
+    },
+    {
+      "feature": "exang",
+      "mean_score_drop": 0.007446808510638281,
+      "std": 0.009120440531639473
+    },
+    {
+      "feature": "fbs",
+      "mean_score_drop": 0.004810360777058276,
+      "std": 0.009620721554116552
+    }
+  ],
+  "scoring": "f1",
+  "selected_by_cv": true,
+  "shap": "not performed; optional dependency unavailable",
+  "task": "heart",
+  "validation_rows": 49
+}

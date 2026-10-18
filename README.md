@@ -2,6 +2,28 @@
 
 Research-only Smart Healthcare Analytics and Disease Prediction System. Any later model output is for academic demonstration and is not clinically validated or medical advice.
 
+## Phase IV: research-only disease classification
+
+Three separate tasks use the verified Phase I prepared CSVs. Four compulsory algorithms and a dummy baseline run on each task. The final comparison uses five development folds and untouched test partitions; diabetes keeps identical predictor profiles together. Models are research artifacts, **not clinically validated diagnostic tools**.
+
+On macOS, from the project root:
+
+```bash
+source .venv/bin/activate
+python -m pip install -e '.[dev,prep,eda,ml]'
+mediscope ml --help
+mediscope ml train --dataset all
+mediscope ml evaluate --dataset all
+mediscope ml compare --dataset all
+mediscope ml explain --dataset all
+mediscope ml predict --dataset heart --input examples/heart_case.json
+python scripts/verify_phase4_outputs.py
+python scripts/build_phase4_manifest.py --check
+python -m pytest -q
+```
+
+Use `--dataset heart`, `diabetes`, or `stroke` for one task. `mediscope ml train --dataset all --quick` runs a separate three-fold smoke mode with minimal grids; it does not replace full results. Prediction examples for each task are fictional input fixtures, not clinical cases. Full results are in `ml/registry.json`, `reports/ml/full/`, `reports/tables/ml/`, and `reports/figures/ml/full/`. Read the [macOS Phase IV guide](docs/HOW_TO_RUN_PHASE4.md), [methods](docs/PHASE4_METHODOLOGY.md), [findings](docs/PHASE4_FINDINGS.md), [verification](docs/PHASE4_VERIFICATION.md), and [limitations](docs/MODEL_LIMITATIONS.md). Fresh clones require the verified Phase I prepared data or the registered raw archives and a Phase I preparation run; ignored data files are not bundled.
+
 ## Phase III: portable visualization snapshot and dashboard
 
 Phase III bundles 19 aggregate-only CSV exports with ordered schemas and SHA-256 checksums. A fresh clone can run the local six-section analytics preview without the ignored raw ZIPs:
