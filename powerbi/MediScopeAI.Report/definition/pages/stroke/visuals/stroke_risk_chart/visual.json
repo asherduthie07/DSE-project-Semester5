@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "stroke_risk_chart",
+  "position": {
+    "x": 20,
+    "y": 330,
+    "z": 6,
+    "width": 610,
+    "height": 350,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_risk_view"
+                    }
+                  },
+                  "Property": "factor"
+                }
+              },
+              "queryRef": "stroke_risk_view.factor",
+              "nativeQueryRef": "factor"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_risk_view"
+                    }
+                  },
+                  "Property": "Total stroke_pct"
+                }
+              },
+              "queryRef": "stroke_risk_view.Total stroke_pct",
+              "nativeQueryRef": "Total stroke_pct"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_risk_view"
+                    }
+                  },
+                  "Property": "value"
+                }
+              },
+              "queryRef": "stroke_risk_view.value",
+              "nativeQueryRef": "value"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

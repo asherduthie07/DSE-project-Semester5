@@ -1,0 +1,6 @@
+dataset_id,age_group,encounters
+synthea_csv,<18,9180
+synthea_csv,18–39,15582
+synthea_csv,40–59,14467
+synthea_csv,60–79,8479
+synthea_csv,80+,5638

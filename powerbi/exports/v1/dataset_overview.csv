@@ -1,0 +1,6 @@
+dataset_id,table_name,display_name,analysis_unit,rows,columns,synthetic,exact_duplicates,missing_cells
+uci_cleveland_heart,processed.cleveland,UCI Cleveland Heart Disease,source record,303,15,0,0,6
+uci_early_diabetes,diabetes_data_upload,UCI Early Stage Diabetes Risk Prediction,source record,520,17,0,269,0
+kaggle_stroke,healthcare-dataset-stroke-data,Healthcare Stroke Prediction,source record,5110,12,0,0,1745
+synthea_csv,patients,Synthea synthetic patients and encounters,synthetic patient,1171,25,1,0,4652
+synthea_csv,encounters,Synthea synthetic patients and encounters,synthetic encounter,53346,15,1,0,79138

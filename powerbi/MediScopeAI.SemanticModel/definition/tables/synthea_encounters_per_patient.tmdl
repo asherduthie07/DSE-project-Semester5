@@ -1,0 +1,31 @@
+table synthea_encounters_per_patient
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column encounters
+		dataType: int64
+		sourceColumn: encounters
+		summarizeBy: none
+
+	column patients
+		dataType: int64
+		sourceColumn: patients
+		summarizeBy: none
+
+	measure 'Total encounters' = SUM(synthea_encounters_per_patient[encounters])
+		formatString: #,##0
+
+	measure 'Total patients' = SUM(synthea_encounters_per_patient[patients])
+		formatString: #,##0
+
+	partition synthea_encounters_per_patient = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\synthea_encounters_per_patient.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"encounters", Int64.Type}, {"patients", Int64.Type}}, "en-US")
+			in Typed

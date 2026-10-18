@@ -1,0 +1,28 @@
+table note_terms
+	column term
+		dataType: string
+		sourceColumn: term
+		summarizeBy: none
+
+	column count
+		dataType: int64
+		sourceColumn: count
+		summarizeBy: none
+
+	column source_id
+		dataType: string
+		sourceColumn: source_id
+		summarizeBy: none
+
+	measure 'Total count' = SUM(note_terms[count])
+		formatString: #,##0
+
+	partition note_terms = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\note_terms.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"term", type text}, {"count", Int64.Type}, {"source_id", type text}}, "en-US")
+			in Typed

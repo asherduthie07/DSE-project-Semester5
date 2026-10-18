@@ -1,0 +1,5 @@
+dataset_id,factor,value,records,stroke_positive,stroke_pct
+kaggle_stroke,hypertension,0,4612,183,3.967909800520382
+kaggle_stroke,hypertension,1,498,66,13.253012048192772
+kaggle_stroke,heart_disease,0,4834,202,4.178733967728589
+kaggle_stroke,heart_disease,1,276,47,17.02898550724638

@@ -1,0 +1,56 @@
+table quality_metrics
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column table_name
+		dataType: string
+		sourceColumn: table_name
+		summarizeBy: none
+
+	column feature
+		dataType: string
+		sourceColumn: feature
+		summarizeBy: none
+
+	column rows
+		dataType: int64
+		sourceColumn: rows
+		summarizeBy: none
+
+	column missing_n
+		dataType: int64
+		sourceColumn: missing_n
+		summarizeBy: none
+
+	column missing_pct
+		dataType: double
+		sourceColumn: missing_pct
+		summarizeBy: none
+
+	column iqr_outliers_n
+		dataType: double
+		sourceColumn: iqr_outliers_n
+		summarizeBy: none
+
+	column exact_duplicates_retained
+		dataType: int64
+		sourceColumn: exact_duplicates_retained
+		summarizeBy: none
+
+	measure 'Total rows' = SUM(quality_metrics[rows])
+		formatString: #,##0
+
+	measure 'Total missing_n' = SUM(quality_metrics[missing_n])
+		formatString: #,##0
+
+	partition quality_metrics = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\quality_metrics.csv"), [Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"table_name", type text}, {"feature", type text}, {"rows", Int64.Type}, {"missing_n", Int64.Type}, {"missing_pct", type number}, {"iqr_outliers_n", type number}, {"exact_duplicates_retained", Int64.Type}}, "en-US")
+			in Typed

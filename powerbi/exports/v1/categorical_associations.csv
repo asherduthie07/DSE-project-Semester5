@@ -1,0 +1,31 @@
+dataset_id,feature,target,n,levels,target_levels,chi2,dof,p_value,cramers_v,minimum_expected,expected_below_5,missing_policy,bh_q_value
+uci_cleveland_heart,sex,heart_disease_binary,303,2,2,23.21806372532964,1,1.4463238972316478e-06,0.2768163163920976,44.4983498349835,0,complete case; missing/Unknown responses excluded,1.9284318629755306e-06
+uci_cleveland_heart,fbs,heart_disease_binary,303,2,2,0.1933906193253,1,0.6601094903412954,0.0252636669757261,20.643564356435643,0,complete case; missing/Unknown responses excluded,0.6601094903412954
+uci_cleveland_heart,exang,heart_disease_binary,303,2,2,56.51932209938323,1,5.5648849837002543e-14,0.4318939871885016,45.415841584158414,0,complete case; missing/Unknown responses excluded,1.1129769967400509e-13
+uci_cleveland_heart,cp,heart_disease_binary,303,4,2,81.81577027653815,3,1.2517106007837528e-17,0.5196335668689597,10.551155115511552,0,complete case; missing/Unknown responses excluded,5.006842403135011e-17
+uci_cleveland_heart,restecg,heart_disease_binary,303,3,2,10.051541372646057,2,0.0065665238142173,0.1821356743477757,1.834983498349835,2,complete case; missing/Unknown responses excluded,0.0075045986448198
+uci_cleveland_heart,slope,heart_disease_binary,303,3,2,45.78459111838959,2,1.142884546752702e-10,0.3887213154906704,9.633663366336634,0,complete case; missing/Unknown responses excluded,1.8286152748043235e-10
+uci_cleveland_heart,ca,heart_disease_binary,299,4,2,71.84314194577351,3,1.7199517696913477e-15,0.4901816670462826,9.23076923076923,0,complete case; missing/Unknown responses excluded,4.5865380525102604e-15
+uci_cleveland_heart,thal,heart_disease_binary,301,3,2,83.28952130229499,2,8.201820286056397e-19,0.5260317225199689,8.252491694352159,0,complete case; missing/Unknown responses excluded,6.561456228845117e-18
+uci_early_diabetes,Polyuria,class,520,2,2,230.59537546600387,1,4.420809890408204e-52,0.6659224017308102,99.23076923076924,0,complete case; missing/Unknown responses excluded,6.631214835612307e-51
+uci_early_diabetes,Polydipsia,class,520,2,2,218.84483557895047,1,1.6156874701081669e-49,0.6487337304599193,89.61538461538461,0,complete case; missing/Unknown responses excluded,1.2117656025811251e-48
+uci_early_diabetes,sudden weight loss,class,520,2,2,99.10772459734451,1,2.3913365942168224e-23,0.43656818261506,83.46153846153847,0,complete case; missing/Unknown responses excluded,8.967512228313085e-23
+uci_early_diabetes,weakness,class,520,2,2,30.77495996950058,1,2.8975273995233654e-08,0.2432747733036918,82.6923076923077,0,complete case; missing/Unknown responses excluded,4.346291099285048e-08
+uci_early_diabetes,Polyphagia,class,520,2,2,61.000626202084376,1,5.705665738732331e-15,0.3425038635438583,91.15384615384616,0,complete case; missing/Unknown responses excluded,1.4264164346830824e-14
+uci_early_diabetes,Genital thrush,class,520,2,2,6.324961590986682,1,0.0119050065761401,0.1102877494329011,44.61538461538461,0,complete case; missing/Unknown responses excluded,0.0148812582201751
+uci_early_diabetes,visual blurring,class,520,2,2,32.83894363775029,1,1.0011888609842746e-08,0.2513002480857934,89.61538461538461,0,complete case; missing/Unknown responses excluded,1.6686481016404576e-08
+uci_early_diabetes,Itching,class,520,2,2,0.0931444390164463,1,0.7602170775933212,0.0133837185111415,97.3076923076923,0,complete case; missing/Unknown responses excluded,0.7602170775933212
+uci_early_diabetes,Irritability,class,520,2,2,46.633873177020384,1,8.556828103003412e-12,0.2994670688747325,48.46153846153846,0,complete case; missing/Unknown responses excluded,1.83360602207216e-11
+uci_early_diabetes,delayed healing,class,520,2,2,1.1476793877216762,1,0.2840354624043049,0.046979524748752,91.92307692307692,0,complete case; missing/Unknown responses excluded,0.3043237097188981
+uci_early_diabetes,partial paresis,class,520,2,2,97.1737451737452,1,6.350314186620284e-23,0.4322876205405226,86.15384615384616,0,complete case; missing/Unknown responses excluded,1.905094255986085e-22
+uci_early_diabetes,muscle stiffness,class,520,2,2,7.8,1,0.0052246234400613,0.1224744871391589,75.0,0,complete case; missing/Unknown responses excluded,0.0071244865091745
+uci_early_diabetes,Alopecia,class,520,2,2,37.21247071544424,1,1.059341644308789e-09,0.2675115767280859,68.84615384615384,0,complete case; missing/Unknown responses excluded,1.9862655830789794e-09
+uci_early_diabetes,Obesity,class,520,2,2,2.7086752946127954,1,0.0998038376902523,0.0721733396149745,33.84615384615385,0,complete case; missing/Unknown responses excluded,0.1151582742579834
+uci_early_diabetes,Gender,class,520,2,2,104.94151740345526,1,1.2579437702350072e-24,0.4492333585023046,73.84615384615384,0,complete case; missing/Unknown responses excluded,6.289718851175036e-24
+kaggle_stroke,hypertension,stroke,5110,2,2,83.59647297303054,1,6.068123323489793e-20,0.1279038234664802,24.266536203522502,0,complete case; missing/Unknown responses excluded,2.1238431632214277e-19
+kaggle_stroke,heart_disease,stroke,5110,2,2,93.01112941392964,1,5.200109767379846e-22,0.1349139969686927,13.448923679060666,0,complete case; missing/Unknown responses excluded,3.640076837165892e-21
+kaggle_stroke,ever_married,stroke,5110,2,2,59.97862306999247,1,9.589325014276251e-15,0.1083397416570102,85.61506849315069,0,complete case; missing/Unknown responses excluded,2.2375091699977917e-14
+kaggle_stroke,gender,stroke,5110,3,2,0.4725866288453023,2,0.7895490538408245,0.00961679292862,0.0487279843444227,2,complete case; missing/Unknown responses excluded,0.7895490538408245
+kaggle_stroke,work_type,stroke,5110,5,2,49.163511976675295,4,5.397707801896119e-10,0.0980868978292623,1.0720156555772995,1,complete case; missing/Unknown responses excluded,9.445988653318206e-10
+kaggle_stroke,Residence_type,stroke,5110,2,2,1.221027840116894,1,0.2691590322749319,0.0154579654772568,122.50215264187868,0,complete case; missing/Unknown responses excluded,0.3140188709874206
+kaggle_stroke,smoking_status,stroke,3566,3,2,11.436499963124012,2,0.003285455481988,0.0566312173075133,44.69377453729669,0,complete case; missing/Unknown responses excluded,0.0045996376747832

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "heart_age_chart",
+  "position": {
+    "x": 760,
+    "y": 20,
+    "z": 7,
+    "width": 490,
+    "height": 280,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_age_groups"
+                    }
+                  },
+                  "Property": "age_group"
+                }
+              },
+              "queryRef": "heart_age_groups.age_group",
+              "nativeQueryRef": "age_group"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_age_groups"
+                    }
+                  },
+                  "Property": "Total count"
+                }
+              },
+              "queryRef": "heart_age_groups.Total count",
+              "nativeQueryRef": "Total count"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_age_groups"
+                    }
+                  },
+                  "Property": "outcome"
+                }
+              },
+              "queryRef": "heart_age_groups.outcome",
+              "nativeQueryRef": "outcome"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "encounters_per_patient",
+  "position": {
+    "x": 20,
+    "y": 340,
+    "z": 6,
+    "width": 610,
+    "height": 340,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "synthea_encounters_per_patient"
+                    }
+                  },
+                  "Property": "encounters"
+                }
+              },
+              "queryRef": "synthea_encounters_per_patient.encounters",
+              "nativeQueryRef": "encounters"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "synthea_encounters_per_patient"
+                    }
+                  },
+                  "Property": "Total patients"
+                }
+              },
+              "queryRef": "synthea_encounters_per_patient.Total patients",
+              "nativeQueryRef": "Total patients"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

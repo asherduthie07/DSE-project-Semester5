@@ -1,0 +1,67 @@
+relationship 67800998-2564-56d2-8728-6426ebe995d5
+	fromColumn: dataset_overview.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 67f52665-c40b-5ed6-a2e5-eaea7e45ed96
+	fromColumn: outcomes.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship ac13954d-bdfc-5629-95bd-fc4efab15e85
+	fromColumn: numeric_summary.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 6c12e595-721a-59f5-bce6-269cbbcd93c7
+	fromColumn: categorical_frequencies.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 4bb49f07-52ac-54ad-93a3-c9e340998170
+	fromColumn: histogram_bins.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 719d3d69-0bc2-55ef-a530-50538eba3bfe
+	fromColumn: boxplot_stats.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 5488ee85-0296-532f-b3d7-a81036935b5d
+	fromColumn: correlations.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 69226c60-2f86-562a-ae73-87817ffaf18c
+	fromColumn: categorical_associations.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship c5e3ebe4-046b-532c-928a-c0d3db45ef88
+	fromColumn: hypotheses.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 4864377e-df2a-5abe-81a7-c2fa3011d550
+	fromColumn: quality_metrics.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship d511db7f-3f13-578b-b157-c571cb8d6af6
+	fromColumn: age_groups.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 9e58ee7e-89f2-52b7-806f-fb781cdb3e74
+	fromColumn: diabetes_symptoms.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 000afdd6-3df8-5a61-83f0-bfdc2954f426
+	fromColumn: stroke_risk_factors.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 1c1d3d42-a7d0-5e75-892e-8145e1af1056
+	fromColumn: synthea_encounter_classes.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 991876cf-3cd5-5541-afa1-144f49239e3c
+	fromColumn: synthea_monthly_encounters.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship 25a3b486-056c-5fe2-a353-66061e2414a6
+	fromColumn: synthea_encounters_per_patient.dataset_id
+	toColumn: dataset_dimension.dataset_id
+
+relationship e4afc89f-f580-5b6e-b9c4-69764985ce4c
+	fromColumn: synthea_age_at_encounter.dataset_id
+	toColumn: dataset_dimension.dataset_id

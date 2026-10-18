@@ -1,0 +1,7 @@
+dataset_id,group,feature,category,count,nonmissing_n,all_n,pct_all,pct_nonmissing
+uci_cleveland_heart,all,heart_disease_binary,0,164,303,303,54.12541254125413,54.12541254125413
+uci_cleveland_heart,all,heart_disease_binary,1,139,303,303,45.87458745874587,45.87458745874587
+uci_early_diabetes,all,class,Negative,200,520,520,38.46153846153846,38.46153846153846
+uci_early_diabetes,all,class,Positive,320,520,520,61.53846153846154,61.53846153846154
+kaggle_stroke,all,stroke,0,4861,5110,5110,95.12720156555773,95.12720156555773
+kaggle_stroke,all,stroke,1,249,5110,5110,4.87279843444227,4.87279843444227

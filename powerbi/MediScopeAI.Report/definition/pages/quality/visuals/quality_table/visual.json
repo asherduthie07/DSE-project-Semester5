@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "quality_table",
+  "position": {
+    "x": 20,
+    "y": 310,
+    "z": 5,
+    "width": 610,
+    "height": 370,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "quality_metrics"
+                    }
+                  },
+                  "Property": "table_name"
+                }
+              },
+              "queryRef": "quality_metrics.table_name",
+              "nativeQueryRef": "table_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "quality_metrics"
+                    }
+                  },
+                  "Property": "feature"
+                }
+              },
+              "queryRef": "quality_metrics.feature",
+              "nativeQueryRef": "feature"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "quality_metrics"
+                    }
+                  },
+                  "Property": "rows"
+                }
+              },
+              "queryRef": "quality_metrics.rows",
+              "nativeQueryRef": "rows"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "quality_metrics"
+                    }
+                  },
+                  "Property": "missing_n"
+                }
+              },
+              "queryRef": "quality_metrics.missing_n",
+              "nativeQueryRef": "missing_n"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "quality_metrics"
+                    }
+                  },
+                  "Property": "iqr_outliers_n"
+                }
+              },
+              "queryRef": "quality_metrics.iqr_outliers_n",
+              "nativeQueryRef": "iqr_outliers_n"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "quality_metrics"
+                    }
+                  },
+                  "Property": "exact_duplicates_retained"
+                }
+              },
+              "queryRef": "quality_metrics.exact_duplicates_retained",
+              "nativeQueryRef": "exact_duplicates_retained"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

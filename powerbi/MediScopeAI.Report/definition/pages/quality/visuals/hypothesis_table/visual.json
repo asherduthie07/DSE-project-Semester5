@@ -1,0 +1,135 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "hypothesis_table",
+  "position": {
+    "x": 650,
+    "y": 310,
+    "z": 5,
+    "width": 600,
+    "height": 370,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "hypotheses"
+                    }
+                  },
+                  "Property": "id"
+                }
+              },
+              "queryRef": "hypotheses.id",
+              "nativeQueryRef": "id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "hypotheses"
+                    }
+                  },
+                  "Property": "method"
+                }
+              },
+              "queryRef": "hypotheses.method",
+              "nativeQueryRef": "method"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "hypotheses"
+                    }
+                  },
+                  "Property": "positive_n"
+                }
+              },
+              "queryRef": "hypotheses.positive_n",
+              "nativeQueryRef": "positive_n"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "hypotheses"
+                    }
+                  },
+                  "Property": "negative_n"
+                }
+              },
+              "queryRef": "hypotheses.negative_n",
+              "nativeQueryRef": "negative_n"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "hypotheses"
+                    }
+                  },
+                  "Property": "p_value"
+                }
+              },
+              "queryRef": "hypotheses.p_value",
+              "nativeQueryRef": "p_value"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "hypotheses"
+                    }
+                  },
+                  "Property": "effect_size"
+                }
+              },
+              "queryRef": "hypotheses.effect_size",
+              "nativeQueryRef": "effect_size"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "hypotheses"
+                    }
+                  },
+                  "Property": "ci_low"
+                }
+              },
+              "queryRef": "hypotheses.ci_low",
+              "nativeQueryRef": "ci_low"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "hypotheses"
+                    }
+                  },
+                  "Property": "ci_high"
+                }
+              },
+              "queryRef": "hypotheses.ci_high",
+              "nativeQueryRef": "ci_high"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

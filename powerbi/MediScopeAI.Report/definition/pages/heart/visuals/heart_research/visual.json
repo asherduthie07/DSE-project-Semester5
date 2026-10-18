@@ -1,0 +1,135 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "heart_research",
+  "position": {
+    "x": 650,
+    "y": 330,
+    "z": 7,
+    "width": 600,
+    "height": 160,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_hypothesis"
+                    }
+                  },
+                  "Property": "id"
+                }
+              },
+              "queryRef": "heart_hypothesis.id",
+              "nativeQueryRef": "id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_hypothesis"
+                    }
+                  },
+                  "Property": "positive_n"
+                }
+              },
+              "queryRef": "heart_hypothesis.positive_n",
+              "nativeQueryRef": "positive_n"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_hypothesis"
+                    }
+                  },
+                  "Property": "negative_n"
+                }
+              },
+              "queryRef": "heart_hypothesis.negative_n",
+              "nativeQueryRef": "negative_n"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_hypothesis"
+                    }
+                  },
+                  "Property": "mean_difference"
+                }
+              },
+              "queryRef": "heart_hypothesis.mean_difference",
+              "nativeQueryRef": "mean_difference"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_hypothesis"
+                    }
+                  },
+                  "Property": "p_value"
+                }
+              },
+              "queryRef": "heart_hypothesis.p_value",
+              "nativeQueryRef": "p_value"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_hypothesis"
+                    }
+                  },
+                  "Property": "effect_size"
+                }
+              },
+              "queryRef": "heart_hypothesis.effect_size",
+              "nativeQueryRef": "effect_size"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_hypothesis"
+                    }
+                  },
+                  "Property": "ci_low"
+                }
+              },
+              "queryRef": "heart_hypothesis.ci_low",
+              "nativeQueryRef": "ci_low"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_hypothesis"
+                    }
+                  },
+                  "Property": "ci_high"
+                }
+              },
+              "queryRef": "heart_hypothesis.ci_high",
+              "nativeQueryRef": "ci_high"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

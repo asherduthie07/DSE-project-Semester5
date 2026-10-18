@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "heart_age_hist",
+  "position": {
+    "x": 20,
+    "y": 330,
+    "z": 7,
+    "width": 610,
+    "height": 350,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_histogram"
+                    }
+                  },
+                  "Property": "bin_label"
+                }
+              },
+              "queryRef": "heart_histogram.bin_label",
+              "nativeQueryRef": "bin_label"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_histogram"
+                    }
+                  },
+                  "Property": "Total count"
+                }
+              },
+              "queryRef": "heart_histogram.Total count",
+              "nativeQueryRef": "Total count"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_histogram"
+                    }
+                  },
+                  "Property": "outcome"
+                }
+              },
+              "queryRef": "heart_histogram.outcome",
+              "nativeQueryRef": "outcome"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

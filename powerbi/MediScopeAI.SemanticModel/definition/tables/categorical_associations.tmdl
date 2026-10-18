@@ -1,0 +1,80 @@
+table categorical_associations
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column feature
+		dataType: string
+		sourceColumn: feature
+		summarizeBy: none
+
+	column target
+		dataType: string
+		sourceColumn: target
+		summarizeBy: none
+
+	column n
+		dataType: int64
+		sourceColumn: n
+		summarizeBy: none
+
+	column levels
+		dataType: int64
+		sourceColumn: levels
+		summarizeBy: none
+
+	column target_levels
+		dataType: int64
+		sourceColumn: target_levels
+		summarizeBy: none
+
+	column chi2
+		dataType: double
+		sourceColumn: chi2
+		summarizeBy: none
+
+	column dof
+		dataType: int64
+		sourceColumn: dof
+		summarizeBy: none
+
+	column p_value
+		dataType: double
+		sourceColumn: p_value
+		summarizeBy: none
+
+	column cramers_v
+		dataType: double
+		sourceColumn: cramers_v
+		summarizeBy: none
+
+	column minimum_expected
+		dataType: double
+		sourceColumn: minimum_expected
+		summarizeBy: none
+
+	column expected_below_5
+		dataType: int64
+		sourceColumn: expected_below_5
+		summarizeBy: none
+
+	column missing_policy
+		dataType: string
+		sourceColumn: missing_policy
+		summarizeBy: none
+
+	column bh_q_value
+		dataType: double
+		sourceColumn: bh_q_value
+		summarizeBy: none
+
+	partition categorical_associations = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\categorical_associations.csv"), [Delimiter=",", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"feature", type text}, {"target", type text}, {"n", Int64.Type}, {"levels", Int64.Type}, {"target_levels", Int64.Type}, {"chi2", type number}, {"dof", Int64.Type}, {"p_value", type number}, {"cramers_v", type number}, {"minimum_expected", type number}, {"expected_below_5", Int64.Type}, {"missing_policy", type text}, {"bh_q_value", type number}}, "en-US")
+			in Typed

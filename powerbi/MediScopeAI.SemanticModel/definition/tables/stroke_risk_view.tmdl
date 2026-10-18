@@ -1,0 +1,44 @@
+table stroke_risk_view
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column factor
+		dataType: string
+		sourceColumn: factor
+		summarizeBy: none
+
+	column value
+		dataType: int64
+		sourceColumn: value
+		summarizeBy: none
+
+	column records
+		dataType: int64
+		sourceColumn: records
+		summarizeBy: none
+
+	column stroke_positive
+		dataType: int64
+		sourceColumn: stroke_positive
+		summarizeBy: none
+
+	column stroke_pct
+		dataType: double
+		sourceColumn: stroke_pct
+		summarizeBy: none
+
+	measure 'Total stroke_pct' = AVERAGE(stroke_risk_view[stroke_pct])
+		formatString: #,##0.00
+
+	partition stroke_risk_view = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\stroke_risk_factors.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"factor", type text}, {"value", Int64.Type}, {"records", Int64.Type}, {"stroke_positive", Int64.Type}, {"stroke_pct", type number}}, "en-US"),
+				Filtered = Table.SelectRows(Typed, each [dataset_id] = "kaggle_stroke")
+			in Filtered

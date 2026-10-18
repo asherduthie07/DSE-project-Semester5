@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "stroke_outcome_slicer",
+  "position": {
+    "x": 20,
+    "y": 20,
+    "z": 6,
+    "width": 250,
+    "height": 90,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_outcomes"
+                    }
+                  },
+                  "Property": "category"
+                }
+              },
+              "queryRef": "stroke_outcomes.category",
+              "nativeQueryRef": "category"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

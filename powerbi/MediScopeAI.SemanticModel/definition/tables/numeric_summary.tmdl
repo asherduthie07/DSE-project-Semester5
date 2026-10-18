@@ -1,0 +1,111 @@
+table numeric_summary
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column group
+		dataType: string
+		sourceColumn: group
+		summarizeBy: none
+
+	column feature
+		dataType: string
+		sourceColumn: feature
+		summarizeBy: none
+
+	column rows
+		dataType: int64
+		sourceColumn: rows
+		summarizeBy: none
+
+	column n
+		dataType: int64
+		sourceColumn: n
+		summarizeBy: none
+
+	column missing_n
+		dataType: int64
+		sourceColumn: missing_n
+		summarizeBy: none
+
+	column missing_pct
+		dataType: double
+		sourceColumn: missing_pct
+		summarizeBy: none
+
+	column mean
+		dataType: double
+		sourceColumn: mean
+		summarizeBy: none
+
+	column median
+		dataType: double
+		sourceColumn: median
+		summarizeBy: none
+
+	column mode
+		dataType: double
+		sourceColumn: mode
+		summarizeBy: none
+
+	column min
+		dataType: double
+		sourceColumn: min
+		summarizeBy: none
+
+	column max
+		dataType: double
+		sourceColumn: max
+		summarizeBy: none
+
+	column range
+		dataType: double
+		sourceColumn: range
+		summarizeBy: none
+
+	column q1
+		dataType: double
+		sourceColumn: q1
+		summarizeBy: none
+
+	column q3
+		dataType: double
+		sourceColumn: q3
+		summarizeBy: none
+
+	column iqr
+		dataType: double
+		sourceColumn: iqr
+		summarizeBy: none
+
+	column variance
+		dataType: double
+		sourceColumn: variance
+		summarizeBy: none
+
+	column std
+		dataType: double
+		sourceColumn: std
+		summarizeBy: none
+
+	column skewness
+		dataType: double
+		sourceColumn: skewness
+		summarizeBy: none
+
+	measure 'Total rows' = SUM(numeric_summary[rows])
+		formatString: #,##0
+
+	measure 'Total missing_n' = SUM(numeric_summary[missing_n])
+		formatString: #,##0
+
+	partition numeric_summary = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\numeric_summary.csv"), [Delimiter=",", Columns=19, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"group", type text}, {"feature", type text}, {"rows", Int64.Type}, {"n", Int64.Type}, {"missing_n", Int64.Type}, {"missing_pct", type number}, {"mean", type number}, {"median", type number}, {"mode", type number}, {"min", type number}, {"max", type number}, {"range", type number}, {"q1", type number}, {"q3", type number}, {"iqr", type number}, {"variance", type number}, {"std", type number}, {"skewness", type number}}, "en-US")
+			in Typed

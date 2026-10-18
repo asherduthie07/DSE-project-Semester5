@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "dataset_overview_table",
+  "position": {
+    "x": 300,
+    "y": 20,
+    "z": 5,
+    "width": 950,
+    "height": 220,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dataset_overview"
+                    }
+                  },
+                  "Property": "display_name"
+                }
+              },
+              "queryRef": "dataset_overview.display_name",
+              "nativeQueryRef": "display_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dataset_overview"
+                    }
+                  },
+                  "Property": "analysis_unit"
+                }
+              },
+              "queryRef": "dataset_overview.analysis_unit",
+              "nativeQueryRef": "analysis_unit"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dataset_overview"
+                    }
+                  },
+                  "Property": "rows"
+                }
+              },
+              "queryRef": "dataset_overview.rows",
+              "nativeQueryRef": "rows"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dataset_overview"
+                    }
+                  },
+                  "Property": "missing_cells"
+                }
+              },
+              "queryRef": "dataset_overview.missing_cells",
+              "nativeQueryRef": "missing_cells"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dataset_overview"
+                    }
+                  },
+                  "Property": "exact_duplicates"
+                }
+              },
+              "queryRef": "dataset_overview.exact_duplicates",
+              "nativeQueryRef": "exact_duplicates"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

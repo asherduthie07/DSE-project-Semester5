@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "heart_correlation",
+  "position": {
+    "x": 650,
+    "y": 510,
+    "z": 7,
+    "width": 600,
+    "height": 170,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_correlations"
+                    }
+                  },
+                  "Property": "method"
+                }
+              },
+              "queryRef": "heart_correlations.method",
+              "nativeQueryRef": "method"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_correlations"
+                    }
+                  },
+                  "Property": "left"
+                }
+              },
+              "queryRef": "heart_correlations.left",
+              "nativeQueryRef": "left"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_correlations"
+                    }
+                  },
+                  "Property": "right"
+                }
+              },
+              "queryRef": "heart_correlations.right",
+              "nativeQueryRef": "right"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_correlations"
+                    }
+                  },
+                  "Property": "coefficient"
+                }
+              },
+              "queryRef": "heart_correlations.coefficient",
+              "nativeQueryRef": "coefficient"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "heart_correlations"
+                    }
+                  },
+                  "Property": "n"
+                }
+              },
+              "queryRef": "heart_correlations.n",
+              "nativeQueryRef": "n"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

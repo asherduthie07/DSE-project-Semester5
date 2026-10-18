@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "diabetes_outcomes_chart",
+  "position": {
+    "x": 290,
+    "y": 20,
+    "z": 6,
+    "width": 450,
+    "height": 280,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "diabetes_outcomes"
+                    }
+                  },
+                  "Property": "category"
+                }
+              },
+              "queryRef": "diabetes_outcomes.category",
+              "nativeQueryRef": "category"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "diabetes_outcomes"
+                    }
+                  },
+                  "Property": "Total count"
+                }
+              },
+              "queryRef": "diabetes_outcomes.Total count",
+              "nativeQueryRef": "Total count"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

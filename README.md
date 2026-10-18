@@ -2,6 +2,28 @@
 
 Research-only Smart Healthcare Analytics and Disease Prediction System. Any later model output is for academic demonstration and is not clinically validated or medical advice.
 
+## Phase III: portable visualization snapshot and dashboard
+
+Phase III bundles 19 aggregate-only CSV exports with ordered schemas and SHA-256 checksums. A fresh clone can run the local six-section analytics preview without the ignored raw ZIPs:
+
+```bash
+python3 scripts/verify_powerbi_exports.py
+bash scripts/run_dashboard_macos.sh --check
+bash scripts/run_dashboard_macos.sh
+```
+
+Open `http://127.0.0.1:8765/` and stop with Ctrl+C. On Windows, run `powershell -ExecutionPolicy Bypass -File .\scripts\run_dashboard_windows.ps1`. For a Power BI Desktop review on Windows, run `powershell -ExecutionPolicy Bypass -File .\scripts\setup_powerbi_windows.ps1 -ValidateOnly` and then the same command without `-ValidateOnly`. The script builds an ignored clone-local PBIP copy. **Desktop rendering, PBIX creation, and Power BI Service upload have not been tested; no PBIX/PBIT is present.** The source PBIP and all six page definitions are version-controlled, but an actual Power BI acceptance check is still required on Windows. macOS Power BI access requires a verified PBIX uploaded to the official Service. See the [Phase III run guide](docs/HOW_TO_RUN_PHASE3.md), [Windows setup](docs/POWERBI_WINDOWS_SETUP.md), [macOS Service setup](docs/POWERBI_MACOS_SETUP.md), [methods](docs/PHASE3_METHODOLOGY.md), and [verification](docs/PHASE3_VERIFICATION.md).
+
+Static exports and figures can be verified with:
+
+```bash
+python3 -m dashboard.app --check
+.venv/bin/python scripts/verify_powerbi_project.py
+.venv/bin/python -m pytest -q
+```
+
+High-resolution PNG/SVG evidence is in `reports/figures/phase3/`; report tables are in `reports/tables/phase3/`. All disease analytics are research-only and have not been clinically validated.
+
 ## Phase II: exploratory data analysis
 
 Phase II reads the five verified Phase I prepared CSVs. It does not alter raw or prepared data. From the project root on macOS:

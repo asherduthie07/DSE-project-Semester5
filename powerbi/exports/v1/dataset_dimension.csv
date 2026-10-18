@@ -1,0 +1,5 @@
+dataset_id,display_name,source_url,provenance,synthetic
+uci_cleveland_heart,UCI Cleveland Heart Disease,https://archive.ics.uci.edu/dataset/45/heart+disease,real-world,0
+uci_early_diabetes,UCI Early Stage Diabetes Risk Prediction,https://archive.ics.uci.edu/dataset/529/early+stage+diabetes+risk+prediction,real-world,0
+kaggle_stroke,Healthcare Stroke Prediction,https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset,unverified; do not assert real-world patient origin,0
+synthea_csv,Synthea synthetic patients and encounters,https://synthetichealth.github.io/downloads.html,synthetic,1

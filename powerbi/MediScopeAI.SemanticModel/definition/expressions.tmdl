@@ -1,0 +1,1 @@
+expression DataRoot = "__MEDISCOPE_DATA_ROOT__" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]

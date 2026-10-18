@@ -1,0 +1,200 @@
+table hypotheses
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column id
+		dataType: string
+		sourceColumn: id
+		summarizeBy: none
+
+	column method
+		dataType: string
+		sourceColumn: method
+		summarizeBy: none
+
+	column feature
+		dataType: string
+		sourceColumn: feature
+		summarizeBy: none
+
+	column target
+		dataType: string
+		sourceColumn: target
+		summarizeBy: none
+
+	column positive_label
+		dataType: string
+		sourceColumn: positive_label
+		summarizeBy: none
+
+	column negative_label
+		dataType: string
+		sourceColumn: negative_label
+		summarizeBy: none
+
+	column positive_n
+		dataType: int64
+		sourceColumn: positive_n
+		summarizeBy: none
+
+	column negative_n
+		dataType: int64
+		sourceColumn: negative_n
+		summarizeBy: none
+
+	column positive_mean
+		dataType: double
+		sourceColumn: positive_mean
+		summarizeBy: none
+
+	column negative_mean
+		dataType: double
+		sourceColumn: negative_mean
+		summarizeBy: none
+
+	column positive_sd
+		dataType: double
+		sourceColumn: positive_sd
+		summarizeBy: none
+
+	column negative_sd
+		dataType: double
+		sourceColumn: negative_sd
+		summarizeBy: none
+
+	column positive_median
+		dataType: double
+		sourceColumn: positive_median
+		summarizeBy: none
+
+	column negative_median
+		dataType: double
+		sourceColumn: negative_median
+		summarizeBy: none
+
+	column positive_skew
+		dataType: double
+		sourceColumn: positive_skew
+		summarizeBy: none
+
+	column negative_skew
+		dataType: double
+		sourceColumn: negative_skew
+		summarizeBy: none
+
+	column mean_difference
+		dataType: double
+		sourceColumn: mean_difference
+		summarizeBy: none
+
+	column statistic
+		dataType: double
+		sourceColumn: statistic
+		summarizeBy: none
+
+	column df
+		dataType: double
+		sourceColumn: df
+		summarizeBy: none
+
+	column p_value
+		dataType: double
+		sourceColumn: p_value
+		summarizeBy: none
+
+	column effect_size
+		dataType: double
+		sourceColumn: effect_size
+		summarizeBy: none
+
+	column effect_name
+		dataType: string
+		sourceColumn: effect_name
+		summarizeBy: none
+
+	column ci_low
+		dataType: double
+		sourceColumn: ci_low
+		summarizeBy: none
+
+	column ci_high
+		dataType: double
+		sourceColumn: ci_high
+		summarizeBy: none
+
+	column ci_parameter
+		dataType: string
+		sourceColumn: ci_parameter
+		summarizeBy: none
+
+	column alpha
+		dataType: double
+		sourceColumn: alpha
+		summarizeBy: none
+
+	column sensitivity_method
+		dataType: string
+		sourceColumn: sensitivity_method
+		summarizeBy: none
+
+	column sensitivity_p_value
+		dataType: double
+		sourceColumn: sensitivity_p_value
+		summarizeBy: none
+
+	column missing_policy
+		dataType: string
+		sourceColumn: missing_policy
+		summarizeBy: none
+
+	column assumptions
+		dataType: string
+		sourceColumn: assumptions
+		summarizeBy: none
+
+	column stroke_positive_n
+		dataType: int64
+		sourceColumn: stroke_positive_n
+		summarizeBy: none
+
+	column stroke_negative_n
+		dataType: int64
+		sourceColumn: stroke_negative_n
+		summarizeBy: none
+
+	column stroke_risk_hypertension
+		dataType: double
+		sourceColumn: stroke_risk_hypertension
+		summarizeBy: none
+
+	column stroke_risk_no_hypertension
+		dataType: double
+		sourceColumn: stroke_risk_no_hypertension
+		summarizeBy: none
+
+	column risk_difference
+		dataType: double
+		sourceColumn: risk_difference
+		summarizeBy: none
+
+	column minimum_expected
+		dataType: double
+		sourceColumn: minimum_expected
+		summarizeBy: none
+
+	column phi
+		dataType: double
+		sourceColumn: phi
+		summarizeBy: none
+
+	partition hypotheses = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\hypotheses.csv"), [Delimiter=",", Columns=38, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"id", type text}, {"method", type text}, {"feature", type text}, {"target", type text}, {"positive_label", type text}, {"negative_label", type text}, {"positive_n", Int64.Type}, {"negative_n", Int64.Type}, {"positive_mean", type number}, {"negative_mean", type number}, {"positive_sd", type number}, {"negative_sd", type number}, {"positive_median", type number}, {"negative_median", type number}, {"positive_skew", type number}, {"negative_skew", type number}, {"mean_difference", type number}, {"statistic", type number}, {"df", type number}, {"p_value", type number}, {"effect_size", type number}, {"effect_name", type text}, {"ci_low", type number}, {"ci_high", type number}, {"ci_parameter", type text}, {"alpha", type number}, {"sensitivity_method", type text}, {"sensitivity_p_value", type number}, {"missing_policy", type text}, {"assumptions", type text}, {"stroke_positive_n", Int64.Type}, {"stroke_negative_n", Int64.Type}, {"stroke_risk_hypertension", type number}, {"stroke_risk_no_hypertension", type number}, {"risk_difference", type number}, {"minimum_expected", type number}, {"phi", type number}}, "en-US")
+			in Typed

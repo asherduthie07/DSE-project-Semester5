@@ -1,0 +1,28 @@
+table synthea_monthly_encounters
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column month
+		dataType: string
+		sourceColumn: month
+		summarizeBy: none
+
+	column encounters
+		dataType: int64
+		sourceColumn: encounters
+		summarizeBy: none
+
+	measure 'Total encounters' = SUM(synthea_monthly_encounters[encounters])
+		formatString: #,##0
+
+	partition synthea_monthly_encounters = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\synthea_monthly_encounters.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"month", type text}, {"encounters", Int64.Type}}, "en-US")
+			in Typed

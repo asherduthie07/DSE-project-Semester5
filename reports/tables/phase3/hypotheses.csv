@@ -1,0 +1,4 @@
+id,dataset_id,method,positive_n,negative_n,statistic,p_value,effect_size,effect_name,ci_low,ci_high
+H1,uci_cleveland_heart,two-sided Welch unequal-variance t-test,139,164,4.0303470663221095,7.061439075547298e-05,0.4566867980262655,Hedges g (pooled-SD standardization),2.067681505239252,6.013385348594751
+H2,kaggle_stroke,"Pearson chi-square test, 1 df, no continuity correction (all expected cells >=5)",498,4612,83.59647297303054,6.068123323489793e-20,3.697556162720097,"odds ratio, hypertension versus no hypertension",2.744005395132909,4.982468912313182
+H3,kaggle_stroke,two-sided Welch unequal-variance t-test,249,4861,6.982411744792963,2.40143665636975e-11,0.6180416817194233,Hedges g (pooled-SD standardization),19.92371218863368,35.574739185263454

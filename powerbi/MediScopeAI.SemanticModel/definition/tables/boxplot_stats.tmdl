@@ -1,0 +1,60 @@
+table boxplot_stats
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column group
+		dataType: string
+		sourceColumn: group
+		summarizeBy: none
+
+	column feature
+		dataType: string
+		sourceColumn: feature
+		summarizeBy: none
+
+	column n
+		dataType: int64
+		sourceColumn: n
+		summarizeBy: none
+
+	column min
+		dataType: double
+		sourceColumn: min
+		summarizeBy: none
+
+	column q1
+		dataType: double
+		sourceColumn: q1
+		summarizeBy: none
+
+	column median
+		dataType: double
+		sourceColumn: median
+		summarizeBy: none
+
+	column q3
+		dataType: double
+		sourceColumn: q3
+		summarizeBy: none
+
+	column max
+		dataType: double
+		sourceColumn: max
+		summarizeBy: none
+
+	column iqr
+		dataType: double
+		sourceColumn: iqr
+		summarizeBy: none
+
+	partition boxplot_stats = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\boxplot_stats.csv"), [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"group", type text}, {"feature", type text}, {"n", Int64.Type}, {"min", type number}, {"q1", type number}, {"median", type number}, {"q3", type number}, {"max", type number}, {"iqr", type number}}, "en-US")
+			in Typed

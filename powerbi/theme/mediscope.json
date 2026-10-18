@@ -1,0 +1,7 @@
+{
+  "name": "MediScope AI Research",
+  "dataColors": ["#16858A", "#12304A", "#EEA36B", "#8CA3AC", "#3C779B", "#9ED7D3"],
+  "background": "#FFFFFF",
+  "foreground": "#12304A",
+  "tableAccent": "#16858A"
+}

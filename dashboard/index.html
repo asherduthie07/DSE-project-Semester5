@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MediScope AI | Research Analytics</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/assets/plotly-3.1.0.min.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brandmark">✚</span><div><strong>MediScope AI</strong><small>Research analytics</small></div></div>
+      <div class="nav-label">PHASE III PREVIEW</div>
+      <nav aria-label="Dashboard pages">
+        <button class="nav active" data-page="overview">Overview</button>
+        <button class="nav" data-page="heart">Heart disease</button>
+        <button class="nav" data-page="diabetes">Diabetes</button>
+        <button class="nav" data-page="stroke">Stroke</button>
+        <button class="nav" data-page="hospital">Synthetic hospital</button>
+        <button class="nav" data-page="quality">Quality &amp; research</button>
+      </nav>
+      <div class="sidebar-note">Local analytics preview<br><span>Separate from Microsoft Power BI</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><span class="eyebrow">HEALTHCARE DATA EXPLORATION</span><h1 id="page-title">Executive overview</h1><p id="page-subtitle">Verified aggregate results from the Phase I and II pipelines.</p></div><div class="source-pill">Research only · Not clinically validated</div></header>
+      <div id="loading" class="loading">Loading verified portable exports…</div>
+      <div id="error" class="error" hidden></div>
+      <section id="content" hidden>
+        <div id="cards" class="cards"></div>
+        <div class="toolbar" id="toolbar"></div>
+        <div id="insight" class="insight"></div>
+        <div id="charts" class="chart-grid"></div>
+        <div id="detail" class="detail"></div>
+      </section>
+      <footer>Sources: UCI Cleveland, UCI Early Stage Diabetes, Kaggle stroke (origin unverified), Synthea simulation. Figures describe these datasets only.</footer>
+    </main>
+  </div>
+</body>
+</html>

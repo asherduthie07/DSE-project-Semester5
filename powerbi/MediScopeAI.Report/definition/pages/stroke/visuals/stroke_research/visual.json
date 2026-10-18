@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "stroke_research",
+  "position": {
+    "x": 650,
+    "y": 330,
+    "z": 6,
+    "width": 600,
+    "height": 350,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_hypotheses"
+                    }
+                  },
+                  "Property": "id"
+                }
+              },
+              "queryRef": "stroke_hypotheses.id",
+              "nativeQueryRef": "id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_hypotheses"
+                    }
+                  },
+                  "Property": "method"
+                }
+              },
+              "queryRef": "stroke_hypotheses.method",
+              "nativeQueryRef": "method"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_hypotheses"
+                    }
+                  },
+                  "Property": "p_value"
+                }
+              },
+              "queryRef": "stroke_hypotheses.p_value",
+              "nativeQueryRef": "p_value"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_hypotheses"
+                    }
+                  },
+                  "Property": "effect_size"
+                }
+              },
+              "queryRef": "stroke_hypotheses.effect_size",
+              "nativeQueryRef": "effect_size"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_hypotheses"
+                    }
+                  },
+                  "Property": "ci_low"
+                }
+              },
+              "queryRef": "stroke_hypotheses.ci_low",
+              "nativeQueryRef": "ci_low"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "stroke_hypotheses"
+                    }
+                  },
+                  "Property": "ci_high"
+                }
+              },
+              "queryRef": "stroke_hypotheses.ci_high",
+              "nativeQueryRef": "ci_high"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+table correlations
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column method
+		dataType: string
+		sourceColumn: method
+		summarizeBy: none
+
+	column left
+		dataType: string
+		sourceColumn: left
+		summarizeBy: none
+
+	column right
+		dataType: string
+		sourceColumn: right
+		summarizeBy: none
+
+	column n
+		dataType: int64
+		sourceColumn: n
+		summarizeBy: none
+
+	column coefficient
+		dataType: double
+		sourceColumn: coefficient
+		summarizeBy: none
+
+	column p_value
+		dataType: double
+		sourceColumn: p_value
+		summarizeBy: none
+
+	column missing_policy
+		dataType: string
+		sourceColumn: missing_policy
+		summarizeBy: none
+
+	column bh_q_value
+		dataType: double
+		sourceColumn: bh_q_value
+		summarizeBy: none
+
+	partition correlations = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\correlations.csv"), [Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"method", type text}, {"left", type text}, {"right", type text}, {"n", Int64.Type}, {"coefficient", type number}, {"p_value", type number}, {"missing_policy", type text}, {"bh_q_value", type number}}, "en-US")
+			in Typed

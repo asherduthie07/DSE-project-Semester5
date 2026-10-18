@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "symptom_chart",
+  "position": {
+    "x": 20,
+    "y": 330,
+    "z": 6,
+    "width": 760,
+    "height": 350,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "diabetes_symptom_view"
+                    }
+                  },
+                  "Property": "symptom"
+                }
+              },
+              "queryRef": "diabetes_symptom_view.symptom",
+              "nativeQueryRef": "symptom"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "diabetes_symptom_view"
+                    }
+                  },
+                  "Property": "Total yes_pct"
+                }
+              },
+              "queryRef": "diabetes_symptom_view.Total yes_pct",
+              "nativeQueryRef": "Total yes_pct"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "diabetes_symptom_view"
+                    }
+                  },
+                  "Property": "class"
+                }
+              },
+              "queryRef": "diabetes_symptom_view.class",
+              "nativeQueryRef": "class"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

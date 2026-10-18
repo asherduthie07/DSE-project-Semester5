@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "outcome_distribution",
+  "position": {
+    "x": 20,
+    "y": 270,
+    "z": 5,
+    "width": 610,
+    "height": 400,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "outcomes"
+                    }
+                  },
+                  "Property": "category"
+                }
+              },
+              "queryRef": "outcomes.category",
+              "nativeQueryRef": "category"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "outcomes"
+                    }
+                  },
+                  "Property": "Total count"
+                }
+              },
+              "queryRef": "outcomes.Total count",
+              "nativeQueryRef": "Total count"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "outcomes"
+                    }
+                  },
+                  "Property": "dataset_id"
+                }
+              },
+              "queryRef": "outcomes.dataset_id",
+              "nativeQueryRef": "dataset_id"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

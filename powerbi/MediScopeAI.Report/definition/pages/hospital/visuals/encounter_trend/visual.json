@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "encounter_trend",
+  "position": {
+    "x": 770,
+    "y": 20,
+    "z": 6,
+    "width": 480,
+    "height": 300,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "synthea_monthly_encounters"
+                    }
+                  },
+                  "Property": "month"
+                }
+              },
+              "queryRef": "synthea_monthly_encounters.month",
+              "nativeQueryRef": "month"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "synthea_monthly_encounters"
+                    }
+                  },
+                  "Property": "Total encounters"
+                }
+              },
+              "queryRef": "synthea_monthly_encounters.Total encounters",
+              "nativeQueryRef": "Total encounters"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

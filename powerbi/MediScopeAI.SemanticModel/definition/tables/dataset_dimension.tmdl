@@ -1,0 +1,38 @@
+table dataset_dimension
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column display_name
+		dataType: string
+		sourceColumn: display_name
+		summarizeBy: none
+
+	column source_url
+		dataType: string
+		sourceColumn: source_url
+		summarizeBy: none
+
+	column provenance
+		dataType: string
+		sourceColumn: provenance
+		summarizeBy: none
+
+	column synthetic
+		dataType: int64
+		sourceColumn: synthetic
+		summarizeBy: none
+
+	partition dataset_dimension = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\dataset_dimension.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"display_name", type text}, {"source_url", type text}, {"provenance", type text}, {"synthetic", Int64.Type}}, "en-US")
+			in Typed
+
+	measure 'Distinct registered datasets' = DISTINCTCOUNT(dataset_dimension[dataset_id])
+		formatString: #,##0

@@ -1,0 +1,58 @@
+table dataset_overview
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column table_name
+		dataType: string
+		sourceColumn: table_name
+		summarizeBy: none
+
+	column display_name
+		dataType: string
+		sourceColumn: display_name
+		summarizeBy: none
+
+	column analysis_unit
+		dataType: string
+		sourceColumn: analysis_unit
+		summarizeBy: none
+
+	column rows
+		dataType: int64
+		sourceColumn: rows
+		summarizeBy: none
+
+	column columns
+		dataType: int64
+		sourceColumn: columns
+		summarizeBy: none
+
+	column synthetic
+		dataType: int64
+		sourceColumn: synthetic
+		summarizeBy: none
+
+	column exact_duplicates
+		dataType: int64
+		sourceColumn: exact_duplicates
+		summarizeBy: none
+
+	column missing_cells
+		dataType: int64
+		sourceColumn: missing_cells
+		summarizeBy: none
+
+	measure 'Total rows' = SUM(dataset_overview[rows])
+		formatString: #,##0
+
+	partition dataset_overview = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\dataset_overview.csv"), [Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"table_name", type text}, {"display_name", type text}, {"analysis_unit", type text}, {"rows", Int64.Type}, {"columns", Int64.Type}, {"synthetic", Int64.Type}, {"exact_duplicates", Int64.Type}, {"missing_cells", Int64.Type}}, "en-US")
+			in Typed

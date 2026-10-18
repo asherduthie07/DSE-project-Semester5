@@ -1,0 +1,44 @@
+table heart_age_groups
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column age_group
+		dataType: string
+		sourceColumn: age_group
+		summarizeBy: none
+
+	column outcome
+		dataType: string
+		sourceColumn: outcome
+		summarizeBy: none
+
+	column count
+		dataType: int64
+		sourceColumn: count
+		summarizeBy: none
+
+	column group_n
+		dataType: int64
+		sourceColumn: group_n
+		summarizeBy: none
+
+	column pct_within_age_group
+		dataType: double
+		sourceColumn: pct_within_age_group
+		summarizeBy: none
+
+	measure 'Total count' = SUM(heart_age_groups[count])
+		formatString: #,##0
+
+	partition heart_age_groups = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\age_groups.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"age_group", type text}, {"outcome", type text}, {"count", Int64.Type}, {"group_n", Int64.Type}, {"pct_within_age_group", type number}}, "en-US"),
+				Filtered = Table.SelectRows(Typed, each [dataset_id] = "uci_cleveland_heart")
+			in Filtered

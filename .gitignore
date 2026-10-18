@@ -18,3 +18,17 @@ data/synthetic/*
 !data/synthetic/.gitkeep
 powerbi/exports/*
 !powerbi/exports/.gitkeep
+!powerbi/exports/v1/
+powerbi/exports/v1/*
+!powerbi/exports/v1/*.csv
+!powerbi/exports/v1/manifest.json
+powerbi/**/*.pbi/
+powerbi/*.pbix
+powerbi/*.pbit
+dashboard/__pycache__/
+
+# Machine-specific Power BI project copies, caches and Desktop binaries.
+powerbi/.local/
+powerbi/**/*.pbi/
+powerbi/*.pbix
+powerbi/*.pbit

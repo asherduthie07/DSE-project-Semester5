@@ -1,0 +1,6 @@
+dataset_id,table_name,analysis_unit,rows,columns,exact_duplicates,missing_cells
+uci_cleveland_heart,processed.cleveland,source record,303,15,0,6
+uci_early_diabetes,diabetes_data_upload,source record,520,17,269,0
+kaggle_stroke,healthcare-dataset-stroke-data,source record,5110,12,0,1745
+synthea_csv,patients,synthetic patient,1171,25,0,4652
+synthea_csv,encounters,synthetic encounter,53346,15,0,79138

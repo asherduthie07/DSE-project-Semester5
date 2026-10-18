@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "source_details",
+  "position": {
+    "x": 650,
+    "y": 270,
+    "z": 5,
+    "width": 600,
+    "height": 400,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dataset_dimension"
+                    }
+                  },
+                  "Property": "display_name"
+                }
+              },
+              "queryRef": "dataset_dimension.display_name",
+              "nativeQueryRef": "display_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dataset_dimension"
+                    }
+                  },
+                  "Property": "provenance"
+                }
+              },
+              "queryRef": "dataset_dimension.provenance",
+              "nativeQueryRef": "provenance"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dataset_dimension"
+                    }
+                  },
+                  "Property": "source_url"
+                }
+              },
+              "queryRef": "dataset_dimension.source_url",
+              "nativeQueryRef": "source_url"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

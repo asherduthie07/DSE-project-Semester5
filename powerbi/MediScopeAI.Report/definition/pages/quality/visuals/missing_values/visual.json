@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "missing_values",
+  "position": {
+    "x": 300,
+    "y": 20,
+    "z": 5,
+    "width": 950,
+    "height": 260,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "quality_metrics"
+                    }
+                  },
+                  "Property": "feature"
+                }
+              },
+              "queryRef": "quality_metrics.feature",
+              "nativeQueryRef": "feature"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "quality_metrics"
+                    }
+                  },
+                  "Property": "Total missing_n"
+                }
+              },
+              "queryRef": "quality_metrics.Total missing_n",
+              "nativeQueryRef": "Total missing_n"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

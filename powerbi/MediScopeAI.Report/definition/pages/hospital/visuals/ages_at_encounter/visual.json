@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "ages_at_encounter",
+  "position": {
+    "x": 650,
+    "y": 340,
+    "z": 6,
+    "width": 600,
+    "height": 340,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "synthea_age_at_encounter"
+                    }
+                  },
+                  "Property": "age_group"
+                }
+              },
+              "queryRef": "synthea_age_at_encounter.age_group",
+              "nativeQueryRef": "age_group"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "synthea_age_at_encounter"
+                    }
+                  },
+                  "Property": "Total encounters"
+                }
+              },
+              "queryRef": "synthea_age_at_encounter.Total encounters",
+              "nativeQueryRef": "Total encounters"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

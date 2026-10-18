@@ -1,0 +1,19 @@
+{
+  "clinician_seed": 424242,
+  "cohort_linkage": "independent run; not linked to existing Phase I Synthea patients or encounters",
+  "combined_note_hash_sha256": "8d1d20ae16551c79da2535868dffd7c0ce7f57fc6f3723b75b82bc27e0923b57",
+  "end_date": "2024-01-01",
+  "generator_jar_sha256": "38678aab1e667d26671163824aad60ee5e30fa366f3d59d5ea5765ebb5702432",
+  "generator_release": "Synthea v3.4.0",
+  "generator_reported_version": "v3.3.0-96-g17dd17e93",
+  "generator_url": "https://github.com/synthetichealth/synthea/releases/tag/v3.4.0",
+  "note_count": 10,
+  "population_size": 10,
+  "reference_date": "2024-01-01",
+  "seed": 424242,
+  "source_id": "synthea_v3_4_0_seed424242",
+  "state": "Massachusetts",
+  "stopword_policy": "scikit-learn ENGLISH_STOP_WORDS plus documented template and nonclinical terms; no case identifiers retained",
+  "token_count_after_cleaning": 19244,
+  "unique_terms": 642
+}

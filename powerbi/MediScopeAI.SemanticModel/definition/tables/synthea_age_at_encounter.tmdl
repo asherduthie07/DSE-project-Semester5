@@ -1,0 +1,28 @@
+table synthea_age_at_encounter
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column age_group
+		dataType: string
+		sourceColumn: age_group
+		summarizeBy: none
+
+	column encounters
+		dataType: int64
+		sourceColumn: encounters
+		summarizeBy: none
+
+	measure 'Total encounters' = SUM(synthea_age_at_encounter[encounters])
+		formatString: #,##0
+
+	partition synthea_age_at_encounter = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\synthea_age_at_encounter.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"age_group", type text}, {"encounters", Int64.Type}}, "en-US")
+			in Typed

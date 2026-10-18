@@ -1,0 +1,149 @@
+dataset_id,group,feature,category,count,nonmissing_n,all_n,pct_all,pct_nonmissing
+uci_cleveland_heart,0,sex,0,72,164,164,43.90243902439025,43.90243902439025
+uci_cleveland_heart,0,sex,1,92,164,164,56.09756097560975,56.09756097560975
+uci_cleveland_heart,0,fbs,0,141,164,164,85.97560975609755,85.97560975609755
+uci_cleveland_heart,0,fbs,1,23,164,164,14.024390243902438,14.024390243902438
+uci_cleveland_heart,0,exang,0,141,164,164,85.97560975609755,85.97560975609755
+uci_cleveland_heart,0,exang,1,23,164,164,14.024390243902438,14.024390243902438
+uci_cleveland_heart,0,cp,1,16,164,164,9.75609756097561,9.75609756097561
+uci_cleveland_heart,0,cp,2,41,164,164,25.0,25.0
+uci_cleveland_heart,0,cp,3,68,164,164,41.46341463414634,41.46341463414634
+uci_cleveland_heart,0,cp,4,39,164,164,23.78048780487805,23.78048780487805
+uci_cleveland_heart,0,restecg,0,95,164,164,57.926829268292686,57.926829268292686
+uci_cleveland_heart,0,restecg,1,1,164,164,0.6097560975609756,0.6097560975609756
+uci_cleveland_heart,0,restecg,2,68,164,164,41.46341463414634,41.46341463414634
+uci_cleveland_heart,0,slope,1,106,164,164,64.63414634146342,64.63414634146342
+uci_cleveland_heart,0,slope,2,49,164,164,29.87804878048781,29.87804878048781
+uci_cleveland_heart,0,slope,3,9,164,164,5.487804878048781,5.487804878048781
+uci_cleveland_heart,0,ca,0.0,130,161,164,79.26829268292683,80.74534161490683
+uci_cleveland_heart,0,ca,1.0,21,161,164,12.804878048780488,13.043478260869565
+uci_cleveland_heart,0,ca,2.0,7,161,164,4.2682926829268295,4.3478260869565215
+uci_cleveland_heart,0,ca,3.0,3,161,164,1.829268292682927,1.8633540372670807
+uci_cleveland_heart,0,ca,<missing>,3,161,164,1.829268292682927,
+uci_cleveland_heart,0,thal,3.0,129,163,164,78.65853658536585,79.14110429447852
+uci_cleveland_heart,0,thal,6.0,6,163,164,3.658536585365854,3.6809815950920246
+uci_cleveland_heart,0,thal,7.0,28,163,164,17.073170731707318,17.177914110429448
+uci_cleveland_heart,0,thal,<missing>,1,163,164,0.6097560975609756,
+uci_cleveland_heart,1,sex,0,25,139,139,17.985611510791365,17.985611510791365
+uci_cleveland_heart,1,sex,1,114,139,139,82.01438848920863,82.01438848920863
+uci_cleveland_heart,1,fbs,0,117,139,139,84.1726618705036,84.1726618705036
+uci_cleveland_heart,1,fbs,1,22,139,139,15.827338129496402,15.827338129496402
+uci_cleveland_heart,1,exang,0,63,139,139,45.32374100719424,45.32374100719424
+uci_cleveland_heart,1,exang,1,76,139,139,54.67625899280576,54.67625899280576
+uci_cleveland_heart,1,cp,1,7,139,139,5.035971223021583,5.035971223021583
+uci_cleveland_heart,1,cp,2,9,139,139,6.474820143884892,6.474820143884892
+uci_cleveland_heart,1,cp,3,18,139,139,12.949640287769784,12.949640287769784
+uci_cleveland_heart,1,cp,4,105,139,139,75.53956834532374,75.53956834532374
+uci_cleveland_heart,1,restecg,0,56,139,139,40.28776978417266,40.28776978417266
+uci_cleveland_heart,1,restecg,1,3,139,139,2.158273381294964,2.158273381294964
+uci_cleveland_heart,1,restecg,2,80,139,139,57.55395683453237,57.55395683453237
+uci_cleveland_heart,1,slope,1,36,139,139,25.899280575539567,25.899280575539567
+uci_cleveland_heart,1,slope,2,91,139,139,65.46762589928058,65.46762589928058
+uci_cleveland_heart,1,slope,3,12,139,139,8.633093525179856,8.633093525179856
+uci_cleveland_heart,1,ca,0.0,46,138,139,33.093525179856115,33.333333333333336
+uci_cleveland_heart,1,ca,1.0,44,138,139,31.654676258992804,31.88405797101449
+uci_cleveland_heart,1,ca,2.0,31,138,139,22.30215827338129,22.463768115942027
+uci_cleveland_heart,1,ca,3.0,17,138,139,12.23021582733813,12.318840579710145
+uci_cleveland_heart,1,ca,<missing>,1,138,139,0.7194244604316546,
+uci_cleveland_heart,1,thal,3.0,37,138,139,26.618705035971225,26.81159420289855
+uci_cleveland_heart,1,thal,6.0,12,138,139,8.633093525179856,8.695652173913043
+uci_cleveland_heart,1,thal,7.0,89,138,139,64.02877697841727,64.4927536231884
+uci_cleveland_heart,1,thal,<missing>,1,138,139,0.7194244604316546,
+uci_early_diabetes,Negative,Polyuria,No,185,200,200,92.5,92.5
+uci_early_diabetes,Negative,Polyuria,Yes,15,200,200,7.5,7.5
+uci_early_diabetes,Negative,Polydipsia,No,192,200,200,96.0,96.0
+uci_early_diabetes,Negative,Polydipsia,Yes,8,200,200,4.0,4.0
+uci_early_diabetes,Negative,sudden weight loss,No,171,200,200,85.5,85.5
+uci_early_diabetes,Negative,sudden weight loss,Yes,29,200,200,14.5,14.5
+uci_early_diabetes,Negative,weakness,No,113,200,200,56.5,56.5
+uci_early_diabetes,Negative,weakness,Yes,87,200,200,43.5,43.5
+uci_early_diabetes,Negative,Polyphagia,No,152,200,200,76.0,76.0
+uci_early_diabetes,Negative,Polyphagia,Yes,48,200,200,24.0,24.0
+uci_early_diabetes,Negative,Genital thrush,No,167,200,200,83.5,83.5
+uci_early_diabetes,Negative,Genital thrush,Yes,33,200,200,16.5,16.5
+uci_early_diabetes,Negative,visual blurring,No,142,200,200,71.0,71.0
+uci_early_diabetes,Negative,visual blurring,Yes,58,200,200,29.0,29.0
+uci_early_diabetes,Negative,Itching,No,101,200,200,50.5,50.5
+uci_early_diabetes,Negative,Itching,Yes,99,200,200,49.5,49.5
+uci_early_diabetes,Negative,Irritability,No,184,200,200,92.0,92.0
+uci_early_diabetes,Negative,Irritability,Yes,16,200,200,8.0,8.0
+uci_early_diabetes,Negative,delayed healing,No,114,200,200,57.0,57.0
+uci_early_diabetes,Negative,delayed healing,Yes,86,200,200,43.0,43.0
+uci_early_diabetes,Negative,partial paresis,No,168,200,200,84.0,84.0
+uci_early_diabetes,Negative,partial paresis,Yes,32,200,200,16.0,16.0
+uci_early_diabetes,Negative,muscle stiffness,No,140,200,200,70.0,70.0
+uci_early_diabetes,Negative,muscle stiffness,Yes,60,200,200,30.0,30.0
+uci_early_diabetes,Negative,Alopecia,No,99,200,200,49.5,49.5
+uci_early_diabetes,Negative,Alopecia,Yes,101,200,200,50.5,50.5
+uci_early_diabetes,Negative,Obesity,No,173,200,200,86.5,86.5
+uci_early_diabetes,Negative,Obesity,Yes,27,200,200,13.5,13.5
+uci_early_diabetes,Negative,Gender,Female,19,200,200,9.5,9.5
+uci_early_diabetes,Negative,Gender,Male,181,200,200,90.5,90.5
+uci_early_diabetes,Positive,Polyuria,No,77,320,320,24.0625,24.0625
+uci_early_diabetes,Positive,Polyuria,Yes,243,320,320,75.9375,75.9375
+uci_early_diabetes,Positive,Polydipsia,No,95,320,320,29.6875,29.6875
+uci_early_diabetes,Positive,Polydipsia,Yes,225,320,320,70.3125,70.3125
+uci_early_diabetes,Positive,sudden weight loss,No,132,320,320,41.25,41.25
+uci_early_diabetes,Positive,sudden weight loss,Yes,188,320,320,58.75,58.75
+uci_early_diabetes,Positive,weakness,No,102,320,320,31.875,31.875
+uci_early_diabetes,Positive,weakness,Yes,218,320,320,68.125,68.125
+uci_early_diabetes,Positive,Polyphagia,No,131,320,320,40.9375,40.9375
+uci_early_diabetes,Positive,Polyphagia,Yes,189,320,320,59.0625,59.0625
+uci_early_diabetes,Positive,Genital thrush,No,237,320,320,74.0625,74.0625
+uci_early_diabetes,Positive,Genital thrush,Yes,83,320,320,25.9375,25.9375
+uci_early_diabetes,Positive,visual blurring,No,145,320,320,45.3125,45.3125
+uci_early_diabetes,Positive,visual blurring,Yes,175,320,320,54.6875,54.6875
+uci_early_diabetes,Positive,Itching,No,166,320,320,51.875,51.875
+uci_early_diabetes,Positive,Itching,Yes,154,320,320,48.125,48.125
+uci_early_diabetes,Positive,Irritability,No,210,320,320,65.625,65.625
+uci_early_diabetes,Positive,Irritability,Yes,110,320,320,34.375,34.375
+uci_early_diabetes,Positive,delayed healing,No,167,320,320,52.1875,52.1875
+uci_early_diabetes,Positive,delayed healing,Yes,153,320,320,47.8125,47.8125
+uci_early_diabetes,Positive,partial paresis,No,128,320,320,40.0,40.0
+uci_early_diabetes,Positive,partial paresis,Yes,192,320,320,60.0,60.0
+uci_early_diabetes,Positive,muscle stiffness,No,185,320,320,57.8125,57.8125
+uci_early_diabetes,Positive,muscle stiffness,Yes,135,320,320,42.1875,42.1875
+uci_early_diabetes,Positive,Alopecia,No,242,320,320,75.625,75.625
+uci_early_diabetes,Positive,Alopecia,Yes,78,320,320,24.375,24.375
+uci_early_diabetes,Positive,Obesity,No,259,320,320,80.9375,80.9375
+uci_early_diabetes,Positive,Obesity,Yes,61,320,320,19.0625,19.0625
+uci_early_diabetes,Positive,Gender,Female,173,320,320,54.0625,54.0625
+uci_early_diabetes,Positive,Gender,Male,147,320,320,45.9375,45.9375
+kaggle_stroke,0,hypertension,0,4429,4861,4861,91.11293972433656,91.11293972433656
+kaggle_stroke,0,hypertension,1,432,4861,4861,8.887060275663444,8.887060275663444
+kaggle_stroke,0,heart_disease,0,4632,4861,4861,95.28903517794691,95.28903517794691
+kaggle_stroke,0,heart_disease,1,229,4861,4861,4.710964822053075,4.710964822053075
+kaggle_stroke,0,ever_married,No,1728,4861,4861,35.548241102653776,35.548241102653776
+kaggle_stroke,0,ever_married,Yes,3133,4861,4861,64.45175889734622,64.45175889734622
+kaggle_stroke,0,gender,Female,2853,4861,4861,58.69162723719399,58.69162723719399
+kaggle_stroke,0,gender,Male,2007,4861,4861,41.28780086401975,41.28780086401975
+kaggle_stroke,0,gender,Other,1,4861,4861,0.0205718987862579,0.0205718987862579
+kaggle_stroke,0,work_type,Govt_job,624,4861,4861,12.836864842624976,12.836864842624976
+kaggle_stroke,0,work_type,Never_worked,22,4861,4861,0.4525817732976753,0.4525817732976753
+kaggle_stroke,0,work_type,Private,2776,4861,4861,57.10759103065213,57.10759103065213
+kaggle_stroke,0,work_type,Self-employed,754,4861,4861,15.51121168483851,15.51121168483851
+kaggle_stroke,0,work_type,children,685,4861,4861,14.09175066858671,14.09175066858671
+kaggle_stroke,0,Residence_type,Rural,2400,4861,4861,49.37255708701913,49.37255708701913
+kaggle_stroke,0,Residence_type,Urban,2461,4861,4861,50.62744291298087,50.62744291298087
+kaggle_stroke,0,smoking_status,<missing>,1497,3364,4861,30.796132483028185,
+kaggle_stroke,0,smoking_status,formerly smoked,815,3364,4861,16.766097510800247,24.227110582639718
+kaggle_stroke,0,smoking_status,never smoked,1802,3364,4861,37.07056161283686,53.56718192627824
+kaggle_stroke,0,smoking_status,smokes,747,3364,4861,15.367208393334703,22.205707491082045
+kaggle_stroke,1,hypertension,0,183,249,249,73.49397590361446,73.49397590361446
+kaggle_stroke,1,hypertension,1,66,249,249,26.50602409638554,26.50602409638554
+kaggle_stroke,1,heart_disease,0,202,249,249,81.12449799196787,81.12449799196787
+kaggle_stroke,1,heart_disease,1,47,249,249,18.87550200803213,18.87550200803213
+kaggle_stroke,1,ever_married,No,29,249,249,11.646586345381523,11.646586345381523
+kaggle_stroke,1,ever_married,Yes,220,249,249,88.35341365461848,88.35341365461848
+kaggle_stroke,1,gender,Female,141,249,249,56.62650602409639,56.62650602409639
+kaggle_stroke,1,gender,Male,108,249,249,43.373493975903614,43.373493975903614
+kaggle_stroke,1,work_type,Govt_job,33,249,249,13.25301204819277,13.25301204819277
+kaggle_stroke,1,work_type,Private,149,249,249,59.83935742971887,59.83935742971887
+kaggle_stroke,1,work_type,Self-employed,65,249,249,26.10441767068273,26.10441767068273
+kaggle_stroke,1,work_type,children,2,249,249,0.8032128514056225,0.8032128514056225
+kaggle_stroke,1,Residence_type,Rural,114,249,249,45.78313253012048,45.78313253012048
+kaggle_stroke,1,Residence_type,Urban,135,249,249,54.21686746987952,54.21686746987952
+kaggle_stroke,1,smoking_status,<missing>,47,202,249,18.87550200803213,
+kaggle_stroke,1,smoking_status,formerly smoked,70,202,249,28.11244979919679,34.65346534653465
+kaggle_stroke,1,smoking_status,never smoked,90,202,249,36.14457831325301,44.55445544554456
+kaggle_stroke,1,smoking_status,smokes,42,202,249,16.867469879518072,20.792079207920796

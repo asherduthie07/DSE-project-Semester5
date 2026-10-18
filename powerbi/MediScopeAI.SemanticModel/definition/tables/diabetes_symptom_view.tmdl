@@ -1,0 +1,44 @@
+table diabetes_symptom_view
+	column dataset_id
+		dataType: string
+		sourceColumn: dataset_id
+		summarizeBy: none
+
+	column symptom
+		dataType: string
+		sourceColumn: symptom
+		summarizeBy: none
+
+	column class
+		dataType: string
+		sourceColumn: class
+		summarizeBy: none
+
+	column yes_n
+		dataType: int64
+		sourceColumn: yes_n
+		summarizeBy: none
+
+	column class_n
+		dataType: int64
+		sourceColumn: class_n
+		summarizeBy: none
+
+	column yes_pct
+		dataType: double
+		sourceColumn: yes_pct
+		summarizeBy: none
+
+	measure 'Total yes_pct' = AVERAGE(diabetes_symptom_view[yes_pct])
+		formatString: #,##0.00
+
+	partition diabetes_symptom_view = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "\diabetes_symptoms.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				Typed = Table.TransformColumnTypes(Nulls, {{"dataset_id", type text}, {"symptom", type text}, {"class", type text}, {"yes_n", Int64.Type}, {"class_n", Int64.Type}, {"yes_pct", type number}}, "en-US"),
+				Filtered = Table.SelectRows(Typed, each [dataset_id] = "uci_early_diabetes")
+			in Filtered
