@@ -1,0 +1,82 @@
+{
+  "alpha": 0.05,
+  "dataset_id": "uci_early_diabetes",
+  "dataset_name": "UCI Early Stage Diabetes Risk Prediction",
+  "facts": {
+    "distinct_profiles": 251,
+    "identical_profiles": 269,
+    "independence_warning": "No participant identifier: identical profiles may be distinct people or repeat records. Retained; inferential independence cannot be verified."
+  },
+  "figure_paths": [
+    "reports/figures/eda/uci_early_diabetes_outcome.png",
+    "reports/figures/eda/uci_early_diabetes_age_histogram.png",
+    "reports/figures/eda/uci_early_diabetes_age_boxplot.png",
+    "reports/figures/eda/uci_early_diabetes_gender_frequency.png",
+    "reports/figures/eda/uci_early_diabetes_polyuria_frequency.png",
+    "reports/figures/eda/uci_early_diabetes_symptom_yes_by_class.png"
+  ],
+  "hypotheses": [],
+  "records": "real-world",
+  "skipped_features_and_policies": {
+    "uci_early_diabetes": {
+      "categorical_policy": "registered binary/nominal features only; complete cases; exploratory p-values BH-adjusted within table; small expected cells flagged",
+      "constant_categorical": [],
+      "constant_numeric": [],
+      "numeric_policy": "registered continuous features only; pairwise complete cases; exploratory p-values BH-adjusted within table"
+    }
+  },
+  "source_sha256": "67594c0f11257688b57493798e70737b7156ba37a2e6ac75507ae3a35221a388",
+  "source_url": "https://archive.ics.uci.edu/dataset/529/early+stage+diabetes+risk+prediction",
+  "strongest_associations": [
+    {
+      "description": "point_biserial class_binary vs Age: r=0.109, n=520; exploratory association only."
+    },
+    {
+      "description": "Polyuria vs class: Cramer's V=0.666, n=520, 0 expected cells <5; exploratory association only."
+    },
+    {
+      "description": "Polydipsia vs class: Cramer's V=0.649, n=520, 0 expected cells <5; exploratory association only."
+    }
+  ],
+  "table_paths": {
+    "categorical": "reports/tables/eda/uci_early_diabetes_categorical.csv",
+    "categorical_associations": "reports/tables/eda/uci_early_diabetes_categorical_associations.csv",
+    "categorical_by_outcome": "reports/tables/eda/uci_early_diabetes_categorical_by_outcome.csv",
+    "correlations": "reports/tables/eda/uci_early_diabetes_correlations.csv",
+    "numeric": "reports/tables/eda/uci_early_diabetes_numeric.csv",
+    "numeric_by_outcome": "reports/tables/eda/uci_early_diabetes_numeric_by_outcome.csv",
+    "outcome": "reports/tables/eda/uci_early_diabetes_outcome.csv",
+    "pearson_matrix": "reports/tables/eda/uci_early_diabetes_pearson_matrix.csv",
+    "spearman_matrix": "reports/tables/eda/uci_early_diabetes_spearman_matrix.csv",
+    "symptom_yes_by_class": "reports/tables/eda/uci_early_diabetes_symptom_yes_by_class.csv",
+    "unique_profile_class_counts": "reports/tables/eda/uci_early_diabetes_unique_profile_class_counts.csv"
+  },
+  "tables": {
+    "diabetes_data_upload.csv": {
+      "columns": 17,
+      "dtypes": {
+        "Age": "int64",
+        "Alopecia": "str",
+        "Gender": "str",
+        "Genital thrush": "str",
+        "Irritability": "str",
+        "Itching": "str",
+        "Obesity": "str",
+        "Polydipsia": "str",
+        "Polyphagia": "str",
+        "Polyuria": "str",
+        "class": "str",
+        "delayed healing": "str",
+        "muscle stiffness": "str",
+        "partial paresis": "str",
+        "sudden weight loss": "str",
+        "visual blurring": "str",
+        "weakness": "str"
+      },
+      "exact_duplicates": 269,
+      "missing": {},
+      "prepared_sha256": "fba09cdce359ada29bf87d8def1a7a32d956f793e2176c9fdcf7d004aba2f76e",
+      "rows": 520
+    }
+  }
+}

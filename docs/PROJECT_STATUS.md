@@ -1,6 +1,14 @@
 # Project status
 
-Updated: 2026-10-18 (Phase I)
+Updated: 2026-10-18 (Phase II)
+
+## Completed in Phase II
+
+- Added reproducible semantics-aware descriptive statistics, Pearson/Spearman/point-biserial correlations, categorical chi-square/Cramér V, Benjamini–Hochberg adjustment for exploratory association tables, and three preregistered primary hypothesis tests with effects, confidence intervals, assumptions and trimmed Welch sensitivity checks.
+- Added checksummed Phase I CSV loading, CLI `mediscope eda --dataset ...|all`, dataset-specific heart/diabetes/stroke/Synthea analyses, and 200 dpi supporting figures. Synthea patient and encounter denominators remain distinct; `Unknown` stroke smoking responses remain missing.
+- Generated 4 JSON and 4 Markdown EDA reports, 49 CSV tables and 31 PNG figures; created a teaching notebook and Phase II methodology, findings, verification and macOS run guide.
+- Phase II suite: **13 passed**; complete suite: **33 passed**; independent Phase I output verifier: **PASS, 0 errors**; `pip check`: no broken requirements. Repeated all-dataset analysis produced **88 byte-identical artifacts** in this environment.
+- Actual findings and caveats are recorded in `docs/PHASE2_FINDINGS.md` and `docs/PHASE2_VERIFICATION.md`. This analysis is research-only and not clinically validated.
 
 ## Completed in Phase 0
 
@@ -39,7 +47,6 @@ Updated: 2026-10-18 (Phase I)
 
 ## Upcoming, pending approval
 
-- Exploratory data analysis.
 - Statistical visuals and Power BI.
 - Leakage-safe model training and experimental evaluation.
 - MongoDB, Hadoop/HDFS/MapReduce.

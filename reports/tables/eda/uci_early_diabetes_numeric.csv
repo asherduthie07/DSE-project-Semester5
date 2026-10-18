@@ -1,0 +1,2 @@
+group,feature,rows,n,missing_n,missing_pct,mean,median,mode,min,max,range,q1,q3,iqr,variance,std,skewness
+all,Age,520,520,0,0.0,48.02884615384615,47.5,,16.0,90.0,74.0,39.0,57.0,18.0,147.65812583370388,12.151465995249458,0.3293593578272701

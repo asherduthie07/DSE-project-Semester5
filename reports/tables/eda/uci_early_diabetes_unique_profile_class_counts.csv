@@ -1,0 +1,3 @@
+group,feature,category,count,nonmissing_n,all_n,pct_all,pct_nonmissing
+all,class,Negative,78,251,251,31.07569721115538,31.07569721115538
+all,class,Positive,173,251,251,68.92430278884463,68.92430278884463

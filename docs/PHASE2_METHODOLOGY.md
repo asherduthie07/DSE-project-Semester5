@@ -1,0 +1,29 @@
+# Phase II methodology
+
+## Scope and provenance
+
+Phase II uses only the five Phase I prepared CSVs and the registered source descriptions in `data/metadata/datasets.json`. `mediscope eda` checks each CSV's SHA-256, ordered columns, row count, target domain, and Synthea keys against Phase I quality JSON before analysis. Raw ZIPs and prepared CSVs are read only. Source origin remains subject to the caveats in `docs/DATA_SOURCES.md`; Synthea records are simulated.
+
+The code is in `mediscope/eda/`: `stats.py` (summaries and associations), `hypotheses.py` (the three primary tests), `runner.py` (input checks, dataset-specific analyses and deterministic exports), and `figures.py` (200 dpi plots). CSV and JSON contain the underlying numbers; captions describe denominators. No imputation, normalization, model fitting or train/test split is performed in this exploratory phase.
+
+## Descriptive methods
+
+Continuous variables follow Phase I's `TableSchema.continuous`. Means, medians, quartiles, ranges, sample variances (`ddof=1`), sample SDs, IQRs and unbiased sample skew estimates use nonmissing observations. A numeric mode is given only for a unique mode of a variable with at most 20 distinct values; otherwise it is null. Categorical frequency tables show `count`, `all_n`, `nonmissing_n`, percent of all rows and percent of known responses. Missing responses have no nonmissing percentage. The class target is categorical, as are Cleveland `num`, sex, chest-pain, vessel and thal codes; stroke `id` and Synthea identifiers are never analyzed as measurements. Latitude and longitude are summarized as geographic coordinates but excluded from association analysis.
+
+Heart disease is defined by the Phase I rule `heart_disease_binary = int(num > 0)`; `num` is preserved. Diabetes positive/negative class is used as supplied. Stroke `Unknown` smoking responses are already missing in Phase I; frequency tables show `<missing>` explicitly, while association tests use complete cases. The 269 identical diabetes rows are retained because participant identity cannot be established. Patient-level Synthea counts use distinct patient IDs; encounter-level counts use unique encounter IDs. Age at encounter uses the timestamp minus birthdate divided by 365.2425 days, rejecting ages outside 0–120. Monthly trends count encounters, not disease incidence. Only actual reason codes/descriptions are summarized.
+
+## Association methods
+
+Pearson and Spearman matrices use registered continuous features and pairwise complete cases. Point-biserial correlations use each continuous feature against a binary outcome. For diabetes only, `class_binary` is an analysis-only indicator (Positive=1, Negative=0); the original `class` is unchanged. Nominal/binary features are cross-tabulated against outcome and assessed with Pearson chi-square and Cramér V. Tables give n, degrees of freedom, minimum expected count and number of cells below five; weak chi-square assumptions are therefore visible and those exploratory p-values should be read cautiously. Constant features are recorded as skipped. All exploratory association p-values receive Benjamini–Hochberg false discovery rate adjustment **within each exported association table**; comparisons across tables are descriptive. Correlations and cross-sectional associations are not causal evidence.
+
+## Preregistered primary questions
+
+- **H1:** Is mean age different between Cleveland participants with and without recorded heart disease? H0 equal population means; H1 different means. Two-sided Welch t-test, positive minus negative mean difference, Welch–Satterthwaite degrees of freedom and t-based 95% CI. Hedges g uses pooled sample SD with small-sample correction as a descriptive standardized effect.
+- **H2:** Are hypertension and stroke status independent? H0 independence; H1 association. Two-sided Pearson chi-square without continuity correction when every expected cell is at least five; otherwise two-sided Fisher exact for the 2×2 table. Report chi-square (or Fisher odds ratio), phi, exposed/unexposed stroke proportions and risk difference. The odds-ratio 95% CI is approximate log-Wald; zero observed cells receive 0.5 continuity addition for the effect and interval, while Fisher's p-value still uses the original cells.
+- **H3:** Is mean average glucose different between stroke-positive and stroke-negative records? H0 equal population means; H1 different means. Same Welch and effect/CI method as H1. The source registry does not verify the glucose measurement unit, so tables retain the source scale and charts label it unspecified.
+
+Alpha is 0.05 by default. Welch assumes independent observations and a meaningful mean; unequal variances are allowed. Group skew is recorded. A two-sided 10% trimmed Welch/Yuen test is a **sensitivity check** for H1/H3, not the primary decision. The primary three tests were specified by the user before inspection; no correction is applied to their three p-values. If a familywise interpretation of all three is needed, compare to Bonferroni alpha 0.05/3; this is a conservative post-hoc sensitivity view, not a changed primary protocol. Diabetes duplicate profiles, unverified stroke provenance, historical Cleveland recruitment and Synthea simulation limit population inference. Statistical significance alone does not show clinical or practical importance.
+
+## Reproducibility and reporting
+
+`mediscope eda --dataset all` writes four JSON and four Markdown reports, dataset-specific CSV summaries and PNG figures. Outputs contain no wall-clock timestamps or random sampling. Repeated runs on unchanged inputs should be byte-identical for JSON/CSV; tests check selected artifacts. Figure metadata avoids timestamps; visual inspection is still required. See `docs/PHASE2_VERIFICATION.md` for executed commands and observed results.

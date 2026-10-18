@@ -140,6 +140,10 @@ def main(argv: list[str] | None = None) -> int:
     prepare.add_argument("--config", type=Path, default=PROJECT_ROOT / "data" / "metadata" / "preparation_config.json")
     prepare.add_argument("--raw-dir", type=Path, default=PROJECT_ROOT / "data" / "raw")
     prepare.add_argument("--output-root", type=Path, default=PROJECT_ROOT)
+    eda = subcommands.add_parser("eda", help="Run Phase II exploratory analysis on prepared CSVs")
+    eda.add_argument("--dataset", default="all", help="Registry dataset ID or 'all' (default)")
+    eda.add_argument("--alpha", type=float, default=0.05, help="Preregistered significance level (default: 0.05)")
+    eda.add_argument("--output-root", type=Path, default=PROJECT_ROOT)
     args = parser.parse_args(argv)
     if args.command == "health":
         report: Any = health()
@@ -149,6 +153,15 @@ def main(argv: list[str] | None = None) -> int:
         if not selected:
             parser.exit(2, f"Unknown dataset {args.dataset!r}; choose one of {[item['id'] for item in datasets]}\n")
         report = [audit_dataset(dataset, args.raw_dir) for dataset in selected]
+    elif args.command == "eda":
+        from .eda import EDAError, run_eda
+
+        try:
+            if not 0 < args.alpha < 1:
+                raise EDAError("alpha must be strictly between 0 and 1")
+            report = run_eda(args.dataset, args.alpha, args.output_root)
+        except (EDAError, OSError, ValueError) as error:
+            parser.exit(2, f"EDA failed: {error}\n")
     else:
         from .preparation import PreparationError, load_config, prepare_dataset
         from .reports import export_dataset

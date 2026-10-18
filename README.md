@@ -2,6 +2,25 @@
 
 Research-only Smart Healthcare Analytics and Disease Prediction System. Any later model output is for academic demonstration and is not clinically validated or medical advice.
 
+## Phase II: exploratory data analysis
+
+Phase II reads the five verified Phase I prepared CSVs. It does not alter raw or prepared data. From the project root on macOS:
+
+```bash
+source .venv/bin/activate
+python -m pip install -e '.[dev,prep,eda]'
+mediscope eda --help
+mediscope eda --dataset uci_cleveland_heart
+mediscope eda --dataset uci_early_diabetes
+mediscope eda --dataset kaggle_stroke
+mediscope eda --dataset synthea_csv
+mediscope eda --dataset all
+python -m pytest -q
+python scripts/verify_phase1_outputs.py
+```
+
+Analysis summaries are in `reports/eda/`, CSV evidence tables in `reports/tables/eda/`, and 200 dpi figures in `reports/figures/eda/`. The three preregistered tests use alpha 0.05 by default; `--alpha 0.01` changes the reported confidence level and decision threshold. See [Phase II run guide](docs/HOW_TO_RUN_PHASE2.md), [methods](docs/PHASE2_METHODOLOGY.md), [findings](docs/PHASE2_FINDINGS.md), and [verification](docs/PHASE2_VERIFICATION.md).
+
 ## Phase I: data preparation
 
 Phase I uses the existing raw ZIPs. Install the preparation dependencies and create all five typed CSV tables, data-quality reports, tables, and paired boxplots:

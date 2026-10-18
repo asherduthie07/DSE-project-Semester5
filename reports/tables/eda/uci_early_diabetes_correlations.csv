@@ -1,0 +1,2 @@
+method,left,right,n,coefficient,p_value,missing_policy,bh_q_value
+point_biserial,class_binary,Age,520,0.10867899854466116,0.013151253540112649,pairwise complete case,0.013151253540112649

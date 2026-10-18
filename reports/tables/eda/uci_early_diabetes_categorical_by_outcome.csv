@@ -1,0 +1,61 @@
+group,feature,category,count,nonmissing_n,all_n,pct_all,pct_nonmissing
+Negative,Polyuria,No,185,200,200,92.5,92.5
+Negative,Polyuria,Yes,15,200,200,7.5,7.5
+Negative,Polydipsia,No,192,200,200,96.0,96.0
+Negative,Polydipsia,Yes,8,200,200,4.0,4.0
+Negative,sudden weight loss,No,171,200,200,85.5,85.5
+Negative,sudden weight loss,Yes,29,200,200,14.5,14.5
+Negative,weakness,No,113,200,200,56.5,56.5
+Negative,weakness,Yes,87,200,200,43.5,43.5
+Negative,Polyphagia,No,152,200,200,76.0,76.0
+Negative,Polyphagia,Yes,48,200,200,24.0,24.0
+Negative,Genital thrush,No,167,200,200,83.5,83.5
+Negative,Genital thrush,Yes,33,200,200,16.5,16.5
+Negative,visual blurring,No,142,200,200,71.0,71.0
+Negative,visual blurring,Yes,58,200,200,29.0,29.0
+Negative,Itching,No,101,200,200,50.5,50.5
+Negative,Itching,Yes,99,200,200,49.5,49.5
+Negative,Irritability,No,184,200,200,92.0,92.0
+Negative,Irritability,Yes,16,200,200,8.0,8.0
+Negative,delayed healing,No,114,200,200,57.0,57.0
+Negative,delayed healing,Yes,86,200,200,43.0,43.0
+Negative,partial paresis,No,168,200,200,84.0,84.0
+Negative,partial paresis,Yes,32,200,200,16.0,16.0
+Negative,muscle stiffness,No,140,200,200,70.0,70.0
+Negative,muscle stiffness,Yes,60,200,200,30.0,30.0
+Negative,Alopecia,No,99,200,200,49.5,49.5
+Negative,Alopecia,Yes,101,200,200,50.5,50.5
+Negative,Obesity,No,173,200,200,86.5,86.5
+Negative,Obesity,Yes,27,200,200,13.5,13.5
+Negative,Gender,Female,19,200,200,9.5,9.5
+Negative,Gender,Male,181,200,200,90.5,90.5
+Positive,Polyuria,No,77,320,320,24.0625,24.0625
+Positive,Polyuria,Yes,243,320,320,75.9375,75.9375
+Positive,Polydipsia,No,95,320,320,29.6875,29.6875
+Positive,Polydipsia,Yes,225,320,320,70.3125,70.3125
+Positive,sudden weight loss,No,132,320,320,41.25,41.25
+Positive,sudden weight loss,Yes,188,320,320,58.75,58.75
+Positive,weakness,No,102,320,320,31.875,31.875
+Positive,weakness,Yes,218,320,320,68.125,68.125
+Positive,Polyphagia,No,131,320,320,40.9375,40.9375
+Positive,Polyphagia,Yes,189,320,320,59.0625,59.0625
+Positive,Genital thrush,No,237,320,320,74.0625,74.0625
+Positive,Genital thrush,Yes,83,320,320,25.9375,25.9375
+Positive,visual blurring,No,145,320,320,45.3125,45.3125
+Positive,visual blurring,Yes,175,320,320,54.6875,54.6875
+Positive,Itching,No,166,320,320,51.875,51.875
+Positive,Itching,Yes,154,320,320,48.125,48.125
+Positive,Irritability,No,210,320,320,65.625,65.625
+Positive,Irritability,Yes,110,320,320,34.375,34.375
+Positive,delayed healing,No,167,320,320,52.1875,52.1875
+Positive,delayed healing,Yes,153,320,320,47.8125,47.8125
+Positive,partial paresis,No,128,320,320,40.0,40.0
+Positive,partial paresis,Yes,192,320,320,60.0,60.0
+Positive,muscle stiffness,No,185,320,320,57.8125,57.8125
+Positive,muscle stiffness,Yes,135,320,320,42.1875,42.1875
+Positive,Alopecia,No,242,320,320,75.625,75.625
+Positive,Alopecia,Yes,78,320,320,24.375,24.375
+Positive,Obesity,No,259,320,320,80.9375,80.9375
+Positive,Obesity,Yes,61,320,320,19.0625,19.0625
+Positive,Gender,Female,173,320,320,54.0625,54.0625
+Positive,Gender,Male,147,320,320,45.9375,45.9375

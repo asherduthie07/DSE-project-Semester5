@@ -1,0 +1,29 @@
+symptom,class,yes_n,class_n,yes_pct
+Polyuria,Negative,15,200,7.5
+Polyuria,Positive,243,320,75.9375
+Polydipsia,Negative,8,200,4.0
+Polydipsia,Positive,225,320,70.3125
+sudden weight loss,Negative,29,200,14.499999999999998
+sudden weight loss,Positive,188,320,58.75
+weakness,Negative,87,200,43.5
+weakness,Positive,218,320,68.125
+Polyphagia,Negative,48,200,24.0
+Polyphagia,Positive,189,320,59.06249999999999
+Genital thrush,Negative,33,200,16.5
+Genital thrush,Positive,83,320,25.937500000000004
+visual blurring,Negative,58,200,28.999999999999996
+visual blurring,Positive,175,320,54.6875
+Itching,Negative,99,200,49.5
+Itching,Positive,154,320,48.125
+Irritability,Negative,16,200,8.0
+Irritability,Positive,110,320,34.375
+delayed healing,Negative,86,200,43.0
+delayed healing,Positive,153,320,47.8125
+partial paresis,Negative,32,200,16.0
+partial paresis,Positive,192,320,60.0
+muscle stiffness,Negative,60,200,30.0
+muscle stiffness,Positive,135,320,42.1875
+Alopecia,Negative,101,200,50.5
+Alopecia,Positive,78,320,24.375
+Obesity,Negative,27,200,13.5
+Obesity,Positive,61,320,19.0625

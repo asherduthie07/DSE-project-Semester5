@@ -1,0 +1,167 @@
+{
+  "alpha": 0.05,
+  "dataset_id": "kaggle_stroke",
+  "dataset_name": "Healthcare Stroke Prediction",
+  "facts": {
+    "imbalance_warning": "Class imbalance makes accuracy alone misleading in later modeling; no model is trained in Phase II.",
+    "smoking_unknown_recast_missing": 1544,
+    "stroke_positive_pct": 4.87279843444227
+  },
+  "figure_paths": [
+    "reports/figures/eda/kaggle_stroke_outcome.png",
+    "reports/figures/eda/kaggle_stroke_age_histogram.png",
+    "reports/figures/eda/kaggle_stroke_age_boxplot.png",
+    "reports/figures/eda/kaggle_stroke_glucose_histogram.png",
+    "reports/figures/eda/kaggle_stroke_glucose_boxplot.png",
+    "reports/figures/eda/kaggle_stroke_bmi_boxplot.png",
+    "reports/figures/eda/kaggle_stroke_smoking_frequency.png",
+    "reports/figures/eda/kaggle_stroke_stroke_by_age_group.png",
+    "reports/figures/eda/kaggle_stroke_pearson_heatmap.png",
+    "reports/figures/eda/kaggle_stroke_spearman_heatmap.png"
+  ],
+  "hypotheses": [
+    {
+      "alpha": 0.05,
+      "alternative": "Hypertension and stroke are associated.",
+      "assumptions": "Independent records and mutually exclusive categories; expected-cell rule selects Fisher where needed. Odds-ratio interval is approximate.",
+      "ci_high": 4.982468912313182,
+      "ci_low": 2.744005395132909,
+      "ci_parameter": "odds ratio (approximate log-Wald interval)",
+      "effect_name": "odds ratio, hypertension versus no hypertension",
+      "effect_size": 3.697556162720097,
+      "feature": "hypertension",
+      "id": "H2",
+      "interpretation": "At alpha=0.05, reject H0. Observed stroke proportions were 13.25% with hypertension and 3.97% without (difference 9.29%). The odds ratio and its interval describe magnitude; statistical significance alone does not establish clinical importance or causation.",
+      "limitation": "Stroke source collection is unverified; cross-sectional association cannot establish temporal or causal direction.",
+      "method": "Pearson chi-square test, 1 df, no continuity correction (all expected cells >=5)",
+      "minimum_expected": 24.266536203522506,
+      "missing_policy": "complete cases; no target imputation",
+      "negative_n": 4612,
+      "null": "Hypertension and stroke are independent.",
+      "p_value": 6.068123323489793e-20,
+      "phi": 0.1279038234664802,
+      "positive_n": 498,
+      "question": "Is hypertension associated with stroke status?",
+      "risk_difference": 0.0928510224767239,
+      "statistic": 83.59647297303054,
+      "stroke_negative_n": 4861,
+      "stroke_positive_n": 249,
+      "stroke_risk_hypertension": 0.13253012048192772,
+      "stroke_risk_no_hypertension": 0.03967909800520382,
+      "table": {
+        "hypertension_no_stroke": 432,
+        "hypertension_stroke": 66,
+        "no_hypertension_no_stroke": 4429,
+        "no_hypertension_stroke": 183
+      },
+      "target": "stroke"
+    },
+    {
+      "alpha": 0.05,
+      "alternative": "Population mean glucose levels differ.",
+      "assumptions": "Independent observations; numeric measurements; Welch does not require equal variances. Skew and influential values assessed with group summaries and trimmed sensitivity.",
+      "ci_high": 35.574739185263454,
+      "ci_low": 19.923712188633676,
+      "ci_parameter": "positive minus negative population mean",
+      "df": 260.89394955038483,
+      "effect_name": "Hedges g (pooled-SD standardization)",
+      "effect_size": 0.6180416817194233,
+      "feature": "avg_glucose_level",
+      "id": "H3",
+      "interpretation": "At alpha=0.05, reject H0. Mean avg_glucose_level was 132.54 in the positive group (n=249) and 104.80 in the negative group (n=4861); difference 27.75. Consider the original units, effect size, CI and sampling limits for practical importance. The trimmed test is a sensitivity check, not a replacement primary test.",
+      "limitation": "Stroke source collection is unverified; skew, outliers and nonrandom sampling limit population inference.",
+      "mean_difference": 27.749225686948563,
+      "method": "two-sided Welch unequal-variance t-test",
+      "missing_policy": "complete cases for feature and target",
+      "negative_label": "0",
+      "negative_mean": 104.79551326887471,
+      "negative_median": 91.47,
+      "negative_n": 4861,
+      "negative_sd": 43.846068500276566,
+      "negative_skew": 1.6388693927306897,
+      "null": "Population mean glucose levels are equal.",
+      "p_value": 2.40143665636975e-11,
+      "positive_label": "1",
+      "positive_mean": 132.54473895582328,
+      "positive_median": 105.22,
+      "positive_n": 249,
+      "positive_sd": 61.92105558068222,
+      "positive_skew": 0.5571680770381952,
+      "question": "Does mean average glucose differ by stroke status?",
+      "sensitivity_method": "two-sided 10% trimmed Welch/Yuen test",
+      "sensitivity_p_value": 8.26351146055501e-11,
+      "statistic": 6.982411744792963,
+      "target": "stroke"
+    }
+  ],
+  "records": "unverified; do not assert real-world patient origin",
+  "skipped_features_and_policies": {
+    "kaggle_stroke": {
+      "categorical_policy": "registered binary/nominal features only; complete cases; exploratory p-values BH-adjusted within table; small expected cells flagged",
+      "constant_categorical": [],
+      "constant_numeric": [],
+      "numeric_policy": "registered continuous features only; pairwise complete cases; exploratory p-values BH-adjusted within table"
+    }
+  },
+  "source_sha256": "83c150178a7a10439862a66b2703869aadc11f201c359436ae1df77d2b5e7485",
+  "source_url": "https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset",
+  "strongest_associations": [
+    {
+      "description": "spearman age vs bmi: r=0.376, n=4909; exploratory association only."
+    },
+    {
+      "description": "pearson age vs bmi: r=0.333, n=4909; exploratory association only."
+    },
+    {
+      "description": "point_biserial stroke vs age: r=0.245, n=5110; exploratory association only."
+    },
+    {
+      "description": "heart_disease vs stroke: Cramer's V=0.135, n=5110, 0 expected cells <5; exploratory association only."
+    },
+    {
+      "description": "hypertension vs stroke: Cramer's V=0.128, n=5110, 0 expected cells <5; exploratory association only."
+    }
+  ],
+  "table_paths": {
+    "age_group_by_stroke": "reports/tables/eda/kaggle_stroke_age_group_by_stroke.csv",
+    "categorical": "reports/tables/eda/kaggle_stroke_categorical.csv",
+    "categorical_associations": "reports/tables/eda/kaggle_stroke_categorical_associations.csv",
+    "categorical_by_outcome": "reports/tables/eda/kaggle_stroke_categorical_by_outcome.csv",
+    "correlations": "reports/tables/eda/kaggle_stroke_correlations.csv",
+    "heart_disease_by_stroke": "reports/tables/eda/kaggle_stroke_heart_disease_by_stroke.csv",
+    "hypertension_by_stroke": "reports/tables/eda/kaggle_stroke_hypertension_by_stroke.csv",
+    "hypotheses": "reports/tables/eda/kaggle_stroke_hypotheses.csv",
+    "numeric": "reports/tables/eda/kaggle_stroke_numeric.csv",
+    "numeric_by_outcome": "reports/tables/eda/kaggle_stroke_numeric_by_outcome.csv",
+    "outcome": "reports/tables/eda/kaggle_stroke_outcome.csv",
+    "pearson_matrix": "reports/tables/eda/kaggle_stroke_pearson_matrix.csv",
+    "smoking_by_stroke": "reports/tables/eda/kaggle_stroke_smoking_by_stroke.csv",
+    "spearman_matrix": "reports/tables/eda/kaggle_stroke_spearman_matrix.csv"
+  },
+  "tables": {
+    "healthcare-dataset-stroke-data.csv": {
+      "columns": 12,
+      "dtypes": {
+        "Residence_type": "str",
+        "age": "float64",
+        "avg_glucose_level": "float64",
+        "bmi": "float64",
+        "ever_married": "str",
+        "gender": "str",
+        "heart_disease": "int64",
+        "hypertension": "int64",
+        "id": "int64",
+        "smoking_status": "str",
+        "stroke": "int64",
+        "work_type": "str"
+      },
+      "exact_duplicates": 0,
+      "missing": {
+        "bmi": 201,
+        "smoking_status": 1544
+      },
+      "prepared_sha256": "8031625058cfddb391e93633d50b9519775d796c7ad2e1000c813c359be9f1ed",
+      "rows": 5110
+    }
+  }
+}

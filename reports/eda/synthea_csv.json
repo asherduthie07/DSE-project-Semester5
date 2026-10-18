@@ -1,0 +1,145 @@
+{
+  "alpha": 0.05,
+  "dataset_id": "synthea_csv",
+  "dataset_name": "Synthea synthetic patients and encounters",
+  "facts": {
+    "distinct_patients": 1171,
+    "encounters": 53346,
+    "interpretation": "All records are simulated. Encounter counts are visits, not distinct people or disease incidence.",
+    "invalid_or_missing_age_at_encounter_n": 0,
+    "mean_encounters_per_patient": 45.55593509820666,
+    "median_encounters_per_patient": 27.0,
+    "orphan_encounters": 0,
+    "patients_with_zero_encounters": 0,
+    "reason_code_nonmissing_n": 13777,
+    "valid_age_at_encounter_n": 53346,
+    "valid_start_dates": 53346
+  },
+  "figure_paths": [
+    "reports/figures/eda/synthea_csv_patient_gender_frequency.png",
+    "reports/figures/eda/synthea_csv_encounter_class_frequency.png",
+    "reports/figures/eda/synthea_csv_encounters_per_patient.png",
+    "reports/figures/eda/synthea_csv_age_at_encounter.png",
+    "reports/figures/eda/synthea_csv_monthly_encounters.png",
+    "reports/figures/eda/synthea_csv_synthea_patients_pearson_heatmap.png",
+    "reports/figures/eda/synthea_csv_synthea_patients_spearman_heatmap.png",
+    "reports/figures/eda/synthea_csv_synthea_encounters_pearson_heatmap.png",
+    "reports/figures/eda/synthea_csv_synthea_encounters_spearman_heatmap.png"
+  ],
+  "hypotheses": [],
+  "records": "synthetic",
+  "skipped_features_and_policies": {
+    "synthea_encounters": {
+      "categorical_policy": "registered binary/nominal features only; complete cases; exploratory p-values BH-adjusted within table; small expected cells flagged",
+      "constant_categorical": [],
+      "constant_numeric": [],
+      "numeric_policy": "registered continuous features only; pairwise complete cases; exploratory p-values BH-adjusted within table"
+    },
+    "synthea_patients": {
+      "categorical_policy": "registered binary/nominal features only; complete cases; exploratory p-values BH-adjusted within table; small expected cells flagged",
+      "constant_categorical": [],
+      "constant_numeric": [],
+      "numeric_policy": "registered continuous features only; pairwise complete cases; exploratory p-values BH-adjusted within table"
+    }
+  },
+  "source_sha256": "4194b18c11eaedcf0d5d5dd448d8ac9661f14381e2ef9f109215dc42266cd38a",
+  "source_url": "https://synthetichealth.github.io/downloads.html",
+  "strongest_associations": [
+    {
+      "description": "spearman BASE_ENCOUNTER_COST vs TOTAL_CLAIM_COST: r=1.000, n=53346; exploratory association only."
+    },
+    {
+      "description": "pearson BASE_ENCOUNTER_COST vs TOTAL_CLAIM_COST: r=1.000, n=53346; exploratory association only."
+    },
+    {
+      "description": "spearman HEALTHCARE_EXPENSES vs HEALTHCARE_COVERAGE: r=0.596, n=1171; exploratory association only."
+    }
+  ],
+  "table_paths": {
+    "encounter_age": "reports/tables/eda/synthea_csv_encounter_age.csv",
+    "encounter_class": "reports/tables/eda/synthea_csv_encounter_class.csv",
+    "encounters_per_patient_distribution": "reports/tables/eda/synthea_csv_encounters_per_patient_distribution.csv",
+    "monthly_encounters": "reports/tables/eda/synthea_csv_monthly_encounters.csv",
+    "reason_description_top": "reports/tables/eda/synthea_csv_reason_description_top.csv",
+    "synthea_encounters_correlations": "reports/tables/eda/synthea_csv_synthea_encounters_correlations.csv",
+    "synthea_encounters_numeric": "reports/tables/eda/synthea_csv_synthea_encounters_numeric.csv",
+    "synthea_encounters_pearson_matrix": "reports/tables/eda/synthea_csv_synthea_encounters_pearson_matrix.csv",
+    "synthea_encounters_spearman_matrix": "reports/tables/eda/synthea_csv_synthea_encounters_spearman_matrix.csv",
+    "synthea_patients_correlations": "reports/tables/eda/synthea_csv_synthea_patients_correlations.csv",
+    "synthea_patients_numeric": "reports/tables/eda/synthea_csv_synthea_patients_numeric.csv",
+    "synthea_patients_pearson_matrix": "reports/tables/eda/synthea_csv_synthea_patients_pearson_matrix.csv",
+    "synthea_patients_spearman_matrix": "reports/tables/eda/synthea_csv_synthea_patients_spearman_matrix.csv"
+  },
+  "tables": {
+    "csv/encounters.csv": {
+      "columns": 15,
+      "dtypes": {
+        "BASE_ENCOUNTER_COST": "float64",
+        "CODE": "int64",
+        "DESCRIPTION": "str",
+        "ENCOUNTERCLASS": "str",
+        "Id": "str",
+        "ORGANIZATION": "str",
+        "PATIENT": "str",
+        "PAYER": "str",
+        "PAYER_COVERAGE": "float64",
+        "PROVIDER": "str",
+        "REASONCODE": "float64",
+        "REASONDESCRIPTION": "str",
+        "START": "str",
+        "STOP": "str",
+        "TOTAL_CLAIM_COST": "float64"
+      },
+      "exact_duplicates": 0,
+      "missing": {
+        "REASONCODE": 39569,
+        "REASONDESCRIPTION": 39569
+      },
+      "prepared_sha256": "c38b5c2f8a9440a00cd8470c397e47a44d4cc0dee3880c9906a0165932bbbd3f",
+      "rows": 53346
+    },
+    "csv/patients.csv": {
+      "columns": 25,
+      "dtypes": {
+        "ADDRESS": "str",
+        "BIRTHDATE": "str",
+        "BIRTHPLACE": "str",
+        "CITY": "str",
+        "COUNTY": "str",
+        "DEATHDATE": "str",
+        "DRIVERS": "str",
+        "ETHNICITY": "str",
+        "FIRST": "str",
+        "GENDER": "str",
+        "HEALTHCARE_COVERAGE": "float64",
+        "HEALTHCARE_EXPENSES": "float64",
+        "Id": "str",
+        "LAST": "str",
+        "LAT": "float64",
+        "LON": "float64",
+        "MAIDEN": "str",
+        "MARITAL": "str",
+        "PASSPORT": "str",
+        "PREFIX": "str",
+        "RACE": "str",
+        "SSN": "str",
+        "STATE": "str",
+        "SUFFIX": "str",
+        "ZIP": "float64"
+      },
+      "exact_duplicates": 0,
+      "missing": {
+        "DEATHDATE": 1000,
+        "DRIVERS": 213,
+        "MAIDEN": 840,
+        "MARITAL": 380,
+        "PASSPORT": 273,
+        "PREFIX": 244,
+        "SUFFIX": 1159,
+        "ZIP": 543
+      },
+      "prepared_sha256": "f9506feaf8eed0725d99d3421122424dbc5ed692cebb3cad6ef4eafa97f090d5",
+      "rows": 1171
+    }
+  }
+}

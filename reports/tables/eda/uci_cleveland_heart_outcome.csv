@@ -1,0 +1,3 @@
+group,feature,category,count,nonmissing_n,all_n,pct_all,pct_nonmissing
+all,heart_disease_binary,0,164,303,303,54.12541254125413,54.12541254125413
+all,heart_disease_binary,1,139,303,303,45.87458745874587,45.87458745874587

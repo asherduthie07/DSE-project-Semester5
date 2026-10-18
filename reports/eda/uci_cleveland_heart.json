@@ -1,0 +1,125 @@
+{
+  "alpha": 0.05,
+  "dataset_id": "uci_cleveland_heart",
+  "dataset_name": "UCI Cleveland Heart Disease",
+  "facts": {
+    "target_rule": "heart_disease_binary = 1 when original num > 0; num remains available but is not analyzed as continuous"
+  },
+  "figure_paths": [
+    "reports/figures/eda/uci_cleveland_heart_outcome.png",
+    "reports/figures/eda/uci_cleveland_heart_age_histogram.png",
+    "reports/figures/eda/uci_cleveland_heart_age_boxplot.png",
+    "reports/figures/eda/uci_cleveland_heart_chest_pain_frequency.png",
+    "reports/figures/eda/uci_cleveland_heart_pearson_heatmap.png",
+    "reports/figures/eda/uci_cleveland_heart_spearman_heatmap.png"
+  ],
+  "hypotheses": [
+    {
+      "alpha": 0.05,
+      "alternative": "Population mean ages differ.",
+      "assumptions": "Independent observations; numeric measurements; Welch does not require equal variances. Skew and influential values assessed with group summaries and trimmed sensitivity.",
+      "ci_high": 6.013385348594751,
+      "ci_low": 2.0676815052392516,
+      "ci_parameter": "positive minus negative population mean",
+      "df": 300.933900948868,
+      "effect_name": "Hedges g (pooled-SD standardization)",
+      "effect_size": 0.45668679802626555,
+      "feature": "age",
+      "id": "H1",
+      "interpretation": "At alpha=0.05, reject H0. Mean age was 56.63 in the positive group (n=139) and 52.59 in the negative group (n=164); difference 4.04. Consider the original units, effect size, CI and sampling limits for practical importance. The trimmed test is a sensitivity check, not a replacement primary test.",
+      "limitation": "Historical, small, nonrandom Cleveland sample; patient independence is assumed, not demonstrable.",
+      "mean_difference": 4.040533426917001,
+      "method": "two-sided Welch unequal-variance t-test",
+      "missing_policy": "complete cases for feature and target",
+      "negative_label": "0",
+      "negative_mean": 52.58536585365854,
+      "negative_median": 52.0,
+      "negative_n": 164,
+      "negative_sd": 9.511957240241179,
+      "negative_skew": 0.11695569139843265,
+      "null": "Population mean ages are equal.",
+      "p_value": 7.061439075547298e-05,
+      "positive_label": "1",
+      "positive_mean": 56.62589928057554,
+      "positive_median": 58.0,
+      "positive_n": 139,
+      "positive_sd": 7.938416391282098,
+      "positive_skew": -0.5581515332279089,
+      "question": "Does mean age differ by recorded heart disease?",
+      "sensitivity_method": "two-sided 10% trimmed Welch/Yuen test",
+      "sensitivity_p_value": 2.2965859779932516e-05,
+      "statistic": 4.0303470663221095,
+      "target": "heart_disease_binary"
+    }
+  ],
+  "records": "real-world",
+  "skipped_features_and_policies": {
+    "uci_cleveland_heart": {
+      "categorical_policy": "registered binary/nominal features only; complete cases; exploratory p-values BH-adjusted within table; small expected cells flagged",
+      "constant_categorical": [],
+      "constant_numeric": [],
+      "numeric_policy": "registered continuous features only; pairwise complete cases; exploratory p-values BH-adjusted within table"
+    }
+  },
+  "source_sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+  "source_url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+  "strongest_associations": [
+    {
+      "description": "spearman thalach vs oldpeak: r=-0.432, n=303; exploratory association only."
+    },
+    {
+      "description": "point_biserial heart_disease_binary vs oldpeak: r=0.425, n=303; exploratory association only."
+    },
+    {
+      "description": "point_biserial heart_disease_binary vs thalach: r=-0.417, n=303; exploratory association only."
+    },
+    {
+      "description": "thal vs heart_disease_binary: Cramer's V=0.526, n=301, 0 expected cells <5; exploratory association only."
+    },
+    {
+      "description": "cp vs heart_disease_binary: Cramer's V=0.520, n=303, 0 expected cells <5; exploratory association only."
+    }
+  ],
+  "table_paths": {
+    "categorical": "reports/tables/eda/uci_cleveland_heart_categorical.csv",
+    "categorical_associations": "reports/tables/eda/uci_cleveland_heart_categorical_associations.csv",
+    "categorical_by_outcome": "reports/tables/eda/uci_cleveland_heart_categorical_by_outcome.csv",
+    "correlations": "reports/tables/eda/uci_cleveland_heart_correlations.csv",
+    "hypotheses": "reports/tables/eda/uci_cleveland_heart_hypotheses.csv",
+    "numeric": "reports/tables/eda/uci_cleveland_heart_numeric.csv",
+    "numeric_by_outcome": "reports/tables/eda/uci_cleveland_heart_numeric_by_outcome.csv",
+    "original_num": "reports/tables/eda/uci_cleveland_heart_original_num.csv",
+    "outcome": "reports/tables/eda/uci_cleveland_heart_outcome.csv",
+    "pearson_matrix": "reports/tables/eda/uci_cleveland_heart_pearson_matrix.csv",
+    "spearman_matrix": "reports/tables/eda/uci_cleveland_heart_spearman_matrix.csv"
+  },
+  "tables": {
+    "processed.cleveland.data": {
+      "columns": 15,
+      "dtypes": {
+        "age": "int64",
+        "ca": "float64",
+        "chol": "int64",
+        "cp": "int64",
+        "exang": "int64",
+        "fbs": "int64",
+        "heart_disease_binary": "int64",
+        "num": "int64",
+        "oldpeak": "float64",
+        "restecg": "int64",
+        "sex": "int64",
+        "slope": "int64",
+        "thal": "float64",
+        "thalach": "int64",
+        "trestbps": "int64"
+      },
+      "exact_duplicates": 0,
+      "missing": {
+        "ca": 4,
+        "thal": 2
+      },
+      "prepared_sha256": "36b51c189bc5e5edf72f83152e9243f0b0801494951c73af290c44a68a3a1b53",
+      "rows": 303
+    }
+  }
+}
