@@ -223,7 +223,7 @@
       "accuracy": 0.8076923076923077,
       "average_precision": 0.9723489961062004,
       "balanced_accuracy": 0.7828125,
-      "brier": 0.09132917054042128,
+      "brier": 0.09132917054042126,
       "calibration": {
         "fraction_positive": [
           0.0,
@@ -233,7 +233,7 @@
           1.0
         ],
         "mean_predicted": [
-          0.1582633271997171,
+          0.15826332719971709,
           0.4429174554206777,
           0.7174882361509187,
           0.9397672846495785,
@@ -639,7 +639,7 @@
     "repeated_rows": 269,
     "unique_predictor_profiles": 251
   },
-  "elapsed_seconds": 25.985292891000427,
+  "elapsed_seconds": 19.050478836001275,
   "feature_columns": [
     "Age",
     "Polyuria",
@@ -732,7 +732,7 @@
     "ordinal": {},
     "unknown_category_policy": "Unseen nominal categories produce all-zero one-hot columns; unseen binary categories encode as -1 and require monitoring."
   },
-  "maxrss_platform_units": 187604992,
+  "maxrss_platform_units": 189575168,
   "mode": "full",
   "positive_encoded": 1,
   "positive_source": "Positive",
@@ -769,7 +769,7 @@
   "source_target": "class",
   "split_sha256": "b9e14a20d31b46fbbcdbc1a6ab93e35cf91e81216ec39411e99b10b5729db6cd",
   "task": "diabetes",
-  "training_timestamp_utc": "2026-10-18T17:25:55.313249+00:00",
+  "training_timestamp_utc": "2026-10-18T17:53:11.043655+00:00",
   "trials": {
     "decision_tree": {
       "algorithm": "decision_tree",
@@ -1209,20 +1209,20 @@
         },
         {
           "fold_scores": [
-            0.8557692307692308,
+            0.8461538461538461,
             0.8823529411764706,
             0.9705882352941176,
             0.8844975490196079,
             0.9295343137254901
           ],
-          "mean": 0.9045484539969835,
+          "mean": 0.9026253770739066,
           "params": {
             "model__n_neighbors": 15,
             "model__p": 1,
             "model__weights": "distance"
           },
           "rank": 5,
-          "std": 0.0406439124559291
+          "std": 0.043061966004391064
         },
         {
           "fold_scores": [
@@ -1395,7 +1395,7 @@
       "algorithm": "logistic_regression",
       "artifact": {
         "path": "ml/models/full/diabetes/logistic_regression.joblib",
-        "sha256": "bb60fd1265209ecc204511f9ac113d7997e39d44266edcd458fb624c6f996ab3"
+        "sha256": "1316f9e7afbb75e6e230d08385a8bcdf49caa65a0a45f5ee959320b884acdcc8"
       },
       "best_params": {
         "model__C": 0.3,
@@ -1490,7 +1490,7 @@
         "accuracy": 0.8461538461538461,
         "average_precision": 0.9766642987806405,
         "balanced_accuracy": 0.8140625,
-        "brier": 0.08724020282767296,
+        "brier": 0.08724020282767293,
         "calibration": {
           "fraction_positive": [
             0.047619047619047616,
@@ -1500,9 +1500,9 @@
             1.0
           ],
           "mean_predicted": [
-            0.12020741151381847,
-            0.43496111913924157,
-            0.7846584584337972,
+            0.12020741151381835,
+            0.4349611191392415,
+            0.7846584584337974,
             0.9629372565048029,
             0.9969217224420175
           ]

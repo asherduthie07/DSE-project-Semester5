@@ -4,7 +4,7 @@
   "dataset_id": "kaggle_stroke",
   "diabetes_dedup_sensitivity": {},
   "diabetes_profile_audit": null,
-  "elapsed_seconds": 59.88139413299723,
+  "elapsed_seconds": 32.04924443699929,
   "feature_columns": [
     "age",
     "avg_glucose_level",
@@ -67,7 +67,7 @@
     "ordinal": {},
     "unknown_category_policy": "Unseen nominal categories produce all-zero one-hot columns; unseen binary categories encode as -1 and require monitoring."
   },
-  "maxrss_platform_units": 211812352,
+  "maxrss_platform_units": 238649344,
   "mode": "full",
   "positive_encoded": 1,
   "positive_source": 1,
@@ -98,7 +98,7 @@
   "source_target": "stroke",
   "split_sha256": "76092b3c04ece2503acd83de6d558c5356c9593ff18455f389128e3faf4950fb",
   "task": "stroke",
-  "training_timestamp_utc": "2026-10-18T17:26:55.215492+00:00",
+  "training_timestamp_utc": "2026-10-18T17:53:43.107145+00:00",
   "trials": {
     "decision_tree": {
       "algorithm": "decision_tree",
@@ -1612,7 +1612,7 @@
       "algorithm": "logistic_regression",
       "artifact": {
         "path": "ml/models/full/stroke/logistic_regression.joblib",
-        "sha256": "8f7d54fd998dbd4259f310563b2e53163037e4fed096d3baae2d4a993273e0c0"
+        "sha256": "2c87e083b82b69dd24a460c35ce4f15dd3e7d916d0807d9161825cba9ffc67cb"
       },
       "best_params": {
         "model__C": 0.3,
@@ -1707,7 +1707,7 @@
         "accuracy": 0.7945205479452054,
         "average_precision": 0.2631693476684594,
         "balanced_accuracy": 0.797119341563786,
-        "brier": 0.04081619836676789,
+        "brier": 0.04081619836675087,
         "calibration": {
           "fraction_positive": [
             0.004878048780487805,
@@ -1717,11 +1717,11 @@
             0.18536585365853658
           ],
           "mean_predicted": [
-            0.0030551731757869206,
-            0.007738743533887541,
-            0.019375068610225643,
-            0.0518630772850057,
-            0.17112073373381845
+            0.0030551731758028055,
+            0.007738743533990501,
+            0.019375068610590518,
+            0.05186307728616996,
+            0.17112073373805575
           ]
         },
         "confusion_matrix": [
@@ -3960,7 +3960,7 @@
           ]
         },
         "specificity": 0.7942386831275721,
-        "threshold": 0.0698182314216704,
+        "threshold": 0.06981823142169408,
         "undefined_metrics": []
       },
       "threshold_selection": {
@@ -3970,7 +3970,7 @@
         "oof_f2": 0.4111936036550542,
         "oof_precision": 0.15078534031413612,
         "oof_recall": 0.7236180904522613,
-        "threshold": 0.0698182314216704
+        "threshold": 0.06981823142169408
       }
     },
     "random_forest": {
