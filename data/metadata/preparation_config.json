@@ -1,0 +1,15 @@
+{
+  "config_version": 1,
+  "missing_tokens": ["", "?", "NA", "N/A", "NULL", "null"],
+  "invalid_feature_policy": "error",
+  "exact_duplicate_policy": "retain",
+  "duplicate_removal_justification": "",
+  "outlier_policy": "report_only",
+  "numeric_imputation": "median",
+  "categorical_imputation": "most_frequent",
+  "categorical_fill_value": "__MISSING__",
+  "numeric_scaling": "standard",
+  "iqr_clip_in_training_pipeline": false,
+  "stroke_unknown_smoking_as_missing": true,
+  "random_seed": 42
+}

@@ -1,6 +1,6 @@
 # Project status
 
-Updated: 2026-10-18 (Phase 0)
+Updated: 2026-10-18 (Phase I)
 
 ## Completed in Phase 0
 
@@ -11,19 +11,38 @@ Updated: 2026-10-18 (Phase 0)
 - Audited ZIP members in place: Cleveland 303 rows, diabetes 520, stroke 5,110, Synthea patients 1,171 and encounters 53,346. All registered archive checksums matched and no registered column-order/width mismatches were found. Diabetes has 269 identical full-row duplicates; raw data was not modified.
 - Observed missing tokens: Cleveland `ca` 4 and `thal` 2; stroke `bmi` 201. The diabetes file has no recognized missing tokens despite the UCI page marking the dataset as having missing values. Synthea has many optional blank fields; details are available from the audit command.
 
+## Completed in Phase I
+
+- Added registered CSV import, strict ordered-schema and checksum validation, explicit target/identifier checks, missing-token handling, typed/domain validation, duplicate and patient-encounter relationship checks, IQR summaries, and immutable-source preparation in `mediscope/`.
+- Added an unfitted scikit-learn `ColumnTransformer` factory with fold-local imputers, binary/nominal encoders, numerical scalers, and optional fold-local IQR clipping. No model was trained and no full-data imputation/scaling/encoding was exported.
+- Captured the verified Python environment in `requirements-phase1.lock.txt` for the current Intel Mac/Python 3.13 setup.
+- Exported five typed analysis-ready CSVs under `data/processed/`, four JSON and four Markdown quality reports under `reports/quality/`, five per-feature CSV tables under `reports/tables/`, and five paired boxplot PNGs under `reports/figures/`. Saved config snapshots and three feature-role mappings beside the prepared CSVs.
+- Current sources: heart 303→303 rows and 14→15 columns (`num` preserved, binary target 164 absent/139 present); diabetes 520→520 rows with 269 identical rows retained; stroke 5,110→5,110 rows, 201 missing BMI and 1,544 `Unknown` smoking responses set missing; Synthea 1,171 patients and 53,346 encounters retained with zero orphan encounters. All domain-invalid counts were zero.
+- Initial Phase I implementation suite: **13 passed**. `pip check` found no broken requirements. All five prepared CSV SHA-256 hashes matched across consecutive `prepare --dataset all` runs. The three model-feature factories also successfully transformed samples of the prepared tables in a smoke check.
+
+## Phase I verification audit (2026-10-18)
+
+- Re-read Phase I source, tests, registry, config, reports and docs. Added per-dataset CLI audit selection and nonzero status for missing/mismatched sources; updated README with exact commands and created a beginner-friendly macOS run guide.
+- Added controlled test-only CSV fixtures, holdout and cross-validation isolation tests, missing-file/schema CLI tests, an executable fixture demonstration, and an independent read-only output verifier.
+- Controlled fixture tests found and fixed a stroke ID domain boundary error: ID 1 is valid; positive IDs are now accepted.
+- Final verbose suite: **20 passed in 2.29s**; `pip check` reported no broken requirements. All four per-dataset audits and all four per-dataset preparation commands succeeded; all-dataset preparation succeeded. A controlled tamper test confirmed the independent verifier returns FAIL for damaged output.
+- Independent verifier: **PASS, 0 errors** across all five tables. Raw ZIP hashes remained unchanged. Consecutive runs produced identical hashes for all 5 prepared CSVs, 4 JSON reports, 4 Markdown reports, 5 quality tables and 5 PNG figures.
+- Full commands, observed data counts, leakage proof, requirement decisions and limitations are in `docs/PHASE1_VERIFICATION.md`; user steps are in `docs/HOW_TO_RUN_PHASE1.md`.
+
 ## Blocked or unresolved
 
 - Existing archive download dates and exact acquisition links were not recorded. Synthea generator release/seed and stroke patient origin are unverified.
 - Power BI Desktop does not run natively on macOS; later Power BI phase needs an approved Windows/VM or web workflow and actual execution evidence.
 - Hadoop and MongoDB executables were not found on PATH at Phase 0 inspection. Installation/configuration belongs to later phases.
 - The current Git root is the parent `Semester-5` directory, containing unrelated projects. Stage only this project path if making a later commit.
+- Diabetes has no participant ID to resolve identical profiles; stroke collection provenance remains unverified; Synthea is simulated. These limit interpretation of later experiments. The CLI retains source measurements, including IQR-flagged extremes.
 
 ## Upcoming, pending approval
 
-- Data preparation and EDA.
+- Exploratory data analysis.
 - Statistical visuals and Power BI.
 - Leakage-safe model training and experimental evaluation.
 - MongoDB, Hadoop/HDFS/MapReduce.
 - Angular + FastAPI demonstration.
 
-No later-phase feature is implemented by Phase 0.
+No EDA, model training, frontend, MongoDB, Power BI, or Hadoop implementation was started in Phase I.

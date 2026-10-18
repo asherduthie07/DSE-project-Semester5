@@ -1,0 +1,18 @@
+feature,missing_before,missing_after,invalid_found,iqr_outliers_before,iqr_outliers_after
+Age,0,0,0,4,4
+Gender,0,0,0,,
+Polyuria,0,0,0,,
+Polydipsia,0,0,0,,
+sudden weight loss,0,0,0,,
+weakness,0,0,0,,
+Polyphagia,0,0,0,,
+Genital thrush,0,0,0,,
+visual blurring,0,0,0,,
+Itching,0,0,0,,
+Irritability,0,0,0,,
+delayed healing,0,0,0,,
+partial paresis,0,0,0,,
+muscle stiffness,0,0,0,,
+Alopecia,0,0,0,,
+Obesity,0,0,0,,
+class,0,0,0,,

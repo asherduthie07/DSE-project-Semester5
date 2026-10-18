@@ -1,0 +1,279 @@
+{
+  "config": {
+    "categorical_fill_value": "__MISSING__",
+    "categorical_imputation": "most_frequent",
+    "config_version": 1,
+    "duplicate_removal_justification": "",
+    "exact_duplicate_policy": "retain",
+    "invalid_feature_policy": "error",
+    "iqr_clip_in_training_pipeline": false,
+    "missing_tokens": [
+      "",
+      "?",
+      "NA",
+      "N/A",
+      "NULL",
+      "null"
+    ],
+    "numeric_imputation": "median",
+    "numeric_scaling": "standard",
+    "outlier_policy": "report_only",
+    "random_seed": 42,
+    "stroke_unknown_smoking_as_missing": true
+  },
+  "dataset_id": "uci_early_diabetes",
+  "dataset_name": "UCI Early Stage Diabetes Risk Prediction",
+  "outputs": {
+    "diabetes_data_upload.csv": {
+      "boxplot": "reports/figures/uci_early_diabetes_diabetes_boxplot.png",
+      "prepared_csv": "data/processed/diabetes.csv",
+      "prepared_sha256": "fba09cdce359ada29bf87d8def1a7a32d956f793e2176c9fdcf7d004aba2f76e",
+      "quality_table": "reports/tables/uci_early_diabetes_diabetes_quality.csv"
+    }
+  },
+  "source": {
+    "archive": "early+stage+diabetes+risk+prediction+dataset.zip",
+    "original_url": "https://archive.ics.uci.edu/dataset/529/early+stage+diabetes+risk+prediction",
+    "records": "real-world",
+    "sha256": "67594c0f11257688b57493798e70737b7156ba37a2e6ac75507ae3a35221a388",
+    "version": "UCI dataset ID 529; source release/version within existing ZIP not independently verified"
+  },
+  "tables": {
+    "diabetes_data_upload.csv": {
+      "actions": [
+        {
+          "operation": "parse_missing_tokens",
+          "rationale": "Recognize explicit source missing markers without filling values",
+          "tokens": [
+            "",
+            "?",
+            "NA",
+            "N/A",
+            "NULL",
+            "null"
+          ]
+        },
+        {
+          "operation": "validate_and_cast_types",
+          "rationale": "Apply registered numeric, categorical, date, and impossibility rules; retain null features"
+        },
+        {
+          "operation": "retain_exact_duplicates",
+          "rationale": "Identical values can represent distinct people; no proof of duplicate identity",
+          "rows": 269
+        },
+        {
+          "operation": "retain_iqr_outliers",
+          "rationale": "IQR flags are descriptive, not proof of erroneous medical measurements"
+        }
+      ],
+      "dataset_id": "uci_early_diabetes",
+      "duplicates": {
+        "exact_before": 269,
+        "record_key": [],
+        "record_key_repeated_rows": null,
+        "removed": 0,
+        "retained": 269,
+        "unique_key": [],
+        "unique_key_repeated_rows": 0
+      },
+      "final": {
+        "columns": [
+          "Age",
+          "Gender",
+          "Polyuria",
+          "Polydipsia",
+          "sudden weight loss",
+          "weakness",
+          "Polyphagia",
+          "Genital thrush",
+          "visual blurring",
+          "Itching",
+          "Irritability",
+          "delayed healing",
+          "partial paresis",
+          "muscle stiffness",
+          "Alopecia",
+          "Obesity",
+          "class"
+        ],
+        "missing": {
+          "Age": 0,
+          "Alopecia": 0,
+          "Gender": 0,
+          "Genital thrush": 0,
+          "Irritability": 0,
+          "Itching": 0,
+          "Obesity": 0,
+          "Polydipsia": 0,
+          "Polyphagia": 0,
+          "Polyuria": 0,
+          "class": 0,
+          "delayed healing": 0,
+          "muscle stiffness": 0,
+          "partial paresis": 0,
+          "sudden weight loss": 0,
+          "visual blurring": 0,
+          "weakness": 0
+        },
+        "rows": 520
+      },
+      "initial": {
+        "columns": [
+          "Age",
+          "Gender",
+          "Polyuria",
+          "Polydipsia",
+          "sudden weight loss",
+          "weakness",
+          "Polyphagia",
+          "Genital thrush",
+          "visual blurring",
+          "Itching",
+          "Irritability",
+          "delayed healing",
+          "partial paresis",
+          "muscle stiffness",
+          "Alopecia",
+          "Obesity",
+          "class"
+        ],
+        "missing": {
+          "Age": 0,
+          "Alopecia": 0,
+          "Gender": 0,
+          "Genital thrush": 0,
+          "Irritability": 0,
+          "Itching": 0,
+          "Obesity": 0,
+          "Polydipsia": 0,
+          "Polyphagia": 0,
+          "Polyuria": 0,
+          "class": 0,
+          "delayed healing": 0,
+          "muscle stiffness": 0,
+          "partial paresis": 0,
+          "sudden weight loss": 0,
+          "visual blurring": 0,
+          "weakness": 0
+        },
+        "rows": 520
+      },
+      "invalid_values": {
+        "Age": {
+          "count": 0,
+          "rule": "numeric in [0, 120] and integer"
+        },
+        "Alopecia": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "Gender": {
+          "count": 0,
+          "rule": "one of ['Female', 'Male']"
+        },
+        "Genital thrush": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "Irritability": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "Itching": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "Obesity": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "Polydipsia": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "Polyphagia": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "Polyuria": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "class": {
+          "count": 0,
+          "rule": "one of ['Negative', 'Positive']"
+        },
+        "delayed healing": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "muscle stiffness": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "partial paresis": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "sudden weight loss": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "visual blurring": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "weakness": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        }
+      },
+      "member": "diabetes_data_upload.csv",
+      "missing_after_token_normalization": {
+        "Age": 0,
+        "Alopecia": 0,
+        "Gender": 0,
+        "Genital thrush": 0,
+        "Irritability": 0,
+        "Itching": 0,
+        "Obesity": 0,
+        "Polydipsia": 0,
+        "Polyphagia": 0,
+        "Polyuria": 0,
+        "class": 0,
+        "delayed healing": 0,
+        "muscle stiffness": 0,
+        "partial paresis": 0,
+        "sudden weight loss": 0,
+        "visual blurring": 0,
+        "weakness": 0
+      },
+      "outliers_after": {
+        "Age": {
+          "count": 4,
+          "lower": 12.0,
+          "q1": 39.0,
+          "q3": 57.0,
+          "upper": 84.0
+        }
+      },
+      "outliers_before": {
+        "Age": {
+          "count": 4,
+          "lower": 12.0,
+          "q1": 39.0,
+          "q3": 57.0,
+          "upper": 84.0
+        }
+      },
+      "source": {
+        "archive": "early+stage+diabetes+risk+prediction+dataset.zip",
+        "original_url": "https://archive.ics.uci.edu/dataset/529/early+stage+diabetes+risk+prediction",
+        "records": "real-world",
+        "sha256": "67594c0f11257688b57493798e70737b7156ba37a2e6ac75507ae3a35221a388",
+        "version": "UCI dataset ID 529; source release/version within existing ZIP not independently verified"
+      }
+    }
+  }
+}

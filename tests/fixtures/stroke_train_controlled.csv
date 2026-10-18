@@ -1,0 +1,7 @@
+id,gender,age,hypertension,heart_disease,ever_married,work_type,Residence_type,avg_glucose_level,bmi,smoking_status,stroke
+1,Female,10,0,0,No,Private,Urban,80,,smokes,0
+2,Male,20,1,0,Yes,Private,Rural,90,20,never smoked,1
+3,Female,30,0,1,No,Govt_job,Urban,100,25,formerly smoked,0
+4,Male,40,1,0,Yes,Govt_job,Rural,110,30,smokes,1
+5,Female,50,0,0,No,Self-employed,Urban,120,35,Unknown,0
+6,Male,60,1,1,Yes,Private,Rural,130,40,never smoked,1

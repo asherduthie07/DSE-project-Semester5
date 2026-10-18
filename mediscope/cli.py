@@ -1,4 +1,4 @@
-"""Phase 0 CLI: environment health and read-only raw-data schema audit."""
+"""CLI for environment health, raw-data audit, and Phase I preparation."""
 
 from __future__ import annotations
 
@@ -107,7 +107,12 @@ def audit_dataset(dataset: dict[str, Any], raw_dir: Path) -> dict[str, Any]:
     except (OSError, zipfile.BadZipFile, UnicodeError, csv.Error) as error:
         return {**result, "status": "unreadable", "error": str(error), "tables": tables}
     result["tables"] = tables
-    result["status"] = "available"
+    mismatches = any(
+        table.get("status") == "missing member"
+        or any(table.get("schema_mismatches", {}).values())
+        for table in tables.values()
+    )
+    result["status"] = "invalid" if mismatches or not result["checksum_matches_registry"] else "available"
     return result
 
 
@@ -124,15 +129,41 @@ def health() -> dict[str, Any]:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="MediScope AI Phase 0 tools")
+    parser = argparse.ArgumentParser(description="MediScope AI project tools")
     subcommands = parser.add_subparsers(dest="command", required=True)
     subcommands.add_parser("health", help="Check Python and registry availability")
     audit = subcommands.add_parser("audit", help="Read-only audit of registered raw ZIPs")
     audit.add_argument("--raw-dir", type=Path, default=PROJECT_ROOT / "data" / "raw")
+    audit.add_argument("--dataset", default="all", help="Registry dataset ID or 'all' (default)")
+    prepare = subcommands.add_parser("prepare", help="Run Phase I data preparation")
+    prepare.add_argument("--dataset", default="all", help="Registry dataset ID or 'all' (default)")
+    prepare.add_argument("--config", type=Path, default=PROJECT_ROOT / "data" / "metadata" / "preparation_config.json")
+    prepare.add_argument("--raw-dir", type=Path, default=PROJECT_ROOT / "data" / "raw")
+    prepare.add_argument("--output-root", type=Path, default=PROJECT_ROOT)
     args = parser.parse_args(argv)
     if args.command == "health":
         report: Any = health()
+    elif args.command == "audit":
+        datasets = load_registry()["datasets"]
+        selected = datasets if args.dataset == "all" else [item for item in datasets if item["id"] == args.dataset]
+        if not selected:
+            parser.exit(2, f"Unknown dataset {args.dataset!r}; choose one of {[item['id'] for item in datasets]}\n")
+        report = [audit_dataset(dataset, args.raw_dir) for dataset in selected]
     else:
-        report = [audit_dataset(dataset, args.raw_dir) for dataset in load_registry()["datasets"]]
+        from .preparation import PreparationError, load_config, prepare_dataset
+        from .reports import export_dataset
+
+        try:
+            config = load_config(args.config)
+            datasets = load_registry()["datasets"]
+            selected = datasets if args.dataset == "all" else [item for item in datasets if item["id"] == args.dataset]
+            if not selected:
+                raise PreparationError(f"Unknown dataset {args.dataset!r}; choose one of {[item['id'] for item in datasets]}")
+            report = [
+                export_dataset(item["id"], item["name"], prepare_dataset(item["id"], config, args.raw_dir), config, args.output_root)
+                for item in selected
+            ]
+        except (PreparationError, OSError, zipfile.BadZipFile) as error:
+            parser.exit(2, f"Preparation failed: {error}\n")
     print(json.dumps(report, indent=2))
-    return 0
+    return 2 if args.command == "audit" and any(item["status"] != "available" for item in report) else 0

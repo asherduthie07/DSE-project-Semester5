@@ -13,7 +13,7 @@
       "archive": "heart+disease.zip",
       "sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
       "version": "UCI dataset ID 45; source release/version within existing ZIP not independently verified",
-      "target": "num (source values 0-4; any binary mapping belongs to a later phase)",
+      "target": "num (source values 0-4); Phase I preserves num and derives heart_disease_binary = 1 when num > 0",
       "known_quality_concerns": ["Missing values encoded as '?' in source data", "Small sample and historical clinical setting", "ZIP includes other hospitals and unprocessed files; only processed.cleveland.data is registered"],
       "tables": [
         {

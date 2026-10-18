@@ -1,5 +1,6 @@
 .DS_Store
 .venv/
+.cache/
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -17,7 +18,3 @@ data/synthetic/*
 !data/synthetic/.gitkeep
 powerbi/exports/*
 !powerbi/exports/.gitkeep
-reports/figures/*
-!reports/figures/.gitkeep
-reports/tables/*
-!reports/tables/.gitkeep

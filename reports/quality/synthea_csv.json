@@ -1,0 +1,554 @@
+{
+  "config": {
+    "categorical_fill_value": "__MISSING__",
+    "categorical_imputation": "most_frequent",
+    "config_version": 1,
+    "duplicate_removal_justification": "",
+    "exact_duplicate_policy": "retain",
+    "invalid_feature_policy": "error",
+    "iqr_clip_in_training_pipeline": false,
+    "missing_tokens": [
+      "",
+      "?",
+      "NA",
+      "N/A",
+      "NULL",
+      "null"
+    ],
+    "numeric_imputation": "median",
+    "numeric_scaling": "standard",
+    "outlier_policy": "report_only",
+    "random_seed": 42,
+    "stroke_unknown_smoking_as_missing": true
+  },
+  "dataset_id": "synthea_csv",
+  "dataset_name": "Synthea synthetic patients and encounters",
+  "outputs": {
+    "csv/encounters.csv": {
+      "boxplot": "reports/figures/synthea_csv_synthea_encounters_boxplot.png",
+      "prepared_csv": "data/processed/synthea_encounters.csv",
+      "prepared_sha256": "c38b5c2f8a9440a00cd8470c397e47a44d4cc0dee3880c9906a0165932bbbd3f",
+      "quality_table": "reports/tables/synthea_csv_synthea_encounters_quality.csv"
+    },
+    "csv/patients.csv": {
+      "boxplot": "reports/figures/synthea_csv_synthea_patients_boxplot.png",
+      "prepared_csv": "data/processed/synthea_patients.csv",
+      "prepared_sha256": "f9506feaf8eed0725d99d3421122424dbc5ed692cebb3cad6ef4eafa97f090d5",
+      "quality_table": "reports/tables/synthea_csv_synthea_patients_quality.csv"
+    }
+  },
+  "source": {
+    "archive": "synthea.zip",
+    "original_url": "https://synthetichealth.github.io/downloads.html",
+    "records": "synthetic",
+    "sha256": "4194b18c11eaedcf0d5d5dd448d8ac9661f14381e2ef9f109215dc42266cd38a",
+    "version": "Unknown generator release and seed for existing archive; exact download URL unverified"
+  },
+  "tables": {
+    "csv/encounters.csv": {
+      "actions": [
+        {
+          "operation": "parse_missing_tokens",
+          "rationale": "Recognize explicit source missing markers without filling values",
+          "tokens": [
+            "",
+            "?",
+            "NA",
+            "N/A",
+            "NULL",
+            "null"
+          ]
+        },
+        {
+          "operation": "validate_and_cast_types",
+          "rationale": "Apply registered numeric, categorical, date, and impossibility rules; retain null features"
+        },
+        {
+          "operation": "retain_exact_duplicates",
+          "rationale": "Identical values can represent distinct people; no proof of duplicate identity",
+          "rows": 0
+        },
+        {
+          "operation": "retain_colliding_visit_signatures",
+          "rationale": "Same patient, time, and code can still have distinct encounter IDs; no rows removed",
+          "rows": 372
+        },
+        {
+          "operation": "retain_iqr_outliers",
+          "rationale": "IQR flags are descriptive, not proof of erroneous medical measurements"
+        },
+        {
+          "operation": "retain_repeated_patient_visits",
+          "rationale": "PATIENT is a foreign key; multiple encounter IDs per patient are valid",
+          "rows": 52175
+        }
+      ],
+      "dataset_id": "synthea_csv",
+      "duplicates": {
+        "exact_before": 0,
+        "record_key": [
+          "PATIENT",
+          "START",
+          "CODE"
+        ],
+        "record_key_repeated_rows": 372,
+        "removed": 0,
+        "retained": 0,
+        "unique_key": [
+          "Id"
+        ],
+        "unique_key_repeated_rows": 0
+      },
+      "final": {
+        "columns": [
+          "Id",
+          "START",
+          "STOP",
+          "PATIENT",
+          "ORGANIZATION",
+          "PROVIDER",
+          "PAYER",
+          "ENCOUNTERCLASS",
+          "CODE",
+          "DESCRIPTION",
+          "BASE_ENCOUNTER_COST",
+          "TOTAL_CLAIM_COST",
+          "PAYER_COVERAGE",
+          "REASONCODE",
+          "REASONDESCRIPTION"
+        ],
+        "missing": {
+          "BASE_ENCOUNTER_COST": 0,
+          "CODE": 0,
+          "DESCRIPTION": 0,
+          "ENCOUNTERCLASS": 0,
+          "Id": 0,
+          "ORGANIZATION": 0,
+          "PATIENT": 0,
+          "PAYER": 0,
+          "PAYER_COVERAGE": 0,
+          "PROVIDER": 0,
+          "REASONCODE": 39569,
+          "REASONDESCRIPTION": 39569,
+          "START": 0,
+          "STOP": 0,
+          "TOTAL_CLAIM_COST": 0
+        },
+        "rows": 53346
+      },
+      "initial": {
+        "columns": [
+          "Id",
+          "START",
+          "STOP",
+          "PATIENT",
+          "ORGANIZATION",
+          "PROVIDER",
+          "PAYER",
+          "ENCOUNTERCLASS",
+          "CODE",
+          "DESCRIPTION",
+          "BASE_ENCOUNTER_COST",
+          "TOTAL_CLAIM_COST",
+          "PAYER_COVERAGE",
+          "REASONCODE",
+          "REASONDESCRIPTION"
+        ],
+        "missing": {
+          "BASE_ENCOUNTER_COST": 0,
+          "CODE": 0,
+          "DESCRIPTION": 0,
+          "ENCOUNTERCLASS": 0,
+          "Id": 0,
+          "ORGANIZATION": 0,
+          "PATIENT": 0,
+          "PAYER": 0,
+          "PAYER_COVERAGE": 0,
+          "PROVIDER": 0,
+          "REASONCODE": 39569,
+          "REASONDESCRIPTION": 39569,
+          "START": 0,
+          "STOP": 0,
+          "TOTAL_CLAIM_COST": 0
+        },
+        "rows": 53346
+      },
+      "invalid_values": {
+        "BASE_ENCOUNTER_COST": {
+          "count": 0,
+          "rule": "numeric in [0, +\u221e)"
+        },
+        "PAYER_COVERAGE": {
+          "count": 0,
+          "rule": "numeric in [0, +\u221e)"
+        },
+        "START": {
+          "count": 0,
+          "rule": "parseable date/time"
+        },
+        "STOP": {
+          "count": 0,
+          "rule": "parseable date/time"
+        },
+        "TOTAL_CLAIM_COST": {
+          "count": 0,
+          "rule": "numeric in [0, +\u221e)"
+        }
+      },
+      "member": "csv/encounters.csv",
+      "missing_after_token_normalization": {
+        "BASE_ENCOUNTER_COST": 0,
+        "CODE": 0,
+        "DESCRIPTION": 0,
+        "ENCOUNTERCLASS": 0,
+        "Id": 0,
+        "ORGANIZATION": 0,
+        "PATIENT": 0,
+        "PAYER": 0,
+        "PAYER_COVERAGE": 0,
+        "PROVIDER": 0,
+        "REASONCODE": 39569,
+        "REASONDESCRIPTION": 39569,
+        "START": 0,
+        "STOP": 0,
+        "TOTAL_CLAIM_COST": 0
+      },
+      "outliers_after": {
+        "BASE_ENCOUNTER_COST": {
+          "count": 423,
+          "lower": 129.16,
+          "q1": 129.16,
+          "q3": 129.16,
+          "upper": 129.16
+        },
+        "PAYER_COVERAGE": {
+          "count": 0,
+          "lower": -90.015,
+          "q1": 17.49,
+          "q3": 89.16,
+          "upper": 196.665
+        },
+        "TOTAL_CLAIM_COST": {
+          "count": 423,
+          "lower": 129.16,
+          "q1": 129.16,
+          "q3": 129.16,
+          "upper": 129.16
+        }
+      },
+      "outliers_before": {
+        "BASE_ENCOUNTER_COST": {
+          "count": 423,
+          "lower": 129.16,
+          "q1": 129.16,
+          "q3": 129.16,
+          "upper": 129.16
+        },
+        "PAYER_COVERAGE": {
+          "count": 0,
+          "lower": -90.015,
+          "q1": 17.49,
+          "q3": 89.16,
+          "upper": 196.665
+        },
+        "TOTAL_CLAIM_COST": {
+          "count": 423,
+          "lower": 129.16,
+          "q1": 129.16,
+          "q3": 129.16,
+          "upper": 129.16
+        }
+      },
+      "relationship": {
+        "foreign_key": "encounters.PATIENT -> patients.Id",
+        "orphan_encounters": 0,
+        "repeated_patient_rows": 52175
+      },
+      "source": {
+        "archive": "synthea.zip",
+        "original_url": "https://synthetichealth.github.io/downloads.html",
+        "records": "synthetic",
+        "sha256": "4194b18c11eaedcf0d5d5dd448d8ac9661f14381e2ef9f109215dc42266cd38a",
+        "version": "Unknown generator release and seed for existing archive; exact download URL unverified"
+      }
+    },
+    "csv/patients.csv": {
+      "actions": [
+        {
+          "operation": "parse_missing_tokens",
+          "rationale": "Recognize explicit source missing markers without filling values",
+          "tokens": [
+            "",
+            "?",
+            "NA",
+            "N/A",
+            "NULL",
+            "null"
+          ]
+        },
+        {
+          "operation": "validate_and_cast_types",
+          "rationale": "Apply registered numeric, categorical, date, and impossibility rules; retain null features"
+        },
+        {
+          "operation": "retain_exact_duplicates",
+          "rationale": "Identical values can represent distinct people; no proof of duplicate identity",
+          "rows": 0
+        },
+        {
+          "operation": "retain_iqr_outliers",
+          "rationale": "IQR flags are descriptive, not proof of erroneous medical measurements"
+        }
+      ],
+      "dataset_id": "synthea_csv",
+      "duplicates": {
+        "exact_before": 0,
+        "record_key": [
+          "Id"
+        ],
+        "record_key_repeated_rows": 0,
+        "removed": 0,
+        "retained": 0,
+        "unique_key": [
+          "Id"
+        ],
+        "unique_key_repeated_rows": 0
+      },
+      "final": {
+        "columns": [
+          "Id",
+          "BIRTHDATE",
+          "DEATHDATE",
+          "SSN",
+          "DRIVERS",
+          "PASSPORT",
+          "PREFIX",
+          "FIRST",
+          "LAST",
+          "SUFFIX",
+          "MAIDEN",
+          "MARITAL",
+          "RACE",
+          "ETHNICITY",
+          "GENDER",
+          "BIRTHPLACE",
+          "ADDRESS",
+          "CITY",
+          "STATE",
+          "COUNTY",
+          "ZIP",
+          "LAT",
+          "LON",
+          "HEALTHCARE_EXPENSES",
+          "HEALTHCARE_COVERAGE"
+        ],
+        "missing": {
+          "ADDRESS": 0,
+          "BIRTHDATE": 0,
+          "BIRTHPLACE": 0,
+          "CITY": 0,
+          "COUNTY": 0,
+          "DEATHDATE": 1000,
+          "DRIVERS": 213,
+          "ETHNICITY": 0,
+          "FIRST": 0,
+          "GENDER": 0,
+          "HEALTHCARE_COVERAGE": 0,
+          "HEALTHCARE_EXPENSES": 0,
+          "Id": 0,
+          "LAST": 0,
+          "LAT": 0,
+          "LON": 0,
+          "MAIDEN": 840,
+          "MARITAL": 380,
+          "PASSPORT": 273,
+          "PREFIX": 244,
+          "RACE": 0,
+          "SSN": 0,
+          "STATE": 0,
+          "SUFFIX": 1159,
+          "ZIP": 543
+        },
+        "rows": 1171
+      },
+      "initial": {
+        "columns": [
+          "Id",
+          "BIRTHDATE",
+          "DEATHDATE",
+          "SSN",
+          "DRIVERS",
+          "PASSPORT",
+          "PREFIX",
+          "FIRST",
+          "LAST",
+          "SUFFIX",
+          "MAIDEN",
+          "MARITAL",
+          "RACE",
+          "ETHNICITY",
+          "GENDER",
+          "BIRTHPLACE",
+          "ADDRESS",
+          "CITY",
+          "STATE",
+          "COUNTY",
+          "ZIP",
+          "LAT",
+          "LON",
+          "HEALTHCARE_EXPENSES",
+          "HEALTHCARE_COVERAGE"
+        ],
+        "missing": {
+          "ADDRESS": 0,
+          "BIRTHDATE": 0,
+          "BIRTHPLACE": 0,
+          "CITY": 0,
+          "COUNTY": 0,
+          "DEATHDATE": 1000,
+          "DRIVERS": 213,
+          "ETHNICITY": 0,
+          "FIRST": 0,
+          "GENDER": 0,
+          "HEALTHCARE_COVERAGE": 0,
+          "HEALTHCARE_EXPENSES": 0,
+          "Id": 0,
+          "LAST": 0,
+          "LAT": 0,
+          "LON": 0,
+          "MAIDEN": 840,
+          "MARITAL": 380,
+          "PASSPORT": 273,
+          "PREFIX": 244,
+          "RACE": 0,
+          "SSN": 0,
+          "STATE": 0,
+          "SUFFIX": 1159,
+          "ZIP": 543
+        },
+        "rows": 1171
+      },
+      "invalid_values": {
+        "BIRTHDATE": {
+          "count": 0,
+          "rule": "parseable date/time"
+        },
+        "DEATHDATE": {
+          "count": 0,
+          "rule": "parseable date/time"
+        },
+        "HEALTHCARE_COVERAGE": {
+          "count": 0,
+          "rule": "numeric in [0, +\u221e)"
+        },
+        "HEALTHCARE_EXPENSES": {
+          "count": 0,
+          "rule": "numeric in [0, +\u221e)"
+        },
+        "LAT": {
+          "count": 0,
+          "rule": "numeric in [-90, 90]"
+        },
+        "LON": {
+          "count": 0,
+          "rule": "numeric in [-180, 180]"
+        }
+      },
+      "member": "csv/patients.csv",
+      "missing_after_token_normalization": {
+        "ADDRESS": 0,
+        "BIRTHDATE": 0,
+        "BIRTHPLACE": 0,
+        "CITY": 0,
+        "COUNTY": 0,
+        "DEATHDATE": 1000,
+        "DRIVERS": 213,
+        "ETHNICITY": 0,
+        "FIRST": 0,
+        "GENDER": 0,
+        "HEALTHCARE_COVERAGE": 0,
+        "HEALTHCARE_EXPENSES": 0,
+        "Id": 0,
+        "LAST": 0,
+        "LAT": 0,
+        "LON": 0,
+        "MAIDEN": 840,
+        "MARITAL": 380,
+        "PASSPORT": 273,
+        "PREFIX": 244,
+        "RACE": 0,
+        "SSN": 0,
+        "STATE": 0,
+        "SUFFIX": 1159,
+        "ZIP": 543
+      },
+      "outliers_after": {
+        "HEALTHCARE_COVERAGE": {
+          "count": 101,
+          "lower": -8101.062499999996,
+          "q1": 3101.02,
+          "q3": 10569.074999999999,
+          "upper": 21771.157499999994
+        },
+        "HEALTHCARE_EXPENSES": {
+          "count": 0,
+          "lower": -1307386.7225000001,
+          "q1": 233551.555,
+          "q3": 1260843.74,
+          "upper": 2801782.0175
+        },
+        "LAT": {
+          "count": 29,
+          "lower": 41.617379405419996,
+          "q1": 42.11595607774517,
+          "q3": 42.448340525961946,
+          "upper": 42.94691719828711
+        },
+        "LON": {
+          "count": 163,
+          "lower": -72.4224800874277,
+          "q1": -71.58053987612595,
+          "q3": -71.01924640192479,
+          "upper": -70.17730619062304
+        }
+      },
+      "outliers_before": {
+        "HEALTHCARE_COVERAGE": {
+          "count": 101,
+          "lower": -8101.062499999996,
+          "q1": 3101.02,
+          "q3": 10569.074999999999,
+          "upper": 21771.157499999994
+        },
+        "HEALTHCARE_EXPENSES": {
+          "count": 0,
+          "lower": -1307386.7225000001,
+          "q1": 233551.555,
+          "q3": 1260843.74,
+          "upper": 2801782.0175
+        },
+        "LAT": {
+          "count": 29,
+          "lower": 41.617379405419996,
+          "q1": 42.11595607774517,
+          "q3": 42.448340525961946,
+          "upper": 42.94691719828711
+        },
+        "LON": {
+          "count": 163,
+          "lower": -72.4224800874277,
+          "q1": -71.58053987612595,
+          "q3": -71.01924640192479,
+          "upper": -70.17730619062304
+        }
+      },
+      "source": {
+        "archive": "synthea.zip",
+        "original_url": "https://synthetichealth.github.io/downloads.html",
+        "records": "synthetic",
+        "sha256": "4194b18c11eaedcf0d5d5dd448d8ac9661f14381e2ef9f109215dc42266cd38a",
+        "version": "Unknown generator release and seed for existing archive; exact download URL unverified"
+      }
+    }
+  }
+}

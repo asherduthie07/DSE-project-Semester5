@@ -1,0 +1,272 @@
+{
+  "config": {
+    "categorical_fill_value": "__MISSING__",
+    "categorical_imputation": "most_frequent",
+    "config_version": 1,
+    "duplicate_removal_justification": "",
+    "exact_duplicate_policy": "retain",
+    "invalid_feature_policy": "error",
+    "iqr_clip_in_training_pipeline": false,
+    "missing_tokens": [
+      "",
+      "?",
+      "NA",
+      "N/A",
+      "NULL",
+      "null"
+    ],
+    "numeric_imputation": "median",
+    "numeric_scaling": "standard",
+    "outlier_policy": "report_only",
+    "random_seed": 42,
+    "stroke_unknown_smoking_as_missing": true
+  },
+  "dataset_id": "kaggle_stroke",
+  "dataset_name": "Healthcare Stroke Prediction",
+  "outputs": {
+    "healthcare-dataset-stroke-data.csv": {
+      "boxplot": "reports/figures/kaggle_stroke_stroke_boxplot.png",
+      "prepared_csv": "data/processed/stroke.csv",
+      "prepared_sha256": "8031625058cfddb391e93633d50b9519775d796c7ad2e1000c813c359be9f1ed",
+      "quality_table": "reports/tables/kaggle_stroke_stroke_quality.csv"
+    }
+  },
+  "source": {
+    "archive": "archive.zip",
+    "original_url": "https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset",
+    "records": "unverified; do not assert real-world patient origin",
+    "sha256": "83c150178a7a10439862a66b2703869aadc11f201c359436ae1df77d2b5e7485",
+    "version": "Kaggle fedesoriano dataset; archive version/download date not recorded"
+  },
+  "tables": {
+    "healthcare-dataset-stroke-data.csv": {
+      "actions": [
+        {
+          "operation": "parse_missing_tokens",
+          "rationale": "Recognize explicit source missing markers without filling values",
+          "tokens": [
+            "",
+            "?",
+            "NA",
+            "N/A",
+            "NULL",
+            "null"
+          ]
+        },
+        {
+          "operation": "validate_and_cast_types",
+          "rationale": "Apply registered numeric, categorical, date, and impossibility rules; retain null features"
+        },
+        {
+          "column": "smoking_status",
+          "operation": "missing_response",
+          "rationale": "Source 'Unknown' denotes unavailable smoking history",
+          "rows": 1544
+        },
+        {
+          "operation": "retain_exact_duplicates",
+          "rationale": "Identical values can represent distinct people; no proof of duplicate identity",
+          "rows": 0
+        },
+        {
+          "operation": "retain_iqr_outliers",
+          "rationale": "IQR flags are descriptive, not proof of erroneous medical measurements"
+        }
+      ],
+      "dataset_id": "kaggle_stroke",
+      "duplicates": {
+        "exact_before": 0,
+        "record_key": [
+          "id"
+        ],
+        "record_key_repeated_rows": 0,
+        "removed": 0,
+        "retained": 0,
+        "unique_key": [
+          "id"
+        ],
+        "unique_key_repeated_rows": 0
+      },
+      "final": {
+        "columns": [
+          "id",
+          "gender",
+          "age",
+          "hypertension",
+          "heart_disease",
+          "ever_married",
+          "work_type",
+          "Residence_type",
+          "avg_glucose_level",
+          "bmi",
+          "smoking_status",
+          "stroke"
+        ],
+        "missing": {
+          "Residence_type": 0,
+          "age": 0,
+          "avg_glucose_level": 0,
+          "bmi": 201,
+          "ever_married": 0,
+          "gender": 0,
+          "heart_disease": 0,
+          "hypertension": 0,
+          "id": 0,
+          "smoking_status": 1544,
+          "stroke": 0,
+          "work_type": 0
+        },
+        "rows": 5110
+      },
+      "initial": {
+        "columns": [
+          "id",
+          "gender",
+          "age",
+          "hypertension",
+          "heart_disease",
+          "ever_married",
+          "work_type",
+          "Residence_type",
+          "avg_glucose_level",
+          "bmi",
+          "smoking_status",
+          "stroke"
+        ],
+        "missing": {
+          "Residence_type": 0,
+          "age": 0,
+          "avg_glucose_level": 0,
+          "bmi": 201,
+          "ever_married": 0,
+          "gender": 0,
+          "heart_disease": 0,
+          "hypertension": 0,
+          "id": 0,
+          "smoking_status": 0,
+          "stroke": 0,
+          "work_type": 0
+        },
+        "rows": 5110
+      },
+      "invalid_values": {
+        "Residence_type": {
+          "count": 0,
+          "rule": "one of ['Rural', 'Urban']"
+        },
+        "age": {
+          "count": 0,
+          "rule": "numeric in [0, 120]"
+        },
+        "avg_glucose_level": {
+          "count": 0,
+          "rule": "numeric in (0, 1000]"
+        },
+        "bmi": {
+          "count": 0,
+          "rule": "numeric in (0, 150]"
+        },
+        "ever_married": {
+          "count": 0,
+          "rule": "one of ['No', 'Yes']"
+        },
+        "gender": {
+          "count": 0,
+          "rule": "one of ['Female', 'Male', 'Other']"
+        },
+        "heart_disease": {
+          "count": 0,
+          "rule": "one of ['0', '1']"
+        },
+        "hypertension": {
+          "count": 0,
+          "rule": "one of ['0', '1']"
+        },
+        "id": {
+          "count": 0,
+          "rule": "numeric in (0, +\u221e) and integer"
+        },
+        "smoking_status": {
+          "count": 0,
+          "rule": "one of ['formerly smoked', 'never smoked', 'smokes']"
+        },
+        "stroke": {
+          "count": 0,
+          "rule": "numeric in [0, 1] and integer"
+        },
+        "work_type": {
+          "count": 0,
+          "rule": "one of ['Govt_job', 'Never_worked', 'Private', 'Self-employed', 'children']"
+        }
+      },
+      "member": "healthcare-dataset-stroke-data.csv",
+      "missing_after_token_normalization": {
+        "Residence_type": 0,
+        "age": 0,
+        "avg_glucose_level": 0,
+        "bmi": 201,
+        "ever_married": 0,
+        "gender": 0,
+        "heart_disease": 0,
+        "hypertension": 0,
+        "id": 0,
+        "smoking_status": 1544,
+        "stroke": 0,
+        "work_type": 0
+      },
+      "outliers_after": {
+        "age": {
+          "count": 0,
+          "lower": -29.0,
+          "q1": 25.0,
+          "q3": 61.0,
+          "upper": 115.0
+        },
+        "avg_glucose_level": {
+          "count": 627,
+          "lower": 21.977500000000006,
+          "q1": 77.245,
+          "q3": 114.09,
+          "upper": 169.35750000000002
+        },
+        "bmi": {
+          "count": 110,
+          "lower": 9.099999999999998,
+          "q1": 23.5,
+          "q3": 33.1,
+          "upper": 47.5
+        }
+      },
+      "outliers_before": {
+        "age": {
+          "count": 0,
+          "lower": -29.0,
+          "q1": 25.0,
+          "q3": 61.0,
+          "upper": 115.0
+        },
+        "avg_glucose_level": {
+          "count": 627,
+          "lower": 21.977500000000006,
+          "q1": 77.245,
+          "q3": 114.09,
+          "upper": 169.35750000000002
+        },
+        "bmi": {
+          "count": 110,
+          "lower": 9.099999999999998,
+          "q1": 23.5,
+          "q3": 33.1,
+          "upper": 47.5
+        }
+      },
+      "source": {
+        "archive": "archive.zip",
+        "original_url": "https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset",
+        "records": "unverified; do not assert real-world patient origin",
+        "sha256": "83c150178a7a10439862a66b2703869aadc11f201c359436ae1df77d2b5e7485",
+        "version": "Kaggle fedesoriano dataset; archive version/download date not recorded"
+      }
+    }
+  }
+}

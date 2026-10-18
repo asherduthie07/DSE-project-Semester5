@@ -1,0 +1,16 @@
+feature,missing_before,missing_after,invalid_found,iqr_outliers_before,iqr_outliers_after
+age,0,0,0,0,0
+sex,0,0,0,,
+cp,0,0,0,,
+trestbps,0,0,0,9,9
+chol,0,0,0,5,5
+fbs,0,0,0,,
+restecg,0,0,0,,
+thalach,0,0,0,1,1
+exang,0,0,0,,
+oldpeak,0,0,0,5,5
+slope,0,0,0,,
+ca,4,4,0,,
+thal,2,2,0,,
+num,0,0,0,,
+heart_disease_binary,0,0,0,,

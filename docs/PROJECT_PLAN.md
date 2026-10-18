@@ -4,7 +4,7 @@ All model work is research-only and requires a later explicit phase request. Evi
 
 | Compulsory requirement | Planned implementation location | Required proof | Expected report section |
 |---|---|---|---|
-| Healthcare data preparation | `data/metadata/`, `pipelines/`, `data/processed/` | Source inventory, schema audit, missing/duplicate treatment, transformation log, tests | Data sources and preparation |
+| Healthcare data preparation | `mediscope/preparation.py`, `mediscope/schema.py`, `mediscope/preprocessors.py`, `data/metadata/`, `data/processed/` | Source inventory, schema audit, missing/duplicate/outlier treatment, transformation log, tests, quality reports | Data sources and preparation |
 | Exploratory data analysis | `notebooks/`, `reports/tables/` | Reproducible descriptive tables and distributions from source data | Exploratory analysis |
 | Statistical visualization | `visualizations/`, `reports/figures/` | Labeled generated figures with sample sizes and methods | Statistical visualization |
 | Power BI | `powerbi/exports/`, report documentation | `.pbix` or documented report, screenshots, refresh source mapping | Power BI dashboard |

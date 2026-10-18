@@ -1,0 +1,320 @@
+{
+  "config": {
+    "categorical_fill_value": "__MISSING__",
+    "categorical_imputation": "most_frequent",
+    "config_version": 1,
+    "duplicate_removal_justification": "",
+    "exact_duplicate_policy": "retain",
+    "invalid_feature_policy": "error",
+    "iqr_clip_in_training_pipeline": false,
+    "missing_tokens": [
+      "",
+      "?",
+      "NA",
+      "N/A",
+      "NULL",
+      "null"
+    ],
+    "numeric_imputation": "median",
+    "numeric_scaling": "standard",
+    "outlier_policy": "report_only",
+    "random_seed": 42,
+    "stroke_unknown_smoking_as_missing": true
+  },
+  "dataset_id": "uci_cleveland_heart",
+  "dataset_name": "UCI Cleveland Heart Disease",
+  "outputs": {
+    "processed.cleveland.data": {
+      "boxplot": "reports/figures/uci_cleveland_heart_heart_boxplot.png",
+      "prepared_csv": "data/processed/heart.csv",
+      "prepared_sha256": "36b51c189bc5e5edf72f83152e9243f0b0801494951c73af290c44a68a3a1b53",
+      "quality_table": "reports/tables/uci_cleveland_heart_heart_quality.csv"
+    }
+  },
+  "source": {
+    "archive": "heart+disease.zip",
+    "original_url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+    "records": "real-world",
+    "sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+    "version": "UCI dataset ID 45; source release/version within existing ZIP not independently verified"
+  },
+  "tables": {
+    "processed.cleveland.data": {
+      "actions": [
+        {
+          "operation": "parse_missing_tokens",
+          "rationale": "Recognize explicit source missing markers without filling values",
+          "tokens": [
+            "",
+            "?",
+            "NA",
+            "N/A",
+            "NULL",
+            "null"
+          ]
+        },
+        {
+          "operation": "validate_and_cast_types",
+          "rationale": "Apply registered numeric, categorical, date, and impossibility rules; retain null features"
+        },
+        {
+          "operation": "canonicalize_cleveland_codes",
+          "rationale": "Integral codes such as 1.0 are represented as category string 1"
+        },
+        {
+          "destination": "heart_disease_binary",
+          "operation": "derive_target",
+          "rule": "1 if num > 0, else 0; preserve num",
+          "source": "num"
+        },
+        {
+          "operation": "retain_exact_duplicates",
+          "rationale": "Identical values can represent distinct people; no proof of duplicate identity",
+          "rows": 0
+        },
+        {
+          "operation": "retain_iqr_outliers",
+          "rationale": "IQR flags are descriptive, not proof of erroneous medical measurements"
+        }
+      ],
+      "dataset_id": "uci_cleveland_heart",
+      "duplicates": {
+        "exact_before": 0,
+        "record_key": [],
+        "record_key_repeated_rows": null,
+        "removed": 0,
+        "retained": 0,
+        "unique_key": [],
+        "unique_key_repeated_rows": 0
+      },
+      "final": {
+        "columns": [
+          "age",
+          "sex",
+          "cp",
+          "trestbps",
+          "chol",
+          "fbs",
+          "restecg",
+          "thalach",
+          "exang",
+          "oldpeak",
+          "slope",
+          "ca",
+          "thal",
+          "num",
+          "heart_disease_binary"
+        ],
+        "missing": {
+          "age": 0,
+          "ca": 4,
+          "chol": 0,
+          "cp": 0,
+          "exang": 0,
+          "fbs": 0,
+          "heart_disease_binary": 0,
+          "num": 0,
+          "oldpeak": 0,
+          "restecg": 0,
+          "sex": 0,
+          "slope": 0,
+          "thal": 2,
+          "thalach": 0,
+          "trestbps": 0
+        },
+        "rows": 303
+      },
+      "initial": {
+        "columns": [
+          "age",
+          "sex",
+          "cp",
+          "trestbps",
+          "chol",
+          "fbs",
+          "restecg",
+          "thalach",
+          "exang",
+          "oldpeak",
+          "slope",
+          "ca",
+          "thal",
+          "num"
+        ],
+        "missing": {
+          "age": 0,
+          "ca": 4,
+          "chol": 0,
+          "cp": 0,
+          "exang": 0,
+          "fbs": 0,
+          "num": 0,
+          "oldpeak": 0,
+          "restecg": 0,
+          "sex": 0,
+          "slope": 0,
+          "thal": 2,
+          "thalach": 0,
+          "trestbps": 0
+        },
+        "rows": 303
+      },
+      "invalid_values": {
+        "age": {
+          "count": 0,
+          "rule": "numeric in [0, 120] and integer"
+        },
+        "ca": {
+          "count": 0,
+          "rule": "one of ['0', '1', '2', '3']"
+        },
+        "chol": {
+          "count": 0,
+          "rule": "numeric in (0, 1000] and integer"
+        },
+        "cp": {
+          "count": 0,
+          "rule": "one of ['1', '2', '3', '4']"
+        },
+        "exang": {
+          "count": 0,
+          "rule": "one of ['0', '1']"
+        },
+        "fbs": {
+          "count": 0,
+          "rule": "one of ['0', '1']"
+        },
+        "num": {
+          "count": 0,
+          "rule": "numeric in [0, 4] and integer"
+        },
+        "oldpeak": {
+          "count": 0,
+          "rule": "numeric in [0, 20]"
+        },
+        "restecg": {
+          "count": 0,
+          "rule": "one of ['0', '1', '2']"
+        },
+        "sex": {
+          "count": 0,
+          "rule": "one of ['0', '1']"
+        },
+        "slope": {
+          "count": 0,
+          "rule": "one of ['1', '2', '3']"
+        },
+        "thal": {
+          "count": 0,
+          "rule": "one of ['3', '6', '7']"
+        },
+        "thalach": {
+          "count": 0,
+          "rule": "numeric in (0, 300] and integer"
+        },
+        "trestbps": {
+          "count": 0,
+          "rule": "numeric in (0, 400] and integer"
+        }
+      },
+      "member": "processed.cleveland.data",
+      "missing_after_token_normalization": {
+        "age": 0,
+        "ca": 4,
+        "chol": 0,
+        "cp": 0,
+        "exang": 0,
+        "fbs": 0,
+        "num": 0,
+        "oldpeak": 0,
+        "restecg": 0,
+        "sex": 0,
+        "slope": 0,
+        "thal": 2,
+        "thalach": 0,
+        "trestbps": 0
+      },
+      "outliers_after": {
+        "age": {
+          "count": 0,
+          "lower": 28.5,
+          "q1": 48.0,
+          "q3": 61.0,
+          "upper": 80.5
+        },
+        "chol": {
+          "count": 5,
+          "lower": 115.0,
+          "q1": 211.0,
+          "q3": 275.0,
+          "upper": 371.0
+        },
+        "oldpeak": {
+          "count": 5,
+          "lower": -2.4000000000000004,
+          "q1": 0.0,
+          "q3": 1.6,
+          "upper": 4.0
+        },
+        "thalach": {
+          "count": 1,
+          "lower": 84.75,
+          "q1": 133.5,
+          "q3": 166.0,
+          "upper": 214.75
+        },
+        "trestbps": {
+          "count": 9,
+          "lower": 90.0,
+          "q1": 120.0,
+          "q3": 140.0,
+          "upper": 170.0
+        }
+      },
+      "outliers_before": {
+        "age": {
+          "count": 0,
+          "lower": 28.5,
+          "q1": 48.0,
+          "q3": 61.0,
+          "upper": 80.5
+        },
+        "chol": {
+          "count": 5,
+          "lower": 115.0,
+          "q1": 211.0,
+          "q3": 275.0,
+          "upper": 371.0
+        },
+        "oldpeak": {
+          "count": 5,
+          "lower": -2.4000000000000004,
+          "q1": 0.0,
+          "q3": 1.6,
+          "upper": 4.0
+        },
+        "thalach": {
+          "count": 1,
+          "lower": 84.75,
+          "q1": 133.5,
+          "q3": 166.0,
+          "upper": 214.75
+        },
+        "trestbps": {
+          "count": 9,
+          "lower": 90.0,
+          "q1": 120.0,
+          "q3": 140.0,
+          "upper": 170.0
+        }
+      },
+      "source": {
+        "archive": "heart+disease.zip",
+        "original_url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+        "records": "real-world",
+        "sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+        "version": "UCI dataset ID 45; source release/version within existing ZIP not independently verified"
+      }
+    }
+  }
+}
