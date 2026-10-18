@@ -1,0 +1,17 @@
+{
+  "status": "FAIL_PREEXISTING",
+  "returncode": 1,
+  "phase4_independent_output_verifier": "PASS",
+  "prior_phase_artifacts_changed_during_run": false,
+  "manifest_artifacts_changed_before_this_run": [
+    "ml/models/full/diabetes/logistic_regression.joblib",
+    "ml/models/full/heart/logistic_regression.joblib",
+    "ml/models/full/stroke/logistic_regression.joblib",
+    "reports/ml/full/diabetes/experiment.json",
+    "reports/ml/full/heart/experiment.json",
+    "reports/ml/full/stroke/experiment.json",
+    "reports/tables/ml/diabetes_comparison.csv",
+    "reports/tables/ml/stroke_comparison.csv"
+  ],
+  "note": "The current Phase IV artifact hashes already differ from their tracked manifest; the live Phase V run did not change any earlier-phase files."
+}

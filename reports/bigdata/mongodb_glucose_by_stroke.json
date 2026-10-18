@@ -1,0 +1,12 @@
+[
+  {
+    "_id": 0,
+    "average_glucose": 104.79551326887471,
+    "records": 4861
+  },
+  {
+    "_id": 1,
+    "average_glucose": 132.54473895582328,
+    "records": 249
+  }
+]

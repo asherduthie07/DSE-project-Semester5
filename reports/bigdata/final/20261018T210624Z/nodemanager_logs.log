@@ -1,0 +1,500 @@
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0002_01_000004 by user appattempt_1792354467390_0002_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 20:57:10 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0002_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0002	CONTAINERID=container_1792354467390_0002_01_000004
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ApplicationImpl:463 - Adding container_1792354467390_0002_01_000004 to application application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ContainerImpl:1250 - Container container_1792354467390_0002_01_000004 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0002/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0002/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0002/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0002/job.xml]
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ContainerImpl:2197 - Container container_1792354467390_0002_01_000004 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 20:57:10 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:10 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:10 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ContainerImpl:2197 - Container container_1792354467390_0002_01_000004 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0002_01_000004]
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ContainerImpl:2197 - Container container_1792354467390_0002_01_000004 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 20:57:10 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0002_01_000004
+nodemanager-1  | 2026-10-18 20:57:10 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000004/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 20:57:11 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0002_01_000003].
+nodemanager-1  | 2026-10-18 20:57:12 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0002_000001 (auth:SIMPLE) from 172.19.0.6:36302
+nodemanager-1  | 2026-10-18 20:57:12 INFO  ContainerManagerImpl:1491 - Stopping container with container Id: container_1792354467390_0002_01_000004
+nodemanager-1  | 2026-10-18 20:57:12 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0002_000001	IP=172.19.0.6	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0002	CONTAINERID=container_1792354467390_0002_01_000004
+nodemanager-1  | 2026-10-18 20:57:12 INFO  ContainerImpl:2197 - Container container_1792354467390_0002_01_000004 transitioned from RUNNING to KILLING
+nodemanager-1  | 2026-10-18 20:57:12 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0002_01_000004
+nodemanager-1  | 2026-10-18 20:57:12 WARN  DefaultContainerExecutor:360 - Exit code from container container_1792354467390_0002_01_000004 is : 143
+nodemanager-1  | 2026-10-18 20:57:12 INFO  ContainerImpl:2197 - Container container_1792354467390_0002_01_000004 transitioned from KILLING to CONTAINER_CLEANEDUP_AFTER_KILL
+nodemanager-1  | 2026-10-18 20:57:12 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000004
+nodemanager-1  | 2026-10-18 20:57:12 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Killed	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0002	CONTAINERID=container_1792354467390_0002_01_000004
+nodemanager-1  | 2026-10-18 20:57:12 INFO  ContainerImpl:2197 - Container container_1792354467390_0002_01_000004 transitioned from CONTAINER_CLEANEDUP_AFTER_KILL to DONE
+nodemanager-1  | 2026-10-18 20:57:12 INFO  ApplicationImpl:512 - Removing container_1792354467390_0002_01_000004 from application application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:12 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0002_01_000004
+nodemanager-1  | 2026-10-18 20:57:12 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:12 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000004/launch_container.sh
+nodemanager-1  | 2026-10-18 20:57:12 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000004/launch_container.sh]
+nodemanager-1  | 2026-10-18 20:57:12 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000004/container_tokens
+nodemanager-1  | 2026-10-18 20:57:12 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000004/container_tokens]
+nodemanager-1  | 2026-10-18 20:57:12 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000004/sysfs
+nodemanager-1  | 2026-10-18 20:57:13 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000004/sysfs]
+nodemanager-1  | 2026-10-18 20:57:19 INFO  ContainerLaunch:702 - Container container_1792354467390_0002_01_000001 succeeded 
+nodemanager-1  | 2026-10-18 20:57:19 INFO  ContainerImpl:2197 - Container container_1792354467390_0002_01_000001 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 20:57:19 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0002_01_000001
+nodemanager-1  | 2026-10-18 20:57:19 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0002	CONTAINERID=container_1792354467390_0002_01_000001
+nodemanager-1  | 2026-10-18 20:57:19 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000001
+nodemanager-1  | 2026-10-18 20:57:19 INFO  ContainerImpl:2197 - Container container_1792354467390_0002_01_000001 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 20:57:19 INFO  ApplicationImpl:512 - Removing container_1792354467390_0002_01_000001 from application application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:19 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0002_01_000001
+nodemanager-1  | 2026-10-18 20:57:19 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:19 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0002_000001 (auth:SIMPLE) from 172.19.0.3:58392
+nodemanager-1  | 2026-10-18 20:57:19 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000001/launch_container.sh
+nodemanager-1  | 2026-10-18 20:57:19 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000001/launch_container.sh]
+nodemanager-1  | 2026-10-18 20:57:19 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000001/container_tokens
+nodemanager-1  | 2026-10-18 20:57:19 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000001/container_tokens]
+nodemanager-1  | 2026-10-18 20:57:19 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000001/sysfs
+nodemanager-1  | 2026-10-18 20:57:19 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002/container_1792354467390_0002_01_000001/sysfs]
+nodemanager-1  | 2026-10-18 20:57:19 INFO  ContainerManagerImpl:1491 - Stopping container with container Id: container_1792354467390_0002_01_000001
+nodemanager-1  | 2026-10-18 20:57:19 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0002_000001	IP=172.19.0.3	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0002	CONTAINERID=container_1792354467390_0002_01_000001
+nodemanager-1  | 2026-10-18 20:57:20 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0002_01_000004, container_1792354467390_0002_01_000001].
+nodemanager-1  | 2026-10-18 20:57:20 INFO  ApplicationImpl:655 - Application application_1792354467390_0002 transitioned from RUNNING to APPLICATION_RESOURCES_CLEANINGUP
+nodemanager-1  | 2026-10-18 20:57:20 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:20 INFO  AuxServices:847 - Got event APPLICATION_STOP for appId application_1792354467390_0002
+nodemanager-1  | 2026-10-18 20:57:20 INFO  ApplicationImpl:655 - Application application_1792354467390_0002 transitioned from APPLICATION_RESOURCES_CLEANINGUP to FINISHED
+nodemanager-1  | 2026-10-18 20:57:20 INFO  NonAggregatingLogHandler:208 - Scheduling Log Deletion for application: application_1792354467390_0002, with delay of 10800 seconds
+nodemanager-1  | 2026-10-18 21:04:24 INFO  ResourceLocalizationService:545 - Cache Size Before Clean: 3104, Total Deleted: 0, Public Deleted: 0, Private Deleted: 0
+nodemanager-1  | 2026-10-18 21:04:46 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0003_000001 (auth:SIMPLE) from 172.19.0.3:47630
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0003_01_000001 by user appattempt_1792354467390_0003_000001 with resource <memory:1536, vCores:1>
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ContainerManagerImpl:1204 - Creating a new application reference for app application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:46 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0003_000001	IP=172.19.0.3	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ApplicationImpl:655 - Application application_1792354467390_0003 transitioned from NEW to INITING
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ApplicationImpl:463 - Adding container_1792354467390_0003_01_000001 to application application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ApplicationImpl:655 - Application application_1792354467390_0003 transitioned from INITING to RUNNING
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ContainerImpl:1250 - Container container_1792354467390_0003_01_000001 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.splitmetainfo, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.split, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.xml]
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000001 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:04:46 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ResourceLocalizationService:809 - Created localizer for container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ResourceLocalizationService:1348 - Writing credentials to the nmPrivate file /tmp/hadoop-hadoop/nm-local-dir/nmPrivate/container_1792354467390_0003_01_0000011a150d4cf64.tokens
+nodemanager-1  | 2026-10-18 21:04:46 INFO  DefaultContainerExecutor:896 - Initializing user hadoop
+nodemanager-1  | 2026-10-18 21:04:46 INFO  DefaultContainerExecutor:190 - Copying from /tmp/hadoop-hadoop/nm-local-dir/nmPrivate/container_1792354467390_0003_01_0000011a150d4cf64.tokens to /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001.tokens
+nodemanager-1  | 2026-10-18 21:04:46 INFO  DefaultContainerExecutor:197 - Localizer CWD set to /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003 = file:/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000001 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0003_01_000001]
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000001 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:04:46 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:04:46 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:04:49 INFO  ContainersMonitorImpl:657 - container_1792354467390_0003_01_000001's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:04:49 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0003_01_000001 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:04:53 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0003_000001 (auth:SIMPLE) from 172.19.0.6:33076
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0003_01_000002 by user appattempt_1792354467390_0003_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:04:53 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0003_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000002
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ApplicationImpl:463 - Adding container_1792354467390_0003_01_000002 to application application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ContainerImpl:1250 - Container container_1792354467390_0003_01_000002 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.xml]
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000002 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:04:53 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:53 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:53 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000002 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0003_01_000002]
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000002 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:04:53 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0003_01_000002
+nodemanager-1  | 2026-10-18 21:04:53 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000002/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:04:54 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0003_000001 (auth:SIMPLE) from 172.19.0.6:53190
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0003_01_000003 by user appattempt_1792354467390_0003_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:04:54 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0003_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000003
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ApplicationImpl:463 - Adding container_1792354467390_0003_01_000003 to application application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ContainerImpl:1250 - Container container_1792354467390_0003_01_000003 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.xml]
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000003 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:04:54 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:54 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:54 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000003 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0003_01_000003]
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000003 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:04:54 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0003_01_000003
+nodemanager-1  | 2026-10-18 21:04:54 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000003/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:04:55 INFO  ContainersMonitorImpl:657 - container_1792354467390_0003_01_000002's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:04:55 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0003_01_000002 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:04:55 INFO  ContainersMonitorImpl:657 - container_1792354467390_0003_01_000003's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:04:55 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0003_01_000003 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:04:56 INFO  ContainerLaunch:702 - Container container_1792354467390_0003_01_000002 succeeded 
+nodemanager-1  | 2026-10-18 21:04:56 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000002 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:04:56 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0003_01_000002
+nodemanager-1  | 2026-10-18 21:04:56 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000002
+nodemanager-1  | 2026-10-18 21:04:56 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000002
+nodemanager-1  | 2026-10-18 21:04:56 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000002 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:04:56 INFO  ApplicationImpl:512 - Removing container_1792354467390_0003_01_000002 from application application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:56 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0003_01_000002
+nodemanager-1  | 2026-10-18 21:04:56 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:56 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000002/launch_container.sh
+nodemanager-1  | 2026-10-18 21:04:56 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000002/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:04:56 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000002/container_tokens
+nodemanager-1  | 2026-10-18 21:04:56 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000002/container_tokens]
+nodemanager-1  | 2026-10-18 21:04:56 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000002/sysfs
+nodemanager-1  | 2026-10-18 21:04:56 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000002/sysfs]
+nodemanager-1  | 2026-10-18 21:04:57 INFO  ContainerLaunch:702 - Container container_1792354467390_0003_01_000003 succeeded 
+nodemanager-1  | 2026-10-18 21:04:57 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000003 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:04:57 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0003_01_000003
+nodemanager-1  | 2026-10-18 21:04:57 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000003
+nodemanager-1  | 2026-10-18 21:04:57 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000003
+nodemanager-1  | 2026-10-18 21:04:57 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000003 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:04:57 INFO  ApplicationImpl:512 - Removing container_1792354467390_0003_01_000003 from application application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:57 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0003_01_000003
+nodemanager-1  | 2026-10-18 21:04:57 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:57 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000003/launch_container.sh
+nodemanager-1  | 2026-10-18 21:04:57 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000003/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:04:57 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000003/container_tokens
+nodemanager-1  | 2026-10-18 21:04:57 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000003/container_tokens]
+nodemanager-1  | 2026-10-18 21:04:57 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000003/sysfs
+nodemanager-1  | 2026-10-18 21:04:57 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000003/sysfs]
+nodemanager-1  | 2026-10-18 21:04:59 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0003_01_000002, container_1792354467390_0003_01_000003].
+nodemanager-1  | 2026-10-18 21:04:59 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0003_000001 (auth:SIMPLE) from 172.19.0.6:53202
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0003_01_000004 by user appattempt_1792354467390_0003_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:04:59 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0003_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000004
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ApplicationImpl:463 - Adding container_1792354467390_0003_01_000004 to application application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ContainerImpl:1250 - Container container_1792354467390_0003_01_000004 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0003/job.xml]
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000004 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:04:59 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:59 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:59 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000004 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0003_01_000004]
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000004 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:04:59 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0003_01_000004
+nodemanager-1  | 2026-10-18 21:04:59 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000004/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:05:01 INFO  ContainersMonitorImpl:657 - container_1792354467390_0003_01_000004's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:05:01 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0003_01_000004 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:05:02 INFO  ContainerLaunch:702 - Container container_1792354467390_0003_01_000004 succeeded 
+nodemanager-1  | 2026-10-18 21:05:02 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000004 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:05:02 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000004
+nodemanager-1  | 2026-10-18 21:05:02 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000004
+nodemanager-1  | 2026-10-18 21:05:02 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0003_01_000004
+nodemanager-1  | 2026-10-18 21:05:02 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000004 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:05:02 INFO  ApplicationImpl:512 - Removing container_1792354467390_0003_01_000004 from application application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:05:02 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0003_01_000004
+nodemanager-1  | 2026-10-18 21:05:02 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:05:02 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0003_000001 (auth:SIMPLE) from 172.19.0.6:53218
+nodemanager-1  | 2026-10-18 21:05:02 INFO  ContainerManagerImpl:1491 - Stopping container with container Id: container_1792354467390_0003_01_000004
+nodemanager-1  | 2026-10-18 21:05:02 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0003_000001	IP=172.19.0.6	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000004
+nodemanager-1  | 2026-10-18 21:05:07 INFO  ContainerLaunch:1056 - Could not get pid for container_1792354467390_0003_01_000004. Waited for 5000 ms.
+nodemanager-1  | 2026-10-18 21:05:07 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000004/launch_container.sh
+nodemanager-1  | 2026-10-18 21:05:07 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000004/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:05:07 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000004/container_tokens
+nodemanager-1  | 2026-10-18 21:05:07 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000004/container_tokens]
+nodemanager-1  | 2026-10-18 21:05:07 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000004/sysfs
+nodemanager-1  | 2026-10-18 21:05:07 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000004/sysfs]
+nodemanager-1  | 2026-10-18 21:05:09 INFO  ContainerLaunch:702 - Container container_1792354467390_0003_01_000001 succeeded 
+nodemanager-1  | 2026-10-18 21:05:09 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000001 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:05:09 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:05:09 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:05:09 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:05:09 INFO  ContainerImpl:2197 - Container container_1792354467390_0003_01_000001 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:05:09 INFO  ApplicationImpl:512 - Removing container_1792354467390_0003_01_000001 from application application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:05:09 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:05:09 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:05:09 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0003_000001 (auth:SIMPLE) from 172.19.0.3:33146
+nodemanager-1  | 2026-10-18 21:05:09 INFO  ContainerManagerImpl:1491 - Stopping container with container Id: container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:05:09 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0003_000001	IP=172.19.0.3	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0003	CONTAINERID=container_1792354467390_0003_01_000001
+nodemanager-1  | 2026-10-18 21:05:09 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001/launch_container.sh
+nodemanager-1  | 2026-10-18 21:05:09 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:05:09 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001/container_tokens
+nodemanager-1  | 2026-10-18 21:05:09 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001/container_tokens]
+nodemanager-1  | 2026-10-18 21:05:09 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001/sysfs
+nodemanager-1  | 2026-10-18 21:05:09 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003/container_1792354467390_0003_01_000001/sysfs]
+nodemanager-1  | 2026-10-18 21:05:10 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0003_01_000001, container_1792354467390_0003_01_000004].
+nodemanager-1  | 2026-10-18 21:05:10 INFO  ApplicationImpl:655 - Application application_1792354467390_0003 transitioned from RUNNING to APPLICATION_RESOURCES_CLEANINGUP
+nodemanager-1  | 2026-10-18 21:05:10 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:05:10 INFO  AuxServices:847 - Got event APPLICATION_STOP for appId application_1792354467390_0003
+nodemanager-1  | 2026-10-18 21:05:10 INFO  ApplicationImpl:655 - Application application_1792354467390_0003 transitioned from APPLICATION_RESOURCES_CLEANINGUP to FINISHED
+nodemanager-1  | 2026-10-18 21:05:10 INFO  NonAggregatingLogHandler:208 - Scheduling Log Deletion for application: application_1792354467390_0003, with delay of 10800 seconds
+nodemanager-1  | 2026-10-18 21:07:06 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0004_000001 (auth:SIMPLE) from 172.19.0.3:46444
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0004_01_000001 by user appattempt_1792354467390_0004_000001 with resource <memory:1536, vCores:1>
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ContainerManagerImpl:1204 - Creating a new application reference for app application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:06 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0004_000001	IP=172.19.0.3	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ApplicationImpl:655 - Application application_1792354467390_0004 transitioned from NEW to INITING
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ApplicationImpl:463 - Adding container_1792354467390_0004_01_000001 to application application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ApplicationImpl:655 - Application application_1792354467390_0004 transitioned from INITING to RUNNING
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ContainerImpl:1250 - Container container_1792354467390_0004_01_000001 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.splitmetainfo, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.split, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.xml]
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000001 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:07:06 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ResourceLocalizationService:809 - Created localizer for container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ResourceLocalizationService:1348 - Writing credentials to the nmPrivate file /tmp/hadoop-hadoop/nm-local-dir/nmPrivate/container_1792354467390_0004_01_0000011a150d6f1ea.tokens
+nodemanager-1  | 2026-10-18 21:07:06 INFO  DefaultContainerExecutor:896 - Initializing user hadoop
+nodemanager-1  | 2026-10-18 21:07:06 INFO  DefaultContainerExecutor:190 - Copying from /tmp/hadoop-hadoop/nm-local-dir/nmPrivate/container_1792354467390_0004_01_0000011a150d6f1ea.tokens to /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001.tokens
+nodemanager-1  | 2026-10-18 21:07:06 INFO  DefaultContainerExecutor:197 - Localizer CWD set to /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004 = file:/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000001 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0004_01_000001]
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000001 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:07:06 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:06 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:07:07 INFO  ContainersMonitorImpl:657 - container_1792354467390_0004_01_000001's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:07:07 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0004_01_000001 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:07:13 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0004_000001 (auth:SIMPLE) from 172.19.0.6:38058
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0004_01_000002 by user appattempt_1792354467390_0004_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:07:13 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0004_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000002
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ApplicationImpl:463 - Adding container_1792354467390_0004_01_000002 to application application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainerImpl:1250 - Container container_1792354467390_0004_01_000002 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.xml]
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000002 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:07:13 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:13 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:13 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000002 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0004_01_000002]
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000002 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0004_01_000002
+nodemanager-1  | 2026-10-18 21:07:13 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000002/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainersMonitorImpl:657 - container_1792354467390_0004_01_000002's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:07:13 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0004_01_000002 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:07:14 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0004_000001 (auth:SIMPLE) from 172.19.0.6:50148
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0004_01_000003 by user appattempt_1792354467390_0004_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:07:14 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0004_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000003
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ApplicationImpl:463 - Adding container_1792354467390_0004_01_000003 to application application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ContainerImpl:1250 - Container container_1792354467390_0004_01_000003 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.xml]
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000003 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:07:14 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:14 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:14 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000003 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0004_01_000003]
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000003 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:07:14 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0004_01_000003
+nodemanager-1  | 2026-10-18 21:07:14 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000003/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:07:16 INFO  ContainersMonitorImpl:657 - container_1792354467390_0004_01_000003's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:07:16 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0004_01_000003 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:07:16 INFO  ContainerLaunch:702 - Container container_1792354467390_0004_01_000002 succeeded 
+nodemanager-1  | 2026-10-18 21:07:16 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000002 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:07:16 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0004_01_000002
+nodemanager-1  | 2026-10-18 21:07:16 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000002
+nodemanager-1  | 2026-10-18 21:07:16 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000002
+nodemanager-1  | 2026-10-18 21:07:16 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000002 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:07:16 INFO  ApplicationImpl:512 - Removing container_1792354467390_0004_01_000002 from application application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:16 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0004_01_000002
+nodemanager-1  | 2026-10-18 21:07:16 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:16 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000002/launch_container.sh
+nodemanager-1  | 2026-10-18 21:07:16 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000002/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:07:16 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000002/container_tokens
+nodemanager-1  | 2026-10-18 21:07:16 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000002/container_tokens]
+nodemanager-1  | 2026-10-18 21:07:16 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000002/sysfs
+nodemanager-1  | 2026-10-18 21:07:16 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000002/sysfs]
+nodemanager-1  | 2026-10-18 21:07:17 INFO  ContainerLaunch:702 - Container container_1792354467390_0004_01_000003 succeeded 
+nodemanager-1  | 2026-10-18 21:07:17 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000003 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:07:17 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0004_01_000003
+nodemanager-1  | 2026-10-18 21:07:17 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000003
+nodemanager-1  | 2026-10-18 21:07:17 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000003
+nodemanager-1  | 2026-10-18 21:07:17 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000003 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:07:17 INFO  ApplicationImpl:512 - Removing container_1792354467390_0004_01_000003 from application application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:17 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0004_01_000003
+nodemanager-1  | 2026-10-18 21:07:17 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:17 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000003/launch_container.sh
+nodemanager-1  | 2026-10-18 21:07:17 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000003/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:07:17 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000003/container_tokens
+nodemanager-1  | 2026-10-18 21:07:17 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000003/container_tokens]
+nodemanager-1  | 2026-10-18 21:07:17 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000003/sysfs
+nodemanager-1  | 2026-10-18 21:07:17 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000003/sysfs]
+nodemanager-1  | 2026-10-18 21:07:19 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0004_01_000003, container_1792354467390_0004_01_000002].
+nodemanager-1  | 2026-10-18 21:07:19 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0004_000001 (auth:SIMPLE) from 172.19.0.6:50154
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0004_01_000004 by user appattempt_1792354467390_0004_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:07:19 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0004_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000004
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ApplicationImpl:463 - Adding container_1792354467390_0004_01_000004 to application application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainerImpl:1250 - Container container_1792354467390_0004_01_000004 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0004/job.xml]
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000004 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:07:19 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:19 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:19 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000004 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0004_01_000004]
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000004 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0004_01_000004
+nodemanager-1  | 2026-10-18 21:07:19 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000004/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainersMonitorImpl:657 - container_1792354467390_0004_01_000004's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:07:19 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0004_01_000004 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:07:21 INFO  ContainerLaunch:702 - Container container_1792354467390_0004_01_000004 succeeded 
+nodemanager-1  | 2026-10-18 21:07:21 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000004 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:07:21 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0004_01_000004
+nodemanager-1  | 2026-10-18 21:07:21 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000004
+nodemanager-1  | 2026-10-18 21:07:21 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000004
+nodemanager-1  | 2026-10-18 21:07:21 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000004 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:07:21 INFO  ApplicationImpl:512 - Removing container_1792354467390_0004_01_000004 from application application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:21 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0004_01_000004
+nodemanager-1  | 2026-10-18 21:07:21 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:21 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000004/launch_container.sh
+nodemanager-1  | 2026-10-18 21:07:21 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000004/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:07:21 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000004/container_tokens
+nodemanager-1  | 2026-10-18 21:07:21 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000004/container_tokens]
+nodemanager-1  | 2026-10-18 21:07:21 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000004/sysfs
+nodemanager-1  | 2026-10-18 21:07:21 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000004/sysfs]
+nodemanager-1  | 2026-10-18 21:07:22 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0004_000001 (auth:SIMPLE) from 172.19.0.6:50164
+nodemanager-1  | 2026-10-18 21:07:22 INFO  ContainerManagerImpl:1491 - Stopping container with container Id: container_1792354467390_0004_01_000004
+nodemanager-1  | 2026-10-18 21:07:22 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0004_000001	IP=172.19.0.6	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000004
+nodemanager-1  | 2026-10-18 21:07:28 INFO  ContainerLaunch:702 - Container container_1792354467390_0004_01_000001 succeeded 
+nodemanager-1  | 2026-10-18 21:07:28 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000001 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:07:28 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:28 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:28 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:28 INFO  ContainerImpl:2197 - Container container_1792354467390_0004_01_000001 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:07:28 INFO  ApplicationImpl:512 - Removing container_1792354467390_0004_01_000001 from application application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:28 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:28 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:28 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0004_000001 (auth:SIMPLE) from 172.19.0.3:42606
+nodemanager-1  | 2026-10-18 21:07:28 INFO  ContainerManagerImpl:1491 - Stopping container with container Id: container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:28 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0004_000001	IP=172.19.0.3	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0004	CONTAINERID=container_1792354467390_0004_01_000001
+nodemanager-1  | 2026-10-18 21:07:28 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001/launch_container.sh
+nodemanager-1  | 2026-10-18 21:07:28 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:07:28 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001/container_tokens
+nodemanager-1  | 2026-10-18 21:07:28 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001/container_tokens]
+nodemanager-1  | 2026-10-18 21:07:28 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001/sysfs
+nodemanager-1  | 2026-10-18 21:07:28 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004/container_1792354467390_0004_01_000001/sysfs]
+nodemanager-1  | 2026-10-18 21:07:29 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0004_01_000004, container_1792354467390_0004_01_000001].
+nodemanager-1  | 2026-10-18 21:07:29 INFO  ApplicationImpl:655 - Application application_1792354467390_0004 transitioned from RUNNING to APPLICATION_RESOURCES_CLEANINGUP
+nodemanager-1  | 2026-10-18 21:07:29 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:29 INFO  AuxServices:847 - Got event APPLICATION_STOP for appId application_1792354467390_0004
+nodemanager-1  | 2026-10-18 21:07:29 INFO  ApplicationImpl:655 - Application application_1792354467390_0004 transitioned from APPLICATION_RESOURCES_CLEANINGUP to FINISHED
+nodemanager-1  | 2026-10-18 21:07:29 INFO  NonAggregatingLogHandler:208 - Scheduling Log Deletion for application: application_1792354467390_0004, with delay of 10800 seconds
+nodemanager-1  | 2026-10-18 21:08:02 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0005_000001 (auth:SIMPLE) from 172.19.0.3:39202
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0005_01_000001 by user appattempt_1792354467390_0005_000001 with resource <memory:1536, vCores:1>
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ContainerManagerImpl:1204 - Creating a new application reference for app application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:02 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0005_000001	IP=172.19.0.3	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ApplicationImpl:655 - Application application_1792354467390_0005 transitioned from NEW to INITING
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ApplicationImpl:463 - Adding container_1792354467390_0005_01_000001 to application application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ApplicationImpl:655 - Application application_1792354467390_0005 transitioned from INITING to RUNNING
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ContainerImpl:1250 - Container container_1792354467390_0005_01_000001 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.splitmetainfo, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.split, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.xml]
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000001 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:08:02 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ResourceLocalizationService:809 - Created localizer for container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ResourceLocalizationService:1348 - Writing credentials to the nmPrivate file /tmp/hadoop-hadoop/nm-local-dir/nmPrivate/container_1792354467390_0005_01_0000011a150d7cdc0.tokens
+nodemanager-1  | 2026-10-18 21:08:02 INFO  DefaultContainerExecutor:896 - Initializing user hadoop
+nodemanager-1  | 2026-10-18 21:08:02 INFO  DefaultContainerExecutor:190 - Copying from /tmp/hadoop-hadoop/nm-local-dir/nmPrivate/container_1792354467390_0005_01_0000011a150d7cdc0.tokens to /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001.tokens
+nodemanager-1  | 2026-10-18 21:08:02 INFO  DefaultContainerExecutor:197 - Localizer CWD set to /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005 = file:/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000001 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0005_01_000001]
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000001 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:08:02 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:02 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:08:04 INFO  ContainersMonitorImpl:657 - container_1792354467390_0005_01_000001's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:08:04 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0005_01_000001 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:08:09 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0005_000001 (auth:SIMPLE) from 172.19.0.6:48706
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0005_01_000002 by user appattempt_1792354467390_0005_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:08:09 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0005_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000002
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ApplicationImpl:463 - Adding container_1792354467390_0005_01_000002 to application application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ContainerImpl:1250 - Container container_1792354467390_0005_01_000002 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.xml]
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000002 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:08:09 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:09 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:09 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000002 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0005_01_000002]
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000002 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:08:09 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0005_01_000002
+nodemanager-1  | 2026-10-18 21:08:09 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000002/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:08:10 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0005_000001 (auth:SIMPLE) from 172.19.0.6:48718
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0005_01_000003 by user appattempt_1792354467390_0005_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:08:10 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0005_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000003
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ApplicationImpl:463 - Adding container_1792354467390_0005_01_000003 to application application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainerImpl:1250 - Container container_1792354467390_0005_01_000003 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.xml]
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000003 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:08:10 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:10 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:10 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000003 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0005_01_000003]
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000003 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0005_01_000003
+nodemanager-1  | 2026-10-18 21:08:10 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000003/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainersMonitorImpl:657 - container_1792354467390_0005_01_000003's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0005_01_000003 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainersMonitorImpl:657 - container_1792354467390_0005_01_000002's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:08:10 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0005_01_000002 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:08:12 INFO  ContainerLaunch:702 - Container container_1792354467390_0005_01_000002 succeeded 
+nodemanager-1  | 2026-10-18 21:08:12 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000002 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:08:12 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0005_01_000002
+nodemanager-1  | 2026-10-18 21:08:12 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000002
+nodemanager-1  | 2026-10-18 21:08:12 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000002
+nodemanager-1  | 2026-10-18 21:08:12 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000002 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:08:12 INFO  ApplicationImpl:512 - Removing container_1792354467390_0005_01_000002 from application application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:12 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0005_01_000002
+nodemanager-1  | 2026-10-18 21:08:12 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:12 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000002/launch_container.sh
+nodemanager-1  | 2026-10-18 21:08:12 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000002/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:08:12 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000002/container_tokens
+nodemanager-1  | 2026-10-18 21:08:12 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000002/container_tokens]
+nodemanager-1  | 2026-10-18 21:08:12 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000002/sysfs
+nodemanager-1  | 2026-10-18 21:08:12 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000002/sysfs]
+nodemanager-1  | 2026-10-18 21:08:13 INFO  ContainerLaunch:702 - Container container_1792354467390_0005_01_000003 succeeded 
+nodemanager-1  | 2026-10-18 21:08:13 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000003 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:08:13 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0005_01_000003
+nodemanager-1  | 2026-10-18 21:08:13 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000003
+nodemanager-1  | 2026-10-18 21:08:13 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000003
+nodemanager-1  | 2026-10-18 21:08:13 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000003 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:08:13 INFO  ApplicationImpl:512 - Removing container_1792354467390_0005_01_000003 from application application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:13 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0005_01_000003
+nodemanager-1  | 2026-10-18 21:08:13 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:13 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000003/launch_container.sh
+nodemanager-1  | 2026-10-18 21:08:13 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000003/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:08:13 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000003/container_tokens
+nodemanager-1  | 2026-10-18 21:08:13 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000003/container_tokens]
+nodemanager-1  | 2026-10-18 21:08:13 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000003/sysfs
+nodemanager-1  | 2026-10-18 21:08:13 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000003/sysfs]
+nodemanager-1  | 2026-10-18 21:08:14 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0005_01_000002].
+nodemanager-1  | 2026-10-18 21:08:14 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0005_000001 (auth:SIMPLE) from 172.19.0.6:51136
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ContainerManagerImpl:1150 - Start request for container_1792354467390_0005_01_000004 by user appattempt_1792354467390_0005_000001 with resource <memory:1024, vCores:1>
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ApplicationImpl:463 - Adding container_1792354467390_0005_01_000004 to application application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:14 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0005_000001	IP=172.19.0.6	OPERATION=Start Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000004
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ContainerImpl:1250 - Container container_1792354467390_0005_01_000004 is localizing: [hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/files/mapper.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/files/reducer.py, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.jar, hdfs://namenode:8020/tmp/hadoop-yarn/staging/hadoop/.staging/job_1792354467390_0005/job.xml]
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000004 transitioned from NEW to LOCALIZING
+nodemanager-1  | 2026-10-18 21:08:14 INFO  AuxServices:847 - Got event CONTAINER_INIT for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:14 INFO  AuxServices:847 - Got event APPLICATION_INIT for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:14 INFO  AuxServices:851 - Got APPLICATION_INIT for service mapreduce_shuffle
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ShuffleHandler:597 - Added token for job_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000004 transitioned from LOCALIZING to SCHEDULED
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ContainerScheduler:619 - Starting container [container_1792354467390_0005_01_000004]
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000004 transitioned from SCHEDULED to RUNNING
+nodemanager-1  | 2026-10-18 21:08:14 INFO  ContainersMonitorImpl:1126 - Starting resource-monitoring for container_1792354467390_0005_01_000004
+nodemanager-1  | 2026-10-18 21:08:14 INFO  DefaultContainerExecutor:432 - launchContainer: [bash, /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000004/default_container_executor.sh]
+nodemanager-1  | 2026-10-18 21:08:15 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0005_01_000003].
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ContainersMonitorImpl:657 - container_1792354467390_0005_01_000004's ip = 172.19.0.6, and hostname = nodemanager
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ContainersMonitorImpl:558 - Skipping monitoring container container_1792354467390_0005_01_000004 since CPU usage is not yet available.
+nodemanager-1  | 2026-10-18 21:08:16 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0005_000001 (auth:SIMPLE) from 172.19.0.6:51152
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ContainerManagerImpl:1491 - Stopping container with container Id: container_1792354467390_0005_01_000004
+nodemanager-1  | 2026-10-18 21:08:16 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0005_000001	IP=172.19.0.6	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000004
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000004 transitioned from RUNNING to KILLING
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0005_01_000004
+nodemanager-1  | 2026-10-18 21:08:16 WARN  DefaultContainerExecutor:360 - Exit code from container container_1792354467390_0005_01_000004 is : 143
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000004 transitioned from KILLING to CONTAINER_CLEANEDUP_AFTER_KILL
+nodemanager-1  | 2026-10-18 21:08:16 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000004
+nodemanager-1  | 2026-10-18 21:08:16 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Killed	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000004
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000004 transitioned from CONTAINER_CLEANEDUP_AFTER_KILL to DONE
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ApplicationImpl:512 - Removing container_1792354467390_0005_01_000004 from application application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:16 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0005_01_000004
+nodemanager-1  | 2026-10-18 21:08:16 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:16 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000004/launch_container.sh
+nodemanager-1  | 2026-10-18 21:08:16 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000004/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:08:16 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000004/container_tokens
+nodemanager-1  | 2026-10-18 21:08:16 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000004/container_tokens]
+nodemanager-1  | 2026-10-18 21:08:16 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000004/sysfs
+nodemanager-1  | 2026-10-18 21:08:16 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000004/sysfs]
+nodemanager-1  | 2026-10-18 21:08:23 INFO  ContainerLaunch:702 - Container container_1792354467390_0005_01_000001 succeeded 
+nodemanager-1  | 2026-10-18 21:08:23 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000001 transitioned from RUNNING to EXITED_WITH_SUCCESS
+nodemanager-1  | 2026-10-18 21:08:23 INFO  ContainerCleanup:88 - Cleaning up container container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:23 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:23 INFO  NMAuditLogger:94 - USER=hadoop	OPERATION=Container Finished - Succeeded	TARGET=ContainerImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:23 INFO  ContainerImpl:2197 - Container container_1792354467390_0005_01_000001 transitioned from EXITED_WITH_SUCCESS to DONE
+nodemanager-1  | 2026-10-18 21:08:23 INFO  ApplicationImpl:512 - Removing container_1792354467390_0005_01_000001 from application application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:23 INFO  ContainersMonitorImpl:1117 - Stopping resource-monitoring for container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:23 INFO  AuxServices:847 - Got event CONTAINER_STOP for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:23 INFO  Server:2290 - Auth successful for appattempt_1792354467390_0005_000001 (auth:SIMPLE) from 172.19.0.3:44902
+nodemanager-1  | 2026-10-18 21:08:23 INFO  ContainerManagerImpl:1491 - Stopping container with container Id: container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:23 INFO  NMAuditLogger:94 - USER=appattempt_1792354467390_0005_000001	IP=172.19.0.3	OPERATION=Stop Container Request	TARGET=ContainerManageImpl	RESULT=SUCCESS	APPID=application_1792354467390_0005	CONTAINERID=container_1792354467390_0005_01_000001
+nodemanager-1  | 2026-10-18 21:08:23 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001/launch_container.sh
+nodemanager-1  | 2026-10-18 21:08:23 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001/launch_container.sh]
+nodemanager-1  | 2026-10-18 21:08:23 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001/container_tokens
+nodemanager-1  | 2026-10-18 21:08:23 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001/container_tokens]
+nodemanager-1  | 2026-10-18 21:08:23 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001/sysfs
+nodemanager-1  | 2026-10-18 21:08:23 WARN  DefaultContainerExecutor:697 - delete returned false for path: [/tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005/container_1792354467390_0005_01_000001/sysfs]
+nodemanager-1  | 2026-10-18 21:08:24 INFO  NodeStatusUpdaterImpl:726 - Removed completed containers from NM context: [container_1792354467390_0005_01_000004, container_1792354467390_0005_01_000001].
+nodemanager-1  | 2026-10-18 21:08:24 INFO  ApplicationImpl:655 - Application application_1792354467390_0005 transitioned from RUNNING to APPLICATION_RESOURCES_CLEANINGUP
+nodemanager-1  | 2026-10-18 21:08:24 INFO  AuxServices:847 - Got event APPLICATION_STOP for appId application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:24 INFO  DefaultContainerExecutor:694 - Deleting absolute path : /tmp/hadoop-hadoop/nm-local-dir/usercache/hadoop/appcache/application_1792354467390_0005
+nodemanager-1  | 2026-10-18 21:08:24 INFO  ApplicationImpl:655 - Application application_1792354467390_0005 transitioned from APPLICATION_RESOURCES_CLEANINGUP to FINISHED
+nodemanager-1  | 2026-10-18 21:08:24 INFO  NonAggregatingLogHandler:208 - Scheduling Log Deletion for application: application_1792354467390_0005, with delay of 10800 seconds

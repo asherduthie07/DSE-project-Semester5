@@ -1,13 +1,14 @@
 # Project status
 
-Updated: 2026-10-19 (Phase V live Intel Mac verification)
+Updated: 2026-10-19 (final Phase V live Intel Mac verification)
 
 ## Phase V: MongoDB and Hadoop/MapReduce
 
 - Added PyMongo source-validated, SHA-256-checked, idempotent import code for five prepared tables, dataset metadata, quality summaries and Phase IV experiment metadata. Synthea patient/encounter keys are preserved; synthetic names and identity/address fields are excluded. Added eight aggregation queries, controlled CRUD, source/database reconciliation, and CLI commands.
 - Added a pinned local Compose configuration for MongoDB 7.0.41 and Apache Hadoop 3.4.3, cross-platform setup/verification tools, sanitized encounter-class input preparation, Hadoop Streaming mapper/reducer, HDFS job driver and output verification. Added source reference tables, a chart, architecture diagrams and run instructions. A guarded one-shot initializer formats only an empty NameNode volume and preserves existing HDFS data.
-- Baseline before changes: 61 tests passed and Phase I integrity verifier passed. After implementation: 75 tests passed and 3 live integration tests skipped. The local mapper/reducer pipeline reconciled all 53,346 source encounters with pandas.
-- **Live Intel Mac gates passed:** Docker, MongoDB, HDFS and YARN are running; all five prepared tables were imported and eight MongoDB aggregations reconciled with pandas. A genuine Hadoop Streaming job completed through YARN and returned six encounter-class counts totaling 53,346, exactly matching pandas. Live integration tests: 3 passed. The complete fast suite: 75 passed, 3 live tests skipped. Windows PowerShell runtime remains NOT TESTED. See `PHASE5_VERIFICATION.md` for startup diagnosis, measurements and decision matrix. Phase VI has not started.
+- **Final live Intel Mac verification passed:** Docker 29.8.2 x86_64, MongoDB 7.0.41, HDFS (one live DataNode), and YARN (one RUNNING NodeManager). Imported all five prepared source tables; live counts were heart 303, diabetes 520, stroke 5,110, patients 1,171, encounters 53,346, plus 9 metadata, 4 quality reports and 3 model experiments. Document-level reconciliation and repeat import confirmed stable IDs/content; 269 intentional diabetes duplicate rows were retained and there were zero orphan encounters. CRUD passed; all eight MongoDB aggregation pipelines and indexes verified against pandas.
+- A genuine Hadoop Streaming encounter-class job completed on YARN as `application_1792354467390_0007` / `job_1792354467390_0007`, final state SUCCEEDED. All six reducer counts and total 53,346 matched pandas and MongoDB. One measured run: pandas 0.2900 s; MongoDB 0.0569 s; Hadoop job 19.3230 s; Hadoop output validation 0.2940 s. This single-node pseudo-distributed run and small dataset cannot establish Hadoop scalability.
+- Opt-in live integration and complete regression suite: **78 passed, 0 skipped**. Phase I independent verifier, Phase III static output verifiers, and Phase IV independent 15-estimator verifier passed. A before/after hash snapshot showed all 286 earlier-phase files unchanged. Separate Phase IV artifact-manifest check still fails on eight pre-existing hash mismatches; none was changed. macOS runtime PASS; Windows PowerShell runtime NOT TESTED. Full evidence, logs, status and matrix: `reports/bigdata/final/20261018T211007Z/` and `PHASE5_VERIFICATION.md`. **Phase V PASS; Phase VI has not started.**
 
 ## Phase IV: machine learning and research-only prediction
 

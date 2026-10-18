@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "ambulatory",
+    "encounters": 18936
+  },
+  {
+    "_id": "emergency",
+    "encounters": 2090
+  },
+  {
+    "_id": "inpatient",
+    "encounters": 1838
+  },
+  {
+    "_id": "outpatient",
+    "encounters": 9003
+  },
+  {
+    "_id": "urgentcare",
+    "encounters": 2373
+  },
+  {
+    "_id": "wellness",
+    "encounters": 19106
+  }
+]

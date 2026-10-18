@@ -1,0 +1,5 @@
+Found 1 items
+-rw-r--r--   1 hadoop supergroup     544666 2026-10-18 21:11 /mediscope/input/encounter_classes.txt
+Found 2 items
+-rw-r--r--   1 hadoop supergroup          0 2026-10-18 21:11 /mediscope/output/encounter_counts/_SUCCESS
+-rw-r--r--   1 hadoop supergroup         94 2026-10-18 21:11 /mediscope/output/encounter_counts/part-00000

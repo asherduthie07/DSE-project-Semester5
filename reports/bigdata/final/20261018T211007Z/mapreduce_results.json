@@ -1,0 +1,18 @@
+{
+  "application_id": "application_1792354467390_0007",
+  "job_id": "job_1792354467390_0007",
+  "state": "FINISHED",
+  "final_state": "SUCCEEDED",
+  "source_records": 53346,
+  "counts": {
+    "ambulatory": 18936,
+    "emergency": 2090,
+    "inpatient": 1838,
+    "outpatient": 9003,
+    "urgentcare": 2373,
+    "wellness": 19106
+  },
+  "matches_pandas": true,
+  "matches_mongodb": true,
+  "source_sha256": "c38b5c2f8a9440a00cd8470c397e47a44d4cc0dee3880c9906a0165932bbbd3f"
+}

@@ -1,0 +1,9084 @@
+{
+  "diabetes_outcomes": [
+    {
+      "_id": "Negative",
+      "count": 200
+    },
+    {
+      "_id": "Positive",
+      "count": 320
+    }
+  ],
+  "encounters_by_class": [
+    {
+      "_id": "ambulatory",
+      "encounters": 18936
+    },
+    {
+      "_id": "emergency",
+      "encounters": 2090
+    },
+    {
+      "_id": "inpatient",
+      "encounters": 1838
+    },
+    {
+      "_id": "outpatient",
+      "encounters": 9003
+    },
+    {
+      "_id": "urgentcare",
+      "encounters": 2373
+    },
+    {
+      "_id": "wellness",
+      "encounters": 19106
+    }
+  ],
+  "encounters_per_patient": [
+    {
+      "_id": "00185faa-2760-4218-9bf5-db301acf8274",
+      "encounters": 22
+    },
+    {
+      "_id": "0042862c-9889-4a2e-b782-fac1e540ecb4",
+      "encounters": 21
+    },
+    {
+      "_id": "0047123f-12e7-486c-82df-53b3a450e365",
+      "encounters": 21
+    },
+    {
+      "_id": "010d4a3a-2316-45ed-ae15-16f01c611674",
+      "encounters": 13
+    },
+    {
+      "_id": "01207ecd-9dff-4754-8887-4652eda231e2",
+      "encounters": 6
+    },
+    {
+      "_id": "0149d553-f571-4e99-867e-fcb9625d07c2",
+      "encounters": 38
+    },
+    {
+      "_id": "01e1f394-7219-4189-bceb-3cbd90cff90b",
+      "encounters": 41
+    },
+    {
+      "_id": "023a7d29-32b3-4db5-89c8-b88bd7582ec0",
+      "encounters": 102
+    },
+    {
+      "_id": "0288abb6-633c-40c3-ba0c-66c7d957727e",
+      "encounters": 100
+    },
+    {
+      "_id": "02ea2f1a-ddcf-4809-8279-dde7a62e0318",
+      "encounters": 7
+    },
+    {
+      "_id": "02f9aadd-72de-4b20-b381-f4c3b1cf7aa3",
+      "encounters": 80
+    },
+    {
+      "_id": "03172f6e-fb21-4770-8eef-513730174ab7",
+      "encounters": 26
+    },
+    {
+      "_id": "0325261f-61eb-46f8-acc6-89d15053fecd",
+      "encounters": 108
+    },
+    {
+      "_id": "034e9e3b-2def-4559-bb2a-7850888ae060",
+      "encounters": 6
+    },
+    {
+      "_id": "03612a7e-6460-4ef6-9528-59d60f970b93",
+      "encounters": 26
+    },
+    {
+      "_id": "03963166-b49f-4440-a80d-30abb90b4a78",
+      "encounters": 7
+    },
+    {
+      "_id": "03c5e223-c016-4477-947f-22c691d6a62c",
+      "encounters": 17
+    },
+    {
+      "_id": "0447625b-b860-483c-9f30-17ed375b1493",
+      "encounters": 25
+    },
+    {
+      "_id": "04630e85-e9f5-4a9b-be75-97f2c3346037",
+      "encounters": 54
+    },
+    {
+      "_id": "04a29a39-c12f-480b-9521-f2d20559089f",
+      "encounters": 22
+    },
+    {
+      "_id": "04a849f4-1aaf-4112-a62f-d44df4325773",
+      "encounters": 83
+    },
+    {
+      "_id": "04db6603-0017-4cc6-a46d-6df577b0a10d",
+      "encounters": 75
+    },
+    {
+      "_id": "04dff6e5-123a-4c13-bd08-ad690d287173",
+      "encounters": 13
+    },
+    {
+      "_id": "0522e580-6775-49f5-b471-b39624280402",
+      "encounters": 67
+    },
+    {
+      "_id": "052c405b-ad28-4411-a81e-18cd811d1ca1",
+      "encounters": 9
+    },
+    {
+      "_id": "058590f8-c0f3-40c1-ac80-246437499d5d",
+      "encounters": 44
+    },
+    {
+      "_id": "05ad1c43-ebd3-4d3a-a254-259a4338af87",
+      "encounters": 14
+    },
+    {
+      "_id": "05bfc523-bd56-4474-a2bb-1b74a4c1087e",
+      "encounters": 30
+    },
+    {
+      "_id": "05cdf25a-7da5-4a7b-b721-8e63d2e3b6ec",
+      "encounters": 17
+    },
+    {
+      "_id": "0606d624-7695-41e2-96f0-0b5d3578ae24",
+      "encounters": 35
+    },
+    {
+      "_id": "064341a0-60ed-4d68-88a7-5c730572d285",
+      "encounters": 16
+    },
+    {
+      "_id": "066c0f3d-90bb-4082-99ec-f307c4759f50",
+      "encounters": 79
+    },
+    {
+      "_id": "0707e55b-e026-4361-aa2b-8e922ae62c5a",
+      "encounters": 10
+    },
+    {
+      "_id": "072f2f15-605e-4c83-b0a6-0274a0474b91",
+      "encounters": 15
+    },
+    {
+      "_id": "076688b0-f0d5-4c45-8bc6-b206684fa9ac",
+      "encounters": 29
+    },
+    {
+      "_id": "0780f97f-e326-4e51-8b5c-3461eea70517",
+      "encounters": 18
+    },
+    {
+      "_id": "07b30273-070e-47c7-9617-d12785a4c9d5",
+      "encounters": 26
+    },
+    {
+      "_id": "08180c75-dd87-418f-95ff-06fb2f434713",
+      "encounters": 25
+    },
+    {
+      "_id": "08ea9043-5f84-46ab-9815-81d90024169a",
+      "encounters": 20
+    },
+    {
+      "_id": "09616ead-22c8-4210-8cb9-2fdc28e043ca",
+      "encounters": 61
+    },
+    {
+      "_id": "097079b1-ff8f-4ee0-8ce3-0ea744ecfa21",
+      "encounters": 93
+    },
+    {
+      "_id": "097f7be5-fdc1-42a8-b54b-65eb48c12cf1",
+      "encounters": 33
+    },
+    {
+      "_id": "0982ef39-7ff9-4c24-8239-e9fc0667e8ca",
+      "encounters": 38
+    },
+    {
+      "_id": "0983e422-3b48-4f1a-936b-bee5f0eb4695",
+      "encounters": 8
+    },
+    {
+      "_id": "09867b02-24b8-4896-b38b-86782dd64ef1",
+      "encounters": 57
+    },
+    {
+      "_id": "099198eb-df60-41d1-ad22-3655b957d805",
+      "encounters": 95
+    },
+    {
+      "_id": "09cbb3f1-c2ed-426c-8c53-ffda77efcb08",
+      "encounters": 91
+    },
+    {
+      "_id": "09fc03c4-aef7-47e1-941a-618f437dfbe2",
+      "encounters": 73
+    },
+    {
+      "_id": "0aaa2164-8de6-4152-8674-14d254aae13a",
+      "encounters": 34
+    },
+    {
+      "_id": "0ac1bb9f-5fdd-45a5-9891-2f826d86dc17",
+      "encounters": 16
+    },
+    {
+      "_id": "0ace3e15-8aa4-41c5-8b90-2408285ebcfe",
+      "encounters": 20
+    },
+    {
+      "_id": "0b48619e-1602-488c-a23b-3d4937153dff",
+      "encounters": 57
+    },
+    {
+      "_id": "0b6a83ae-fcb1-4b75-9ffa-d52898167d66",
+      "encounters": 7
+    },
+    {
+      "_id": "0b93425b-2c05-40c3-a806-25807904c598",
+      "encounters": 23
+    },
+    {
+      "_id": "0b9e5e4d-2e1a-4ea6-a307-d8747ed779d0",
+      "encounters": 26
+    },
+    {
+      "_id": "0ba90366-87ad-4f9d-9bcd-c11e63eb6f27",
+      "encounters": 26
+    },
+    {
+      "_id": "0c1606c8-637e-4ed3-baf4-67390d8f3956",
+      "encounters": 55
+    },
+    {
+      "_id": "0c5a6873-0823-497d-b5cb-57f28a11bf62",
+      "encounters": 78
+    },
+    {
+      "_id": "0c5aa52a-3b1d-4289-af16-29f7a2d07fec",
+      "encounters": 46
+    },
+    {
+      "_id": "0d270daf-d227-4461-a6bd-256676bdf824",
+      "encounters": 48
+    },
+    {
+      "_id": "0df7cd60-097e-4fba-90eb-f7e9d9de0b67",
+      "encounters": 9
+    },
+    {
+      "_id": "0e003777-2825-44c6-b090-c6df626f7f4a",
+      "encounters": 7
+    },
+    {
+      "_id": "0e1ad739-81d1-4170-841d-414ddc97c93a",
+      "encounters": 99
+    },
+    {
+      "_id": "0e297a18-1dcc-43a3-b78a-0ca8d07e59bc",
+      "encounters": 27
+    },
+    {
+      "_id": "0e796659-9d7a-4383-85c9-b72b43b80252",
+      "encounters": 19
+    },
+    {
+      "_id": "0e866809-bc7a-4014-850d-06228ed80226",
+      "encounters": 17
+    },
+    {
+      "_id": "0ec17b30-0776-4c70-8735-a09dfc709d3c",
+      "encounters": 17
+    },
+    {
+      "_id": "0edbb001-5914-42b6-9194-0a3c753b5c25",
+      "encounters": 84
+    },
+    {
+      "_id": "0f480685-25db-4292-bb41-b32ed4b61ce4",
+      "encounters": 10
+    },
+    {
+      "_id": "0f5646bc-a156-4ec0-9252-5b592e3d3184",
+      "encounters": 61
+    },
+    {
+      "_id": "0f9eca6a-cee2-4155-94ae-4e43b3b55f06",
+      "encounters": 36
+    },
+    {
+      "_id": "10134dbf-72d1-4381-b8f3-9530cca6622a",
+      "encounters": 16
+    },
+    {
+      "_id": "1030d86d-86f5-4195-962a-48895ca085ab",
+      "encounters": 57
+    },
+    {
+      "_id": "10339b10-3cd1-4ac3-ac13-ec26728cb592",
+      "encounters": 12
+    },
+    {
+      "_id": "104e2a62-f1b0-4395-991b-f46edca51dac",
+      "encounters": 6
+    },
+    {
+      "_id": "108cff4f-f9f1-4817-81a1-110697e354de",
+      "encounters": 48
+    },
+    {
+      "_id": "10a4a009-2d24-4512-8506-f8d8c36255d5",
+      "encounters": 84
+    },
+    {
+      "_id": "10ab86b6-a248-4dcf-bebb-3ba143c0ea29",
+      "encounters": 8
+    },
+    {
+      "_id": "10c64243-1b39-4f8d-8add-6c767a2f2e50",
+      "encounters": 9
+    },
+    {
+      "_id": "11978d7a-93c0-4e8d-b4c6-320e6c07c5fc",
+      "encounters": 61
+    },
+    {
+      "_id": "119ab996-9fbd-4243-9a4a-e821dfc6c6f9",
+      "encounters": 39
+    },
+    {
+      "_id": "11a0d503-fad9-4633-86b2-00398d650077",
+      "encounters": 11
+    },
+    {
+      "_id": "11e1992a-28b9-4ee8-bb7f-1c3a7041b57d",
+      "encounters": 45
+    },
+    {
+      "_id": "1211c8ff-ab73-49f3-b2ab-87b7a03f6167",
+      "encounters": 7
+    },
+    {
+      "_id": "12485794-a6c5-466e-b1a5-92e9c0f443e8",
+      "encounters": 16
+    },
+    {
+      "_id": "12540ff0-7817-40f4-8b55-a19926736785",
+      "encounters": 15
+    },
+    {
+      "_id": "128d5c93-dfce-49a1-8d08-e9b24abcb4db",
+      "encounters": 19
+    },
+    {
+      "_id": "1302bca8-7576-4009-aac7-8750c7d50140",
+      "encounters": 35
+    },
+    {
+      "_id": "1324aa93-d950-4796-b3f7-e1ab68c6505f",
+      "encounters": 17
+    },
+    {
+      "_id": "137acc1b-dbca-473e-84bb-fe1baaf98819",
+      "encounters": 346
+    },
+    {
+      "_id": "13a3a783-ecc5-4ec5-b3dc-168b15cebb88",
+      "encounters": 303
+    },
+    {
+      "_id": "13b9a676-7cfd-4b7c-bdb6-43ec52b7c919",
+      "encounters": 28
+    },
+    {
+      "_id": "13c98b78-98e9-41fb-a29a-686d005d98f7",
+      "encounters": 32
+    },
+    {
+      "_id": "13db4bb8-d1dc-4158-a820-d2d1b7084fc4",
+      "encounters": 122
+    },
+    {
+      "_id": "14213801-5f47-42f9-9a84-729bdc410786",
+      "encounters": 14
+    },
+    {
+      "_id": "14289f20-085c-4fc8-bdd8-e2074166d91f",
+      "encounters": 51
+    },
+    {
+      "_id": "143a7c79-21b9-4240-b8ec-dbeb600699ea",
+      "encounters": 10
+    },
+    {
+      "_id": "144edc8e-936e-42d7-8e7d-f3578cf80cc2",
+      "encounters": 22
+    },
+    {
+      "_id": "1474f954-3781-4de1-9d5d-27a2b8688419",
+      "encounters": 56
+    },
+    {
+      "_id": "1510fff3-4a1d-4606-9ede-a5342afa6886",
+      "encounters": 17
+    },
+    {
+      "_id": "15545751-f1be-43db-9f35-b3aaa0a959e2",
+      "encounters": 20
+    },
+    {
+      "_id": "163bf814-7fdc-4b89-b6c3-41219880b68d",
+      "encounters": 14
+    },
+    {
+      "_id": "1686a27e-c76f-471f-b445-4e537bc2fc2f",
+      "encounters": 15
+    },
+    {
+      "_id": "169c9208-990a-497b-b778-2632875b8e78",
+      "encounters": 10
+    },
+    {
+      "_id": "16aea213-825e-4d66-a68c-a2757658673e",
+      "encounters": 7
+    },
+    {
+      "_id": "16fe231f-5db5-4213-9ce0-ba1944eac066",
+      "encounters": 45
+    },
+    {
+      "_id": "16ff017b-226f-4df9-9ea0-74a68b064dc2",
+      "encounters": 50
+    },
+    {
+      "_id": "171508e4-8de0-4f33-b7d0-87b7ac4a8008",
+      "encounters": 30
+    },
+    {
+      "_id": "173c7abc-b19b-4533-aa53-7156b53df51f",
+      "encounters": 16
+    },
+    {
+      "_id": "1786920f-c6fd-4fa7-a0dc-70a5ccc1fc79",
+      "encounters": 69
+    },
+    {
+      "_id": "17c1cce5-2df1-4597-90fa-60cbe557b210",
+      "encounters": 23
+    },
+    {
+      "_id": "1821a44e-ba5e-4250-aae9-23ec9c0c26f1",
+      "encounters": 63
+    },
+    {
+      "_id": "1847f723-4c17-46b8-805a-61d8cb43c9bb",
+      "encounters": 30
+    },
+    {
+      "_id": "18794a7c-c7fa-47d6-8387-9fc133c4e1e3",
+      "encounters": 38
+    },
+    {
+      "_id": "191888f1-bdcf-4889-929f-79962b0417e0",
+      "encounters": 5
+    },
+    {
+      "_id": "1930a1b6-6533-4509-ab9f-df36f00fb8ec",
+      "encounters": 44
+    },
+    {
+      "_id": "194aca62-c623-4ba8-a7ca-bb77f17736f5",
+      "encounters": 6
+    },
+    {
+      "_id": "1968aa31-5fce-461a-9486-6e385a7b75e7",
+      "encounters": 94
+    },
+    {
+      "_id": "199946d9-69de-43e1-9ce6-d6b646b84955",
+      "encounters": 17
+    },
+    {
+      "_id": "19ad9612-4b4d-4a82-a323-c07168ec4d85",
+      "encounters": 104
+    },
+    {
+      "_id": "19d2cfb8-439b-454a-b47e-5274c219005b",
+      "encounters": 1606
+    },
+    {
+      "_id": "19d6d7d2-4f3c-437c-9378-6c9a730c3f96",
+      "encounters": 19
+    },
+    {
+      "_id": "19dea027-3a86-4f26-8b69-bbe969cb67cf",
+      "encounters": 43
+    },
+    {
+      "_id": "1a100862-757a-4450-94a6-9731a522f707",
+      "encounters": 19
+    },
+    {
+      "_id": "1a289f28-b73b-4d3a-83ef-2216e8837bad",
+      "encounters": 28
+    },
+    {
+      "_id": "1a7e8f38-95df-4c27-8897-21ed04c3b98b",
+      "encounters": 107
+    },
+    {
+      "_id": "1a83f5ad-8f5a-4455-835e-22cc1ef19576",
+      "encounters": 16
+    },
+    {
+      "_id": "1aa71b23-790e-4d22-92da-c689682c8993",
+      "encounters": 39
+    },
+    {
+      "_id": "1ab6d5c8-edbe-4c71-8f7a-2af7010af2ab",
+      "encounters": 26
+    },
+    {
+      "_id": "1b2bfa77-4f42-43e6-84a8-815fcc40c549",
+      "encounters": 20
+    },
+    {
+      "_id": "1b71b396-b42b-4d33-926e-8c5daefba8ad",
+      "encounters": 13
+    },
+    {
+      "_id": "1bacaab1-708b-42fe-8f12-fbe97a725440",
+      "encounters": 47
+    },
+    {
+      "_id": "1be72444-925b-4a44-ac45-608a4ba2e8d5",
+      "encounters": 72
+    },
+    {
+      "_id": "1c0cea09-f0db-4ef0-a551-d67645ee4538",
+      "encounters": 111
+    },
+    {
+      "_id": "1c2aa038-9366-4c7d-9a3e-52cb753a670f",
+      "encounters": 17
+    },
+    {
+      "_id": "1c2d500e-c583-40f8-83a8-c987d21346b7",
+      "encounters": 70
+    },
+    {
+      "_id": "1c3fea30-6be0-419a-b342-50767fd55440",
+      "encounters": 26
+    },
+    {
+      "_id": "1c591f0d-95b1-4289-94a9-9713ab3834e7",
+      "encounters": 16
+    },
+    {
+      "_id": "1d2d568c-c53b-4a2d-8835-a21806cc6645",
+      "encounters": 16
+    },
+    {
+      "_id": "1d4f63d2-ddc0-47bc-b2cc-6f58068a5901",
+      "encounters": 20
+    },
+    {
+      "_id": "1d604da9-9a81-4ba9-80c2-de3375d59b40",
+      "encounters": 6
+    },
+    {
+      "_id": "1d74896f-fda4-4b30-892e-c486e5e32ca4",
+      "encounters": 18
+    },
+    {
+      "_id": "1d7fe784-8667-47e8-b733-8e6ec0fbb5f9",
+      "encounters": 20
+    },
+    {
+      "_id": "1d97baad-7587-436e-ab04-8f7642432c71",
+      "encounters": 12
+    },
+    {
+      "_id": "1d996507-b0e3-4ef8-ab62-9db3bd808105",
+      "encounters": 122
+    },
+    {
+      "_id": "1dceeee2-ab03-4adb-8cc9-05954d85d625",
+      "encounters": 18
+    },
+    {
+      "_id": "1e040769-9101-4228-9b0b-26263faf7297",
+      "encounters": 13
+    },
+    {
+      "_id": "1e3b1126-641f-4495-a31c-19cb9bed9d25",
+      "encounters": 22
+    },
+    {
+      "_id": "1e52e4fe-13c7-41ad-8b3e-5933fdd553c4",
+      "encounters": 95
+    },
+    {
+      "_id": "1f8da3b0-dd67-4925-a6d9-43a02d8402a7",
+      "encounters": 42
+    },
+    {
+      "_id": "1fc8dafd-90e5-44d6-9179-81156c0ea083",
+      "encounters": 8
+    },
+    {
+      "_id": "1fd5b5d7-4514-44b8-a06b-767d1be8fb97",
+      "encounters": 17
+    },
+    {
+      "_id": "202b3372-a1d4-42bd-b4b7-b712bd24dc98",
+      "encounters": 36
+    },
+    {
+      "_id": "20c3ca32-ec09-4e7c-abab-9f7711cbe235",
+      "encounters": 58
+    },
+    {
+      "_id": "2146b1c2-74e9-4217-8869-b8121bead8cc",
+      "encounters": 31
+    },
+    {
+      "_id": "2174522f-1d23-47cf-b56c-4ce3193c5bab",
+      "encounters": 26
+    },
+    {
+      "_id": "21838b2e-18ba-4627-aea4-fca5b450230d",
+      "encounters": 11
+    },
+    {
+      "_id": "21a5c5d3-a090-450d-91c1-a9bf3f2902d1",
+      "encounters": 59
+    },
+    {
+      "_id": "21ce6dc0-8668-4221-a5bc-6d6a1afe4c52",
+      "encounters": 66
+    },
+    {
+      "_id": "21ea6e91-4548-4a56-8242-7d7aa6fc8fe0",
+      "encounters": 17
+    },
+    {
+      "_id": "22415347-d2fb-4357-aaeb-ddba23e5cdf0",
+      "encounters": 16
+    },
+    {
+      "_id": "22da6290-e240-4875-97ec-0c2372ff45e5",
+      "encounters": 14
+    },
+    {
+      "_id": "2335bebd-0843-4322-9585-8ab90f49def3",
+      "encounters": 110
+    },
+    {
+      "_id": "23365743-e8f2-4aba-8242-15463f81f81b",
+      "encounters": 21
+    },
+    {
+      "_id": "23a1784e-a607-43d6-af0d-6e37743d7333",
+      "encounters": 12
+    },
+    {
+      "_id": "24a7b5ac-a573-4469-be04-6f02673cd157",
+      "encounters": 16
+    },
+    {
+      "_id": "24aa19bf-9bda-4147-8ed3-8b8a56bd00fb",
+      "encounters": 14
+    },
+    {
+      "_id": "24bca5cf-ba55-457f-8e80-49690202443c",
+      "encounters": 14
+    },
+    {
+      "_id": "252fc319-ec89-43e4-b28c-184e9b5542b4",
+      "encounters": 62
+    },
+    {
+      "_id": "257af8d7-ba2c-4394-9a30-691e6f80d8a6",
+      "encounters": 59
+    },
+    {
+      "_id": "25a40443-e66c-4c78-8b13-a8610ab6b8cc",
+      "encounters": 9
+    },
+    {
+      "_id": "25d379e3-eb72-4f13-a683-b0c990d965f0",
+      "encounters": 49
+    },
+    {
+      "_id": "25d6cb75-fac8-4007-a065-819121f4bab9",
+      "encounters": 28
+    },
+    {
+      "_id": "25f2b770-8821-48f0-a7fe-460dfe3b15b8",
+      "encounters": 117
+    },
+    {
+      "_id": "26ca976d-0b5b-4662-af41-535ff670dd5a",
+      "encounters": 21
+    },
+    {
+      "_id": "271943ef-e257-48cd-aa9a-b3a685f0572b",
+      "encounters": 11
+    },
+    {
+      "_id": "275e4aea-c071-42d9-8ab1-a462ef4732e0",
+      "encounters": 75
+    },
+    {
+      "_id": "27609b77-5865-4592-a347-f842a31cf677",
+      "encounters": 17
+    },
+    {
+      "_id": "278c5ad9-1e68-45f5-b274-0bdbb60569be",
+      "encounters": 19
+    },
+    {
+      "_id": "27a8b7b6-007d-4036-82a7-80a9ab670dcb",
+      "encounters": 17
+    },
+    {
+      "_id": "28f36cfa-7696-4f73-ac4f-427e802199d9",
+      "encounters": 55
+    },
+    {
+      "_id": "28fef93f-53af-40f8-aff0-007f61a53b27",
+      "encounters": 21
+    },
+    {
+      "_id": "29265f8e-2df1-46cd-8689-e9cbbced50f4",
+      "encounters": 15
+    },
+    {
+      "_id": "293afb6b-b727-445a-a5b5-1c7a419ba7e2",
+      "encounters": 5
+    },
+    {
+      "_id": "295044c0-c8ea-4c19-a69b-30a68f3c9502",
+      "encounters": 26
+    },
+    {
+      "_id": "2950e244-0ba6-4afe-ac30-e0d5529d1d1b",
+      "encounters": 89
+    },
+    {
+      "_id": "29c04840-6976-4653-8604-61434756f308",
+      "encounters": 14
+    },
+    {
+      "_id": "29fc389e-f454-4907-8fa5-987f312cc32a",
+      "encounters": 30
+    },
+    {
+      "_id": "2a113375-afae-45a3-b008-9fbb7fca92a5",
+      "encounters": 41
+    },
+    {
+      "_id": "2a4f645f-3287-441e-804e-a3607ee902b5",
+      "encounters": 25
+    },
+    {
+      "_id": "2a5c04ff-26e1-4406-831f-be13b540cbc7",
+      "encounters": 81
+    },
+    {
+      "_id": "2a6d1e58-88eb-4be0-b6b4-59a471257c2e",
+      "encounters": 98
+    },
+    {
+      "_id": "2a843035-9957-46ee-8b11-eb8afebe4242",
+      "encounters": 30
+    },
+    {
+      "_id": "2a88cb57-86fa-4259-93bf-3956e91b07f4",
+      "encounters": 16
+    },
+    {
+      "_id": "2abf5d21-8d0f-4263-b720-81d9d25f7a70",
+      "encounters": 47
+    },
+    {
+      "_id": "2b67dfa5-83a8-49d9-9dd8-5bb4c2091516",
+      "encounters": 7
+    },
+    {
+      "_id": "2be232c2-45cd-4621-b16a-9bd0ff62181a",
+      "encounters": 66
+    },
+    {
+      "_id": "2c3932da-bde3-4d3c-a790-ff3b0fc4fb53",
+      "encounters": 118
+    },
+    {
+      "_id": "2c634692-05d8-4122-9f46-dd9402e2cfc6",
+      "encounters": 58
+    },
+    {
+      "_id": "2c71dd97-7085-416a-aa07-d675bbe3adf2",
+      "encounters": 367
+    },
+    {
+      "_id": "2c7af31a-7740-4f28-80f8-d5005ea9c6c0",
+      "encounters": 9
+    },
+    {
+      "_id": "2cd4ff27-8689-4c17-b96d-f6daeeac830a",
+      "encounters": 67
+    },
+    {
+      "_id": "2d350bad-f546-4799-b04a-32236b4b3930",
+      "encounters": 76
+    },
+    {
+      "_id": "2d3e8561-04d7-48eb-8bac-a978d10f5641",
+      "encounters": 19
+    },
+    {
+      "_id": "2d51ecd6-9e18-40a1-9b15-cfc4f03a0e26",
+      "encounters": 21
+    },
+    {
+      "_id": "2dc2c931-b06e-4249-8a39-c33bc60c0f03",
+      "encounters": 32
+    },
+    {
+      "_id": "2e00e359-abc8-49aa-b98c-c0cc554acf34",
+      "encounters": 31
+    },
+    {
+      "_id": "2e3f986b-0894-4e57-a893-5d7eb334c829",
+      "encounters": 17
+    },
+    {
+      "_id": "2e4df8c7-8b04-4165-a1fb-e4234d8aebe7",
+      "encounters": 25
+    },
+    {
+      "_id": "2e7a30d7-aaac-44df-81c5-d4e4f2f8eedc",
+      "encounters": 39
+    },
+    {
+      "_id": "2ebc60de-f35e-40ef-ab09-ed736e6b4caa",
+      "encounters": 18
+    },
+    {
+      "_id": "2f423855-1f84-4faa-9218-cd593bef6fe1",
+      "encounters": 13
+    },
+    {
+      "_id": "2f43a131-a43a-4c8c-a723-cc261adb9cc6",
+      "encounters": 16
+    },
+    {
+      "_id": "2f5c3b8b-fce5-4c27-9cd0-c294d1d82054",
+      "encounters": 14
+    },
+    {
+      "_id": "2f76733b-933c-4cc5-aea2-53799158c8cc",
+      "encounters": 128
+    },
+    {
+      "_id": "2fa0c2b3-48c0-4fd4-b9f3-d6bfe033b175",
+      "encounters": 8
+    },
+    {
+      "_id": "2fbb6d14-280c-422d-abce-ee1b27b9f90f",
+      "encounters": 21
+    },
+    {
+      "_id": "2fc08e9c-5e4b-4f76-ae71-111c62a33983",
+      "encounters": 15
+    },
+    {
+      "_id": "2ffe9369-24e4-414b-8973-258fad09313a",
+      "encounters": 62
+    },
+    {
+      "_id": "301ebb70-0078-4989-b5dd-d751f56c404d",
+      "encounters": 25
+    },
+    {
+      "_id": "3042d51b-e7b8-4135-8b68-fb7a88ced16c",
+      "encounters": 37
+    },
+    {
+      "_id": "3047ebac-457b-4a6d-85eb-f59eef4f76cc",
+      "encounters": 57
+    },
+    {
+      "_id": "304e3c61-cd44-4251-8186-0537150ff62c",
+      "encounters": 16
+    },
+    {
+      "_id": "30d83f4d-837c-488d-9748-5ee0fa49edd5",
+      "encounters": 43
+    },
+    {
+      "_id": "30dd9636-c7bd-44ff-a5c9-20104ece45bd",
+      "encounters": 24
+    },
+    {
+      "_id": "31459cc4-45ed-4dee-b160-9f1a148a7724",
+      "encounters": 17
+    },
+    {
+      "_id": "317ccdcf-cb9c-488c-901c-a5d61c249919",
+      "encounters": 78
+    },
+    {
+      "_id": "32885ae1-d031-4f52-8f91-0e5196f5462a",
+      "encounters": 37
+    },
+    {
+      "_id": "32cd6f76-10ed-47e8-9547-0f6be517d213",
+      "encounters": 6
+    },
+    {
+      "_id": "32fbdecd-7987-4efb-9b6e-4c8e460cbd66",
+      "encounters": 45
+    },
+    {
+      "_id": "33189b5c-5919-4e99-8b62-89b225531eac",
+      "encounters": 10
+    },
+    {
+      "_id": "33204bf4-1feb-4369-8cc8-9edc4ad79c92",
+      "encounters": 20
+    },
+    {
+      "_id": "3335451e-608b-493a-9560-f0a05dd50b17",
+      "encounters": 17
+    },
+    {
+      "_id": "33454fc9-b2ea-407a-9a9d-64897cf44093",
+      "encounters": 80
+    },
+    {
+      "_id": "33c2184c-bda1-4d31-b0cb-4f18c46822da",
+      "encounters": 55
+    },
+    {
+      "_id": "34382e29-6854-4353-85be-802262bfea6e",
+      "encounters": 8
+    },
+    {
+      "_id": "344de08b-bae0-4d79-b89e-a2b6204e1a21",
+      "encounters": 19
+    },
+    {
+      "_id": "346acf4c-2ac2-4fc7-9d7b-630debf1d90b",
+      "encounters": 76
+    },
+    {
+      "_id": "3484a2ac-ae6b-4513-94c9-0c954236329e",
+      "encounters": 10
+    },
+    {
+      "_id": "354aefa8-0bd5-4943-8f93-505cf038d48a",
+      "encounters": 40
+    },
+    {
+      "_id": "355b4981-d84e-4055-96db-956464714214",
+      "encounters": 29
+    },
+    {
+      "_id": "35e1afdd-e938-441d-b54e-db15db0bbcfd",
+      "encounters": 22
+    },
+    {
+      "_id": "36267e65-b252-451f-a4f8-bfcc80594aac",
+      "encounters": 47
+    },
+    {
+      "_id": "36421d27-328e-4b13-9fca-903c19fe49dd",
+      "encounters": 58
+    },
+    {
+      "_id": "36cfc9c6-c720-41a3-ba03-bc9d11840564",
+      "encounters": 20
+    },
+    {
+      "_id": "3727f482-9fc1-4d26-8778-01b1b745e037",
+      "encounters": 29
+    },
+    {
+      "_id": "372a8506-f31a-45fa-b563-c50305d983c3",
+      "encounters": 20
+    },
+    {
+      "_id": "3800b2a6-2360-40dc-b709-394b4794cc0d",
+      "encounters": 16
+    },
+    {
+      "_id": "380e2738-59f4-4f03-a9f7-11d73c648e34",
+      "encounters": 28
+    },
+    {
+      "_id": "383da7a1-916b-41ce-8223-43afa899c86e",
+      "encounters": 14
+    },
+    {
+      "_id": "3886269a-5118-4f12-95fe-6c5440b53c0d",
+      "encounters": 20
+    },
+    {
+      "_id": "3a52cc8f-394a-4840-968d-b595f4e3106d",
+      "encounters": 15
+    },
+    {
+      "_id": "3a645748-8ddc-4876-8674-5c1ac5bf2899",
+      "encounters": 19
+    },
+    {
+      "_id": "3acf9313-1874-4dff-ab2a-3187516d92d6",
+      "encounters": 826
+    },
+    {
+      "_id": "3b46f9a9-3447-441d-abd4-4f8e46f9e0c2",
+      "encounters": 160
+    },
+    {
+      "_id": "3b8d7909-9d3f-4345-b14f-d413a136d0c2",
+      "encounters": 30
+    },
+    {
+      "_id": "3b95da79-b5aa-419a-9558-f4627b02ae3a",
+      "encounters": 56
+    },
+    {
+      "_id": "3c2bfff1-8a3f-4b9c-bc18-e7ea6562e436",
+      "encounters": 10
+    },
+    {
+      "_id": "3c8151ab-f2b1-44e1-9adc-8f27743496a4",
+      "encounters": 31
+    },
+    {
+      "_id": "3c851902-c01a-499c-bf65-00125386275f",
+      "encounters": 38
+    },
+    {
+      "_id": "3cb83305-83bf-4645-86bc-5d6a5ff2ab64",
+      "encounters": 31
+    },
+    {
+      "_id": "3dd2dd29-7cd0-48f7-b859-136c6e9d36e0",
+      "encounters": 385
+    },
+    {
+      "_id": "3e234e30-d471-4c3e-b433-220f2aa4a91d",
+      "encounters": 50
+    },
+    {
+      "_id": "3e66977b-83ab-433e-9cd5-91b6ea2019a3",
+      "encounters": 15
+    },
+    {
+      "_id": "3e89db15-7c8d-464c-8ed6-e1535438ca83",
+      "encounters": 57
+    },
+    {
+      "_id": "3ebabd5c-40e0-44c2-8d9c-470d62889cef",
+      "encounters": 7
+    },
+    {
+      "_id": "3ef4c7dc-28c2-4436-b0cc-fa858e2e6c90",
+      "encounters": 21
+    },
+    {
+      "_id": "3f2d22c9-5faf-4e71-8d83-f47071bae997",
+      "encounters": 27
+    },
+    {
+      "_id": "3f336702-bf73-4fc8-bd59-3ba77fd65d0d",
+      "encounters": 1538
+    },
+    {
+      "_id": "3f42f2e3-6f63-47d2-aac8-ee1f12271b47",
+      "encounters": 13
+    },
+    {
+      "_id": "3f8d6443-f7d9-40bf-acb5-427c853a68ca",
+      "encounters": 14
+    },
+    {
+      "_id": "3fe783d9-b8f8-4d21-b320-4fb7745702db",
+      "encounters": 33
+    },
+    {
+      "_id": "4054b69b-2082-4ce7-ae96-0c10f7da3020",
+      "encounters": 22
+    },
+    {
+      "_id": "40bb6e06-0d00-40d1-92b9-f4f2bcee5781",
+      "encounters": 44
+    },
+    {
+      "_id": "40c5db10-1a0d-4eef-b5de-931edd347fc2",
+      "encounters": 51
+    },
+    {
+      "_id": "40c83ae5-ba34-483e-b348-b558b44179ca",
+      "encounters": 114
+    },
+    {
+      "_id": "41de7636-253c-4360-8cf7-6fc166b0448b",
+      "encounters": 22
+    },
+    {
+      "_id": "4217ed61-af8b-47be-80d2-c84336bc01a2",
+      "encounters": 25
+    },
+    {
+      "_id": "4267aaa2-7bc1-4dd5-a059-a78743dad7ed",
+      "encounters": 30
+    },
+    {
+      "_id": "42858ac1-95dc-464e-84bc-5585a88f616f",
+      "encounters": 44
+    },
+    {
+      "_id": "42d200ef-0872-4318-8326-08cd7056b2db",
+      "encounters": 28
+    },
+    {
+      "_id": "42f5948f-7a5f-417e-838c-e4ff331deadf",
+      "encounters": 16
+    },
+    {
+      "_id": "431971f5-a39f-44f8-9ef9-10502db973c9",
+      "encounters": 12
+    },
+    {
+      "_id": "43539cc7-ae47-4e90-ab68-39506ef8da30",
+      "encounters": 28
+    },
+    {
+      "_id": "4374229d-f618-43e5-ac4f-381a47c5de8f",
+      "encounters": 19
+    },
+    {
+      "_id": "43915307-83f4-4afb-a1c1-97c7ef09d905",
+      "encounters": 13
+    },
+    {
+      "_id": "4440ff11-69ec-440b-a2bd-dc1c14105e8e",
+      "encounters": 82
+    },
+    {
+      "_id": "44552b30-62c6-494b-b75f-216a0969be38",
+      "encounters": 10
+    },
+    {
+      "_id": "447813c0-3e39-4eda-9012-38bb69f026c8",
+      "encounters": 13
+    },
+    {
+      "_id": "449a9a85-5ffc-4df5-a090-9d6e4c6006cb",
+      "encounters": 45
+    },
+    {
+      "_id": "44c8b4c8-4457-4ba0-94b6-285ef327a249",
+      "encounters": 16
+    },
+    {
+      "_id": "45166484-2cc4-40f0-9be5-b9435ce0e476",
+      "encounters": 12
+    },
+    {
+      "_id": "45840f9a-a735-45e4-beb0-b750fc9a712e",
+      "encounters": 63
+    },
+    {
+      "_id": "45ad6c75-7808-4f70-9c80-0db44f681e55",
+      "encounters": 18
+    },
+    {
+      "_id": "45c5c779-d2f9-4bf1-b6ff-deb7ff1fd54c",
+      "encounters": 6
+    },
+    {
+      "_id": "45d68751-751e-4954-bc9d-f7a47e21eede",
+      "encounters": 9
+    },
+    {
+      "_id": "46301870-33bf-4dfd-b12b-2ce9583001f4",
+      "encounters": 38
+    },
+    {
+      "_id": "46768e09-6b9f-49fe-9480-529079f64562",
+      "encounters": 63
+    },
+    {
+      "_id": "46ca94be-368f-4bb7-a7a9-a16679a7ab52",
+      "encounters": 29
+    },
+    {
+      "_id": "46d3a308-7383-47ff-802c-c97bfd727720",
+      "encounters": 20
+    },
+    {
+      "_id": "471eb0f1-acfb-4df9-a7cf-f3af761ebd32",
+      "encounters": 25
+    },
+    {
+      "_id": "47392cc2-4fb3-4431-b56f-c54688671786",
+      "encounters": 58
+    },
+    {
+      "_id": "47520f8d-0b71-4fa3-9b7a-bb473e66f1b6",
+      "encounters": 20
+    },
+    {
+      "_id": "475b2a8b-19a0-451a-b965-9c6bebf16434",
+      "encounters": 104
+    },
+    {
+      "_id": "47a91815-0dca-49df-b1dc-8bb88d8c1b38",
+      "encounters": 58
+    },
+    {
+      "_id": "48713268-0ca7-4699-a372-56af983af6f0",
+      "encounters": 22
+    },
+    {
+      "_id": "4877881d-b098-4299-9075-febe1b3b8934",
+      "encounters": 44
+    },
+    {
+      "_id": "48f06aac-21ac-44d5-9bf5-d921d30cef89",
+      "encounters": 58
+    },
+    {
+      "_id": "49303b96-1de5-4365-9ff3-bf960aea755b",
+      "encounters": 78
+    },
+    {
+      "_id": "4970c680-5a9b-4f7c-9d22-9c294fa476aa",
+      "encounters": 12
+    },
+    {
+      "_id": "499223b1-e26a-4e04-b258-afc9696be065",
+      "encounters": 17
+    },
+    {
+      "_id": "49cbbe15-82cf-4ecc-b5b6-4cb6749c0c40",
+      "encounters": 15
+    },
+    {
+      "_id": "49cc8ae0-debc-428b-918c-75d3a635a19b",
+      "encounters": 6
+    },
+    {
+      "_id": "4a50c62e-24ba-459b-993c-0959691cf96d",
+      "encounters": 36
+    },
+    {
+      "_id": "4a52ea9c-d410-4b78-a4da-6053e2ed0787",
+      "encounters": 67
+    },
+    {
+      "_id": "4a676284-ffa9-4bda-bfcb-deb04aa9d774",
+      "encounters": 25
+    },
+    {
+      "_id": "4a757679-50a3-4392-8929-bec0876f4744",
+      "encounters": 96
+    },
+    {
+      "_id": "4af2e0a8-8c6b-41bc-949f-f4cafa9b2ecb",
+      "encounters": 27
+    },
+    {
+      "_id": "4b414e31-2791-4942-9c28-46a299805848",
+      "encounters": 25
+    },
+    {
+      "_id": "4b8d5256-a202-4f3a-be23-5f4351251eb3",
+      "encounters": 63
+    },
+    {
+      "_id": "4b92e3f1-b92b-48ec-9baa-2905409d1743",
+      "encounters": 21
+    },
+    {
+      "_id": "4ba0fb24-b585-447f-a2be-392c3a50c4b6",
+      "encounters": 13
+    },
+    {
+      "_id": "4bbde047-119f-4a12-9b68-2a89b274364e",
+      "encounters": 28
+    },
+    {
+      "_id": "4be910c3-22ae-4868-9dbe-667aec6e5342",
+      "encounters": 62
+    },
+    {
+      "_id": "4cd6a8ff-8476-4af7-a2d5-60fc36f7df9a",
+      "encounters": 12
+    },
+    {
+      "_id": "4e0be087-7a33-4655-a9c0-f00f23178ac1",
+      "encounters": 7
+    },
+    {
+      "_id": "4e169876-06be-4151-9ae1-b5568765ee13",
+      "encounters": 23
+    },
+    {
+      "_id": "4e83ed9f-f2ed-4add-8434-2fc116de704b",
+      "encounters": 63
+    },
+    {
+      "_id": "4eb14734-102d-442d-b683-809b100a1dea",
+      "encounters": 70
+    },
+    {
+      "_id": "4f046695-c67b-4e9a-b392-f0c6d54d580f",
+      "encounters": 14
+    },
+    {
+      "_id": "4f0cc2f3-8492-41c9-ad38-f01219739df0",
+      "encounters": 43
+    },
+    {
+      "_id": "4f9208f1-d6b3-4c17-a4f1-7303589d22c4",
+      "encounters": 41
+    },
+    {
+      "_id": "4f9dcdaa-fb47-412b-8288-03f8cbbc321e",
+      "encounters": 128
+    },
+    {
+      "_id": "4fa58d5a-5acd-4629-ba8d-4524661d8b74",
+      "encounters": 21
+    },
+    {
+      "_id": "4fc76a3b-e39e-4091-a6af-3595e0cb607e",
+      "encounters": 31
+    },
+    {
+      "_id": "4ffa7fe0-5454-480a-b648-ed038052dda1",
+      "encounters": 18
+    },
+    {
+      "_id": "505609ce-7420-4cad-8c97-e1c42c4c79c7",
+      "encounters": 72
+    },
+    {
+      "_id": "5056439c-015e-4968-9281-2b8c72c3926e",
+      "encounters": 16
+    },
+    {
+      "_id": "506c6137-e174-474f-85fb-41398ace5ef4",
+      "encounters": 10
+    },
+    {
+      "_id": "5072b4ab-5af4-4823-8f25-05d0704dbaec",
+      "encounters": 13
+    },
+    {
+      "_id": "508d609e-4740-4458-a1b0-3d2fcb0ba804",
+      "encounters": 52
+    },
+    {
+      "_id": "50e7ede4-7ca1-4b2c-ae64-6b88b58eeaac",
+      "encounters": 33
+    },
+    {
+      "_id": "50ee80ee-bce0-4794-87f6-d0fb74a88f8a",
+      "encounters": 21
+    },
+    {
+      "_id": "5137bcf1-9fc6-4187-8d8a-da1624e21751",
+      "encounters": 61
+    },
+    {
+      "_id": "518f83f3-a717-4705-a181-06e205df480b",
+      "encounters": 20
+    },
+    {
+      "_id": "51ab042b-d75e-45f9-ad85-019be3a051bf",
+      "encounters": 8
+    },
+    {
+      "_id": "51f196eb-b11e-493e-ad95-254285af055e",
+      "encounters": 24
+    },
+    {
+      "_id": "51f43df4-10dd-43ef-b2ce-ed0b0b5e669b",
+      "encounters": 12
+    },
+    {
+      "_id": "520009a5-e773-47ac-bf40-0162a153f478",
+      "encounters": 19
+    },
+    {
+      "_id": "522feca0-e3fb-4867-9663-f699fbe4f7a1",
+      "encounters": 19
+    },
+    {
+      "_id": "52729daa-66a1-42d6-96c0-691a2d89e819",
+      "encounters": 110
+    },
+    {
+      "_id": "528cb8bd-10b7-400d-9069-d599cce1b2f1",
+      "encounters": 24
+    },
+    {
+      "_id": "532696f2-0b76-4eb0-9aea-a74e2fb1bed2",
+      "encounters": 51
+    },
+    {
+      "_id": "538421f8-9001-4853-8e84-59fcabdfe46d",
+      "encounters": 62
+    },
+    {
+      "_id": "53b564bb-24b2-47ac-91ba-054e71a108e9",
+      "encounters": 47
+    },
+    {
+      "_id": "53d371cc-eb68-4740-a68c-39707c6cb519",
+      "encounters": 31
+    },
+    {
+      "_id": "53f3587e-b9bf-473a-b36e-62f0e1946fa1",
+      "encounters": 144
+    },
+    {
+      "_id": "542a3d97-d840-4f63-9cc7-5110ce3f7e82",
+      "encounters": 53
+    },
+    {
+      "_id": "550f9c30-5e0c-4f28-84d2-74ee3263a645",
+      "encounters": 11
+    },
+    {
+      "_id": "552600f9-53d6-4d77-add6-0d364bb15b63",
+      "encounters": 30
+    },
+    {
+      "_id": "55301b9d-4de5-4ab7-a727-579258ce4e71",
+      "encounters": 14
+    },
+    {
+      "_id": "55506d51-2c6a-4608-aae3-7cb2f111c926",
+      "encounters": 20
+    },
+    {
+      "_id": "5572d54e-4371-4e36-8069-53349880ce5b",
+      "encounters": 7
+    },
+    {
+      "_id": "55cc31db-baec-40b5-9b4d-276944000751",
+      "encounters": 47
+    },
+    {
+      "_id": "55de6142-7bb1-47f0-95c3-29fda996ef6b",
+      "encounters": 31
+    },
+    {
+      "_id": "55f5ca08-6b25-4f13-9bf8-b3f0b3301647",
+      "encounters": 30
+    },
+    {
+      "_id": "5637fb76-12fb-41bc-82c9-d1a09bdae744",
+      "encounters": 73
+    },
+    {
+      "_id": "5638c948-62e3-4727-844b-3ac11d99749a",
+      "encounters": 27
+    },
+    {
+      "_id": "5666bbaf-828b-4fd1-a4f9-eeead450816d",
+      "encounters": 38
+    },
+    {
+      "_id": "5731992d-4bce-4b84-876f-09df55166f1b",
+      "encounters": 17
+    },
+    {
+      "_id": "58100357-85b6-4334-bc2a-8998c24a4812",
+      "encounters": 44
+    },
+    {
+      "_id": "5846c531-ad71-4b34-9607-3a1022cddffa",
+      "encounters": 19
+    },
+    {
+      "_id": "593548b9-2898-4fcc-b457-2ade24d11123",
+      "encounters": 15
+    },
+    {
+      "_id": "59486a8b-389b-4355-9df4-edc62bbd1a11",
+      "encounters": 47
+    },
+    {
+      "_id": "59669e7c-0190-4cbf-9e27-4898f1a35d03",
+      "encounters": 62
+    },
+    {
+      "_id": "596843e0-b4a6-456b-8484-ed88f877ea8c",
+      "encounters": 10
+    },
+    {
+      "_id": "59cf17d9-6c13-4333-a1cb-cc5fdf63366d",
+      "encounters": 299
+    },
+    {
+      "_id": "59de0d88-e84d-4c2b-8c9b-12167eb03949",
+      "encounters": 50
+    },
+    {
+      "_id": "5a1848d9-9b49-4529-94f1-e463b502c73b",
+      "encounters": 16
+    },
+    {
+      "_id": "5a8c7f6d-b15c-4c55-b299-5bf8c2b35ad4",
+      "encounters": 47
+    },
+    {
+      "_id": "5a9c745c-1aae-46fc-8175-8f42b5e4fc5b",
+      "encounters": 21
+    },
+    {
+      "_id": "5a9d692d-992b-45a6-a6bb-c737d590e82b",
+      "encounters": 20
+    },
+    {
+      "_id": "5ac53bc4-f585-4a8f-adaf-51c6b31c79fa",
+      "encounters": 49
+    },
+    {
+      "_id": "5ad3dd08-6e9e-4feb-98ff-2c03ad4d3ef1",
+      "encounters": 67
+    },
+    {
+      "_id": "5afd4157-103e-4838-9166-22c8a7104b30",
+      "encounters": 46
+    },
+    {
+      "_id": "5b5bc31a-0e78-4e08-a183-e2503be440b3",
+      "encounters": 58
+    },
+    {
+      "_id": "5b891358-1bb3-4bbf-b8a6-a73fbe58efe7",
+      "encounters": 95
+    },
+    {
+      "_id": "5bb2161d-1383-408b-a96d-344c0bd5f23a",
+      "encounters": 41
+    },
+    {
+      "_id": "5be0e71b-5810-4d2f-8a9d-bc7a4c200888",
+      "encounters": 10
+    },
+    {
+      "_id": "5be97219-ef35-4c5a-88ab-5f9a2187b7d6",
+      "encounters": 44
+    },
+    {
+      "_id": "5bee22a4-3260-4bf7-9666-281fc8f1eeb9",
+      "encounters": 10
+    },
+    {
+      "_id": "5bf2b18d-fcdc-4ac8-9b39-e623eaad226e",
+      "encounters": 59
+    },
+    {
+      "_id": "5c06120a-9af5-4204-951b-7a8bfc465df3",
+      "encounters": 74
+    },
+    {
+      "_id": "5c1660c6-e806-4e52-a76d-846df0aea060",
+      "encounters": 22
+    },
+    {
+      "_id": "5c520448-6728-42cb-8cf2-457bc7c2b1f1",
+      "encounters": 23
+    },
+    {
+      "_id": "5caf8d69-3d67-4264-9dc3-4dd69ddf327a",
+      "encounters": 9
+    },
+    {
+      "_id": "5cb510f1-244d-4f02-a82b-3631e998fad1",
+      "encounters": 161
+    },
+    {
+      "_id": "5ce924c7-ec4c-4b5f-93ff-2ae274654c74",
+      "encounters": 35
+    },
+    {
+      "_id": "5d4057c5-e455-4ab1-aea6-3371566cd862",
+      "encounters": 21
+    },
+    {
+      "_id": "5d9d6072-7c35-41d1-aeb8-6ed653f308d2",
+      "encounters": 53
+    },
+    {
+      "_id": "5dccb2e6-668f-41b4-add4-4020617610b3",
+      "encounters": 51
+    },
+    {
+      "_id": "5ee76f27-28b9-4eee-992f-fa9e6f04330a",
+      "encounters": 15
+    },
+    {
+      "_id": "5f08cc74-e542-4b93-a565-bf802a03d529",
+      "encounters": 21
+    },
+    {
+      "_id": "5f1c9186-80b0-405f-9f74-c4e26beb1d01",
+      "encounters": 40
+    },
+    {
+      "_id": "5f7f2deb-6627-465c-980a-9b6b4bf381dc",
+      "encounters": 10
+    },
+    {
+      "_id": "60320709-0445-4112-ab79-1997cc6f3822",
+      "encounters": 26
+    },
+    {
+      "_id": "608e39b8-367a-48d6-afc6-244e4c19c849",
+      "encounters": 30
+    },
+    {
+      "_id": "61417eb5-1c42-4207-afb3-c9ebef48496f",
+      "encounters": 108
+    },
+    {
+      "_id": "61d64033-b6eb-40fd-a003-225ad15bb73b",
+      "encounters": 55
+    },
+    {
+      "_id": "62494529-9ceb-486a-9510-22f7cb454dd6",
+      "encounters": 44
+    },
+    {
+      "_id": "631107a0-17ac-4d1a-bc95-0089f4ed90f3",
+      "encounters": 24
+    },
+    {
+      "_id": "6319546f-4629-4f12-994a-f489678bc05d",
+      "encounters": 59
+    },
+    {
+      "_id": "6322b3dc-1e15-4df9-9d5f-dac2501d9960",
+      "encounters": 23
+    },
+    {
+      "_id": "63ca741d-130f-4748-b15f-f75075630a73",
+      "encounters": 62
+    },
+    {
+      "_id": "64ab927a-de28-4993-bfb2-d851cb366f73",
+      "encounters": 22
+    },
+    {
+      "_id": "64b55489-6953-48af-9e74-07e56130c0e6",
+      "encounters": 21
+    },
+    {
+      "_id": "64c260d6-c09b-4280-ab86-0410f555e1f4",
+      "encounters": 4
+    },
+    {
+      "_id": "64eb57c7-d74d-4f4f-9f7f-b58a1fbc57df",
+      "encounters": 51
+    },
+    {
+      "_id": "64fabecd-5e28-4fc1-915a-678c80dac058",
+      "encounters": 30
+    },
+    {
+      "_id": "65243e61-da11-42a6-826e-a43d960d1e84",
+      "encounters": 63
+    },
+    {
+      "_id": "6546e352-50ed-478f-961b-fa093478c14e",
+      "encounters": 19
+    },
+    {
+      "_id": "65b0df4d-7a31-4a6d-9afb-96952e930f89",
+      "encounters": 16
+    },
+    {
+      "_id": "65fdd955-9b96-4faa-8b71-c29b8807f709",
+      "encounters": 9
+    },
+    {
+      "_id": "66135cde-428a-4cf7-bc1d-d5ddce40d9cd",
+      "encounters": 117
+    },
+    {
+      "_id": "664dea73-3a66-4f67-bc88-300660a1dec9",
+      "encounters": 18
+    },
+    {
+      "_id": "666237cb-e9f5-4126-9d0e-3706dd5f897c",
+      "encounters": 11
+    },
+    {
+      "_id": "668ad49e-46d7-45ec-a4b4-dab0961d180b",
+      "encounters": 83
+    },
+    {
+      "_id": "66b46e68-f643-4ebd-8ad1-14ebf58e356c",
+      "encounters": 58
+    },
+    {
+      "_id": "66de0a90-460b-420e-a657-d02bcdf65224",
+      "encounters": 18
+    },
+    {
+      "_id": "67156a1d-2e86-42e0-a81c-6ce3af24aca4",
+      "encounters": 15
+    },
+    {
+      "_id": "67f81ece-3fc9-48e6-bf39-3d71a1ae1234",
+      "encounters": 13
+    },
+    {
+      "_id": "68878f91-5962-4ef2-83e7-43b8298c1708",
+      "encounters": 105
+    },
+    {
+      "_id": "690124c3-77f8-490a-abd1-94d318680748",
+      "encounters": 14
+    },
+    {
+      "_id": "690e0ead-590e-4008-a376-67f88c5d7bad",
+      "encounters": 13
+    },
+    {
+      "_id": "6958e2b0-3c19-4217-8049-2d315c70cab5",
+      "encounters": 50
+    },
+    {
+      "_id": "69b60335-4bd9-4043-ad76-26b75d7dd40a",
+      "encounters": 36
+    },
+    {
+      "_id": "69e3f282-ba80-4cbe-9a35-d25f2055b61c",
+      "encounters": 38
+    },
+    {
+      "_id": "6a255e2d-4eba-4ce3-ae54-8a7107ffcb74",
+      "encounters": 15
+    },
+    {
+      "_id": "6a84665a-d614-404b-8557-f807676de5c6",
+      "encounters": 34
+    },
+    {
+      "_id": "6a8faf4c-5577-4f9b-964d-6dc253b3b0c1",
+      "encounters": 18
+    },
+    {
+      "_id": "6aa4b3c1-4b16-479e-a618-0fc47fb99f6e",
+      "encounters": 68
+    },
+    {
+      "_id": "6abdc54d-098e-47dc-8e11-701464386c67",
+      "encounters": 104
+    },
+    {
+      "_id": "6bac5e1a-692a-47a7-ba58-474ce3713644",
+      "encounters": 7
+    },
+    {
+      "_id": "6c2b1cfd-887a-43f8-bee0-000ce2fc6ef0",
+      "encounters": 61
+    },
+    {
+      "_id": "6c2edce4-10b2-47c9-8af0-69bfa5ab3520",
+      "encounters": 17
+    },
+    {
+      "_id": "6c7a3894-fa93-418f-b086-4bf001b94a50",
+      "encounters": 27
+    },
+    {
+      "_id": "6c7ce9c1-78a9-4b72-beff-366cf7aeef5c",
+      "encounters": 25
+    },
+    {
+      "_id": "6ca038f1-a3f6-4c2d-848e-bab8e7ae7101",
+      "encounters": 79
+    },
+    {
+      "_id": "6cf93841-acdc-45c5-aca5-7c3efefd7494",
+      "encounters": 59
+    },
+    {
+      "_id": "6d048a56-edb8-4f29-891d-7a84d75a8e78",
+      "encounters": 151
+    },
+    {
+      "_id": "6d3480e3-45a3-4f7c-b97e-0901dc6c8b05",
+      "encounters": 37
+    },
+    {
+      "_id": "6d4312d1-0663-474b-bd30-b0e00dd7dbc7",
+      "encounters": 16
+    },
+    {
+      "_id": "6d5c2529-b925-47e6-bb15-7ce2ce6320f3",
+      "encounters": 10
+    },
+    {
+      "_id": "6d8fdec1-d77d-4175-b250-f1bac5472b48",
+      "encounters": 30
+    },
+    {
+      "_id": "6dafa93d-3698-4124-9bbd-7429cc2a7374",
+      "encounters": 76
+    },
+    {
+      "_id": "6e20fc08-a75d-43db-b642-4f15064aeb0d",
+      "encounters": 14
+    },
+    {
+      "_id": "6e239b88-5153-4098-85ab-27bd7539cd0e",
+      "encounters": 44
+    },
+    {
+      "_id": "6e4842fd-bb5f-4c15-a198-52deb8f7706a",
+      "encounters": 13
+    },
+    {
+      "_id": "6e6ae8f3-514f-4686-b1e4-14baeacb671f",
+      "encounters": 13
+    },
+    {
+      "_id": "6e852965-91fe-4940-bbf7-93d20ef25bda",
+      "encounters": 8
+    },
+    {
+      "_id": "6e9ca2a6-00eb-47ca-9e31-f249a33c90ad",
+      "encounters": 16
+    },
+    {
+      "_id": "6ec18ddf-e9ee-421a-9033-456f558c7b4b",
+      "encounters": 367
+    },
+    {
+      "_id": "6ec4e56c-9a9d-49c8-8fbe-cfef93c14b6b",
+      "encounters": 15
+    },
+    {
+      "_id": "6f6492b6-fc11-42ed-aa0b-ec99b1cfc12a",
+      "encounters": 50
+    },
+    {
+      "_id": "6f7f9443-cb21-4b03-8cdc-14ab4894c779",
+      "encounters": 25
+    },
+    {
+      "_id": "703e4c46-ded2-4797-97fe-57fedda2825f",
+      "encounters": 32
+    },
+    {
+      "_id": "70794fdc-0702-4e0f-9682-8ec5d7145436",
+      "encounters": 90
+    },
+    {
+      "_id": "711d2093-5eb9-45a6-ad09-4b5c0371ad85",
+      "encounters": 14
+    },
+    {
+      "_id": "71257193-1eb5-45e4-9a86-37b8f5d56340",
+      "encounters": 63
+    },
+    {
+      "_id": "7148eb24-d1f0-4a5c-93c0-3d2a632f25da",
+      "encounters": 17
+    },
+    {
+      "_id": "714b9c18-783d-4f52-aa64-cc3a05a286d9",
+      "encounters": 375
+    },
+    {
+      "_id": "716348ff-0af1-48b6-9c08-2907772ba5bc",
+      "encounters": 27
+    },
+    {
+      "_id": "716e9acb-2d79-4859-afde-f25990e5a2e0",
+      "encounters": 20
+    },
+    {
+      "_id": "71ba0469-f0cc-4177-ac70-ea07cb01c8b8",
+      "encounters": 85
+    },
+    {
+      "_id": "71e13815-55fb-4734-bcac-6079160d82a0",
+      "encounters": 104
+    },
+    {
+      "_id": "726676e8-a15f-4dfe-88a0-f2616bffa746",
+      "encounters": 16
+    },
+    {
+      "_id": "7279ced8-7e16-4b9b-8832-47ea10aadd9c",
+      "encounters": 17
+    },
+    {
+      "_id": "72c0b9ce-7aa4-430b-aaff-bd0ce7846e55",
+      "encounters": 13
+    },
+    {
+      "_id": "732e322c-2329-497e-ba49-5b21fcfa863f",
+      "encounters": 41
+    },
+    {
+      "_id": "733bbea8-c5a6-4599-86ec-9a797ce87e5d",
+      "encounters": 22
+    },
+    {
+      "_id": "7342aaa6-55d8-46d0-bce6-9cef87395f54",
+      "encounters": 5
+    },
+    {
+      "_id": "734dfbb9-6320-4fee-b21a-175d3f2f14ba",
+      "encounters": 26
+    },
+    {
+      "_id": "73865a0e-b09d-4604-ad78-f6d2d82f76f8",
+      "encounters": 18
+    },
+    {
+      "_id": "73ccae2b-09be-48be-b6f8-320bc4df146a",
+      "encounters": 95
+    },
+    {
+      "_id": "73d6a730-418f-4dbc-bc00-6d2c53bfa89a",
+      "encounters": 20
+    },
+    {
+      "_id": "73f124a4-e69e-4b8c-a447-e72d23dc54be",
+      "encounters": 61
+    },
+    {
+      "_id": "73f62bdf-9729-4005-ab16-b61d37573e2a",
+      "encounters": 99
+    },
+    {
+      "_id": "73fc00f8-a341-4f62-be27-07c35c3460bc",
+      "encounters": 61
+    },
+    {
+      "_id": "741831b4-d1a2-407b-b5d7-af61ff550867",
+      "encounters": 8
+    },
+    {
+      "_id": "74f2ee46-fb61-4ab8-98f8-b123c2b62d2e",
+      "encounters": 20
+    },
+    {
+      "_id": "752141b3-ce4c-4191-a38b-f2867d5dfaac",
+      "encounters": 54
+    },
+    {
+      "_id": "7525003c-806f-401a-a6ae-751c39112c56",
+      "encounters": 32
+    },
+    {
+      "_id": "756c201c-d61c-4495-afc0-09ca95c673a4",
+      "encounters": 21
+    },
+    {
+      "_id": "756e459c-b53e-4120-b427-a80a5caebc06",
+      "encounters": 18
+    },
+    {
+      "_id": "759ef86c-a675-457a-8304-0a6f34b57f8f",
+      "encounters": 20
+    },
+    {
+      "_id": "75cbc57d-22ee-4c74-bc77-b5f0e2c6a100",
+      "encounters": 40
+    },
+    {
+      "_id": "76353d9c-9861-4ca8-8d24-d458b1e88da5",
+      "encounters": 17
+    },
+    {
+      "_id": "76811a9f-dd57-4949-9377-5c164d58665d",
+      "encounters": 2
+    },
+    {
+      "_id": "76982e06-f8b8-4509-9ca3-65a99c8650fe",
+      "encounters": 44
+    },
+    {
+      "_id": "76acc19c-38d4-4fa9-83e4-cf9bdc82340d",
+      "encounters": 72
+    },
+    {
+      "_id": "76ddb9d8-0c16-478e-b6e5-b5c2e4f7860e",
+      "encounters": 10
+    },
+    {
+      "_id": "7707b0b1-9d24-4ec5-9d42-d6a077c037cb",
+      "encounters": 15
+    },
+    {
+      "_id": "7723d469-7227-4b58-8f3e-b441197f4134",
+      "encounters": 50
+    },
+    {
+      "_id": "7756182f-6a65-4d6a-91cb-18971b127606",
+      "encounters": 14
+    },
+    {
+      "_id": "77a0cd86-92bb-4c6d-a91a-49ee66e353b9",
+      "encounters": 72
+    },
+    {
+      "_id": "77f75716-3e7c-4e75-ad10-e5f04ae35002",
+      "encounters": 8
+    },
+    {
+      "_id": "77f8a626-c96e-4aca-ad5a-755eaeb975cc",
+      "encounters": 60
+    },
+    {
+      "_id": "78574ffd-6c17-492a-8bb0-5a0062bb7730",
+      "encounters": 7
+    },
+    {
+      "_id": "787b9b47-75cd-4df0-b342-e38eb7cb9d34",
+      "encounters": 17
+    },
+    {
+      "_id": "7890b059-02a1-4fc7-8882-8d17b584d328",
+      "encounters": 9
+    },
+    {
+      "_id": "789ac868-bc05-4da7-9068-25b03a8095e0",
+      "encounters": 15
+    },
+    {
+      "_id": "78a9a8d6-b3b2-47dc-b4a0-867abec7c78f",
+      "encounters": 37
+    },
+    {
+      "_id": "78b7450d-df19-4780-aa37-fe093291d36a",
+      "encounters": 19
+    },
+    {
+      "_id": "78ddb775-9cd7-46c6-87b9-277a2a92c72b",
+      "encounters": 16
+    },
+    {
+      "_id": "79066870-ef55-4bcb-b849-1edf3f6487cc",
+      "encounters": 100
+    },
+    {
+      "_id": "795b6813-1f5a-4f4b-9909-3687c1c40aac",
+      "encounters": 13
+    },
+    {
+      "_id": "799d0738-d5cd-4161-bdb8-e3c49e21ec66",
+      "encounters": 115
+    },
+    {
+      "_id": "79a4b9ad-e5a8-46e2-ae1d-ea32a915b73c",
+      "encounters": 14
+    },
+    {
+      "_id": "79c74afc-ec58-4b7e-8b5c-1b2c5d9ff1f5",
+      "encounters": 60
+    },
+    {
+      "_id": "79d7013f-d845-4184-ba3e-956ddcea0fc4",
+      "encounters": 27
+    },
+    {
+      "_id": "79d782c9-dc9c-456c-a243-a6d396b4d0e0",
+      "encounters": 17
+    },
+    {
+      "_id": "79f5692c-fdf7-4413-8f9e-89adecd0fb99",
+      "encounters": 61
+    },
+    {
+      "_id": "79f7403a-15f5-425b-8c0a-fdf26e7c926b",
+      "encounters": 84
+    },
+    {
+      "_id": "7a297104-f0bd-4ca6-aa19-c910e2a45f01",
+      "encounters": 29
+    },
+    {
+      "_id": "7a397d12-fe12-47c4-9b55-69f054c71fa5",
+      "encounters": 14
+    },
+    {
+      "_id": "7a8399b1-ca18-4612-9683-c43b023fda8b",
+      "encounters": 19
+    },
+    {
+      "_id": "7a8d17ee-0ec1-4dcc-8304-4e42ccaa6a38",
+      "encounters": 58
+    },
+    {
+      "_id": "7a8e4ef0-adf4-4e6d-8d28-5d36886547f4",
+      "encounters": 38
+    },
+    {
+      "_id": "7ab8d08a-bdcd-471d-86b9-3c86f19d39ba",
+      "encounters": 15
+    },
+    {
+      "_id": "7b51cca8-284b-42a5-8117-cc21f48454f5",
+      "encounters": 10
+    },
+    {
+      "_id": "7b99cacb-b260-4c0a-a027-d1be359d9876",
+      "encounters": 34
+    },
+    {
+      "_id": "7bac2205-8289-4efd-a05a-47203b0b85d7",
+      "encounters": 21
+    },
+    {
+      "_id": "7c18105e-5f61-44f5-b47a-c1a8b83f542b",
+      "encounters": 6
+    },
+    {
+      "_id": "7c6d7838-6453-4e4a-817e-39c8c387f986",
+      "encounters": 121
+    },
+    {
+      "_id": "7c87072a-b448-4939-b131-de04228b5ace",
+      "encounters": 16
+    },
+    {
+      "_id": "7d2e09cb-ceda-47d6-8cb2-5e1eb725665d",
+      "encounters": 16
+    },
+    {
+      "_id": "7d3adf8f-e840-4480-8353-584d743081b3",
+      "encounters": 9
+    },
+    {
+      "_id": "7d61895a-dbf3-472b-9675-421381787295",
+      "encounters": 107
+    },
+    {
+      "_id": "7dea9311-ef15-4bb0-8d61-dde04dde3557",
+      "encounters": 28
+    },
+    {
+      "_id": "7e3becd0-0053-4d2e-b57e-075b874c32a6",
+      "encounters": 24
+    },
+    {
+      "_id": "7e4e6d32-15cd-4d5f-a4cc-e5c95ab35eb0",
+      "encounters": 52
+    },
+    {
+      "_id": "7e9b76f2-3b74-4a55-b4a3-a6a4bc51b480",
+      "encounters": 14
+    },
+    {
+      "_id": "7ea0b41a-3459-4623-a288-0ac335319244",
+      "encounters": 65
+    },
+    {
+      "_id": "7ea10b44-ec00-4907-b17f-87d47b04827d",
+      "encounters": 9
+    },
+    {
+      "_id": "7ec148ed-47a0-4d8c-a020-630b5f7a81db",
+      "encounters": 12
+    },
+    {
+      "_id": "7ee74549-5b9b-4221-9f67-5b7221d94f1a",
+      "encounters": 17
+    },
+    {
+      "_id": "7f0a46d8-43bd-4141-ab86-92b63e1da025",
+      "encounters": 5
+    },
+    {
+      "_id": "7f874045-4062-405d-8c23-abb12d0af23e",
+      "encounters": 37
+    },
+    {
+      "_id": "7f9a57e5-cfc5-4970-b19f-1a7b6ce22882",
+      "encounters": 20
+    },
+    {
+      "_id": "7fef7a7d-0198-457f-8aad-267232321717",
+      "encounters": 68
+    },
+    {
+      "_id": "80427c8e-15ba-482f-b168-fc4f1d375179",
+      "encounters": 206
+    },
+    {
+      "_id": "8078aad5-fcac-4b51-b498-fbf8340db8a6",
+      "encounters": 22
+    },
+    {
+      "_id": "80a7bc09-bbee-476b-9b3f-e44984c96ca1",
+      "encounters": 29
+    },
+    {
+      "_id": "80bf0f47-724a-4254-b3ec-d54c15ad83b9",
+      "encounters": 6
+    },
+    {
+      "_id": "80d81807-e19c-4704-9138-0c89a5e8e536",
+      "encounters": 20
+    },
+    {
+      "_id": "80f7a79f-61f1-4ec3-a2c7-226611a54044",
+      "encounters": 32
+    },
+    {
+      "_id": "8141abe7-08b5-4415-99dd-00c801d48098",
+      "encounters": 15
+    },
+    {
+      "_id": "817d7365-56fc-43f6-845e-ea9f5623d1aa",
+      "encounters": 66
+    },
+    {
+      "_id": "81805635-f2f4-4844-b71b-73578520d372",
+      "encounters": 77
+    },
+    {
+      "_id": "81813194-e1ed-41c2-8f7a-122a60b06550",
+      "encounters": 53
+    },
+    {
+      "_id": "81e21b21-8b49-4ac1-b00d-46a7f43e46a9",
+      "encounters": 56
+    },
+    {
+      "_id": "83719bd7-7a41-4c87-93f9-c5de4db6a14a",
+      "encounters": 52
+    },
+    {
+      "_id": "83b8cb6d-3c77-4b4d-9825-1b3521f04a09",
+      "encounters": 21
+    },
+    {
+      "_id": "83c686df-0a1e-4950-9a2b-c84da98a2652",
+      "encounters": 32
+    },
+    {
+      "_id": "841095eb-d29f-4492-8f0e-08011321e85d",
+      "encounters": 17
+    },
+    {
+      "_id": "84114892-a562-4dff-8135-e01c0c8a5cc3",
+      "encounters": 23
+    },
+    {
+      "_id": "844d1c39-6ca2-48df-a3de-f9a12633f69c",
+      "encounters": 49
+    },
+    {
+      "_id": "846b0d5b-e5f5-4fd6-8ae4-7aa8e13a17c3",
+      "encounters": 50
+    },
+    {
+      "_id": "848e0227-5d5d-4bdf-8603-207cdea72e2a",
+      "encounters": 121
+    },
+    {
+      "_id": "84ea2e0c-70a9-4a92-aa31-cd87118379c8",
+      "encounters": 17
+    },
+    {
+      "_id": "8505e011-20cb-4bc5-8a66-5900111fb04b",
+      "encounters": 76
+    },
+    {
+      "_id": "8507a0b0-b667-4a07-90f1-8cfb2193dcd8",
+      "encounters": 99
+    },
+    {
+      "_id": "851275c6-bc90-4e95-a9a7-6f42111be448",
+      "encounters": 12
+    },
+    {
+      "_id": "852f4588-ba8f-4eeb-94fe-5c3c974ab114",
+      "encounters": 38
+    },
+    {
+      "_id": "85670231-0fce-4e52-8b4f-051a3019f867",
+      "encounters": 13
+    },
+    {
+      "_id": "85a07bb9-eb47-4fb3-8f96-c0a77f4821c6",
+      "encounters": 37
+    },
+    {
+      "_id": "85a0da4b-6e8d-492c-976b-748e39daf4ef",
+      "encounters": 84
+    },
+    {
+      "_id": "85b81fe1-9eaa-419b-9cf6-16aabba09fd6",
+      "encounters": 8
+    },
+    {
+      "_id": "860aff27-7431-47ee-968e-554470683160",
+      "encounters": 63
+    },
+    {
+      "_id": "8641e13a-c832-4d97-811a-b735d0abb45e",
+      "encounters": 9
+    },
+    {
+      "_id": "86b97fc7-ae8f-4e0d-8e66-db68f36e7a76",
+      "encounters": 94
+    },
+    {
+      "_id": "875d9a6a-1c7e-44a9-96a0-b4ba92e40841",
+      "encounters": 55
+    },
+    {
+      "_id": "87be3f66-1feb-4a69-a5b1-71668f2e0baa",
+      "encounters": 9
+    },
+    {
+      "_id": "87e8fd4a-d5a8-466a-ba8d-22d38d507a8a",
+      "encounters": 16
+    },
+    {
+      "_id": "87f05059-de42-4630-a35b-edb53d880640",
+      "encounters": 61
+    },
+    {
+      "_id": "8811452f-86b2-49f7-b4e4-7aaa578fa407",
+      "encounters": 42
+    },
+    {
+      "_id": "88159e4d-29e0-4f53-a821-e9cc3faf21b4",
+      "encounters": 47
+    },
+    {
+      "_id": "8829af4f-4e03-452d-a575-ebc892f0ad3f",
+      "encounters": 66
+    },
+    {
+      "_id": "88587157-4de8-4459-b6d4-fd571b847575",
+      "encounters": 45
+    },
+    {
+      "_id": "887dacdd-e5ce-4556-8ff1-9e902d222d95",
+      "encounters": 10
+    },
+    {
+      "_id": "88ea8573-863c-47e3-b144-b810c63156a0",
+      "encounters": 71
+    },
+    {
+      "_id": "8908602e-5f0c-4f1e-847f-75a0043eeba7",
+      "encounters": 12
+    },
+    {
+      "_id": "89105f2f-cfa9-429c-98bf-747f68567ea1",
+      "encounters": 56
+    },
+    {
+      "_id": "89214f7b-82b7-460e-b583-415a688ccc3c",
+      "encounters": 20
+    },
+    {
+      "_id": "892ddfec-0a9a-4b70-b13f-849db0c65254",
+      "encounters": 55
+    },
+    {
+      "_id": "893cbc3b-e477-4310-88ac-3112ed8e06da",
+      "encounters": 13
+    },
+    {
+      "_id": "8960bea5-7854-4446-a6a3-2baaace4cdfa",
+      "encounters": 103
+    },
+    {
+      "_id": "89752052-a38b-45f0-a590-3950bbb67bec",
+      "encounters": 58
+    },
+    {
+      "_id": "8991a066-5e97-42b8-ba97-1c35bc034fea",
+      "encounters": 95
+    },
+    {
+      "_id": "899a4f9c-abc3-4a13-88e4-0f7862ee6ab5",
+      "encounters": 39
+    },
+    {
+      "_id": "89ffb9a8-b18f-4ae9-adde-ed2db4f0a85a",
+      "encounters": 14
+    },
+    {
+      "_id": "8a1d2c26-0774-4526-916f-1148e0357b5d",
+      "encounters": 84
+    },
+    {
+      "_id": "8a2011ce-0a46-4f2a-ab6f-be7a287f9264",
+      "encounters": 13
+    },
+    {
+      "_id": "8a789548-b3b7-46dc-9e9a-ffd4406f2961",
+      "encounters": 32
+    },
+    {
+      "_id": "8a8eb96d-354d-4d42-9716-738164a19a59",
+      "encounters": 24
+    },
+    {
+      "_id": "8a999529-683a-4d3a-b256-ce5476e32af5",
+      "encounters": 10
+    },
+    {
+      "_id": "8a9a9b41-2e52-4805-92ed-3be1c2972c41",
+      "encounters": 35
+    },
+    {
+      "_id": "8a9b659b-4fff-4cef-b189-adbc7914caca",
+      "encounters": 56
+    },
+    {
+      "_id": "8a9df121-e012-457c-ade0-ead804d93818",
+      "encounters": 84
+    },
+    {
+      "_id": "8aa4df95-ae91-4b6a-809e-85aa89e09b4c",
+      "encounters": 15
+    },
+    {
+      "_id": "8abe8efb-d431-4465-ad3b-7b3f301b845f",
+      "encounters": 14
+    },
+    {
+      "_id": "8aeeef59-43b3-4983-8f1d-54f3e8d5ea92",
+      "encounters": 21
+    },
+    {
+      "_id": "8b119fdd-0fea-46dd-9106-b5c7813e7260",
+      "encounters": 92
+    },
+    {
+      "_id": "8b17ff1e-2b24-46a9-83f7-f8a49e82c604",
+      "encounters": 14
+    },
+    {
+      "_id": "8b18172e-bdf3-4998-aa8b-0db6887cdf53",
+      "encounters": 31
+    },
+    {
+      "_id": "8b570796-e100-47cd-a634-dbc8cd35857e",
+      "encounters": 88
+    },
+    {
+      "_id": "8ba79a69-6f3f-4aa5-be2a-dfbd0119d3ea",
+      "encounters": 19
+    },
+    {
+      "_id": "8bcead4c-0ed1-4350-81ae-af2e025c785b",
+      "encounters": 37
+    },
+    {
+      "_id": "8bd293c5-cde8-4ab0-b96c-9591f372de4e",
+      "encounters": 15
+    },
+    {
+      "_id": "8be62b06-5994-47fe-aad8-a27a02e054fa",
+      "encounters": 73
+    },
+    {
+      "_id": "8be67377-dbfb-414a-bac8-cef5375ba2b4",
+      "encounters": 18
+    },
+    {
+      "_id": "8be68b2d-8054-4882-8715-65297d36767a",
+      "encounters": 53
+    },
+    {
+      "_id": "8bf8631f-2fd4-4dc7-af2b-c400499fedfc",
+      "encounters": 15
+    },
+    {
+      "_id": "8bf92fdc-0cff-4945-b5a9-7fb8ddbee686",
+      "encounters": 57
+    },
+    {
+      "_id": "8c31f907-0b18-4df8-a9eb-1657965d93d6",
+      "encounters": 8
+    },
+    {
+      "_id": "8c956d17-23d5-44d1-b41e-7f26833c77fd",
+      "encounters": 17
+    },
+    {
+      "_id": "8caa111c-92a3-43df-973d-fc60735b9832",
+      "encounters": 22
+    },
+    {
+      "_id": "8cc293ac-0a9d-4543-9253-7ccd3f4dfdb7",
+      "encounters": 13
+    },
+    {
+      "_id": "8d1ba4bb-7250-4295-be1c-5d0d423e55f7",
+      "encounters": 32
+    },
+    {
+      "_id": "8d202c65-427d-4190-8c28-3aa27e1a9f4c",
+      "encounters": 77
+    },
+    {
+      "_id": "8d236c5c-485e-4030-b3e8-20e580afbb0a",
+      "encounters": 27
+    },
+    {
+      "_id": "8d2d059c-8114-41da-996d-639cd97d92e2",
+      "encounters": 25
+    },
+    {
+      "_id": "8d4c4326-e9de-4f45-9a4c-f8c36bff89ae",
+      "encounters": 17
+    },
+    {
+      "_id": "8d96aa0f-47c6-418e-9171-d3ff9e92b562",
+      "encounters": 25
+    },
+    {
+      "_id": "8db0d104-4c3f-40d3-bcf5-f5eb81b7308f",
+      "encounters": 86
+    },
+    {
+      "_id": "8dd20f15-2beb-4568-83d4-2109123f5ffd",
+      "encounters": 26
+    },
+    {
+      "_id": "8e075015-6b2e-4cfc-bc67-a44d62c961af",
+      "encounters": 45
+    },
+    {
+      "_id": "8e103091-c480-4e34-90b1-adbc829431f3",
+      "encounters": 20
+    },
+    {
+      "_id": "8e11ec6c-6b5d-42df-a45e-aedb6131ade4",
+      "encounters": 18
+    },
+    {
+      "_id": "8ea2e45c-956e-4d43-b24a-9592b3132abe",
+      "encounters": 82
+    },
+    {
+      "_id": "8ebc4167-461c-4634-86b8-78b89a36e49c",
+      "encounters": 23
+    },
+    {
+      "_id": "8fd4e053-b318-44d7-9401-0ca84b4d1347",
+      "encounters": 52
+    },
+    {
+      "_id": "8fdd7aa6-b33c-429e-bcf9-b15fb189ee3c",
+      "encounters": 7
+    },
+    {
+      "_id": "9043026f-7d60-4b65-9c54-8ae48769ea00",
+      "encounters": 54
+    },
+    {
+      "_id": "9077ab04-92a1-4189-aa2b-93e50a5c32ae",
+      "encounters": 77
+    },
+    {
+      "_id": "91652d14-6f12-41a1-96fc-3048d111c4c8",
+      "encounters": 21
+    },
+    {
+      "_id": "91ee0a50-461e-4d5b-9f49-76360b1d94d7",
+      "encounters": 43
+    },
+    {
+      "_id": "92408d94-8b50-4e26-a6e1-42ee77823db6",
+      "encounters": 83
+    },
+    {
+      "_id": "926fc2c9-0e8c-4dd4-a00a-6d37a01dd304",
+      "encounters": 54
+    },
+    {
+      "_id": "92709d5b-63d2-4e47-b857-dccb09724ea3",
+      "encounters": 21
+    },
+    {
+      "_id": "92b4bd25-f752-49fe-b248-a3e4b0e89d2a",
+      "encounters": 66
+    },
+    {
+      "_id": "92c8d9dc-2430-4b35-8fa8-63bf6913737b",
+      "encounters": 21
+    },
+    {
+      "_id": "92d23553-700d-488f-83a5-2ba9b9544295",
+      "encounters": 36
+    },
+    {
+      "_id": "92e610ea-e98a-49fb-b770-9dcc307a5777",
+      "encounters": 24
+    },
+    {
+      "_id": "93052e9a-d9e3-4899-ac29-7bcb7a34b0bb",
+      "encounters": 10
+    },
+    {
+      "_id": "9358d6df-b9ff-4c1f-bff7-bf29c12f8360",
+      "encounters": 15
+    },
+    {
+      "_id": "937d794b-6e68-4b17-b162-0a41b68f8085",
+      "encounters": 19
+    },
+    {
+      "_id": "9384b3da-e034-46fe-bcca-dc19216662c2",
+      "encounters": 42
+    },
+    {
+      "_id": "938c1e2f-10d7-47cd-820b-83dcf6293247",
+      "encounters": 32
+    },
+    {
+      "_id": "93947012-6d29-427b-a0a7-ea2ce8360b46",
+      "encounters": 25
+    },
+    {
+      "_id": "9394cb52-7d92-4577-976e-d017af06ed8f",
+      "encounters": 58
+    },
+    {
+      "_id": "941670d3-1832-4fa3-9316-bdaee0573887",
+      "encounters": 83
+    },
+    {
+      "_id": "941f66eb-5ca6-45cc-b205-6de1f1a59233",
+      "encounters": 115
+    },
+    {
+      "_id": "9423451c-8c37-4700-a059-f8c2f9c636b0",
+      "encounters": 49
+    },
+    {
+      "_id": "94aef7c4-e4a1-47df-8467-1be7a64ad884",
+      "encounters": 19
+    },
+    {
+      "_id": "94e0ed9f-bbff-4acf-b711-a04563dd6c3a",
+      "encounters": 81
+    },
+    {
+      "_id": "953f1037-d691-4543-9a24-85baa47c9902",
+      "encounters": 105
+    },
+    {
+      "_id": "958e204f-f001-4a2c-bb4e-0715ac927a4f",
+      "encounters": 77
+    },
+    {
+      "_id": "95d84986-5087-4248-b678-9fe8be9fc2be",
+      "encounters": 20
+    },
+    {
+      "_id": "96942a16-75bc-4026-bd63-e985b0ca1d6d",
+      "encounters": 78
+    },
+    {
+      "_id": "96d27517-8187-4346-bfdb-83188cc4bddf",
+      "encounters": 27
+    },
+    {
+      "_id": "96e4e7cd-b134-4d6a-9f30-89cf6104f923",
+      "encounters": 12
+    },
+    {
+      "_id": "96ef7705-0147-4231-af55-dde1c20ead7e",
+      "encounters": 90
+    },
+    {
+      "_id": "97e25dc6-10bd-4ad2-9269-6e33b61870dc",
+      "encounters": 9
+    },
+    {
+      "_id": "982bbe5d-4df1-43d6-bc53-a80eaaa96a9b",
+      "encounters": 54
+    },
+    {
+      "_id": "9841342b-fa85-4526-9036-b138ffa81a2a",
+      "encounters": 67
+    },
+    {
+      "_id": "986fb981-de56-4d8b-a2a7-d688f7f5974f",
+      "encounters": 22
+    },
+    {
+      "_id": "989f11f0-58cd-4b7b-a5f6-1b1c70527be3",
+      "encounters": 52
+    },
+    {
+      "_id": "98d08360-e1de-46f4-a01e-0c66c92e5567",
+      "encounters": 65
+    },
+    {
+      "_id": "98f91f0f-c03c-4da5-860a-c473d2c81983",
+      "encounters": 7
+    },
+    {
+      "_id": "99070f34-0b6f-4e84-97ea-cfc44ffaf5e8",
+      "encounters": 56
+    },
+    {
+      "_id": "9949467b-303f-4d3b-80e8-8db9aa1ed316",
+      "encounters": 11
+    },
+    {
+      "_id": "99b1c709-00fc-4be2-97ba-a6222e567305",
+      "encounters": 6
+    },
+    {
+      "_id": "9ab883b3-d1dd-4120-b19c-e78d3ea8c25c",
+      "encounters": 100
+    },
+    {
+      "_id": "9ad2f1f3-28b6-4af0-996b-ab17653d8f7b",
+      "encounters": 27
+    },
+    {
+      "_id": "9b286917-8a4b-4ea7-803e-21578f6882e1",
+      "encounters": 25
+    },
+    {
+      "_id": "9b50f7b9-c67c-4044-aad0-594ee95b0c29",
+      "encounters": 13
+    },
+    {
+      "_id": "9b745b3c-c385-44cf-b4cb-448b67e58389",
+      "encounters": 9
+    },
+    {
+      "_id": "9b8fdfcd-a8e1-4486-ac68-82cd1e190488",
+      "encounters": 114
+    },
+    {
+      "_id": "9ba75b66-e3a1-4476-9494-586b7a759ea6",
+      "encounters": 44
+    },
+    {
+      "_id": "9bebd912-a12b-4a83-a02c-f510587246df",
+      "encounters": 41
+    },
+    {
+      "_id": "9bec0b9a-f54e-4861-93ce-45c703f1929d",
+      "encounters": 58
+    },
+    {
+      "_id": "9c2bee19-03b6-4338-b9bd-bd73339abcb0",
+      "encounters": 12
+    },
+    {
+      "_id": "9c489755-e480-4304-9e44-7e10e9b74766",
+      "encounters": 24
+    },
+    {
+      "_id": "9c4c1885-35af-48b9-a09f-4ea448d40d75",
+      "encounters": 144
+    },
+    {
+      "_id": "9c55170c-081c-450d-b90b-3a580a820e77",
+      "encounters": 27
+    },
+    {
+      "_id": "9c69f2d5-b7de-4634-84c5-bf3efd551f5e",
+      "encounters": 18
+    },
+    {
+      "_id": "9c74e701-193c-485d-8506-4ccbeec53f75",
+      "encounters": 25
+    },
+    {
+      "_id": "9c90166d-96cb-4680-9190-35ab3e448c53",
+      "encounters": 21
+    },
+    {
+      "_id": "9caeb667-4b89-435e-a925-68265b9e87ce",
+      "encounters": 20
+    },
+    {
+      "_id": "9d69e626-c968-4991-a486-79f4eab4db38",
+      "encounters": 14
+    },
+    {
+      "_id": "9dfbf6ed-2378-4c27-9ff7-7e5c0619c236",
+      "encounters": 30
+    },
+    {
+      "_id": "9e081e53-a748-47c5-8e36-d9c858d23c14",
+      "encounters": 142
+    },
+    {
+      "_id": "9e1b6e6e-295d-418c-a94f-b2c69978d13e",
+      "encounters": 11
+    },
+    {
+      "_id": "9e431420-959d-4b8d-8f94-c35632fec209",
+      "encounters": 61
+    },
+    {
+      "_id": "9e5a9e59-cfe3-42de-8c2e-76ef7e2efa5f",
+      "encounters": 18
+    },
+    {
+      "_id": "9ec4030b-2529-4647-b325-b04c6b44874b",
+      "encounters": 114
+    },
+    {
+      "_id": "9ec6d974-df2b-44ec-acc2-77d96725f4f4",
+      "encounters": 19
+    },
+    {
+      "_id": "9f0696f4-ab85-48f0-9d61-44c01893d2f0",
+      "encounters": 35
+    },
+    {
+      "_id": "9f5eacbf-4d98-4024-a559-86d7802e4ead",
+      "encounters": 27
+    },
+    {
+      "_id": "9fda53d4-6fcc-4ef5-a1fe-16e007182ec2",
+      "encounters": 166
+    },
+    {
+      "_id": "9fe859fa-d775-494d-ae34-fa648e5d186d",
+      "encounters": 84
+    },
+    {
+      "_id": "a001f3e9-5955-4b52-bb83-99a791380c56",
+      "encounters": 59
+    },
+    {
+      "_id": "a0a64d10-5b1e-4e17-953a-efccb0c860da",
+      "encounters": 18
+    },
+    {
+      "_id": "a0af88b5-1568-4545-a71a-3073c2c2ac72",
+      "encounters": 14
+    },
+    {
+      "_id": "a0b45d77-e330-44a3-9085-f06e636e5175",
+      "encounters": 12
+    },
+    {
+      "_id": "a0be3e9c-2d82-4145-9f71-c15e1f47fe70",
+      "encounters": 36
+    },
+    {
+      "_id": "a0ca0f54-f8cc-4bee-9a80-827f0b097636",
+      "encounters": 36
+    },
+    {
+      "_id": "a0fa2ed6-1b9a-4e35-9126-7d8a5c891f42",
+      "encounters": 24
+    },
+    {
+      "_id": "a1678674-817f-4454-b79d-f8a7396bc150",
+      "encounters": 35
+    },
+    {
+      "_id": "a1f0728e-75f6-4120-b460-b8394bd08c1c",
+      "encounters": 40
+    },
+    {
+      "_id": "a254d489-0441-4522-bde6-c59e583bb8f7",
+      "encounters": 18
+    },
+    {
+      "_id": "a263f1fb-ffb1-4913-997f-455b6c6ab81e",
+      "encounters": 16
+    },
+    {
+      "_id": "a2741aa9-029e-4c1d-83f3-4f750c593299",
+      "encounters": 13
+    },
+    {
+      "_id": "a27da6fe-7844-4205-a84f-6db17bfb8935",
+      "encounters": 18
+    },
+    {
+      "_id": "a28437ae-41af-497f-92f7-f1ed28d35a74",
+      "encounters": 16
+    },
+    {
+      "_id": "a2aa6863-6e21-4b0a-b46c-40a6c0205a10",
+      "encounters": 5
+    },
+    {
+      "_id": "a2e8d9a7-0eb0-4441-adb5-7cc720380f4e",
+      "encounters": 20
+    },
+    {
+      "_id": "a3abc11b-0fd1-4eb9-a69a-9075b4737612",
+      "encounters": 89
+    },
+    {
+      "_id": "a3eb7df2-1943-4004-9ec1-d953794c638f",
+      "encounters": 57
+    },
+    {
+      "_id": "a4222dad-09bb-4049-b3dc-01b79f41012f",
+      "encounters": 15
+    },
+    {
+      "_id": "a47e5737-065e-416f-8257-0c9f14382065",
+      "encounters": 8
+    },
+    {
+      "_id": "a49b8342-1954-48dc-9322-24bbfe3662c5",
+      "encounters": 26
+    },
+    {
+      "_id": "a52a8c87-d4e2-4dab-8f42-1d2989c05f26",
+      "encounters": 13
+    },
+    {
+      "_id": "a52b02ff-bff3-4a5f-8fe4-f06a1712f0e6",
+      "encounters": 7
+    },
+    {
+      "_id": "a543a58b-6127-448a-a737-3056c022601f",
+      "encounters": 23
+    },
+    {
+      "_id": "a5fa511c-6acf-4994-a809-c9ce6e7c7ad9",
+      "encounters": 43
+    },
+    {
+      "_id": "a6028f3c-c013-44af-97ff-949dd2096ed3",
+      "encounters": 55
+    },
+    {
+      "_id": "a60c2937-a6a7-4974-8c9b-f34370c29b7e",
+      "encounters": 9
+    },
+    {
+      "_id": "a60cf760-8aa6-49f1-a24f-dfbd10097c34",
+      "encounters": 29
+    },
+    {
+      "_id": "a694ecfc-e39e-46dc-876e-029b32ba0135",
+      "encounters": 39
+    },
+    {
+      "_id": "a698af9c-0f49-4aae-b965-55cc05fe2269",
+      "encounters": 9
+    },
+    {
+      "_id": "a6cd11fc-5a43-4bff-acb6-5ef4896a6c1e",
+      "encounters": 25
+    },
+    {
+      "_id": "a6fd8d21-189a-4488-8ebd-8cf6173fc5fc",
+      "encounters": 8
+    },
+    {
+      "_id": "a7005d62-3535-4d7d-8dc5-2a4c4f725511",
+      "encounters": 15
+    },
+    {
+      "_id": "a708bca4-8fc9-4567-8c22-8b13d44f4f45",
+      "encounters": 285
+    },
+    {
+      "_id": "a7b167c9-6230-4a8f-b808-9ada2dd35973",
+      "encounters": 55
+    },
+    {
+      "_id": "a7df9539-bc46-4527-928d-8f2911418ebd",
+      "encounters": 29
+    },
+    {
+      "_id": "a7f102bb-e1ba-4417-a0c5-75dec6473034",
+      "encounters": 169
+    },
+    {
+      "_id": "a7f1fa30-89c1-408a-8610-c09db0c8d90d",
+      "encounters": 21
+    },
+    {
+      "_id": "a7f4200a-4180-417e-ab16-8daace8bf368",
+      "encounters": 20
+    },
+    {
+      "_id": "a7fe533e-f2b1-4fcd-90ec-6663ca7919e7",
+      "encounters": 55
+    },
+    {
+      "_id": "a905bc35-28b4-421c-b2a6-26f7fe4e28bf",
+      "encounters": 25
+    },
+    {
+      "_id": "a9191572-cd67-4184-9945-a25eb3fa6ef0",
+      "encounters": 20
+    },
+    {
+      "_id": "a96344e6-afe6-4eeb-9f95-00c62c152e8f",
+      "encounters": 15
+    },
+    {
+      "_id": "aa01c44c-133f-4ad6-a1c1-055e54e444ea",
+      "encounters": 20
+    },
+    {
+      "_id": "aa041f6e-348c-4fcc-b3a4-c65d2d38b996",
+      "encounters": 66
+    },
+    {
+      "_id": "aa266066-bb51-4990-be9b-0a49fc65303e",
+      "encounters": 32
+    },
+    {
+      "_id": "aa8dc980-7ac9-41cd-91c8-863dfe401d61",
+      "encounters": 45
+    },
+    {
+      "_id": "aa98b0ba-42d8-43a5-94b7-9f6106e01946",
+      "encounters": 16
+    },
+    {
+      "_id": "aaa1801a-51d1-4b7e-a5b8-7e8547be60a8",
+      "encounters": 33
+    },
+    {
+      "_id": "aac107d8-5187-420f-a90c-448ad49dee41",
+      "encounters": 80
+    },
+    {
+      "_id": "ab294050-c4b7-4116-aa15-3525c5076472",
+      "encounters": 60
+    },
+    {
+      "_id": "ab41f97a-1f4a-4718-a760-1e112514f282",
+      "encounters": 17
+    },
+    {
+      "_id": "ab6a2662-f6d1-4da6-b3ce-3929d68650d7",
+      "encounters": 25
+    },
+    {
+      "_id": "ab712bbf-6dc2-44b0-94f5-cde430069a6c",
+      "encounters": 19
+    },
+    {
+      "_id": "ab88386a-1c0d-4d1c-89fc-b38f631b3edc",
+      "encounters": 54
+    },
+    {
+      "_id": "ac6253d5-c80b-444f-8e1b-e4b8b7a425f1",
+      "encounters": 16
+    },
+    {
+      "_id": "ac6a219c-0f4a-400a-965b-18376e981cb5",
+      "encounters": 11
+    },
+    {
+      "_id": "ac89baa4-4798-4392-aeb6-a4e635721290",
+      "encounters": 84
+    },
+    {
+      "_id": "acb4817f-0ece-41d8-b179-82397a95a44a",
+      "encounters": 32
+    },
+    {
+      "_id": "acd81674-e409-4199-a4f7-8142c2906e3a",
+      "encounters": 13
+    },
+    {
+      "_id": "ad2e9916-4979-40fc-a8c0-68651a0cb5a6",
+      "encounters": 13
+    },
+    {
+      "_id": "ad7c452d-c8e9-40ae-a5ed-90b7bd93d2ac",
+      "encounters": 27
+    },
+    {
+      "_id": "adebdea9-a5f3-4635-8524-1a9780a75156",
+      "encounters": 21
+    },
+    {
+      "_id": "adfc3c2f-30be-430d-8f07-9070dab88c64",
+      "encounters": 61
+    },
+    {
+      "_id": "adfd8b86-9ee6-4e10-b56a-c1995bd9ef61",
+      "encounters": 44
+    },
+    {
+      "_id": "aeb1d328-5e2b-44e4-91ed-4527c91c7dba",
+      "encounters": 35
+    },
+    {
+      "_id": "aeca5d2f-fa40-4b20-b684-052a771faa5c",
+      "encounters": 33
+    },
+    {
+      "_id": "aefbe288-f630-4c24-b180-535f6554ac6a",
+      "encounters": 23
+    },
+    {
+      "_id": "af08878c-08dc-4938-aebd-cd5da315c479",
+      "encounters": 27
+    },
+    {
+      "_id": "af1495be-5077-4087-98b1-9ff624c7582c",
+      "encounters": 15
+    },
+    {
+      "_id": "afb2122f-e8e3-4ae4-9911-b8e2dc4f567d",
+      "encounters": 18
+    },
+    {
+      "_id": "affb8a9e-4a9a-46e7-a94b-e9c90b25f444",
+      "encounters": 80
+    },
+    {
+      "_id": "b096000e-3f69-4940-89ce-1230ee9d5a0a",
+      "encounters": 47
+    },
+    {
+      "_id": "b0c26ab6-b914-4bb7-8cf0-e390b6411df0",
+      "encounters": 28
+    },
+    {
+      "_id": "b109dfad-954d-4a5a-91ee-6581dfeb7f93",
+      "encounters": 88
+    },
+    {
+      "_id": "b118adba-1330-4ba0-8d96-fe610dfbd41e",
+      "encounters": 53
+    },
+    {
+      "_id": "b13d1ddc-4cc8-4b99-a4af-cb0c0c6f605a",
+      "encounters": 34
+    },
+    {
+      "_id": "b16ca449-bc14-4619-a936-07f6f3db7119",
+      "encounters": 27
+    },
+    {
+      "_id": "b1b10f6e-e97a-426a-9581-f1a5c29b6e05",
+      "encounters": 112
+    },
+    {
+      "_id": "b1bc3c89-4e7b-41fd-a58b-9bf4ce2b40a9",
+      "encounters": 32
+    },
+    {
+      "_id": "b1d50391-79c5-403c-919f-3ded66c9d77a",
+      "encounters": 16
+    },
+    {
+      "_id": "b1e9b0b9-da6e-4f68-b603-bd896a50ca86",
+      "encounters": 19
+    },
+    {
+      "_id": "b2023485-94da-4556-8903-8d413bca8cb8",
+      "encounters": 35
+    },
+    {
+      "_id": "b2621e20-d377-469e-a59d-cfe5e580b893",
+      "encounters": 20
+    },
+    {
+      "_id": "b271a454-c57e-4566-899a-956e5484c5e1",
+      "encounters": 29
+    },
+    {
+      "_id": "b2888f4d-5623-43c7-b010-3678e2f4f82a",
+      "encounters": 33
+    },
+    {
+      "_id": "b2b612b0-d4ac-4b83-8d33-4ed6b295c01c",
+      "encounters": 108
+    },
+    {
+      "_id": "b320b49d-b456-48e6-b037-cadc249da07e",
+      "encounters": 12
+    },
+    {
+      "_id": "b36658dd-cb89-41cf-b2e9-1d84894946d5",
+      "encounters": 25
+    },
+    {
+      "_id": "b37c9b35-6fea-4570-b7f6-379baf4c9399",
+      "encounters": 106
+    },
+    {
+      "_id": "b3b436fa-3895-4085-ba32-6f1f2a9bfa7e",
+      "encounters": 17
+    },
+    {
+      "_id": "b3bc7794-1c3c-4b5a-8476-7a6d4d3964f6",
+      "encounters": 11
+    },
+    {
+      "_id": "b41a82a3-26a8-4ec1-b471-9b0887b989d7",
+      "encounters": 18
+    },
+    {
+      "_id": "b44b3fde-b4bd-46eb-8ced-caccab915738",
+      "encounters": 48
+    },
+    {
+      "_id": "b44d4f15-d604-4e24-8114-dc0dc12651d2",
+      "encounters": 2
+    },
+    {
+      "_id": "b48a38ae-3bb7-4e52-add7-bce581c87262",
+      "encounters": 23
+    },
+    {
+      "_id": "b4a1d631-9d42-4f8b-bf8b-30d7eb2bcd4d",
+      "encounters": 17
+    },
+    {
+      "_id": "b4a203ec-0c99-430b-ba38-5c851f04ae17",
+      "encounters": 18
+    },
+    {
+      "_id": "b4d1167c-9adf-40e0-8295-4c3f25fdb3b4",
+      "encounters": 26
+    },
+    {
+      "_id": "b4f1aa40-1a13-43cc-9528-8dcde700ecf0",
+      "encounters": 53
+    },
+    {
+      "_id": "b505f4b0-c176-4af0-b080-744e82af7953",
+      "encounters": 33
+    },
+    {
+      "_id": "b50ec6fb-6705-488f-96d1-6c8ea38940b6",
+      "encounters": 42
+    },
+    {
+      "_id": "b5581477-7033-4586-bc95-da6a508bdab6",
+      "encounters": 98
+    },
+    {
+      "_id": "b5667894-5282-4265-8a2d-bd933cdbc9ec",
+      "encounters": 14
+    },
+    {
+      "_id": "b56f030d-acf4-4997-91ee-fb3d9c321bfb",
+      "encounters": 10
+    },
+    {
+      "_id": "b574b7cc-3294-4d3b-8cfe-81dcf7456ab4",
+      "encounters": 42
+    },
+    {
+      "_id": "b580d37e-983a-410c-9f81-637ce14f8975",
+      "encounters": 17
+    },
+    {
+      "_id": "b58731cc-2d8b-4c2d-b327-4cab771af3ef",
+      "encounters": 34
+    },
+    {
+      "_id": "b5b4755b-462c-4dcf-acd1-75ca01b7c453",
+      "encounters": 19
+    },
+    {
+      "_id": "b5bbfa23-0c80-4762-a3b9-97ceebed8d27",
+      "encounters": 112
+    },
+    {
+      "_id": "b656a85d-637d-458a-abd8-17219816280f",
+      "encounters": 171
+    },
+    {
+      "_id": "b69c21d3-2a19-4833-b3a9-37bd30b64e2d",
+      "encounters": 57
+    },
+    {
+      "_id": "b6e2e2fd-9584-4938-8b64-b61758009f72",
+      "encounters": 22
+    },
+    {
+      "_id": "b75f21c7-f0e8-403c-bef7-e200aba1f573",
+      "encounters": 43
+    },
+    {
+      "_id": "b7740f2d-d404-4021-8c0a-2c395ef9b4da",
+      "encounters": 38
+    },
+    {
+      "_id": "b844f920-ed79-4624-a4da-fe5a201b9baf",
+      "encounters": 11
+    },
+    {
+      "_id": "b87254fa-724d-4a80-8ac7-ca3c528d6e90",
+      "encounters": 61
+    },
+    {
+      "_id": "b88dac97-2026-43e9-b40f-71fc0f888ce7",
+      "encounters": 89
+    },
+    {
+      "_id": "b89ab36c-1335-4fa4-9040-d86c6c22dc8d",
+      "encounters": 68
+    },
+    {
+      "_id": "b8c44adf-4307-4ce5-84e5-2eb98e6b17e2",
+      "encounters": 20
+    },
+    {
+      "_id": "b940dd35-39e3-49d9-918a-316db1e223e3",
+      "encounters": 32
+    },
+    {
+      "_id": "b953a648-a3e3-4d9f-a4be-28e13deaa08f",
+      "encounters": 18
+    },
+    {
+      "_id": "ba1525cd-efbe-40b3-ad47-e4a670c8d802",
+      "encounters": 11
+    },
+    {
+      "_id": "ba190ea7-9318-4b89-a17a-907a71ef24fa",
+      "encounters": 100
+    },
+    {
+      "_id": "ba2c1e9f-16e0-427b-97db-dc639daeaaee",
+      "encounters": 27
+    },
+    {
+      "_id": "ba756dea-d446-44aa-a3cd-304fcb047bee",
+      "encounters": 20
+    },
+    {
+      "_id": "ba8a1afb-f089-4229-8e13-06213df0f74d",
+      "encounters": 32
+    },
+    {
+      "_id": "bab51ea9-2945-4f8a-8015-e430f80a908e",
+      "encounters": 31
+    },
+    {
+      "_id": "badf923b-91ff-4838-b9f4-94c80a6931f8",
+      "encounters": 7
+    },
+    {
+      "_id": "bae73dce-20fa-4a6a-8e46-b2ed541f9296",
+      "encounters": 103
+    },
+    {
+      "_id": "baf82b89-1f3a-481e-b816-e176db1e2e26",
+      "encounters": 19
+    },
+    {
+      "_id": "baffdce5-d444-4c8c-a815-e7d00a01f7ca",
+      "encounters": 96
+    },
+    {
+      "_id": "bb05ba4c-bced-42c8-ae3d-9e732823fb44",
+      "encounters": 15
+    },
+    {
+      "_id": "bb089c44-7126-4acd-a2fa-5e10dfa77516",
+      "encounters": 43
+    },
+    {
+      "_id": "bb30c9d3-913c-49ce-8cd9-75405f7a19e9",
+      "encounters": 60
+    },
+    {
+      "_id": "bb9a366c-e4d6-4dd0-9a70-e9f93529d6ff",
+      "encounters": 17
+    },
+    {
+      "_id": "bb9d00fe-b16e-4832-8aec-b1e9d480d48d",
+      "encounters": 8
+    },
+    {
+      "_id": "bba40d4c-1a9e-41d3-923d-5232b01a0dd9",
+      "encounters": 54
+    },
+    {
+      "_id": "bbcba0c9-f5ea-4fce-a726-adde5ffcb712",
+      "encounters": 46
+    },
+    {
+      "_id": "bbd67ecb-c7fd-4965-853b-d59f385424ab",
+      "encounters": 12
+    },
+    {
+      "_id": "bc7b7bdb-c9cb-4d48-b5f3-da873de93a22",
+      "encounters": 11
+    },
+    {
+      "_id": "bc95d200-52fc-49cd-b128-8f4150cb4714",
+      "encounters": 25
+    },
+    {
+      "_id": "bcda3cdc-3c23-4c5c-9a95-4fbceb049bc8",
+      "encounters": 20
+    },
+    {
+      "_id": "bd06f239-4b79-4780-9f3d-2d48245b05c6",
+      "encounters": 34
+    },
+    {
+      "_id": "bd6049cf-d394-4818-8b37-a4498547844d",
+      "encounters": 67
+    },
+    {
+      "_id": "bd805583-2b6d-4a3e-a842-d2b3396089d4",
+      "encounters": 13
+    },
+    {
+      "_id": "be249d5b-327e-4c30-8fb2-3a1c587fe5ad",
+      "encounters": 65
+    },
+    {
+      "_id": "be33d994-f841-40a4-9410-66555cf90fed",
+      "encounters": 64
+    },
+    {
+      "_id": "be3eaf02-0c8a-4729-8b6e-7b40ab016e29",
+      "encounters": 169
+    },
+    {
+      "_id": "be8fc232-6d5c-4d97-9a1b-f9b17e06c3ff",
+      "encounters": 74
+    },
+    {
+      "_id": "beb7d5fa-68f5-4ecf-9c65-ca154e5e3774",
+      "encounters": 16
+    },
+    {
+      "_id": "bedd77ef-dfda-424d-8715-057ff1c5f85d",
+      "encounters": 16
+    },
+    {
+      "_id": "bf35e4fa-ea4f-40a4-8fe6-1f2f26e0aa45",
+      "encounters": 92
+    },
+    {
+      "_id": "bf4c0305-f14c-4035-be21-8781c675b7db",
+      "encounters": 14
+    },
+    {
+      "_id": "bfb101aa-8d36-422b-8e5c-b7275d279de0",
+      "encounters": 21
+    },
+    {
+      "_id": "bfb6537b-535a-4f31-9a56-073220f96a17",
+      "encounters": 47
+    },
+    {
+      "_id": "bfbb7a29-dc54-4302-a8ca-7a3f792d9243",
+      "encounters": 14
+    },
+    {
+      "_id": "bfd66698-4139-4e5e-9982-efa459aa9dca",
+      "encounters": 15
+    },
+    {
+      "_id": "bfe6d48b-68bc-490a-9979-9110da2f4869",
+      "encounters": 103
+    },
+    {
+      "_id": "c0346f60-1c3c-46b1-b448-368b5fee8761",
+      "encounters": 49
+    },
+    {
+      "_id": "c038adf1-91e4-4d05-a7ce-ba039b0259b4",
+      "encounters": 5
+    },
+    {
+      "_id": "c05478a7-a4df-4fd3-8d68-60b9452d4781",
+      "encounters": 26
+    },
+    {
+      "_id": "c08e3ee0-69fa-4a66-ad6f-e5905400d046",
+      "encounters": 30
+    },
+    {
+      "_id": "c123dca0-c994-4857-8563-b7f1eb6b2dc4",
+      "encounters": 21
+    },
+    {
+      "_id": "c1a6f986-01c4-4581-ba74-bf22d28f8ace",
+      "encounters": 70
+    },
+    {
+      "_id": "c1b80a65-61e0-4f1b-9e1f-122c6d326034",
+      "encounters": 20
+    },
+    {
+      "_id": "c1cfae08-b141-40ea-a8bb-78c46cde0f3c",
+      "encounters": 123
+    },
+    {
+      "_id": "c1de8dc8-87e2-4016-8b95-fdc64c3bc78d",
+      "encounters": 19
+    },
+    {
+      "_id": "c1f77760-5b51-438d-8089-c0ae5140b970",
+      "encounters": 38
+    },
+    {
+      "_id": "c2128123-c579-48b9-8452-d1741f5a3c4c",
+      "encounters": 27
+    },
+    {
+      "_id": "c2910dc6-102b-44fe-8f7a-900d875ccb14",
+      "encounters": 18
+    },
+    {
+      "_id": "c2a6847e-c5d2-4158-bee5-30f8ef693dde",
+      "encounters": 39
+    },
+    {
+      "_id": "c2b13854-9810-4c78-93be-08f0b6523e8f",
+      "encounters": 10
+    },
+    {
+      "_id": "c2f724e1-8d93-49d0-b953-e058bfbd2ae7",
+      "encounters": 16
+    },
+    {
+      "_id": "c2fa7e56-dac5-4998-b0c9-2262f1e2bdd9",
+      "encounters": 84
+    },
+    {
+      "_id": "c3d53676-4539-4ac7-98a9-cc893eb9f63b",
+      "encounters": 61
+    },
+    {
+      "_id": "c4104ee4-a546-4358-bba1-910ee7010952",
+      "encounters": 14
+    },
+    {
+      "_id": "c466fefd-30df-47ac-98b3-a1cdf8e2f7c7",
+      "encounters": 58
+    },
+    {
+      "_id": "c4790199-5f06-4622-932a-1664a684d670",
+      "encounters": 19
+    },
+    {
+      "_id": "c49c2939-79bc-4fed-951d-67855e8517cc",
+      "encounters": 47
+    },
+    {
+      "_id": "c4f221f2-611b-4cdd-a0b6-958bbbfcf346",
+      "encounters": 7
+    },
+    {
+      "_id": "c518f618-304a-4153-af34-b11caaa566bd",
+      "encounters": 29
+    },
+    {
+      "_id": "c54cc071-b1fe-4341-a728-c6247909c486",
+      "encounters": 7
+    },
+    {
+      "_id": "c563f50c-54a9-4b37-9028-bff3db7e3e27",
+      "encounters": 40
+    },
+    {
+      "_id": "c5d6bdfa-5554-4927-8fa8-794e5514cb56",
+      "encounters": 10
+    },
+    {
+      "_id": "c66615db-7cfc-4ae7-bb79-647202727b08",
+      "encounters": 11
+    },
+    {
+      "_id": "c67349f9-19e4-4f79-9203-55540b153492",
+      "encounters": 15
+    },
+    {
+      "_id": "c6e8d2a5-ec57-4353-9e7f-0b0bbefd1959",
+      "encounters": 4
+    },
+    {
+      "_id": "c6ec6d93-8834-4242-8a1a-dd62ae4563b0",
+      "encounters": 50
+    },
+    {
+      "_id": "c6fc7fe8-483a-4df7-ba2b-260ea4de9aa4",
+      "encounters": 51
+    },
+    {
+      "_id": "c71fe37e-26f4-4b41-b017-5be7b5e129fe",
+      "encounters": 45
+    },
+    {
+      "_id": "c7202949-7438-4374-a451-89ad61342068",
+      "encounters": 18
+    },
+    {
+      "_id": "c76902dd-7c4a-4c83-aee0-933dee295bac",
+      "encounters": 51
+    },
+    {
+      "_id": "c79f697b-6592-459d-9acc-6088420ea65e",
+      "encounters": 14
+    },
+    {
+      "_id": "c7ab72b3-8095-4913-8207-59f049a2ba98",
+      "encounters": 35
+    },
+    {
+      "_id": "c8403116-d069-4130-aa02-39954fc971b5",
+      "encounters": 39
+    },
+    {
+      "_id": "c844d8ac-d5bf-45eb-b8cf-84327c9a4e97",
+      "encounters": 119
+    },
+    {
+      "_id": "c85bba08-490f-4e51-9049-0ac76a2d9290",
+      "encounters": 19
+    },
+    {
+      "_id": "c868a615-b3a7-44c6-ad66-d06b2909d689",
+      "encounters": 19
+    },
+    {
+      "_id": "c8b069dc-8bc4-44be-8d20-e80cd8d8d769",
+      "encounters": 44
+    },
+    {
+      "_id": "c8c1bcb3-f787-4d53-9e3f-8fc59740daa3",
+      "encounters": 10
+    },
+    {
+      "_id": "c914f76e-2d8c-4da3-9b2a-e98794496245",
+      "encounters": 20
+    },
+    {
+      "_id": "c933554e-8a17-480a-b0fc-17b8757924db",
+      "encounters": 17
+    },
+    {
+      "_id": "c94479f7-e87d-40d4-be81-fd5ab44a68c3",
+      "encounters": 56
+    },
+    {
+      "_id": "c986f01b-c0d0-46c6-809f-ca215706aa1d",
+      "encounters": 35
+    },
+    {
+      "_id": "c9942738-49f3-4459-818f-8da20072ff76",
+      "encounters": 88
+    },
+    {
+      "_id": "c9e63df1-a715-4c9e-b76c-e31ec0fc3e96",
+      "encounters": 18
+    },
+    {
+      "_id": "ca24f616-30cc-4351-aca9-1b49297de076",
+      "encounters": 169
+    },
+    {
+      "_id": "ca3330c5-bbbc-47e7-addb-302f2e069986",
+      "encounters": 123
+    },
+    {
+      "_id": "ca4bcd9a-99f3-4789-aba5-024fc199ac9c",
+      "encounters": 51
+    },
+    {
+      "_id": "ca8803ac-66ef-4895-a8c4-290313fcee6f",
+      "encounters": 89
+    },
+    {
+      "_id": "cad44a83-848c-4019-a175-291a150b9d05",
+      "encounters": 55
+    },
+    {
+      "_id": "cae10920-f977-48b4-a0d3-4d70ad561fd1",
+      "encounters": 2006
+    },
+    {
+      "_id": "cafc2141-2307-4f62-abd1-2d6e5486d7a5",
+      "encounters": 79
+    },
+    {
+      "_id": "cb1be644-93a5-4208-8776-f5feece6967a",
+      "encounters": 33
+    },
+    {
+      "_id": "cb7b125f-b586-4ed2-9d0c-77f449f39d8b",
+      "encounters": 86
+    },
+    {
+      "_id": "cb96c95a-eaf7-4e02-9631-1c967a24ea2b",
+      "encounters": 26
+    },
+    {
+      "_id": "cbe65a5a-507c-4f7f-9edf-cd2c8a934c42",
+      "encounters": 20
+    },
+    {
+      "_id": "cbec03bf-d54a-41ec-9090-bb36a70028b0",
+      "encounters": 43
+    },
+    {
+      "_id": "cc257592-c844-4cc0-85dd-05bff3297ec8",
+      "encounters": 27
+    },
+    {
+      "_id": "cc9b1521-809e-4426-81f0-1d7b307e2184",
+      "encounters": 22
+    },
+    {
+      "_id": "ccbd3a61-50ff-4f6f-8d64-8105c3fc54cf",
+      "encounters": 28
+    },
+    {
+      "_id": "cd1d1f54-e4ea-458e-a264-b3e9c57d902e",
+      "encounters": 166
+    },
+    {
+      "_id": "cd900636-aee9-41b1-acf1-557efa0fd9cd",
+      "encounters": 30
+    },
+    {
+      "_id": "cda36bac-8f55-4856-b586-140314f6cd89",
+      "encounters": 42
+    },
+    {
+      "_id": "cde60f66-8df0-4bc6-8056-2ec5ba2cd638",
+      "encounters": 21
+    },
+    {
+      "_id": "cdede94e-2fa6-4100-9dfe-bbcb85db132f",
+      "encounters": 49
+    },
+    {
+      "_id": "cdef53d5-0537-4073-8874-79fa5e0346e6",
+      "encounters": 108
+    },
+    {
+      "_id": "ce23347b-59a2-45eb-9666-391d719bd1c2",
+      "encounters": 19
+    },
+    {
+      "_id": "ce5e19e5-f448-44d9-be3f-edfc39a972b0",
+      "encounters": 93
+    },
+    {
+      "_id": "cecb7ece-fb70-4a7f-b51d-6e8dd1506ad9",
+      "encounters": 452
+    },
+    {
+      "_id": "cf0a36c6-0ad2-4eee-aaa4-1e399a078128",
+      "encounters": 19
+    },
+    {
+      "_id": "cf0e5f9c-6988-4f54-b3fc-e50d7eff5378",
+      "encounters": 8
+    },
+    {
+      "_id": "cf12424d-63da-4fbb-b93f-22308793cafa",
+      "encounters": 19
+    },
+    {
+      "_id": "cfbc4b3a-979a-4773-aed4-c922e5c4729c",
+      "encounters": 27
+    },
+    {
+      "_id": "cfee79fc-df05-476e-b274-43e09ea345db",
+      "encounters": 14
+    },
+    {
+      "_id": "d00fc5dd-be0e-47aa-a52a-5cf9ee3a78b5",
+      "encounters": 18
+    },
+    {
+      "_id": "d011ac4d-34e9-4887-a0bf-cf7b8a6f4abb",
+      "encounters": 53
+    },
+    {
+      "_id": "d0355c37-6594-4147-91ff-8b82dfb0a6c2",
+      "encounters": 24
+    },
+    {
+      "_id": "d07f23f8-3bd1-4db1-9a36-51aedbe60821",
+      "encounters": 74
+    },
+    {
+      "_id": "d08a86d9-8717-4206-8534-e81dd03a18f1",
+      "encounters": 102
+    },
+    {
+      "_id": "d0bbc03d-df4e-44e3-ad4c-b5739dd67887",
+      "encounters": 60
+    },
+    {
+      "_id": "d10ef59e-2231-467e-bbd0-c76c73f04f95",
+      "encounters": 22
+    },
+    {
+      "_id": "d1639077-59f3-401f-a058-2ad70502f93f",
+      "encounters": 22
+    },
+    {
+      "_id": "d191448b-3fa8-47b8-9440-6b871860956c",
+      "encounters": 13
+    },
+    {
+      "_id": "d2157fd6-bfa4-49e4-9c53-e6baf30f3ff8",
+      "encounters": 16
+    },
+    {
+      "_id": "d21c1070-bfe3-43b7-8612-dbe5533b1e56",
+      "encounters": 47
+    },
+    {
+      "_id": "d2726876-1462-4c32-b0e6-1628fdb88c14",
+      "encounters": 26
+    },
+    {
+      "_id": "d286528e-a39a-4c04-8545-5e648f781052",
+      "encounters": 31
+    },
+    {
+      "_id": "d2f15935-a7c8-460e-add0-a1d39c4cc584",
+      "encounters": 21
+    },
+    {
+      "_id": "d317663c-f8b8-47a7-915f-e3e68d1214cc",
+      "encounters": 13
+    },
+    {
+      "_id": "d324d82b-14a4-4a6d-a6f9-b76a1b83701a",
+      "encounters": 77
+    },
+    {
+      "_id": "d3c9a4bd-8b91-4844-8df2-bfce4c0eef32",
+      "encounters": 21
+    },
+    {
+      "_id": "d3f08bb8-e79f-4529-a37a-8aebdfbffe6a",
+      "encounters": 2
+    },
+    {
+      "_id": "d441bc22-1d80-4f3f-b801-6fc9d64ac72e",
+      "encounters": 13
+    },
+    {
+      "_id": "d46af421-9bb5-4b8e-b763-b968a6bebd0c",
+      "encounters": 14
+    },
+    {
+      "_id": "d49f748f-928d-40e8-92c8-73e4c5679711",
+      "encounters": 43
+    },
+    {
+      "_id": "d4adfa2e-89ba-4ae6-9770-ef5a7ec4173a",
+      "encounters": 112
+    },
+    {
+      "_id": "d52baa01-d638-42fc-bec2-723110f9b034",
+      "encounters": 24
+    },
+    {
+      "_id": "d5bf8e49-c70c-45df-9675-cf3dff4458d5",
+      "encounters": 9
+    },
+    {
+      "_id": "d5e83f2c-49a2-4494-8933-da8809416e11",
+      "encounters": 50
+    },
+    {
+      "_id": "d5fcd3d4-52eb-4511-828b-eca2d5b385d9",
+      "encounters": 19
+    },
+    {
+      "_id": "d6a2da1f-ef65-4292-b637-8a0d6ac9b3ec",
+      "encounters": 66
+    },
+    {
+      "_id": "d721b0eb-f819-472e-997a-b057ca7fab01",
+      "encounters": 22
+    },
+    {
+      "_id": "d78faf3a-dfad-4b6b-a353-e688cd2b8568",
+      "encounters": 44
+    },
+    {
+      "_id": "d7d1f837-a2c8-4648-b498-a02278b91a08",
+      "encounters": 22
+    },
+    {
+      "_id": "d7f42940-d51d-4fc2-a604-03297e02f656",
+      "encounters": 39
+    },
+    {
+      "_id": "d8b07feb-551d-4b3c-9733-c468b8104f0c",
+      "encounters": 79
+    },
+    {
+      "_id": "d95287b4-213f-4b3b-b68e-b23b9f3bac90",
+      "encounters": 53
+    },
+    {
+      "_id": "d9988dce-ec05-4138-8f04-b0c77473a260",
+      "encounters": 10
+    },
+    {
+      "_id": "d9b90b1e-e22f-48e0-85e5-ca8a71ad06f7",
+      "encounters": 15
+    },
+    {
+      "_id": "d9e0f5cd-e132-42d4-8727-01ba47c697b8",
+      "encounters": 11
+    },
+    {
+      "_id": "d9f90c91-2e37-40ca-a574-89b33a120d16",
+      "encounters": 20
+    },
+    {
+      "_id": "da200ea3-c9eb-414b-b22a-86430059fd47",
+      "encounters": 12
+    },
+    {
+      "_id": "da2e9adf-583c-4905-91ec-64f162699409",
+      "encounters": 73
+    },
+    {
+      "_id": "da44a96f-4140-4a0d-9646-fb5415b8c371",
+      "encounters": 24
+    },
+    {
+      "_id": "da80e506-8671-42e8-98da-2ddcb06e7ffb",
+      "encounters": 15
+    },
+    {
+      "_id": "dac134fa-7f57-4211-923a-e943a5c11d93",
+      "encounters": 56
+    },
+    {
+      "_id": "dadd331c-6143-41d1-bffb-d34b321ed157",
+      "encounters": 31
+    },
+    {
+      "_id": "db0664e9-0545-4d45-ab47-a5a0ef52da0d",
+      "encounters": 9
+    },
+    {
+      "_id": "dbcd6f5b-6069-4f03-95f3-5c17a0f2776c",
+      "encounters": 13
+    },
+    {
+      "_id": "dc00fea9-2f95-46f9-ba8e-d382489c6e6a",
+      "encounters": 56
+    },
+    {
+      "_id": "dc811097-b472-4dbd-8ce9-bb0afca44d7e",
+      "encounters": 8
+    },
+    {
+      "_id": "dcda9f18-59eb-402e-985b-f13c15c2131c",
+      "encounters": 24
+    },
+    {
+      "_id": "dcdc32d2-4c93-4509-b9e0-be4c5b5744eb",
+      "encounters": 10
+    },
+    {
+      "_id": "dd0feb0d-607b-4d38-887e-657586bc28a3",
+      "encounters": 25
+    },
+    {
+      "_id": "dda6a788-814a-48f2-8ebe-bc57e4cefd92",
+      "encounters": 22
+    },
+    {
+      "_id": "ddfa05a6-b8a6-4208-b609-28f9a6a8d79e",
+      "encounters": 22
+    },
+    {
+      "_id": "de6ebe11-d869-447a-8fbc-08784ee1fe0f",
+      "encounters": 14
+    },
+    {
+      "_id": "de767c9e-3131-4d1a-9eed-fdd86a15d459",
+      "encounters": 22
+    },
+    {
+      "_id": "de7c8b90-7d39-4245-afc5-e8d01b599ae1",
+      "encounters": 15
+    },
+    {
+      "_id": "dea008f8-c3da-4b74-9b12-db1de6e07730",
+      "encounters": 24
+    },
+    {
+      "_id": "defd47cc-95c0-4302-a284-6038e986d672",
+      "encounters": 20
+    },
+    {
+      "_id": "df72fdee-e347-4c77-a3bb-074655dd67be",
+      "encounters": 13
+    },
+    {
+      "_id": "df7c1d66-eac2-49bd-9d12-ee17e8758f68",
+      "encounters": 103
+    },
+    {
+      "_id": "df91aedf-3e17-44c3-b273-62e35f518475",
+      "encounters": 36
+    },
+    {
+      "_id": "dfc7b1ae-1583-4d88-970d-02712d55070c",
+      "encounters": 4
+    },
+    {
+      "_id": "dfeb8bee-d1d7-4d41-a1de-2a42795d28a9",
+      "encounters": 32
+    },
+    {
+      "_id": "e033651a-9391-4ca7-abe5-3823b60a12d9",
+      "encounters": 78
+    },
+    {
+      "_id": "e0503bf7-6b9e-4c70-9dc8-35b0bf3cd50b",
+      "encounters": 60
+    },
+    {
+      "_id": "e05dd037-e45f-434a-946d-5c9076a2f596",
+      "encounters": 63
+    },
+    {
+      "_id": "e061409e-4b85-4ec1-b1f7-02677d51f763",
+      "encounters": 94
+    },
+    {
+      "_id": "e073858e-b506-4849-9cac-f764cd9218c2",
+      "encounters": 22
+    },
+    {
+      "_id": "e112cedd-a98e-489e-abb0-875420d40397",
+      "encounters": 25
+    },
+    {
+      "_id": "e1146189-55f3-4bad-9ee3-beca009d27a5",
+      "encounters": 47
+    },
+    {
+      "_id": "e130929b-3c86-4b5e-8b07-22537fc9e84d",
+      "encounters": 28
+    },
+    {
+      "_id": "e15ce616-8e58-4d4c-a6eb-712ce571aeef",
+      "encounters": 52
+    },
+    {
+      "_id": "e175908a-09db-4730-a311-4e57ba73438b",
+      "encounters": 21
+    },
+    {
+      "_id": "e188fafe-c1bb-45dc-9627-4ff4e4bc0ec0",
+      "encounters": 35
+    },
+    {
+      "_id": "e19ef77e-c29c-4fe6-9790-23d53ef5158f",
+      "encounters": 23
+    },
+    {
+      "_id": "e1b30dc8-2618-42c1-a3f8-9c2d8ac49c5f",
+      "encounters": 91
+    },
+    {
+      "_id": "e20fb002-6dc6-4cea-ba4b-7f528ccf6572",
+      "encounters": 42
+    },
+    {
+      "_id": "e234ae17-7d4d-4d7f-8eb6-38edc1ebebc2",
+      "encounters": 86
+    },
+    {
+      "_id": "e2885dfa-4d69-4ec3-b2a1-f3713356637f",
+      "encounters": 17
+    },
+    {
+      "_id": "e3386a13-d652-45fe-abd9-f01d1b023e6f",
+      "encounters": 16
+    },
+    {
+      "_id": "e36321fa-0e45-4386-a404-6e1afda736b8",
+      "encounters": 10
+    },
+    {
+      "_id": "e3af2463-f4c9-4dbb-a8d2-d6a08c5b1460",
+      "encounters": 24
+    },
+    {
+      "_id": "e3bba570-83a5-4105-b766-27582eb6ba59",
+      "encounters": 28
+    },
+    {
+      "_id": "e4199934-4ef7-45a4-9583-8f764af997f2",
+      "encounters": 21
+    },
+    {
+      "_id": "e47e6347-73d4-4244-b92e-8a7cea33d434",
+      "encounters": 9
+    },
+    {
+      "_id": "e4945ad4-5f21-460f-a420-98a32ef61d3d",
+      "encounters": 50
+    },
+    {
+      "_id": "e4f1bd35-93ae-418b-b8cf-d39c3fbb069c",
+      "encounters": 64
+    },
+    {
+      "_id": "e50b072e-667e-4a60-8445-ef48ac9d2be7",
+      "encounters": 8
+    },
+    {
+      "_id": "e51205c4-1713-4360-8257-8e3fac3afb67",
+      "encounters": 56
+    },
+    {
+      "_id": "e521bdba-f8ca-4cf9-9c4d-ade83f63e496",
+      "encounters": 11
+    },
+    {
+      "_id": "e52a1bbc-7b12-4d01-82cc-1196da05e399",
+      "encounters": 14
+    },
+    {
+      "_id": "e598a677-2882-4849-ae19-d7cddc9d7409",
+      "encounters": 35
+    },
+    {
+      "_id": "e5b763ef-2b9f-4c7d-8dbd-1a8ffad0d649",
+      "encounters": 73
+    },
+    {
+      "_id": "e5c44cce-6c6e-4c4a-8839-b18a71e59bfe",
+      "encounters": 37
+    },
+    {
+      "_id": "e5ed8098-6c35-447e-b216-8f5642ab01a8",
+      "encounters": 74
+    },
+    {
+      "_id": "e6a843e8-10db-454b-a39c-d133a7a75a62",
+      "encounters": 9
+    },
+    {
+      "_id": "e6e423f1-05b0-4c31-a107-56538598a86d",
+      "encounters": 22
+    },
+    {
+      "_id": "e6f591dc-9b39-4bcf-b468-700ce7745a61",
+      "encounters": 9
+    },
+    {
+      "_id": "e6ff4bf9-09c2-4976-aa84-cca142207cf8",
+      "encounters": 36
+    },
+    {
+      "_id": "e75ed3bb-d04c-46cc-897e-1938329673ec",
+      "encounters": 50
+    },
+    {
+      "_id": "e7b0fe9b-a6ae-4a8a-9055-7971a07568d8",
+      "encounters": 7
+    },
+    {
+      "_id": "e7ff5cca-b90d-426c-a683-fef2fcb80da4",
+      "encounters": 19
+    },
+    {
+      "_id": "e8ae3951-69d1-4257-a22b-ed03327260d7",
+      "encounters": 22
+    },
+    {
+      "_id": "e8b73cd5-45fb-423d-b51c-db52adb5d6a5",
+      "encounters": 8
+    },
+    {
+      "_id": "e901ce7f-cce0-46dc-b04f-45bd916c4cae",
+      "encounters": 56
+    },
+    {
+      "_id": "e93ddf88-f6bf-47d5-a82c-025ba00a6790",
+      "encounters": 15
+    },
+    {
+      "_id": "e974e5c3-9b22-41f2-b3a3-c12848f29a73",
+      "encounters": 73
+    },
+    {
+      "_id": "e98f6994-bee2-4238-bc9d-1997dd5a4260",
+      "encounters": 23
+    },
+    {
+      "_id": "ea160682-a049-4b6c-929e-a959a1221968",
+      "encounters": 16
+    },
+    {
+      "_id": "ea32ff72-a209-4c99-a5e5-09f047152280",
+      "encounters": 61
+    },
+    {
+      "_id": "ea473936-37a3-4493-a603-e59435cf321e",
+      "encounters": 14
+    },
+    {
+      "_id": "ea521af0-e6c4-4a3c-899c-89c35c49287d",
+      "encounters": 110
+    },
+    {
+      "_id": "ea8e6623-5590-4d01-bfc1-25d86b1b4491",
+      "encounters": 38
+    },
+    {
+      "_id": "eaa47c11-c363-48a2-b6d6-7382de05bec5",
+      "encounters": 28
+    },
+    {
+      "_id": "eabd08f9-513a-40a9-8932-d7e166b9941a",
+      "encounters": 50
+    },
+    {
+      "_id": "eabfe6f1-0b13-43b2-9b6e-291363b2f856",
+      "encounters": 77
+    },
+    {
+      "_id": "eace3e22-6c51-460c-bd0f-3cf0b65113fe",
+      "encounters": 6
+    },
+    {
+      "_id": "eaf6eec1-84ec-454e-8a9a-eafd13da4241",
+      "encounters": 24
+    },
+    {
+      "_id": "eafd1fd3-3778-423a-ba79-4584bd310eb4",
+      "encounters": 25
+    },
+    {
+      "_id": "eb17a151-7936-4b4b-a492-8c1ba9d1cc3b",
+      "encounters": 17
+    },
+    {
+      "_id": "eba0f292-1951-4af9-9f14-9d6e9db8e480",
+      "encounters": 40
+    },
+    {
+      "_id": "ebc9c42f-9df2-4126-ab89-c0806fcfa72b",
+      "encounters": 19
+    },
+    {
+      "_id": "ebee7497-67ea-4a51-ade2-59d7dfca8fcf",
+      "encounters": 29
+    },
+    {
+      "_id": "ec277ad1-49af-4f53-829f-9c074331160c",
+      "encounters": 38
+    },
+    {
+      "_id": "ec3f12e0-5f62-4378-aab7-2538d037df0f",
+      "encounters": 42
+    },
+    {
+      "_id": "ecd32edf-a122-4d6b-a180-b84367bb726a",
+      "encounters": 43
+    },
+    {
+      "_id": "ed043572-d676-4b8b-86d0-435151812fd4",
+      "encounters": 38
+    },
+    {
+      "_id": "ed55adb7-3395-4c69-a0b8-b85936c1731c",
+      "encounters": 41
+    },
+    {
+      "_id": "ed58f761-d10f-442e-89a1-ae35294f0ac0",
+      "encounters": 41
+    },
+    {
+      "_id": "ed5cc81e-619f-471d-aee6-2934124c58e4",
+      "encounters": 80
+    },
+    {
+      "_id": "ed6fb8d6-c14d-4e34-a029-2dab33855ddd",
+      "encounters": 50
+    },
+    {
+      "_id": "ed965dc3-2f77-4277-8684-b044a57a962b",
+      "encounters": 11
+    },
+    {
+      "_id": "edb6c79c-43f2-434b-9796-a66cf89f5556",
+      "encounters": 28
+    },
+    {
+      "_id": "ee1ad3fc-c1a2-4883-bb76-c740059a1feb",
+      "encounters": 13
+    },
+    {
+      "_id": "ee6551d3-ea6d-498b-8117-b4ff3e5bd85e",
+      "encounters": 73
+    },
+    {
+      "_id": "ee74256b-7850-4a07-9034-6497aee04256",
+      "encounters": 26
+    },
+    {
+      "_id": "ee7f6c74-a8ed-4147-b8e2-4879c8657b0f",
+      "encounters": 25
+    },
+    {
+      "_id": "eedb8836-d94c-4a70-8491-bea52efc4ce8",
+      "encounters": 25
+    },
+    {
+      "_id": "ef014976-f099-45b9-b9a8-dc3497690e47",
+      "encounters": 9
+    },
+    {
+      "_id": "ef0e5433-6dab-4608-86e4-5b2fb9647d2d",
+      "encounters": 33
+    },
+    {
+      "_id": "ef2f5b33-d0ac-479e-8c9f-a7abba988265",
+      "encounters": 52
+    },
+    {
+      "_id": "ef4b2429-feec-4c00-8c41-a700071957cd",
+      "encounters": 14
+    },
+    {
+      "_id": "ef544417-a448-4c9d-8ddf-cb7fb513061d",
+      "encounters": 4
+    },
+    {
+      "_id": "efa20606-8972-4bd7-823e-2011fe9a54e1",
+      "encounters": 21
+    },
+    {
+      "_id": "efa3e04c-ec23-46e4-9431-a73492ad32a5",
+      "encounters": 65
+    },
+    {
+      "_id": "f00be2a4-f2c6-4cca-bbd7-4e6ce7b0033a",
+      "encounters": 11
+    },
+    {
+      "_id": "f065dd0d-8cf7-4289-87a1-b296ef64be1b",
+      "encounters": 29
+    },
+    {
+      "_id": "f079528f-e325-4c13-ac9f-da60cb48cdb3",
+      "encounters": 72
+    },
+    {
+      "_id": "f0f6572b-1588-4828-bb8b-e3148692e536",
+      "encounters": 65
+    },
+    {
+      "_id": "f1462368-c891-4ede-9a2f-782da4386bcf",
+      "encounters": 51
+    },
+    {
+      "_id": "f1678bde-4814-4d71-bca9-18fdf5282232",
+      "encounters": 91
+    },
+    {
+      "_id": "f1728f28-ef0c-4342-9216-a4a4e8375961",
+      "encounters": 80
+    },
+    {
+      "_id": "f186b9f3-8c70-4bbc-8335-4bb2ccca0a3c",
+      "encounters": 42
+    },
+    {
+      "_id": "f1921fc3-fdfc-441d-a928-27c18002fedf",
+      "encounters": 47
+    },
+    {
+      "_id": "f19fb6f8-d186-43d2-b300-431a8357b4c2",
+      "encounters": 23
+    },
+    {
+      "_id": "f1c1d986-9e19-40df-b761-799db01c1e57",
+      "encounters": 30
+    },
+    {
+      "_id": "f1c343ad-a38e-46e2-9ff5-aca6b77db551",
+      "encounters": 16
+    },
+    {
+      "_id": "f1e270bf-45bd-481b-938f-0aed25ddbed3",
+      "encounters": 19
+    },
+    {
+      "_id": "f1e65288-3df1-4bb4-b67e-b41d6f1385a2",
+      "encounters": 28
+    },
+    {
+      "_id": "f1fff31f-a2b2-4237-9429-4fa8d9625374",
+      "encounters": 5
+    },
+    {
+      "_id": "f23e12d9-2ec6-4006-b041-ea78d374e9c9",
+      "encounters": 30
+    },
+    {
+      "_id": "f25be418-dc57-4c06-855c-b0e6315e4189",
+      "encounters": 16
+    },
+    {
+      "_id": "f277460a-39c7-4b92-aa5c-cdecf71e2ac3",
+      "encounters": 18
+    },
+    {
+      "_id": "f290b494-c6de-40ee-98a3-ebb9d43cfd70",
+      "encounters": 68
+    },
+    {
+      "_id": "f34eed52-632a-44aa-af2a-5b05e5bc9038",
+      "encounters": 14
+    },
+    {
+      "_id": "f35c2499-623e-406b-b5f2-7fdfd4d41607",
+      "encounters": 5
+    },
+    {
+      "_id": "f36775e8-bf5a-40a2-a223-679c05b46004",
+      "encounters": 26
+    },
+    {
+      "_id": "f369d5b2-a190-4ca5-bd2b-c10016b1db1d",
+      "encounters": 16
+    },
+    {
+      "_id": "f4286e97-28cf-4768-99f5-0d1d86295354",
+      "encounters": 15
+    },
+    {
+      "_id": "f4946dee-9d49-456b-bdf5-5a8c999a666d",
+      "encounters": 17
+    },
+    {
+      "_id": "f4b626d3-6a08-4041-a726-c3d6305fabf3",
+      "encounters": 14
+    },
+    {
+      "_id": "f4bfe7d7-53a4-4dd6-b404-c6af82a52f0b",
+      "encounters": 18
+    },
+    {
+      "_id": "f504b982-e99b-4064-ad25-9e5480e769cd",
+      "encounters": 86
+    },
+    {
+      "_id": "f54dd1af-4b23-4781-9c2e-1960bdccac29",
+      "encounters": 38
+    },
+    {
+      "_id": "f5770761-ebcf-49ff-883a-b8040926f9a2",
+      "encounters": 41
+    },
+    {
+      "_id": "f588df9c-15b0-47b8-8867-00d45327b705",
+      "encounters": 9
+    },
+    {
+      "_id": "f592e861-6e2e-46bc-a19d-5485fcbf0d80",
+      "encounters": 8
+    },
+    {
+      "_id": "f5dcd418-09fe-4a2f-baa0-3da800bd8c3a",
+      "encounters": 13
+    },
+    {
+      "_id": "f5fce356-2940-4785-a16a-761e18a683c9",
+      "encounters": 12
+    },
+    {
+      "_id": "f60bf542-5ae3-4b89-b1f5-58ea3c5a46af",
+      "encounters": 82
+    },
+    {
+      "_id": "f64742bf-8cac-4780-ae38-3e6781e0d008",
+      "encounters": 24
+    },
+    {
+      "_id": "f6499733-1d98-4d73-a168-1ef765ad827f",
+      "encounters": 22
+    },
+    {
+      "_id": "f6df6e77-35dc-457b-b998-31b780ada07f",
+      "encounters": 21
+    },
+    {
+      "_id": "f6f561cc-1e0a-4f36-80c9-4b734d4b1a2e",
+      "encounters": 11
+    },
+    {
+      "_id": "f710eff2-55ee-49d8-84dd-2cf92748199d",
+      "encounters": 7
+    },
+    {
+      "_id": "f71bb059-3634-47a6-b689-04320a5c4387",
+      "encounters": 20
+    },
+    {
+      "_id": "f77ee33d-ba6e-40f6-a0b5-74c22aedcb45",
+      "encounters": 22
+    },
+    {
+      "_id": "f7d0c659-4b02-4eab-adce-f0a2af63b4b4",
+      "encounters": 50
+    },
+    {
+      "_id": "f7d7b580-e670-4921-bc67-550ec468d506",
+      "encounters": 34
+    },
+    {
+      "_id": "f817806f-9256-4e6c-888f-f152e514fbea",
+      "encounters": 18
+    },
+    {
+      "_id": "f830d725-640c-4c94-972a-61207b748347",
+      "encounters": 34
+    },
+    {
+      "_id": "f874e5d6-8e2e-453d-b054-a3b5770c4cdc",
+      "encounters": 10
+    },
+    {
+      "_id": "f8f79900-d474-43e5-8b45-ef83fd7ab547",
+      "encounters": 76
+    },
+    {
+      "_id": "f9149e25-1799-44bf-a5aa-449b41161345",
+      "encounters": 142
+    },
+    {
+      "_id": "f94257f2-07f9-4b69-8d77-f13e4ad60511",
+      "encounters": 33
+    },
+    {
+      "_id": "f95a8235-5c43-4926-84fb-391822847c30",
+      "encounters": 136
+    },
+    {
+      "_id": "f9734dd4-254c-456d-afec-f6387478407d",
+      "encounters": 54
+    },
+    {
+      "_id": "f98f2905-6942-4462-9c21-25a512520d90",
+      "encounters": 14
+    },
+    {
+      "_id": "f9b8f463-595a-49c5-8c5a-18ec493301fb",
+      "encounters": 58
+    },
+    {
+      "_id": "fa1b3cf1-5443-48c4-b663-ca38914a0e91",
+      "encounters": 18
+    },
+    {
+      "_id": "fa7dfb15-98af-4a78-8c9c-228dacf90153",
+      "encounters": 49
+    },
+    {
+      "_id": "fb64057f-154f-4e21-be16-ba4bd494f76e",
+      "encounters": 80
+    },
+    {
+      "_id": "fb91570f-6f79-4d03-bf4f-d3d58138328e",
+      "encounters": 37
+    },
+    {
+      "_id": "fbb19794-9e58-4232-b7df-dfed61c3341f",
+      "encounters": 106
+    },
+    {
+      "_id": "fc01de6d-c784-4fcb-b85a-a996326f687d",
+      "encounters": 13
+    },
+    {
+      "_id": "fc37e0e0-789e-4c57-9fb1-faf457cf7912",
+      "encounters": 47
+    },
+    {
+      "_id": "fc448035-8fc9-4893-b4eb-d1b90fc8742c",
+      "encounters": 118
+    },
+    {
+      "_id": "fc4aa89c-e441-4c0b-841f-3d16ffe1b235",
+      "encounters": 9
+    },
+    {
+      "_id": "fc817953-cc8b-45db-9c85-7c0ced8fa90d",
+      "encounters": 17
+    },
+    {
+      "_id": "fca3178e-fb68-41c3-8598-702d3ca68b96",
+      "encounters": 30
+    },
+    {
+      "_id": "fcc61454-1b07-4e49-a25b-29e5064e0063",
+      "encounters": 114
+    },
+    {
+      "_id": "fcd3f564-67de-4ed5-bd3d-2c39c3338653",
+      "encounters": 53
+    },
+    {
+      "_id": "fcee8e43-b4dc-40c3-bb1e-836292c5b03f",
+      "encounters": 9
+    },
+    {
+      "_id": "fd0b3930-9d0a-45e4-a63f-deb872627381",
+      "encounters": 47
+    },
+    {
+      "_id": "fd0fac29-72af-4f5a-801a-c9874790db1c",
+      "encounters": 20
+    },
+    {
+      "_id": "fd1e9a6d-5b50-4a6f-bd61-c884ab89f5c6",
+      "encounters": 41
+    },
+    {
+      "_id": "fd3acd35-add1-4634-8c90-68ed0f638fde",
+      "encounters": 182
+    },
+    {
+      "_id": "fd3be685-fa44-4ccd-836a-f4a47b2d4d34",
+      "encounters": 45
+    },
+    {
+      "_id": "fdb2a2ee-09c2-499b-b324-d998d5226f19",
+      "encounters": 18
+    },
+    {
+      "_id": "ff02f237-fedb-453b-85b1-ebfc2609c312",
+      "encounters": 15
+    },
+    {
+      "_id": "ff3714ac-c7e3-4910-905e-2a321eb28144",
+      "encounters": 16
+    },
+    {
+      "_id": "ff6948b7-3d62-4bfc-bc7d-dbb6748ed0be",
+      "encounters": 95
+    },
+    {
+      "_id": "ffa37e71-fa14-4e84-ba9d-aece8d1d99f9",
+      "encounters": 39
+    },
+    {
+      "_id": "ffcfa457-00c2-4405-9837-ac2781549c7e",
+      "encounters": 18
+    }
+  ],
+  "glucose_by_stroke": [
+    {
+      "_id": 0,
+      "average_glucose": 104.79551326887471,
+      "records": 4861
+    },
+    {
+      "_id": 1,
+      "average_glucose": 132.54473895582328,
+      "records": 249
+    }
+  ],
+  "heart_classes": [
+    {
+      "_id": 0,
+      "count": 164
+    },
+    {
+      "_id": 1,
+      "count": 139
+    }
+  ],
+  "monthly_encounters": [
+    {
+      "_id": "1912-07",
+      "encounters": 2
+    },
+    {
+      "_id": "1913-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1915-08",
+      "encounters": 2
+    },
+    {
+      "_id": "1915-09",
+      "encounters": 2
+    },
+    {
+      "_id": "1916-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1916-11",
+      "encounters": 1
+    },
+    {
+      "_id": "1916-12",
+      "encounters": 1
+    },
+    {
+      "_id": "1917-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1917-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1917-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1918-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1918-09",
+      "encounters": 1
+    },
+    {
+      "_id": "1919-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1919-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1920-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1920-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1920-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1921-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1921-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1922-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1922-09",
+      "encounters": 1
+    },
+    {
+      "_id": "1923-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1923-06",
+      "encounters": 2
+    },
+    {
+      "_id": "1923-07",
+      "encounters": 1
+    },
+    {
+      "_id": "1923-09",
+      "encounters": 2
+    },
+    {
+      "_id": "1923-11",
+      "encounters": 1
+    },
+    {
+      "_id": "1924-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1924-04",
+      "encounters": 2
+    },
+    {
+      "_id": "1924-05",
+      "encounters": 2
+    },
+    {
+      "_id": "1924-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1924-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1924-09",
+      "encounters": 1
+    },
+    {
+      "_id": "1924-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1924-11",
+      "encounters": 1
+    },
+    {
+      "_id": "1925-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1925-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1925-07",
+      "encounters": 1
+    },
+    {
+      "_id": "1925-09",
+      "encounters": 2
+    },
+    {
+      "_id": "1925-11",
+      "encounters": 1
+    },
+    {
+      "_id": "1926-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1926-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1926-05",
+      "encounters": 2
+    },
+    {
+      "_id": "1926-06",
+      "encounters": 2
+    },
+    {
+      "_id": "1926-09",
+      "encounters": 1
+    },
+    {
+      "_id": "1926-11",
+      "encounters": 1
+    },
+    {
+      "_id": "1927-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1927-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1927-07",
+      "encounters": 1
+    },
+    {
+      "_id": "1927-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1927-12",
+      "encounters": 1
+    },
+    {
+      "_id": "1928-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1928-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1928-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1929-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1930-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1930-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1930-07",
+      "encounters": 1
+    },
+    {
+      "_id": "1930-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1931-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1931-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1931-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1931-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1931-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1931-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1932-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1932-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1932-04",
+      "encounters": 1
+    },
+    {
+      "_id": "1932-10",
+      "encounters": 6
+    },
+    {
+      "_id": "1932-11",
+      "encounters": 2
+    },
+    {
+      "_id": "1932-12",
+      "encounters": 1
+    },
+    {
+      "_id": "1933-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1933-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1933-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1933-11",
+      "encounters": 7
+    },
+    {
+      "_id": "1933-12",
+      "encounters": 1
+    },
+    {
+      "_id": "1934-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1934-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1934-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1934-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1934-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1934-11",
+      "encounters": 6
+    },
+    {
+      "_id": "1934-12",
+      "encounters": 1
+    },
+    {
+      "_id": "1935-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1935-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1935-04",
+      "encounters": 1
+    },
+    {
+      "_id": "1935-07",
+      "encounters": 3
+    },
+    {
+      "_id": "1935-08",
+      "encounters": 2
+    },
+    {
+      "_id": "1935-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1935-11",
+      "encounters": 6
+    },
+    {
+      "_id": "1935-12",
+      "encounters": 1
+    },
+    {
+      "_id": "1936-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1936-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1936-03",
+      "encounters": 2
+    },
+    {
+      "_id": "1936-04",
+      "encounters": 1
+    },
+    {
+      "_id": "1936-05",
+      "encounters": 2
+    },
+    {
+      "_id": "1936-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1936-07",
+      "encounters": 3
+    },
+    {
+      "_id": "1936-11",
+      "encounters": 7
+    },
+    {
+      "_id": "1937-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1937-02",
+      "encounters": 2
+    },
+    {
+      "_id": "1937-03",
+      "encounters": 2
+    },
+    {
+      "_id": "1937-04",
+      "encounters": 3
+    },
+    {
+      "_id": "1937-05",
+      "encounters": 2
+    },
+    {
+      "_id": "1937-07",
+      "encounters": 4
+    },
+    {
+      "_id": "1937-11",
+      "encounters": 6
+    },
+    {
+      "_id": "1938-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1938-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1938-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1938-04",
+      "encounters": 3
+    },
+    {
+      "_id": "1938-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1938-07",
+      "encounters": 3
+    },
+    {
+      "_id": "1938-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1938-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1938-11",
+      "encounters": 1
+    },
+    {
+      "_id": "1938-12",
+      "encounters": 7
+    },
+    {
+      "_id": "1939-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1939-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1939-03",
+      "encounters": 2
+    },
+    {
+      "_id": "1939-04",
+      "encounters": 3
+    },
+    {
+      "_id": "1939-06",
+      "encounters": 3
+    },
+    {
+      "_id": "1939-07",
+      "encounters": 4
+    },
+    {
+      "_id": "1939-09",
+      "encounters": 1
+    },
+    {
+      "_id": "1939-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1939-11",
+      "encounters": 2
+    },
+    {
+      "_id": "1939-12",
+      "encounters": 7
+    },
+    {
+      "_id": "1940-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1940-03",
+      "encounters": 2
+    },
+    {
+      "_id": "1940-04",
+      "encounters": 3
+    },
+    {
+      "_id": "1940-05",
+      "encounters": 5
+    },
+    {
+      "_id": "1940-07",
+      "encounters": 4
+    },
+    {
+      "_id": "1940-08",
+      "encounters": 1
+    },
+    {
+      "_id": "1940-09",
+      "encounters": 2
+    },
+    {
+      "_id": "1940-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1940-11",
+      "encounters": 2
+    },
+    {
+      "_id": "1940-12",
+      "encounters": 6
+    },
+    {
+      "_id": "1941-01",
+      "encounters": 1
+    },
+    {
+      "_id": "1941-03",
+      "encounters": 2
+    },
+    {
+      "_id": "1941-04",
+      "encounters": 5
+    },
+    {
+      "_id": "1941-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1941-07",
+      "encounters": 5
+    },
+    {
+      "_id": "1941-08",
+      "encounters": 6
+    },
+    {
+      "_id": "1941-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1941-11",
+      "encounters": 2
+    },
+    {
+      "_id": "1941-12",
+      "encounters": 6
+    },
+    {
+      "_id": "1942-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1942-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1942-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1942-04",
+      "encounters": 4
+    },
+    {
+      "_id": "1942-05",
+      "encounters": 1
+    },
+    {
+      "_id": "1942-06",
+      "encounters": 1
+    },
+    {
+      "_id": "1942-07",
+      "encounters": 7
+    },
+    {
+      "_id": "1942-08",
+      "encounters": 3
+    },
+    {
+      "_id": "1942-09",
+      "encounters": 1
+    },
+    {
+      "_id": "1942-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1942-11",
+      "encounters": 4
+    },
+    {
+      "_id": "1942-12",
+      "encounters": 7
+    },
+    {
+      "_id": "1943-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1943-02",
+      "encounters": 2
+    },
+    {
+      "_id": "1943-03",
+      "encounters": 2
+    },
+    {
+      "_id": "1943-04",
+      "encounters": 4
+    },
+    {
+      "_id": "1943-05",
+      "encounters": 3
+    },
+    {
+      "_id": "1943-06",
+      "encounters": 4
+    },
+    {
+      "_id": "1943-07",
+      "encounters": 7
+    },
+    {
+      "_id": "1943-08",
+      "encounters": 4
+    },
+    {
+      "_id": "1943-09",
+      "encounters": 1
+    },
+    {
+      "_id": "1943-10",
+      "encounters": 3
+    },
+    {
+      "_id": "1943-11",
+      "encounters": 3
+    },
+    {
+      "_id": "1944-01",
+      "encounters": 6
+    },
+    {
+      "_id": "1944-02",
+      "encounters": 2
+    },
+    {
+      "_id": "1944-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1944-04",
+      "encounters": 4
+    },
+    {
+      "_id": "1944-05",
+      "encounters": 7
+    },
+    {
+      "_id": "1944-06",
+      "encounters": 4
+    },
+    {
+      "_id": "1944-07",
+      "encounters": 4
+    },
+    {
+      "_id": "1944-08",
+      "encounters": 5
+    },
+    {
+      "_id": "1944-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1944-12",
+      "encounters": 3
+    },
+    {
+      "_id": "1945-01",
+      "encounters": 6
+    },
+    {
+      "_id": "1945-02",
+      "encounters": 3
+    },
+    {
+      "_id": "1945-04",
+      "encounters": 4
+    },
+    {
+      "_id": "1945-05",
+      "encounters": 3
+    },
+    {
+      "_id": "1945-06",
+      "encounters": 5
+    },
+    {
+      "_id": "1945-07",
+      "encounters": 3
+    },
+    {
+      "_id": "1945-08",
+      "encounters": 5
+    },
+    {
+      "_id": "1945-09",
+      "encounters": 2
+    },
+    {
+      "_id": "1945-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1945-11",
+      "encounters": 1
+    },
+    {
+      "_id": "1945-12",
+      "encounters": 1
+    },
+    {
+      "_id": "1946-01",
+      "encounters": 6
+    },
+    {
+      "_id": "1946-02",
+      "encounters": 3
+    },
+    {
+      "_id": "1946-04",
+      "encounters": 4
+    },
+    {
+      "_id": "1946-05",
+      "encounters": 4
+    },
+    {
+      "_id": "1946-06",
+      "encounters": 4
+    },
+    {
+      "_id": "1946-07",
+      "encounters": 4
+    },
+    {
+      "_id": "1946-08",
+      "encounters": 8
+    },
+    {
+      "_id": "1946-09",
+      "encounters": 4
+    },
+    {
+      "_id": "1946-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1946-11",
+      "encounters": 1
+    },
+    {
+      "_id": "1946-12",
+      "encounters": 2
+    },
+    {
+      "_id": "1947-01",
+      "encounters": 6
+    },
+    {
+      "_id": "1947-02",
+      "encounters": 2
+    },
+    {
+      "_id": "1947-03",
+      "encounters": 1
+    },
+    {
+      "_id": "1947-04",
+      "encounters": 1
+    },
+    {
+      "_id": "1947-05",
+      "encounters": 7
+    },
+    {
+      "_id": "1947-06",
+      "encounters": 2
+    },
+    {
+      "_id": "1947-07",
+      "encounters": 7
+    },
+    {
+      "_id": "1947-08",
+      "encounters": 10
+    },
+    {
+      "_id": "1947-09",
+      "encounters": 5
+    },
+    {
+      "_id": "1947-10",
+      "encounters": 1
+    },
+    {
+      "_id": "1947-11",
+      "encounters": 2
+    },
+    {
+      "_id": "1947-12",
+      "encounters": 3
+    },
+    {
+      "_id": "1948-01",
+      "encounters": 6
+    },
+    {
+      "_id": "1948-02",
+      "encounters": 2
+    },
+    {
+      "_id": "1948-03",
+      "encounters": 2
+    },
+    {
+      "_id": "1948-04",
+      "encounters": 4
+    },
+    {
+      "_id": "1948-05",
+      "encounters": 10
+    },
+    {
+      "_id": "1948-06",
+      "encounters": 3
+    },
+    {
+      "_id": "1948-07",
+      "encounters": 5
+    },
+    {
+      "_id": "1948-08",
+      "encounters": 8
+    },
+    {
+      "_id": "1948-09",
+      "encounters": 8
+    },
+    {
+      "_id": "1948-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1948-11",
+      "encounters": 3
+    },
+    {
+      "_id": "1948-12",
+      "encounters": 3
+    },
+    {
+      "_id": "1949-01",
+      "encounters": 7
+    },
+    {
+      "_id": "1949-02",
+      "encounters": 1
+    },
+    {
+      "_id": "1949-03",
+      "encounters": 4
+    },
+    {
+      "_id": "1949-04",
+      "encounters": 1
+    },
+    {
+      "_id": "1949-05",
+      "encounters": 7
+    },
+    {
+      "_id": "1949-06",
+      "encounters": 8
+    },
+    {
+      "_id": "1949-07",
+      "encounters": 6
+    },
+    {
+      "_id": "1949-08",
+      "encounters": 5
+    },
+    {
+      "_id": "1949-09",
+      "encounters": 6
+    },
+    {
+      "_id": "1949-10",
+      "encounters": 2
+    },
+    {
+      "_id": "1949-11",
+      "encounters": 3
+    },
+    {
+      "_id": "1949-12",
+      "encounters": 2
+    },
+    {
+      "_id": "1950-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1950-02",
+      "encounters": 8
+    },
+    {
+      "_id": "1950-03",
+      "encounters": 2
+    },
+    {
+      "_id": "1950-04",
+      "encounters": 3
+    },
+    {
+      "_id": "1950-05",
+      "encounters": 8
+    },
+    {
+      "_id": "1950-06",
+      "encounters": 3
+    },
+    {
+      "_id": "1950-07",
+      "encounters": 6
+    },
+    {
+      "_id": "1950-08",
+      "encounters": 4
+    },
+    {
+      "_id": "1950-09",
+      "encounters": 6
+    },
+    {
+      "_id": "1950-10",
+      "encounters": 5
+    },
+    {
+      "_id": "1950-11",
+      "encounters": 3
+    },
+    {
+      "_id": "1950-12",
+      "encounters": 3
+    },
+    {
+      "_id": "1951-01",
+      "encounters": 3
+    },
+    {
+      "_id": "1951-02",
+      "encounters": 8
+    },
+    {
+      "_id": "1951-03",
+      "encounters": 4
+    },
+    {
+      "_id": "1951-04",
+      "encounters": 3
+    },
+    {
+      "_id": "1951-05",
+      "encounters": 4
+    },
+    {
+      "_id": "1951-06",
+      "encounters": 5
+    },
+    {
+      "_id": "1951-07",
+      "encounters": 4
+    },
+    {
+      "_id": "1951-08",
+      "encounters": 8
+    },
+    {
+      "_id": "1951-09",
+      "encounters": 6
+    },
+    {
+      "_id": "1951-10",
+      "encounters": 6
+    },
+    {
+      "_id": "1951-11",
+      "encounters": 4
+    },
+    {
+      "_id": "1951-12",
+      "encounters": 1
+    },
+    {
+      "_id": "1952-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1952-02",
+      "encounters": 11
+    },
+    {
+      "_id": "1952-03",
+      "encounters": 4
+    },
+    {
+      "_id": "1952-04",
+      "encounters": 4
+    },
+    {
+      "_id": "1952-05",
+      "encounters": 3
+    },
+    {
+      "_id": "1952-06",
+      "encounters": 8
+    },
+    {
+      "_id": "1952-07",
+      "encounters": 6
+    },
+    {
+      "_id": "1952-08",
+      "encounters": 5
+    },
+    {
+      "_id": "1952-09",
+      "encounters": 6
+    },
+    {
+      "_id": "1952-10",
+      "encounters": 8
+    },
+    {
+      "_id": "1952-11",
+      "encounters": 2
+    },
+    {
+      "_id": "1952-12",
+      "encounters": 4
+    },
+    {
+      "_id": "1953-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1953-02",
+      "encounters": 9
+    },
+    {
+      "_id": "1953-03",
+      "encounters": 7
+    },
+    {
+      "_id": "1953-04",
+      "encounters": 3
+    },
+    {
+      "_id": "1953-05",
+      "encounters": 4
+    },
+    {
+      "_id": "1953-06",
+      "encounters": 10
+    },
+    {
+      "_id": "1953-07",
+      "encounters": 3
+    },
+    {
+      "_id": "1953-08",
+      "encounters": 6
+    },
+    {
+      "_id": "1953-09",
+      "encounters": 5
+    },
+    {
+      "_id": "1953-10",
+      "encounters": 7
+    },
+    {
+      "_id": "1953-11",
+      "encounters": 7
+    },
+    {
+      "_id": "1953-12",
+      "encounters": 5
+    },
+    {
+      "_id": "1954-01",
+      "encounters": 4
+    },
+    {
+      "_id": "1954-02",
+      "encounters": 10
+    },
+    {
+      "_id": "1954-03",
+      "encounters": 7
+    },
+    {
+      "_id": "1954-04",
+      "encounters": 7
+    },
+    {
+      "_id": "1954-05",
+      "encounters": 5
+    },
+    {
+      "_id": "1954-06",
+      "encounters": 10
+    },
+    {
+      "_id": "1954-07",
+      "encounters": 5
+    },
+    {
+      "_id": "1954-08",
+      "encounters": 5
+    },
+    {
+      "_id": "1954-09",
+      "encounters": 6
+    },
+    {
+      "_id": "1954-10",
+      "encounters": 8
+    },
+    {
+      "_id": "1954-11",
+      "encounters": 5
+    },
+    {
+      "_id": "1954-12",
+      "encounters": 13
+    },
+    {
+      "_id": "1955-01",
+      "encounters": 2
+    },
+    {
+      "_id": "1955-02",
+      "encounters": 3
+    },
+    {
+      "_id": "1955-03",
+      "encounters": 12
+    },
+    {
+      "_id": "1955-04",
+      "encounters": 6
+    },
+    {
+      "_id": "1955-05",
+      "encounters": 3
+    },
+    {
+      "_id": "1955-06",
+      "encounters": 8
+    },
+    {
+      "_id": "1955-07",
+      "encounters": 5
+    },
+    {
+      "_id": "1955-08",
+      "encounters": 6
+    },
+    {
+      "_id": "1955-09",
+      "encounters": 4
+    },
+    {
+      "_id": "1955-10",
+      "encounters": 9
+    },
+    {
+      "_id": "1955-11",
+      "encounters": 6
+    },
+    {
+      "_id": "1955-12",
+      "encounters": 2
+    },
+    {
+      "_id": "1956-01",
+      "encounters": 4
+    },
+    {
+      "_id": "1956-02",
+      "encounters": 7
+    },
+    {
+      "_id": "1956-03",
+      "encounters": 12
+    },
+    {
+      "_id": "1956-04",
+      "encounters": 6
+    },
+    {
+      "_id": "1956-05",
+      "encounters": 4
+    },
+    {
+      "_id": "1956-06",
+      "encounters": 7
+    },
+    {
+      "_id": "1956-07",
+      "encounters": 8
+    },
+    {
+      "_id": "1956-08",
+      "encounters": 7
+    },
+    {
+      "_id": "1956-09",
+      "encounters": 7
+    },
+    {
+      "_id": "1956-10",
+      "encounters": 10
+    },
+    {
+      "_id": "1956-11",
+      "encounters": 9
+    },
+    {
+      "_id": "1956-12",
+      "encounters": 5
+    },
+    {
+      "_id": "1957-01",
+      "encounters": 5
+    },
+    {
+      "_id": "1957-02",
+      "encounters": 2
+    },
+    {
+      "_id": "1957-03",
+      "encounters": 14
+    },
+    {
+      "_id": "1957-04",
+      "encounters": 8
+    },
+    {
+      "_id": "1957-05",
+      "encounters": 5
+    },
+    {
+      "_id": "1957-06",
+      "encounters": 7
+    },
+    {
+      "_id": "1957-07",
+      "encounters": 7
+    },
+    {
+      "_id": "1957-08",
+      "encounters": 13
+    },
+    {
+      "_id": "1957-09",
+      "encounters": 8
+    },
+    {
+      "_id": "1957-10",
+      "encounters": 8
+    },
+    {
+      "_id": "1957-11",
+      "encounters": 14
+    },
+    {
+      "_id": "1957-12",
+      "encounters": 6
+    },
+    {
+      "_id": "1958-01",
+      "encounters": 5
+    },
+    {
+      "_id": "1958-02",
+      "encounters": 5
+    },
+    {
+      "_id": "1958-03",
+      "encounters": 17
+    },
+    {
+      "_id": "1958-04",
+      "encounters": 4
+    },
+    {
+      "_id": "1958-05",
+      "encounters": 8
+    },
+    {
+      "_id": "1958-06",
+      "encounters": 3
+    },
+    {
+      "_id": "1958-07",
+      "encounters": 11
+    },
+    {
+      "_id": "1958-08",
+      "encounters": 9
+    },
+    {
+      "_id": "1958-09",
+      "encounters": 6
+    },
+    {
+      "_id": "1958-10",
+      "encounters": 8
+    },
+    {
+      "_id": "1958-11",
+      "encounters": 12
+    },
+    {
+      "_id": "1958-12",
+      "encounters": 8
+    },
+    {
+      "_id": "1959-01",
+      "encounters": 5
+    },
+    {
+      "_id": "1959-02",
+      "encounters": 4
+    },
+    {
+      "_id": "1959-03",
+      "encounters": 10
+    },
+    {
+      "_id": "1959-04",
+      "encounters": 6
+    },
+    {
+      "_id": "1959-05",
+      "encounters": 8
+    },
+    {
+      "_id": "1959-06",
+      "encounters": 10
+    },
+    {
+      "_id": "1959-07",
+      "encounters": 12
+    },
+    {
+      "_id": "1959-08",
+      "encounters": 7
+    },
+    {
+      "_id": "1959-09",
+      "encounters": 7
+    },
+    {
+      "_id": "1959-10",
+      "encounters": 9
+    },
+    {
+      "_id": "1959-11",
+      "encounters": 9
+    },
+    {
+      "_id": "1959-12",
+      "encounters": 8
+    },
+    {
+      "_id": "1960-01",
+      "encounters": 6
+    },
+    {
+      "_id": "1960-02",
+      "encounters": 5
+    },
+    {
+      "_id": "1960-03",
+      "encounters": 4
+    },
+    {
+      "_id": "1960-04",
+      "encounters": 11
+    },
+    {
+      "_id": "1960-05",
+      "encounters": 9
+    },
+    {
+      "_id": "1960-06",
+      "encounters": 6
+    },
+    {
+      "_id": "1960-07",
+      "encounters": 11
+    },
+    {
+      "_id": "1960-08",
+      "encounters": 8
+    },
+    {
+      "_id": "1960-09",
+      "encounters": 7
+    },
+    {
+      "_id": "1960-10",
+      "encounters": 7
+    },
+    {
+      "_id": "1960-11",
+      "encounters": 12
+    },
+    {
+      "_id": "1960-12",
+      "encounters": 7
+    },
+    {
+      "_id": "1961-01",
+      "encounters": 7
+    },
+    {
+      "_id": "1961-02",
+      "encounters": 3
+    },
+    {
+      "_id": "1961-03",
+      "encounters": 6
+    },
+    {
+      "_id": "1961-04",
+      "encounters": 13
+    },
+    {
+      "_id": "1961-05",
+      "encounters": 11
+    },
+    {
+      "_id": "1961-06",
+      "encounters": 12
+    },
+    {
+      "_id": "1961-07",
+      "encounters": 12
+    },
+    {
+      "_id": "1961-08",
+      "encounters": 10
+    },
+    {
+      "_id": "1961-09",
+      "encounters": 9
+    },
+    {
+      "_id": "1961-10",
+      "encounters": 10
+    },
+    {
+      "_id": "1961-11",
+      "encounters": 8
+    },
+    {
+      "_id": "1961-12",
+      "encounters": 13
+    },
+    {
+      "_id": "1962-01",
+      "encounters": 5
+    },
+    {
+      "_id": "1962-02",
+      "encounters": 9
+    },
+    {
+      "_id": "1962-03",
+      "encounters": 10
+    },
+    {
+      "_id": "1962-04",
+      "encounters": 16
+    },
+    {
+      "_id": "1962-05",
+      "encounters": 13
+    },
+    {
+      "_id": "1962-06",
+      "encounters": 6
+    },
+    {
+      "_id": "1962-07",
+      "encounters": 10
+    },
+    {
+      "_id": "1962-08",
+      "encounters": 9
+    },
+    {
+      "_id": "1962-09",
+      "encounters": 8
+    },
+    {
+      "_id": "1962-10",
+      "encounters": 9
+    },
+    {
+      "_id": "1962-11",
+      "encounters": 10
+    },
+    {
+      "_id": "1962-12",
+      "encounters": 14
+    },
+    {
+      "_id": "1963-01",
+      "encounters": 5
+    },
+    {
+      "_id": "1963-02",
+      "encounters": 6
+    },
+    {
+      "_id": "1963-03",
+      "encounters": 9
+    },
+    {
+      "_id": "1963-04",
+      "encounters": 17
+    },
+    {
+      "_id": "1963-05",
+      "encounters": 10
+    },
+    {
+      "_id": "1963-06",
+      "encounters": 8
+    },
+    {
+      "_id": "1963-07",
+      "encounters": 8
+    },
+    {
+      "_id": "1963-08",
+      "encounters": 17
+    },
+    {
+      "_id": "1963-09",
+      "encounters": 8
+    },
+    {
+      "_id": "1963-10",
+      "encounters": 8
+    },
+    {
+      "_id": "1963-11",
+      "encounters": 7
+    },
+    {
+      "_id": "1963-12",
+      "encounters": 15
+    },
+    {
+      "_id": "1964-01",
+      "encounters": 6
+    },
+    {
+      "_id": "1964-02",
+      "encounters": 11
+    },
+    {
+      "_id": "1964-03",
+      "encounters": 15
+    },
+    {
+      "_id": "1964-04",
+      "encounters": 17
+    },
+    {
+      "_id": "1964-05",
+      "encounters": 9
+    },
+    {
+      "_id": "1964-06",
+      "encounters": 10
+    },
+    {
+      "_id": "1964-07",
+      "encounters": 10
+    },
+    {
+      "_id": "1964-08",
+      "encounters": 20
+    },
+    {
+      "_id": "1964-09",
+      "encounters": 12
+    },
+    {
+      "_id": "1964-10",
+      "encounters": 9
+    },
+    {
+      "_id": "1964-11",
+      "encounters": 6
+    },
+    {
+      "_id": "1964-12",
+      "encounters": 14
+    },
+    {
+      "_id": "1965-01",
+      "encounters": 6
+    },
+    {
+      "_id": "1965-02",
+      "encounters": 9
+    },
+    {
+      "_id": "1965-03",
+      "encounters": 12
+    },
+    {
+      "_id": "1965-04",
+      "encounters": 5
+    },
+    {
+      "_id": "1965-05",
+      "encounters": 15
+    },
+    {
+      "_id": "1965-06",
+      "encounters": 9
+    },
+    {
+      "_id": "1965-07",
+      "encounters": 13
+    },
+    {
+      "_id": "1965-08",
+      "encounters": 16
+    },
+    {
+      "_id": "1965-09",
+      "encounters": 14
+    },
+    {
+      "_id": "1965-10",
+      "encounters": 13
+    },
+    {
+      "_id": "1965-11",
+      "encounters": 10
+    },
+    {
+      "_id": "1965-12",
+      "encounters": 16
+    },
+    {
+      "_id": "1966-01",
+      "encounters": 14
+    },
+    {
+      "_id": "1966-02",
+      "encounters": 9
+    },
+    {
+      "_id": "1966-03",
+      "encounters": 14
+    },
+    {
+      "_id": "1966-04",
+      "encounters": 8
+    },
+    {
+      "_id": "1966-05",
+      "encounters": 20
+    },
+    {
+      "_id": "1966-06",
+      "encounters": 15
+    },
+    {
+      "_id": "1966-07",
+      "encounters": 14
+    },
+    {
+      "_id": "1966-08",
+      "encounters": 19
+    },
+    {
+      "_id": "1966-09",
+      "encounters": 14
+    },
+    {
+      "_id": "1966-10",
+      "encounters": 15
+    },
+    {
+      "_id": "1966-11",
+      "encounters": 9
+    },
+    {
+      "_id": "1966-12",
+      "encounters": 11
+    },
+    {
+      "_id": "1967-01",
+      "encounters": 10
+    },
+    {
+      "_id": "1967-02",
+      "encounters": 9
+    },
+    {
+      "_id": "1967-03",
+      "encounters": 17
+    },
+    {
+      "_id": "1967-04",
+      "encounters": 23
+    },
+    {
+      "_id": "1967-05",
+      "encounters": 33
+    },
+    {
+      "_id": "1967-06",
+      "encounters": 23
+    },
+    {
+      "_id": "1967-07",
+      "encounters": 29
+    },
+    {
+      "_id": "1967-08",
+      "encounters": 26
+    },
+    {
+      "_id": "1967-09",
+      "encounters": 26
+    },
+    {
+      "_id": "1967-10",
+      "encounters": 26
+    },
+    {
+      "_id": "1967-11",
+      "encounters": 20
+    },
+    {
+      "_id": "1967-12",
+      "encounters": 25
+    },
+    {
+      "_id": "1968-01",
+      "encounters": 27
+    },
+    {
+      "_id": "1968-02",
+      "encounters": 23
+    },
+    {
+      "_id": "1968-03",
+      "encounters": 28
+    },
+    {
+      "_id": "1968-04",
+      "encounters": 26
+    },
+    {
+      "_id": "1968-05",
+      "encounters": 31
+    },
+    {
+      "_id": "1968-06",
+      "encounters": 24
+    },
+    {
+      "_id": "1968-07",
+      "encounters": 24
+    },
+    {
+      "_id": "1968-08",
+      "encounters": 23
+    },
+    {
+      "_id": "1968-09",
+      "encounters": 33
+    },
+    {
+      "_id": "1968-10",
+      "encounters": 23
+    },
+    {
+      "_id": "1968-11",
+      "encounters": 23
+    },
+    {
+      "_id": "1968-12",
+      "encounters": 28
+    },
+    {
+      "_id": "1969-01",
+      "encounters": 27
+    },
+    {
+      "_id": "1969-02",
+      "encounters": 17
+    },
+    {
+      "_id": "1969-03",
+      "encounters": 27
+    },
+    {
+      "_id": "1969-04",
+      "encounters": 26
+    },
+    {
+      "_id": "1969-05",
+      "encounters": 36
+    },
+    {
+      "_id": "1969-06",
+      "encounters": 24
+    },
+    {
+      "_id": "1969-07",
+      "encounters": 27
+    },
+    {
+      "_id": "1969-08",
+      "encounters": 27
+    },
+    {
+      "_id": "1969-09",
+      "encounters": 34
+    },
+    {
+      "_id": "1969-10",
+      "encounters": 19
+    },
+    {
+      "_id": "1969-11",
+      "encounters": 28
+    },
+    {
+      "_id": "1969-12",
+      "encounters": 26
+    },
+    {
+      "_id": "1970-01",
+      "encounters": 26
+    },
+    {
+      "_id": "1970-02",
+      "encounters": 19
+    },
+    {
+      "_id": "1970-03",
+      "encounters": 25
+    },
+    {
+      "_id": "1970-04",
+      "encounters": 24
+    },
+    {
+      "_id": "1970-05",
+      "encounters": 29
+    },
+    {
+      "_id": "1970-06",
+      "encounters": 24
+    },
+    {
+      "_id": "1970-07",
+      "encounters": 32
+    },
+    {
+      "_id": "1970-08",
+      "encounters": 24
+    },
+    {
+      "_id": "1970-09",
+      "encounters": 31
+    },
+    {
+      "_id": "1970-10",
+      "encounters": 24
+    },
+    {
+      "_id": "1970-11",
+      "encounters": 24
+    },
+    {
+      "_id": "1970-12",
+      "encounters": 26
+    },
+    {
+      "_id": "1971-01",
+      "encounters": 24
+    },
+    {
+      "_id": "1971-02",
+      "encounters": 20
+    },
+    {
+      "_id": "1971-03",
+      "encounters": 24
+    },
+    {
+      "_id": "1971-04",
+      "encounters": 25
+    },
+    {
+      "_id": "1971-05",
+      "encounters": 28
+    },
+    {
+      "_id": "1971-06",
+      "encounters": 37
+    },
+    {
+      "_id": "1971-07",
+      "encounters": 30
+    },
+    {
+      "_id": "1971-08",
+      "encounters": 31
+    },
+    {
+      "_id": "1971-09",
+      "encounters": 33
+    },
+    {
+      "_id": "1971-10",
+      "encounters": 30
+    },
+    {
+      "_id": "1971-11",
+      "encounters": 28
+    },
+    {
+      "_id": "1971-12",
+      "encounters": 29
+    },
+    {
+      "_id": "1972-01",
+      "encounters": 26
+    },
+    {
+      "_id": "1972-02",
+      "encounters": 24
+    },
+    {
+      "_id": "1972-03",
+      "encounters": 29
+    },
+    {
+      "_id": "1972-04",
+      "encounters": 27
+    },
+    {
+      "_id": "1972-05",
+      "encounters": 31
+    },
+    {
+      "_id": "1972-06",
+      "encounters": 36
+    },
+    {
+      "_id": "1972-07",
+      "encounters": 29
+    },
+    {
+      "_id": "1972-08",
+      "encounters": 29
+    },
+    {
+      "_id": "1972-09",
+      "encounters": 31
+    },
+    {
+      "_id": "1972-10",
+      "encounters": 30
+    },
+    {
+      "_id": "1972-11",
+      "encounters": 24
+    },
+    {
+      "_id": "1972-12",
+      "encounters": 29
+    },
+    {
+      "_id": "1973-01",
+      "encounters": 29
+    },
+    {
+      "_id": "1973-02",
+      "encounters": 26
+    },
+    {
+      "_id": "1973-03",
+      "encounters": 22
+    },
+    {
+      "_id": "1973-04",
+      "encounters": 33
+    },
+    {
+      "_id": "1973-05",
+      "encounters": 35
+    },
+    {
+      "_id": "1973-06",
+      "encounters": 34
+    },
+    {
+      "_id": "1973-07",
+      "encounters": 37
+    },
+    {
+      "_id": "1973-08",
+      "encounters": 32
+    },
+    {
+      "_id": "1973-09",
+      "encounters": 26
+    },
+    {
+      "_id": "1973-10",
+      "encounters": 30
+    },
+    {
+      "_id": "1973-11",
+      "encounters": 25
+    },
+    {
+      "_id": "1973-12",
+      "encounters": 31
+    },
+    {
+      "_id": "1974-01",
+      "encounters": 21
+    },
+    {
+      "_id": "1974-02",
+      "encounters": 37
+    },
+    {
+      "_id": "1974-03",
+      "encounters": 21
+    },
+    {
+      "_id": "1974-04",
+      "encounters": 35
+    },
+    {
+      "_id": "1974-05",
+      "encounters": 29
+    },
+    {
+      "_id": "1974-06",
+      "encounters": 36
+    },
+    {
+      "_id": "1974-07",
+      "encounters": 30
+    },
+    {
+      "_id": "1974-08",
+      "encounters": 37
+    },
+    {
+      "_id": "1974-09",
+      "encounters": 25
+    },
+    {
+      "_id": "1974-10",
+      "encounters": 50
+    },
+    {
+      "_id": "1974-11",
+      "encounters": 28
+    },
+    {
+      "_id": "1974-12",
+      "encounters": 31
+    },
+    {
+      "_id": "1975-01",
+      "encounters": 27
+    },
+    {
+      "_id": "1975-02",
+      "encounters": 31
+    },
+    {
+      "_id": "1975-03",
+      "encounters": 26
+    },
+    {
+      "_id": "1975-04",
+      "encounters": 27
+    },
+    {
+      "_id": "1975-05",
+      "encounters": 38
+    },
+    {
+      "_id": "1975-06",
+      "encounters": 36
+    },
+    {
+      "_id": "1975-07",
+      "encounters": 34
+    },
+    {
+      "_id": "1975-08",
+      "encounters": 31
+    },
+    {
+      "_id": "1975-09",
+      "encounters": 30
+    },
+    {
+      "_id": "1975-10",
+      "encounters": 33
+    },
+    {
+      "_id": "1975-11",
+      "encounters": 27
+    },
+    {
+      "_id": "1975-12",
+      "encounters": 27
+    },
+    {
+      "_id": "1976-01",
+      "encounters": 25
+    },
+    {
+      "_id": "1976-02",
+      "encounters": 34
+    },
+    {
+      "_id": "1976-03",
+      "encounters": 28
+    },
+    {
+      "_id": "1976-04",
+      "encounters": 28
+    },
+    {
+      "_id": "1976-05",
+      "encounters": 33
+    },
+    {
+      "_id": "1976-06",
+      "encounters": 27
+    },
+    {
+      "_id": "1976-07",
+      "encounters": 38
+    },
+    {
+      "_id": "1976-08",
+      "encounters": 45
+    },
+    {
+      "_id": "1976-09",
+      "encounters": 28
+    },
+    {
+      "_id": "1976-10",
+      "encounters": 38
+    },
+    {
+      "_id": "1976-11",
+      "encounters": 30
+    },
+    {
+      "_id": "1976-12",
+      "encounters": 30
+    },
+    {
+      "_id": "1977-01",
+      "encounters": 33
+    },
+    {
+      "_id": "1977-02",
+      "encounters": 31
+    },
+    {
+      "_id": "1977-03",
+      "encounters": 32
+    },
+    {
+      "_id": "1977-04",
+      "encounters": 16
+    },
+    {
+      "_id": "1977-05",
+      "encounters": 22
+    },
+    {
+      "_id": "1977-06",
+      "encounters": 24
+    },
+    {
+      "_id": "1977-07",
+      "encounters": 25
+    },
+    {
+      "_id": "1977-08",
+      "encounters": 25
+    },
+    {
+      "_id": "1977-09",
+      "encounters": 15
+    },
+    {
+      "_id": "1977-10",
+      "encounters": 19
+    },
+    {
+      "_id": "1977-11",
+      "encounters": 23
+    },
+    {
+      "_id": "1977-12",
+      "encounters": 20
+    },
+    {
+      "_id": "1978-01",
+      "encounters": 17
+    },
+    {
+      "_id": "1978-02",
+      "encounters": 13
+    },
+    {
+      "_id": "1978-03",
+      "encounters": 23
+    },
+    {
+      "_id": "1978-04",
+      "encounters": 14
+    },
+    {
+      "_id": "1978-05",
+      "encounters": 25
+    },
+    {
+      "_id": "1978-06",
+      "encounters": 20
+    },
+    {
+      "_id": "1978-07",
+      "encounters": 27
+    },
+    {
+      "_id": "1978-08",
+      "encounters": 20
+    },
+    {
+      "_id": "1978-09",
+      "encounters": 18
+    },
+    {
+      "_id": "1978-10",
+      "encounters": 16
+    },
+    {
+      "_id": "1978-11",
+      "encounters": 18
+    },
+    {
+      "_id": "1978-12",
+      "encounters": 13
+    },
+    {
+      "_id": "1979-01",
+      "encounters": 14
+    },
+    {
+      "_id": "1979-02",
+      "encounters": 14
+    },
+    {
+      "_id": "1979-03",
+      "encounters": 24
+    },
+    {
+      "_id": "1979-04",
+      "encounters": 10
+    },
+    {
+      "_id": "1979-05",
+      "encounters": 27
+    },
+    {
+      "_id": "1979-06",
+      "encounters": 31
+    },
+    {
+      "_id": "1979-07",
+      "encounters": 28
+    },
+    {
+      "_id": "1979-08",
+      "encounters": 20
+    },
+    {
+      "_id": "1979-09",
+      "encounters": 21
+    },
+    {
+      "_id": "1979-10",
+      "encounters": 4
+    },
+    {
+      "_id": "1979-11",
+      "encounters": 26
+    },
+    {
+      "_id": "1979-12",
+      "encounters": 16
+    },
+    {
+      "_id": "1980-01",
+      "encounters": 16
+    },
+    {
+      "_id": "1980-02",
+      "encounters": 16
+    },
+    {
+      "_id": "1980-03",
+      "encounters": 21
+    },
+    {
+      "_id": "1980-04",
+      "encounters": 16
+    },
+    {
+      "_id": "1980-05",
+      "encounters": 31
+    },
+    {
+      "_id": "1980-06",
+      "encounters": 24
+    },
+    {
+      "_id": "1980-07",
+      "encounters": 23
+    },
+    {
+      "_id": "1980-08",
+      "encounters": 19
+    },
+    {
+      "_id": "1980-09",
+      "encounters": 22
+    },
+    {
+      "_id": "1980-10",
+      "encounters": 11
+    },
+    {
+      "_id": "1980-11",
+      "encounters": 34
+    },
+    {
+      "_id": "1980-12",
+      "encounters": 17
+    },
+    {
+      "_id": "1981-01",
+      "encounters": 19
+    },
+    {
+      "_id": "1981-02",
+      "encounters": 23
+    },
+    {
+      "_id": "1981-03",
+      "encounters": 21
+    },
+    {
+      "_id": "1981-04",
+      "encounters": 19
+    },
+    {
+      "_id": "1981-05",
+      "encounters": 29
+    },
+    {
+      "_id": "1981-06",
+      "encounters": 27
+    },
+    {
+      "_id": "1981-07",
+      "encounters": 27
+    },
+    {
+      "_id": "1981-08",
+      "encounters": 26
+    },
+    {
+      "_id": "1981-09",
+      "encounters": 25
+    },
+    {
+      "_id": "1981-10",
+      "encounters": 24
+    },
+    {
+      "_id": "1981-11",
+      "encounters": 25
+    },
+    {
+      "_id": "1981-12",
+      "encounters": 15
+    },
+    {
+      "_id": "1982-01",
+      "encounters": 21
+    },
+    {
+      "_id": "1982-02",
+      "encounters": 24
+    },
+    {
+      "_id": "1982-03",
+      "encounters": 21
+    },
+    {
+      "_id": "1982-04",
+      "encounters": 21
+    },
+    {
+      "_id": "1982-05",
+      "encounters": 26
+    },
+    {
+      "_id": "1982-06",
+      "encounters": 28
+    },
+    {
+      "_id": "1982-07",
+      "encounters": 28
+    },
+    {
+      "_id": "1982-08",
+      "encounters": 35
+    },
+    {
+      "_id": "1982-09",
+      "encounters": 21
+    },
+    {
+      "_id": "1982-10",
+      "encounters": 19
+    },
+    {
+      "_id": "1982-11",
+      "encounters": 27
+    },
+    {
+      "_id": "1982-12",
+      "encounters": 22
+    },
+    {
+      "_id": "1983-01",
+      "encounters": 28
+    },
+    {
+      "_id": "1983-02",
+      "encounters": 24
+    },
+    {
+      "_id": "1983-03",
+      "encounters": 25
+    },
+    {
+      "_id": "1983-04",
+      "encounters": 34
+    },
+    {
+      "_id": "1983-05",
+      "encounters": 19
+    },
+    {
+      "_id": "1983-06",
+      "encounters": 27
+    },
+    {
+      "_id": "1983-07",
+      "encounters": 28
+    },
+    {
+      "_id": "1983-08",
+      "encounters": 29
+    },
+    {
+      "_id": "1983-09",
+      "encounters": 27
+    },
+    {
+      "_id": "1983-10",
+      "encounters": 28
+    },
+    {
+      "_id": "1983-11",
+      "encounters": 29
+    },
+    {
+      "_id": "1983-12",
+      "encounters": 30
+    },
+    {
+      "_id": "1984-01",
+      "encounters": 16
+    },
+    {
+      "_id": "1984-02",
+      "encounters": 18
+    },
+    {
+      "_id": "1984-03",
+      "encounters": 31
+    },
+    {
+      "_id": "1984-04",
+      "encounters": 33
+    },
+    {
+      "_id": "1984-05",
+      "encounters": 22
+    },
+    {
+      "_id": "1984-06",
+      "encounters": 32
+    },
+    {
+      "_id": "1984-07",
+      "encounters": 34
+    },
+    {
+      "_id": "1984-08",
+      "encounters": 32
+    },
+    {
+      "_id": "1984-09",
+      "encounters": 29
+    },
+    {
+      "_id": "1984-10",
+      "encounters": 33
+    },
+    {
+      "_id": "1984-11",
+      "encounters": 29
+    },
+    {
+      "_id": "1984-12",
+      "encounters": 35
+    },
+    {
+      "_id": "1985-01",
+      "encounters": 20
+    },
+    {
+      "_id": "1985-02",
+      "encounters": 21
+    },
+    {
+      "_id": "1985-03",
+      "encounters": 35
+    },
+    {
+      "_id": "1985-04",
+      "encounters": 29
+    },
+    {
+      "_id": "1985-05",
+      "encounters": 20
+    },
+    {
+      "_id": "1985-06",
+      "encounters": 35
+    },
+    {
+      "_id": "1985-07",
+      "encounters": 31
+    },
+    {
+      "_id": "1985-08",
+      "encounters": 30
+    },
+    {
+      "_id": "1985-09",
+      "encounters": 34
+    },
+    {
+      "_id": "1985-10",
+      "encounters": 38
+    },
+    {
+      "_id": "1985-11",
+      "encounters": 31
+    },
+    {
+      "_id": "1985-12",
+      "encounters": 37
+    },
+    {
+      "_id": "1986-01",
+      "encounters": 24
+    },
+    {
+      "_id": "1986-02",
+      "encounters": 21
+    },
+    {
+      "_id": "1986-03",
+      "encounters": 33
+    },
+    {
+      "_id": "1986-04",
+      "encounters": 40
+    },
+    {
+      "_id": "1986-05",
+      "encounters": 36
+    },
+    {
+      "_id": "1986-06",
+      "encounters": 33
+    },
+    {
+      "_id": "1986-07",
+      "encounters": 40
+    },
+    {
+      "_id": "1986-08",
+      "encounters": 32
+    },
+    {
+      "_id": "1986-09",
+      "encounters": 33
+    },
+    {
+      "_id": "1986-10",
+      "encounters": 34
+    },
+    {
+      "_id": "1986-11",
+      "encounters": 34
+    },
+    {
+      "_id": "1986-12",
+      "encounters": 37
+    },
+    {
+      "_id": "1987-01",
+      "encounters": 23
+    },
+    {
+      "_id": "1987-02",
+      "encounters": 24
+    },
+    {
+      "_id": "1987-03",
+      "encounters": 34
+    },
+    {
+      "_id": "1987-04",
+      "encounters": 38
+    },
+    {
+      "_id": "1987-05",
+      "encounters": 29
+    },
+    {
+      "_id": "1987-06",
+      "encounters": 29
+    },
+    {
+      "_id": "1987-07",
+      "encounters": 33
+    },
+    {
+      "_id": "1987-08",
+      "encounters": 32
+    },
+    {
+      "_id": "1987-09",
+      "encounters": 40
+    },
+    {
+      "_id": "1987-10",
+      "encounters": 34
+    },
+    {
+      "_id": "1987-11",
+      "encounters": 29
+    },
+    {
+      "_id": "1987-12",
+      "encounters": 37
+    },
+    {
+      "_id": "1988-01",
+      "encounters": 22
+    },
+    {
+      "_id": "1988-02",
+      "encounters": 33
+    },
+    {
+      "_id": "1988-03",
+      "encounters": 28
+    },
+    {
+      "_id": "1988-04",
+      "encounters": 31
+    },
+    {
+      "_id": "1988-05",
+      "encounters": 43
+    },
+    {
+      "_id": "1988-06",
+      "encounters": 30
+    },
+    {
+      "_id": "1988-07",
+      "encounters": 34
+    },
+    {
+      "_id": "1988-08",
+      "encounters": 31
+    },
+    {
+      "_id": "1988-09",
+      "encounters": 34
+    },
+    {
+      "_id": "1988-10",
+      "encounters": 25
+    },
+    {
+      "_id": "1988-11",
+      "encounters": 29
+    },
+    {
+      "_id": "1988-12",
+      "encounters": 27
+    },
+    {
+      "_id": "1989-01",
+      "encounters": 32
+    },
+    {
+      "_id": "1989-02",
+      "encounters": 27
+    },
+    {
+      "_id": "1989-03",
+      "encounters": 32
+    },
+    {
+      "_id": "1989-04",
+      "encounters": 32
+    },
+    {
+      "_id": "1989-05",
+      "encounters": 41
+    },
+    {
+      "_id": "1989-06",
+      "encounters": 23
+    },
+    {
+      "_id": "1989-07",
+      "encounters": 40
+    },
+    {
+      "_id": "1989-08",
+      "encounters": 41
+    },
+    {
+      "_id": "1989-09",
+      "encounters": 48
+    },
+    {
+      "_id": "1989-10",
+      "encounters": 26
+    },
+    {
+      "_id": "1989-11",
+      "encounters": 31
+    },
+    {
+      "_id": "1989-12",
+      "encounters": 23
+    },
+    {
+      "_id": "1990-01",
+      "encounters": 35
+    },
+    {
+      "_id": "1990-02",
+      "encounters": 28
+    },
+    {
+      "_id": "1990-03",
+      "encounters": 49
+    },
+    {
+      "_id": "1990-04",
+      "encounters": 49
+    },
+    {
+      "_id": "1990-05",
+      "encounters": 46
+    },
+    {
+      "_id": "1990-06",
+      "encounters": 37
+    },
+    {
+      "_id": "1990-07",
+      "encounters": 52
+    },
+    {
+      "_id": "1990-08",
+      "encounters": 42
+    },
+    {
+      "_id": "1990-09",
+      "encounters": 40
+    },
+    {
+      "_id": "1990-10",
+      "encounters": 46
+    },
+    {
+      "_id": "1990-11",
+      "encounters": 31
+    },
+    {
+      "_id": "1990-12",
+      "encounters": 26
+    },
+    {
+      "_id": "1991-01",
+      "encounters": 39
+    },
+    {
+      "_id": "1991-02",
+      "encounters": 26
+    },
+    {
+      "_id": "1991-03",
+      "encounters": 36
+    },
+    {
+      "_id": "1991-04",
+      "encounters": 40
+    },
+    {
+      "_id": "1991-05",
+      "encounters": 48
+    },
+    {
+      "_id": "1991-06",
+      "encounters": 31
+    },
+    {
+      "_id": "1991-07",
+      "encounters": 49
+    },
+    {
+      "_id": "1991-08",
+      "encounters": 39
+    },
+    {
+      "_id": "1991-09",
+      "encounters": 33
+    },
+    {
+      "_id": "1991-10",
+      "encounters": 34
+    },
+    {
+      "_id": "1991-11",
+      "encounters": 43
+    },
+    {
+      "_id": "1991-12",
+      "encounters": 31
+    },
+    {
+      "_id": "1992-01",
+      "encounters": 45
+    },
+    {
+      "_id": "1992-02",
+      "encounters": 29
+    },
+    {
+      "_id": "1992-03",
+      "encounters": 42
+    },
+    {
+      "_id": "1992-04",
+      "encounters": 40
+    },
+    {
+      "_id": "1992-05",
+      "encounters": 44
+    },
+    {
+      "_id": "1992-06",
+      "encounters": 43
+    },
+    {
+      "_id": "1992-07",
+      "encounters": 50
+    },
+    {
+      "_id": "1992-08",
+      "encounters": 38
+    },
+    {
+      "_id": "1992-09",
+      "encounters": 33
+    },
+    {
+      "_id": "1992-10",
+      "encounters": 41
+    },
+    {
+      "_id": "1992-11",
+      "encounters": 34
+    },
+    {
+      "_id": "1992-12",
+      "encounters": 28
+    },
+    {
+      "_id": "1993-01",
+      "encounters": 42
+    },
+    {
+      "_id": "1993-02",
+      "encounters": 33
+    },
+    {
+      "_id": "1993-03",
+      "encounters": 52
+    },
+    {
+      "_id": "1993-04",
+      "encounters": 43
+    },
+    {
+      "_id": "1993-05",
+      "encounters": 44
+    },
+    {
+      "_id": "1993-06",
+      "encounters": 50
+    },
+    {
+      "_id": "1993-07",
+      "encounters": 51
+    },
+    {
+      "_id": "1993-08",
+      "encounters": 41
+    },
+    {
+      "_id": "1993-09",
+      "encounters": 48
+    },
+    {
+      "_id": "1993-10",
+      "encounters": 47
+    },
+    {
+      "_id": "1993-11",
+      "encounters": 34
+    },
+    {
+      "_id": "1993-12",
+      "encounters": 31
+    },
+    {
+      "_id": "1994-01",
+      "encounters": 39
+    },
+    {
+      "_id": "1994-02",
+      "encounters": 34
+    },
+    {
+      "_id": "1994-03",
+      "encounters": 39
+    },
+    {
+      "_id": "1994-04",
+      "encounters": 39
+    },
+    {
+      "_id": "1994-05",
+      "encounters": 55
+    },
+    {
+      "_id": "1994-06",
+      "encounters": 53
+    },
+    {
+      "_id": "1994-07",
+      "encounters": 52
+    },
+    {
+      "_id": "1994-08",
+      "encounters": 46
+    },
+    {
+      "_id": "1994-09",
+      "encounters": 44
+    },
+    {
+      "_id": "1994-10",
+      "encounters": 46
+    },
+    {
+      "_id": "1994-11",
+      "encounters": 37
+    },
+    {
+      "_id": "1994-12",
+      "encounters": 38
+    },
+    {
+      "_id": "1995-01",
+      "encounters": 41
+    },
+    {
+      "_id": "1995-02",
+      "encounters": 24
+    },
+    {
+      "_id": "1995-03",
+      "encounters": 43
+    },
+    {
+      "_id": "1995-04",
+      "encounters": 44
+    },
+    {
+      "_id": "1995-05",
+      "encounters": 40
+    },
+    {
+      "_id": "1995-06",
+      "encounters": 52
+    },
+    {
+      "_id": "1995-07",
+      "encounters": 41
+    },
+    {
+      "_id": "1995-08",
+      "encounters": 59
+    },
+    {
+      "_id": "1995-09",
+      "encounters": 40
+    },
+    {
+      "_id": "1995-10",
+      "encounters": 37
+    },
+    {
+      "_id": "1995-11",
+      "encounters": 35
+    },
+    {
+      "_id": "1995-12",
+      "encounters": 44
+    },
+    {
+      "_id": "1996-01",
+      "encounters": 36
+    },
+    {
+      "_id": "1996-02",
+      "encounters": 40
+    },
+    {
+      "_id": "1996-03",
+      "encounters": 38
+    },
+    {
+      "_id": "1996-04",
+      "encounters": 44
+    },
+    {
+      "_id": "1996-05",
+      "encounters": 59
+    },
+    {
+      "_id": "1996-06",
+      "encounters": 52
+    },
+    {
+      "_id": "1996-07",
+      "encounters": 41
+    },
+    {
+      "_id": "1996-08",
+      "encounters": 49
+    },
+    {
+      "_id": "1996-09",
+      "encounters": 47
+    },
+    {
+      "_id": "1996-10",
+      "encounters": 55
+    },
+    {
+      "_id": "1996-11",
+      "encounters": 45
+    },
+    {
+      "_id": "1996-12",
+      "encounters": 40
+    },
+    {
+      "_id": "1997-01",
+      "encounters": 34
+    },
+    {
+      "_id": "1997-02",
+      "encounters": 41
+    },
+    {
+      "_id": "1997-03",
+      "encounters": 35
+    },
+    {
+      "_id": "1997-04",
+      "encounters": 45
+    },
+    {
+      "_id": "1997-05",
+      "encounters": 51
+    },
+    {
+      "_id": "1997-06",
+      "encounters": 47
+    },
+    {
+      "_id": "1997-07",
+      "encounters": 43
+    },
+    {
+      "_id": "1997-08",
+      "encounters": 49
+    },
+    {
+      "_id": "1997-09",
+      "encounters": 39
+    },
+    {
+      "_id": "1997-10",
+      "encounters": 43
+    },
+    {
+      "_id": "1997-11",
+      "encounters": 44
+    },
+    {
+      "_id": "1997-12",
+      "encounters": 44
+    },
+    {
+      "_id": "1998-01",
+      "encounters": 35
+    },
+    {
+      "_id": "1998-02",
+      "encounters": 40
+    },
+    {
+      "_id": "1998-03",
+      "encounters": 36
+    },
+    {
+      "_id": "1998-04",
+      "encounters": 40
+    },
+    {
+      "_id": "1998-05",
+      "encounters": 59
+    },
+    {
+      "_id": "1998-06",
+      "encounters": 36
+    },
+    {
+      "_id": "1998-07",
+      "encounters": 61
+    },
+    {
+      "_id": "1998-08",
+      "encounters": 50
+    },
+    {
+      "_id": "1998-09",
+      "encounters": 47
+    },
+    {
+      "_id": "1998-10",
+      "encounters": 54
+    },
+    {
+      "_id": "1998-11",
+      "encounters": 52
+    },
+    {
+      "_id": "1998-12",
+      "encounters": 45
+    },
+    {
+      "_id": "1999-01",
+      "encounters": 40
+    },
+    {
+      "_id": "1999-02",
+      "encounters": 45
+    },
+    {
+      "_id": "1999-03",
+      "encounters": 49
+    },
+    {
+      "_id": "1999-04",
+      "encounters": 38
+    },
+    {
+      "_id": "1999-05",
+      "encounters": 57
+    },
+    {
+      "_id": "1999-06",
+      "encounters": 58
+    },
+    {
+      "_id": "1999-07",
+      "encounters": 65
+    },
+    {
+      "_id": "1999-08",
+      "encounters": 49
+    },
+    {
+      "_id": "1999-09",
+      "encounters": 60
+    },
+    {
+      "_id": "1999-10",
+      "encounters": 76
+    },
+    {
+      "_id": "1999-11",
+      "encounters": 59
+    },
+    {
+      "_id": "1999-12",
+      "encounters": 64
+    },
+    {
+      "_id": "2000-01",
+      "encounters": 52
+    },
+    {
+      "_id": "2000-02",
+      "encounters": 52
+    },
+    {
+      "_id": "2000-03",
+      "encounters": 53
+    },
+    {
+      "_id": "2000-04",
+      "encounters": 47
+    },
+    {
+      "_id": "2000-05",
+      "encounters": 64
+    },
+    {
+      "_id": "2000-06",
+      "encounters": 52
+    },
+    {
+      "_id": "2000-07",
+      "encounters": 77
+    },
+    {
+      "_id": "2000-08",
+      "encounters": 59
+    },
+    {
+      "_id": "2000-09",
+      "encounters": 65
+    },
+    {
+      "_id": "2000-10",
+      "encounters": 59
+    },
+    {
+      "_id": "2000-11",
+      "encounters": 60
+    },
+    {
+      "_id": "2000-12",
+      "encounters": 59
+    },
+    {
+      "_id": "2001-01",
+      "encounters": 54
+    },
+    {
+      "_id": "2001-02",
+      "encounters": 49
+    },
+    {
+      "_id": "2001-03",
+      "encounters": 61
+    },
+    {
+      "_id": "2001-04",
+      "encounters": 55
+    },
+    {
+      "_id": "2001-05",
+      "encounters": 69
+    },
+    {
+      "_id": "2001-06",
+      "encounters": 55
+    },
+    {
+      "_id": "2001-07",
+      "encounters": 74
+    },
+    {
+      "_id": "2001-08",
+      "encounters": 64
+    },
+    {
+      "_id": "2001-09",
+      "encounters": 71
+    },
+    {
+      "_id": "2001-10",
+      "encounters": 67
+    },
+    {
+      "_id": "2001-11",
+      "encounters": 55
+    },
+    {
+      "_id": "2001-12",
+      "encounters": 65
+    },
+    {
+      "_id": "2002-01",
+      "encounters": 53
+    },
+    {
+      "_id": "2002-02",
+      "encounters": 54
+    },
+    {
+      "_id": "2002-03",
+      "encounters": 73
+    },
+    {
+      "_id": "2002-04",
+      "encounters": 56
+    },
+    {
+      "_id": "2002-05",
+      "encounters": 70
+    },
+    {
+      "_id": "2002-06",
+      "encounters": 69
+    },
+    {
+      "_id": "2002-07",
+      "encounters": 74
+    },
+    {
+      "_id": "2002-08",
+      "encounters": 68
+    },
+    {
+      "_id": "2002-09",
+      "encounters": 70
+    },
+    {
+      "_id": "2002-10",
+      "encounters": 63
+    },
+    {
+      "_id": "2002-11",
+      "encounters": 59
+    },
+    {
+      "_id": "2002-12",
+      "encounters": 73
+    },
+    {
+      "_id": "2003-01",
+      "encounters": 58
+    },
+    {
+      "_id": "2003-02",
+      "encounters": 47
+    },
+    {
+      "_id": "2003-03",
+      "encounters": 74
+    },
+    {
+      "_id": "2003-04",
+      "encounters": 58
+    },
+    {
+      "_id": "2003-05",
+      "encounters": 74
+    },
+    {
+      "_id": "2003-06",
+      "encounters": 62
+    },
+    {
+      "_id": "2003-07",
+      "encounters": 68
+    },
+    {
+      "_id": "2003-08",
+      "encounters": 85
+    },
+    {
+      "_id": "2003-09",
+      "encounters": 61
+    },
+    {
+      "_id": "2003-10",
+      "encounters": 74
+    },
+    {
+      "_id": "2003-11",
+      "encounters": 68
+    },
+    {
+      "_id": "2003-12",
+      "encounters": 73
+    },
+    {
+      "_id": "2004-01",
+      "encounters": 54
+    },
+    {
+      "_id": "2004-02",
+      "encounters": 50
+    },
+    {
+      "_id": "2004-03",
+      "encounters": 77
+    },
+    {
+      "_id": "2004-04",
+      "encounters": 66
+    },
+    {
+      "_id": "2004-05",
+      "encounters": 76
+    },
+    {
+      "_id": "2004-06",
+      "encounters": 75
+    },
+    {
+      "_id": "2004-07",
+      "encounters": 68
+    },
+    {
+      "_id": "2004-08",
+      "encounters": 89
+    },
+    {
+      "_id": "2004-09",
+      "encounters": 68
+    },
+    {
+      "_id": "2004-10",
+      "encounters": 71
+    },
+    {
+      "_id": "2004-11",
+      "encounters": 78
+    },
+    {
+      "_id": "2004-12",
+      "encounters": 71
+    },
+    {
+      "_id": "2005-01",
+      "encounters": 57
+    },
+    {
+      "_id": "2005-02",
+      "encounters": 46
+    },
+    {
+      "_id": "2005-03",
+      "encounters": 69
+    },
+    {
+      "_id": "2005-04",
+      "encounters": 62
+    },
+    {
+      "_id": "2005-05",
+      "encounters": 57
+    },
+    {
+      "_id": "2005-06",
+      "encounters": 53
+    },
+    {
+      "_id": "2005-07",
+      "encounters": 57
+    },
+    {
+      "_id": "2005-08",
+      "encounters": 81
+    },
+    {
+      "_id": "2005-09",
+      "encounters": 55
+    },
+    {
+      "_id": "2005-10",
+      "encounters": 66
+    },
+    {
+      "_id": "2005-11",
+      "encounters": 65
+    },
+    {
+      "_id": "2005-12",
+      "encounters": 67
+    },
+    {
+      "_id": "2006-01",
+      "encounters": 46
+    },
+    {
+      "_id": "2006-02",
+      "encounters": 60
+    },
+    {
+      "_id": "2006-03",
+      "encounters": 59
+    },
+    {
+      "_id": "2006-04",
+      "encounters": 67
+    },
+    {
+      "_id": "2006-05",
+      "encounters": 62
+    },
+    {
+      "_id": "2006-06",
+      "encounters": 60
+    },
+    {
+      "_id": "2006-07",
+      "encounters": 64
+    },
+    {
+      "_id": "2006-08",
+      "encounters": 70
+    },
+    {
+      "_id": "2006-09",
+      "encounters": 59
+    },
+    {
+      "_id": "2006-10",
+      "encounters": 72
+    },
+    {
+      "_id": "2006-11",
+      "encounters": 69
+    },
+    {
+      "_id": "2006-12",
+      "encounters": 62
+    },
+    {
+      "_id": "2007-01",
+      "encounters": 61
+    },
+    {
+      "_id": "2007-02",
+      "encounters": 46
+    },
+    {
+      "_id": "2007-03",
+      "encounters": 69
+    },
+    {
+      "_id": "2007-04",
+      "encounters": 71
+    },
+    {
+      "_id": "2007-05",
+      "encounters": 65
+    },
+    {
+      "_id": "2007-06",
+      "encounters": 60
+    },
+    {
+      "_id": "2007-07",
+      "encounters": 61
+    },
+    {
+      "_id": "2007-08",
+      "encounters": 70
+    },
+    {
+      "_id": "2007-09",
+      "encounters": 67
+    },
+    {
+      "_id": "2007-10",
+      "encounters": 68
+    },
+    {
+      "_id": "2007-11",
+      "encounters": 76
+    },
+    {
+      "_id": "2007-12",
+      "encounters": 61
+    },
+    {
+      "_id": "2008-01",
+      "encounters": 73
+    },
+    {
+      "_id": "2008-02",
+      "encounters": 58
+    },
+    {
+      "_id": "2008-03",
+      "encounters": 68
+    },
+    {
+      "_id": "2008-04",
+      "encounters": 75
+    },
+    {
+      "_id": "2008-05",
+      "encounters": 71
+    },
+    {
+      "_id": "2008-06",
+      "encounters": 67
+    },
+    {
+      "_id": "2008-07",
+      "encounters": 72
+    },
+    {
+      "_id": "2008-08",
+      "encounters": 81
+    },
+    {
+      "_id": "2008-09",
+      "encounters": 75
+    },
+    {
+      "_id": "2008-10",
+      "encounters": 84
+    },
+    {
+      "_id": "2008-11",
+      "encounters": 70
+    },
+    {
+      "_id": "2008-12",
+      "encounters": 71
+    },
+    {
+      "_id": "2009-01",
+      "encounters": 71
+    },
+    {
+      "_id": "2009-02",
+      "encounters": 48
+    },
+    {
+      "_id": "2009-03",
+      "encounters": 75
+    },
+    {
+      "_id": "2009-04",
+      "encounters": 91
+    },
+    {
+      "_id": "2009-05",
+      "encounters": 71
+    },
+    {
+      "_id": "2009-06",
+      "encounters": 57
+    },
+    {
+      "_id": "2009-07",
+      "encounters": 73
+    },
+    {
+      "_id": "2009-08",
+      "encounters": 61
+    },
+    {
+      "_id": "2009-09",
+      "encounters": 80
+    },
+    {
+      "_id": "2009-10",
+      "encounters": 81
+    },
+    {
+      "_id": "2009-11",
+      "encounters": 61
+    },
+    {
+      "_id": "2009-12",
+      "encounters": 72
+    },
+    {
+      "_id": "2010-01",
+      "encounters": 71
+    },
+    {
+      "_id": "2010-02",
+      "encounters": 78
+    },
+    {
+      "_id": "2010-03",
+      "encounters": 73
+    },
+    {
+      "_id": "2010-04",
+      "encounters": 80
+    },
+    {
+      "_id": "2010-05",
+      "encounters": 186
+    },
+    {
+      "_id": "2010-06",
+      "encounters": 199
+    },
+    {
+      "_id": "2010-07",
+      "encounters": 227
+    },
+    {
+      "_id": "2010-08",
+      "encounters": 233
+    },
+    {
+      "_id": "2010-09",
+      "encounters": 229
+    },
+    {
+      "_id": "2010-10",
+      "encounters": 239
+    },
+    {
+      "_id": "2010-11",
+      "encounters": 236
+    },
+    {
+      "_id": "2010-12",
+      "encounters": 232
+    },
+    {
+      "_id": "2011-01",
+      "encounters": 218
+    },
+    {
+      "_id": "2011-02",
+      "encounters": 228
+    },
+    {
+      "_id": "2011-03",
+      "encounters": 259
+    },
+    {
+      "_id": "2011-04",
+      "encounters": 228
+    },
+    {
+      "_id": "2011-05",
+      "encounters": 271
+    },
+    {
+      "_id": "2011-06",
+      "encounters": 260
+    },
+    {
+      "_id": "2011-07",
+      "encounters": 229
+    },
+    {
+      "_id": "2011-08",
+      "encounters": 232
+    },
+    {
+      "_id": "2011-09",
+      "encounters": 232
+    },
+    {
+      "_id": "2011-10",
+      "encounters": 263
+    },
+    {
+      "_id": "2011-11",
+      "encounters": 268
+    },
+    {
+      "_id": "2011-12",
+      "encounters": 291
+    },
+    {
+      "_id": "2012-01",
+      "encounters": 210
+    },
+    {
+      "_id": "2012-02",
+      "encounters": 232
+    },
+    {
+      "_id": "2012-03",
+      "encounters": 251
+    },
+    {
+      "_id": "2012-04",
+      "encounters": 240
+    },
+    {
+      "_id": "2012-05",
+      "encounters": 222
+    },
+    {
+      "_id": "2012-06",
+      "encounters": 239
+    },
+    {
+      "_id": "2012-07",
+      "encounters": 264
+    },
+    {
+      "_id": "2012-08",
+      "encounters": 234
+    },
+    {
+      "_id": "2012-09",
+      "encounters": 270
+    },
+    {
+      "_id": "2012-10",
+      "encounters": 228
+    },
+    {
+      "_id": "2012-11",
+      "encounters": 245
+    },
+    {
+      "_id": "2012-12",
+      "encounters": 255
+    },
+    {
+      "_id": "2013-01",
+      "encounters": 235
+    },
+    {
+      "_id": "2013-02",
+      "encounters": 210
+    },
+    {
+      "_id": "2013-03",
+      "encounters": 290
+    },
+    {
+      "_id": "2013-04",
+      "encounters": 255
+    },
+    {
+      "_id": "2013-05",
+      "encounters": 247
+    },
+    {
+      "_id": "2013-06",
+      "encounters": 245
+    },
+    {
+      "_id": "2013-07",
+      "encounters": 236
+    },
+    {
+      "_id": "2013-08",
+      "encounters": 267
+    },
+    {
+      "_id": "2013-09",
+      "encounters": 279
+    },
+    {
+      "_id": "2013-10",
+      "encounters": 272
+    },
+    {
+      "_id": "2013-11",
+      "encounters": 260
+    },
+    {
+      "_id": "2013-12",
+      "encounters": 262
+    },
+    {
+      "_id": "2014-01",
+      "encounters": 246
+    },
+    {
+      "_id": "2014-02",
+      "encounters": 207
+    },
+    {
+      "_id": "2014-03",
+      "encounters": 237
+    },
+    {
+      "_id": "2014-04",
+      "encounters": 249
+    },
+    {
+      "_id": "2014-05",
+      "encounters": 278
+    },
+    {
+      "_id": "2014-06",
+      "encounters": 272
+    },
+    {
+      "_id": "2014-07",
+      "encounters": 273
+    },
+    {
+      "_id": "2014-08",
+      "encounters": 254
+    },
+    {
+      "_id": "2014-09",
+      "encounters": 270
+    },
+    {
+      "_id": "2014-10",
+      "encounters": 326
+    },
+    {
+      "_id": "2014-11",
+      "encounters": 276
+    },
+    {
+      "_id": "2014-12",
+      "encounters": 290
+    },
+    {
+      "_id": "2015-01",
+      "encounters": 265
+    },
+    {
+      "_id": "2015-02",
+      "encounters": 222
+    },
+    {
+      "_id": "2015-03",
+      "encounters": 271
+    },
+    {
+      "_id": "2015-04",
+      "encounters": 260
+    },
+    {
+      "_id": "2015-05",
+      "encounters": 242
+    },
+    {
+      "_id": "2015-06",
+      "encounters": 254
+    },
+    {
+      "_id": "2015-07",
+      "encounters": 259
+    },
+    {
+      "_id": "2015-08",
+      "encounters": 259
+    },
+    {
+      "_id": "2015-09",
+      "encounters": 244
+    },
+    {
+      "_id": "2015-10",
+      "encounters": 257
+    },
+    {
+      "_id": "2015-11",
+      "encounters": 263
+    },
+    {
+      "_id": "2015-12",
+      "encounters": 267
+    },
+    {
+      "_id": "2016-01",
+      "encounters": 257
+    },
+    {
+      "_id": "2016-02",
+      "encounters": 252
+    },
+    {
+      "_id": "2016-03",
+      "encounters": 255
+    },
+    {
+      "_id": "2016-04",
+      "encounters": 258
+    },
+    {
+      "_id": "2016-05",
+      "encounters": 265
+    },
+    {
+      "_id": "2016-06",
+      "encounters": 264
+    },
+    {
+      "_id": "2016-07",
+      "encounters": 257
+    },
+    {
+      "_id": "2016-08",
+      "encounters": 249
+    },
+    {
+      "_id": "2016-09",
+      "encounters": 250
+    },
+    {
+      "_id": "2016-10",
+      "encounters": 310
+    },
+    {
+      "_id": "2016-11",
+      "encounters": 253
+    },
+    {
+      "_id": "2016-12",
+      "encounters": 278
+    },
+    {
+      "_id": "2017-01",
+      "encounters": 253
+    },
+    {
+      "_id": "2017-02",
+      "encounters": 233
+    },
+    {
+      "_id": "2017-03",
+      "encounters": 275
+    },
+    {
+      "_id": "2017-04",
+      "encounters": 257
+    },
+    {
+      "_id": "2017-05",
+      "encounters": 249
+    },
+    {
+      "_id": "2017-06",
+      "encounters": 287
+    },
+    {
+      "_id": "2017-07",
+      "encounters": 280
+    },
+    {
+      "_id": "2017-08",
+      "encounters": 265
+    },
+    {
+      "_id": "2017-09",
+      "encounters": 268
+    },
+    {
+      "_id": "2017-10",
+      "encounters": 271
+    },
+    {
+      "_id": "2017-11",
+      "encounters": 252
+    },
+    {
+      "_id": "2017-12",
+      "encounters": 263
+    },
+    {
+      "_id": "2018-01",
+      "encounters": 236
+    },
+    {
+      "_id": "2018-02",
+      "encounters": 193
+    },
+    {
+      "_id": "2018-03",
+      "encounters": 240
+    },
+    {
+      "_id": "2018-04",
+      "encounters": 263
+    },
+    {
+      "_id": "2018-05",
+      "encounters": 302
+    },
+    {
+      "_id": "2018-06",
+      "encounters": 254
+    },
+    {
+      "_id": "2018-07",
+      "encounters": 292
+    },
+    {
+      "_id": "2018-08",
+      "encounters": 258
+    },
+    {
+      "_id": "2018-09",
+      "encounters": 243
+    },
+    {
+      "_id": "2018-10",
+      "encounters": 264
+    },
+    {
+      "_id": "2018-11",
+      "encounters": 263
+    },
+    {
+      "_id": "2018-12",
+      "encounters": 282
+    },
+    {
+      "_id": "2019-01",
+      "encounters": 250
+    },
+    {
+      "_id": "2019-02",
+      "encounters": 202
+    },
+    {
+      "_id": "2019-03",
+      "encounters": 252
+    },
+    {
+      "_id": "2019-04",
+      "encounters": 269
+    },
+    {
+      "_id": "2019-05",
+      "encounters": 245
+    },
+    {
+      "_id": "2019-06",
+      "encounters": 250
+    },
+    {
+      "_id": "2019-07",
+      "encounters": 238
+    },
+    {
+      "_id": "2019-08",
+      "encounters": 252
+    },
+    {
+      "_id": "2019-09",
+      "encounters": 213
+    },
+    {
+      "_id": "2019-10",
+      "encounters": 219
+    },
+    {
+      "_id": "2019-11",
+      "encounters": 247
+    },
+    {
+      "_id": "2019-12",
+      "encounters": 282
+    },
+    {
+      "_id": "2020-01",
+      "encounters": 253
+    },
+    {
+      "_id": "2020-02",
+      "encounters": 225
+    },
+    {
+      "_id": "2020-03",
+      "encounters": 259
+    },
+    {
+      "_id": "2020-04",
+      "encounters": 224
+    }
+  ],
+  "patients_by_gender": [
+    {
+      "_id": "F",
+      "patients": 609
+    },
+    {
+      "_id": "M",
+      "patients": 562
+    }
+  ],
+  "stroke_outcomes": [
+    {
+      "_id": 0,
+      "count": 4861
+    },
+    {
+      "_id": 1,
+      "count": 249
+    }
+  ]
+}

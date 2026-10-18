@@ -1,0 +1,44 @@
+{
+  "heart": {
+    "rows": 303,
+    "development": 242,
+    "test": 61,
+    "test_positive": 28,
+    "verified_models": [
+      "decision_tree",
+      "dummy_prior",
+      "knn",
+      "logistic_regression",
+      "random_forest"
+    ],
+    "selected_by_cv": "logistic_regression"
+  },
+  "diabetes": {
+    "rows": 520,
+    "development": 416,
+    "test": 104,
+    "test_positive": 64,
+    "verified_models": [
+      "decision_tree",
+      "dummy_prior",
+      "knn",
+      "logistic_regression",
+      "random_forest"
+    ],
+    "selected_by_cv": "logistic_regression"
+  },
+  "stroke": {
+    "rows": 5110,
+    "development": 4088,
+    "test": 1022,
+    "test_positive": 50,
+    "verified_models": [
+      "decision_tree",
+      "dummy_prior",
+      "knn",
+      "logistic_regression",
+      "random_forest"
+    ],
+    "selected_by_cv": "logistic_regression"
+  }
+}

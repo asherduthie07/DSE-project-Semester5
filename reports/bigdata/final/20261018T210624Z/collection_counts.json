@@ -1,0 +1,10 @@
+{
+  "heart_disease_records": 303,
+  "diabetes_records": 520,
+  "stroke_records": 5110,
+  "hospital_patients": 1171,
+  "hospital_encounters": 53346,
+  "dataset_metadata": 9,
+  "data_quality_reports": 4,
+  "model_experiments": 3
+}

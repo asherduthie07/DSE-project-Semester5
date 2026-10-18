@@ -1,0 +1,17 @@
+{
+  "records": 53346,
+  "source_sha256": "c38b5c2f8a9440a00cd8470c397e47a44d4cc0dee3880c9906a0165932bbbd3f",
+  "counts": {
+    "ambulatory": 18936,
+    "emergency": 2090,
+    "inpatient": 1838,
+    "outpatient": 9003,
+    "urgentcare": 2373,
+    "wellness": 19106
+  },
+  "pandas_seconds": 0.34042325300106313,
+  "mongodb_aggregation_seconds": 0.06047989200305892,
+  "hadoop_output_validation_seconds": 0.31152632999874186,
+  "hadoop_job_seconds": 19.30444809400069,
+  "note": "Single local wall-clock observations, including distinct Hadoop execution and validation times; no distributed scaling conclusion."
+}

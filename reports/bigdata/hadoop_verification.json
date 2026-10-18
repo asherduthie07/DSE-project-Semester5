@@ -10,7 +10,7 @@
   },
   "total": 53346,
   "source_sha256": "c38b5c2f8a9440a00cd8470c397e47a44d4cc0dee3880c9906a0165932bbbd3f",
-  "job_seconds": 20.00072254499537,
+  "job_seconds": 19.322986621999007,
   "prepared": {
     "path": "/Users/asherduthie/KARUNYA/Semester-5/DSE/DSE-project-Semester5/reports/bigdata/encounter_classes.txt",
     "rows": 53346,

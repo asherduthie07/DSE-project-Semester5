@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "static only",
+  "pages": 6,
+  "tables": 32,
+  "visuals": 29,
+  "desktop_runtime": "NOT TESTED"
+}

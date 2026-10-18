@@ -1,0 +1,18 @@
+{
+  "docker": {
+    "status": "PASS",
+    "detail": "29.8.2 x86_64 8217882624\n"
+  },
+  "mongodb": {
+    "status": "PASS",
+    "version": "7.0.41"
+  },
+  "hdfs": {
+    "status": "PASS",
+    "detail": "Configured Capacity: 62671097856 (58.37 GB)\nPresent Capacity: 53014282218 (49.37 GB)\nDFS Remaining: 53011951616 (49.37 GB)\nDFS Used: 2330602 (2.22 MB)\nDFS Used%: 0.00%\nReplicated Blocks:\n\tUnder replicated blocks: 0\n\tBlocks with corrupt replicas: 0\n\tMissing blocks: 0\n\tMissing blocks (with replication factor 1): 0\n\tLow redundancy blocks with highest priority to recover: 0\n\tPending deletion blocks: 0\nErasure Coded Block Groups: \n\tLow redundancy block groups: 0\n\tBlock groups with corrupt internal blocks: 0\n\tMissing block groups: 0\n\tLow redundancy blocks with highest priority to recover: 0\n\tPending deletion blocks: 0\n\n-------------------------------------------------\nLive datanodes (1):\n\nName: 172.19.0.5:9866 (mediscope-bigdata-datanode-1.mediscope-bigdata_default)\nHostname: datanode\nDecommission Status : Normal\nConfigured Capacity: 62671097856 (58.37 GB)\nDFS Used: 2330602 (2.22 MB)\nNon DFS Used: 6440099862 (6.00 GB)\nDFS Remaining: 53011951616 (49.37 GB)\nDFS Used%: 0.00%\nDFS Remaining%: 84.59%\nConfigured Cache Capacity: 0 (0 B)\nCache Used: 0 (0 B)\nCache Remaining: 0 (0 B)\nCache Used%: 100.00%\nCache Remaining%: 0.00%\nXceivers: 0\nLast contact: Sun Oct 18 21:10:09 UTC 2026\nLast Block Report: Sun Oct 18 20:54:27 UTC 2026\nNum of Blocks: 17\n\n\n"
+  },
+  "yarn": {
+    "status": "PASS",
+    "detail": "2026-10-18 21:10:11 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.19.0.3:8032\nTotal Nodes:1\n         Node-Id\t     Node-State\tNode-Http-Address\tNumber-of-Running-Containers\nnodemanager:43433\t        RUNNING\t nodemanager:8042\t                           0\n"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "create": true,
+  "read": "created",
+  "update": [
+    "updated"
+  ],
+  "delete_count": 1
+}

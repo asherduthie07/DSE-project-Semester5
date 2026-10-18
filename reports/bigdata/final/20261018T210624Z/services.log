@@ -1,0 +1,7 @@
+NAME                                     IMAGE                 COMMAND                  SERVICE              CREATED          STATUS                     PORTS
+mediscope-bigdata-datanode-1             apache/hadoop:3.4.3   "/usr/local/bin/dumb…"   datanode             52 minutes ago   Up 12 minutes (healthy)    
+mediscope-bigdata-hadoop-volume-init-1   apache/hadoop:3.4.3   "sh /workspace/docke…"   hadoop-volume-init   8 minutes ago    Exited (0) 7 minutes ago   
+mediscope-bigdata-mongodb-1              mongo:7.0.41-jammy    "docker-entrypoint.s…"   mongodb              52 minutes ago   Up 52 minutes (healthy)    127.0.0.1:27017->27017/tcp
+mediscope-bigdata-namenode-1             apache/hadoop:3.4.3   "/usr/local/bin/dumb…"   namenode             12 minutes ago   Up 12 minutes (healthy)    127.0.0.1:9870->9870/tcp
+mediscope-bigdata-nodemanager-1          apache/hadoop:3.4.3   "/usr/local/bin/dumb…"   nodemanager          52 minutes ago   Up 52 minutes              
+mediscope-bigdata-resourcemanager-1      apache/hadoop:3.4.3   "/usr/local/bin/dumb…"   resourcemanager      52 minutes ago   Up 52 minutes (healthy)    127.0.0.1:8088->8088/tcp

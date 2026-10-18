@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "datasets": {
+    "uci_cleveland_heart": {
+      "raw_sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+      "tables": {
+        "processed.cleveland.data": {
+          "raw_rows": 303,
+          "raw_columns": 14,
+          "raw_missing": {
+            "ca": 4,
+            "thal": 2
+          },
+          "exact_duplicates": 0,
+          "removed": 0,
+          "final_rows": 303,
+          "final_columns": 15,
+          "final_missing": {
+            "ca": 4,
+            "thal": 2
+          },
+          "invalid_values": {},
+          "target_counts": {
+            "0": 164,
+            "1": 55,
+            "2": 36,
+            "3": 35,
+            "4": 13
+          },
+          "outlier_counts": {
+            "age": 0,
+            "chol": 5,
+            "oldpeak": 5,
+            "thalach": 1,
+            "trestbps": 9
+          },
+          "checks_passed": 18,
+          "checks_total": 18
+        }
+      }
+    },
+    "uci_early_diabetes": {
+      "raw_sha256": "67594c0f11257688b57493798e70737b7156ba37a2e6ac75507ae3a35221a388",
+      "tables": {
+        "diabetes_data_upload.csv": {
+          "raw_rows": 520,
+          "raw_columns": 17,
+          "raw_missing": {},
+          "exact_duplicates": 269,
+          "removed": 0,
+          "final_rows": 520,
+          "final_columns": 17,
+          "final_missing": {},
+          "invalid_values": {},
+          "target_counts": {
+            "Negative": 200,
+            "Positive": 320
+          },
+          "outlier_counts": {
+            "Age": 4
+          },
+          "checks_passed": 13,
+          "checks_total": 13
+        }
+      }
+    },
+    "kaggle_stroke": {
+      "raw_sha256": "83c150178a7a10439862a66b2703869aadc11f201c359436ae1df77d2b5e7485",
+      "tables": {
+        "healthcare-dataset-stroke-data.csv": {
+          "raw_rows": 5110,
+          "raw_columns": 12,
+          "raw_missing": {
+            "bmi": 201
+          },
+          "exact_duplicates": 0,
+          "removed": 0,
+          "final_rows": 5110,
+          "final_columns": 12,
+          "final_missing": {
+            "bmi": 201,
+            "smoking_status": 1544
+          },
+          "invalid_values": {},
+          "target_counts": {
+            "0": 4861,
+            "1": 249
+          },
+          "outlier_counts": {
+            "age": 0,
+            "avg_glucose_level": 627,
+            "bmi": 110
+          },
+          "checks_passed": 15,
+          "checks_total": 15
+        }
+      }
+    },
+    "synthea_csv": {
+      "raw_sha256": "4194b18c11eaedcf0d5d5dd448d8ac9661f14381e2ef9f109215dc42266cd38a",
+      "tables": {
+        "csv/patients.csv": {
+          "raw_rows": 1171,
+          "raw_columns": 25,
+          "raw_missing": {
+            "DEATHDATE": 1000,
+            "DRIVERS": 213,
+            "MAIDEN": 840,
+            "MARITAL": 380,
+            "PASSPORT": 273,
+            "PREFIX": 244,
+            "SUFFIX": 1159,
+            "ZIP": 543
+          },
+          "exact_duplicates": 0,
+          "removed": 0,
+          "final_rows": 1171,
+          "final_columns": 25,
+          "final_missing": {
+            "DEATHDATE": 1000,
+            "DRIVERS": 213,
+            "MAIDEN": 840,
+            "MARITAL": 380,
+            "PASSPORT": 273,
+            "PREFIX": 244,
+            "SUFFIX": 1159,
+            "ZIP": 543
+          },
+          "invalid_values": {},
+          "target_counts": {},
+          "outlier_counts": {
+            "HEALTHCARE_COVERAGE": 101,
+            "HEALTHCARE_EXPENSES": 0,
+            "LAT": 29,
+            "LON": 163
+          },
+          "checks_passed": 15,
+          "checks_total": 15
+        },
+        "csv/encounters.csv": {
+          "raw_rows": 53346,
+          "raw_columns": 15,
+          "raw_missing": {
+            "REASONCODE": 39569,
+            "REASONDESCRIPTION": 39569
+          },
+          "exact_duplicates": 0,
+          "removed": 0,
+          "final_rows": 53346,
+          "final_columns": 15,
+          "final_missing": {
+            "REASONCODE": 39569,
+            "REASONDESCRIPTION": 39569
+          },
+          "invalid_values": {},
+          "target_counts": {},
+          "outlier_counts": {
+            "BASE_ENCOUNTER_COST": 423,
+            "PAYER_COVERAGE": 0,
+            "TOTAL_CLAIM_COST": 423
+          },
+          "checks_passed": 14,
+          "checks_total": 14
+        }
+      },
+      "patient_encounter_relationship": {
+        "orphan_encounters": 0,
+        "repeated_patient_rows": 52175
+      }
+    }
+  },
+  "errors": []
+}

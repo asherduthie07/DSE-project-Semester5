@@ -1,0 +1,6 @@
+2026-10-18 21:08:26 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.19.0.3:8032
+File /tmp/logs/hadoop/logs-tfile/application_1792354467390_0005 does not exist.
+File /tmp/logs/hadoop/bucket-logs-tfile/0005/application_1792354467390_0005 does not exist.
+
+Can not find any log file matching the pattern: [ALL] for the application: application_1792354467390_0005
+Can not find the logs for the application: application_1792354467390_0005 with the appOwner: hadoop

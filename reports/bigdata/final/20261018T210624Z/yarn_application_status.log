@@ -1,0 +1,27 @@
+2026-10-18 21:08:24 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.19.0.3:8032
+2026-10-18 21:08:25 INFO  Configuration:2898 - resource-types.xml not found
+2026-10-18 21:08:25 INFO  ResourceUtils:476 - Unable to find 'resource-types.xml'.
+Application Report : 
+	Application-Id : application_1792354467390_0005
+	Application-Name : mediscope-encounter-counts
+	Application-Type : MAPREDUCE
+	User : hadoop
+	Queue : root.default
+	Application Priority : 0
+	Start-Time : 1792357682013
+	Finish-Time : 1792357696893
+	Progress : 100%
+	State : FINISHED
+	Final-State : SUCCEEDED
+	Tracking-URL : http://nodemanager:19888/jobhistory/job/job_1792354467390_0005
+	RPC Port : 36485
+	AM Host : nodemanager
+	Aggregate Resource Allocation : 41995 MB-seconds, 28 vcore-seconds
+	Aggregate Resource Preempted : 0 MB-seconds, 0 vcore-seconds
+	Log Aggregation Status : DISABLED
+	Diagnostics : 
+	Unmanaged Application : false
+	Application Node Label Expression : <Not set>
+	AM container Node Label Expression : <DEFAULT_PARTITION>
+	TimeoutType : LIFETIME	ExpiryTime : UNLIMITED	RemainingTime : -1seconds
+

@@ -1,0 +1,4318 @@
+[
+  {
+    "_id": "1912-07",
+    "encounters": 2
+  },
+  {
+    "_id": "1913-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1915-08",
+    "encounters": 2
+  },
+  {
+    "_id": "1915-09",
+    "encounters": 2
+  },
+  {
+    "_id": "1916-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1916-11",
+    "encounters": 1
+  },
+  {
+    "_id": "1916-12",
+    "encounters": 1
+  },
+  {
+    "_id": "1917-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1917-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1917-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1918-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1918-09",
+    "encounters": 1
+  },
+  {
+    "_id": "1919-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1919-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1920-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1920-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1920-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1921-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1921-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1922-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1922-09",
+    "encounters": 1
+  },
+  {
+    "_id": "1923-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1923-06",
+    "encounters": 2
+  },
+  {
+    "_id": "1923-07",
+    "encounters": 1
+  },
+  {
+    "_id": "1923-09",
+    "encounters": 2
+  },
+  {
+    "_id": "1923-11",
+    "encounters": 1
+  },
+  {
+    "_id": "1924-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1924-04",
+    "encounters": 2
+  },
+  {
+    "_id": "1924-05",
+    "encounters": 2
+  },
+  {
+    "_id": "1924-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1924-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1924-09",
+    "encounters": 1
+  },
+  {
+    "_id": "1924-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1924-11",
+    "encounters": 1
+  },
+  {
+    "_id": "1925-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1925-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1925-07",
+    "encounters": 1
+  },
+  {
+    "_id": "1925-09",
+    "encounters": 2
+  },
+  {
+    "_id": "1925-11",
+    "encounters": 1
+  },
+  {
+    "_id": "1926-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1926-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1926-05",
+    "encounters": 2
+  },
+  {
+    "_id": "1926-06",
+    "encounters": 2
+  },
+  {
+    "_id": "1926-09",
+    "encounters": 1
+  },
+  {
+    "_id": "1926-11",
+    "encounters": 1
+  },
+  {
+    "_id": "1927-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1927-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1927-07",
+    "encounters": 1
+  },
+  {
+    "_id": "1927-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1927-12",
+    "encounters": 1
+  },
+  {
+    "_id": "1928-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1928-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1928-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1929-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1930-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1930-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1930-07",
+    "encounters": 1
+  },
+  {
+    "_id": "1930-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1931-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1931-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1931-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1931-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1931-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1931-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1932-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1932-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1932-04",
+    "encounters": 1
+  },
+  {
+    "_id": "1932-10",
+    "encounters": 6
+  },
+  {
+    "_id": "1932-11",
+    "encounters": 2
+  },
+  {
+    "_id": "1932-12",
+    "encounters": 1
+  },
+  {
+    "_id": "1933-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1933-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1933-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1933-11",
+    "encounters": 7
+  },
+  {
+    "_id": "1933-12",
+    "encounters": 1
+  },
+  {
+    "_id": "1934-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1934-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1934-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1934-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1934-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1934-11",
+    "encounters": 6
+  },
+  {
+    "_id": "1934-12",
+    "encounters": 1
+  },
+  {
+    "_id": "1935-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1935-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1935-04",
+    "encounters": 1
+  },
+  {
+    "_id": "1935-07",
+    "encounters": 3
+  },
+  {
+    "_id": "1935-08",
+    "encounters": 2
+  },
+  {
+    "_id": "1935-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1935-11",
+    "encounters": 6
+  },
+  {
+    "_id": "1935-12",
+    "encounters": 1
+  },
+  {
+    "_id": "1936-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1936-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1936-03",
+    "encounters": 2
+  },
+  {
+    "_id": "1936-04",
+    "encounters": 1
+  },
+  {
+    "_id": "1936-05",
+    "encounters": 2
+  },
+  {
+    "_id": "1936-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1936-07",
+    "encounters": 3
+  },
+  {
+    "_id": "1936-11",
+    "encounters": 7
+  },
+  {
+    "_id": "1937-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1937-02",
+    "encounters": 2
+  },
+  {
+    "_id": "1937-03",
+    "encounters": 2
+  },
+  {
+    "_id": "1937-04",
+    "encounters": 3
+  },
+  {
+    "_id": "1937-05",
+    "encounters": 2
+  },
+  {
+    "_id": "1937-07",
+    "encounters": 4
+  },
+  {
+    "_id": "1937-11",
+    "encounters": 6
+  },
+  {
+    "_id": "1938-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1938-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1938-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1938-04",
+    "encounters": 3
+  },
+  {
+    "_id": "1938-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1938-07",
+    "encounters": 3
+  },
+  {
+    "_id": "1938-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1938-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1938-11",
+    "encounters": 1
+  },
+  {
+    "_id": "1938-12",
+    "encounters": 7
+  },
+  {
+    "_id": "1939-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1939-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1939-03",
+    "encounters": 2
+  },
+  {
+    "_id": "1939-04",
+    "encounters": 3
+  },
+  {
+    "_id": "1939-06",
+    "encounters": 3
+  },
+  {
+    "_id": "1939-07",
+    "encounters": 4
+  },
+  {
+    "_id": "1939-09",
+    "encounters": 1
+  },
+  {
+    "_id": "1939-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1939-11",
+    "encounters": 2
+  },
+  {
+    "_id": "1939-12",
+    "encounters": 7
+  },
+  {
+    "_id": "1940-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1940-03",
+    "encounters": 2
+  },
+  {
+    "_id": "1940-04",
+    "encounters": 3
+  },
+  {
+    "_id": "1940-05",
+    "encounters": 5
+  },
+  {
+    "_id": "1940-07",
+    "encounters": 4
+  },
+  {
+    "_id": "1940-08",
+    "encounters": 1
+  },
+  {
+    "_id": "1940-09",
+    "encounters": 2
+  },
+  {
+    "_id": "1940-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1940-11",
+    "encounters": 2
+  },
+  {
+    "_id": "1940-12",
+    "encounters": 6
+  },
+  {
+    "_id": "1941-01",
+    "encounters": 1
+  },
+  {
+    "_id": "1941-03",
+    "encounters": 2
+  },
+  {
+    "_id": "1941-04",
+    "encounters": 5
+  },
+  {
+    "_id": "1941-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1941-07",
+    "encounters": 5
+  },
+  {
+    "_id": "1941-08",
+    "encounters": 6
+  },
+  {
+    "_id": "1941-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1941-11",
+    "encounters": 2
+  },
+  {
+    "_id": "1941-12",
+    "encounters": 6
+  },
+  {
+    "_id": "1942-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1942-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1942-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1942-04",
+    "encounters": 4
+  },
+  {
+    "_id": "1942-05",
+    "encounters": 1
+  },
+  {
+    "_id": "1942-06",
+    "encounters": 1
+  },
+  {
+    "_id": "1942-07",
+    "encounters": 7
+  },
+  {
+    "_id": "1942-08",
+    "encounters": 3
+  },
+  {
+    "_id": "1942-09",
+    "encounters": 1
+  },
+  {
+    "_id": "1942-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1942-11",
+    "encounters": 4
+  },
+  {
+    "_id": "1942-12",
+    "encounters": 7
+  },
+  {
+    "_id": "1943-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1943-02",
+    "encounters": 2
+  },
+  {
+    "_id": "1943-03",
+    "encounters": 2
+  },
+  {
+    "_id": "1943-04",
+    "encounters": 4
+  },
+  {
+    "_id": "1943-05",
+    "encounters": 3
+  },
+  {
+    "_id": "1943-06",
+    "encounters": 4
+  },
+  {
+    "_id": "1943-07",
+    "encounters": 7
+  },
+  {
+    "_id": "1943-08",
+    "encounters": 4
+  },
+  {
+    "_id": "1943-09",
+    "encounters": 1
+  },
+  {
+    "_id": "1943-10",
+    "encounters": 3
+  },
+  {
+    "_id": "1943-11",
+    "encounters": 3
+  },
+  {
+    "_id": "1944-01",
+    "encounters": 6
+  },
+  {
+    "_id": "1944-02",
+    "encounters": 2
+  },
+  {
+    "_id": "1944-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1944-04",
+    "encounters": 4
+  },
+  {
+    "_id": "1944-05",
+    "encounters": 7
+  },
+  {
+    "_id": "1944-06",
+    "encounters": 4
+  },
+  {
+    "_id": "1944-07",
+    "encounters": 4
+  },
+  {
+    "_id": "1944-08",
+    "encounters": 5
+  },
+  {
+    "_id": "1944-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1944-12",
+    "encounters": 3
+  },
+  {
+    "_id": "1945-01",
+    "encounters": 6
+  },
+  {
+    "_id": "1945-02",
+    "encounters": 3
+  },
+  {
+    "_id": "1945-04",
+    "encounters": 4
+  },
+  {
+    "_id": "1945-05",
+    "encounters": 3
+  },
+  {
+    "_id": "1945-06",
+    "encounters": 5
+  },
+  {
+    "_id": "1945-07",
+    "encounters": 3
+  },
+  {
+    "_id": "1945-08",
+    "encounters": 5
+  },
+  {
+    "_id": "1945-09",
+    "encounters": 2
+  },
+  {
+    "_id": "1945-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1945-11",
+    "encounters": 1
+  },
+  {
+    "_id": "1945-12",
+    "encounters": 1
+  },
+  {
+    "_id": "1946-01",
+    "encounters": 6
+  },
+  {
+    "_id": "1946-02",
+    "encounters": 3
+  },
+  {
+    "_id": "1946-04",
+    "encounters": 4
+  },
+  {
+    "_id": "1946-05",
+    "encounters": 4
+  },
+  {
+    "_id": "1946-06",
+    "encounters": 4
+  },
+  {
+    "_id": "1946-07",
+    "encounters": 4
+  },
+  {
+    "_id": "1946-08",
+    "encounters": 8
+  },
+  {
+    "_id": "1946-09",
+    "encounters": 4
+  },
+  {
+    "_id": "1946-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1946-11",
+    "encounters": 1
+  },
+  {
+    "_id": "1946-12",
+    "encounters": 2
+  },
+  {
+    "_id": "1947-01",
+    "encounters": 6
+  },
+  {
+    "_id": "1947-02",
+    "encounters": 2
+  },
+  {
+    "_id": "1947-03",
+    "encounters": 1
+  },
+  {
+    "_id": "1947-04",
+    "encounters": 1
+  },
+  {
+    "_id": "1947-05",
+    "encounters": 7
+  },
+  {
+    "_id": "1947-06",
+    "encounters": 2
+  },
+  {
+    "_id": "1947-07",
+    "encounters": 7
+  },
+  {
+    "_id": "1947-08",
+    "encounters": 10
+  },
+  {
+    "_id": "1947-09",
+    "encounters": 5
+  },
+  {
+    "_id": "1947-10",
+    "encounters": 1
+  },
+  {
+    "_id": "1947-11",
+    "encounters": 2
+  },
+  {
+    "_id": "1947-12",
+    "encounters": 3
+  },
+  {
+    "_id": "1948-01",
+    "encounters": 6
+  },
+  {
+    "_id": "1948-02",
+    "encounters": 2
+  },
+  {
+    "_id": "1948-03",
+    "encounters": 2
+  },
+  {
+    "_id": "1948-04",
+    "encounters": 4
+  },
+  {
+    "_id": "1948-05",
+    "encounters": 10
+  },
+  {
+    "_id": "1948-06",
+    "encounters": 3
+  },
+  {
+    "_id": "1948-07",
+    "encounters": 5
+  },
+  {
+    "_id": "1948-08",
+    "encounters": 8
+  },
+  {
+    "_id": "1948-09",
+    "encounters": 8
+  },
+  {
+    "_id": "1948-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1948-11",
+    "encounters": 3
+  },
+  {
+    "_id": "1948-12",
+    "encounters": 3
+  },
+  {
+    "_id": "1949-01",
+    "encounters": 7
+  },
+  {
+    "_id": "1949-02",
+    "encounters": 1
+  },
+  {
+    "_id": "1949-03",
+    "encounters": 4
+  },
+  {
+    "_id": "1949-04",
+    "encounters": 1
+  },
+  {
+    "_id": "1949-05",
+    "encounters": 7
+  },
+  {
+    "_id": "1949-06",
+    "encounters": 8
+  },
+  {
+    "_id": "1949-07",
+    "encounters": 6
+  },
+  {
+    "_id": "1949-08",
+    "encounters": 5
+  },
+  {
+    "_id": "1949-09",
+    "encounters": 6
+  },
+  {
+    "_id": "1949-10",
+    "encounters": 2
+  },
+  {
+    "_id": "1949-11",
+    "encounters": 3
+  },
+  {
+    "_id": "1949-12",
+    "encounters": 2
+  },
+  {
+    "_id": "1950-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1950-02",
+    "encounters": 8
+  },
+  {
+    "_id": "1950-03",
+    "encounters": 2
+  },
+  {
+    "_id": "1950-04",
+    "encounters": 3
+  },
+  {
+    "_id": "1950-05",
+    "encounters": 8
+  },
+  {
+    "_id": "1950-06",
+    "encounters": 3
+  },
+  {
+    "_id": "1950-07",
+    "encounters": 6
+  },
+  {
+    "_id": "1950-08",
+    "encounters": 4
+  },
+  {
+    "_id": "1950-09",
+    "encounters": 6
+  },
+  {
+    "_id": "1950-10",
+    "encounters": 5
+  },
+  {
+    "_id": "1950-11",
+    "encounters": 3
+  },
+  {
+    "_id": "1950-12",
+    "encounters": 3
+  },
+  {
+    "_id": "1951-01",
+    "encounters": 3
+  },
+  {
+    "_id": "1951-02",
+    "encounters": 8
+  },
+  {
+    "_id": "1951-03",
+    "encounters": 4
+  },
+  {
+    "_id": "1951-04",
+    "encounters": 3
+  },
+  {
+    "_id": "1951-05",
+    "encounters": 4
+  },
+  {
+    "_id": "1951-06",
+    "encounters": 5
+  },
+  {
+    "_id": "1951-07",
+    "encounters": 4
+  },
+  {
+    "_id": "1951-08",
+    "encounters": 8
+  },
+  {
+    "_id": "1951-09",
+    "encounters": 6
+  },
+  {
+    "_id": "1951-10",
+    "encounters": 6
+  },
+  {
+    "_id": "1951-11",
+    "encounters": 4
+  },
+  {
+    "_id": "1951-12",
+    "encounters": 1
+  },
+  {
+    "_id": "1952-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1952-02",
+    "encounters": 11
+  },
+  {
+    "_id": "1952-03",
+    "encounters": 4
+  },
+  {
+    "_id": "1952-04",
+    "encounters": 4
+  },
+  {
+    "_id": "1952-05",
+    "encounters": 3
+  },
+  {
+    "_id": "1952-06",
+    "encounters": 8
+  },
+  {
+    "_id": "1952-07",
+    "encounters": 6
+  },
+  {
+    "_id": "1952-08",
+    "encounters": 5
+  },
+  {
+    "_id": "1952-09",
+    "encounters": 6
+  },
+  {
+    "_id": "1952-10",
+    "encounters": 8
+  },
+  {
+    "_id": "1952-11",
+    "encounters": 2
+  },
+  {
+    "_id": "1952-12",
+    "encounters": 4
+  },
+  {
+    "_id": "1953-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1953-02",
+    "encounters": 9
+  },
+  {
+    "_id": "1953-03",
+    "encounters": 7
+  },
+  {
+    "_id": "1953-04",
+    "encounters": 3
+  },
+  {
+    "_id": "1953-05",
+    "encounters": 4
+  },
+  {
+    "_id": "1953-06",
+    "encounters": 10
+  },
+  {
+    "_id": "1953-07",
+    "encounters": 3
+  },
+  {
+    "_id": "1953-08",
+    "encounters": 6
+  },
+  {
+    "_id": "1953-09",
+    "encounters": 5
+  },
+  {
+    "_id": "1953-10",
+    "encounters": 7
+  },
+  {
+    "_id": "1953-11",
+    "encounters": 7
+  },
+  {
+    "_id": "1953-12",
+    "encounters": 5
+  },
+  {
+    "_id": "1954-01",
+    "encounters": 4
+  },
+  {
+    "_id": "1954-02",
+    "encounters": 10
+  },
+  {
+    "_id": "1954-03",
+    "encounters": 7
+  },
+  {
+    "_id": "1954-04",
+    "encounters": 7
+  },
+  {
+    "_id": "1954-05",
+    "encounters": 5
+  },
+  {
+    "_id": "1954-06",
+    "encounters": 10
+  },
+  {
+    "_id": "1954-07",
+    "encounters": 5
+  },
+  {
+    "_id": "1954-08",
+    "encounters": 5
+  },
+  {
+    "_id": "1954-09",
+    "encounters": 6
+  },
+  {
+    "_id": "1954-10",
+    "encounters": 8
+  },
+  {
+    "_id": "1954-11",
+    "encounters": 5
+  },
+  {
+    "_id": "1954-12",
+    "encounters": 13
+  },
+  {
+    "_id": "1955-01",
+    "encounters": 2
+  },
+  {
+    "_id": "1955-02",
+    "encounters": 3
+  },
+  {
+    "_id": "1955-03",
+    "encounters": 12
+  },
+  {
+    "_id": "1955-04",
+    "encounters": 6
+  },
+  {
+    "_id": "1955-05",
+    "encounters": 3
+  },
+  {
+    "_id": "1955-06",
+    "encounters": 8
+  },
+  {
+    "_id": "1955-07",
+    "encounters": 5
+  },
+  {
+    "_id": "1955-08",
+    "encounters": 6
+  },
+  {
+    "_id": "1955-09",
+    "encounters": 4
+  },
+  {
+    "_id": "1955-10",
+    "encounters": 9
+  },
+  {
+    "_id": "1955-11",
+    "encounters": 6
+  },
+  {
+    "_id": "1955-12",
+    "encounters": 2
+  },
+  {
+    "_id": "1956-01",
+    "encounters": 4
+  },
+  {
+    "_id": "1956-02",
+    "encounters": 7
+  },
+  {
+    "_id": "1956-03",
+    "encounters": 12
+  },
+  {
+    "_id": "1956-04",
+    "encounters": 6
+  },
+  {
+    "_id": "1956-05",
+    "encounters": 4
+  },
+  {
+    "_id": "1956-06",
+    "encounters": 7
+  },
+  {
+    "_id": "1956-07",
+    "encounters": 8
+  },
+  {
+    "_id": "1956-08",
+    "encounters": 7
+  },
+  {
+    "_id": "1956-09",
+    "encounters": 7
+  },
+  {
+    "_id": "1956-10",
+    "encounters": 10
+  },
+  {
+    "_id": "1956-11",
+    "encounters": 9
+  },
+  {
+    "_id": "1956-12",
+    "encounters": 5
+  },
+  {
+    "_id": "1957-01",
+    "encounters": 5
+  },
+  {
+    "_id": "1957-02",
+    "encounters": 2
+  },
+  {
+    "_id": "1957-03",
+    "encounters": 14
+  },
+  {
+    "_id": "1957-04",
+    "encounters": 8
+  },
+  {
+    "_id": "1957-05",
+    "encounters": 5
+  },
+  {
+    "_id": "1957-06",
+    "encounters": 7
+  },
+  {
+    "_id": "1957-07",
+    "encounters": 7
+  },
+  {
+    "_id": "1957-08",
+    "encounters": 13
+  },
+  {
+    "_id": "1957-09",
+    "encounters": 8
+  },
+  {
+    "_id": "1957-10",
+    "encounters": 8
+  },
+  {
+    "_id": "1957-11",
+    "encounters": 14
+  },
+  {
+    "_id": "1957-12",
+    "encounters": 6
+  },
+  {
+    "_id": "1958-01",
+    "encounters": 5
+  },
+  {
+    "_id": "1958-02",
+    "encounters": 5
+  },
+  {
+    "_id": "1958-03",
+    "encounters": 17
+  },
+  {
+    "_id": "1958-04",
+    "encounters": 4
+  },
+  {
+    "_id": "1958-05",
+    "encounters": 8
+  },
+  {
+    "_id": "1958-06",
+    "encounters": 3
+  },
+  {
+    "_id": "1958-07",
+    "encounters": 11
+  },
+  {
+    "_id": "1958-08",
+    "encounters": 9
+  },
+  {
+    "_id": "1958-09",
+    "encounters": 6
+  },
+  {
+    "_id": "1958-10",
+    "encounters": 8
+  },
+  {
+    "_id": "1958-11",
+    "encounters": 12
+  },
+  {
+    "_id": "1958-12",
+    "encounters": 8
+  },
+  {
+    "_id": "1959-01",
+    "encounters": 5
+  },
+  {
+    "_id": "1959-02",
+    "encounters": 4
+  },
+  {
+    "_id": "1959-03",
+    "encounters": 10
+  },
+  {
+    "_id": "1959-04",
+    "encounters": 6
+  },
+  {
+    "_id": "1959-05",
+    "encounters": 8
+  },
+  {
+    "_id": "1959-06",
+    "encounters": 10
+  },
+  {
+    "_id": "1959-07",
+    "encounters": 12
+  },
+  {
+    "_id": "1959-08",
+    "encounters": 7
+  },
+  {
+    "_id": "1959-09",
+    "encounters": 7
+  },
+  {
+    "_id": "1959-10",
+    "encounters": 9
+  },
+  {
+    "_id": "1959-11",
+    "encounters": 9
+  },
+  {
+    "_id": "1959-12",
+    "encounters": 8
+  },
+  {
+    "_id": "1960-01",
+    "encounters": 6
+  },
+  {
+    "_id": "1960-02",
+    "encounters": 5
+  },
+  {
+    "_id": "1960-03",
+    "encounters": 4
+  },
+  {
+    "_id": "1960-04",
+    "encounters": 11
+  },
+  {
+    "_id": "1960-05",
+    "encounters": 9
+  },
+  {
+    "_id": "1960-06",
+    "encounters": 6
+  },
+  {
+    "_id": "1960-07",
+    "encounters": 11
+  },
+  {
+    "_id": "1960-08",
+    "encounters": 8
+  },
+  {
+    "_id": "1960-09",
+    "encounters": 7
+  },
+  {
+    "_id": "1960-10",
+    "encounters": 7
+  },
+  {
+    "_id": "1960-11",
+    "encounters": 12
+  },
+  {
+    "_id": "1960-12",
+    "encounters": 7
+  },
+  {
+    "_id": "1961-01",
+    "encounters": 7
+  },
+  {
+    "_id": "1961-02",
+    "encounters": 3
+  },
+  {
+    "_id": "1961-03",
+    "encounters": 6
+  },
+  {
+    "_id": "1961-04",
+    "encounters": 13
+  },
+  {
+    "_id": "1961-05",
+    "encounters": 11
+  },
+  {
+    "_id": "1961-06",
+    "encounters": 12
+  },
+  {
+    "_id": "1961-07",
+    "encounters": 12
+  },
+  {
+    "_id": "1961-08",
+    "encounters": 10
+  },
+  {
+    "_id": "1961-09",
+    "encounters": 9
+  },
+  {
+    "_id": "1961-10",
+    "encounters": 10
+  },
+  {
+    "_id": "1961-11",
+    "encounters": 8
+  },
+  {
+    "_id": "1961-12",
+    "encounters": 13
+  },
+  {
+    "_id": "1962-01",
+    "encounters": 5
+  },
+  {
+    "_id": "1962-02",
+    "encounters": 9
+  },
+  {
+    "_id": "1962-03",
+    "encounters": 10
+  },
+  {
+    "_id": "1962-04",
+    "encounters": 16
+  },
+  {
+    "_id": "1962-05",
+    "encounters": 13
+  },
+  {
+    "_id": "1962-06",
+    "encounters": 6
+  },
+  {
+    "_id": "1962-07",
+    "encounters": 10
+  },
+  {
+    "_id": "1962-08",
+    "encounters": 9
+  },
+  {
+    "_id": "1962-09",
+    "encounters": 8
+  },
+  {
+    "_id": "1962-10",
+    "encounters": 9
+  },
+  {
+    "_id": "1962-11",
+    "encounters": 10
+  },
+  {
+    "_id": "1962-12",
+    "encounters": 14
+  },
+  {
+    "_id": "1963-01",
+    "encounters": 5
+  },
+  {
+    "_id": "1963-02",
+    "encounters": 6
+  },
+  {
+    "_id": "1963-03",
+    "encounters": 9
+  },
+  {
+    "_id": "1963-04",
+    "encounters": 17
+  },
+  {
+    "_id": "1963-05",
+    "encounters": 10
+  },
+  {
+    "_id": "1963-06",
+    "encounters": 8
+  },
+  {
+    "_id": "1963-07",
+    "encounters": 8
+  },
+  {
+    "_id": "1963-08",
+    "encounters": 17
+  },
+  {
+    "_id": "1963-09",
+    "encounters": 8
+  },
+  {
+    "_id": "1963-10",
+    "encounters": 8
+  },
+  {
+    "_id": "1963-11",
+    "encounters": 7
+  },
+  {
+    "_id": "1963-12",
+    "encounters": 15
+  },
+  {
+    "_id": "1964-01",
+    "encounters": 6
+  },
+  {
+    "_id": "1964-02",
+    "encounters": 11
+  },
+  {
+    "_id": "1964-03",
+    "encounters": 15
+  },
+  {
+    "_id": "1964-04",
+    "encounters": 17
+  },
+  {
+    "_id": "1964-05",
+    "encounters": 9
+  },
+  {
+    "_id": "1964-06",
+    "encounters": 10
+  },
+  {
+    "_id": "1964-07",
+    "encounters": 10
+  },
+  {
+    "_id": "1964-08",
+    "encounters": 20
+  },
+  {
+    "_id": "1964-09",
+    "encounters": 12
+  },
+  {
+    "_id": "1964-10",
+    "encounters": 9
+  },
+  {
+    "_id": "1964-11",
+    "encounters": 6
+  },
+  {
+    "_id": "1964-12",
+    "encounters": 14
+  },
+  {
+    "_id": "1965-01",
+    "encounters": 6
+  },
+  {
+    "_id": "1965-02",
+    "encounters": 9
+  },
+  {
+    "_id": "1965-03",
+    "encounters": 12
+  },
+  {
+    "_id": "1965-04",
+    "encounters": 5
+  },
+  {
+    "_id": "1965-05",
+    "encounters": 15
+  },
+  {
+    "_id": "1965-06",
+    "encounters": 9
+  },
+  {
+    "_id": "1965-07",
+    "encounters": 13
+  },
+  {
+    "_id": "1965-08",
+    "encounters": 16
+  },
+  {
+    "_id": "1965-09",
+    "encounters": 14
+  },
+  {
+    "_id": "1965-10",
+    "encounters": 13
+  },
+  {
+    "_id": "1965-11",
+    "encounters": 10
+  },
+  {
+    "_id": "1965-12",
+    "encounters": 16
+  },
+  {
+    "_id": "1966-01",
+    "encounters": 14
+  },
+  {
+    "_id": "1966-02",
+    "encounters": 9
+  },
+  {
+    "_id": "1966-03",
+    "encounters": 14
+  },
+  {
+    "_id": "1966-04",
+    "encounters": 8
+  },
+  {
+    "_id": "1966-05",
+    "encounters": 20
+  },
+  {
+    "_id": "1966-06",
+    "encounters": 15
+  },
+  {
+    "_id": "1966-07",
+    "encounters": 14
+  },
+  {
+    "_id": "1966-08",
+    "encounters": 19
+  },
+  {
+    "_id": "1966-09",
+    "encounters": 14
+  },
+  {
+    "_id": "1966-10",
+    "encounters": 15
+  },
+  {
+    "_id": "1966-11",
+    "encounters": 9
+  },
+  {
+    "_id": "1966-12",
+    "encounters": 11
+  },
+  {
+    "_id": "1967-01",
+    "encounters": 10
+  },
+  {
+    "_id": "1967-02",
+    "encounters": 9
+  },
+  {
+    "_id": "1967-03",
+    "encounters": 17
+  },
+  {
+    "_id": "1967-04",
+    "encounters": 23
+  },
+  {
+    "_id": "1967-05",
+    "encounters": 33
+  },
+  {
+    "_id": "1967-06",
+    "encounters": 23
+  },
+  {
+    "_id": "1967-07",
+    "encounters": 29
+  },
+  {
+    "_id": "1967-08",
+    "encounters": 26
+  },
+  {
+    "_id": "1967-09",
+    "encounters": 26
+  },
+  {
+    "_id": "1967-10",
+    "encounters": 26
+  },
+  {
+    "_id": "1967-11",
+    "encounters": 20
+  },
+  {
+    "_id": "1967-12",
+    "encounters": 25
+  },
+  {
+    "_id": "1968-01",
+    "encounters": 27
+  },
+  {
+    "_id": "1968-02",
+    "encounters": 23
+  },
+  {
+    "_id": "1968-03",
+    "encounters": 28
+  },
+  {
+    "_id": "1968-04",
+    "encounters": 26
+  },
+  {
+    "_id": "1968-05",
+    "encounters": 31
+  },
+  {
+    "_id": "1968-06",
+    "encounters": 24
+  },
+  {
+    "_id": "1968-07",
+    "encounters": 24
+  },
+  {
+    "_id": "1968-08",
+    "encounters": 23
+  },
+  {
+    "_id": "1968-09",
+    "encounters": 33
+  },
+  {
+    "_id": "1968-10",
+    "encounters": 23
+  },
+  {
+    "_id": "1968-11",
+    "encounters": 23
+  },
+  {
+    "_id": "1968-12",
+    "encounters": 28
+  },
+  {
+    "_id": "1969-01",
+    "encounters": 27
+  },
+  {
+    "_id": "1969-02",
+    "encounters": 17
+  },
+  {
+    "_id": "1969-03",
+    "encounters": 27
+  },
+  {
+    "_id": "1969-04",
+    "encounters": 26
+  },
+  {
+    "_id": "1969-05",
+    "encounters": 36
+  },
+  {
+    "_id": "1969-06",
+    "encounters": 24
+  },
+  {
+    "_id": "1969-07",
+    "encounters": 27
+  },
+  {
+    "_id": "1969-08",
+    "encounters": 27
+  },
+  {
+    "_id": "1969-09",
+    "encounters": 34
+  },
+  {
+    "_id": "1969-10",
+    "encounters": 19
+  },
+  {
+    "_id": "1969-11",
+    "encounters": 28
+  },
+  {
+    "_id": "1969-12",
+    "encounters": 26
+  },
+  {
+    "_id": "1970-01",
+    "encounters": 26
+  },
+  {
+    "_id": "1970-02",
+    "encounters": 19
+  },
+  {
+    "_id": "1970-03",
+    "encounters": 25
+  },
+  {
+    "_id": "1970-04",
+    "encounters": 24
+  },
+  {
+    "_id": "1970-05",
+    "encounters": 29
+  },
+  {
+    "_id": "1970-06",
+    "encounters": 24
+  },
+  {
+    "_id": "1970-07",
+    "encounters": 32
+  },
+  {
+    "_id": "1970-08",
+    "encounters": 24
+  },
+  {
+    "_id": "1970-09",
+    "encounters": 31
+  },
+  {
+    "_id": "1970-10",
+    "encounters": 24
+  },
+  {
+    "_id": "1970-11",
+    "encounters": 24
+  },
+  {
+    "_id": "1970-12",
+    "encounters": 26
+  },
+  {
+    "_id": "1971-01",
+    "encounters": 24
+  },
+  {
+    "_id": "1971-02",
+    "encounters": 20
+  },
+  {
+    "_id": "1971-03",
+    "encounters": 24
+  },
+  {
+    "_id": "1971-04",
+    "encounters": 25
+  },
+  {
+    "_id": "1971-05",
+    "encounters": 28
+  },
+  {
+    "_id": "1971-06",
+    "encounters": 37
+  },
+  {
+    "_id": "1971-07",
+    "encounters": 30
+  },
+  {
+    "_id": "1971-08",
+    "encounters": 31
+  },
+  {
+    "_id": "1971-09",
+    "encounters": 33
+  },
+  {
+    "_id": "1971-10",
+    "encounters": 30
+  },
+  {
+    "_id": "1971-11",
+    "encounters": 28
+  },
+  {
+    "_id": "1971-12",
+    "encounters": 29
+  },
+  {
+    "_id": "1972-01",
+    "encounters": 26
+  },
+  {
+    "_id": "1972-02",
+    "encounters": 24
+  },
+  {
+    "_id": "1972-03",
+    "encounters": 29
+  },
+  {
+    "_id": "1972-04",
+    "encounters": 27
+  },
+  {
+    "_id": "1972-05",
+    "encounters": 31
+  },
+  {
+    "_id": "1972-06",
+    "encounters": 36
+  },
+  {
+    "_id": "1972-07",
+    "encounters": 29
+  },
+  {
+    "_id": "1972-08",
+    "encounters": 29
+  },
+  {
+    "_id": "1972-09",
+    "encounters": 31
+  },
+  {
+    "_id": "1972-10",
+    "encounters": 30
+  },
+  {
+    "_id": "1972-11",
+    "encounters": 24
+  },
+  {
+    "_id": "1972-12",
+    "encounters": 29
+  },
+  {
+    "_id": "1973-01",
+    "encounters": 29
+  },
+  {
+    "_id": "1973-02",
+    "encounters": 26
+  },
+  {
+    "_id": "1973-03",
+    "encounters": 22
+  },
+  {
+    "_id": "1973-04",
+    "encounters": 33
+  },
+  {
+    "_id": "1973-05",
+    "encounters": 35
+  },
+  {
+    "_id": "1973-06",
+    "encounters": 34
+  },
+  {
+    "_id": "1973-07",
+    "encounters": 37
+  },
+  {
+    "_id": "1973-08",
+    "encounters": 32
+  },
+  {
+    "_id": "1973-09",
+    "encounters": 26
+  },
+  {
+    "_id": "1973-10",
+    "encounters": 30
+  },
+  {
+    "_id": "1973-11",
+    "encounters": 25
+  },
+  {
+    "_id": "1973-12",
+    "encounters": 31
+  },
+  {
+    "_id": "1974-01",
+    "encounters": 21
+  },
+  {
+    "_id": "1974-02",
+    "encounters": 37
+  },
+  {
+    "_id": "1974-03",
+    "encounters": 21
+  },
+  {
+    "_id": "1974-04",
+    "encounters": 35
+  },
+  {
+    "_id": "1974-05",
+    "encounters": 29
+  },
+  {
+    "_id": "1974-06",
+    "encounters": 36
+  },
+  {
+    "_id": "1974-07",
+    "encounters": 30
+  },
+  {
+    "_id": "1974-08",
+    "encounters": 37
+  },
+  {
+    "_id": "1974-09",
+    "encounters": 25
+  },
+  {
+    "_id": "1974-10",
+    "encounters": 50
+  },
+  {
+    "_id": "1974-11",
+    "encounters": 28
+  },
+  {
+    "_id": "1974-12",
+    "encounters": 31
+  },
+  {
+    "_id": "1975-01",
+    "encounters": 27
+  },
+  {
+    "_id": "1975-02",
+    "encounters": 31
+  },
+  {
+    "_id": "1975-03",
+    "encounters": 26
+  },
+  {
+    "_id": "1975-04",
+    "encounters": 27
+  },
+  {
+    "_id": "1975-05",
+    "encounters": 38
+  },
+  {
+    "_id": "1975-06",
+    "encounters": 36
+  },
+  {
+    "_id": "1975-07",
+    "encounters": 34
+  },
+  {
+    "_id": "1975-08",
+    "encounters": 31
+  },
+  {
+    "_id": "1975-09",
+    "encounters": 30
+  },
+  {
+    "_id": "1975-10",
+    "encounters": 33
+  },
+  {
+    "_id": "1975-11",
+    "encounters": 27
+  },
+  {
+    "_id": "1975-12",
+    "encounters": 27
+  },
+  {
+    "_id": "1976-01",
+    "encounters": 25
+  },
+  {
+    "_id": "1976-02",
+    "encounters": 34
+  },
+  {
+    "_id": "1976-03",
+    "encounters": 28
+  },
+  {
+    "_id": "1976-04",
+    "encounters": 28
+  },
+  {
+    "_id": "1976-05",
+    "encounters": 33
+  },
+  {
+    "_id": "1976-06",
+    "encounters": 27
+  },
+  {
+    "_id": "1976-07",
+    "encounters": 38
+  },
+  {
+    "_id": "1976-08",
+    "encounters": 45
+  },
+  {
+    "_id": "1976-09",
+    "encounters": 28
+  },
+  {
+    "_id": "1976-10",
+    "encounters": 38
+  },
+  {
+    "_id": "1976-11",
+    "encounters": 30
+  },
+  {
+    "_id": "1976-12",
+    "encounters": 30
+  },
+  {
+    "_id": "1977-01",
+    "encounters": 33
+  },
+  {
+    "_id": "1977-02",
+    "encounters": 31
+  },
+  {
+    "_id": "1977-03",
+    "encounters": 32
+  },
+  {
+    "_id": "1977-04",
+    "encounters": 16
+  },
+  {
+    "_id": "1977-05",
+    "encounters": 22
+  },
+  {
+    "_id": "1977-06",
+    "encounters": 24
+  },
+  {
+    "_id": "1977-07",
+    "encounters": 25
+  },
+  {
+    "_id": "1977-08",
+    "encounters": 25
+  },
+  {
+    "_id": "1977-09",
+    "encounters": 15
+  },
+  {
+    "_id": "1977-10",
+    "encounters": 19
+  },
+  {
+    "_id": "1977-11",
+    "encounters": 23
+  },
+  {
+    "_id": "1977-12",
+    "encounters": 20
+  },
+  {
+    "_id": "1978-01",
+    "encounters": 17
+  },
+  {
+    "_id": "1978-02",
+    "encounters": 13
+  },
+  {
+    "_id": "1978-03",
+    "encounters": 23
+  },
+  {
+    "_id": "1978-04",
+    "encounters": 14
+  },
+  {
+    "_id": "1978-05",
+    "encounters": 25
+  },
+  {
+    "_id": "1978-06",
+    "encounters": 20
+  },
+  {
+    "_id": "1978-07",
+    "encounters": 27
+  },
+  {
+    "_id": "1978-08",
+    "encounters": 20
+  },
+  {
+    "_id": "1978-09",
+    "encounters": 18
+  },
+  {
+    "_id": "1978-10",
+    "encounters": 16
+  },
+  {
+    "_id": "1978-11",
+    "encounters": 18
+  },
+  {
+    "_id": "1978-12",
+    "encounters": 13
+  },
+  {
+    "_id": "1979-01",
+    "encounters": 14
+  },
+  {
+    "_id": "1979-02",
+    "encounters": 14
+  },
+  {
+    "_id": "1979-03",
+    "encounters": 24
+  },
+  {
+    "_id": "1979-04",
+    "encounters": 10
+  },
+  {
+    "_id": "1979-05",
+    "encounters": 27
+  },
+  {
+    "_id": "1979-06",
+    "encounters": 31
+  },
+  {
+    "_id": "1979-07",
+    "encounters": 28
+  },
+  {
+    "_id": "1979-08",
+    "encounters": 20
+  },
+  {
+    "_id": "1979-09",
+    "encounters": 21
+  },
+  {
+    "_id": "1979-10",
+    "encounters": 4
+  },
+  {
+    "_id": "1979-11",
+    "encounters": 26
+  },
+  {
+    "_id": "1979-12",
+    "encounters": 16
+  },
+  {
+    "_id": "1980-01",
+    "encounters": 16
+  },
+  {
+    "_id": "1980-02",
+    "encounters": 16
+  },
+  {
+    "_id": "1980-03",
+    "encounters": 21
+  },
+  {
+    "_id": "1980-04",
+    "encounters": 16
+  },
+  {
+    "_id": "1980-05",
+    "encounters": 31
+  },
+  {
+    "_id": "1980-06",
+    "encounters": 24
+  },
+  {
+    "_id": "1980-07",
+    "encounters": 23
+  },
+  {
+    "_id": "1980-08",
+    "encounters": 19
+  },
+  {
+    "_id": "1980-09",
+    "encounters": 22
+  },
+  {
+    "_id": "1980-10",
+    "encounters": 11
+  },
+  {
+    "_id": "1980-11",
+    "encounters": 34
+  },
+  {
+    "_id": "1980-12",
+    "encounters": 17
+  },
+  {
+    "_id": "1981-01",
+    "encounters": 19
+  },
+  {
+    "_id": "1981-02",
+    "encounters": 23
+  },
+  {
+    "_id": "1981-03",
+    "encounters": 21
+  },
+  {
+    "_id": "1981-04",
+    "encounters": 19
+  },
+  {
+    "_id": "1981-05",
+    "encounters": 29
+  },
+  {
+    "_id": "1981-06",
+    "encounters": 27
+  },
+  {
+    "_id": "1981-07",
+    "encounters": 27
+  },
+  {
+    "_id": "1981-08",
+    "encounters": 26
+  },
+  {
+    "_id": "1981-09",
+    "encounters": 25
+  },
+  {
+    "_id": "1981-10",
+    "encounters": 24
+  },
+  {
+    "_id": "1981-11",
+    "encounters": 25
+  },
+  {
+    "_id": "1981-12",
+    "encounters": 15
+  },
+  {
+    "_id": "1982-01",
+    "encounters": 21
+  },
+  {
+    "_id": "1982-02",
+    "encounters": 24
+  },
+  {
+    "_id": "1982-03",
+    "encounters": 21
+  },
+  {
+    "_id": "1982-04",
+    "encounters": 21
+  },
+  {
+    "_id": "1982-05",
+    "encounters": 26
+  },
+  {
+    "_id": "1982-06",
+    "encounters": 28
+  },
+  {
+    "_id": "1982-07",
+    "encounters": 28
+  },
+  {
+    "_id": "1982-08",
+    "encounters": 35
+  },
+  {
+    "_id": "1982-09",
+    "encounters": 21
+  },
+  {
+    "_id": "1982-10",
+    "encounters": 19
+  },
+  {
+    "_id": "1982-11",
+    "encounters": 27
+  },
+  {
+    "_id": "1982-12",
+    "encounters": 22
+  },
+  {
+    "_id": "1983-01",
+    "encounters": 28
+  },
+  {
+    "_id": "1983-02",
+    "encounters": 24
+  },
+  {
+    "_id": "1983-03",
+    "encounters": 25
+  },
+  {
+    "_id": "1983-04",
+    "encounters": 34
+  },
+  {
+    "_id": "1983-05",
+    "encounters": 19
+  },
+  {
+    "_id": "1983-06",
+    "encounters": 27
+  },
+  {
+    "_id": "1983-07",
+    "encounters": 28
+  },
+  {
+    "_id": "1983-08",
+    "encounters": 29
+  },
+  {
+    "_id": "1983-09",
+    "encounters": 27
+  },
+  {
+    "_id": "1983-10",
+    "encounters": 28
+  },
+  {
+    "_id": "1983-11",
+    "encounters": 29
+  },
+  {
+    "_id": "1983-12",
+    "encounters": 30
+  },
+  {
+    "_id": "1984-01",
+    "encounters": 16
+  },
+  {
+    "_id": "1984-02",
+    "encounters": 18
+  },
+  {
+    "_id": "1984-03",
+    "encounters": 31
+  },
+  {
+    "_id": "1984-04",
+    "encounters": 33
+  },
+  {
+    "_id": "1984-05",
+    "encounters": 22
+  },
+  {
+    "_id": "1984-06",
+    "encounters": 32
+  },
+  {
+    "_id": "1984-07",
+    "encounters": 34
+  },
+  {
+    "_id": "1984-08",
+    "encounters": 32
+  },
+  {
+    "_id": "1984-09",
+    "encounters": 29
+  },
+  {
+    "_id": "1984-10",
+    "encounters": 33
+  },
+  {
+    "_id": "1984-11",
+    "encounters": 29
+  },
+  {
+    "_id": "1984-12",
+    "encounters": 35
+  },
+  {
+    "_id": "1985-01",
+    "encounters": 20
+  },
+  {
+    "_id": "1985-02",
+    "encounters": 21
+  },
+  {
+    "_id": "1985-03",
+    "encounters": 35
+  },
+  {
+    "_id": "1985-04",
+    "encounters": 29
+  },
+  {
+    "_id": "1985-05",
+    "encounters": 20
+  },
+  {
+    "_id": "1985-06",
+    "encounters": 35
+  },
+  {
+    "_id": "1985-07",
+    "encounters": 31
+  },
+  {
+    "_id": "1985-08",
+    "encounters": 30
+  },
+  {
+    "_id": "1985-09",
+    "encounters": 34
+  },
+  {
+    "_id": "1985-10",
+    "encounters": 38
+  },
+  {
+    "_id": "1985-11",
+    "encounters": 31
+  },
+  {
+    "_id": "1985-12",
+    "encounters": 37
+  },
+  {
+    "_id": "1986-01",
+    "encounters": 24
+  },
+  {
+    "_id": "1986-02",
+    "encounters": 21
+  },
+  {
+    "_id": "1986-03",
+    "encounters": 33
+  },
+  {
+    "_id": "1986-04",
+    "encounters": 40
+  },
+  {
+    "_id": "1986-05",
+    "encounters": 36
+  },
+  {
+    "_id": "1986-06",
+    "encounters": 33
+  },
+  {
+    "_id": "1986-07",
+    "encounters": 40
+  },
+  {
+    "_id": "1986-08",
+    "encounters": 32
+  },
+  {
+    "_id": "1986-09",
+    "encounters": 33
+  },
+  {
+    "_id": "1986-10",
+    "encounters": 34
+  },
+  {
+    "_id": "1986-11",
+    "encounters": 34
+  },
+  {
+    "_id": "1986-12",
+    "encounters": 37
+  },
+  {
+    "_id": "1987-01",
+    "encounters": 23
+  },
+  {
+    "_id": "1987-02",
+    "encounters": 24
+  },
+  {
+    "_id": "1987-03",
+    "encounters": 34
+  },
+  {
+    "_id": "1987-04",
+    "encounters": 38
+  },
+  {
+    "_id": "1987-05",
+    "encounters": 29
+  },
+  {
+    "_id": "1987-06",
+    "encounters": 29
+  },
+  {
+    "_id": "1987-07",
+    "encounters": 33
+  },
+  {
+    "_id": "1987-08",
+    "encounters": 32
+  },
+  {
+    "_id": "1987-09",
+    "encounters": 40
+  },
+  {
+    "_id": "1987-10",
+    "encounters": 34
+  },
+  {
+    "_id": "1987-11",
+    "encounters": 29
+  },
+  {
+    "_id": "1987-12",
+    "encounters": 37
+  },
+  {
+    "_id": "1988-01",
+    "encounters": 22
+  },
+  {
+    "_id": "1988-02",
+    "encounters": 33
+  },
+  {
+    "_id": "1988-03",
+    "encounters": 28
+  },
+  {
+    "_id": "1988-04",
+    "encounters": 31
+  },
+  {
+    "_id": "1988-05",
+    "encounters": 43
+  },
+  {
+    "_id": "1988-06",
+    "encounters": 30
+  },
+  {
+    "_id": "1988-07",
+    "encounters": 34
+  },
+  {
+    "_id": "1988-08",
+    "encounters": 31
+  },
+  {
+    "_id": "1988-09",
+    "encounters": 34
+  },
+  {
+    "_id": "1988-10",
+    "encounters": 25
+  },
+  {
+    "_id": "1988-11",
+    "encounters": 29
+  },
+  {
+    "_id": "1988-12",
+    "encounters": 27
+  },
+  {
+    "_id": "1989-01",
+    "encounters": 32
+  },
+  {
+    "_id": "1989-02",
+    "encounters": 27
+  },
+  {
+    "_id": "1989-03",
+    "encounters": 32
+  },
+  {
+    "_id": "1989-04",
+    "encounters": 32
+  },
+  {
+    "_id": "1989-05",
+    "encounters": 41
+  },
+  {
+    "_id": "1989-06",
+    "encounters": 23
+  },
+  {
+    "_id": "1989-07",
+    "encounters": 40
+  },
+  {
+    "_id": "1989-08",
+    "encounters": 41
+  },
+  {
+    "_id": "1989-09",
+    "encounters": 48
+  },
+  {
+    "_id": "1989-10",
+    "encounters": 26
+  },
+  {
+    "_id": "1989-11",
+    "encounters": 31
+  },
+  {
+    "_id": "1989-12",
+    "encounters": 23
+  },
+  {
+    "_id": "1990-01",
+    "encounters": 35
+  },
+  {
+    "_id": "1990-02",
+    "encounters": 28
+  },
+  {
+    "_id": "1990-03",
+    "encounters": 49
+  },
+  {
+    "_id": "1990-04",
+    "encounters": 49
+  },
+  {
+    "_id": "1990-05",
+    "encounters": 46
+  },
+  {
+    "_id": "1990-06",
+    "encounters": 37
+  },
+  {
+    "_id": "1990-07",
+    "encounters": 52
+  },
+  {
+    "_id": "1990-08",
+    "encounters": 42
+  },
+  {
+    "_id": "1990-09",
+    "encounters": 40
+  },
+  {
+    "_id": "1990-10",
+    "encounters": 46
+  },
+  {
+    "_id": "1990-11",
+    "encounters": 31
+  },
+  {
+    "_id": "1990-12",
+    "encounters": 26
+  },
+  {
+    "_id": "1991-01",
+    "encounters": 39
+  },
+  {
+    "_id": "1991-02",
+    "encounters": 26
+  },
+  {
+    "_id": "1991-03",
+    "encounters": 36
+  },
+  {
+    "_id": "1991-04",
+    "encounters": 40
+  },
+  {
+    "_id": "1991-05",
+    "encounters": 48
+  },
+  {
+    "_id": "1991-06",
+    "encounters": 31
+  },
+  {
+    "_id": "1991-07",
+    "encounters": 49
+  },
+  {
+    "_id": "1991-08",
+    "encounters": 39
+  },
+  {
+    "_id": "1991-09",
+    "encounters": 33
+  },
+  {
+    "_id": "1991-10",
+    "encounters": 34
+  },
+  {
+    "_id": "1991-11",
+    "encounters": 43
+  },
+  {
+    "_id": "1991-12",
+    "encounters": 31
+  },
+  {
+    "_id": "1992-01",
+    "encounters": 45
+  },
+  {
+    "_id": "1992-02",
+    "encounters": 29
+  },
+  {
+    "_id": "1992-03",
+    "encounters": 42
+  },
+  {
+    "_id": "1992-04",
+    "encounters": 40
+  },
+  {
+    "_id": "1992-05",
+    "encounters": 44
+  },
+  {
+    "_id": "1992-06",
+    "encounters": 43
+  },
+  {
+    "_id": "1992-07",
+    "encounters": 50
+  },
+  {
+    "_id": "1992-08",
+    "encounters": 38
+  },
+  {
+    "_id": "1992-09",
+    "encounters": 33
+  },
+  {
+    "_id": "1992-10",
+    "encounters": 41
+  },
+  {
+    "_id": "1992-11",
+    "encounters": 34
+  },
+  {
+    "_id": "1992-12",
+    "encounters": 28
+  },
+  {
+    "_id": "1993-01",
+    "encounters": 42
+  },
+  {
+    "_id": "1993-02",
+    "encounters": 33
+  },
+  {
+    "_id": "1993-03",
+    "encounters": 52
+  },
+  {
+    "_id": "1993-04",
+    "encounters": 43
+  },
+  {
+    "_id": "1993-05",
+    "encounters": 44
+  },
+  {
+    "_id": "1993-06",
+    "encounters": 50
+  },
+  {
+    "_id": "1993-07",
+    "encounters": 51
+  },
+  {
+    "_id": "1993-08",
+    "encounters": 41
+  },
+  {
+    "_id": "1993-09",
+    "encounters": 48
+  },
+  {
+    "_id": "1993-10",
+    "encounters": 47
+  },
+  {
+    "_id": "1993-11",
+    "encounters": 34
+  },
+  {
+    "_id": "1993-12",
+    "encounters": 31
+  },
+  {
+    "_id": "1994-01",
+    "encounters": 39
+  },
+  {
+    "_id": "1994-02",
+    "encounters": 34
+  },
+  {
+    "_id": "1994-03",
+    "encounters": 39
+  },
+  {
+    "_id": "1994-04",
+    "encounters": 39
+  },
+  {
+    "_id": "1994-05",
+    "encounters": 55
+  },
+  {
+    "_id": "1994-06",
+    "encounters": 53
+  },
+  {
+    "_id": "1994-07",
+    "encounters": 52
+  },
+  {
+    "_id": "1994-08",
+    "encounters": 46
+  },
+  {
+    "_id": "1994-09",
+    "encounters": 44
+  },
+  {
+    "_id": "1994-10",
+    "encounters": 46
+  },
+  {
+    "_id": "1994-11",
+    "encounters": 37
+  },
+  {
+    "_id": "1994-12",
+    "encounters": 38
+  },
+  {
+    "_id": "1995-01",
+    "encounters": 41
+  },
+  {
+    "_id": "1995-02",
+    "encounters": 24
+  },
+  {
+    "_id": "1995-03",
+    "encounters": 43
+  },
+  {
+    "_id": "1995-04",
+    "encounters": 44
+  },
+  {
+    "_id": "1995-05",
+    "encounters": 40
+  },
+  {
+    "_id": "1995-06",
+    "encounters": 52
+  },
+  {
+    "_id": "1995-07",
+    "encounters": 41
+  },
+  {
+    "_id": "1995-08",
+    "encounters": 59
+  },
+  {
+    "_id": "1995-09",
+    "encounters": 40
+  },
+  {
+    "_id": "1995-10",
+    "encounters": 37
+  },
+  {
+    "_id": "1995-11",
+    "encounters": 35
+  },
+  {
+    "_id": "1995-12",
+    "encounters": 44
+  },
+  {
+    "_id": "1996-01",
+    "encounters": 36
+  },
+  {
+    "_id": "1996-02",
+    "encounters": 40
+  },
+  {
+    "_id": "1996-03",
+    "encounters": 38
+  },
+  {
+    "_id": "1996-04",
+    "encounters": 44
+  },
+  {
+    "_id": "1996-05",
+    "encounters": 59
+  },
+  {
+    "_id": "1996-06",
+    "encounters": 52
+  },
+  {
+    "_id": "1996-07",
+    "encounters": 41
+  },
+  {
+    "_id": "1996-08",
+    "encounters": 49
+  },
+  {
+    "_id": "1996-09",
+    "encounters": 47
+  },
+  {
+    "_id": "1996-10",
+    "encounters": 55
+  },
+  {
+    "_id": "1996-11",
+    "encounters": 45
+  },
+  {
+    "_id": "1996-12",
+    "encounters": 40
+  },
+  {
+    "_id": "1997-01",
+    "encounters": 34
+  },
+  {
+    "_id": "1997-02",
+    "encounters": 41
+  },
+  {
+    "_id": "1997-03",
+    "encounters": 35
+  },
+  {
+    "_id": "1997-04",
+    "encounters": 45
+  },
+  {
+    "_id": "1997-05",
+    "encounters": 51
+  },
+  {
+    "_id": "1997-06",
+    "encounters": 47
+  },
+  {
+    "_id": "1997-07",
+    "encounters": 43
+  },
+  {
+    "_id": "1997-08",
+    "encounters": 49
+  },
+  {
+    "_id": "1997-09",
+    "encounters": 39
+  },
+  {
+    "_id": "1997-10",
+    "encounters": 43
+  },
+  {
+    "_id": "1997-11",
+    "encounters": 44
+  },
+  {
+    "_id": "1997-12",
+    "encounters": 44
+  },
+  {
+    "_id": "1998-01",
+    "encounters": 35
+  },
+  {
+    "_id": "1998-02",
+    "encounters": 40
+  },
+  {
+    "_id": "1998-03",
+    "encounters": 36
+  },
+  {
+    "_id": "1998-04",
+    "encounters": 40
+  },
+  {
+    "_id": "1998-05",
+    "encounters": 59
+  },
+  {
+    "_id": "1998-06",
+    "encounters": 36
+  },
+  {
+    "_id": "1998-07",
+    "encounters": 61
+  },
+  {
+    "_id": "1998-08",
+    "encounters": 50
+  },
+  {
+    "_id": "1998-09",
+    "encounters": 47
+  },
+  {
+    "_id": "1998-10",
+    "encounters": 54
+  },
+  {
+    "_id": "1998-11",
+    "encounters": 52
+  },
+  {
+    "_id": "1998-12",
+    "encounters": 45
+  },
+  {
+    "_id": "1999-01",
+    "encounters": 40
+  },
+  {
+    "_id": "1999-02",
+    "encounters": 45
+  },
+  {
+    "_id": "1999-03",
+    "encounters": 49
+  },
+  {
+    "_id": "1999-04",
+    "encounters": 38
+  },
+  {
+    "_id": "1999-05",
+    "encounters": 57
+  },
+  {
+    "_id": "1999-06",
+    "encounters": 58
+  },
+  {
+    "_id": "1999-07",
+    "encounters": 65
+  },
+  {
+    "_id": "1999-08",
+    "encounters": 49
+  },
+  {
+    "_id": "1999-09",
+    "encounters": 60
+  },
+  {
+    "_id": "1999-10",
+    "encounters": 76
+  },
+  {
+    "_id": "1999-11",
+    "encounters": 59
+  },
+  {
+    "_id": "1999-12",
+    "encounters": 64
+  },
+  {
+    "_id": "2000-01",
+    "encounters": 52
+  },
+  {
+    "_id": "2000-02",
+    "encounters": 52
+  },
+  {
+    "_id": "2000-03",
+    "encounters": 53
+  },
+  {
+    "_id": "2000-04",
+    "encounters": 47
+  },
+  {
+    "_id": "2000-05",
+    "encounters": 64
+  },
+  {
+    "_id": "2000-06",
+    "encounters": 52
+  },
+  {
+    "_id": "2000-07",
+    "encounters": 77
+  },
+  {
+    "_id": "2000-08",
+    "encounters": 59
+  },
+  {
+    "_id": "2000-09",
+    "encounters": 65
+  },
+  {
+    "_id": "2000-10",
+    "encounters": 59
+  },
+  {
+    "_id": "2000-11",
+    "encounters": 60
+  },
+  {
+    "_id": "2000-12",
+    "encounters": 59
+  },
+  {
+    "_id": "2001-01",
+    "encounters": 54
+  },
+  {
+    "_id": "2001-02",
+    "encounters": 49
+  },
+  {
+    "_id": "2001-03",
+    "encounters": 61
+  },
+  {
+    "_id": "2001-04",
+    "encounters": 55
+  },
+  {
+    "_id": "2001-05",
+    "encounters": 69
+  },
+  {
+    "_id": "2001-06",
+    "encounters": 55
+  },
+  {
+    "_id": "2001-07",
+    "encounters": 74
+  },
+  {
+    "_id": "2001-08",
+    "encounters": 64
+  },
+  {
+    "_id": "2001-09",
+    "encounters": 71
+  },
+  {
+    "_id": "2001-10",
+    "encounters": 67
+  },
+  {
+    "_id": "2001-11",
+    "encounters": 55
+  },
+  {
+    "_id": "2001-12",
+    "encounters": 65
+  },
+  {
+    "_id": "2002-01",
+    "encounters": 53
+  },
+  {
+    "_id": "2002-02",
+    "encounters": 54
+  },
+  {
+    "_id": "2002-03",
+    "encounters": 73
+  },
+  {
+    "_id": "2002-04",
+    "encounters": 56
+  },
+  {
+    "_id": "2002-05",
+    "encounters": 70
+  },
+  {
+    "_id": "2002-06",
+    "encounters": 69
+  },
+  {
+    "_id": "2002-07",
+    "encounters": 74
+  },
+  {
+    "_id": "2002-08",
+    "encounters": 68
+  },
+  {
+    "_id": "2002-09",
+    "encounters": 70
+  },
+  {
+    "_id": "2002-10",
+    "encounters": 63
+  },
+  {
+    "_id": "2002-11",
+    "encounters": 59
+  },
+  {
+    "_id": "2002-12",
+    "encounters": 73
+  },
+  {
+    "_id": "2003-01",
+    "encounters": 58
+  },
+  {
+    "_id": "2003-02",
+    "encounters": 47
+  },
+  {
+    "_id": "2003-03",
+    "encounters": 74
+  },
+  {
+    "_id": "2003-04",
+    "encounters": 58
+  },
+  {
+    "_id": "2003-05",
+    "encounters": 74
+  },
+  {
+    "_id": "2003-06",
+    "encounters": 62
+  },
+  {
+    "_id": "2003-07",
+    "encounters": 68
+  },
+  {
+    "_id": "2003-08",
+    "encounters": 85
+  },
+  {
+    "_id": "2003-09",
+    "encounters": 61
+  },
+  {
+    "_id": "2003-10",
+    "encounters": 74
+  },
+  {
+    "_id": "2003-11",
+    "encounters": 68
+  },
+  {
+    "_id": "2003-12",
+    "encounters": 73
+  },
+  {
+    "_id": "2004-01",
+    "encounters": 54
+  },
+  {
+    "_id": "2004-02",
+    "encounters": 50
+  },
+  {
+    "_id": "2004-03",
+    "encounters": 77
+  },
+  {
+    "_id": "2004-04",
+    "encounters": 66
+  },
+  {
+    "_id": "2004-05",
+    "encounters": 76
+  },
+  {
+    "_id": "2004-06",
+    "encounters": 75
+  },
+  {
+    "_id": "2004-07",
+    "encounters": 68
+  },
+  {
+    "_id": "2004-08",
+    "encounters": 89
+  },
+  {
+    "_id": "2004-09",
+    "encounters": 68
+  },
+  {
+    "_id": "2004-10",
+    "encounters": 71
+  },
+  {
+    "_id": "2004-11",
+    "encounters": 78
+  },
+  {
+    "_id": "2004-12",
+    "encounters": 71
+  },
+  {
+    "_id": "2005-01",
+    "encounters": 57
+  },
+  {
+    "_id": "2005-02",
+    "encounters": 46
+  },
+  {
+    "_id": "2005-03",
+    "encounters": 69
+  },
+  {
+    "_id": "2005-04",
+    "encounters": 62
+  },
+  {
+    "_id": "2005-05",
+    "encounters": 57
+  },
+  {
+    "_id": "2005-06",
+    "encounters": 53
+  },
+  {
+    "_id": "2005-07",
+    "encounters": 57
+  },
+  {
+    "_id": "2005-08",
+    "encounters": 81
+  },
+  {
+    "_id": "2005-09",
+    "encounters": 55
+  },
+  {
+    "_id": "2005-10",
+    "encounters": 66
+  },
+  {
+    "_id": "2005-11",
+    "encounters": 65
+  },
+  {
+    "_id": "2005-12",
+    "encounters": 67
+  },
+  {
+    "_id": "2006-01",
+    "encounters": 46
+  },
+  {
+    "_id": "2006-02",
+    "encounters": 60
+  },
+  {
+    "_id": "2006-03",
+    "encounters": 59
+  },
+  {
+    "_id": "2006-04",
+    "encounters": 67
+  },
+  {
+    "_id": "2006-05",
+    "encounters": 62
+  },
+  {
+    "_id": "2006-06",
+    "encounters": 60
+  },
+  {
+    "_id": "2006-07",
+    "encounters": 64
+  },
+  {
+    "_id": "2006-08",
+    "encounters": 70
+  },
+  {
+    "_id": "2006-09",
+    "encounters": 59
+  },
+  {
+    "_id": "2006-10",
+    "encounters": 72
+  },
+  {
+    "_id": "2006-11",
+    "encounters": 69
+  },
+  {
+    "_id": "2006-12",
+    "encounters": 62
+  },
+  {
+    "_id": "2007-01",
+    "encounters": 61
+  },
+  {
+    "_id": "2007-02",
+    "encounters": 46
+  },
+  {
+    "_id": "2007-03",
+    "encounters": 69
+  },
+  {
+    "_id": "2007-04",
+    "encounters": 71
+  },
+  {
+    "_id": "2007-05",
+    "encounters": 65
+  },
+  {
+    "_id": "2007-06",
+    "encounters": 60
+  },
+  {
+    "_id": "2007-07",
+    "encounters": 61
+  },
+  {
+    "_id": "2007-08",
+    "encounters": 70
+  },
+  {
+    "_id": "2007-09",
+    "encounters": 67
+  },
+  {
+    "_id": "2007-10",
+    "encounters": 68
+  },
+  {
+    "_id": "2007-11",
+    "encounters": 76
+  },
+  {
+    "_id": "2007-12",
+    "encounters": 61
+  },
+  {
+    "_id": "2008-01",
+    "encounters": 73
+  },
+  {
+    "_id": "2008-02",
+    "encounters": 58
+  },
+  {
+    "_id": "2008-03",
+    "encounters": 68
+  },
+  {
+    "_id": "2008-04",
+    "encounters": 75
+  },
+  {
+    "_id": "2008-05",
+    "encounters": 71
+  },
+  {
+    "_id": "2008-06",
+    "encounters": 67
+  },
+  {
+    "_id": "2008-07",
+    "encounters": 72
+  },
+  {
+    "_id": "2008-08",
+    "encounters": 81
+  },
+  {
+    "_id": "2008-09",
+    "encounters": 75
+  },
+  {
+    "_id": "2008-10",
+    "encounters": 84
+  },
+  {
+    "_id": "2008-11",
+    "encounters": 70
+  },
+  {
+    "_id": "2008-12",
+    "encounters": 71
+  },
+  {
+    "_id": "2009-01",
+    "encounters": 71
+  },
+  {
+    "_id": "2009-02",
+    "encounters": 48
+  },
+  {
+    "_id": "2009-03",
+    "encounters": 75
+  },
+  {
+    "_id": "2009-04",
+    "encounters": 91
+  },
+  {
+    "_id": "2009-05",
+    "encounters": 71
+  },
+  {
+    "_id": "2009-06",
+    "encounters": 57
+  },
+  {
+    "_id": "2009-07",
+    "encounters": 73
+  },
+  {
+    "_id": "2009-08",
+    "encounters": 61
+  },
+  {
+    "_id": "2009-09",
+    "encounters": 80
+  },
+  {
+    "_id": "2009-10",
+    "encounters": 81
+  },
+  {
+    "_id": "2009-11",
+    "encounters": 61
+  },
+  {
+    "_id": "2009-12",
+    "encounters": 72
+  },
+  {
+    "_id": "2010-01",
+    "encounters": 71
+  },
+  {
+    "_id": "2010-02",
+    "encounters": 78
+  },
+  {
+    "_id": "2010-03",
+    "encounters": 73
+  },
+  {
+    "_id": "2010-04",
+    "encounters": 80
+  },
+  {
+    "_id": "2010-05",
+    "encounters": 186
+  },
+  {
+    "_id": "2010-06",
+    "encounters": 199
+  },
+  {
+    "_id": "2010-07",
+    "encounters": 227
+  },
+  {
+    "_id": "2010-08",
+    "encounters": 233
+  },
+  {
+    "_id": "2010-09",
+    "encounters": 229
+  },
+  {
+    "_id": "2010-10",
+    "encounters": 239
+  },
+  {
+    "_id": "2010-11",
+    "encounters": 236
+  },
+  {
+    "_id": "2010-12",
+    "encounters": 232
+  },
+  {
+    "_id": "2011-01",
+    "encounters": 218
+  },
+  {
+    "_id": "2011-02",
+    "encounters": 228
+  },
+  {
+    "_id": "2011-03",
+    "encounters": 259
+  },
+  {
+    "_id": "2011-04",
+    "encounters": 228
+  },
+  {
+    "_id": "2011-05",
+    "encounters": 271
+  },
+  {
+    "_id": "2011-06",
+    "encounters": 260
+  },
+  {
+    "_id": "2011-07",
+    "encounters": 229
+  },
+  {
+    "_id": "2011-08",
+    "encounters": 232
+  },
+  {
+    "_id": "2011-09",
+    "encounters": 232
+  },
+  {
+    "_id": "2011-10",
+    "encounters": 263
+  },
+  {
+    "_id": "2011-11",
+    "encounters": 268
+  },
+  {
+    "_id": "2011-12",
+    "encounters": 291
+  },
+  {
+    "_id": "2012-01",
+    "encounters": 210
+  },
+  {
+    "_id": "2012-02",
+    "encounters": 232
+  },
+  {
+    "_id": "2012-03",
+    "encounters": 251
+  },
+  {
+    "_id": "2012-04",
+    "encounters": 240
+  },
+  {
+    "_id": "2012-05",
+    "encounters": 222
+  },
+  {
+    "_id": "2012-06",
+    "encounters": 239
+  },
+  {
+    "_id": "2012-07",
+    "encounters": 264
+  },
+  {
+    "_id": "2012-08",
+    "encounters": 234
+  },
+  {
+    "_id": "2012-09",
+    "encounters": 270
+  },
+  {
+    "_id": "2012-10",
+    "encounters": 228
+  },
+  {
+    "_id": "2012-11",
+    "encounters": 245
+  },
+  {
+    "_id": "2012-12",
+    "encounters": 255
+  },
+  {
+    "_id": "2013-01",
+    "encounters": 235
+  },
+  {
+    "_id": "2013-02",
+    "encounters": 210
+  },
+  {
+    "_id": "2013-03",
+    "encounters": 290
+  },
+  {
+    "_id": "2013-04",
+    "encounters": 255
+  },
+  {
+    "_id": "2013-05",
+    "encounters": 247
+  },
+  {
+    "_id": "2013-06",
+    "encounters": 245
+  },
+  {
+    "_id": "2013-07",
+    "encounters": 236
+  },
+  {
+    "_id": "2013-08",
+    "encounters": 267
+  },
+  {
+    "_id": "2013-09",
+    "encounters": 279
+  },
+  {
+    "_id": "2013-10",
+    "encounters": 272
+  },
+  {
+    "_id": "2013-11",
+    "encounters": 260
+  },
+  {
+    "_id": "2013-12",
+    "encounters": 262
+  },
+  {
+    "_id": "2014-01",
+    "encounters": 246
+  },
+  {
+    "_id": "2014-02",
+    "encounters": 207
+  },
+  {
+    "_id": "2014-03",
+    "encounters": 237
+  },
+  {
+    "_id": "2014-04",
+    "encounters": 249
+  },
+  {
+    "_id": "2014-05",
+    "encounters": 278
+  },
+  {
+    "_id": "2014-06",
+    "encounters": 272
+  },
+  {
+    "_id": "2014-07",
+    "encounters": 273
+  },
+  {
+    "_id": "2014-08",
+    "encounters": 254
+  },
+  {
+    "_id": "2014-09",
+    "encounters": 270
+  },
+  {
+    "_id": "2014-10",
+    "encounters": 326
+  },
+  {
+    "_id": "2014-11",
+    "encounters": 276
+  },
+  {
+    "_id": "2014-12",
+    "encounters": 290
+  },
+  {
+    "_id": "2015-01",
+    "encounters": 265
+  },
+  {
+    "_id": "2015-02",
+    "encounters": 222
+  },
+  {
+    "_id": "2015-03",
+    "encounters": 271
+  },
+  {
+    "_id": "2015-04",
+    "encounters": 260
+  },
+  {
+    "_id": "2015-05",
+    "encounters": 242
+  },
+  {
+    "_id": "2015-06",
+    "encounters": 254
+  },
+  {
+    "_id": "2015-07",
+    "encounters": 259
+  },
+  {
+    "_id": "2015-08",
+    "encounters": 259
+  },
+  {
+    "_id": "2015-09",
+    "encounters": 244
+  },
+  {
+    "_id": "2015-10",
+    "encounters": 257
+  },
+  {
+    "_id": "2015-11",
+    "encounters": 263
+  },
+  {
+    "_id": "2015-12",
+    "encounters": 267
+  },
+  {
+    "_id": "2016-01",
+    "encounters": 257
+  },
+  {
+    "_id": "2016-02",
+    "encounters": 252
+  },
+  {
+    "_id": "2016-03",
+    "encounters": 255
+  },
+  {
+    "_id": "2016-04",
+    "encounters": 258
+  },
+  {
+    "_id": "2016-05",
+    "encounters": 265
+  },
+  {
+    "_id": "2016-06",
+    "encounters": 264
+  },
+  {
+    "_id": "2016-07",
+    "encounters": 257
+  },
+  {
+    "_id": "2016-08",
+    "encounters": 249
+  },
+  {
+    "_id": "2016-09",
+    "encounters": 250
+  },
+  {
+    "_id": "2016-10",
+    "encounters": 310
+  },
+  {
+    "_id": "2016-11",
+    "encounters": 253
+  },
+  {
+    "_id": "2016-12",
+    "encounters": 278
+  },
+  {
+    "_id": "2017-01",
+    "encounters": 253
+  },
+  {
+    "_id": "2017-02",
+    "encounters": 233
+  },
+  {
+    "_id": "2017-03",
+    "encounters": 275
+  },
+  {
+    "_id": "2017-04",
+    "encounters": 257
+  },
+  {
+    "_id": "2017-05",
+    "encounters": 249
+  },
+  {
+    "_id": "2017-06",
+    "encounters": 287
+  },
+  {
+    "_id": "2017-07",
+    "encounters": 280
+  },
+  {
+    "_id": "2017-08",
+    "encounters": 265
+  },
+  {
+    "_id": "2017-09",
+    "encounters": 268
+  },
+  {
+    "_id": "2017-10",
+    "encounters": 271
+  },
+  {
+    "_id": "2017-11",
+    "encounters": 252
+  },
+  {
+    "_id": "2017-12",
+    "encounters": 263
+  },
+  {
+    "_id": "2018-01",
+    "encounters": 236
+  },
+  {
+    "_id": "2018-02",
+    "encounters": 193
+  },
+  {
+    "_id": "2018-03",
+    "encounters": 240
+  },
+  {
+    "_id": "2018-04",
+    "encounters": 263
+  },
+  {
+    "_id": "2018-05",
+    "encounters": 302
+  },
+  {
+    "_id": "2018-06",
+    "encounters": 254
+  },
+  {
+    "_id": "2018-07",
+    "encounters": 292
+  },
+  {
+    "_id": "2018-08",
+    "encounters": 258
+  },
+  {
+    "_id": "2018-09",
+    "encounters": 243
+  },
+  {
+    "_id": "2018-10",
+    "encounters": 264
+  },
+  {
+    "_id": "2018-11",
+    "encounters": 263
+  },
+  {
+    "_id": "2018-12",
+    "encounters": 282
+  },
+  {
+    "_id": "2019-01",
+    "encounters": 250
+  },
+  {
+    "_id": "2019-02",
+    "encounters": 202
+  },
+  {
+    "_id": "2019-03",
+    "encounters": 252
+  },
+  {
+    "_id": "2019-04",
+    "encounters": 269
+  },
+  {
+    "_id": "2019-05",
+    "encounters": 245
+  },
+  {
+    "_id": "2019-06",
+    "encounters": 250
+  },
+  {
+    "_id": "2019-07",
+    "encounters": 238
+  },
+  {
+    "_id": "2019-08",
+    "encounters": 252
+  },
+  {
+    "_id": "2019-09",
+    "encounters": 213
+  },
+  {
+    "_id": "2019-10",
+    "encounters": 219
+  },
+  {
+    "_id": "2019-11",
+    "encounters": 247
+  },
+  {
+    "_id": "2019-12",
+    "encounters": 282
+  },
+  {
+    "_id": "2020-01",
+    "encounters": 253
+  },
+  {
+    "_id": "2020-02",
+    "encounters": 225
+  },
+  {
+    "_id": "2020-03",
+    "encounters": 259
+  },
+  {
+    "_id": "2020-04",
+    "encounters": 224
+  }
+]

@@ -1,0 +1,197 @@
+{
+  "heart": {
+    "source_rows": 303,
+    "database_rows": 303,
+    "match": true
+  },
+  "diabetes": {
+    "source_rows": 520,
+    "database_rows": 520,
+    "match": true
+  },
+  "stroke": {
+    "source_rows": 5110,
+    "database_rows": 5110,
+    "match": true
+  },
+  "patients": {
+    "source_rows": 1171,
+    "database_rows": 1171,
+    "match": true
+  },
+  "encounters": {
+    "source_rows": 53346,
+    "database_rows": 53346,
+    "match": true
+  },
+  "aggregations": {
+    "heart_classes": {
+      "match": true,
+      "groups": 2,
+      "total": 303
+    },
+    "diabetes_outcomes": {
+      "match": true,
+      "groups": 2,
+      "total": 520
+    },
+    "stroke_outcomes": {
+      "match": true,
+      "groups": 2,
+      "total": 5110
+    },
+    "patients_by_gender": {
+      "match": true,
+      "groups": 2,
+      "total": 1171
+    },
+    "encounters_by_class": {
+      "match": true,
+      "groups": 6,
+      "total": 53346
+    },
+    "encounters_per_patient": {
+      "match": true,
+      "groups": 1171,
+      "total": 53346
+    },
+    "monthly_encounters": {
+      "match": true,
+      "groups": 1079,
+      "total": 53346
+    },
+    "glucose_by_stroke": {
+      "match": true,
+      "groups": 2
+    }
+  },
+  "indexes": {
+    "heart_disease_records": {
+      "_id_": {
+        "v": 2,
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ]
+      },
+      "heart_disease_binary_1": {
+        "v": 2,
+        "key": [
+          [
+            "heart_disease_binary",
+            1
+          ]
+        ]
+      }
+    },
+    "diabetes_records": {
+      "_id_": {
+        "v": 2,
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ]
+      },
+      "class_1": {
+        "v": 2,
+        "key": [
+          [
+            "class",
+            1
+          ]
+        ]
+      }
+    },
+    "stroke_records": {
+      "_id_": {
+        "v": 2,
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ]
+      },
+      "stroke_1": {
+        "v": 2,
+        "key": [
+          [
+            "stroke",
+            1
+          ]
+        ]
+      }
+    },
+    "hospital_patients": {
+      "_id_": {
+        "v": 2,
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ]
+      },
+      "GENDER_1": {
+        "v": 2,
+        "key": [
+          [
+            "GENDER",
+            1
+          ]
+        ]
+      },
+      "RACE_1": {
+        "v": 2,
+        "key": [
+          [
+            "RACE",
+            1
+          ]
+        ]
+      }
+    },
+    "hospital_encounters": {
+      "_id_": {
+        "v": 2,
+        "key": [
+          [
+            "_id",
+            1
+          ]
+        ]
+      },
+      "PATIENT_1": {
+        "v": 2,
+        "key": [
+          [
+            "PATIENT",
+            1
+          ]
+        ]
+      },
+      "ENCOUNTERCLASS_1": {
+        "v": 2,
+        "key": [
+          [
+            "ENCOUNTERCLASS",
+            1
+          ]
+        ]
+      },
+      "START_1": {
+        "v": 2,
+        "key": [
+          [
+            "START",
+            1
+          ]
+        ]
+      }
+    }
+  }
+}

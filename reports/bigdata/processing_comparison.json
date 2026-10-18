@@ -9,9 +9,9 @@
     "urgentcare": 2373,
     "wellness": 19106
   },
-  "pandas_seconds": 0.26960325399704743,
-  "mongodb_aggregation_seconds": 0.05693120199430268,
-  "hadoop_output_validation_seconds": 0.2917132490038057,
-  "hadoop_job_seconds": 20.00072254499537,
+  "pandas_seconds": 0.2899697160028154,
+  "mongodb_aggregation_seconds": 0.056880068994360045,
+  "hadoop_output_validation_seconds": 0.2940307929966366,
+  "hadoop_job_seconds": 19.322986621999007,
   "note": "Single local wall-clock observations, including distinct Hadoop execution and validation times; no distributed scaling conclusion."
 }

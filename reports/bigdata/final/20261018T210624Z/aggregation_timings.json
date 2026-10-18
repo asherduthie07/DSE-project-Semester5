@@ -1,0 +1,29 @@
+{
+  "trials": [
+    {
+      "pandas_in_memory_aggregation_seconds": 0.005047089005529415,
+      "mongodb_query_seconds": 0.06641558700357564
+    },
+    {
+      "pandas_in_memory_aggregation_seconds": 0.0046955209982115775,
+      "mongodb_query_seconds": 0.060328215004119556
+    },
+    {
+      "pandas_in_memory_aggregation_seconds": 0.004919640996376984,
+      "mongodb_query_seconds": 0.05891429299663287
+    },
+    {
+      "pandas_in_memory_aggregation_seconds": 0.004933352000080049,
+      "mongodb_query_seconds": 0.05847879600332817
+    },
+    {
+      "pandas_in_memory_aggregation_seconds": 0.004267396005161572,
+      "mongodb_query_seconds": 0.06215786800021306
+    }
+  ],
+  "hadoop_submission_to_completion_seconds": 19.30444809400069,
+  "rows": 53346,
+  "source_sha256": "c38b5c2f8a9440a00cd8470c397e47a44d4cc0dee3880c9906a0165932bbbd3f",
+  "environment": "macOS-15.5-x86_64-i386-64bit-Mach-O",
+  "scope": "Pandas excludes CSV loading; Mongo includes client roundtrip; Hadoop includes YARN scheduling. Warm local runs, not a scalability experiment."
+}
