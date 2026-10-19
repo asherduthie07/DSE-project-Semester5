@@ -1,6 +1,13 @@
 # Project status
 
-Updated: 2026-10-19 (final Phase V live Intel Mac verification)
+Updated: 2026-10-19 (Phase VI-A FastAPI backend)
+
+## Phase VI-A: FastAPI research backend
+
+- Added a versioned, modular, read-only FastAPI application under `backend/app/` with lifespan loading of three checksum-verified selected Phase IV models, a managed optional PyMongo client, bounded records, local CORS, safe structured errors and access logs that omit request bodies and feature values. The generated machine-readable schema contains 27 paths in `backend/openapi.json`.
+- Added dataset, Phase II analytics/chart, model comparison/curve/explanation, research prediction, Phase V status/evidence, and curated report routes. The Phase V evidence adapter independently checks the saved successful Hadoop job against prepared Synthea encounters; current service availability is reported separately. Power BI Desktop/Service remains unverified.
+- Baseline suite before editing: 75 passed, 3 Docker tests skipped. Phase VI-A full suite: 87 passed, 3 Docker tests skipped because the Docker daemon socket is absent in this session. A live Uvicorn server returned health, readiness, Big Data status and a prediction for the repository's fictional heart example. All three example predictions matched the Phase IV engine for class, score, model and threshold. `pip check` passed. The current MongoDB/HDFS/YARN services are UNAVAILABLE; their live API routes were not claimed as verified in this session. See `PHASE6A_VERIFICATION.md`, `PHASE6_API_SPEC.md` and `HOW_TO_RUN_BACKEND.md`.
+- **Phase VI-A local backend PASS.** Windows backend runtime and Angular integration have not been tested or started. No Phase I–IV data/model outputs or Phase V persistent state were changed.
 
 ## Phase V: MongoDB and Hadoop/MapReduce
 
@@ -8,7 +15,7 @@ Updated: 2026-10-19 (final Phase V live Intel Mac verification)
 - Added a pinned local Compose configuration for MongoDB 7.0.41 and Apache Hadoop 3.4.3, cross-platform setup/verification tools, sanitized encounter-class input preparation, Hadoop Streaming mapper/reducer, HDFS job driver and output verification. Added source reference tables, a chart, architecture diagrams and run instructions. A guarded one-shot initializer formats only an empty NameNode volume and preserves existing HDFS data.
 - **Final live Intel Mac verification passed:** Docker 29.8.2 x86_64, MongoDB 7.0.41, HDFS (one live DataNode), and YARN (one RUNNING NodeManager). Imported all five prepared source tables; live counts were heart 303, diabetes 520, stroke 5,110, patients 1,171, encounters 53,346, plus 9 metadata, 4 quality reports and 3 model experiments. Document-level reconciliation and repeat import confirmed stable IDs/content; 269 intentional diabetes duplicate rows were retained and there were zero orphan encounters. CRUD passed; all eight MongoDB aggregation pipelines and indexes verified against pandas.
 - A genuine Hadoop Streaming encounter-class job completed on YARN as `application_1792354467390_0007` / `job_1792354467390_0007`, final state SUCCEEDED. All six reducer counts and total 53,346 matched pandas and MongoDB. One measured run: pandas 0.2900 s; MongoDB 0.0569 s; Hadoop job 19.3230 s; Hadoop output validation 0.2940 s. This single-node pseudo-distributed run and small dataset cannot establish Hadoop scalability.
-- Opt-in live integration and complete regression suite: **78 passed, 0 skipped**. Phase I independent verifier, Phase III static output verifiers, and Phase IV independent 15-estimator verifier passed. A before/after hash snapshot showed all 286 earlier-phase files unchanged. Separate Phase IV artifact-manifest check still fails on eight pre-existing hash mismatches; none was changed. macOS runtime PASS; Windows PowerShell runtime NOT TESTED. Full evidence, logs, status and matrix: `reports/bigdata/final/20261018T211007Z/` and `PHASE5_VERIFICATION.md`. **Phase V PASS; Phase VI has not started.**
+- Opt-in live integration and complete regression suite at Phase V acceptance: **78 passed, 0 skipped**. Phase I independent verifier, Phase III static output verifiers, and Phase IV independent 15-estimator verifier passed. A before/after hash snapshot showed all 286 earlier-phase files unchanged. Separate Phase IV artifact-manifest check still fails on eight pre-existing hash mismatches; none was changed. macOS runtime PASS; Windows PowerShell runtime NOT TESTED. Full evidence, logs, status and matrix: `reports/bigdata/final/20261018T211007Z/` and `PHASE5_VERIFICATION.md`. **Phase V PASS at its live verification; the Docker daemon socket was absent during Phase VI-A verification.**
 
 ## Phase IV: machine learning and research-only prediction
 
@@ -76,7 +83,6 @@ Updated: 2026-10-19 (final Phase V live Intel Mac verification)
 
 ## Upcoming, pending approval
 
-- MongoDB, Hadoop/HDFS/MapReduce.
-- Angular + FastAPI demonstration.
+- Angular frontend integration and any later phase.
 
 No EDA, model training, frontend, MongoDB, Power BI, or Hadoop implementation was started in Phase I.

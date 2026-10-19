@@ -2,9 +2,20 @@
 
 Research-only Smart Healthcare Analytics and Disease Prediction System. Any later model output is for academic demonstration and is not clinically validated or medical advice.
 
+## Phase VI-A: FastAPI research backend
+
+The versioned read-only API exposes verified datasets, saved EDA, model comparisons, research predictions, Phase V status/evidence, and curated reports. From the project root on macOS:
+
+```bash
+.venv/bin/python -m pip install -e '.[api,dev]'
+.venv/bin/python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --no-access-log
+```
+
+Open `http://127.0.0.1:8000/docs` for Swagger UI. See the [backend run guide](docs/HOW_TO_RUN_BACKEND.md), [API specification](docs/PHASE6_API_SPEC.md), and [verification](docs/PHASE6A_VERIFICATION.md). MongoDB/HDFS/YARN are optional for startup and current availability is reported separately from saved Phase V execution evidence. Angular integration has not started.
+
 ## Phase V: MongoDB and Hadoop
 
-Phase V adds checksummed, idempotent PyMongo ingestion, documented aggregations, a local Docker Compose topology and a Python Hadoop Streaming encounter-count job. The local Intel Mac stack has been run: MongoDB, one HDFS DataNode and one YARN NodeManager are healthy, and a real Streaming job counted all 53,346 synthetic encounters with exact pandas reconciliation. Windows runtime remains untested. Start with the [Phase V run guide](docs/HOW_TO_RUN_PHASE5.md), [live verification matrix](docs/PHASE5_VERIFICATION.md), [database schema](docs/MONGODB_SCHEMA.md) and [Hadoop architecture](docs/HADOOP_ARCHITECTURE.md). Phase VI integration has not started.
+Phase V adds checksummed, idempotent PyMongo ingestion, documented aggregations, a local Docker Compose topology and a Python Hadoop Streaming encounter-count job. The local Intel Mac stack has been run: MongoDB, one HDFS DataNode and one YARN NodeManager were healthy, and a real Streaming job counted all 53,346 synthetic encounters with exact pandas reconciliation. During Phase VI-A verification, the Docker daemon socket was absent and the live services were unavailable. Windows runtime remains untested. Start with the [Phase V run guide](docs/HOW_TO_RUN_PHASE5.md), [live verification matrix](docs/PHASE5_VERIFICATION.md), [database schema](docs/MONGODB_SCHEMA.md) and [Hadoop architecture](docs/HADOOP_ARCHITECTURE.md).
 
 ## Phase IV: research-only disease classification
 
@@ -128,4 +139,4 @@ See [dataset registry](data/metadata/datasets.json) and [acquisition notes](docs
 
 ## Layout
 
-`mediscope/` holds the CLI and reusable preparation code; `data/metadata/` holds source contracts and configuration. `frontend/`, `backend/`, `notebooks/`, `pipelines/`, `ml/`, `visualizations/`, `big_data/`, and `powerbi/` remain reserved for approved later phases. `reports/` and `tests/` contain Phase I evidence. See [project plan](docs/PROJECT_PLAN.md) and [status](docs/PROJECT_STATUS.md).
+`mediscope/` holds the CLI and reusable data science code; `backend/` holds the Phase VI-A FastAPI app, tests and OpenAPI snapshot; `data/metadata/` holds source contracts and configuration. `big_data/`, `ml/`, `powerbi/`, `reports/` and `tests/` hold prior-phase implementations and evidence. `frontend/` remains reserved for a later approved phase. See [project plan](docs/PROJECT_PLAN.md) and [status](docs/PROJECT_STATUS.md).

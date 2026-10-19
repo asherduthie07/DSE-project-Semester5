@@ -1,0 +1,1783 @@
+{
+  "components": {
+    "schemas": {
+      "AggregationResult": {
+        "properties": {
+          "collection": {
+            "title": "Collection",
+            "type": "string"
+          },
+          "denominator": {
+            "title": "Denominator",
+            "type": "string"
+          },
+          "query": {
+            "title": "Query",
+            "type": "string"
+          },
+          "rows": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Rows",
+            "type": "array"
+          }
+        },
+        "required": [
+          "query",
+          "collection",
+          "rows",
+          "denominator"
+        ],
+        "title": "AggregationResult",
+        "type": "object"
+      },
+      "BigDataStatus": {
+        "properties": {
+          "live": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/Component"
+            },
+            "title": "Live",
+            "type": "object"
+          },
+          "saved_mapreduce_evidence": {
+            "additionalProperties": true,
+            "title": "Saved Mapreduce Evidence",
+            "type": "object"
+          }
+        },
+        "required": [
+          "live",
+          "saved_mapreduce_evidence"
+        ],
+        "title": "BigDataStatus",
+        "type": "object"
+      },
+      "ChartResponse": {
+        "properties": {
+          "approved_figures": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Approved Figures",
+            "type": "array"
+          },
+          "caveat": {
+            "title": "Caveat",
+            "type": "string"
+          },
+          "charts": {
+            "items": {
+              "$ref": "#/components/schemas/ChartSeries"
+            },
+            "title": "Charts",
+            "type": "array"
+          },
+          "dataset_id": {
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "source_url": {
+            "title": "Source Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "dataset_id",
+          "charts",
+          "approved_figures",
+          "source_url",
+          "caveat"
+        ],
+        "title": "ChartResponse",
+        "type": "object"
+      },
+      "ChartSeries": {
+        "properties": {
+          "categories": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Categories",
+            "type": "array"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "label": {
+            "title": "Label",
+            "type": "string"
+          },
+          "missingness_note": {
+            "title": "Missingness Note",
+            "type": "string"
+          },
+          "sample_size": {
+            "title": "Sample Size",
+            "type": "integer"
+          },
+          "unit": {
+            "title": "Unit",
+            "type": "string"
+          },
+          "values": {
+            "items": {
+              "type": "integer"
+            },
+            "title": "Values",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "categories",
+          "values",
+          "unit",
+          "sample_size",
+          "missingness_note"
+        ],
+        "title": "ChartSeries",
+        "type": "object"
+      },
+      "CollectionCounts": {
+        "properties": {
+          "counts": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "title": "Counts",
+            "type": "object"
+          },
+          "database": {
+            "title": "Database",
+            "type": "string"
+          },
+          "source_counts_match": {
+            "title": "Source Counts Match",
+            "type": "boolean"
+          },
+          "status": {
+            "$ref": "#/components/schemas/State"
+          }
+        },
+        "required": [
+          "status",
+          "database",
+          "counts",
+          "source_counts_match"
+        ],
+        "title": "CollectionCounts",
+        "type": "object"
+      },
+      "Component": {
+        "properties": {
+          "message": {
+            "title": "Message",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/State"
+          }
+        },
+        "required": [
+          "status",
+          "message"
+        ],
+        "title": "Component",
+        "type": "object"
+      },
+      "DatasetList": {
+        "properties": {
+          "datasets": {
+            "items": {
+              "$ref": "#/components/schemas/DatasetMetadata"
+            },
+            "title": "Datasets",
+            "type": "array"
+          }
+        },
+        "required": [
+          "datasets"
+        ],
+        "title": "DatasetList",
+        "type": "object"
+      },
+      "DatasetMetadata": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "records": {
+            "title": "Records",
+            "type": "string"
+          },
+          "source_sha256": {
+            "title": "Source Sha256",
+            "type": "string"
+          },
+          "source_url": {
+            "title": "Source Url",
+            "type": "string"
+          },
+          "tables": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "title": "Tables",
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "records",
+          "source_url",
+          "source_sha256",
+          "tables"
+        ],
+        "title": "DatasetMetadata",
+        "type": "object"
+      },
+      "DatasetSchema": {
+        "properties": {
+          "dataset_id": {
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "source_sha256": {
+            "title": "Source Sha256",
+            "type": "string"
+          },
+          "tables": {
+            "additionalProperties": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Tables",
+            "type": "object"
+          }
+        },
+        "required": [
+          "dataset_id",
+          "name",
+          "source_sha256",
+          "tables"
+        ],
+        "title": "DatasetSchema",
+        "type": "object"
+      },
+      "DatasetSummary": {
+        "properties": {
+          "dataset_id": {
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "provenance": {
+            "title": "Provenance",
+            "type": "string"
+          },
+          "rows": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "title": "Rows",
+            "type": "object"
+          },
+          "source_sha256": {
+            "title": "Source Sha256",
+            "type": "string"
+          },
+          "source_url": {
+            "title": "Source Url",
+            "type": "string"
+          },
+          "tables": {
+            "additionalProperties": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Tables",
+            "type": "object"
+          }
+        },
+        "required": [
+          "dataset_id",
+          "name",
+          "source_url",
+          "provenance",
+          "source_sha256",
+          "tables",
+          "rows"
+        ],
+        "title": "DatasetSummary",
+        "type": "object"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "Health": {
+        "properties": {
+          "service": {
+            "default": "mediscope-api",
+            "title": "Service",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/State",
+            "default": "READY"
+          }
+        },
+        "title": "Health",
+        "type": "object"
+      },
+      "ModelDetail": {
+        "properties": {
+          "artifact_sha256": {
+            "title": "Artifact Sha256",
+            "type": "string"
+          },
+          "artifact_version": {
+            "title": "Artifact Version",
+            "type": "string"
+          },
+          "available_for_prediction": {
+            "title": "Available For Prediction",
+            "type": "boolean"
+          },
+          "cv_strategy": {
+            "title": "Cv Strategy",
+            "type": "string"
+          },
+          "dataset_id": {
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "feature_columns": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Feature Columns",
+            "type": "array"
+          },
+          "prepared_sha256": {
+            "title": "Prepared Sha256",
+            "type": "string"
+          },
+          "selected_model": {
+            "title": "Selected Model",
+            "type": "string"
+          },
+          "selection_reason": {
+            "title": "Selection Reason",
+            "type": "string"
+          },
+          "selection_score": {
+            "title": "Selection Score",
+            "type": "string"
+          },
+          "split_sha256": {
+            "title": "Split Sha256",
+            "type": "string"
+          },
+          "task": {
+            "title": "Task",
+            "type": "string"
+          },
+          "warning": {
+            "title": "Warning",
+            "type": "string"
+          }
+        },
+        "required": [
+          "task",
+          "selected_model",
+          "artifact_version",
+          "artifact_sha256",
+          "dataset_id",
+          "feature_columns",
+          "cv_strategy",
+          "selection_score",
+          "selection_reason",
+          "split_sha256",
+          "prepared_sha256",
+          "available_for_prediction",
+          "warning"
+        ],
+        "title": "ModelDetail",
+        "type": "object"
+      },
+      "ModelList": {
+        "properties": {
+          "tasks": {
+            "items": {
+              "$ref": "#/components/schemas/ModelTaskSummary"
+            },
+            "title": "Tasks",
+            "type": "array"
+          },
+          "warning": {
+            "title": "Warning",
+            "type": "string"
+          }
+        },
+        "required": [
+          "tasks",
+          "warning"
+        ],
+        "title": "ModelList",
+        "type": "object"
+      },
+      "ModelTaskSummary": {
+        "properties": {
+          "artifact_version": {
+            "title": "Artifact Version",
+            "type": "string"
+          },
+          "available_for_prediction": {
+            "title": "Available For Prediction",
+            "type": "boolean"
+          },
+          "selected_model": {
+            "title": "Selected Model",
+            "type": "string"
+          },
+          "task": {
+            "title": "Task",
+            "type": "string"
+          }
+        },
+        "required": [
+          "task",
+          "selected_model",
+          "artifact_version",
+          "available_for_prediction"
+        ],
+        "title": "ModelTaskSummary",
+        "type": "object"
+      },
+      "PredictionRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "features": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "minProperties": 1,
+            "title": "Features",
+            "type": "object"
+          }
+        },
+        "required": [
+          "features"
+        ],
+        "title": "PredictionRequest",
+        "type": "object"
+      },
+      "PredictionResponse": {
+        "properties": {
+          "decision_threshold": {
+            "title": "Decision Threshold",
+            "type": "number"
+          },
+          "estimated_model_score": {
+            "title": "Estimated Model Score",
+            "type": "number"
+          },
+          "explanation": {
+            "additionalProperties": true,
+            "title": "Explanation",
+            "type": "object"
+          },
+          "model_name": {
+            "title": "Model Name",
+            "type": "string"
+          },
+          "model_sha256": {
+            "title": "Model Sha256",
+            "type": "string"
+          },
+          "model_version": {
+            "title": "Model Version",
+            "type": "string"
+          },
+          "predicted_class": {
+            "title": "Predicted Class",
+            "type": "integer"
+          },
+          "predicted_source_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "title": "Predicted Source Label"
+          },
+          "task": {
+            "title": "Task",
+            "type": "string"
+          },
+          "warning": {
+            "title": "Warning",
+            "type": "string"
+          }
+        },
+        "required": [
+          "task",
+          "predicted_class",
+          "predicted_source_label",
+          "estimated_model_score",
+          "model_name",
+          "model_version",
+          "model_sha256",
+          "decision_threshold",
+          "explanation",
+          "warning"
+        ],
+        "title": "PredictionResponse",
+        "type": "object"
+      },
+      "Readiness": {
+        "properties": {
+          "components": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/Component"
+            },
+            "title": "Components",
+            "type": "object"
+          },
+          "status": {
+            "$ref": "#/components/schemas/State"
+          }
+        },
+        "required": [
+          "status",
+          "components"
+        ],
+        "title": "Readiness",
+        "type": "object"
+      },
+      "RecordPage": {
+        "properties": {
+          "dataset_id": {
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "items": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Items",
+            "type": "array"
+          },
+          "limit": {
+            "title": "Limit",
+            "type": "integer"
+          },
+          "offset": {
+            "title": "Offset",
+            "type": "integer"
+          },
+          "source_rows": {
+            "title": "Source Rows",
+            "type": "integer"
+          },
+          "table": {
+            "title": "Table",
+            "type": "string"
+          },
+          "total": {
+            "title": "Total",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "dataset_id",
+          "table",
+          "source_rows",
+          "total",
+          "offset",
+          "limit",
+          "items"
+        ],
+        "title": "RecordPage",
+        "type": "object"
+      },
+      "State": {
+        "enum": [
+          "READY",
+          "DEGRADED",
+          "UNAVAILABLE",
+          "NOT_VERIFIED"
+        ],
+        "title": "State",
+        "type": "string"
+      },
+      "ValidationError": {
+        "properties": {
+          "ctx": {
+            "title": "Context",
+            "type": "object"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "description": "Research and educational data, analytics and prediction API. No clinical validation or medical advice.",
+    "title": "MediScope AI Research API",
+    "version": "1.0.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/v1/analytics/{dataset}/charts": {
+      "get": {
+        "operationId": "charts_api_v1_analytics__dataset__charts_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset",
+            "required": true,
+            "schema": {
+              "title": "Dataset",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChartResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Charts",
+        "tags": [
+          "analytics"
+        ]
+      }
+    },
+    "/api/v1/analytics/{dataset}/correlations": {
+      "get": {
+        "operationId": "correlations_api_v1_analytics__dataset__correlations_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset",
+            "required": true,
+            "schema": {
+              "title": "Dataset",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Correlations Api V1 Analytics  Dataset  Correlations Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Correlations",
+        "tags": [
+          "analytics"
+        ]
+      }
+    },
+    "/api/v1/analytics/{dataset}/distributions": {
+      "get": {
+        "operationId": "distributions_api_v1_analytics__dataset__distributions_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset",
+            "required": true,
+            "schema": {
+              "title": "Dataset",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "table",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Table"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Distributions Api V1 Analytics  Dataset  Distributions Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Distributions",
+        "tags": [
+          "analytics"
+        ]
+      }
+    },
+    "/api/v1/analytics/{dataset}/hypotheses": {
+      "get": {
+        "operationId": "hypotheses_api_v1_analytics__dataset__hypotheses_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset",
+            "required": true,
+            "schema": {
+              "title": "Dataset",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Hypotheses Api V1 Analytics  Dataset  Hypotheses Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Hypotheses",
+        "tags": [
+          "analytics"
+        ]
+      }
+    },
+    "/api/v1/analytics/{dataset}/overview": {
+      "get": {
+        "operationId": "overview_api_v1_analytics__dataset__overview_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset",
+            "required": true,
+            "schema": {
+              "title": "Dataset",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Overview Api V1 Analytics  Dataset  Overview Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Overview",
+        "tags": [
+          "analytics"
+        ]
+      }
+    },
+    "/api/v1/bigdata/aggregations": {
+      "get": {
+        "operationId": "aggregation_api_v1_bigdata_aggregations_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "query",
+            "required": true,
+            "schema": {
+              "title": "Query",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AggregationResult"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Aggregation",
+        "tags": [
+          "bigdata"
+        ]
+      }
+    },
+    "/api/v1/bigdata/collections": {
+      "get": {
+        "operationId": "collections_api_v1_bigdata_collections_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CollectionCounts"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Collections",
+        "tags": [
+          "bigdata"
+        ]
+      }
+    },
+    "/api/v1/bigdata/mapreduce/jobs": {
+      "get": {
+        "operationId": "jobs_api_v1_bigdata_mapreduce_jobs_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Jobs Api V1 Bigdata Mapreduce Jobs Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Jobs",
+        "tags": [
+          "bigdata"
+        ]
+      }
+    },
+    "/api/v1/bigdata/mapreduce/results": {
+      "get": {
+        "operationId": "results_api_v1_bigdata_mapreduce_results_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Results Api V1 Bigdata Mapreduce Results Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Results",
+        "tags": [
+          "bigdata"
+        ]
+      }
+    },
+    "/api/v1/bigdata/status": {
+      "get": {
+        "operationId": "status_api_v1_bigdata_status_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BigDataStatus"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Status",
+        "tags": [
+          "bigdata"
+        ]
+      }
+    },
+    "/api/v1/datasets": {
+      "get": {
+        "operationId": "listing_api_v1_datasets_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetList"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Listing",
+        "tags": [
+          "datasets"
+        ]
+      }
+    },
+    "/api/v1/datasets/{dataset_id}/quality": {
+      "get": {
+        "operationId": "quality_api_v1_datasets__dataset_id__quality_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset_id",
+            "required": true,
+            "schema": {
+              "title": "Dataset Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Quality Api V1 Datasets  Dataset Id  Quality Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Quality",
+        "tags": [
+          "datasets"
+        ]
+      }
+    },
+    "/api/v1/datasets/{dataset_id}/records": {
+      "get": {
+        "operationId": "records_api_v1_datasets__dataset_id__records_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset_id",
+            "required": true,
+            "schema": {
+              "title": "Dataset Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "table",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Table"
+            }
+          },
+          {
+            "in": "query",
+            "name": "offset",
+            "required": false,
+            "schema": {
+              "default": 0,
+              "maximum": 100000,
+              "minimum": 0,
+              "title": "Offset",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 20,
+              "maximum": 100,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "filter_field",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Filter Field"
+            }
+          },
+          {
+            "in": "query",
+            "name": "filter_value",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Filter Value"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RecordPage"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Records",
+        "tags": [
+          "datasets"
+        ]
+      }
+    },
+    "/api/v1/datasets/{dataset_id}/schema": {
+      "get": {
+        "operationId": "schema_api_v1_datasets__dataset_id__schema_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset_id",
+            "required": true,
+            "schema": {
+              "title": "Dataset Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetSchema"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Schema",
+        "tags": [
+          "datasets"
+        ]
+      }
+    },
+    "/api/v1/datasets/{dataset_id}/summary": {
+      "get": {
+        "operationId": "summary_api_v1_datasets__dataset_id__summary_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "dataset_id",
+            "required": true,
+            "schema": {
+              "title": "Dataset Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetSummary"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Summary",
+        "tags": [
+          "datasets"
+        ]
+      }
+    },
+    "/api/v1/health": {
+      "get": {
+        "operationId": "health_api_v1_health_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Health",
+        "tags": [
+          "system"
+        ]
+      }
+    },
+    "/api/v1/models": {
+      "get": {
+        "operationId": "listing_api_v1_models_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelList"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Listing",
+        "tags": [
+          "models"
+        ]
+      }
+    },
+    "/api/v1/models/{task}": {
+      "get": {
+        "operationId": "detail_api_v1_models__task__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "task",
+            "required": true,
+            "schema": {
+              "title": "Task",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelDetail"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Detail",
+        "tags": [
+          "models"
+        ]
+      }
+    },
+    "/api/v1/models/{task}/comparison": {
+      "get": {
+        "operationId": "comparison_api_v1_models__task__comparison_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "task",
+            "required": true,
+            "schema": {
+              "title": "Task",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Comparison Api V1 Models  Task  Comparison Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Comparison",
+        "tags": [
+          "models"
+        ]
+      }
+    },
+    "/api/v1/models/{task}/confusion-matrices": {
+      "get": {
+        "operationId": "matrices_api_v1_models__task__confusion_matrices_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "task",
+            "required": true,
+            "schema": {
+              "title": "Task",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Matrices Api V1 Models  Task  Confusion Matrices Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Matrices",
+        "tags": [
+          "models"
+        ]
+      }
+    },
+    "/api/v1/models/{task}/curves": {
+      "get": {
+        "operationId": "curves_api_v1_models__task__curves_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "task",
+            "required": true,
+            "schema": {
+              "title": "Task",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Curves Api V1 Models  Task  Curves Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Curves",
+        "tags": [
+          "models"
+        ]
+      }
+    },
+    "/api/v1/models/{task}/explanations": {
+      "get": {
+        "operationId": "explanations_api_v1_models__task__explanations_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "task",
+            "required": true,
+            "schema": {
+              "title": "Task",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Explanations Api V1 Models  Task  Explanations Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Explanations",
+        "tags": [
+          "models"
+        ]
+      }
+    },
+    "/api/v1/predictions/{task}": {
+      "post": {
+        "operationId": "predict_api_v1_predictions__task__post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "task",
+            "required": true,
+            "schema": {
+              "title": "Task",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PredictionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PredictionResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Predict",
+        "tags": [
+          "predictions"
+        ]
+      }
+    },
+    "/api/v1/predictions/{task}/schema": {
+      "get": {
+        "operationId": "schema_api_v1_predictions__task__schema_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "task",
+            "required": true,
+            "schema": {
+              "title": "Task",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Schema Api V1 Predictions  Task  Schema Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Schema",
+        "tags": [
+          "predictions"
+        ]
+      }
+    },
+    "/api/v1/reports": {
+      "get": {
+        "operationId": "listing_api_v1_reports_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Listing Api V1 Reports Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Listing",
+        "tags": [
+          "reports"
+        ]
+      }
+    },
+    "/api/v1/reports/{key}": {
+      "get": {
+        "operationId": "report_api_v1_reports__key__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "key",
+            "required": true,
+            "schema": {
+              "title": "Key",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Report Api V1 Reports  Key  Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Report",
+        "tags": [
+          "reports"
+        ]
+      }
+    },
+    "/api/v1/system/readiness": {
+      "get": {
+        "operationId": "readiness_api_v1_system_readiness_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Readiness"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Readiness",
+        "tags": [
+          "system"
+        ]
+      }
+    }
+  }
+}
