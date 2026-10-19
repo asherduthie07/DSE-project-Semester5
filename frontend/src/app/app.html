@@ -1,0 +1,18 @@
+<div class="app-shell" [class.sidebar-collapsed]="collapsed()">
+  <div class="drawer-scrim" [class.visible]="drawer()" (click)="drawer.set(false)"></div>
+  <aside class="sidebar" [class.drawer-open]="drawer()">
+    <div class="brand-row"><div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div><div class="brand-copy"><strong>MediScope<span>AI</span></strong><small>RESEARCH WORKSPACE</small></div><button class="icon-btn collapse-btn" type="button" [attr.aria-label]="collapsed() ? 'Expand sidebar' : 'Collapse sidebar'" (click)="collapsed.set(!collapsed())">☰</button></div>
+    <div class="workspace-chip"><span class="chip-orbit">◎</span><div><b>DARK RESEARCH</b><small>Workspace / 01</small></div></div>
+    <nav aria-label="Main navigation">
+      @for (item of nav; track item.path) {
+        @if (item.group) { <div class="nav-group">{{item.group}}</div> }
+        <a [routerLink]="item.path" routerLinkActive="active" [title]="item.label" [attr.aria-label]="item.label"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path [attr.d]="item.icon"/></svg></span><span class="nav-label">{{item.label}}</span><span class="nav-arrow" aria-hidden="true">›</span></a>
+      }
+    </nav>
+    <div class="sidebar-footer"><div class="footer-status"><span class="status-dot" [class.ready]="apiState().status === 'READY'"></span><span>API {{apiState().status === 'READY' ? 'Connected' : 'Unavailable'}}</span></div><div class="sidebar-footline">Infrastructure <span>{{infraReady()===null?'Unavailable':infraReady()+' / 3 ready'}}</span></div><div class="sidebar-footline">Research prototype <span>v0.1</span></div><small>For research & education only</small></div>
+  </aside>
+  <div class="main-column">
+    <header class="topbar"><div class="topbar-left"><button class="icon-btn mobile-menu" type="button" aria-label="Open menu" (click)="drawer.set(true)">☰</button><span class="breadcrumb-root">WORKSPACE</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">{{page()}}</span></div><div class="topbar-right"><span class="refresh-label">@if(refreshTime()) { API checked {{refreshTime()!.toLocaleTimeString()}} } @else { Awaiting API }</span><span class="connection" [class.offline]="apiState().status !== 'READY'"><span class="status-dot" [class.ready]="apiState().status === 'READY'"></span>{{apiState().status === 'READY' ? 'System online' : 'API offline'}}</span><div class="avatar">MS</div></div></header>
+    <main><router-outlet /></main>
+  </div>
+</div>

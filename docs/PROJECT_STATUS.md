@@ -1,6 +1,13 @@
 # Project status
 
-Updated: 2026-10-19 (Phase VI-A FastAPI backend)
+Updated: 2026-10-19 (Phase VI-B Dark Research Workspace)
+
+## Phase VI-B: Angular research frontend
+
+- Added a standalone Angular 20 dark research frontend with seven lazy routes, a typed FastAPI client, ECharts analytical views, schema-driven saved-model predictions, historical MapReduce evidence separated from live infrastructure status, responsive design tokens, and curated reports. No Clinical Workspace or Phase VI-C work was started.
+- Production build and strict TypeScript check passed. Angular jsdom suite: **13 passed across 8 files**. Existing Python suite: **87 passed, 3 Docker skips**. Live Angular proxy reached the relevant FastAPI routes and executed a fictional heart prediction. All 31 copied Phase II figures and three fictional cases match original repository SHA-256 hashes.
+- **Visual browser acceptance remains open:** no computer-use browser was available and installed ChromeHeadless could not launch. No screenshots or viewport inspection were possible. Backend gaps for arbitrary numeric distributions, full feature summaries, HDFS capacity, current YARN jobs and downloads are documented in `PHASE6B_VERIFICATION.md`. Phase VI-B implementation is reviewable but is not declared fully accepted.
+- Guides: `FRONTEND_DESIGN_SYSTEM.md`, `HOW_TO_RUN_FRONTEND.md`, `PHASE6B_UI_ARCHITECTURE.md`, `PHASE6B_VERIFICATION.md`.
 
 ## Phase VI-A: FastAPI research backend
 

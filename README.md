@@ -2,6 +2,10 @@
 
 Research-only Smart Healthcare Analytics and Disease Prediction System. Any later model output is for academic demonstration and is not clinically validated or medical advice.
 
+## Phase VI-B: Dark Research Workspace (Angular)
+
+A seven-section research frontend is available under `frontend/`. Run the existing FastAPI backend, then `cd frontend && npm ci && npm start -- --host 127.0.0.1`. Open `http://127.0.0.1:4200/`. See the [frontend run guide](docs/HOW_TO_RUN_FRONTEND.md), [architecture](docs/PHASE6B_UI_ARCHITECTURE.md), [design system](docs/FRONTEND_DESIGN_SYSTEM.md), and [verification](docs/PHASE6B_VERIFICATION.md). Browser visual acceptance and screenshots remain open; no Clinical Workspace has been implemented.
+
 ## Phase VI-A: FastAPI research backend
 
 The versioned read-only API exposes verified datasets, saved EDA, model comparisons, research predictions, Phase V status/evidence, and curated reports. From the project root on macOS:
@@ -11,7 +15,7 @@ The versioned read-only API exposes verified datasets, saved EDA, model comparis
 .venv/bin/python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
-Open `http://127.0.0.1:8000/docs` for Swagger UI. See the [backend run guide](docs/HOW_TO_RUN_BACKEND.md), [API specification](docs/PHASE6_API_SPEC.md), and [verification](docs/PHASE6A_VERIFICATION.md). MongoDB/HDFS/YARN are optional for startup and current availability is reported separately from saved Phase V execution evidence. Angular integration has not started.
+Open `http://127.0.0.1:8000/docs` for Swagger UI. See the [backend run guide](docs/HOW_TO_RUN_BACKEND.md), [API specification](docs/PHASE6_API_SPEC.md), and [verification](docs/PHASE6A_VERIFICATION.md). MongoDB/HDFS/YARN are optional for startup and current availability is reported separately from saved Phase V execution evidence. Angular integration is documented in the Phase VI-B section above.
 
 ## Phase V: MongoDB and Hadoop
 
@@ -139,4 +143,4 @@ See [dataset registry](data/metadata/datasets.json) and [acquisition notes](docs
 
 ## Layout
 
-`mediscope/` holds the CLI and reusable data science code; `backend/` holds the Phase VI-A FastAPI app, tests and OpenAPI snapshot; `data/metadata/` holds source contracts and configuration. `big_data/`, `ml/`, `powerbi/`, `reports/` and `tests/` hold prior-phase implementations and evidence. `frontend/` remains reserved for a later approved phase. See [project plan](docs/PROJECT_PLAN.md) and [status](docs/PROJECT_STATUS.md).
+`mediscope/` holds the CLI and reusable data science code; `backend/` holds the Phase VI-A FastAPI app, tests and OpenAPI snapshot; `data/metadata/` holds source contracts and configuration. `big_data/`, `ml/`, `powerbi/`, `reports/` and `tests/` hold prior-phase implementations and evidence. `frontend/` contains the Phase VI-B research workspace. See [project plan](docs/PROJECT_PLAN.md) and [status](docs/PROJECT_STATUS.md).
