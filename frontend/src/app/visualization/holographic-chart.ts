@@ -1,0 +1,51 @@
+import { AfterViewInit, Component, ElementRef, Input, NgZone, OnChanges, OnDestroy, ViewChild, effect, inject, signal, computed } from '@angular/core';
+import { DecimalPipe } from '@angular/common';
+import { AppearanceService } from './appearance.service';
+import { SceneData } from './geometry';
+import { ChartComponent, chartBase } from '../shared/chart';
+import type { HolographicRenderer } from './renderer';
+@Component({selector:'ms-holographic-chart',standalone:true,imports:[ChartComponent,DecimalPipe],template:`
+<section class="holo-chart" #frame [attr.aria-label]="data.title">
+ <div class="visual-toolbar"><span class="kicker">{{data.title}}</span>
+ @if(data.kind!=='wave'){<button class="btn secondary" [attr.aria-pressed]="mode()==='3d'" (click)="setMode('3d')">Holographic 3D</button><button class="btn secondary" [attr.aria-pressed]="mode()==='2d'" (click)="setMode('2d')">Precision 2D</button>}
+ @if(mode()==='3d'&&!failed()) {<button class="btn ghost" (click)="renderer?.reset()">Reset camera / fit</button><button class="btn ghost" (click)="renderer?.zoom(.85)" aria-label="Zoom in 3D">＋</button><button class="btn ghost" (click)="renderer?.zoom(1.15)" aria-label="Zoom out 3D">−</button><button class="btn ghost" (click)="renderer?.rotate()">Rotate</button><button class="btn ghost" (click)="exportPng()">Export PNG</button>}
+ @if(data.kind==='wave'){<button class="btn ghost" (click)="toggleAnimation()">{{paused()?'Resume animation':'Pause animation'}}</button>}
+ <button class="btn ghost" (click)="fullscreen()">Fullscreen</button></div>
+ @if(failed()){<p class="data-note" role="status">{{failed()}} Precision view remains available.</p>}
+ <div #viewport class="holo-viewport" [class.hidden]="mode()!=='3d'||!!failed()" (pointerleave)="hover.set(null)"></div>
+ @if(data.kind!=='wave'&&data.kind!=='score'){<div class="axis-key" aria-label="Axis ranges">@for(a of data.axes;track $index;let i=$index){<span>{{['X','Y','Z'][i]}} · {{a.label}}: {{range(i)}}</span>}</div>}
+ @if(mode()==='2d'||failed()){
+   @if(data.kind==='wave'){<div class="wave-fallback" aria-hidden="true"></div>}
+   @else if(data.kind==='score'){<div class="precision-score">{{data.score | number:'1.4-4'}}<small>Model score · not clinical certainty</small></div>}
+   @else if(data.points.length){<ms-chart [option]="precisionOption()" [label]="data.title+' precision view'"/>}
+ }
+ @if(inspected()!==null && data.points[inspected()!]){<div class="holo-tooltip" role="status">{{data.points[inspected()!].label}} · {{data.axes[0].label}}: {{value(inspected()!,0)}} · {{data.axes[1].label}}: {{value(inspected()!,1)}} · {{data.axes[2].label}}: {{value(inspected()!,2)}} · {{data.points[inspected()!].group}} @if(selected()!==null){<button class="btn ghost" (click)="selected.set(null)">Clear selection</button>}</div>}
+ <p class="visual-caption">{{data.note}} @if(data.sampleSize!==undefined){<strong>n = {{data.sampleSize | number}}</strong>} @if(data.excluded){ · {{data.excluded}} excluded for missing/non-numeric axes.}</p>
+ @if(data.kind!=='wave'&&data.kind!=='score'){<div class="visual-legend">@for(g of groups();track g;let i=$index){<span><i [style.background]="appearance.palette().chart[i%5]"></i>{{g}}</span>}</div>
+ <details><summary>Accessible data table · {{data.points.length}} plotted values</summary><div class="visual-table"><table><caption>{{data.title}} · displayed values</caption><thead><tr><th>Label</th>@for(a of data.axes;track $index){<th>{{a.label}}</th>}<th>Group</th></tr></thead><tbody>@for(p of data.points.slice(tablePage()*50,tablePage()*50+50);track $index){<tr><td>{{p.label}}</td><td>{{value(tablePage()*50+$index,0)}}</td><td>{{value(tablePage()*50+$index,1)}}</td><td>{{value(tablePage()*50+$index,2)}}</td><td>{{p.group}}</td></tr>}</tbody></table></div><div class="visual-toolbar"><button class="btn ghost" [disabled]="tablePage()===0" (click)="tablePage.set(tablePage()-1)">Previous values</button><button class="btn ghost" [disabled]="(tablePage()+1)*50>=data.points.length" (click)="tablePage.set(tablePage()+1)">Next values</button></div></details>}
+</section>`,styles:[`.holo-chart{position:relative;min-width:0}.holo-viewport{height:390px;width:100%;background:radial-gradient(ellipse at center,color-mix(in srgb,var(--holo-primary) 6%,transparent),transparent 65%);border:1px solid var(--holo-grid);border-radius:12px;overflow:hidden;touch-action:none}.hidden{display:none}.holo-tooltip{background:#06101ff5;border:1px solid var(--holo-border);padding:12px;font-size:11px;border-radius:8px;overflow-wrap:anywhere}.axis-key{display:flex;gap:8px;flex-wrap:wrap;font-size:10px;color:var(--holo-text-muted);padding:8px 0}.axis-key span{border-left:1px solid var(--holo-primary);padding-left:7px}.visual-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;margin:12px 0}.visual-legend i{display:inline-block;width:7px;height:7px;margin-right:6px;border-radius:50%}summary{cursor:pointer;font-size:12px;color:var(--holo-primary);padding:10px 0}.wave-fallback{height:220px;background:repeating-radial-gradient(ellipse at 50% 90%,transparent 0 12px,var(--holo-grid) 13px 14px,transparent 15px 23px);transform:perspective(600px) rotateX(25deg)}.precision-score{text-align:center;font-size:50px;padding:50px;color:var(--holo-primary)}.holo-chart:fullscreen{padding:24px;background:#06101f;overflow:auto}.holo-chart:fullscreen .holo-viewport{height:70vh}@media(max-width:700px){.holo-viewport{height:300px}.visual-toolbar .btn{padding:7px;font-size:10px}}`]})
+export class HolographicChart implements AfterViewInit,OnChanges,OnDestroy {
+ @Input({required:true}) data!:SceneData;@ViewChild('viewport') viewport!:ElementRef<HTMLElement>;@ViewChild('frame') frame!:ElementRef<HTMLElement>;
+ appearance=inject(AppearanceService);private zone=inject(NgZone);renderer?:HolographicRenderer;mode=signal<'3d'|'2d'>('3d');failed=signal('');hover=signal<number|null>(null);tablePage=signal(0);paused=signal(false);private observer?:IntersectionObserver;private destroyed=false;private visible=true;private loading=false;private reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)');
+ selected=signal<number|null>(null);inspected=computed(()=>this.selected()??this.hover());
+ constructor(){this.paused.set(this.reduced?.matches??false);effect(()=>{this.appearance.palette();this.appearance.settings();this.paint();});}
+ ngAfterViewInit(){if(this.appearance.settings().quality==='low'&&this.data.kind!=='wave')this.mode.set('2d');this.observer=new IntersectionObserver(entries=>{this.visible=entries[0].isIntersecting;if(this.visible)void this.mount();this.sync();});this.observer.observe(this.viewport.nativeElement);void this.mount();this.reduced?.addEventListener('change',this.motion);}
+ ngOnChanges(){this.tablePage.set(0);this.hover.set(null);this.selected.set(null);this.paint();}
+ private motion=()=>{this.paused.set(this.reduced?.matches??false);this.sync();};
+ async mount(){if(this.destroyed||this.renderer||this.loading||this.mode()!=='3d'||!this.visible||!this.viewport)return;this.loading=true;try{const {HolographicRenderer}=await import('./renderer');if(this.destroyed||this.mode()!=='3d')return;this.zone.runOutsideAngular(()=>{this.renderer=new HolographicRenderer(this.viewport.nativeElement,(i,pinned)=>this.zone.run(()=>pinned?this.selected.set(i):this.hover.set(i)),()=>this.zone.run(()=>this.fallback('WebGL context lost.')),this.appearance.settings().quality);this.paint();});}catch{this.fallback('WebGL unavailable on this device.');}finally{this.loading=false;}}
+ private fallback(message:string){this.failed.set(message);this.renderer?.dispose();this.renderer=undefined;}
+ private paint(){if(this.renderer&&this.data){this.zone.runOutsideAngular(()=>{this.renderer!.setQuality(this.appearance.settings().quality);this.renderer!.update(this.data,this.appearance.palette(),this.appearance.settings().particles);});this.sync();}}
+ private sync(){this.renderer?.setActive(!this.paused(),this.visible&&this.mode()==='3d');}
+ setMode(mode:'3d'|'2d'){this.mode.set(mode);if(mode==='2d'){this.renderer?.dispose();this.renderer=undefined;}else{this.failed.set('');this.visible=true;void this.mount();}}
+ toggleAnimation(){this.paused.update(x=>!x);this.sync();}
+ groups(){return [...new Set(this.data.points.map(p=>p.group))];}
+ value(index:number,axis:number){const p=this.data.points[index];const v=[p.x,p.y,p.z][axis];return this.data.axes[axis].categories?.[v]??Number(v.toPrecision(6));}
+ range(axis:number){const d=this.data,a=d.axes[axis];if(a.categories)return a.categories.length+' categories: '+a.categories[0]+' – '+a.categories[a.categories.length-1];const numbers=d.points.map(p=>[p.x,p.y,p.z][axis]);if(!numbers.length)return 'No values';return Math.min(...numbers).toPrecision(4)+' – '+Math.max(...numbers).toPrecision(4);}
+ precisionOption(){const d=this.data;const common={...chartBase,legend:{type:'scroll'},tooltip:{trigger:'item'},dataZoom:[{type:'inside'},{type:'slider'}]};
+  if(d.kind==='surface')return {...common,xAxis:{type:'category',name:d.axes[0].label,data:[...new Set(d.points.map(p=>p.x.toPrecision(3)))]},yAxis:{type:'category',name:d.axes[2].label,data:[...new Set(d.points.map(p=>p.z.toPrecision(3)))]},visualMap:{min:0,max:Math.max(...d.points.map(p=>p.y)),right:0,inRange:{color:[this.appearance.palette().dark,this.appearance.palette().primary]}},series:[{type:'heatmap',data:d.points.map((p,i)=>[i%d.grid!,Math.floor(i/d.grid!),p.y])}]};
+  return {...common,xAxis:{type:d.axes[0].categories?'category':'value',data:d.axes[0].categories,name:d.axes[0].label},yAxis:{type:'value',name:d.axes[1].label,min:d.axes[1].min},series:this.groups().map(g=>({name:g,type:d.kind==='bars'?'bar':d.kind==='ridge'?'line':'scatter',symbolSize:6,data:d.points.filter(p=>p.group===g).map(p=>[p.x,p.y]),smooth:false}))};
+ }
+ async fullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else await this.frame.nativeElement.requestFullscreen();}catch{this.failed.set('Fullscreen is unavailable; use the inline view.');}}
+ exportPng(){if(!this.renderer)return;const a=document.createElement('a');a.href=this.renderer.png();a.download='mediscope-'+this.data.kind+'.png';a.click();}
+ ngOnDestroy(){this.destroyed=true;this.observer?.disconnect();this.reduced?.removeEventListener('change',this.motion);this.renderer?.dispose();}
+}

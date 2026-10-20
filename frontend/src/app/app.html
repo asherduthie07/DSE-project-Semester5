@@ -1,8 +1,12 @@
+<div class="workspace-background" aria-hidden="true" [style.background-image]="'url('+appearance.background()+')'" [style.background-position]="appearance.settings().position+'% center'" [style.filter]="'brightness('+appearance.settings().brightness+') blur('+appearance.settings().blur+'px)'" ></div>
+<a class="skip-link" href="#workspace-content">Skip to workspace</a>
+<button class="studio-launch btn secondary" type="button" (click)="studio.set(true)">◈ Background Studio</button>
+@if(studio()){<ms-background-studio (closed)="studio.set(false)"/>}
 <div class="app-shell" [class.sidebar-collapsed]="collapsed()">
   <div class="drawer-scrim" [class.visible]="drawer()" (click)="drawer.set(false)"></div>
   <aside class="sidebar" [class.drawer-open]="drawer()">
     <div class="brand-row"><div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div><div class="brand-copy"><strong>MediScope<span>AI</span></strong><small>RESEARCH WORKSPACE</small></div><button class="icon-btn collapse-btn" type="button" [attr.aria-label]="collapsed() ? 'Expand sidebar' : 'Collapse sidebar'" (click)="collapsed.set(!collapsed())">☰</button></div>
-    <div class="workspace-chip"><span class="chip-orbit">◎</span><div><b>DARK RESEARCH</b><small>Workspace / 01</small></div></div>
+    <div class="workspace-chip"><span class="chip-orbit">◎</span><div><b>HOLOGRAPHIC RESEARCH</b><small>Evidence in perspective</small></div></div>
     <nav aria-label="Main navigation">
       @for (item of nav; track item.path) {
         @if (item.group) { <div class="nav-group">{{item.group}}</div> }
@@ -13,6 +17,6 @@
   </aside>
   <div class="main-column">
     <header class="topbar"><div class="topbar-left"><button class="icon-btn mobile-menu" type="button" aria-label="Open menu" (click)="drawer.set(true)">☰</button><span class="breadcrumb-root">WORKSPACE</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">{{page()}}</span></div><div class="topbar-right"><span class="refresh-label">@if(refreshTime()) { API checked {{refreshTime()!.toLocaleTimeString()}} } @else { Awaiting API }</span><span class="connection" [class.offline]="apiState().status !== 'READY'"><span class="status-dot" [class.ready]="apiState().status === 'READY'"></span>{{apiState().status === 'READY' ? 'System online' : 'API offline'}}</span><div class="avatar">MS</div></div></header>
-    <main><router-outlet /></main>
+    <main id="workspace-content" tabindex="-1"><router-outlet /></main>
   </div>
 </div>

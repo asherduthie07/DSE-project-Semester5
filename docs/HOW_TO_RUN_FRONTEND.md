@@ -1,5 +1,7 @@
 # Run the Phase VI-B frontend
 
+Phase VI-C uses the same FastAPI and Angular startup commands below. It adds bundled Three.js views and Background Studio. To run live browser acceptance after both servers are ready, from `frontend/` run `npx playwright install chromium` once, then `npm run test:e2e`. Captured evidence is in `docs/screenshots/phase6c/`. The supplied background's production redistribution rights are unverified; inspect `docs/HOLOGRAPHIC_DESIGN_SYSTEM.md` before shipping it.
+
 Prerequisites: Node.js 22 (verified: 22.16.0), npm 10 (verified: 10.9.2), Angular CLI 20.3.4 via project dependencies, Python environment from `docs/HOW_TO_RUN_BACKEND.md`. Angular dependencies are locked in `frontend/package-lock.json`. Power BI Desktop, MongoDB and Hadoop are not needed for the disease analytics pages; unavailable optional services show their actual state.
 
 From the repository root, start FastAPI in one terminal:

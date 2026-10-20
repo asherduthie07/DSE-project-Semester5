@@ -2,6 +2,10 @@
 
 Research-only Smart Healthcare Analytics and Disease Prediction System. Any later model output is for academic demonstration and is not clinically validated or medical advice.
 
+## Phase VI-C: Holographic Research Workspace
+
+The seven-page Angular research frontend now uses the supplied blue technical background, a locally extracted color palette, transparent glass panels, a Background Studio and lazy Three.js scientific views. Precise ECharts views and accessible data tables remain available. Start FastAPI and Angular as in the Phase VI-B section, then open `http://127.0.0.1:4200/`. See [Phase VI-C verification](docs/PHASE6C_VERIFICATION.md), [design system](docs/HOLOGRAPHIC_DESIGN_SYSTEM.md), [3D mapping](docs/3D_VISUALIZATION_DATA_MAPPING.md), and [screenshots](docs/screenshots/phase6c/). Production redistribution of the supplied background awaits image-rights evidence.
+
 ## Phase VI-B: Dark Research Workspace (Angular)
 
 A seven-section research frontend is available under `frontend/`. Run the existing FastAPI backend, then `cd frontend && npm ci && npm start -- --host 127.0.0.1`. Open `http://127.0.0.1:4200/`. See the [frontend run guide](docs/HOW_TO_RUN_FRONTEND.md), [architecture](docs/PHASE6B_UI_ARCHITECTURE.md), [design system](docs/FRONTEND_DESIGN_SYSTEM.md), and [verification](docs/PHASE6B_VERIFICATION.md). Browser visual acceptance and screenshots remain open; no Clinical Workspace has been implemented.

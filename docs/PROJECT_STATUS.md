@@ -1,6 +1,32 @@
 # Project status
 
-Updated: 2026-10-19 (Phase VI-B Dark Research Workspace)
+## Background blur adjustment — 2026-10-20
+
+- Set the global image blur default to 2.4 px, defined as 20% of Background Studio's existing 0–12 px range. The fixed image layer expands 8 px past the viewport to avoid blurred edges. A one-time saved-setting migration applies the new default to existing browsers; later slider changes persist.
+- Verification: Angular unit suite **35/35 passed**, production build **passed**, and headless Chromium at the active `http://localhost:4200/command-center` confirmed `brightness(1) blur(2.4px)` with a zero-alpha panel. A browser initialized with the former saved zero-blur setting migrated and stored `2.4`.
+
+## Clear dashboard background — 2026-10-20
+
+- Follow-up runtime fix: two Angular development servers were bound to port 4200 on different loopback addresses. `localhost:4200` (IPv6) was still serving a pre-change stylesheet without `holographic.css`, while `127.0.0.1:4200` (IPv4) served the transparent dashboard. Restarted the stale `localhost:4200` server with the current Angular configuration. Headless Chromium then showed the supplied JPEG through the sidebar, header, and panels at that exact URL; computed surface alpha was zero and the background filter was `brightness(1) blur(0px)`.
+- The owner requested the supplied `frontend/background-image/main-background-image.jpg` as the visible global background. Its unchanged public copy already serves at `/backgrounds/main-background-image.jpg` and remains the fixed, cover-sized layer on all seven routes.
+- Changed default background brightness to 1 and glass opacity/blur to 0. Shared surface tokens and remaining opaque dashboard sections now leave the image visible through the sidebar, topbar, panels, forms, and report areas. Background Studio still allows a user-selected tint and blur. Former default appearance values migrate once; other saved preferences remain.
+- Verification: Angular unit suite **34/34 passed** and production build **passed**. A local Chromium check loaded all seven routes and confirmed the fixed JPEG, full brightness, and zero-alpha sidebar, header, and panels; the JPEG returned `200 image/jpeg` with 39,316 bytes. A mobile check at 390 px confirmed former saved defaults migrate to clear surfaces. A scrolled viewport screenshot confirmed the fixed image remains visible behind lower dashboard panels. This visual check used headless Chromium, not a manual cross-browser review.
+
+## Background and human-readable input correction — 2026-10-20
+
+- Phase VI-C follow-up only: copied the supplied main JPEG unchanged into Angular's supported `public/backgrounds/` path, removed the custom source asset rule, added a pre-bootstrap CSS fallback, persisted valid bundled preset selection, and made failed/stale images restore the default without hiding a successfully decoded image on palette failure. The live `/backgrounds/main-background-image.jpg` response was `200 image/jpeg 39316`; source, served and built SHA-256 hashes matched.
+- Phase VI-C transparency follow-up: the same fixed main image remains the global background. Default dashboard panel alpha is now .48, navigation shell alpha .38, and text-dense glass remains translucent at .72 or higher. Updated shared tokens cover all seven routes; older stored default opacity migrates once. Frontend tests 34/34, production build PASS, and seven-route Chromium transparency check PASS. Viewport screenshots: `docs/screenshots/phase6c/transparent-command-center.png` and `transparent-research.png`.
+- Added a centralized, verified presentation vocabulary for Cleveland, diabetes and stroke categories. Prediction options are intersected with the live schema and retain exact submitted values. Dataset preview, filters, charts and explanation labels use the same mappings; numeric measurements and saved research artifacts are unchanged. Three fictional form POST bodies matched their original fixture JSON and saved CLI/API results.
+- Verification: Angular 33/33, production build PASS, Python 87 passed/3 Docker skips, clean 11-test Chromium suite PASS plus focused dataset-table test PASS. The seven-route/four-width sweep and background recovery/scroll tests passed. Full evidence, exact values, screenshots and remaining limits: `docs/BACKGROUND_AND_INPUT_FIX_VERIFICATION.md`. Image redistribution rights and native Intel GPU acceptance remain open. No Phase VII or Clinical Workspace work began.
+
+Updated: 2026-10-20 (Phase VI-C Holographic Research Workspace)
+
+## Phase VI-C: holographic visual transformation
+
+- Integrated the restored default background through a persistent root layer, extracted a palette locally in Canvas, added bounded glass and glow tokens, and built Background Studio. The reference image informed panel lighting; a separate particle wave is explicitly decorative. Exact image names, dimensions and SHA-256 are in `HOLOGRAPHIC_DESIGN_SYSTEM.md`. Distribution rights for the supplied images are unverified.
+- Added a lazy Three.js renderer with OrbitControls, actual measured scatter plots, categorical/model columns, Gaussian density surface, histogram/temporal ridgelines, conceptual infrastructure topology and a model-score arc. The shared visualization frame offers a precise ECharts 2D view, camera controls, PNG export, fallback, hover/click inspection and accessible tables. All seven existing routes retain their API workflows; no backend/data/model or Clinical Workspace changes.
+- Final regression: Angular **28 passed / 9 files**; production build **PASS** (344.40 kB raw / 97.48 kB estimated transfer initial); Python **87 passed, 3 Docker skips**; Playwright Chromium **9 passed** with all seven routes at 1440/1280/768/390 and screenshots. Zero production dependency audit advisories; seven development-tool advisories remain. Full evidence and PASS/FAIL/BLOCKED/NOT TESTED matrix: `PHASE6C_VERIFICATION.md`, `3D_VISUALIZATION_VERIFICATION.md`, screenshots in `docs/screenshots/phase6c/`.
+- Open gates: supplied image rights, a higher-resolution authorized background for crisp large-display production, native Intel GPU performance and long-run memory review, Safari/Windows and manual screen-reader acceptance. Phase VI-C implementation stops here pending owner acceptance; Phase VII has not begun.
 
 ## Phase VI-B: Angular research frontend
 

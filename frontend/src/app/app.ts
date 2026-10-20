@@ -3,6 +3,8 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet, NavigationEnd } fro
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { filter, interval, startWith, switchMap, catchError, of } from 'rxjs';
 import { ApiService, ComponentStatus } from './core/api';
+import { AppearanceService } from './visualization/appearance.service';
+import { BackgroundStudio } from './visualization/background-studio';
 
 const nav = [
   {path: '/command-center', label: 'Command Center', icon: 'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z', group: 'WORKSPACE'},
@@ -13,8 +15,9 @@ const nav = [
   {path: '/big-data', label: 'Big Data Monitor', icon: 'M12 2l9 5v10l-9 5-9-5V7z M3 7l9 5 9-5 M12 12v10', group: 'SYSTEMS'},
   {path: '/research', label: 'Research & Reports', icon: 'M5 3h11l3 3v15H5z M8 9h8 M8 13h8 M8 17h5', group: ''}
 ];
-@Component({selector: 'app-root', standalone: true, imports: [RouterOutlet, RouterLink, RouterLinkActive], templateUrl: './app.html', styleUrl: './app.css'})
+@Component({selector: 'app-root', standalone: true, imports: [RouterOutlet, RouterLink, RouterLinkActive, BackgroundStudio], templateUrl: './app.html', styleUrl: './app.css'})
 export class App {
+  appearance=inject(AppearanceService); studio=signal(false);
   private router = inject(Router);
   private api = inject(ApiService);
   private destroy = inject(DestroyRef);

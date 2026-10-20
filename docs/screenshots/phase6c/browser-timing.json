@@ -1,0 +1,6 @@
+{
+  "renderer": "Headless Chromium SwiftShader software rendering; not native GPU benchmark",
+  "meanFrameMs": 16.20666666666666,
+  "maxFrameMs": 16.799999999999272,
+  "heapBytes": 26000000
+}

@@ -1,4 +1,6 @@
-import { Component, ElementRef, Input, OnChanges, OnDestroy, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, OnDestroy, ViewChild, AfterViewInit, inject, effect } from '@angular/core';
+import { AppearanceService } from '../visualization/appearance.service';
+import { themeChart } from '../visualization/chart-theme';
 import * as echarts from 'echarts/core';
 import { BarChart, LineChart, HeatmapChart, ScatterChart } from 'echarts/charts';
 import { GridComponent, TooltipComponent, LegendComponent, DataZoomComponent, VisualMapComponent, ToolboxComponent } from 'echarts/components';
@@ -14,13 +16,17 @@ export class ChartComponent implements AfterViewInit, OnChanges, OnDestroy {
   @ViewChild('wrap') wrap!: ElementRef<HTMLElement>;
   private instance?: echarts.ECharts;
   private observer?: ResizeObserver;
+  private appearance=inject(AppearanceService);
+  private dataSignature='';private themeSignature='';
+  constructor(){effect(()=>{this.appearance.palette();this.apply();});}
+  private apply(){if(!this.instance)return;const data=JSON.stringify(this.option,(_,v)=>typeof v==='function'?v.toString():v),theme=JSON.stringify(this.appearance.palette());if(data===this.dataSignature&&theme===this.themeSignature)return;const next=themeChart(this.option,this.appearance.palette(),window.matchMedia?.('(prefers-reduced-motion: reduce)').matches??false);if(data===this.dataSignature){const current=this.instance.getOption();if(current['dataZoom'])next.dataZoom=current['dataZoom'];if(current['legend']){const legends=current['legend'] as any[];next.legend={...next.legend,selected:legends[0]?.selected};}}this.instance.setOption(next,true);this.dataSignature=data;this.themeSignature=theme;}
   ngAfterViewInit() {
     this.instance = echarts.init(this.canvas.nativeElement, undefined, {renderer: 'canvas'});
-    this.instance.setOption(this.option, true);
+    this.apply();
     this.observer = new ResizeObserver(() => this.instance?.resize());
     this.observer.observe(this.canvas.nativeElement);
   }
-  ngOnChanges() { this.instance?.setOption(this.option, true); }
+  ngOnChanges() { this.apply(); }
   reset() { this.instance?.dispatchAction({type:'dataZoom', start:0, end:100}); }
   download() { if (!this.instance) return; const link=document.createElement('a');link.href=this.instance.getDataURL({type:'png',pixelRatio:2,backgroundColor:'#101a2b'});link.download=this.label.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'.png';link.click(); }
   fullscreen() { if(document.fullscreenElement) document.exitFullscreen(); else this.wrap.nativeElement.requestFullscreen(); setTimeout(()=>this.instance?.resize(),250); }
