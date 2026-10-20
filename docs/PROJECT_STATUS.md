@@ -1,5 +1,16 @@
 # Project status
 
+## Background image selection — 2026-10-20
+
+- The owner selected `frontend/background-image/3.jpg` as the dashboard background. The original JPEG (735×414, 79,924 bytes, SHA-256 `b70d86c3f8957b6f10d67bfbf71297dc71b9ff9e7d04e3968952fb7606b55e99`) is unchanged; an identical copy is served from `frontend/public/backgrounds/3.jpg`. Supplied-file provenance beyond its local path is unverified; embedded EXIF credits Graphic in Motion / stock.adobe.com, and redistribution rights are unverified.
+- The default preset and pre-bootstrap background point to `/backgrounds/3.jpg`. The previous image remains an optional preset, while browsers holding it as the old default migrate once. The 2.4 px blur and transparent dashboard surfaces remain.
+- Verification: Angular unit suite **36/36 passed** and production build **passed**. Headless Chromium at the live `http://localhost:4200/command-center` displayed `3.jpg` with the existing 2.4 px blur and transparent panel, even when initialized with the former saved default. The image returned `200 image/jpeg`, 79,924 bytes; the source and public copy SHA-256 hashes matched.
+
+## Local runtime restart — 2026-10-20
+
+- Stopped the running Angular development server, confirmed ports 4200 and 8000 were free, then started FastAPI on `127.0.0.1:8000` and Angular on `localhost:4200`. Docker services were unavailable and are optional for the research frontend.
+- Verified HTTP 200 for the frontend, supplied JPEG, direct API health, and proxied API health. Headless Chromium loaded Command Center with the supplied background and `brightness(1) blur(2.4px)`.
+
 ## Background blur adjustment — 2026-10-20
 
 - Set the global image blur default to 2.4 px, defined as 20% of Background Studio's existing 0–12 px range. The fixed image layer expands 8 px past the viewport to avoid blurred edges. A one-time saved-setting migration applies the new default to existing browsers; later slider changes persist.

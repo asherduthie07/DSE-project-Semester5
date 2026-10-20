@@ -1,8 +1,9 @@
 import { Injectable, effect, signal } from '@angular/core';
 import { FALLBACK_PALETTE, extractPalette } from './palette';
 // The production and development builders copy public/ to the web root.
-export const MAIN_BACKGROUND='/backgrounds/main-background-image.jpg';
-export const PRESETS=[{name:'Main · cyan horizon',url:MAIN_BACKGROUND},{name:'Deep spectral field',url:'/backgrounds/spectral-field.svg'}];
+export const MAIN_BACKGROUND='/backgrounds/3.jpg';
+const PREVIOUS_BACKGROUND='/backgrounds/main-background-image.jpg';
+export const PRESETS=[{name:'Main · digital grid',url:MAIN_BACKGROUND},{name:'Cyan horizon',url:PREVIOUS_BACKGROUND},{name:'Deep spectral field',url:'/backgrounds/spectral-field.svg'}];
 export interface Appearance { auto:boolean;brightness:number;blur:number;position:number;glass:number;glassBlur:number;glow:number;particles:number;quality:'auto'|'low'|'high' }
 export const DEFAULT_APPEARANCE:Appearance={auto:true,brightness:1,blur:2.4,position:50,glass:0,glassBlur:0,glow:.35,particles:.5,quality:'auto'};
 export function sanitizeAppearance(raw:Partial<Appearance>):Appearance {
@@ -29,7 +30,7 @@ export class AppearanceService {
     effect(()=>{const url=this.background();try{localStorage.setItem('mediscope-background-v1',url.startsWith('blob:')?MAIN_BACKGROUND:url);}catch{/* Storage optional. */}});
   }
   private restore():Appearance {try{const raw=JSON.parse(localStorage.getItem('mediscope-appearance-v1')??'{}');if(localStorage.getItem('mediscope-transparent-v3')!=='1'){if(raw.glass===.72||raw.glass===.48)raw.glass=DEFAULT_APPEARANCE.glass;if(raw.brightness===.75)raw.brightness=DEFAULT_APPEARANCE.brightness;if(raw.glassBlur===10)raw.glassBlur=DEFAULT_APPEARANCE.glassBlur;localStorage.setItem('mediscope-transparent-v3','1');}if(localStorage.getItem('mediscope-background-blur-v4')!=='1'){raw.blur=DEFAULT_APPEARANCE.blur;localStorage.setItem('mediscope-background-blur-v4','1');}return sanitizeAppearance(raw);}catch{return {...DEFAULT_APPEARANCE};}}
-  private restoreBackground():string {try{const saved=localStorage.getItem('mediscope-background-v1');return PRESETS.some(p=>p.url===saved)?saved!:MAIN_BACKGROUND;}catch{return MAIN_BACKGROUND;}}
+  private restoreBackground():string {try{const saved=localStorage.getItem('mediscope-background-v1');if(localStorage.getItem('mediscope-background-v5')!=='1'){localStorage.setItem('mediscope-background-v5','1');if(saved===PREVIOUS_BACKGROUND)return MAIN_BACKGROUND;}return PRESETS.some(p=>p.url===saved)?saved!:MAIN_BACKGROUND;}catch{return MAIN_BACKGROUND;}}
   change<K extends keyof Appearance>(key:K,value:Appearance[K]){this.settings.update(s=>sanitizeAppearance({...s,[key]:value}));}
   select(url:string){if(!PRESETS.some(p=>p.url===url))return;this.releaseUpload();this.background.set(url);}
   async upload(file:File){
