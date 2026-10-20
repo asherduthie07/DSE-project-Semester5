@@ -1,0 +1,6 @@
+Phase VII development-only experiment completed.
+Command: .venv/bin/python -m mediscope.ml.phase7
+Thread pool limit: 1
+Tasks: heart, diabetes, stroke
+Frozen split SHA-256: {"diabetes": "b9e14a20d31b46fbbcdbc1a6ab93e35cf91e81216ec39411e99b10b5729db6cd", "heart": "6f758a9456d0319a911509625ae30d8cd462710c4a582a047d7c600da5eb9724", "stroke": "76092b3c04ece2503acd83de6d558c5356c9593ff18455f389128e3faf4950fb"}
+Exported comparison rows: 26

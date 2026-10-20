@@ -1,0 +1,1301 @@
+task,strategy,algorithm,fold,feature,score_drop
+heart,baseline,logistic_regression,0,age,0.0124113475
+heart,baseline,logistic_regression,0,trestbps,0.05234718
+heart,baseline,logistic_regression,0,chol,0.0245694022
+heart,baseline,logistic_regression,0,thalach,0.0648542159
+heart,baseline,logistic_regression,0,oldpeak,0.0687511563
+heart,baseline,logistic_regression,0,sex,0.0142229417
+heart,baseline,logistic_regression,0,fbs,0.008017268
+heart,baseline,logistic_regression,0,exang,0.0062056738
+heart,baseline,logistic_regression,0,cp,0.0337807648
+heart,baseline,logistic_regression,0,restecg,0.0142229417
+heart,baseline,logistic_regression,0,slope,0.0650632131
+heart,baseline,logistic_regression,0,ca,0.1070008597
+heart,baseline,logistic_regression,0,thal,0.0957196805
+heart,baseline,logistic_regression,1,age,0.0
+heart,baseline,logistic_regression,1,trestbps,0.0602564103
+heart,baseline,logistic_regression,1,chol,0.0098290598
+heart,baseline,logistic_regression,1,thalach,0.0211962834
+heart,baseline,logistic_regression,1,oldpeak,0.0637651822
+heart,baseline,logistic_regression,1,sex,0.0862756485
+heart,baseline,logistic_regression,1,fbs,0.0098290598
+heart,baseline,logistic_regression,1,exang,0.0672739541
+heart,baseline,logistic_regression,1,cp,0.0880952381
+heart,baseline,logistic_regression,1,restecg,0.0004794663
+heart,baseline,logistic_regression,1,slope,0.0871794872
+heart,baseline,logistic_regression,1,ca,0.0786283892
+heart,baseline,logistic_regression,1,thal,0.122936366
+heart,baseline,logistic_regression,2,age,0.0
+heart,baseline,logistic_regression,2,trestbps,0.006946929
+heart,baseline,logistic_regression,2,chol,0.0335209506
+heart,baseline,logistic_regression,2,thalach,0.0557841383
+heart,baseline,logistic_regression,2,oldpeak,0.0601852927
+heart,baseline,logistic_regression,2,sex,0.010989011
+heart,baseline,logistic_regression,2,fbs,0.0068376068
+heart,baseline,logistic_regression,2,exang,0.0202805325
+heart,baseline,logistic_regression,2,cp,0.0586080586
+heart,baseline,logistic_regression,2,restecg,0.0136752137
+heart,baseline,logistic_regression,2,slope,0.0686738736
+heart,baseline,logistic_regression,2,ca,0.0713818229
+heart,baseline,logistic_regression,2,thal,0.0968124017
+heart,baseline,logistic_regression,3,age,0.011409189
+heart,baseline,logistic_regression,3,trestbps,0.0056120876
+heart,baseline,logistic_regression,3,chol,0.0143077397
+heart,baseline,logistic_regression,3,thalach,0.0030093598
+heart,baseline,logistic_regression,3,oldpeak,0.0284330353
+heart,baseline,logistic_regression,3,sex,0.0001206156
+heart,baseline,logistic_regression,3,fbs,0.0
+heart,baseline,logistic_regression,3,exang,0.0056146572
+heart,baseline,logistic_regression,3,cp,0.0027752081
+heart,baseline,logistic_regression,3,restecg,0.022882619
+heart,baseline,logistic_regression,3,slope,-0.0030835646
+heart,baseline,logistic_regression,3,ca,0.0144159792
+heart,baseline,logistic_regression,3,thal,-0.032759203
+heart,baseline,logistic_regression,4,age,0.0
+heart,baseline,logistic_regression,4,trestbps,0.0546772069
+heart,baseline,logistic_regression,4,chol,0.0
+heart,baseline,logistic_regression,4,thalach,0.0861001318
+heart,baseline,logistic_regression,4,oldpeak,0.0372890172
+heart,baseline,logistic_regression,4,sex,0.0427609428
+heart,baseline,logistic_regression,4,fbs,0.0088090204
+heart,baseline,logistic_regression,4,exang,0.0
+heart,baseline,logistic_regression,4,cp,0.067003367
+heart,baseline,logistic_regression,4,restecg,0.0419980536
+heart,baseline,logistic_regression,4,slope,0.0253110818
+heart,baseline,logistic_regression,4,ca,0.0755526277
+heart,baseline,logistic_regression,4,thal,0.1010708379
+heart,mean,logistic_regression,0,age,0.0124113475
+heart,mean,logistic_regression,0,trestbps,0.05234718
+heart,mean,logistic_regression,0,chol,0.0245694022
+heart,mean,logistic_regression,0,thalach,0.0648542159
+heart,mean,logistic_regression,0,oldpeak,0.0687511563
+heart,mean,logistic_regression,0,sex,0.0142229417
+heart,mean,logistic_regression,0,fbs,0.008017268
+heart,mean,logistic_regression,0,exang,0.0062056738
+heart,mean,logistic_regression,0,cp,0.0337807648
+heart,mean,logistic_regression,0,restecg,0.0142229417
+heart,mean,logistic_regression,0,slope,0.0650632131
+heart,mean,logistic_regression,0,ca,0.1070008597
+heart,mean,logistic_regression,0,thal,0.0957196805
+heart,mean,logistic_regression,1,age,0.0
+heart,mean,logistic_regression,1,trestbps,0.0602564103
+heart,mean,logistic_regression,1,chol,0.0098290598
+heart,mean,logistic_regression,1,thalach,0.0211962834
+heart,mean,logistic_regression,1,oldpeak,0.0637651822
+heart,mean,logistic_regression,1,sex,0.0862756485
+heart,mean,logistic_regression,1,fbs,0.0098290598
+heart,mean,logistic_regression,1,exang,0.0672739541
+heart,mean,logistic_regression,1,cp,0.0880952381
+heart,mean,logistic_regression,1,restecg,0.0004794663
+heart,mean,logistic_regression,1,slope,0.0871794872
+heart,mean,logistic_regression,1,ca,0.0786283892
+heart,mean,logistic_regression,1,thal,0.122936366
+heart,mean,logistic_regression,2,age,0.0
+heart,mean,logistic_regression,2,trestbps,0.006946929
+heart,mean,logistic_regression,2,chol,0.0335209506
+heart,mean,logistic_regression,2,thalach,0.0557841383
+heart,mean,logistic_regression,2,oldpeak,0.0601852927
+heart,mean,logistic_regression,2,sex,0.010989011
+heart,mean,logistic_regression,2,fbs,0.0068376068
+heart,mean,logistic_regression,2,exang,0.0202805325
+heart,mean,logistic_regression,2,cp,0.0586080586
+heart,mean,logistic_regression,2,restecg,0.0136752137
+heart,mean,logistic_regression,2,slope,0.0686738736
+heart,mean,logistic_regression,2,ca,0.0713818229
+heart,mean,logistic_regression,2,thal,0.0968124017
+heart,mean,logistic_regression,3,age,0.011409189
+heart,mean,logistic_regression,3,trestbps,0.0056120876
+heart,mean,logistic_regression,3,chol,0.0143077397
+heart,mean,logistic_regression,3,thalach,0.0030093598
+heart,mean,logistic_regression,3,oldpeak,0.0284330353
+heart,mean,logistic_regression,3,sex,0.0001206156
+heart,mean,logistic_regression,3,fbs,0.0
+heart,mean,logistic_regression,3,exang,0.0056146572
+heart,mean,logistic_regression,3,cp,0.0027752081
+heart,mean,logistic_regression,3,restecg,0.022882619
+heart,mean,logistic_regression,3,slope,-0.0030835646
+heart,mean,logistic_regression,3,ca,0.0144159792
+heart,mean,logistic_regression,3,thal,-0.032759203
+heart,mean,logistic_regression,4,age,0.0
+heart,mean,logistic_regression,4,trestbps,0.0546772069
+heart,mean,logistic_regression,4,chol,0.0
+heart,mean,logistic_regression,4,thalach,0.0861001318
+heart,mean,logistic_regression,4,oldpeak,0.0372890172
+heart,mean,logistic_regression,4,sex,0.0427609428
+heart,mean,logistic_regression,4,fbs,0.0088090204
+heart,mean,logistic_regression,4,exang,0.0
+heart,mean,logistic_regression,4,cp,0.067003367
+heart,mean,logistic_regression,4,restecg,0.0419980536
+heart,mean,logistic_regression,4,slope,0.0253110818
+heart,mean,logistic_regression,4,ca,0.0755526277
+heart,mean,logistic_regression,4,thal,0.1010708379
+heart,iqr_clip,logistic_regression,0,age,0.005952381
+heart,iqr_clip,logistic_regression,0,trestbps,0.0337301587
+heart,iqr_clip,logistic_regression,0,chol,0.0198412698
+heart,iqr_clip,logistic_regression,0,thalach,0.0668491109
+heart,iqr_clip,logistic_regression,0,oldpeak,0.0643185322
+heart,iqr_clip,logistic_regression,0,sex,-0.0028908418
+heart,iqr_clip,logistic_regression,0,fbs,0.0079787234
+heart,iqr_clip,logistic_regression,0,exang,0.005952381
+heart,iqr_clip,logistic_regression,0,cp,0.0382074816
+heart,iqr_clip,logistic_regression,0,restecg,0.0017730496
+heart,iqr_clip,logistic_regression,0,slope,0.063534279
+heart,iqr_clip,logistic_regression,0,ca,0.1077945671
+heart,iqr_clip,logistic_regression,0,thal,0.0947574682
+heart,iqr_clip,logistic_regression,1,age,0.0
+heart,iqr_clip,logistic_regression,1,trestbps,0.05
+heart,iqr_clip,logistic_regression,1,chol,0.0
+heart,iqr_clip,logistic_regression,1,thalach,0.0342818428
+heart,iqr_clip,logistic_regression,1,oldpeak,0.0535087719
+heart,iqr_clip,logistic_regression,1,sex,0.0862756485
+heart,iqr_clip,logistic_regression,1,fbs,0.0
+heart,iqr_clip,logistic_regression,1,exang,0.0672739541
+heart,iqr_clip,logistic_regression,1,cp,0.0880952381
+heart,iqr_clip,logistic_regression,1,restecg,0.0004794663
+heart,iqr_clip,logistic_regression,1,slope,0.0871794872
+heart,iqr_clip,logistic_regression,1,ca,0.0670843776
+heart,iqr_clip,logistic_regression,1,thal,0.1031034857
+heart,iqr_clip,logistic_regression,2,age,0.0
+heart,iqr_clip,logistic_regression,2,trestbps,0.0006715507
+heart,iqr_clip,logistic_regression,2,chol,0.0437773609
+heart,iqr_clip,logistic_regression,2,thalach,0.0721381096
+heart,iqr_clip,logistic_regression,2,oldpeak,0.0841597427
+heart,iqr_clip,logistic_regression,2,sex,0.0400250156
+heart,iqr_clip,logistic_regression,2,fbs,0.0068376068
+heart,iqr_clip,logistic_regression,2,exang,0.0299592007
+heart,iqr_clip,logistic_regression,2,cp,0.0682867268
+heart,iqr_clip,logistic_regression,2,restecg,0.0136752137
+heart,iqr_clip,logistic_regression,2,slope,0.0686738736
+heart,iqr_clip,logistic_regression,2,ca,0.0713818229
+heart,iqr_clip,logistic_regression,2,thal,0.1063261438
+heart,iqr_clip,logistic_regression,3,age,0.0
+heart,iqr_clip,logistic_regression,3,trestbps,0.0025764895
+heart,iqr_clip,logistic_regression,3,chol,0.031884058
+heart,iqr_clip,logistic_regression,3,thalach,0.020585678
+heart,iqr_clip,logistic_regression,3,oldpeak,0.0287388221
+heart,iqr_clip,logistic_regression,3,sex,0.0176969338
+heart,iqr_clip,logistic_regression,3,fbs,0.0
+heart,iqr_clip,logistic_regression,3,exang,0.0231909754
+heart,iqr_clip,logistic_regression,3,cp,0.0203515264
+heart,iqr_clip,logistic_regression,3,restecg,0.0232500771
+heart,iqr_clip,logistic_regression,3,slope,-0.0035426731
+heart,iqr_clip,logistic_regression,3,ca,0.0319922974
+heart,iqr_clip,logistic_regression,3,thal,-0.0270454312
+heart,iqr_clip,logistic_regression,4,age,-0.0088090204
+heart,iqr_clip,logistic_regression,4,trestbps,0.0372678589
+heart,iqr_clip,logistic_regression,4,chol,-0.0264270613
+heart,iqr_clip,logistic_regression,4,thalach,0.0596730704
+heart,iqr_clip,logistic_regression,4,oldpeak,0.0133767741
+heart,iqr_clip,logistic_regression,4,sex,0.0433403805
+heart,iqr_clip,logistic_regression,4,fbs,0.0
+heart,iqr_clip,logistic_regression,4,exang,-0.0088090204
+heart,iqr_clip,logistic_regression,4,cp,0.0550544202
+heart,iqr_clip,logistic_regression,4,restecg,0.0247323736
+heart,iqr_clip,logistic_regression,4,slope,-0.0112207345
+heart,iqr_clip,logistic_regression,4,ca,0.066838932
+heart,iqr_clip,logistic_regression,4,thal,0.1020314367
+heart,baseline,decision_tree,0,age,-0.0059936569
+heart,baseline,decision_tree,0,trestbps,0.0
+heart,baseline,decision_tree,0,chol,-0.022668321
+heart,baseline,decision_tree,0,thalach,0.0
+heart,baseline,decision_tree,0,oldpeak,0.0494633482
+heart,baseline,decision_tree,0,sex,0.0
+heart,baseline,decision_tree,0,fbs,0.0
+heart,baseline,decision_tree,0,exang,0.0
+heart,baseline,decision_tree,0,cp,0.0079198696
+heart,baseline,decision_tree,0,restecg,0.0
+heart,baseline,decision_tree,0,slope,0.0
+heart,baseline,decision_tree,0,ca,0.0614954577
+heart,baseline,decision_tree,0,thal,0.1280969019
+heart,baseline,decision_tree,1,age,-0.015503876
+heart,baseline,decision_tree,1,trestbps,0.0
+heart,baseline,decision_tree,1,chol,0.0
+heart,baseline,decision_tree,1,thalach,0.0
+heart,baseline,decision_tree,1,oldpeak,0.0283985631
+heart,baseline,decision_tree,1,sex,-0.0302159053
+heart,baseline,decision_tree,1,fbs,0.0
+heart,baseline,decision_tree,1,exang,0.0
+heart,baseline,decision_tree,1,cp,0.0098661029
+heart,baseline,decision_tree,1,restecg,-0.0501840106
+heart,baseline,decision_tree,1,slope,0.0
+heart,baseline,decision_tree,1,ca,0.0425973335
+heart,baseline,decision_tree,1,thal,0.0737396228
+heart,baseline,decision_tree,2,age,0.0
+heart,baseline,decision_tree,2,trestbps,0.0
+heart,baseline,decision_tree,2,chol,-0.0803746893
+heart,baseline,decision_tree,2,thalach,0.0
+heart,baseline,decision_tree,2,oldpeak,0.085225073
+heart,baseline,decision_tree,2,sex,0.0
+heart,baseline,decision_tree,2,fbs,0.0
+heart,baseline,decision_tree,2,exang,0.0200852185
+heart,baseline,decision_tree,2,cp,0.0102184637
+heart,baseline,decision_tree,2,restecg,0.0
+heart,baseline,decision_tree,2,slope,0.0156557062
+heart,baseline,decision_tree,2,ca,0.0488788595
+heart,baseline,decision_tree,2,thal,0.1534111883
+heart,baseline,decision_tree,3,age,0.0545045844
+heart,baseline,decision_tree,3,trestbps,0.0
+heart,baseline,decision_tree,3,chol,0.0104841196
+heart,baseline,decision_tree,3,thalach,-0.0356922603
+heart,baseline,decision_tree,3,oldpeak,0.0292658313
+heart,baseline,decision_tree,3,sex,0.0093397746
+heart,baseline,decision_tree,3,fbs,0.0
+heart,baseline,decision_tree,3,exang,0.0
+heart,baseline,decision_tree,3,cp,-0.0061491218
+heart,baseline,decision_tree,3,restecg,0.0
+heart,baseline,decision_tree,3,slope,0.0
+heart,baseline,decision_tree,3,ca,0.0085804966
+heart,baseline,decision_tree,3,thal,0.0623896224
+heart,baseline,decision_tree,4,age,0.0
+heart,baseline,decision_tree,4,trestbps,0.0
+heart,baseline,decision_tree,4,chol,0.003973348
+heart,baseline,decision_tree,4,thalach,0.0080739831
+heart,baseline,decision_tree,4,oldpeak,0.1584205218
+heart,baseline,decision_tree,4,sex,0.0
+heart,baseline,decision_tree,4,fbs,0.0
+heart,baseline,decision_tree,4,exang,0.0
+heart,baseline,decision_tree,4,cp,0.1113750748
+heart,baseline,decision_tree,4,restecg,0.0
+heart,baseline,decision_tree,4,slope,0.0
+heart,baseline,decision_tree,4,ca,0.0650406504
+heart,baseline,decision_tree,4,thal,0.1933438307
+heart,baseline,random_forest,0,age,-0.0119047619
+heart,baseline,random_forest,0,trestbps,-0.005952381
+heart,baseline,random_forest,0,chol,-0.005952381
+heart,baseline,random_forest,0,thalach,-0.0040487693
+heart,baseline,random_forest,0,oldpeak,0.033402284
+heart,baseline,random_forest,0,sex,0.0414565826
+heart,baseline,random_forest,0,fbs,0.0
+heart,baseline,random_forest,0,exang,-0.0119047619
+heart,baseline,random_forest,0,cp,0.0079365079
+heart,baseline,random_forest,0,restecg,0.0114285714
+heart,baseline,random_forest,0,slope,0.0598639456
+heart,baseline,random_forest,0,ca,0.1084323478
+heart,baseline,random_forest,0,thal,0.0902590824
+heart,baseline,random_forest,1,age,0.0577607626
+heart,baseline,random_forest,1,trestbps,0.032388664
+heart,baseline,random_forest,1,chol,0.0
+heart,baseline,random_forest,1,thalach,-0.0102564103
+heart,baseline,random_forest,1,oldpeak,0.0064102564
+heart,baseline,random_forest,1,sex,0.0299145299
+heart,baseline,random_forest,1,fbs,0.0
+heart,baseline,random_forest,1,exang,0.032388664
+heart,baseline,random_forest,1,cp,0.0881155881
+heart,baseline,random_forest,1,restecg,0.0026579112
+heart,baseline,random_forest,1,slope,0.0274403959
+heart,baseline,random_forest,1,ca,0.0412757974
+heart,baseline,random_forest,1,thal,0.0904428904
+heart,baseline,random_forest,2,age,0.0059062385
+heart,baseline,random_forest,2,trestbps,-0.0148306978
+heart,baseline,random_forest,2,chol,-0.0002881092
+heart,baseline,random_forest,2,thalach,-0.0220673635
+heart,baseline,random_forest,2,oldpeak,-0.0188927604
+heart,baseline,random_forest,2,sex,-0.0013087688
+heart,baseline,random_forest,2,fbs,-0.0315911731
+heart,baseline,random_forest,2,exang,-0.0143467643
+heart,baseline,random_forest,2,cp,0.0388603644
+heart,baseline,random_forest,2,restecg,-0.0023228804
+heart,baseline,random_forest,2,slope,0.0
+heart,baseline,random_forest,2,ca,0.0321067821
+heart,baseline,random_forest,2,thal,0.1547988188
+heart,baseline,random_forest,3,age,0.0
+heart,baseline,random_forest,3,trestbps,-0.0002466852
+heart,baseline,random_forest,3,chol,-0.0060386473
+heart,baseline,random_forest,3,thalach,-0.0086339809
+heart,baseline,random_forest,3,oldpeak,0.0255935862
+heart,baseline,random_forest,3,sex,0.0055504163
+heart,baseline,random_forest,3,fbs,0.0055504163
+heart,baseline,random_forest,3,exang,0.0055504163
+heart,baseline,random_forest,3,cp,0.0156053286
+heart,baseline,random_forest,3,restecg,0.0
+heart,baseline,random_forest,3,slope,-0.0057971014
+heart,baseline,random_forest,3,ca,0.04743083
+heart,baseline,random_forest,3,thal,0.0589591568
+heart,baseline,random_forest,4,age,0.0570690292
+heart,baseline,random_forest,4,trestbps,0.0209339775
+heart,baseline,random_forest,4,chol,0.0444444444
+heart,baseline,random_forest,4,thalach,0.0356896906
+heart,baseline,random_forest,4,oldpeak,0.0752407799
+heart,baseline,random_forest,4,sex,0.0209339775
+heart,baseline,random_forest,4,fbs,0.0354240075
+heart,baseline,random_forest,4,exang,0.0021335703
+heart,baseline,random_forest,4,cp,0.0587521842
+heart,baseline,random_forest,4,restecg,0.0419503427
+heart,baseline,random_forest,4,slope,0.0387790953
+heart,baseline,random_forest,4,ca,0.070606777
+heart,baseline,random_forest,4,thal,0.1873228118
+heart,baseline,knn,0,age,0.0075717663
+heart,baseline,knn,0,trestbps,0.0389008805
+heart,baseline,knn,0,chol,0.0040428958
+heart,baseline,knn,0,thalach,-0.0201482914
+heart,baseline,knn,0,oldpeak,0.0231581994
+heart,baseline,knn,0,sex,0.0150368938
+heart,baseline,knn,0,fbs,-0.0061671292
+heart,baseline,knn,0,exang,-0.0179837893
+heart,baseline,knn,0,cp,0.0312570665
+heart,baseline,knn,0,restecg,0.0141843972
+heart,baseline,knn,0,slope,0.0275533628
+heart,baseline,knn,0,ca,0.0916362204
+heart,baseline,knn,0,thal,0.1303787178
+heart,baseline,knn,1,age,0.0497866287
+heart,baseline,knn,1,trestbps,0.0285346075
+heart,baseline,knn,1,chol,0.0519264203
+heart,baseline,knn,1,thalach,0.0421198526
+heart,baseline,knn,1,oldpeak,0.0389904074
+heart,baseline,knn,1,sex,-0.0208629682
+heart,baseline,knn,1,fbs,-0.0032340032
+heart,baseline,knn,1,exang,0.0536852642
+heart,baseline,knn,1,cp,0.0719122824
+heart,baseline,knn,1,restecg,0.0631724842
+heart,baseline,knn,1,slope,0.0837152942
+heart,baseline,knn,1,ca,0.0603234814
+heart,baseline,knn,1,thal,0.0741876306
+heart,baseline,knn,2,age,0.0530167664
+heart,baseline,knn,2,trestbps,0.0589430894
+heart,baseline,knn,2,chol,0.025373001
+heart,baseline,knn,2,thalach,0.0059463036
+heart,baseline,knn,2,oldpeak,0.0325977545
+heart,baseline,knn,2,sex,0.045377198
+heart,baseline,knn,2,fbs,-0.0138211382
+heart,baseline,knn,2,exang,0.0357723577
+heart,baseline,knn,2,cp,0.0972706156
+heart,baseline,knn,2,restecg,0.0813975997
+heart,baseline,knn,2,slope,0.0524390244
+heart,baseline,knn,2,ca,0.0918900379
+heart,baseline,knn,2,thal,0.1262912735
+heart,baseline,knn,3,age,0.0301884089
+heart,baseline,knn,3,trestbps,0.0287285435
+heart,baseline,knn,3,chol,0.0284201871
+heart,baseline,knn,3,thalach,0.0276119194
+heart,baseline,knn,3,oldpeak,0.0370027752
+heart,baseline,knn,3,sex,0.0658786446
+heart,baseline,knn,3,fbs,0.0
+heart,baseline,knn,3,exang,0.0290683649
+heart,baseline,knn,3,cp,0.0869004569
+heart,baseline,knn,3,restecg,0.018137669
+heart,baseline,knn,3,slope,-0.03484428
+heart,baseline,knn,3,ca,0.0624164868
+heart,baseline,knn,3,thal,0.0191797718
+heart,baseline,knn,4,age,0.0352303523
+heart,baseline,knn,4,trestbps,0.0193573364
+heart,baseline,knn,4,chol,-0.0364945132
+heart,baseline,knn,4,thalach,-0.0138466734
+heart,baseline,knn,4,oldpeak,0.0380214101
+heart,baseline,knn,4,sex,0.0004501706
+heart,baseline,knn,4,fbs,0.0193573364
+heart,baseline,knn,4,exang,0.0723368772
+heart,baseline,knn,4,cp,0.0747122796
+heart,baseline,knn,4,restecg,0.0021164021
+heart,baseline,knn,4,slope,0.063591101
+heart,baseline,knn,4,ca,0.0814814815
+heart,baseline,knn,4,thal,0.15997426
+diabetes,baseline,logistic_regression,0,Age,0.016025641
+diabetes,baseline,logistic_regression,0,Polyuria,0.1049679487
+diabetes,baseline,logistic_regression,0,Polydipsia,0.0929487179
+diabetes,baseline,logistic_regression,0,sudden weight loss,0.0064102564
+diabetes,baseline,logistic_regression,0,weakness,0.0
+diabetes,baseline,logistic_regression,0,Polyphagia,0.0
+diabetes,baseline,logistic_regression,0,Genital thrush,0.0256410256
+diabetes,baseline,logistic_regression,0,visual blurring,0.0
+diabetes,baseline,logistic_regression,0,Itching,0.0857371795
+diabetes,baseline,logistic_regression,0,Irritability,0.0969551282
+diabetes,baseline,logistic_regression,0,delayed healing,0.0064102564
+diabetes,baseline,logistic_regression,0,partial paresis,0.0196314103
+diabetes,baseline,logistic_regression,0,muscle stiffness,0.0352564103
+diabetes,baseline,logistic_regression,0,Alopecia,0.0096153846
+diabetes,baseline,logistic_regression,0,Obesity,0.0
+diabetes,baseline,logistic_regression,0,Gender,0.1049679487
+diabetes,baseline,logistic_regression,1,Age,-0.0065359477
+diabetes,baseline,logistic_regression,1,Polyuria,0.1673815359
+diabetes,baseline,logistic_regression,1,Polydipsia,0.0526960784
+diabetes,baseline,logistic_regression,1,sudden weight loss,-0.0196078431
+diabetes,baseline,logistic_regression,1,weakness,-0.0098039216
+diabetes,baseline,logistic_regression,1,Polyphagia,-0.0065359477
+diabetes,baseline,logistic_regression,1,Genital thrush,0.0032679739
+diabetes,baseline,logistic_regression,1,visual blurring,-0.0
+diabetes,baseline,logistic_regression,1,Itching,0.0098039216
+diabetes,baseline,logistic_regression,1,Irritability,0.0052083333
+diabetes,baseline,logistic_regression,1,delayed healing,0.0098039216
+diabetes,baseline,logistic_regression,1,partial paresis,-0.0111315359
+diabetes,baseline,logistic_regression,1,muscle stiffness,0.0196078431
+diabetes,baseline,logistic_regression,1,Alopecia,-0.0065359477
+diabetes,baseline,logistic_regression,1,Obesity,0.0
+diabetes,baseline,logistic_regression,1,Gender,0.1041666667
+diabetes,baseline,logistic_regression,2,Age,0.0032679739
+diabetes,baseline,logistic_regression,2,Polyuria,0.2131331699
+diabetes,baseline,logistic_regression,2,Polydipsia,0.1878063725
+diabetes,baseline,logistic_regression,2,sudden weight loss,0.0098039216
+diabetes,baseline,logistic_regression,2,weakness,0.0
+diabetes,baseline,logistic_regression,2,Polyphagia,0.0
+diabetes,baseline,logistic_regression,2,Genital thrush,-0.015625
+diabetes,baseline,logistic_regression,2,visual blurring,0.0
+diabetes,baseline,logistic_regression,2,Itching,0.0130718954
+diabetes,baseline,logistic_regression,2,Irritability,0.0202205882
+diabetes,baseline,logistic_regression,2,delayed healing,0.0065359477
+diabetes,baseline,logistic_regression,2,partial paresis,0.0464665033
+diabetes,baseline,logistic_regression,2,muscle stiffness,0.0130718954
+diabetes,baseline,logistic_regression,2,Alopecia,0.0032679739
+diabetes,baseline,logistic_regression,2,Obesity,0.0
+diabetes,baseline,logistic_regression,2,Gender,0.1284722222
+diabetes,baseline,logistic_regression,3,Age,0.0052083333
+diabetes,baseline,logistic_regression,3,Polyuria,0.0866013072
+diabetes,baseline,logistic_regression,3,Polydipsia,0.0767973856
+diabetes,baseline,logistic_regression,3,sudden weight loss,0.0025531046
+diabetes,baseline,logistic_regression,3,weakness,0.0
+diabetes,baseline,logistic_regression,3,Polyphagia,0.046875
+diabetes,baseline,logistic_regression,3,Genital thrush,0.0208333333
+diabetes,baseline,logistic_regression,3,visual blurring,0.0416666667
+diabetes,baseline,logistic_regression,3,Itching,0.0
+diabetes,baseline,logistic_regression,3,Irritability,0.0404411765
+diabetes,baseline,logistic_regression,3,delayed healing,0.0196078431
+diabetes,baseline,logistic_regression,3,partial paresis,0.0685253268
+diabetes,baseline,logistic_regression,3,muscle stiffness,0.0
+diabetes,baseline,logistic_regression,3,Alopecia,0.022875817
+diabetes,baseline,logistic_regression,3,Obesity,-0.0254289216
+diabetes,baseline,logistic_regression,3,Gender,0.116625817
+diabetes,baseline,logistic_regression,4,Age,0.0729166667
+diabetes,baseline,logistic_regression,4,Polyuria,0.1355187908
+diabetes,baseline,logistic_regression,4,Polydipsia,0.1453227124
+diabetes,baseline,logistic_regression,4,sudden weight loss,0.0625
+diabetes,baseline,logistic_regression,4,weakness,0.0
+diabetes,baseline,logistic_regression,4,Polyphagia,0.0
+diabetes,baseline,logistic_regression,4,Genital thrush,0.0260416667
+diabetes,baseline,logistic_regression,4,visual blurring,0.0
+diabetes,baseline,logistic_regression,4,Itching,0.0416666667
+diabetes,baseline,logistic_regression,4,Irritability,0.0208333333
+diabetes,baseline,logistic_regression,4,delayed healing,0.0
+diabetes,baseline,logistic_regression,4,partial paresis,0.0104166667
+diabetes,baseline,logistic_regression,4,muscle stiffness,0.046875
+diabetes,baseline,logistic_regression,4,Alopecia,0.0625
+diabetes,baseline,logistic_regression,4,Obesity,0.0
+diabetes,baseline,logistic_regression,4,Gender,0.1002859477
+diabetes,mean,logistic_regression,0,Age,0.016025641
+diabetes,mean,logistic_regression,0,Polyuria,0.1049679487
+diabetes,mean,logistic_regression,0,Polydipsia,0.0929487179
+diabetes,mean,logistic_regression,0,sudden weight loss,0.0064102564
+diabetes,mean,logistic_regression,0,weakness,0.0
+diabetes,mean,logistic_regression,0,Polyphagia,0.0
+diabetes,mean,logistic_regression,0,Genital thrush,0.0256410256
+diabetes,mean,logistic_regression,0,visual blurring,0.0
+diabetes,mean,logistic_regression,0,Itching,0.0857371795
+diabetes,mean,logistic_regression,0,Irritability,0.0969551282
+diabetes,mean,logistic_regression,0,delayed healing,0.0064102564
+diabetes,mean,logistic_regression,0,partial paresis,0.0196314103
+diabetes,mean,logistic_regression,0,muscle stiffness,0.0352564103
+diabetes,mean,logistic_regression,0,Alopecia,0.0096153846
+diabetes,mean,logistic_regression,0,Obesity,0.0
+diabetes,mean,logistic_regression,0,Gender,0.1049679487
+diabetes,mean,logistic_regression,1,Age,-0.0065359477
+diabetes,mean,logistic_regression,1,Polyuria,0.1673815359
+diabetes,mean,logistic_regression,1,Polydipsia,0.0526960784
+diabetes,mean,logistic_regression,1,sudden weight loss,-0.0196078431
+diabetes,mean,logistic_regression,1,weakness,-0.0098039216
+diabetes,mean,logistic_regression,1,Polyphagia,-0.0065359477
+diabetes,mean,logistic_regression,1,Genital thrush,0.0032679739
+diabetes,mean,logistic_regression,1,visual blurring,-0.0
+diabetes,mean,logistic_regression,1,Itching,0.0098039216
+diabetes,mean,logistic_regression,1,Irritability,0.0052083333
+diabetes,mean,logistic_regression,1,delayed healing,0.0098039216
+diabetes,mean,logistic_regression,1,partial paresis,-0.0111315359
+diabetes,mean,logistic_regression,1,muscle stiffness,0.0196078431
+diabetes,mean,logistic_regression,1,Alopecia,-0.0065359477
+diabetes,mean,logistic_regression,1,Obesity,0.0
+diabetes,mean,logistic_regression,1,Gender,0.1041666667
+diabetes,mean,logistic_regression,2,Age,0.0032679739
+diabetes,mean,logistic_regression,2,Polyuria,0.2131331699
+diabetes,mean,logistic_regression,2,Polydipsia,0.1878063725
+diabetes,mean,logistic_regression,2,sudden weight loss,0.0098039216
+diabetes,mean,logistic_regression,2,weakness,0.0
+diabetes,mean,logistic_regression,2,Polyphagia,0.0
+diabetes,mean,logistic_regression,2,Genital thrush,-0.015625
+diabetes,mean,logistic_regression,2,visual blurring,0.0
+diabetes,mean,logistic_regression,2,Itching,0.0130718954
+diabetes,mean,logistic_regression,2,Irritability,0.0202205882
+diabetes,mean,logistic_regression,2,delayed healing,0.0065359477
+diabetes,mean,logistic_regression,2,partial paresis,0.0464665033
+diabetes,mean,logistic_regression,2,muscle stiffness,0.0130718954
+diabetes,mean,logistic_regression,2,Alopecia,0.0032679739
+diabetes,mean,logistic_regression,2,Obesity,0.0
+diabetes,mean,logistic_regression,2,Gender,0.1284722222
+diabetes,mean,logistic_regression,3,Age,0.0052083333
+diabetes,mean,logistic_regression,3,Polyuria,0.0866013072
+diabetes,mean,logistic_regression,3,Polydipsia,0.0767973856
+diabetes,mean,logistic_regression,3,sudden weight loss,0.0025531046
+diabetes,mean,logistic_regression,3,weakness,0.0
+diabetes,mean,logistic_regression,3,Polyphagia,0.046875
+diabetes,mean,logistic_regression,3,Genital thrush,0.0208333333
+diabetes,mean,logistic_regression,3,visual blurring,0.0416666667
+diabetes,mean,logistic_regression,3,Itching,0.0
+diabetes,mean,logistic_regression,3,Irritability,0.0404411765
+diabetes,mean,logistic_regression,3,delayed healing,0.0196078431
+diabetes,mean,logistic_regression,3,partial paresis,0.0685253268
+diabetes,mean,logistic_regression,3,muscle stiffness,0.0
+diabetes,mean,logistic_regression,3,Alopecia,0.022875817
+diabetes,mean,logistic_regression,3,Obesity,-0.0254289216
+diabetes,mean,logistic_regression,3,Gender,0.116625817
+diabetes,mean,logistic_regression,4,Age,0.0729166667
+diabetes,mean,logistic_regression,4,Polyuria,0.1355187908
+diabetes,mean,logistic_regression,4,Polydipsia,0.1453227124
+diabetes,mean,logistic_regression,4,sudden weight loss,0.0625
+diabetes,mean,logistic_regression,4,weakness,0.0
+diabetes,mean,logistic_regression,4,Polyphagia,0.0
+diabetes,mean,logistic_regression,4,Genital thrush,0.0260416667
+diabetes,mean,logistic_regression,4,visual blurring,0.0
+diabetes,mean,logistic_regression,4,Itching,0.0416666667
+diabetes,mean,logistic_regression,4,Irritability,0.0208333333
+diabetes,mean,logistic_regression,4,delayed healing,0.0
+diabetes,mean,logistic_regression,4,partial paresis,0.0104166667
+diabetes,mean,logistic_regression,4,muscle stiffness,0.046875
+diabetes,mean,logistic_regression,4,Alopecia,0.0625
+diabetes,mean,logistic_regression,4,Obesity,0.0
+diabetes,mean,logistic_regression,4,Gender,0.1002859477
+diabetes,iqr_clip,logistic_regression,0,Age,0.016025641
+diabetes,iqr_clip,logistic_regression,0,Polyuria,0.1049679487
+diabetes,iqr_clip,logistic_regression,0,Polydipsia,0.0929487179
+diabetes,iqr_clip,logistic_regression,0,sudden weight loss,0.0064102564
+diabetes,iqr_clip,logistic_regression,0,weakness,0.0
+diabetes,iqr_clip,logistic_regression,0,Polyphagia,0.0
+diabetes,iqr_clip,logistic_regression,0,Genital thrush,0.0256410256
+diabetes,iqr_clip,logistic_regression,0,visual blurring,0.0
+diabetes,iqr_clip,logistic_regression,0,Itching,0.0857371795
+diabetes,iqr_clip,logistic_regression,0,Irritability,0.0969551282
+diabetes,iqr_clip,logistic_regression,0,delayed healing,0.0064102564
+diabetes,iqr_clip,logistic_regression,0,partial paresis,0.0356570513
+diabetes,iqr_clip,logistic_regression,0,muscle stiffness,0.0352564103
+diabetes,iqr_clip,logistic_regression,0,Alopecia,0.0096153846
+diabetes,iqr_clip,logistic_regression,0,Obesity,0.0
+diabetes,iqr_clip,logistic_regression,0,Gender,0.1049679487
+diabetes,iqr_clip,logistic_regression,1,Age,-0.0065359477
+diabetes,iqr_clip,logistic_regression,1,Polyuria,0.1673815359
+diabetes,iqr_clip,logistic_regression,1,Polydipsia,0.0526960784
+diabetes,iqr_clip,logistic_regression,1,sudden weight loss,-0.0196078431
+diabetes,iqr_clip,logistic_regression,1,weakness,-0.0098039216
+diabetes,iqr_clip,logistic_regression,1,Polyphagia,-0.0065359477
+diabetes,iqr_clip,logistic_regression,1,Genital thrush,0.0032679739
+diabetes,iqr_clip,logistic_regression,1,visual blurring,-0.0
+diabetes,iqr_clip,logistic_regression,1,Itching,0.0098039216
+diabetes,iqr_clip,logistic_regression,1,Irritability,0.0052083333
+diabetes,iqr_clip,logistic_regression,1,delayed healing,0.0098039216
+diabetes,iqr_clip,logistic_regression,1,partial paresis,-0.0111315359
+diabetes,iqr_clip,logistic_regression,1,muscle stiffness,0.0196078431
+diabetes,iqr_clip,logistic_regression,1,Alopecia,-0.0065359477
+diabetes,iqr_clip,logistic_regression,1,Obesity,0.0
+diabetes,iqr_clip,logistic_regression,1,Gender,0.1041666667
+diabetes,iqr_clip,logistic_regression,2,Age,0.0065359477
+diabetes,iqr_clip,logistic_regression,2,Polyuria,0.2131331699
+diabetes,iqr_clip,logistic_regression,2,Polydipsia,0.1878063725
+diabetes,iqr_clip,logistic_regression,2,sudden weight loss,0.0098039216
+diabetes,iqr_clip,logistic_regression,2,weakness,0.0
+diabetes,iqr_clip,logistic_regression,2,Polyphagia,0.0
+diabetes,iqr_clip,logistic_regression,2,Genital thrush,-0.015625
+diabetes,iqr_clip,logistic_regression,2,visual blurring,0.0
+diabetes,iqr_clip,logistic_regression,2,Itching,0.0130718954
+diabetes,iqr_clip,logistic_regression,2,Irritability,0.0202205882
+diabetes,iqr_clip,logistic_regression,2,delayed healing,0.0065359477
+diabetes,iqr_clip,logistic_regression,2,partial paresis,0.0464665033
+diabetes,iqr_clip,logistic_regression,2,muscle stiffness,0.0130718954
+diabetes,iqr_clip,logistic_regression,2,Alopecia,0.0032679739
+diabetes,iqr_clip,logistic_regression,2,Obesity,0.0
+diabetes,iqr_clip,logistic_regression,2,Gender,0.1284722222
+diabetes,iqr_clip,logistic_regression,3,Age,0.0052083333
+diabetes,iqr_clip,logistic_regression,3,Polyuria,0.0866013072
+diabetes,iqr_clip,logistic_regression,3,Polydipsia,0.0767973856
+diabetes,iqr_clip,logistic_regression,3,sudden weight loss,0.0025531046
+diabetes,iqr_clip,logistic_regression,3,weakness,0.0
+diabetes,iqr_clip,logistic_regression,3,Polyphagia,0.046875
+diabetes,iqr_clip,logistic_regression,3,Genital thrush,0.0208333333
+diabetes,iqr_clip,logistic_regression,3,visual blurring,0.0416666667
+diabetes,iqr_clip,logistic_regression,3,Itching,0.0
+diabetes,iqr_clip,logistic_regression,3,Irritability,0.0404411765
+diabetes,iqr_clip,logistic_regression,3,delayed healing,0.0196078431
+diabetes,iqr_clip,logistic_regression,3,partial paresis,0.0685253268
+diabetes,iqr_clip,logistic_regression,3,muscle stiffness,0.0
+diabetes,iqr_clip,logistic_regression,3,Alopecia,0.022875817
+diabetes,iqr_clip,logistic_regression,3,Obesity,-0.0254289216
+diabetes,iqr_clip,logistic_regression,3,Gender,0.116625817
+diabetes,iqr_clip,logistic_regression,4,Age,0.0729166667
+diabetes,iqr_clip,logistic_regression,4,Polyuria,0.1387867647
+diabetes,iqr_clip,logistic_regression,4,Polydipsia,0.1453227124
+diabetes,iqr_clip,logistic_regression,4,sudden weight loss,0.0625
+diabetes,iqr_clip,logistic_regression,4,weakness,0.0
+diabetes,iqr_clip,logistic_regression,4,Polyphagia,0.0
+diabetes,iqr_clip,logistic_regression,4,Genital thrush,0.0260416667
+diabetes,iqr_clip,logistic_regression,4,visual blurring,0.0
+diabetes,iqr_clip,logistic_regression,4,Itching,0.0416666667
+diabetes,iqr_clip,logistic_regression,4,Irritability,0.0208333333
+diabetes,iqr_clip,logistic_regression,4,delayed healing,0.0
+diabetes,iqr_clip,logistic_regression,4,partial paresis,0.0104166667
+diabetes,iqr_clip,logistic_regression,4,muscle stiffness,0.046875
+diabetes,iqr_clip,logistic_regression,4,Alopecia,0.0625
+diabetes,iqr_clip,logistic_regression,4,Obesity,0.0
+diabetes,iqr_clip,logistic_regression,4,Gender,0.1002859477
+diabetes,deduplicated,logistic_regression,0,Age,0.0032051282
+diabetes,deduplicated,logistic_regression,0,Polyuria,0.0961538462
+diabetes,deduplicated,logistic_regression,0,Polydipsia,0.0769230769
+diabetes,deduplicated,logistic_regression,0,sudden weight loss,-0.0288461538
+diabetes,deduplicated,logistic_regression,0,weakness,0.0192307692
+diabetes,deduplicated,logistic_regression,0,Polyphagia,-0.0352564103
+diabetes,deduplicated,logistic_regression,0,Genital thrush,0.0032051282
+diabetes,deduplicated,logistic_regression,0,visual blurring,-0.0288461538
+diabetes,deduplicated,logistic_regression,0,Itching,0.0192307692
+diabetes,deduplicated,logistic_regression,0,Irritability,-0.0192307692
+diabetes,deduplicated,logistic_regression,0,delayed healing,0.0064102564
+diabetes,deduplicated,logistic_regression,0,partial paresis,-0.0384615385
+diabetes,deduplicated,logistic_regression,0,muscle stiffness,-0.0128205128
+diabetes,deduplicated,logistic_regression,0,Alopecia,0.0
+diabetes,deduplicated,logistic_regression,0,Obesity,0.0
+diabetes,deduplicated,logistic_regression,0,Gender,0.0260416667
+diabetes,deduplicated,logistic_regression,1,Age,0.0
+diabetes,deduplicated,logistic_regression,1,Polyuria,0.1465482026
+diabetes,deduplicated,logistic_regression,1,Polydipsia,0.0324754902
+diabetes,deduplicated,logistic_regression,1,sudden weight loss,-0.0039828431
+diabetes,deduplicated,logistic_regression,1,weakness,0.0
+diabetes,deduplicated,logistic_regression,1,Polyphagia,0.0
+diabetes,deduplicated,logistic_regression,1,Genital thrush,0.0098039216
+diabetes,deduplicated,logistic_regression,1,visual blurring,0.0025531046
+diabetes,deduplicated,logistic_regression,1,Itching,0.03125
+diabetes,deduplicated,logistic_regression,1,Irritability,0.0019403595
+diabetes,deduplicated,logistic_regression,1,delayed healing,0.0
+diabetes,deduplicated,logistic_regression,1,partial paresis,0.0233864379
+diabetes,deduplicated,logistic_regression,1,muscle stiffness,-0.0032679739
+diabetes,deduplicated,logistic_regression,1,Alopecia,-0.0065359477
+diabetes,deduplicated,logistic_regression,1,Obesity,0.0
+diabetes,deduplicated,logistic_regression,1,Gender,0.0494281046
+diabetes,deduplicated,logistic_regression,2,Age,0.0032679739
+diabetes,deduplicated,logistic_regression,2,Polyuria,0.0755718954
+diabetes,deduplicated,logistic_regression,2,Polydipsia,0.069750817
+diabetes,deduplicated,logistic_regression,2,sudden weight loss,-0.0065359477
+diabetes,deduplicated,logistic_regression,2,weakness,0.0032679739
+diabetes,deduplicated,logistic_regression,2,Polyphagia,0.0
+diabetes,deduplicated,logistic_regression,2,Genital thrush,-0.0098039216
+diabetes,deduplicated,logistic_regression,2,visual blurring,0.0032679739
+diabetes,deduplicated,logistic_regression,2,Itching,0.0169526144
+diabetes,deduplicated,logistic_regression,2,Irritability,-0.0098039216
+diabetes,deduplicated,logistic_regression,2,delayed healing,0.0221609477
+diabetes,deduplicated,logistic_regression,2,partial paresis,0.0163398693
+diabetes,deduplicated,logistic_regression,2,muscle stiffness,0.0130718954
+diabetes,deduplicated,logistic_regression,2,Alopecia,0.0032679739
+diabetes,deduplicated,logistic_regression,2,Obesity,-0.0032679739
+diabetes,deduplicated,logistic_regression,2,Gender,0.0352328431
+diabetes,deduplicated,logistic_regression,3,Age,0.0
+diabetes,deduplicated,logistic_regression,3,Polyuria,0.0702614379
+diabetes,deduplicated,logistic_regression,3,Polydipsia,0.050755719
+diabetes,deduplicated,logistic_regression,3,sudden weight loss,-0.0039828431
+diabetes,deduplicated,logistic_regression,3,weakness,0.0261437908
+diabetes,deduplicated,logistic_regression,3,Polyphagia,0.0664828431
+diabetes,deduplicated,logistic_regression,3,Genital thrush,0.0208333333
+diabetes,deduplicated,logistic_regression,3,visual blurring,0.0196078431
+diabetes,deduplicated,logistic_regression,3,Itching,-0.0065359477
+diabetes,deduplicated,logistic_regression,3,Irritability,0.0175653595
+diabetes,deduplicated,logistic_regression,3,delayed healing,0.022875817
+diabetes,deduplicated,logistic_regression,3,partial paresis,0.0619893791
+diabetes,deduplicated,logistic_regression,3,muscle stiffness,0.0
+diabetes,deduplicated,logistic_regression,3,Alopecia,0.0130718954
+diabetes,deduplicated,logistic_regression,3,Obesity,-0.0065359477
+diabetes,deduplicated,logistic_regression,3,Gender,0.1075367647
+diabetes,deduplicated,logistic_regression,4,Age,0.0
+diabetes,deduplicated,logistic_regression,4,Polyuria,0.1198937908
+diabetes,deduplicated,logistic_regression,4,Polydipsia,0.0919117647
+diabetes,deduplicated,logistic_regression,4,sudden weight loss,0.0084763072
+diabetes,deduplicated,logistic_regression,4,weakness,0.0
+diabetes,deduplicated,logistic_regression,4,Polyphagia,-0.0260416667
+diabetes,deduplicated,logistic_regression,4,Genital thrush,0.0052083333
+diabetes,deduplicated,logistic_regression,4,visual blurring,0.0104166667
+diabetes,deduplicated,logistic_regression,4,Itching,0.0
+diabetes,deduplicated,logistic_regression,4,Irritability,0.0
+diabetes,deduplicated,logistic_regression,4,delayed healing,0.0
+diabetes,deduplicated,logistic_regression,4,partial paresis,-0.0188929739
+diabetes,deduplicated,logistic_regression,4,muscle stiffness,0.0
+diabetes,deduplicated,logistic_regression,4,Alopecia,0.0
+diabetes,deduplicated,logistic_regression,4,Obesity,0.0
+diabetes,deduplicated,logistic_regression,4,Gender,0.042994281
+diabetes,baseline,decision_tree,0,Age,-0.0128205128
+diabetes,baseline,decision_tree,0,Polyuria,0.3048878205
+diabetes,baseline,decision_tree,0,Polydipsia,0.0857371795
+diabetes,baseline,decision_tree,0,sudden weight loss,0.0
+diabetes,baseline,decision_tree,0,weakness,0.0
+diabetes,baseline,decision_tree,0,Polyphagia,0.0
+diabetes,baseline,decision_tree,0,Genital thrush,0.0
+diabetes,baseline,decision_tree,0,visual blurring,0.0
+diabetes,baseline,decision_tree,0,Itching,0.0
+diabetes,baseline,decision_tree,0,Irritability,0.0
+diabetes,baseline,decision_tree,0,delayed healing,0.0
+diabetes,baseline,decision_tree,0,partial paresis,0.0
+diabetes,baseline,decision_tree,0,muscle stiffness,-0.0032051282
+diabetes,baseline,decision_tree,0,Alopecia,0.1037660256
+diabetes,baseline,decision_tree,0,Obesity,0.0
+diabetes,baseline,decision_tree,0,Gender,0.1241987179
+diabetes,baseline,decision_tree,1,Age,0.0163398693
+diabetes,baseline,decision_tree,1,Polyuria,0.280126634
+diabetes,baseline,decision_tree,1,Polydipsia,0.1205065359
+diabetes,baseline,decision_tree,1,sudden weight loss,0.0
+diabetes,baseline,decision_tree,1,weakness,0.0
+diabetes,baseline,decision_tree,1,Polyphagia,0.0
+diabetes,baseline,decision_tree,1,Genital thrush,0.0
+diabetes,baseline,decision_tree,1,visual blurring,0.0
+diabetes,baseline,decision_tree,1,Itching,0.0
+diabetes,baseline,decision_tree,1,Irritability,0.0
+diabetes,baseline,decision_tree,1,delayed healing,0.0
+diabetes,baseline,decision_tree,1,partial paresis,0.0
+diabetes,baseline,decision_tree,1,muscle stiffness,0.0339052288
+diabetes,baseline,decision_tree,1,Alopecia,-0.0098039216
+diabetes,baseline,decision_tree,1,Obesity,0.0
+diabetes,baseline,decision_tree,1,Gender,0.1341911765
+diabetes,baseline,decision_tree,2,Age,0.0032679739
+diabetes,baseline,decision_tree,2,Polyuria,0.2554125817
+diabetes,baseline,decision_tree,2,Polydipsia,0.2735906863
+diabetes,baseline,decision_tree,2,sudden weight loss,0.0
+diabetes,baseline,decision_tree,2,weakness,0.0
+diabetes,baseline,decision_tree,2,Polyphagia,0.0
+diabetes,baseline,decision_tree,2,Genital thrush,0.0
+diabetes,baseline,decision_tree,2,visual blurring,0.0
+diabetes,baseline,decision_tree,2,Itching,0.0
+diabetes,baseline,decision_tree,2,Irritability,0.0
+diabetes,baseline,decision_tree,2,delayed healing,0.0
+diabetes,baseline,decision_tree,2,partial paresis,0.0
+diabetes,baseline,decision_tree,2,muscle stiffness,0.0065359477
+diabetes,baseline,decision_tree,2,Alopecia,0.0639297386
+diabetes,baseline,decision_tree,2,Obesity,0.0
+diabetes,baseline,decision_tree,2,Gender,0.1259191176
+diabetes,baseline,decision_tree,3,Age,0.0065359477
+diabetes,baseline,decision_tree,3,Polyuria,0.102124183
+diabetes,baseline,decision_tree,3,Polydipsia,0.0884395425
+diabetes,baseline,decision_tree,3,sudden weight loss,0.0
+diabetes,baseline,decision_tree,3,weakness,0.0
+diabetes,baseline,decision_tree,3,Polyphagia,0.0
+diabetes,baseline,decision_tree,3,Genital thrush,0.0
+diabetes,baseline,decision_tree,3,visual blurring,0.0
+diabetes,baseline,decision_tree,3,Itching,0.0
+diabetes,baseline,decision_tree,3,Irritability,0.0
+diabetes,baseline,decision_tree,3,delayed healing,0.0
+diabetes,baseline,decision_tree,3,partial paresis,0.0065359477
+diabetes,baseline,decision_tree,3,muscle stiffness,0.0
+diabetes,baseline,decision_tree,3,Alopecia,0.0483047386
+diabetes,baseline,decision_tree,3,Obesity,0.0
+diabetes,baseline,decision_tree,3,Gender,0.1466503268
+diabetes,baseline,decision_tree,4,Age,0.0702614379
+diabetes,baseline,decision_tree,4,Polyuria,0.2709354575
+diabetes,baseline,decision_tree,4,Polydipsia,0.2116013072
+diabetes,baseline,decision_tree,4,sudden weight loss,0.0
+diabetes,baseline,decision_tree,4,weakness,0.0
+diabetes,baseline,decision_tree,4,Polyphagia,0.0
+diabetes,baseline,decision_tree,4,Genital thrush,0.0
+diabetes,baseline,decision_tree,4,visual blurring,0.0
+diabetes,baseline,decision_tree,4,Itching,0.0
+diabetes,baseline,decision_tree,4,Irritability,0.0
+diabetes,baseline,decision_tree,4,delayed healing,0.0
+diabetes,baseline,decision_tree,4,partial paresis,0.0
+diabetes,baseline,decision_tree,4,muscle stiffness,-0.0078635621
+diabetes,baseline,decision_tree,4,Alopecia,0.058619281
+diabetes,baseline,decision_tree,4,Obesity,0.0
+diabetes,baseline,decision_tree,4,Gender,0.0286968954
+diabetes,baseline,random_forest,0,Age,-0.0384615385
+diabetes,baseline,random_forest,0,Polyuria,0.1967147436
+diabetes,baseline,random_forest,0,Polydipsia,0.203125
+diabetes,baseline,random_forest,0,sudden weight loss,0.0412660256
+diabetes,baseline,random_forest,0,weakness,0.0
+diabetes,baseline,random_forest,0,Polyphagia,0.0084134615
+diabetes,baseline,random_forest,0,Genital thrush,0.0
+diabetes,baseline,random_forest,0,visual blurring,-0.0120192308
+diabetes,baseline,random_forest,0,Itching,0.0520833333
+diabetes,baseline,random_forest,0,Irritability,0.0096153846
+diabetes,baseline,random_forest,0,delayed healing,0.0
+diabetes,baseline,random_forest,0,partial paresis,-0.0288461538
+diabetes,baseline,random_forest,0,muscle stiffness,0.0
+diabetes,baseline,random_forest,0,Alopecia,0.0877403846
+diabetes,baseline,random_forest,0,Obesity,0.0
+diabetes,baseline,random_forest,0,Gender,0.0637019231
+diabetes,baseline,random_forest,1,Age,0.0462622549
+diabetes,baseline,random_forest,1,Polyuria,0.2468341503
+diabetes,baseline,random_forest,1,Polydipsia,0.1901552288
+diabetes,baseline,random_forest,1,sudden weight loss,0.0410539216
+diabetes,baseline,random_forest,1,weakness,0.0
+diabetes,baseline,random_forest,1,Polyphagia,0.03125
+diabetes,baseline,random_forest,1,Genital thrush,0.0098039216
+diabetes,baseline,random_forest,1,visual blurring,0.015625
+diabetes,baseline,random_forest,1,Itching,0.03125
+diabetes,baseline,random_forest,1,Irritability,0.0339052288
+diabetes,baseline,random_forest,1,delayed healing,0.0293096405
+diabetes,baseline,random_forest,1,partial paresis,0.0
+diabetes,baseline,random_forest,1,muscle stiffness,0.0208333333
+diabetes,baseline,random_forest,1,Alopecia,0.0084763072
+diabetes,baseline,random_forest,1,Obesity,0.0163398693
+diabetes,baseline,random_forest,1,Gender,0.1126429739
+diabetes,baseline,random_forest,2,Age,0.0163398693
+diabetes,baseline,random_forest,2,Polyuria,0.2246732026
+diabetes,baseline,random_forest,2,Polydipsia,0.2513276144
+diabetes,baseline,random_forest,2,sudden weight loss,0.0
+diabetes,baseline,random_forest,2,weakness,0.0
+diabetes,baseline,random_forest,2,Polyphagia,0.0
+diabetes,baseline,random_forest,2,Genital thrush,0.0
+diabetes,baseline,random_forest,2,visual blurring,0.0326797386
+diabetes,baseline,random_forest,2,Itching,0.0
+diabetes,baseline,random_forest,2,Irritability,0.0
+diabetes,baseline,random_forest,2,delayed healing,0.015625
+diabetes,baseline,random_forest,2,partial paresis,0.046875
+diabetes,baseline,random_forest,2,muscle stiffness,0.0
+diabetes,baseline,random_forest,2,Alopecia,0.03125
+diabetes,baseline,random_forest,2,Obesity,0.0
+diabetes,baseline,random_forest,2,Gender,0.1128472222
+diabetes,baseline,random_forest,3,Age,0.0
+diabetes,baseline,random_forest,3,Polyuria,0.1053921569
+diabetes,baseline,random_forest,3,Polydipsia,0.0909926471
+diabetes,baseline,random_forest,3,sudden weight loss,-0.0032679739
+diabetes,baseline,random_forest,3,weakness,0.0
+diabetes,baseline,random_forest,3,Polyphagia,0.0
+diabetes,baseline,random_forest,3,Genital thrush,0.0
+diabetes,baseline,random_forest,3,visual blurring,0.0
+diabetes,baseline,random_forest,3,Itching,0.0
+diabetes,baseline,random_forest,3,Irritability,0.0260416667
+diabetes,baseline,random_forest,3,delayed healing,0.0
+diabetes,baseline,random_forest,3,partial paresis,0.0260416667
+diabetes,baseline,random_forest,3,muscle stiffness,0.0
+diabetes,baseline,random_forest,3,Alopecia,0.0221609477
+diabetes,baseline,random_forest,3,Obesity,0.0123570261
+diabetes,baseline,random_forest,3,Gender,0.1264297386
+diabetes,baseline,random_forest,4,Age,0.0052083333
+diabetes,baseline,random_forest,4,Polyuria,0.2350898693
+diabetes,baseline,random_forest,4,Polydipsia,0.2474468954
+diabetes,baseline,random_forest,4,sudden weight loss,0.015625
+diabetes,baseline,random_forest,4,weakness,0.0
+diabetes,baseline,random_forest,4,Polyphagia,0.0208333333
+diabetes,baseline,random_forest,4,Genital thrush,0.0416666667
+diabetes,baseline,random_forest,4,visual blurring,0.0104166667
+diabetes,baseline,random_forest,4,Itching,0.0052083333
+diabetes,baseline,random_forest,4,Irritability,0.0104166667
+diabetes,baseline,random_forest,4,delayed healing,0.0104166667
+diabetes,baseline,random_forest,4,partial paresis,0.03125
+diabetes,baseline,random_forest,4,muscle stiffness,0.0104166667
+diabetes,baseline,random_forest,4,Alopecia,0.0221609477
+diabetes,baseline,random_forest,4,Obesity,0.015625
+diabetes,baseline,random_forest,4,Gender,0.0462622549
+diabetes,baseline,knn,0,Age,-0.016025641
+diabetes,baseline,knn,0,Polyuria,0.0196314103
+diabetes,baseline,knn,0,Polydipsia,-0.0100160256
+diabetes,baseline,knn,0,sudden weight loss,0.0268429487
+diabetes,baseline,knn,0,weakness,0.0096153846
+diabetes,baseline,knn,0,Polyphagia,-0.0064102564
+diabetes,baseline,knn,0,Genital thrush,0.0
+diabetes,baseline,knn,0,visual blurring,-0.0416666667
+diabetes,baseline,knn,0,Itching,0.0360576923
+diabetes,baseline,knn,0,Irritability,-0.0096153846
+diabetes,baseline,knn,0,delayed healing,0.0072115385
+diabetes,baseline,knn,0,partial paresis,-0.0096153846
+diabetes,baseline,knn,0,muscle stiffness,-0.016025641
+diabetes,baseline,knn,0,Alopecia,0.0256410256
+diabetes,baseline,knn,0,Obesity,-0.016025641
+diabetes,baseline,knn,0,Gender,0.078125
+diabetes,baseline,knn,1,Age,-0.0110294118
+diabetes,baseline,knn,1,Polyuria,0.0358455882
+diabetes,baseline,knn,1,Polydipsia,-0.019505719
+diabetes,baseline,knn,1,sudden weight loss,0.007250817
+diabetes,baseline,knn,1,weakness,-0.0032679739
+diabetes,baseline,knn,1,Polyphagia,-0.0247140523
+diabetes,baseline,knn,1,Genital thrush,-0.0065359477
+diabetes,baseline,knn,1,visual blurring,0.0130718954
+diabetes,baseline,knn,1,Itching,-0.0116421569
+diabetes,baseline,knn,1,Irritability,0.0098039216
+diabetes,baseline,knn,1,delayed healing,0.0039828431
+diabetes,baseline,knn,1,partial paresis,-0.0149101307
+diabetes,baseline,knn,1,muscle stiffness,0.0294117647
+diabetes,baseline,knn,1,Alopecia,0.0006127451
+diabetes,baseline,knn,1,Obesity,0.0065359477
+diabetes,baseline,knn,1,Gender,0.1310253268
+diabetes,baseline,knn,2,Age,0.0196078431
+diabetes,baseline,knn,2,Polyuria,0.0392156863
+diabetes,baseline,knn,2,Polydipsia,0.1466503268
+diabetes,baseline,knn,2,sudden weight loss,0.0130718954
+diabetes,baseline,knn,2,weakness,0.0559640523
+diabetes,baseline,knn,2,Polyphagia,0.0065359477
+diabetes,baseline,knn,2,Genital thrush,0.0110294118
+diabetes,baseline,knn,2,visual blurring,0.0163398693
+diabetes,baseline,knn,2,Itching,0.0364583333
+diabetes,baseline,knn,2,Irritability,0.0065359477
+diabetes,baseline,knn,2,delayed healing,0.0299223856
+diabetes,baseline,knn,2,partial paresis,0.022875817
+diabetes,baseline,knn,2,muscle stiffness,0.022875817
+diabetes,baseline,knn,2,Alopecia,0.0163398693
+diabetes,baseline,knn,2,Obesity,0.0032679739
+diabetes,baseline,knn,2,Gender,0.1225490196
+diabetes,baseline,knn,3,Age,-0.0052083333
+diabetes,baseline,knn,3,Polyuria,0.0508578431
+diabetes,baseline,knn,3,Polydipsia,0.019505719
+diabetes,baseline,knn,3,sudden weight loss,-0.0032679739
+diabetes,baseline,knn,3,weakness,-0.03125
+diabetes,baseline,knn,3,Polyphagia,-0.0032679739
+diabetes,baseline,knn,3,Genital thrush,0.0
+diabetes,baseline,knn,3,visual blurring,-0.0142973856
+diabetes,baseline,knn,3,Itching,-0.0098039216
+diabetes,baseline,knn,3,Irritability,0.0
+diabetes,baseline,knn,3,delayed healing,0.0422794118
+diabetes,baseline,knn,3,partial paresis,0.0091911765
+diabetes,baseline,knn,3,muscle stiffness,0.0065359477
+diabetes,baseline,knn,3,Alopecia,0.0326797386
+diabetes,baseline,knn,3,Obesity,0.0
+diabetes,baseline,knn,3,Gender,0.1773897059
+diabetes,baseline,knn,4,Age,0.0097017974
+diabetes,baseline,knn,4,Polyuria,0.1069240196
+diabetes,baseline,knn,4,Polydipsia,0.1270424837
+diabetes,baseline,knn,4,sudden weight loss,0.0423815359
+diabetes,baseline,knn,4,weakness,-0.0130718954
+diabetes,baseline,knn,4,Polyphagia,0.0208333333
+diabetes,baseline,knn,4,Genital thrush,0.035130719
+diabetes,baseline,knn,4,visual blurring,0.003880719
+diabetes,baseline,knn,4,Itching,0.1041666667
+diabetes,baseline,knn,4,Irritability,0.011744281
+diabetes,baseline,knn,4,delayed healing,0.0715890523
+diabetes,baseline,knn,4,partial paresis,0.0032679739
+diabetes,baseline,knn,4,muscle stiffness,0.0494281046
+diabetes,baseline,knn,4,Alopecia,-0.0032679739
+diabetes,baseline,knn,4,Obesity,-0.0045955882
+diabetes,baseline,knn,4,Gender,0.0625
+stroke,baseline,logistic_regression,0,age,0.1254788157
+stroke,baseline,logistic_regression,0,avg_glucose_level,-0.0070980143
+stroke,baseline,logistic_regression,0,bmi,0.0020672324
+stroke,baseline,logistic_regression,0,hypertension,-0.003761061
+stroke,baseline,logistic_regression,0,heart_disease,-0.0109728937
+stroke,baseline,logistic_regression,0,ever_married,-0.007591939
+stroke,baseline,logistic_regression,0,gender,-0.0008911644
+stroke,baseline,logistic_regression,0,work_type,0.0063005398
+stroke,baseline,logistic_regression,0,Residence_type,-0.0002154213
+stroke,baseline,logistic_regression,0,smoking_status,-0.0025199819
+stroke,baseline,logistic_regression,1,age,0.1658785323
+stroke,baseline,logistic_regression,1,avg_glucose_level,0.0126394819
+stroke,baseline,logistic_regression,1,bmi,-0.0049962577
+stroke,baseline,logistic_regression,1,hypertension,0.0381592437
+stroke,baseline,logistic_regression,1,heart_disease,-0.0080769676
+stroke,baseline,logistic_regression,1,ever_married,0.0343996264
+stroke,baseline,logistic_regression,1,gender,-0.0013091434
+stroke,baseline,logistic_regression,1,work_type,0.020388958
+stroke,baseline,logistic_regression,1,Residence_type,-0.0032363098
+stroke,baseline,logistic_regression,1,smoking_status,0.0094697714
+stroke,baseline,logistic_regression,2,age,0.1246940938
+stroke,baseline,logistic_regression,2,avg_glucose_level,0.0254883047
+stroke,baseline,logistic_regression,2,bmi,-0.0158394711
+stroke,baseline,logistic_regression,2,hypertension,0.0087306867
+stroke,baseline,logistic_regression,2,heart_disease,-0.0023710883
+stroke,baseline,logistic_regression,2,ever_married,-0.0028587498
+stroke,baseline,logistic_regression,2,gender,0.0030353339
+stroke,baseline,logistic_regression,2,work_type,0.0064365129
+stroke,baseline,logistic_regression,2,Residence_type,-3.27821e-05
+stroke,baseline,logistic_regression,2,smoking_status,0.0049450331
+stroke,baseline,logistic_regression,3,age,0.0944416393
+stroke,baseline,logistic_regression,3,avg_glucose_level,0.0077518583
+stroke,baseline,logistic_regression,3,bmi,0.0003074506
+stroke,baseline,logistic_regression,3,hypertension,-0.019166958
+stroke,baseline,logistic_regression,3,heart_disease,0.0020544208
+stroke,baseline,logistic_regression,3,ever_married,-0.0102980838
+stroke,baseline,logistic_regression,3,gender,-7.62525e-05
+stroke,baseline,logistic_regression,3,work_type,-0.0018932159
+stroke,baseline,logistic_regression,3,Residence_type,0.001013916
+stroke,baseline,logistic_regression,3,smoking_status,-0.002228456
+stroke,baseline,logistic_regression,4,age,0.1482138697
+stroke,baseline,logistic_regression,4,avg_glucose_level,0.0022703633
+stroke,baseline,logistic_regression,4,bmi,-0.0043041079
+stroke,baseline,logistic_regression,4,hypertension,0.0155891706
+stroke,baseline,logistic_regression,4,heart_disease,0.0151351069
+stroke,baseline,logistic_regression,4,ever_married,0.0168950537
+stroke,baseline,logistic_regression,4,gender,0.0042679569
+stroke,baseline,logistic_regression,4,work_type,-0.0223689504
+stroke,baseline,logistic_regression,4,Residence_type,-0.0029951706
+stroke,baseline,logistic_regression,4,smoking_status,-0.0102610124
+stroke,mean,logistic_regression,0,age,0.1245969339
+stroke,mean,logistic_regression,0,avg_glucose_level,-0.0095318659
+stroke,mean,logistic_regression,0,bmi,0.0010762121
+stroke,mean,logistic_regression,0,hypertension,-0.0051305648
+stroke,mean,logistic_regression,0,heart_disease,-0.0119855375
+stroke,mean,logistic_regression,0,ever_married,-0.0074310975
+stroke,mean,logistic_regression,0,gender,-0.0013132539
+stroke,mean,logistic_regression,0,work_type,0.0037079414
+stroke,mean,logistic_regression,0,Residence_type,-0.0005255741
+stroke,mean,logistic_regression,0,smoking_status,-0.0039073312
+stroke,mean,logistic_regression,1,age,0.1657000005
+stroke,mean,logistic_regression,1,avg_glucose_level,0.0136125729
+stroke,mean,logistic_regression,1,bmi,-0.008042349
+stroke,mean,logistic_regression,1,hypertension,0.0381901061
+stroke,mean,logistic_regression,1,heart_disease,-0.0088260863
+stroke,mean,logistic_regression,1,ever_married,0.0343054809
+stroke,mean,logistic_regression,1,gender,-0.0002828955
+stroke,mean,logistic_regression,1,work_type,0.0194023766
+stroke,mean,logistic_regression,1,Residence_type,-0.0044773268
+stroke,mean,logistic_regression,1,smoking_status,0.0108632022
+stroke,mean,logistic_regression,2,age,0.1285589834
+stroke,mean,logistic_regression,2,avg_glucose_level,0.0293342993
+stroke,mean,logistic_regression,2,bmi,-0.0088099712
+stroke,mean,logistic_regression,2,hypertension,0.0122947029
+stroke,mean,logistic_regression,2,heart_disease,-0.0099074851
+stroke,mean,logistic_regression,2,ever_married,-0.0024661434
+stroke,mean,logistic_regression,2,gender,0.0043244918
+stroke,mean,logistic_regression,2,work_type,0.0099506451
+stroke,mean,logistic_regression,2,Residence_type,0.0024257565
+stroke,mean,logistic_regression,2,smoking_status,0.0067593339
+stroke,mean,logistic_regression,3,age,0.0931621906
+stroke,mean,logistic_regression,3,avg_glucose_level,0.0061884849
+stroke,mean,logistic_regression,3,bmi,-0.0002901991
+stroke,mean,logistic_regression,3,hypertension,-0.0197064789
+stroke,mean,logistic_regression,3,heart_disease,0.0019823543
+stroke,mean,logistic_regression,3,ever_married,-0.0106051614
+stroke,mean,logistic_regression,3,gender,-0.0007052154
+stroke,mean,logistic_regression,3,work_type,-0.0031243926
+stroke,mean,logistic_regression,3,Residence_type,0.0002918475
+stroke,mean,logistic_regression,3,smoking_status,-0.002705934
+stroke,mean,logistic_regression,4,age,0.1442807173
+stroke,mean,logistic_regression,4,avg_glucose_level,-0.0002740779
+stroke,mean,logistic_regression,4,bmi,-0.0116109454
+stroke,mean,logistic_regression,4,hypertension,0.0154209995
+stroke,mean,logistic_regression,4,heart_disease,0.0133142294
+stroke,mean,logistic_regression,4,ever_married,0.0152760207
+stroke,mean,logistic_regression,4,gender,0.0024526704
+stroke,mean,logistic_regression,4,work_type,-0.0243398838
+stroke,mean,logistic_regression,4,Residence_type,-0.0033399082
+stroke,mean,logistic_regression,4,smoking_status,-0.0128970557
+stroke,iqr_clip,logistic_regression,0,age,0.1178229085
+stroke,iqr_clip,logistic_regression,0,avg_glucose_level,-0.0117753896
+stroke,iqr_clip,logistic_regression,0,bmi,-0.0029509866
+stroke,iqr_clip,logistic_regression,0,hypertension,-0.002548664
+stroke,iqr_clip,logistic_regression,0,heart_disease,-0.0125713528
+stroke,iqr_clip,logistic_regression,0,ever_married,-0.0029229341
+stroke,iqr_clip,logistic_regression,0,gender,-0.0003991215
+stroke,iqr_clip,logistic_regression,0,work_type,0.0016380634
+stroke,iqr_clip,logistic_regression,0,Residence_type,-0.0010092015
+stroke,iqr_clip,logistic_regression,0,smoking_status,-0.0074725589
+stroke,iqr_clip,logistic_regression,1,age,0.1364684995
+stroke,iqr_clip,logistic_regression,1,avg_glucose_level,-0.0167030908
+stroke,iqr_clip,logistic_regression,1,bmi,-0.0155687769
+stroke,iqr_clip,logistic_regression,1,hypertension,0.015160468
+stroke,iqr_clip,logistic_regression,1,heart_disease,-0.0107635888
+stroke,iqr_clip,logistic_regression,1,ever_married,0.0143973991
+stroke,iqr_clip,logistic_regression,1,gender,-0.0034055908
+stroke,iqr_clip,logistic_regression,1,work_type,0.0103314605
+stroke,iqr_clip,logistic_regression,1,Residence_type,-0.0072850802
+stroke,iqr_clip,logistic_regression,1,smoking_status,0.0050814001
+stroke,iqr_clip,logistic_regression,2,age,0.125867541
+stroke,iqr_clip,logistic_regression,2,avg_glucose_level,0.0264618756
+stroke,iqr_clip,logistic_regression,2,bmi,-0.0101802041
+stroke,iqr_clip,logistic_regression,2,hypertension,0.0142239043
+stroke,iqr_clip,logistic_regression,2,heart_disease,-0.0110120622
+stroke,iqr_clip,logistic_regression,2,ever_married,0.008458288
+stroke,iqr_clip,logistic_regression,2,gender,0.0029979395
+stroke,iqr_clip,logistic_regression,2,work_type,0.0101515512
+stroke,iqr_clip,logistic_regression,2,Residence_type,-0.0006737427
+stroke,iqr_clip,logistic_regression,2,smoking_status,0.0095162584
+stroke,iqr_clip,logistic_regression,3,age,0.0946243103
+stroke,iqr_clip,logistic_regression,3,avg_glucose_level,0.0084795074
+stroke,iqr_clip,logistic_regression,3,bmi,-4.71201e-05
+stroke,iqr_clip,logistic_regression,3,hypertension,-0.0195498591
+stroke,iqr_clip,logistic_regression,3,heart_disease,0.0025357888
+stroke,iqr_clip,logistic_regression,3,ever_married,-0.0097620466
+stroke,iqr_clip,logistic_regression,3,gender,0.0004617371
+stroke,iqr_clip,logistic_regression,3,work_type,-0.0015824234
+stroke,iqr_clip,logistic_regression,3,Residence_type,0.0010107391
+stroke,iqr_clip,logistic_regression,3,smoking_status,-0.0027023719
+stroke,iqr_clip,logistic_regression,4,age,0.1523224874
+stroke,iqr_clip,logistic_regression,4,avg_glucose_level,0.011487829
+stroke,iqr_clip,logistic_regression,4,bmi,-0.023885464
+stroke,iqr_clip,logistic_regression,4,hypertension,0.0167381011
+stroke,iqr_clip,logistic_regression,4,heart_disease,0.0104923018
+stroke,iqr_clip,logistic_regression,4,ever_married,0.0163148052
+stroke,iqr_clip,logistic_regression,4,gender,0.0012524902
+stroke,iqr_clip,logistic_regression,4,work_type,-0.0221958486
+stroke,iqr_clip,logistic_regression,4,Residence_type,-0.0054079305
+stroke,iqr_clip,logistic_regression,4,smoking_status,-0.01193833
+stroke,smoking_explicit,logistic_regression,0,age,0.1224301143
+stroke,smoking_explicit,logistic_regression,0,avg_glucose_level,-0.0093987166
+stroke,smoking_explicit,logistic_regression,0,bmi,-0.0006415254
+stroke,smoking_explicit,logistic_regression,0,hypertension,-0.0060600382
+stroke,smoking_explicit,logistic_regression,0,heart_disease,-0.0125204067
+stroke,smoking_explicit,logistic_regression,0,ever_married,-0.004066079
+stroke,smoking_explicit,logistic_regression,0,gender,-0.0018448753
+stroke,smoking_explicit,logistic_regression,0,work_type,0.0033949843
+stroke,smoking_explicit,logistic_regression,0,Residence_type,-0.0006877747
+stroke,smoking_explicit,logistic_regression,0,smoking_status,-0.0008209696
+stroke,smoking_explicit,logistic_regression,1,age,0.1678779432
+stroke,smoking_explicit,logistic_regression,1,avg_glucose_level,0.0146448156
+stroke,smoking_explicit,logistic_regression,1,bmi,-0.0058039476
+stroke,smoking_explicit,logistic_regression,1,hypertension,0.0404205918
+stroke,smoking_explicit,logistic_regression,1,heart_disease,-0.0077785937
+stroke,smoking_explicit,logistic_regression,1,ever_married,0.0373333489
+stroke,smoking_explicit,logistic_regression,1,gender,0.0006284623
+stroke,smoking_explicit,logistic_regression,1,work_type,0.0250286318
+stroke,smoking_explicit,logistic_regression,1,Residence_type,-0.000325124
+stroke,smoking_explicit,logistic_regression,1,smoking_status,0.011710773
+stroke,smoking_explicit,logistic_regression,2,age,0.1229632249
+stroke,smoking_explicit,logistic_regression,2,avg_glucose_level,0.0232027542
+stroke,smoking_explicit,logistic_regression,2,bmi,-0.0171906265
+stroke,smoking_explicit,logistic_regression,2,hypertension,0.0077606278
+stroke,smoking_explicit,logistic_regression,2,heart_disease,-0.0015568416
+stroke,smoking_explicit,logistic_regression,2,ever_married,0.0046418862
+stroke,smoking_explicit,logistic_regression,2,gender,0.0014307467
+stroke,smoking_explicit,logistic_regression,2,work_type,0.0041440454
+stroke,smoking_explicit,logistic_regression,2,Residence_type,0.0004302146
+stroke,smoking_explicit,logistic_regression,2,smoking_status,0.0009136788
+stroke,smoking_explicit,logistic_regression,3,age,0.094743845
+stroke,smoking_explicit,logistic_regression,3,avg_glucose_level,0.0068633921
+stroke,smoking_explicit,logistic_regression,3,bmi,-0.0007312543
+stroke,smoking_explicit,logistic_regression,3,hypertension,-0.0191024335
+stroke,smoking_explicit,logistic_regression,3,heart_disease,0.0020733281
+stroke,smoking_explicit,logistic_regression,3,ever_married,-0.011823772
+stroke,smoking_explicit,logistic_regression,3,gender,-0.0005423838
+stroke,smoking_explicit,logistic_regression,3,work_type,-0.002754508
+stroke,smoking_explicit,logistic_regression,3,Residence_type,0.0003018032
+stroke,smoking_explicit,logistic_regression,3,smoking_status,-0.001109668
+stroke,smoking_explicit,logistic_regression,4,age,0.147956604
+stroke,smoking_explicit,logistic_regression,4,avg_glucose_level,-0.0022941788
+stroke,smoking_explicit,logistic_regression,4,bmi,-0.0084983264
+stroke,smoking_explicit,logistic_regression,4,hypertension,0.0147373536
+stroke,smoking_explicit,logistic_regression,4,heart_disease,0.0089418286
+stroke,smoking_explicit,logistic_regression,4,ever_married,0.0163058338
+stroke,smoking_explicit,logistic_regression,4,gender,0.0022723769
+stroke,smoking_explicit,logistic_regression,4,work_type,-0.0245224636
+stroke,smoking_explicit,logistic_regression,4,Residence_type,-0.0024704823
+stroke,smoking_explicit,logistic_regression,4,smoking_status,-0.0134995211
+stroke,baseline,decision_tree,0,age,0.0846951853
+stroke,baseline,decision_tree,0,avg_glucose_level,0.0142080444
+stroke,baseline,decision_tree,0,bmi,-0.0140059602
+stroke,baseline,decision_tree,0,hypertension,0.0010510476
+stroke,baseline,decision_tree,0,heart_disease,0.0
+stroke,baseline,decision_tree,0,ever_married,0.0
+stroke,baseline,decision_tree,0,gender,0.0
+stroke,baseline,decision_tree,0,work_type,0.0
+stroke,baseline,decision_tree,0,Residence_type,0.0
+stroke,baseline,decision_tree,0,smoking_status,0.0
+stroke,baseline,decision_tree,1,age,0.1232393466
+stroke,baseline,decision_tree,1,avg_glucose_level,-0.0006724909
+stroke,baseline,decision_tree,1,bmi,0.0265616378
+stroke,baseline,decision_tree,1,hypertension,0.0049362129
+stroke,baseline,decision_tree,1,heart_disease,-0.0041532554
+stroke,baseline,decision_tree,1,ever_married,0.0
+stroke,baseline,decision_tree,1,gender,0.0
+stroke,baseline,decision_tree,1,work_type,0.0
+stroke,baseline,decision_tree,1,Residence_type,0.0
+stroke,baseline,decision_tree,1,smoking_status,0.0
+stroke,baseline,decision_tree,2,age,0.0692626434
+stroke,baseline,decision_tree,2,avg_glucose_level,0.0031260731
+stroke,baseline,decision_tree,2,bmi,-0.0018458282
+stroke,baseline,decision_tree,2,hypertension,0.017191618
+stroke,baseline,decision_tree,2,heart_disease,0.0
+stroke,baseline,decision_tree,2,ever_married,0.0047275641
+stroke,baseline,decision_tree,2,gender,0.0
+stroke,baseline,decision_tree,2,work_type,-0.0006493212
+stroke,baseline,decision_tree,2,Residence_type,0.0
+stroke,baseline,decision_tree,2,smoking_status,0.0
+stroke,baseline,decision_tree,3,age,0.0916241945
+stroke,baseline,decision_tree,3,avg_glucose_level,0.0168653113
+stroke,baseline,decision_tree,3,bmi,0.007131396
+stroke,baseline,decision_tree,3,hypertension,-0.0093198626
+stroke,baseline,decision_tree,3,heart_disease,0.0
+stroke,baseline,decision_tree,3,ever_married,-0.0035127266
+stroke,baseline,decision_tree,3,gender,0.0
+stroke,baseline,decision_tree,3,work_type,-0.0003224974
+stroke,baseline,decision_tree,3,Residence_type,0.0
+stroke,baseline,decision_tree,3,smoking_status,0.0
+stroke,baseline,decision_tree,4,age,0.1062868289
+stroke,baseline,decision_tree,4,avg_glucose_level,0.0021189261
+stroke,baseline,decision_tree,4,bmi,-0.0065771888
+stroke,baseline,decision_tree,4,hypertension,0.0044487824
+stroke,baseline,decision_tree,4,heart_disease,0.0
+stroke,baseline,decision_tree,4,ever_married,0.0
+stroke,baseline,decision_tree,4,gender,0.0
+stroke,baseline,decision_tree,4,work_type,-0.0131466039
+stroke,baseline,decision_tree,4,Residence_type,0.0
+stroke,baseline,decision_tree,4,smoking_status,0.0
+stroke,baseline,random_forest,0,age,0.0920473062
+stroke,baseline,random_forest,0,avg_glucose_level,0.0009234375
+stroke,baseline,random_forest,0,bmi,-0.0059770083
+stroke,baseline,random_forest,0,hypertension,-0.0200981497
+stroke,baseline,random_forest,0,heart_disease,0.0081238457
+stroke,baseline,random_forest,0,ever_married,0.011767325
+stroke,baseline,random_forest,0,gender,0.0111792983
+stroke,baseline,random_forest,0,work_type,-0.0019651453
+stroke,baseline,random_forest,0,Residence_type,-0.0575646022
+stroke,baseline,random_forest,0,smoking_status,-0.0056059932
+stroke,baseline,random_forest,1,age,0.1536336548
+stroke,baseline,random_forest,1,avg_glucose_level,0.0302121282
+stroke,baseline,random_forest,1,bmi,0.0422293789
+stroke,baseline,random_forest,1,hypertension,0.0226594754
+stroke,baseline,random_forest,1,heart_disease,-0.0160270692
+stroke,baseline,random_forest,1,ever_married,0.0359608356
+stroke,baseline,random_forest,1,gender,0.0070614524
+stroke,baseline,random_forest,1,work_type,0.0077216465
+stroke,baseline,random_forest,1,Residence_type,-0.013267989
+stroke,baseline,random_forest,1,smoking_status,-0.0144714282
+stroke,baseline,random_forest,2,age,0.0978764749
+stroke,baseline,random_forest,2,avg_glucose_level,-0.0182362088
+stroke,baseline,random_forest,2,bmi,0.0152635551
+stroke,baseline,random_forest,2,hypertension,-0.0017510449
+stroke,baseline,random_forest,2,heart_disease,0.0070511968
+stroke,baseline,random_forest,2,ever_married,0.017923294
+stroke,baseline,random_forest,2,gender,-0.003022255
+stroke,baseline,random_forest,2,work_type,-0.0056773018
+stroke,baseline,random_forest,2,Residence_type,-0.007728162
+stroke,baseline,random_forest,2,smoking_status,-0.0112119043
+stroke,baseline,random_forest,3,age,0.0798558442
+stroke,baseline,random_forest,3,avg_glucose_level,0.0177044931
+stroke,baseline,random_forest,3,bmi,0.0205723261
+stroke,baseline,random_forest,3,hypertension,-0.0069103511
+stroke,baseline,random_forest,3,heart_disease,0.0119869815
+stroke,baseline,random_forest,3,ever_married,0.0094459074
+stroke,baseline,random_forest,3,gender,-0.000785574
+stroke,baseline,random_forest,3,work_type,-0.0005327447
+stroke,baseline,random_forest,3,Residence_type,-0.0005478742
+stroke,baseline,random_forest,3,smoking_status,0.0138645329
+stroke,baseline,random_forest,4,age,0.1256734714
+stroke,baseline,random_forest,4,avg_glucose_level,0.0098651858
+stroke,baseline,random_forest,4,bmi,-0.0114045627
+stroke,baseline,random_forest,4,hypertension,0.0326471717
+stroke,baseline,random_forest,4,heart_disease,0.0212492024
+stroke,baseline,random_forest,4,ever_married,0.0235234744
+stroke,baseline,random_forest,4,gender,-0.0056884979
+stroke,baseline,random_forest,4,work_type,0.0037400617
+stroke,baseline,random_forest,4,Residence_type,0.0234361643
+stroke,baseline,random_forest,4,smoking_status,0.0091782747
+stroke,baseline,knn,0,age,0.0501874133
+stroke,baseline,knn,0,avg_glucose_level,0.0053410561
+stroke,baseline,knn,0,bmi,0.0097994615
+stroke,baseline,knn,0,hypertension,-0.0152148229
+stroke,baseline,knn,0,heart_disease,0.0069857803
+stroke,baseline,knn,0,ever_married,0.010929452
+stroke,baseline,knn,0,gender,0.0153201773
+stroke,baseline,knn,0,work_type,0.0149789725
+stroke,baseline,knn,0,Residence_type,-0.0150562725
+stroke,baseline,knn,0,smoking_status,0.0013128354
+stroke,baseline,knn,1,age,0.0793199554
+stroke,baseline,knn,1,avg_glucose_level,0.0155415232
+stroke,baseline,knn,1,bmi,0.0298192165
+stroke,baseline,knn,1,hypertension,-0.0010721838
+stroke,baseline,knn,1,heart_disease,-0.0022798972
+stroke,baseline,knn,1,ever_married,0.0135458612
+stroke,baseline,knn,1,gender,0.0094982103
+stroke,baseline,knn,1,work_type,-0.0219509062
+stroke,baseline,knn,1,Residence_type,0.0128067995
+stroke,baseline,knn,1,smoking_status,-0.0249151234
+stroke,baseline,knn,2,age,0.0564519679
+stroke,baseline,knn,2,avg_glucose_level,0.0048003993
+stroke,baseline,knn,2,bmi,0.0007898827
+stroke,baseline,knn,2,hypertension,-0.0107367764
+stroke,baseline,knn,2,heart_disease,0.0157348807
+stroke,baseline,knn,2,ever_married,0.0080485257
+stroke,baseline,knn,2,gender,0.0085426433
+stroke,baseline,knn,2,work_type,-0.0142368152
+stroke,baseline,knn,2,Residence_type,0.004635231
+stroke,baseline,knn,2,smoking_status,0.0072201062
+stroke,baseline,knn,3,age,0.0340575009
+stroke,baseline,knn,3,avg_glucose_level,-0.0308730697
+stroke,baseline,knn,3,bmi,-0.0164823419
+stroke,baseline,knn,3,hypertension,-0.0167253792
+stroke,baseline,knn,3,heart_disease,0.0130296027
+stroke,baseline,knn,3,ever_married,0.0053110915
+stroke,baseline,knn,3,gender,-0.0027458509
+stroke,baseline,knn,3,work_type,-0.0099107542
+stroke,baseline,knn,3,Residence_type,-0.012689277
+stroke,baseline,knn,3,smoking_status,0.025242332
+stroke,baseline,knn,4,age,0.0625737688
+stroke,baseline,knn,4,avg_glucose_level,1.4718e-05
+stroke,baseline,knn,4,bmi,-0.0175438445
+stroke,baseline,knn,4,hypertension,-0.0001597942
+stroke,baseline,knn,4,heart_disease,0.0304413588
+stroke,baseline,knn,4,ever_married,0.0053379682
+stroke,baseline,knn,4,gender,-0.0217985458
+stroke,baseline,knn,4,work_type,-0.0136034624
+stroke,baseline,knn,4,Residence_type,0.0250187495
+stroke,baseline,knn,4,smoking_status,0.0038935765

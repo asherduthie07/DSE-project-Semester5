@@ -8,5 +8,6 @@ export const routes: Routes = [
   {path: 'models', title: 'ML Laboratory', loadComponent: () => import('./pages/models').then(m => m.ModelsPage)},
   {path: 'big-data', title: 'Big Data Monitor', loadComponent: () => import('./pages/bigdata').then(m => m.BigDataPage)},
   {path: 'research', title: 'Research & Reports', loadComponent: () => import('./pages/research').then(m => m.ResearchPage)},
+  {path: 'research-lab', title: 'Research Laboratory', loadComponent: () => import('./pages/research-lab').then(m => m.ResearchLabPage)},
   {path: '**', redirectTo: 'command-center'}
 ];

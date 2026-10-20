@@ -12,7 +12,7 @@ from fastapi.responses import JSONResponse
 from backend.app.core.config import Settings
 from backend.app.core.errors import APIError
 from backend.app.middleware.access import access_log
-from backend.app.routers import analytics, bigdata, datasets, models, predictions, reports, system
+from backend.app.routers import analytics, bigdata, datasets, models, predictions, reports, research_lab, system
 from backend.app.services.container import Services
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s %(message)s")
@@ -37,7 +37,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.add_middleware(CORSMiddleware, allow_origins=list(config.cors_origins), allow_credentials=False,
                        allow_methods=["GET", "POST"], allow_headers=["Content-Type"])
     app.middleware("http")(access_log)
-    for router in (system.router, datasets.router, analytics.router, models.router, predictions.router, bigdata.router, reports.router):
+    for router in (system.router, datasets.router, analytics.router, models.router, predictions.router, bigdata.router, reports.router, research_lab.router):
         app.include_router(router, prefix="/api/v1")
 
     @app.exception_handler(APIError)

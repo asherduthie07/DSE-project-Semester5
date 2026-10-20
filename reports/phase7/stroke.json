@@ -1,0 +1,4788 @@
+{
+  "task": "stroke",
+  "dataset_id": "kaggle_stroke",
+  "source": {
+    "prepared_sha256": "8031625058cfddb391e93633d50b9519775d796c7ad2e1000c813c359be9f1ed",
+    "raw_sha256": "83c150178a7a10439862a66b2703869aadc11f201c359436ae1df77d2b5e7485",
+    "rows": 5110,
+    "features": [
+      "age",
+      "avg_glucose_level",
+      "bmi",
+      "hypertension",
+      "heart_disease",
+      "ever_married",
+      "gender",
+      "work_type",
+      "Residence_type",
+      "smoking_status"
+    ],
+    "source_target": "stroke",
+    "positive_source": 1
+  },
+  "split_sha256": "76092b3c04ece2503acd83de6d558c5356c9593ff18455f389128e3faf4950fb",
+  "development_n": 4088,
+  "development_positive_n": 199,
+  "held_out_n_unaccessed": 1022,
+  "selected_phase4_model": "logistic_regression",
+  "phase4_threshold": 0.0698182314,
+  "comparisons": [
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2213438735,
+          "balanced_accuracy": 0.7311053985,
+          "precision": 0.1314553991,
+          "recall": 0.7,
+          "false_positive": 185,
+          "false_negative": 12,
+          "roc_auc": 0.828277635,
+          "average_precision": 0.1756040155,
+          "brier": 0.0432753009,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2755555556,
+          "balanced_accuracy": 0.7885282776,
+          "precision": 0.1675675676,
+          "recall": 0.775,
+          "false_positive": 154,
+          "false_negative": 9,
+          "roc_auc": 0.8555912596,
+          "average_precision": 0.2717286627,
+          "brier": 0.0411444571,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2260869565,
+          "balanced_accuracy": 0.7196015424,
+          "precision": 0.1368421053,
+          "recall": 0.65,
+          "false_positive": 164,
+          "false_negative": 14,
+          "roc_auc": 0.8318123393,
+          "average_precision": 0.1798696166,
+          "brier": 0.0434636428,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2466960352,
+          "balanced_accuracy": 0.7561465955,
+          "precision": 0.1489361702,
+          "recall": 0.7179487179,
+          "false_positive": 160,
+          "false_negative": 11,
+          "roc_auc": 0.8320809439,
+          "average_precision": 0.1409866503,
+          "brier": 0.0436429321,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2752293578,
+          "balanced_accuracy": 0.7797619048,
+          "precision": 0.1685393258,
+          "recall": 0.75,
+          "false_positive": 148,
+          "false_negative": 10,
+          "roc_auc": 0.8512226512,
+          "average_precision": 0.2044094422,
+          "brier": 0.042260407,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.248048569,
+        "balanced_accuracy": 0.7550280329,
+        "precision": 0.1498951782,
+        "recall": 0.7185929648,
+        "false_positive": 811,
+        "false_negative": 56,
+        "roc_auc": 0.8396624418,
+        "average_precision": 0.1721001781,
+        "brier": 0.0427572529
+      },
+      "fold_mean": {
+        "f1": 0.2489823557,
+        "balanced_accuracy": 0.7550287437,
+        "roc_auc": 0.8397969658,
+        "average_precision": 0.1945196775,
+        "brier": 0.042757348
+      },
+      "fold_sd": {
+        "f1": 0.0259246617,
+        "balanced_accuracy": 0.0298438045,
+        "roc_auc": 0.0126094433,
+        "average_precision": 0.0487269084,
+        "brier": 0.0010487795
+      }
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "mean",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.21875,
+          "balanced_accuracy": 0.7291773779,
+          "precision": 0.1296296296,
+          "recall": 0.7,
+          "false_positive": 188,
+          "false_negative": 12,
+          "roc_auc": 0.8284061697,
+          "average_precision": 0.1745164201,
+          "brier": 0.0432765793,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2755555556,
+          "balanced_accuracy": 0.7885282776,
+          "precision": 0.1675675676,
+          "recall": 0.775,
+          "false_positive": 154,
+          "false_negative": 9,
+          "roc_auc": 0.8550771208,
+          "average_precision": 0.2716255486,
+          "brier": 0.0411631312,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2337662338,
+          "balanced_accuracy": 0.7321015424,
+          "precision": 0.1413612565,
+          "recall": 0.675,
+          "false_positive": 164,
+          "false_negative": 13,
+          "roc_auc": 0.8317802057,
+          "average_precision": 0.1842514123,
+          "brier": 0.0434312096,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2456140351,
+          "balanced_accuracy": 0.755503922,
+          "precision": 0.1481481481,
+          "recall": 0.7179487179,
+          "false_positive": 161,
+          "false_negative": 11,
+          "roc_auc": 0.8314547492,
+          "average_precision": 0.1398580894,
+          "brier": 0.0436200336,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2764976959,
+          "balanced_accuracy": 0.7804054054,
+          "precision": 0.1694915254,
+          "recall": 0.75,
+          "false_positive": 147,
+          "false_negative": 10,
+          "roc_auc": 0.8506756757,
+          "average_precision": 0.2005641874,
+          "brier": 0.042293789,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.2489196197,
+        "balanced_accuracy": 0.7571548925,
+        "precision": 0.1503131524,
+        "recall": 0.7236180905,
+        "false_positive": 814,
+        "false_negative": 55,
+        "roc_auc": 0.8394363176,
+        "average_precision": 0.1724363132,
+        "brier": 0.0427568507
+      },
+      "fold_mean": {
+        "f1": 0.2500367041,
+        "balanced_accuracy": 0.7571433051,
+        "roc_auc": 0.8394787842,
+        "average_precision": 0.1941631316,
+        "brier": 0.0427569485
+      },
+      "fold_sd": {
+        "f1": 0.0255662958,
+        "balanced_accuracy": 0.0271017174,
+        "roc_auc": 0.0123989367,
+        "average_precision": 0.048668965,
+        "brier": 0.0010276588
+      }
+    },
+    {
+      "strategy": "missing_indicator",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": true,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2386831276,
+          "balanced_accuracy": 0.7506748072,
+          "precision": 0.1428571429,
+          "recall": 0.725,
+          "false_positive": 174,
+          "false_negative": 11,
+          "roc_auc": 0.8533097686,
+          "average_precision": 0.2283063903,
+          "brier": 0.041889088,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2739726027,
+          "balanced_accuracy": 0.7792416452,
+          "precision": 0.1675977654,
+          "recall": 0.75,
+          "false_positive": 149,
+          "false_negative": 10,
+          "roc_auc": 0.8690231362,
+          "average_precision": 0.2779143875,
+          "brier": 0.0401518378,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2352941176,
+          "balanced_accuracy": 0.7253856041,
+          "precision": 0.1436464088,
+          "recall": 0.65,
+          "false_positive": 155,
+          "false_negative": 14,
+          "roc_auc": 0.8397493573,
+          "average_precision": 0.2065270419,
+          "brier": 0.04352497,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2566371681,
+          "balanced_accuracy": 0.7702524553,
+          "precision": 0.1550802139,
+          "recall": 0.7435897436,
+          "false_positive": 158,
+          "false_negative": 10,
+          "roc_auc": 0.849087074,
+          "average_precision": 0.1798702397,
+          "brier": 0.0425070121,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2843137255,
+          "balanced_accuracy": 0.7756274131,
+          "precision": 0.1768292683,
+          "recall": 0.725,
+          "false_positive": 135,
+          "false_negative": 11,
+          "roc_auc": 0.8527992278,
+          "average_precision": 0.2766616952,
+          "brier": 0.0409476567,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.2569631626,
+        "balanced_accuracy": 0.7601707431,
+        "precision": 0.1564551422,
+        "recall": 0.7185929648,
+        "false_positive": 771,
+        "false_negative": 56,
+        "roc_auc": 0.8527866899,
+        "average_precision": 0.2124170323,
+        "brier": 0.0418041505
+      },
+      "fold_mean": {
+        "f1": 0.2577801483,
+        "balanced_accuracy": 0.760236385,
+        "roc_auc": 0.8527937128,
+        "average_precision": 0.2338559509,
+        "brier": 0.0418041129
+      },
+      "fold_sd": {
+        "f1": 0.0214350792,
+        "balanced_accuracy": 0.0223852967,
+        "roc_auc": 0.0105777468,
+        "average_precision": 0.0432018561,
+        "brier": 0.0013158806
+      }
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": true,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2283464567,
+          "balanced_accuracy": 0.7436053985,
+          "precision": 0.1355140187,
+          "recall": 0.725,
+          "false_positive": 185,
+          "false_negative": 11,
+          "roc_auc": 0.8279884319,
+          "average_precision": 0.1687280988,
+          "brier": 0.0433893483,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2695652174,
+          "balanced_accuracy": 0.78531491,
+          "precision": 0.1631578947,
+          "recall": 0.775,
+          "false_positive": 159,
+          "false_negative": 9,
+          "roc_auc": 0.8547557841,
+          "average_precision": 0.2411644045,
+          "brier": 0.0413786821,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2307692308,
+          "balanced_accuracy": 0.7301735219,
+          "precision": 0.1391752577,
+          "recall": 0.675,
+          "false_positive": 167,
+          "false_negative": 13,
+          "roc_auc": 0.8334190231,
+          "average_precision": 0.181221672,
+          "brier": 0.0434770711,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2403433476,
+          "balanced_accuracy": 0.7522905543,
+          "precision": 0.1443298969,
+          "recall": 0.7179487179,
+          "false_positive": 166,
+          "false_negative": 11,
+          "roc_auc": 0.8318502406,
+          "average_precision": 0.1409789032,
+          "brier": 0.0435823334,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2612612613,
+          "balanced_accuracy": 0.7640444015,
+          "precision": 0.1593406593,
+          "recall": 0.725,
+          "false_positive": 153,
+          "false_negative": 11,
+          "roc_auc": 0.8503217503,
+          "average_precision": 0.20678372,
+          "brier": 0.0421635829,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.2455242967,
+        "balanced_accuracy": 0.7550978084,
+        "precision": 0.1478439425,
+        "recall": 0.7236180905,
+        "false_positive": 830,
+        "false_negative": 55,
+        "roc_auc": 0.8394996324,
+        "average_precision": 0.1720745224,
+        "brier": 0.042798167
+      },
+      "fold_mean": {
+        "f1": 0.2460571028,
+        "balanced_accuracy": 0.7550857572,
+        "roc_auc": 0.839667046,
+        "average_precision": 0.1877753597,
+        "brier": 0.0427982035
+      },
+      "fold_sd": {
+        "f1": 0.0184650406,
+        "balanced_accuracy": 0.0209421241,
+        "roc_auc": 0.0120179346,
+        "average_precision": 0.0381030352,
+        "brier": 0.0009801731
+      }
+    },
+    {
+      "strategy": "minmax",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "minmax",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2348178138,
+          "balanced_accuracy": 0.7481041131,
+          "precision": 0.1400966184,
+          "recall": 0.725,
+          "false_positive": 178,
+          "false_negative": 11,
+          "roc_auc": 0.8276670951,
+          "average_precision": 0.1545872545,
+          "brier": 0.0437422971,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2683982684,
+          "balanced_accuracy": 0.7846722365,
+          "precision": 0.1623036649,
+          "recall": 0.775,
+          "false_positive": 160,
+          "false_negative": 9,
+          "roc_auc": 0.8481362468,
+          "average_precision": 0.2567450004,
+          "brier": 0.0418618924,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2434782609,
+          "balanced_accuracy": 0.7458868895,
+          "precision": 0.1473684211,
+          "recall": 0.7,
+          "false_positive": 162,
+          "false_negative": 12,
+          "roc_auc": 0.8280205656,
+          "average_precision": 0.1629123109,
+          "brier": 0.0436078261,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2168674699,
+          "balanced_accuracy": 0.7285445917,
+          "precision": 0.1285714286,
+          "recall": 0.6923076923,
+          "false_positive": 183,
+          "false_negative": 12,
+          "roc_auc": 0.8170193132,
+          "average_precision": 0.131260155,
+          "brier": 0.0438229139,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2636363636,
+          "balanced_accuracy": 0.7653314028,
+          "precision": 0.1611111111,
+          "recall": 0.725,
+          "false_positive": 151,
+          "false_negative": 11,
+          "roc_auc": 0.8523166023,
+          "average_precision": 0.2373203064,
+          "brier": 0.0426208389,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.2446898895,
+        "balanced_accuracy": 0.7545835374,
+        "precision": 0.1472392638,
+        "recall": 0.7236180905,
+        "false_positive": 834,
+        "false_negative": 55,
+        "roc_auc": 0.8352006885,
+        "average_precision": 0.1637508596,
+        "brier": 0.0431311093
+      },
+      "fold_mean": {
+        "f1": 0.2454396353,
+        "balanced_accuracy": 0.7545078467,
+        "roc_auc": 0.8346319646,
+        "average_precision": 0.1885650054,
+        "brier": 0.0431311537
+      },
+      "fold_sd": {
+        "f1": 0.0211616308,
+        "balanced_accuracy": 0.0213099689,
+        "roc_auc": 0.0149794655,
+        "average_precision": 0.0550499439,
+        "brier": 0.0008588787
+      }
+    },
+    {
+      "strategy": "robust",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "robust",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2265625,
+          "balanced_accuracy": 0.7423200514,
+          "precision": 0.1342592593,
+          "recall": 0.725,
+          "false_positive": 187,
+          "false_negative": 11,
+          "roc_auc": 0.8285347044,
+          "average_precision": 0.1711421279,
+          "brier": 0.0432585003,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2707423581,
+          "balanced_accuracy": 0.7859575835,
+          "precision": 0.164021164,
+          "recall": 0.775,
+          "false_positive": 158,
+          "false_negative": 9,
+          "roc_auc": 0.8553984576,
+          "average_precision": 0.2792062322,
+          "brier": 0.0412041236,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.224137931,
+          "balanced_accuracy": 0.7183161954,
+          "precision": 0.1354166667,
+          "recall": 0.65,
+          "false_positive": 166,
+          "false_negative": 14,
+          "roc_auc": 0.8317802057,
+          "average_precision": 0.1795156464,
+          "brier": 0.0433850527,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2403433476,
+          "balanced_accuracy": 0.7522905543,
+          "precision": 0.1443298969,
+          "recall": 0.7179487179,
+          "false_positive": 166,
+          "false_negative": 11,
+          "roc_auc": 0.8306637664,
+          "average_precision": 0.1391623381,
+          "brier": 0.0435810761,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2727272727,
+          "balanced_accuracy": 0.7784749035,
+          "precision": 0.1666666667,
+          "recall": 0.75,
+          "false_positive": 150,
+          "false_negative": 10,
+          "roc_auc": 0.8517696268,
+          "average_precision": 0.2057021869,
+          "brier": 0.042247847,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.2461538462,
+        "balanced_accuracy": 0.7554835117,
+        "precision": 0.1483007209,
+        "recall": 0.7236180905,
+        "false_positive": 827,
+        "false_negative": 55,
+        "roc_auc": 0.8396327226,
+        "average_precision": 0.1719450913,
+        "brier": 0.0427352323
+      },
+      "fold_mean": {
+        "f1": 0.2469026819,
+        "balanced_accuracy": 0.7554718576,
+        "roc_auc": 0.8396293522,
+        "average_precision": 0.1949457063,
+        "brier": 0.0427353199
+      },
+      "fold_sd": {
+        "f1": 0.0235064959,
+        "balanced_accuracy": 0.0274870585,
+        "roc_auc": 0.0128562533,
+        "average_precision": 0.0527541926,
+        "brier": 0.0009991704
+      }
+    },
+    {
+      "strategy": "no_scaling",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "none",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 1e-09
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2258064516,
+          "balanced_accuracy": 0.7343187661,
+          "precision": 0.1346153846,
+          "recall": 0.7,
+          "false_positive": 180,
+          "false_negative": 12,
+          "roc_auc": 0.8170308483,
+          "average_precision": 0.1636295915,
+          "brier": 0.043624,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2894736842,
+          "balanced_accuracy": 0.8128856041,
+          "precision": 0.1755319149,
+          "recall": 0.825,
+          "false_positive": 155,
+          "false_negative": 7,
+          "roc_auc": 0.8624357326,
+          "average_precision": 0.2754149538,
+          "brier": 0.040924,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.224137931,
+          "balanced_accuracy": 0.7183161954,
+          "precision": 0.1354166667,
+          "recall": 0.65,
+          "false_positive": 166,
+          "false_negative": 14,
+          "roc_auc": 0.8258033419,
+          "average_precision": 0.1590267885,
+          "brier": 0.044034,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2268907563,
+          "balanced_accuracy": 0.7356140004,
+          "precision": 0.135678392,
+          "recall": 0.6923076923,
+          "false_positive": 172,
+          "false_negative": 12,
+          "roc_auc": 0.8234130908,
+          "average_precision": 0.1336107922,
+          "brier": 0.044144,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2555066079,
+          "balanced_accuracy": 0.7608268983,
+          "precision": 0.1550802139,
+          "recall": 0.725,
+          "false_positive": 158,
+          "false_negative": 11,
+          "roc_auc": 0.8548584299,
+          "average_precision": 0.2472120722,
+          "brier": 0.041852,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.2438192668,
+        "balanced_accuracy": 0.7524566778,
+        "precision": 0.1468172485,
+        "recall": 0.7185929648,
+        "false_positive": 831,
+        "false_negative": 56,
+        "roc_auc": 0.8363002981,
+        "average_precision": 0.1677911771,
+        "brier": 0.042916
+      },
+      "fold_mean": {
+        "f1": 0.2443630862,
+        "balanced_accuracy": 0.7523922929,
+        "roc_auc": 0.8367082887,
+        "average_precision": 0.1957788396,
+        "brier": 0.042916
+      },
+      "fold_sd": {
+        "f1": 0.0283629689,
+        "balanced_accuracy": 0.0370807469,
+        "roc_auc": 0.0204585606,
+        "average_precision": 0.061717991,
+        "brier": 0.001445
+      }
+    },
+    {
+      "strategy": "categorical_constant",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "constant",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.224,
+          "balanced_accuracy": 0.733033419,
+          "precision": 0.1333333333,
+          "recall": 0.7,
+          "false_positive": 182,
+          "false_negative": 12,
+          "roc_auc": 0.8285347044,
+          "average_precision": 0.1724399722,
+          "brier": 0.0432867336,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2743362832,
+          "balanced_accuracy": 0.7878856041,
+          "precision": 0.1666666667,
+          "recall": 0.775,
+          "false_positive": 155,
+          "false_negative": 9,
+          "roc_auc": 0.8564267352,
+          "average_precision": 0.2728978425,
+          "brier": 0.0411722176,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2251082251,
+          "balanced_accuracy": 0.7189588689,
+          "precision": 0.1361256545,
+          "recall": 0.65,
+          "false_positive": 165,
+          "false_negative": 14,
+          "roc_auc": 0.8312982005,
+          "average_precision": 0.1768385508,
+          "brier": 0.0435094142,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2378854626,
+          "balanced_accuracy": 0.7426834091,
+          "precision": 0.1436170213,
+          "recall": 0.6923076923,
+          "false_positive": 161,
+          "false_negative": 12,
+          "roc_auc": 0.8313558763,
+          "average_precision": 0.140961758,
+          "brier": 0.0435767041,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2764976959,
+          "balanced_accuracy": 0.7804054054,
+          "precision": 0.1694915254,
+          "recall": 0.75,
+          "false_positive": 147,
+          "false_negative": 10,
+          "roc_auc": 0.8507722008,
+          "average_precision": 0.2034900845,
+          "brier": 0.0422266019,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.2467419635,
+        "balanced_accuracy": 0.7526440379,
+        "precision": 0.1491596639,
+        "recall": 0.7135678392,
+        "false_positive": 810,
+        "false_negative": 57,
+        "roc_auc": 0.839608172,
+        "average_precision": 0.1719576261,
+        "brier": 0.0427542622
+      },
+      "fold_mean": {
+        "f1": 0.2475655333,
+        "balanced_accuracy": 0.7525933413,
+        "roc_auc": 0.8396775434,
+        "average_precision": 0.1933256416,
+        "brier": 0.0427543343
+      },
+      "fold_sd": {
+        "f1": 0.0260149568,
+        "balanced_accuracy": 0.0301294282,
+        "roc_auc": 0.0129156227,
+        "average_precision": 0.0497118263,
+        "brier": 0.0010382054
+      }
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": null
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": false,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.0698182314,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.224,
+          "balanced_accuracy": 0.733033419,
+          "precision": 0.1333333333,
+          "recall": 0.7,
+          "false_positive": 182,
+          "false_negative": 12,
+          "roc_auc": 0.8285347044,
+          "average_precision": 0.1724399722,
+          "brier": 0.0432867336,
+          "train_n": 3270
+        },
+        {
+          "fold": 1,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2743362832,
+          "balanced_accuracy": 0.7878856041,
+          "precision": 0.1666666667,
+          "recall": 0.775,
+          "false_positive": 155,
+          "false_negative": 9,
+          "roc_auc": 0.8564267352,
+          "average_precision": 0.2728978425,
+          "brier": 0.0411722176,
+          "train_n": 3270
+        },
+        {
+          "fold": 2,
+          "n": 818,
+          "positive_n": 40,
+          "negative_n": 778,
+          "f1": 0.2251082251,
+          "balanced_accuracy": 0.7189588689,
+          "precision": 0.1361256545,
+          "recall": 0.65,
+          "false_positive": 165,
+          "false_negative": 14,
+          "roc_auc": 0.8312982005,
+          "average_precision": 0.1768385508,
+          "brier": 0.0435094142,
+          "train_n": 3270
+        },
+        {
+          "fold": 3,
+          "n": 817,
+          "positive_n": 39,
+          "negative_n": 778,
+          "f1": 0.2378854626,
+          "balanced_accuracy": 0.7426834091,
+          "precision": 0.1436170213,
+          "recall": 0.6923076923,
+          "false_positive": 161,
+          "false_negative": 12,
+          "roc_auc": 0.8313558763,
+          "average_precision": 0.140961758,
+          "brier": 0.0435767041,
+          "train_n": 3271
+        },
+        {
+          "fold": 4,
+          "n": 817,
+          "positive_n": 40,
+          "negative_n": 777,
+          "f1": 0.2764976959,
+          "balanced_accuracy": 0.7804054054,
+          "precision": 0.1694915254,
+          "recall": 0.75,
+          "false_positive": 147,
+          "false_negative": 10,
+          "roc_auc": 0.8507722008,
+          "average_precision": 0.2034900845,
+          "brier": 0.0422266019,
+          "train_n": 3271
+        }
+      ],
+      "oof": {
+        "n": 4088,
+        "positive_n": 199,
+        "negative_n": 3889,
+        "f1": 0.2467419635,
+        "balanced_accuracy": 0.7526440379,
+        "precision": 0.1491596639,
+        "recall": 0.7135678392,
+        "false_positive": 810,
+        "false_negative": 57,
+        "roc_auc": 0.839608172,
+        "average_precision": 0.1719576261,
+        "brier": 0.0427542622
+      },
+      "fold_mean": {
+        "f1": 0.2475655333,
+        "balanced_accuracy": 0.7525933413,
+        "roc_auc": 0.8396775434,
+        "average_precision": 0.1933256416,
+        "brier": 0.0427543343
+      },
+      "fold_sd": {
+        "f1": 0.0260149568,
+        "balanced_accuracy": 0.0301294282,
+        "roc_auc": 0.0129156227,
+        "average_precision": 0.0497118263,
+        "brier": 0.0010382054
+      }
+    }
+  ],
+  "family_comparisons": [
+    {
+      "algorithm": "decision_tree",
+      "fold_mean": {
+        "f1": 0.0358430541,
+        "balanced_accuracy": 0.508263955,
+        "roc_auc": 0.8228804387,
+        "average_precision": 0.1567515394,
+        "brier": 0.0444565707
+      },
+      "fold_sd": {
+        "f1": 0.036768564,
+        "balanced_accuracy": 0.0100346375,
+        "roc_auc": 0.0256041385,
+        "average_precision": 0.0249949133,
+        "brier": 0.0020272679
+      }
+    },
+    {
+      "algorithm": "random_forest",
+      "fold_mean": {
+        "f1": 0.0,
+        "balanced_accuracy": 0.5,
+        "roc_auc": 0.8315289948,
+        "average_precision": 0.1925747809,
+        "brier": 0.0428772019
+      },
+      "fold_sd": {
+        "f1": 0.0,
+        "balanced_accuracy": 0.0,
+        "roc_auc": 0.011146855,
+        "average_precision": 0.050205352,
+        "brier": 0.000965294
+      }
+    },
+    {
+      "algorithm": "knn",
+      "fold_mean": {
+        "f1": 0.0,
+        "balanced_accuracy": 0.4998714653,
+        "roc_auc": 0.7231676408,
+        "average_precision": 0.1232350661,
+        "brier": 0.0457609106
+      },
+      "fold_sd": {
+        "f1": 0.0,
+        "balanced_accuracy": 0.0002874123,
+        "roc_auc": 0.023240956,
+        "average_precision": 0.0199537706,
+        "brier": 0.0005074481
+      }
+    }
+  ],
+  "threshold_sensitivity": [
+    {
+      "threshold": 0.05,
+      "n": 4088,
+      "positive_n": 199,
+      "negative_n": 3889,
+      "f1": 0.2219178082,
+      "balanced_accuracy": 0.7657392129,
+      "precision": 0.1284694687,
+      "recall": 0.8140703518,
+      "false_positive": 1099,
+      "false_negative": 37,
+      "roc_auc": 0.8396624418,
+      "average_precision": 0.1721001781,
+      "brier": 0.0427572529
+    },
+    {
+      "threshold": 0.0698182314,
+      "n": 4088,
+      "positive_n": 199,
+      "negative_n": 3889,
+      "f1": 0.248048569,
+      "balanced_accuracy": 0.7550280329,
+      "precision": 0.1498951782,
+      "recall": 0.7185929648,
+      "false_positive": 811,
+      "false_negative": 56,
+      "roc_auc": 0.8396624418,
+      "average_precision": 0.1721001781,
+      "brier": 0.0427572529
+    },
+    {
+      "threshold": 0.1,
+      "n": 4088,
+      "positive_n": 199,
+      "negative_n": 3889,
+      "f1": 0.2628062361,
+      "balanced_accuracy": 0.7217845463,
+      "precision": 0.1688125894,
+      "recall": 0.5929648241,
+      "false_positive": 581,
+      "false_negative": 81,
+      "roc_auc": 0.8396624418,
+      "average_precision": 0.1721001781,
+      "brier": 0.0427572529
+    },
+    {
+      "threshold": 0.2,
+      "n": 4088,
+      "positive_n": 199,
+      "negative_n": 3889,
+      "f1": 0.1989528796,
+      "balanced_accuracy": 0.5768350624,
+      "precision": 0.2076502732,
+      "recall": 0.1909547739,
+      "false_positive": 145,
+      "false_negative": 161,
+      "roc_auc": 0.8396624418,
+      "average_precision": 0.1721001781,
+      "brier": 0.0427572529
+    },
+    {
+      "threshold": 0.3,
+      "n": 4088,
+      "positive_n": 199,
+      "negative_n": 3889,
+      "f1": 0.0759493671,
+      "balanced_accuracy": 0.5188846004,
+      "precision": 0.2368421053,
+      "recall": 0.0452261307,
+      "false_positive": 29,
+      "false_negative": 190,
+      "roc_auc": 0.8396624418,
+      "average_precision": 0.1721001781,
+      "brier": 0.0427572529
+    },
+    {
+      "threshold": 0.5,
+      "n": 4088,
+      "positive_n": 199,
+      "negative_n": 3889,
+      "f1": 0.0,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_positive": 0,
+      "false_negative": 199,
+      "roc_auc": 0.8396624418,
+      "average_precision": 0.1721001781,
+      "brier": 0.0427572529
+    },
+    {
+      "threshold": 0.7,
+      "n": 4088,
+      "positive_n": 199,
+      "negative_n": 3889,
+      "f1": 0.0,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_positive": 0,
+      "false_negative": 199,
+      "roc_auc": 0.8396624418,
+      "average_precision": 0.1721001781,
+      "brier": 0.0427572529
+    },
+    {
+      "threshold": 0.9,
+      "n": 4088,
+      "positive_n": 199,
+      "negative_n": 3889,
+      "f1": 0.0,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_positive": 0,
+      "false_negative": 199,
+      "roc_auc": 0.8396624418,
+      "average_precision": 0.1721001781,
+      "brier": 0.0427572529
+    }
+  ],
+  "calibration": [
+    {
+      "strategy": "baseline",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 3905,
+      "mean_score": 0.0402740589,
+      "observed_rate": 0.0412291933
+    },
+    {
+      "strategy": "baseline",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 181,
+      "mean_score": 0.260689865,
+      "observed_rate": 0.2099447514
+    },
+    {
+      "strategy": "baseline",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 2,
+      "mean_score": 0.450788162,
+      "observed_rate": 0.0
+    },
+    {
+      "strategy": "mean",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 3908,
+      "mean_score": 0.0404252114,
+      "observed_rate": 0.0409416581
+    },
+    {
+      "strategy": "mean",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 178,
+      "mean_score": 0.261162805,
+      "observed_rate": 0.2191011236
+    },
+    {
+      "strategy": "mean",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 2,
+      "mean_score": 0.446551377,
+      "observed_rate": 0.0
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 3900,
+      "mean_score": 0.0381611646,
+      "observed_rate": 0.0376923077
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 155,
+      "mean_score": 0.2630620048,
+      "observed_rate": 0.264516129
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 31,
+      "mean_score": 0.4614112185,
+      "observed_rate": 0.3548387097
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 2,
+      "mean_score": 0.6324188356,
+      "observed_rate": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 3910,
+      "mean_score": 0.0405499547,
+      "observed_rate": 0.0411764706
+    },
+    {
+      "strategy": "iqr_clip",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 175,
+      "mean_score": 0.2598688961,
+      "observed_rate": 0.2114285714
+    },
+    {
+      "strategy": "iqr_clip",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 3,
+      "mean_score": 0.4324315226,
+      "observed_rate": 0.3333333333
+    },
+    {
+      "strategy": "minmax",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 4004,
+      "mean_score": 0.0465343111,
+      "observed_rate": 0.0447052947
+    },
+    {
+      "strategy": "minmax",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 83,
+      "mean_score": 0.2437277924,
+      "observed_rate": 0.2409638554
+    },
+    {
+      "strategy": "minmax",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 1,
+      "mean_score": 0.4199625729,
+      "observed_rate": 0.0
+    },
+    {
+      "strategy": "robust",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 3919,
+      "mean_score": 0.0411882997,
+      "observed_rate": 0.0421025772
+    },
+    {
+      "strategy": "robust",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 168,
+      "mean_score": 0.2572595525,
+      "observed_rate": 0.2023809524
+    },
+    {
+      "strategy": "robust",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 1,
+      "mean_score": 0.4713455982,
+      "observed_rate": 0.0
+    },
+    {
+      "strategy": "no_scaling",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 3919,
+      "mean_score": 0.041669,
+      "observed_rate": 0.0418474101
+    },
+    {
+      "strategy": "no_scaling",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 166,
+      "mean_score": 0.261248,
+      "observed_rate": 0.2108433735
+    },
+    {
+      "strategy": "no_scaling",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 3,
+      "mean_score": 0.443642,
+      "observed_rate": 0.0
+    },
+    {
+      "strategy": "categorical_constant",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 3905,
+      "mean_score": 0.0403328369,
+      "observed_rate": 0.0412291933
+    },
+    {
+      "strategy": "categorical_constant",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 181,
+      "mean_score": 0.260599766,
+      "observed_rate": 0.2099447514
+    },
+    {
+      "strategy": "categorical_constant",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 2,
+      "mean_score": 0.4479635123,
+      "observed_rate": 0.0
+    },
+    {
+      "strategy": "smoking_explicit",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 3905,
+      "mean_score": 0.0403328369,
+      "observed_rate": 0.0412291933
+    },
+    {
+      "strategy": "smoking_explicit",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 181,
+      "mean_score": 0.260599766,
+      "observed_rate": 0.2099447514
+    },
+    {
+      "strategy": "smoking_explicit",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 2,
+      "mean_score": 0.4479635123,
+      "observed_rate": 0.0
+    }
+  ],
+  "subgroups": [
+    {
+      "field": "gender",
+      "group": "Female",
+      "n": 2395,
+      "positive_n": 112,
+      "negative_n": 2283,
+      "precision": 0.1386321627,
+      "recall": 0.6696428571,
+      "f1": 0.2297090352,
+      "f1_ci95_bootstrap": [
+        0.1872835321,
+        0.2739222745
+      ],
+      "precision_ci95": [
+        0.1120518127,
+        0.1703084182
+      ],
+      "recall_ci95": [
+        0.5781805614,
+        0.7498535817
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "gender",
+      "group": "Male",
+      "n": 1692,
+      "positive_n": 87,
+      "negative_n": 1605,
+      "precision": 0.1646489104,
+      "recall": 0.7816091954,
+      "f1": 0.272,
+      "f1_ci95_bootstrap": [
+        0.2178155682,
+        0.3204507412
+      ],
+      "precision_ci95": [
+        0.1320027773,
+        0.2034762152
+      ],
+      "recall_ci95": [
+        0.6839074696,
+        0.8554929813
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "gender",
+      "group": "Other",
+      "n": 1,
+      "positive_n": 0,
+      "negative_n": 1,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "f1_ci95_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "precision_ci95": null,
+      "recall_ci95": null,
+      "flag": "small_or_sparse"
+    },
+    {
+      "field": "age",
+      "group": "41\u201360",
+      "n": 1264,
+      "positive_n": 57,
+      "negative_n": 1207,
+      "precision": 0.1208791209,
+      "recall": 0.1929824561,
+      "f1": 0.1486486486,
+      "f1_ci95_bootstrap": [
+        0.0713911089,
+        0.2289620019
+      ],
+      "precision_ci95": [
+        0.0688543766,
+        0.2036167753
+      ],
+      "recall_ci95": [
+        0.1113263338,
+        0.3134093734
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "age",
+      "group": ">60",
+      "n": 1044,
+      "positive_n": 139,
+      "negative_n": 905,
+      "precision": 0.1529548088,
+      "recall": 0.9496402878,
+      "f1": 0.2634730539,
+      "f1_ci95_bootstrap": [
+        0.2282449582,
+        0.2988223461
+      ],
+      "precision_ci95": [
+        0.1304816187,
+        0.1785040137
+      ],
+      "recall_ci95": [
+        0.8997004492,
+        0.9753947611
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "age",
+      "group": "\u226440",
+      "n": 1780,
+      "positive_n": 3,
+      "negative_n": 1777,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "f1_ci95_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "precision_ci95": null,
+      "recall_ci95": [
+        0.0,
+        0.5615060804
+      ],
+      "flag": "small_or_sparse"
+    },
+    {
+      "field": "Residence_type",
+      "group": "Rural",
+      "n": 2019,
+      "positive_n": 91,
+      "negative_n": 1928,
+      "precision": 0.15,
+      "recall": 0.7252747253,
+      "f1": 0.2485875706,
+      "f1_ci95_bootstrap": [
+        0.2020100196,
+        0.2965873664
+      ],
+      "precision_ci95": [
+        0.1196717171,
+        0.1863870209
+      ],
+      "recall_ci95": [
+        0.625850247,
+        0.8064495033
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "Residence_type",
+      "group": "Urban",
+      "n": 2069,
+      "positive_n": 108,
+      "negative_n": 1961,
+      "precision": 0.1498054475,
+      "recall": 0.712962963,
+      "f1": 0.2475884244,
+      "f1_ci95_bootstrap": [
+        0.2009648586,
+        0.2875490155
+      ],
+      "precision_ci95": [
+        0.1215554209,
+        0.1832513
+      ],
+      "recall_ci95": [
+        0.6214884087,
+        0.789807567
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "smoking_status",
+      "group": "Missing",
+      "n": 1247,
+      "positive_n": 38,
+      "negative_n": 1209,
+      "precision": 0.1538461538,
+      "recall": 0.6842105263,
+      "f1": 0.2512077295,
+      "f1_ci95_bootstrap": [
+        0.1641989816,
+        0.3165324275
+      ],
+      "precision_ci95": [
+        0.1072025816,
+        0.2158770474
+      ],
+      "recall_ci95": [
+        0.5254394356,
+        0.8091557998
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "smoking_status",
+      "group": "formerly smoked",
+      "n": 714,
+      "positive_n": 56,
+      "negative_n": 658,
+      "precision": 0.1487889273,
+      "recall": 0.7678571429,
+      "f1": 0.2492753623,
+      "f1_ci95_bootstrap": [
+        0.1797065554,
+        0.3051092418
+      ],
+      "precision_ci95": [
+        0.11237579,
+        0.1944166875
+      ],
+      "recall_ci95": [
+        0.6423159665,
+        0.8590075275
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "smoking_status",
+      "group": "never smoked",
+      "n": 1501,
+      "positive_n": 71,
+      "negative_n": 1430,
+      "precision": 0.1616766467,
+      "recall": 0.7605633803,
+      "f1": 0.2666666667,
+      "f1_ci95_bootstrap": [
+        0.2138996612,
+        0.3349435449
+      ],
+      "precision_ci95": [
+        0.1260776094,
+        0.2049698401
+      ],
+      "recall_ci95": [
+        0.6495855918,
+        0.8447918667
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "smoking_status",
+      "group": "smokes",
+      "n": 626,
+      "positive_n": 34,
+      "negative_n": 592,
+      "precision": 0.1234567901,
+      "recall": 0.5882352941,
+      "f1": 0.2040816327,
+      "f1_ci95_bootstrap": [
+        0.1297217806,
+        0.2815630213
+      ],
+      "precision_ci95": [
+        0.0813578251,
+        0.1830004541
+      ],
+      "recall_ci95": [
+        0.4222130415,
+        0.7363426221
+      ],
+      "flag": "descriptive"
+    }
+  ],
+  "importance": [
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "age",
+      "score_drop": 0.1254788157
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0070980143
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "bmi",
+      "score_drop": 0.0020672324
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "hypertension",
+      "score_drop": -0.003761061
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "heart_disease",
+      "score_drop": -0.0109728937
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "ever_married",
+      "score_drop": -0.007591939
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "gender",
+      "score_drop": -0.0008911644
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "work_type",
+      "score_drop": 0.0063005398
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Residence_type",
+      "score_drop": -0.0002154213
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "smoking_status",
+      "score_drop": -0.0025199819
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "age",
+      "score_drop": 0.1658785323
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0126394819
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "bmi",
+      "score_drop": -0.0049962577
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "hypertension",
+      "score_drop": 0.0381592437
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "heart_disease",
+      "score_drop": -0.0080769676
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "ever_married",
+      "score_drop": 0.0343996264
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "gender",
+      "score_drop": -0.0013091434
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "work_type",
+      "score_drop": 0.020388958
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Residence_type",
+      "score_drop": -0.0032363098
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "smoking_status",
+      "score_drop": 0.0094697714
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "age",
+      "score_drop": 0.1246940938
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0254883047
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "bmi",
+      "score_drop": -0.0158394711
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "hypertension",
+      "score_drop": 0.0087306867
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "heart_disease",
+      "score_drop": -0.0023710883
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "ever_married",
+      "score_drop": -0.0028587498
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "gender",
+      "score_drop": 0.0030353339
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "work_type",
+      "score_drop": 0.0064365129
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Residence_type",
+      "score_drop": -3.27821e-05
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "smoking_status",
+      "score_drop": 0.0049450331
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "age",
+      "score_drop": 0.0944416393
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0077518583
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "bmi",
+      "score_drop": 0.0003074506
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "hypertension",
+      "score_drop": -0.019166958
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "heart_disease",
+      "score_drop": 0.0020544208
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "ever_married",
+      "score_drop": -0.0102980838
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "gender",
+      "score_drop": -7.62525e-05
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "work_type",
+      "score_drop": -0.0018932159
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Residence_type",
+      "score_drop": 0.001013916
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "smoking_status",
+      "score_drop": -0.002228456
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "age",
+      "score_drop": 0.1482138697
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0022703633
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "bmi",
+      "score_drop": -0.0043041079
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "hypertension",
+      "score_drop": 0.0155891706
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "heart_disease",
+      "score_drop": 0.0151351069
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "ever_married",
+      "score_drop": 0.0168950537
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "gender",
+      "score_drop": 0.0042679569
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "work_type",
+      "score_drop": -0.0223689504
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Residence_type",
+      "score_drop": -0.0029951706
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "smoking_status",
+      "score_drop": -0.0102610124
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "age",
+      "score_drop": 0.1245969339
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0095318659
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "bmi",
+      "score_drop": 0.0010762121
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "hypertension",
+      "score_drop": -0.0051305648
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "heart_disease",
+      "score_drop": -0.0119855375
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "ever_married",
+      "score_drop": -0.0074310975
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "gender",
+      "score_drop": -0.0013132539
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "work_type",
+      "score_drop": 0.0037079414
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Residence_type",
+      "score_drop": -0.0005255741
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "smoking_status",
+      "score_drop": -0.0039073312
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "age",
+      "score_drop": 0.1657000005
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0136125729
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "bmi",
+      "score_drop": -0.008042349
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "hypertension",
+      "score_drop": 0.0381901061
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "heart_disease",
+      "score_drop": -0.0088260863
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "ever_married",
+      "score_drop": 0.0343054809
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "gender",
+      "score_drop": -0.0002828955
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "work_type",
+      "score_drop": 0.0194023766
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Residence_type",
+      "score_drop": -0.0044773268
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "smoking_status",
+      "score_drop": 0.0108632022
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "age",
+      "score_drop": 0.1285589834
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0293342993
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "bmi",
+      "score_drop": -0.0088099712
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "hypertension",
+      "score_drop": 0.0122947029
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "heart_disease",
+      "score_drop": -0.0099074851
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "ever_married",
+      "score_drop": -0.0024661434
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "gender",
+      "score_drop": 0.0043244918
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "work_type",
+      "score_drop": 0.0099506451
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Residence_type",
+      "score_drop": 0.0024257565
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "smoking_status",
+      "score_drop": 0.0067593339
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "age",
+      "score_drop": 0.0931621906
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0061884849
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "bmi",
+      "score_drop": -0.0002901991
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "hypertension",
+      "score_drop": -0.0197064789
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "heart_disease",
+      "score_drop": 0.0019823543
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "ever_married",
+      "score_drop": -0.0106051614
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "gender",
+      "score_drop": -0.0007052154
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "work_type",
+      "score_drop": -0.0031243926
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Residence_type",
+      "score_drop": 0.0002918475
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "smoking_status",
+      "score_drop": -0.002705934
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "age",
+      "score_drop": 0.1442807173
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0002740779
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "bmi",
+      "score_drop": -0.0116109454
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "hypertension",
+      "score_drop": 0.0154209995
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "heart_disease",
+      "score_drop": 0.0133142294
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "ever_married",
+      "score_drop": 0.0152760207
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "gender",
+      "score_drop": 0.0024526704
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "work_type",
+      "score_drop": -0.0243398838
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Residence_type",
+      "score_drop": -0.0033399082
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "smoking_status",
+      "score_drop": -0.0128970557
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "age",
+      "score_drop": 0.1178229085
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0117753896
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "bmi",
+      "score_drop": -0.0029509866
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "hypertension",
+      "score_drop": -0.002548664
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "heart_disease",
+      "score_drop": -0.0125713528
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "ever_married",
+      "score_drop": -0.0029229341
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "gender",
+      "score_drop": -0.0003991215
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "work_type",
+      "score_drop": 0.0016380634
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Residence_type",
+      "score_drop": -0.0010092015
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "smoking_status",
+      "score_drop": -0.0074725589
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "age",
+      "score_drop": 0.1364684995
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0167030908
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "bmi",
+      "score_drop": -0.0155687769
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "hypertension",
+      "score_drop": 0.015160468
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "heart_disease",
+      "score_drop": -0.0107635888
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "ever_married",
+      "score_drop": 0.0143973991
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "gender",
+      "score_drop": -0.0034055908
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "work_type",
+      "score_drop": 0.0103314605
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Residence_type",
+      "score_drop": -0.0072850802
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "smoking_status",
+      "score_drop": 0.0050814001
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "age",
+      "score_drop": 0.125867541
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0264618756
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "bmi",
+      "score_drop": -0.0101802041
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "hypertension",
+      "score_drop": 0.0142239043
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "heart_disease",
+      "score_drop": -0.0110120622
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "ever_married",
+      "score_drop": 0.008458288
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "gender",
+      "score_drop": 0.0029979395
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "work_type",
+      "score_drop": 0.0101515512
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Residence_type",
+      "score_drop": -0.0006737427
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "smoking_status",
+      "score_drop": 0.0095162584
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "age",
+      "score_drop": 0.0946243103
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0084795074
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "bmi",
+      "score_drop": -4.71201e-05
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "hypertension",
+      "score_drop": -0.0195498591
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "heart_disease",
+      "score_drop": 0.0025357888
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "ever_married",
+      "score_drop": -0.0097620466
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "gender",
+      "score_drop": 0.0004617371
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "work_type",
+      "score_drop": -0.0015824234
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Residence_type",
+      "score_drop": 0.0010107391
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "smoking_status",
+      "score_drop": -0.0027023719
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "age",
+      "score_drop": 0.1523224874
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.011487829
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "bmi",
+      "score_drop": -0.023885464
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "hypertension",
+      "score_drop": 0.0167381011
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "heart_disease",
+      "score_drop": 0.0104923018
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "ever_married",
+      "score_drop": 0.0163148052
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "gender",
+      "score_drop": 0.0012524902
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "work_type",
+      "score_drop": -0.0221958486
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Residence_type",
+      "score_drop": -0.0054079305
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "smoking_status",
+      "score_drop": -0.01193833
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "age",
+      "score_drop": 0.1224301143
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0093987166
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "bmi",
+      "score_drop": -0.0006415254
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "hypertension",
+      "score_drop": -0.0060600382
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "heart_disease",
+      "score_drop": -0.0125204067
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "ever_married",
+      "score_drop": -0.004066079
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "gender",
+      "score_drop": -0.0018448753
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "work_type",
+      "score_drop": 0.0033949843
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Residence_type",
+      "score_drop": -0.0006877747
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "smoking_status",
+      "score_drop": -0.0008209696
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "age",
+      "score_drop": 0.1678779432
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0146448156
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "bmi",
+      "score_drop": -0.0058039476
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "hypertension",
+      "score_drop": 0.0404205918
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "heart_disease",
+      "score_drop": -0.0077785937
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "ever_married",
+      "score_drop": 0.0373333489
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "gender",
+      "score_drop": 0.0006284623
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "work_type",
+      "score_drop": 0.0250286318
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Residence_type",
+      "score_drop": -0.000325124
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "smoking_status",
+      "score_drop": 0.011710773
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "age",
+      "score_drop": 0.1229632249
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0232027542
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "bmi",
+      "score_drop": -0.0171906265
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "hypertension",
+      "score_drop": 0.0077606278
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "heart_disease",
+      "score_drop": -0.0015568416
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "ever_married",
+      "score_drop": 0.0046418862
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "gender",
+      "score_drop": 0.0014307467
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "work_type",
+      "score_drop": 0.0041440454
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Residence_type",
+      "score_drop": 0.0004302146
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "smoking_status",
+      "score_drop": 0.0009136788
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "age",
+      "score_drop": 0.094743845
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0068633921
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "bmi",
+      "score_drop": -0.0007312543
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "hypertension",
+      "score_drop": -0.0191024335
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "heart_disease",
+      "score_drop": 0.0020733281
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "ever_married",
+      "score_drop": -0.011823772
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "gender",
+      "score_drop": -0.0005423838
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "work_type",
+      "score_drop": -0.002754508
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Residence_type",
+      "score_drop": 0.0003018032
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "smoking_status",
+      "score_drop": -0.001109668
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "age",
+      "score_drop": 0.147956604
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0022941788
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "bmi",
+      "score_drop": -0.0084983264
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "hypertension",
+      "score_drop": 0.0147373536
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "heart_disease",
+      "score_drop": 0.0089418286
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "ever_married",
+      "score_drop": 0.0163058338
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "gender",
+      "score_drop": 0.0022723769
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "work_type",
+      "score_drop": -0.0245224636
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Residence_type",
+      "score_drop": -0.0024704823
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "smoking_status",
+      "score_drop": -0.0134995211
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "age",
+      "score_drop": 0.0846951853
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0142080444
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "bmi",
+      "score_drop": -0.0140059602
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "hypertension",
+      "score_drop": 0.0010510476
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "heart_disease",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "ever_married",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "gender",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "work_type",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Residence_type",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "smoking_status",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "age",
+      "score_drop": 0.1232393466
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0006724909
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "bmi",
+      "score_drop": 0.0265616378
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "hypertension",
+      "score_drop": 0.0049362129
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "heart_disease",
+      "score_drop": -0.0041532554
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "ever_married",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "gender",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "work_type",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Residence_type",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "smoking_status",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "age",
+      "score_drop": 0.0692626434
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0031260731
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "bmi",
+      "score_drop": -0.0018458282
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "hypertension",
+      "score_drop": 0.017191618
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "heart_disease",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "ever_married",
+      "score_drop": 0.0047275641
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "gender",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "work_type",
+      "score_drop": -0.0006493212
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Residence_type",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "smoking_status",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "age",
+      "score_drop": 0.0916241945
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0168653113
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "bmi",
+      "score_drop": 0.007131396
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "hypertension",
+      "score_drop": -0.0093198626
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "heart_disease",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "ever_married",
+      "score_drop": -0.0035127266
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "gender",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "work_type",
+      "score_drop": -0.0003224974
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Residence_type",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "smoking_status",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "age",
+      "score_drop": 0.1062868289
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0021189261
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "bmi",
+      "score_drop": -0.0065771888
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "hypertension",
+      "score_drop": 0.0044487824
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "heart_disease",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "ever_married",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "gender",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "work_type",
+      "score_drop": -0.0131466039
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Residence_type",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "smoking_status",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "age",
+      "score_drop": 0.0920473062
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0009234375
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "bmi",
+      "score_drop": -0.0059770083
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "hypertension",
+      "score_drop": -0.0200981497
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "heart_disease",
+      "score_drop": 0.0081238457
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "ever_married",
+      "score_drop": 0.011767325
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "gender",
+      "score_drop": 0.0111792983
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "work_type",
+      "score_drop": -0.0019651453
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Residence_type",
+      "score_drop": -0.0575646022
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "smoking_status",
+      "score_drop": -0.0056059932
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "age",
+      "score_drop": 0.1536336548
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0302121282
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "bmi",
+      "score_drop": 0.0422293789
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "hypertension",
+      "score_drop": 0.0226594754
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "heart_disease",
+      "score_drop": -0.0160270692
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "ever_married",
+      "score_drop": 0.0359608356
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "gender",
+      "score_drop": 0.0070614524
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "work_type",
+      "score_drop": 0.0077216465
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Residence_type",
+      "score_drop": -0.013267989
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "smoking_status",
+      "score_drop": -0.0144714282
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "age",
+      "score_drop": 0.0978764749
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0182362088
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "bmi",
+      "score_drop": 0.0152635551
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "hypertension",
+      "score_drop": -0.0017510449
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "heart_disease",
+      "score_drop": 0.0070511968
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "ever_married",
+      "score_drop": 0.017923294
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "gender",
+      "score_drop": -0.003022255
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "work_type",
+      "score_drop": -0.0056773018
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Residence_type",
+      "score_drop": -0.007728162
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "smoking_status",
+      "score_drop": -0.0112119043
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "age",
+      "score_drop": 0.0798558442
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0177044931
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "bmi",
+      "score_drop": 0.0205723261
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "hypertension",
+      "score_drop": -0.0069103511
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "heart_disease",
+      "score_drop": 0.0119869815
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "ever_married",
+      "score_drop": 0.0094459074
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "gender",
+      "score_drop": -0.000785574
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "work_type",
+      "score_drop": -0.0005327447
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Residence_type",
+      "score_drop": -0.0005478742
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "smoking_status",
+      "score_drop": 0.0138645329
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "age",
+      "score_drop": 0.1256734714
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0098651858
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "bmi",
+      "score_drop": -0.0114045627
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "hypertension",
+      "score_drop": 0.0326471717
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "heart_disease",
+      "score_drop": 0.0212492024
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "ever_married",
+      "score_drop": 0.0235234744
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "gender",
+      "score_drop": -0.0056884979
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "work_type",
+      "score_drop": 0.0037400617
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Residence_type",
+      "score_drop": 0.0234361643
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "smoking_status",
+      "score_drop": 0.0091782747
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "age",
+      "score_drop": 0.0501874133
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0053410561
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "bmi",
+      "score_drop": 0.0097994615
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "hypertension",
+      "score_drop": -0.0152148229
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "heart_disease",
+      "score_drop": 0.0069857803
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "ever_married",
+      "score_drop": 0.010929452
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "gender",
+      "score_drop": 0.0153201773
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "work_type",
+      "score_drop": 0.0149789725
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Residence_type",
+      "score_drop": -0.0150562725
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "smoking_status",
+      "score_drop": 0.0013128354
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "age",
+      "score_drop": 0.0793199554
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0155415232
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "bmi",
+      "score_drop": 0.0298192165
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "hypertension",
+      "score_drop": -0.0010721838
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "heart_disease",
+      "score_drop": -0.0022798972
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "ever_married",
+      "score_drop": 0.0135458612
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "gender",
+      "score_drop": 0.0094982103
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "work_type",
+      "score_drop": -0.0219509062
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Residence_type",
+      "score_drop": 0.0128067995
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "smoking_status",
+      "score_drop": -0.0249151234
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "age",
+      "score_drop": 0.0564519679
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "avg_glucose_level",
+      "score_drop": 0.0048003993
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "bmi",
+      "score_drop": 0.0007898827
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "hypertension",
+      "score_drop": -0.0107367764
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "heart_disease",
+      "score_drop": 0.0157348807
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "ever_married",
+      "score_drop": 0.0080485257
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "gender",
+      "score_drop": 0.0085426433
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "work_type",
+      "score_drop": -0.0142368152
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Residence_type",
+      "score_drop": 0.004635231
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "smoking_status",
+      "score_drop": 0.0072201062
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "age",
+      "score_drop": 0.0340575009
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "avg_glucose_level",
+      "score_drop": -0.0308730697
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "bmi",
+      "score_drop": -0.0164823419
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "hypertension",
+      "score_drop": -0.0167253792
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "heart_disease",
+      "score_drop": 0.0130296027
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "ever_married",
+      "score_drop": 0.0053110915
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "gender",
+      "score_drop": -0.0027458509
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "work_type",
+      "score_drop": -0.0099107542
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Residence_type",
+      "score_drop": -0.012689277
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "smoking_status",
+      "score_drop": 0.025242332
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "age",
+      "score_drop": 0.0625737688
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "avg_glucose_level",
+      "score_drop": 1.4718e-05
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "bmi",
+      "score_drop": -0.0175438445
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "hypertension",
+      "score_drop": -0.0001597942
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "heart_disease",
+      "score_drop": 0.0304413588
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "ever_married",
+      "score_drop": 0.0053379682
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "gender",
+      "score_drop": -0.0217985458
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "work_type",
+      "score_drop": -0.0136034624
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Residence_type",
+      "score_drop": 0.0250187495
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "smoking_status",
+      "score_drop": 0.0038935765
+    }
+  ],
+  "importance_stability": [
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "mean_pairwise_spearman": 0.3646174396,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "mean_pairwise_spearman": 0.3248484848,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "mean_pairwise_spearman": 0.1842424242,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "mean_pairwise_spearman": 0.3103030303,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "mean_pairwise_spearman": 0.2606060606,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "mean_pairwise_spearman": 0.183030303,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "mean_pairwise_spearman": 0.1927272727,
+      "fold_pairs": 10
+    }
+  ],
+  "importance_rank_comparisons": [
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "spearman_to_selected_baseline": 0.5828659632
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "spearman_to_selected_baseline": -0.0424242424
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "spearman_to_selected_baseline": 1.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "spearman_to_selected_baseline": 0.4545454545
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "spearman_to_selected_baseline": 0.9272727273
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "spearman_to_selected_baseline": 0.9757575758
+    },
+    {
+      "strategy": "smoking_explicit",
+      "algorithm": "logistic_regression",
+      "spearman_to_selected_baseline": 0.9151515152
+    }
+  ],
+  "missing_feature_sensitivity": [
+    {
+      "fold": 0,
+      "feature": "age",
+      "mean_absolute_score_change": 0.045291514
+    },
+    {
+      "fold": 0,
+      "feature": "avg_glucose_level",
+      "mean_absolute_score_change": 0.0073882508
+    },
+    {
+      "fold": 0,
+      "feature": "bmi",
+      "mean_absolute_score_change": 0.0013933802
+    },
+    {
+      "fold": 0,
+      "feature": "hypertension",
+      "mean_absolute_score_change": 0.0035057588
+    },
+    {
+      "fold": 0,
+      "feature": "heart_disease",
+      "mean_absolute_score_change": 0.0021480336
+    },
+    {
+      "fold": 0,
+      "feature": "ever_married",
+      "mean_absolute_score_change": 0.0020319401
+    },
+    {
+      "fold": 0,
+      "feature": "gender",
+      "mean_absolute_score_change": 0.000295265
+    },
+    {
+      "fold": 0,
+      "feature": "work_type",
+      "mean_absolute_score_change": 0.0017531666
+    },
+    {
+      "fold": 0,
+      "feature": "Residence_type",
+      "mean_absolute_score_change": 0.001812555
+    },
+    {
+      "fold": 0,
+      "feature": "smoking_status",
+      "mean_absolute_score_change": 0.0046618556
+    },
+    {
+      "fold": 1,
+      "feature": "age",
+      "mean_absolute_score_change": 0.0394067686
+    },
+    {
+      "fold": 1,
+      "feature": "avg_glucose_level",
+      "mean_absolute_score_change": 0.008769919
+    },
+    {
+      "fold": 1,
+      "feature": "bmi",
+      "mean_absolute_score_change": 0.0005902534
+    },
+    {
+      "fold": 1,
+      "feature": "hypertension",
+      "mean_absolute_score_change": 0.0025089146
+    },
+    {
+      "fold": 1,
+      "feature": "heart_disease",
+      "mean_absolute_score_change": 0.0013769052
+    },
+    {
+      "fold": 1,
+      "feature": "ever_married",
+      "mean_absolute_score_change": 0.001365186
+    },
+    {
+      "fold": 1,
+      "feature": "gender",
+      "mean_absolute_score_change": 0.0017297185
+    },
+    {
+      "fold": 1,
+      "feature": "work_type",
+      "mean_absolute_score_change": 0.0036766619
+    },
+    {
+      "fold": 1,
+      "feature": "Residence_type",
+      "mean_absolute_score_change": 0.0023012958
+    },
+    {
+      "fold": 1,
+      "feature": "smoking_status",
+      "mean_absolute_score_change": 0.0042045502
+    },
+    {
+      "fold": 2,
+      "feature": "age",
+      "mean_absolute_score_change": 0.0456416094
+    },
+    {
+      "fold": 2,
+      "feature": "avg_glucose_level",
+      "mean_absolute_score_change": 0.0066575897
+    },
+    {
+      "fold": 2,
+      "feature": "bmi",
+      "mean_absolute_score_change": 0.001372722
+    },
+    {
+      "fold": 2,
+      "feature": "hypertension",
+      "mean_absolute_score_change": 0.0039956096
+    },
+    {
+      "fold": 2,
+      "feature": "heart_disease",
+      "mean_absolute_score_change": 0.0009344405
+    },
+    {
+      "fold": 2,
+      "feature": "ever_married",
+      "mean_absolute_score_change": 0.0031742152
+    },
+    {
+      "fold": 2,
+      "feature": "gender",
+      "mean_absolute_score_change": 0.0005965885
+    },
+    {
+      "fold": 2,
+      "feature": "work_type",
+      "mean_absolute_score_change": 0.0029775129
+    },
+    {
+      "fold": 2,
+      "feature": "Residence_type",
+      "mean_absolute_score_change": 0.001429359
+    },
+    {
+      "fold": 2,
+      "feature": "smoking_status",
+      "mean_absolute_score_change": 0.0028325772
+    },
+    {
+      "fold": 3,
+      "feature": "age",
+      "mean_absolute_score_change": 0.0440594939
+    },
+    {
+      "fold": 3,
+      "feature": "avg_glucose_level",
+      "mean_absolute_score_change": 0.0070947284
+    },
+    {
+      "fold": 3,
+      "feature": "bmi",
+      "mean_absolute_score_change": 0.0009485238
+    },
+    {
+      "fold": 3,
+      "feature": "hypertension",
+      "mean_absolute_score_change": 0.0068456006
+    },
+    {
+      "fold": 3,
+      "feature": "heart_disease",
+      "mean_absolute_score_change": 0.0008077404
+    },
+    {
+      "fold": 3,
+      "feature": "ever_married",
+      "mean_absolute_score_change": 0.0014746645
+    },
+    {
+      "fold": 3,
+      "feature": "gender",
+      "mean_absolute_score_change": 0.0034977869
+    },
+    {
+      "fold": 3,
+      "feature": "work_type",
+      "mean_absolute_score_change": 0.0017099071
+    },
+    {
+      "fold": 3,
+      "feature": "Residence_type",
+      "mean_absolute_score_change": 0.0010204338
+    },
+    {
+      "fold": 3,
+      "feature": "smoking_status",
+      "mean_absolute_score_change": 0.0057447877
+    },
+    {
+      "fold": 4,
+      "feature": "age",
+      "mean_absolute_score_change": 0.0384916672
+    },
+    {
+      "fold": 4,
+      "feature": "avg_glucose_level",
+      "mean_absolute_score_change": 0.00730916
+    },
+    {
+      "fold": 4,
+      "feature": "bmi",
+      "mean_absolute_score_change": 0.0007851917
+    },
+    {
+      "fold": 4,
+      "feature": "hypertension",
+      "mean_absolute_score_change": 0.0015876978
+    },
+    {
+      "fold": 4,
+      "feature": "heart_disease",
+      "mean_absolute_score_change": 0.0009970051
+    },
+    {
+      "fold": 4,
+      "feature": "ever_married",
+      "mean_absolute_score_change": 0.0014186553
+    },
+    {
+      "fold": 4,
+      "feature": "gender",
+      "mean_absolute_score_change": 0.0008360757
+    },
+    {
+      "fold": 4,
+      "feature": "work_type",
+      "mean_absolute_score_change": 0.0044481524
+    },
+    {
+      "fold": 4,
+      "feature": "Residence_type",
+      "mean_absolute_score_change": 0.0013828098
+    },
+    {
+      "fold": 4,
+      "feature": "smoking_status",
+      "mean_absolute_score_change": 0.0047595629
+    }
+  ],
+  "limitations": [
+    "Development-only OOF comparisons; reused Phase IV hyperparameters and threshold.",
+    "Fold scores share training data and are not independent confidence intervals.",
+    "Subgroups are descriptive, not fairness or clinical validation; row bootstrap and Wilson intervals can be optimistic when diabetes predictor profiles repeat.",
+    "Permutation importance is predictive association, not causation."
+  ]
+}

@@ -1,0 +1,6383 @@
+{
+  "task": "diabetes",
+  "dataset_id": "uci_early_diabetes",
+  "source": {
+    "prepared_sha256": "fba09cdce359ada29bf87d8def1a7a32d956f793e2176c9fdcf7d004aba2f76e",
+    "raw_sha256": "67594c0f11257688b57493798e70737b7156ba37a2e6ac75507ae3a35221a388",
+    "rows": 520,
+    "features": [
+      "Age",
+      "Polyuria",
+      "Polydipsia",
+      "sudden weight loss",
+      "weakness",
+      "Polyphagia",
+      "Genital thrush",
+      "visual blurring",
+      "Itching",
+      "Irritability",
+      "delayed healing",
+      "partial paresis",
+      "muscle stiffness",
+      "Alopecia",
+      "Obesity",
+      "Gender"
+    ],
+    "source_target": "class",
+    "positive_source": "Positive"
+  },
+  "split_sha256": "b9e14a20d31b46fbbcdbc1a6ab93e35cf91e81216ec39411e99b10b5729db6cd",
+  "development_n": 416,
+  "development_positive_n": 256,
+  "held_out_n_unaccessed": 104,
+  "selected_phase4_model": "logistic_regression",
+  "phase4_threshold": 0.5,
+  "comparisons": [
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.9494949495,
+          "balanced_accuracy": 0.9519230769,
+          "precision": 1.0,
+          "recall": 0.9038461538,
+          "false_positive": 0,
+          "false_negative": 5,
+          "roc_auc": 0.9819711538,
+          "average_precision": 0.9901049887,
+          "brier": 0.0797469805,
+          "train_n": 332
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 1.0,
+          "average_precision": 1.0,
+          "brier": 0.0453051874,
+          "train_n": 333
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9902912621,
+          "balanced_accuracy": 0.984375,
+          "precision": 0.9807692308,
+          "recall": 1.0,
+          "false_positive": 1,
+          "false_negative": 0,
+          "roc_auc": 0.9993872549,
+          "average_precision": 0.9996229261,
+          "brier": 0.038569901,
+          "train_n": 333
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.8823529412,
+          "average_precision": 0.9413233128,
+          "brier": 0.14100386,
+          "train_n": 333
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9708737864,
+          "balanced_accuracy": 0.9589460784,
+          "precision": 0.9615384615,
+          "recall": 0.9803921569,
+          "false_positive": 2,
+          "false_negative": 1,
+          "roc_auc": 0.9889705882,
+          "average_precision": 0.9935103472,
+          "brier": 0.0489216819,
+          "train_n": 333
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9442231076,
+        "balanced_accuracy": 0.934765625,
+        "precision": 0.9634146341,
+        "recall": 0.92578125,
+        "false_positive": 9,
+        "false_negative": 19,
+        "roc_auc": 0.9696044922,
+        "average_precision": 0.9834802587,
+        "brier": 0.0707312468
+      },
+      "fold_mean": {
+        "f1": 0.943665704,
+        "balanced_accuracy": 0.934808635,
+        "roc_auc": 0.9705363876,
+        "average_precision": 0.984912315,
+        "brier": 0.0707095222
+      },
+      "fold_sd": {
+        "f1": 0.0553362566,
+        "balanced_accuracy": 0.0664227043,
+        "roc_auc": 0.0498682536,
+        "average_precision": 0.024723124,
+        "brier": 0.0423556816
+      }
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "mean",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.9494949495,
+          "balanced_accuracy": 0.9519230769,
+          "precision": 1.0,
+          "recall": 0.9038461538,
+          "false_positive": 0,
+          "false_negative": 5,
+          "roc_auc": 0.9819711538,
+          "average_precision": 0.9901049887,
+          "brier": 0.0797469805,
+          "train_n": 332
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 1.0,
+          "average_precision": 1.0,
+          "brier": 0.0453051874,
+          "train_n": 333
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9902912621,
+          "balanced_accuracy": 0.984375,
+          "precision": 0.9807692308,
+          "recall": 1.0,
+          "false_positive": 1,
+          "false_negative": 0,
+          "roc_auc": 0.9993872549,
+          "average_precision": 0.9996229261,
+          "brier": 0.038569901,
+          "train_n": 333
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.8823529412,
+          "average_precision": 0.9413233128,
+          "brier": 0.14100386,
+          "train_n": 333
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9708737864,
+          "balanced_accuracy": 0.9589460784,
+          "precision": 0.9615384615,
+          "recall": 0.9803921569,
+          "false_positive": 2,
+          "false_negative": 1,
+          "roc_auc": 0.9889705882,
+          "average_precision": 0.9935103472,
+          "brier": 0.0489216819,
+          "train_n": 333
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9442231076,
+        "balanced_accuracy": 0.934765625,
+        "precision": 0.9634146341,
+        "recall": 0.92578125,
+        "false_positive": 9,
+        "false_negative": 19,
+        "roc_auc": 0.9696044922,
+        "average_precision": 0.9834802587,
+        "brier": 0.0707312468
+      },
+      "fold_mean": {
+        "f1": 0.943665704,
+        "balanced_accuracy": 0.934808635,
+        "roc_auc": 0.9705363876,
+        "average_precision": 0.984912315,
+        "brier": 0.0707095222
+      },
+      "fold_sd": {
+        "f1": 0.0553362566,
+        "balanced_accuracy": 0.0664227043,
+        "roc_auc": 0.0498682536,
+        "average_precision": 0.024723124,
+        "brier": 0.0423556816
+      }
+    },
+    {
+      "strategy": "missing_indicator",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": true,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.9494949495,
+          "balanced_accuracy": 0.9519230769,
+          "precision": 1.0,
+          "recall": 0.9038461538,
+          "false_positive": 0,
+          "false_negative": 5,
+          "roc_auc": 0.9819711538,
+          "average_precision": 0.9901049887,
+          "brier": 0.0797469805,
+          "train_n": 332
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 1.0,
+          "average_precision": 1.0,
+          "brier": 0.0453051874,
+          "train_n": 333
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9902912621,
+          "balanced_accuracy": 0.984375,
+          "precision": 0.9807692308,
+          "recall": 1.0,
+          "false_positive": 1,
+          "false_negative": 0,
+          "roc_auc": 0.9993872549,
+          "average_precision": 0.9996229261,
+          "brier": 0.038569901,
+          "train_n": 333
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.8823529412,
+          "average_precision": 0.9413233128,
+          "brier": 0.14100386,
+          "train_n": 333
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9708737864,
+          "balanced_accuracy": 0.9589460784,
+          "precision": 0.9615384615,
+          "recall": 0.9803921569,
+          "false_positive": 2,
+          "false_negative": 1,
+          "roc_auc": 0.9889705882,
+          "average_precision": 0.9935103472,
+          "brier": 0.0489216819,
+          "train_n": 333
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9442231076,
+        "balanced_accuracy": 0.934765625,
+        "precision": 0.9634146341,
+        "recall": 0.92578125,
+        "false_positive": 9,
+        "false_negative": 19,
+        "roc_auc": 0.9696044922,
+        "average_precision": 0.9834802587,
+        "brier": 0.0707312468
+      },
+      "fold_mean": {
+        "f1": 0.943665704,
+        "balanced_accuracy": 0.934808635,
+        "roc_auc": 0.9705363876,
+        "average_precision": 0.984912315,
+        "brier": 0.0707095222
+      },
+      "fold_sd": {
+        "f1": 0.0553362566,
+        "balanced_accuracy": 0.0664227043,
+        "roc_auc": 0.0498682536,
+        "average_precision": 0.024723124,
+        "brier": 0.0423556816
+      }
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": true,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.9494949495,
+          "balanced_accuracy": 0.9519230769,
+          "precision": 1.0,
+          "recall": 0.9038461538,
+          "false_positive": 0,
+          "false_negative": 5,
+          "roc_auc": 0.9819711538,
+          "average_precision": 0.9901049887,
+          "brier": 0.0797352406,
+          "train_n": 332
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 1.0,
+          "average_precision": 1.0,
+          "brier": 0.0450245358,
+          "train_n": 333
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9902912621,
+          "balanced_accuracy": 0.984375,
+          "precision": 0.9807692308,
+          "recall": 1.0,
+          "false_positive": 1,
+          "false_negative": 0,
+          "roc_auc": 0.9993872549,
+          "average_precision": 0.9996229261,
+          "brier": 0.038383076,
+          "train_n": 333
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.8823529412,
+          "average_precision": 0.9413233128,
+          "brier": 0.1409797495,
+          "train_n": 333
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9708737864,
+          "balanced_accuracy": 0.9589460784,
+          "precision": 0.9615384615,
+          "recall": 0.9803921569,
+          "false_positive": 2,
+          "false_negative": 1,
+          "roc_auc": 0.9889705882,
+          "average_precision": 0.9935103472,
+          "brier": 0.0488162252,
+          "train_n": 333
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9442231076,
+        "balanced_accuracy": 0.934765625,
+        "precision": 0.9634146341,
+        "recall": 0.92578125,
+        "false_positive": 9,
+        "false_negative": 19,
+        "roc_auc": 0.9695800781,
+        "average_precision": 0.983443296,
+        "brier": 0.0706097545
+      },
+      "fold_mean": {
+        "f1": 0.943665704,
+        "balanced_accuracy": 0.934808635,
+        "roc_auc": 0.9705363876,
+        "average_precision": 0.984912315,
+        "brier": 0.0705877654
+      },
+      "fold_sd": {
+        "f1": 0.0553362566,
+        "balanced_accuracy": 0.0664227043,
+        "roc_auc": 0.0498682536,
+        "average_precision": 0.024723124,
+        "brier": 0.0424362122
+      }
+    },
+    {
+      "strategy": "minmax",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "minmax",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.9494949495,
+          "balanced_accuracy": 0.9519230769,
+          "precision": 1.0,
+          "recall": 0.9038461538,
+          "false_positive": 0,
+          "false_negative": 5,
+          "roc_auc": 0.9783653846,
+          "average_precision": 0.9885069891,
+          "brier": 0.0803653836,
+          "train_n": 332
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 0.9987745098,
+          "average_precision": 0.9992458522,
+          "brier": 0.046075935,
+          "train_n": 333
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9803921569,
+          "balanced_accuracy": 0.9745710784,
+          "precision": 0.9803921569,
+          "recall": 0.9803921569,
+          "false_positive": 1,
+          "false_negative": 1,
+          "roc_auc": 0.9993872549,
+          "average_precision": 0.9996229261,
+          "brier": 0.0405459923,
+          "train_n": 333
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.8756127451,
+          "average_precision": 0.9373192337,
+          "brier": 0.1412186118,
+          "train_n": 333
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9708737864,
+          "balanced_accuracy": 0.9589460784,
+          "precision": 0.9615384615,
+          "recall": 0.9803921569,
+          "false_positive": 2,
+          "false_negative": 1,
+          "roc_auc": 0.9889705882,
+          "average_precision": 0.9935107778,
+          "brier": 0.0503393743,
+          "train_n": 333
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9421157685,
+        "balanced_accuracy": 0.9328125,
+        "precision": 0.9632653061,
+        "recall": 0.921875,
+        "false_positive": 9,
+        "false_negative": 20,
+        "roc_auc": 0.9694091797,
+        "average_precision": 0.9833921964,
+        "brier": 0.0717298679
+      },
+      "fold_mean": {
+        "f1": 0.9416858829,
+        "balanced_accuracy": 0.9328478507,
+        "roc_auc": 0.9682220965,
+        "average_precision": 0.9836411558,
+        "brier": 0.0717090594
+      },
+      "fold_sd": {
+        "f1": 0.0533940455,
+        "balanced_accuracy": 0.0647165099,
+        "roc_auc": 0.0524752209,
+        "average_precision": 0.026295103,
+        "brier": 0.0418071976
+      }
+    },
+    {
+      "strategy": "robust",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "robust",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.9494949495,
+          "balanced_accuracy": 0.9519230769,
+          "precision": 1.0,
+          "recall": 0.9038461538,
+          "false_positive": 0,
+          "false_negative": 5,
+          "roc_auc": 0.9819711538,
+          "average_precision": 0.9901049887,
+          "brier": 0.0798353022,
+          "train_n": 332
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 0.9987745098,
+          "average_precision": 0.9992458522,
+          "brier": 0.0453990982,
+          "train_n": 333
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9902912621,
+          "balanced_accuracy": 0.984375,
+          "precision": 0.9807692308,
+          "recall": 1.0,
+          "false_positive": 1,
+          "false_negative": 0,
+          "roc_auc": 0.9993872549,
+          "average_precision": 0.9996229261,
+          "brier": 0.0387912633,
+          "train_n": 333
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.8823529412,
+          "average_precision": 0.9413233128,
+          "brier": 0.1410299842,
+          "train_n": 333
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9708737864,
+          "balanced_accuracy": 0.9589460784,
+          "precision": 0.9615384615,
+          "recall": 0.9803921569,
+          "false_positive": 2,
+          "false_negative": 1,
+          "roc_auc": 0.9889705882,
+          "average_precision": 0.9935103472,
+          "brier": 0.0492946954,
+          "train_n": 333
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9442231076,
+        "balanced_accuracy": 0.934765625,
+        "precision": 0.9634146341,
+        "recall": 0.92578125,
+        "false_positive": 9,
+        "false_negative": 19,
+        "roc_auc": 0.9698974609,
+        "average_precision": 0.9836519386,
+        "brier": 0.0708916197
+      },
+      "fold_mean": {
+        "f1": 0.943665704,
+        "balanced_accuracy": 0.934808635,
+        "roc_auc": 0.9702912896,
+        "average_precision": 0.9847614854,
+        "brier": 0.0708700687
+      },
+      "fold_sd": {
+        "f1": 0.0553362566,
+        "balanced_accuracy": 0.0664227043,
+        "roc_auc": 0.0496899325,
+        "average_precision": 0.0246101084,
+        "brier": 0.0422673218
+      }
+    },
+    {
+      "strategy": "no_scaling",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "none",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 1e-09
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.8936170213,
+          "balanced_accuracy": 0.9038461538,
+          "precision": 1.0,
+          "recall": 0.8076923077,
+          "false_positive": 0,
+          "false_negative": 10,
+          "roc_auc": 0.9825721154,
+          "average_precision": 0.9903915957,
+          "brier": 0.081414,
+          "train_n": 332
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 0.9987745098,
+          "average_precision": 0.9992600814,
+          "brier": 0.046601,
+          "train_n": 333
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9803921569,
+          "balanced_accuracy": 0.9745710784,
+          "precision": 0.9803921569,
+          "recall": 0.9803921569,
+          "false_positive": 1,
+          "false_negative": 1,
+          "roc_auc": 0.9993872549,
+          "average_precision": 0.9996229261,
+          "brier": 0.037616,
+          "train_n": 333
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.868872549,
+          "average_precision": 0.9314608151,
+          "brier": 0.142122,
+          "train_n": 333
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9708737864,
+          "balanced_accuracy": 0.9589460784,
+          "precision": 0.9615384615,
+          "recall": 0.9803921569,
+          "false_positive": 2,
+          "false_negative": 1,
+          "roc_auc": 0.9889705882,
+          "average_precision": 0.9935103472,
+          "brier": 0.046894,
+          "train_n": 333
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9314516129,
+        "balanced_accuracy": 0.923046875,
+        "precision": 0.9625,
+        "recall": 0.90234375,
+        "false_positive": 9,
+        "false_negative": 25,
+        "roc_auc": 0.9697021484,
+        "average_precision": 0.9829695015,
+        "brier": 0.070954
+      },
+      "fold_mean": {
+        "f1": 0.9305102973,
+        "balanced_accuracy": 0.9232324661,
+        "roc_auc": 0.9677154035,
+        "average_precision": 0.9828491531,
+        "brier": 0.070929
+      },
+      "fold_sd": {
+        "f1": 0.0570720197,
+        "balanced_accuracy": 0.0647453911,
+        "roc_auc": 0.0557005137,
+        "average_precision": 0.0289913298,
+        "brier": 0.043179
+      }
+    },
+    {
+      "strategy": "categorical_constant",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "constant",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": false,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.9494949495,
+          "balanced_accuracy": 0.9519230769,
+          "precision": 1.0,
+          "recall": 0.9038461538,
+          "false_positive": 0,
+          "false_negative": 5,
+          "roc_auc": 0.9819711538,
+          "average_precision": 0.9901049887,
+          "brier": 0.0797469805,
+          "train_n": 332
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 1.0,
+          "average_precision": 1.0,
+          "brier": 0.0453051874,
+          "train_n": 333
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9902912621,
+          "balanced_accuracy": 0.984375,
+          "precision": 0.9807692308,
+          "recall": 1.0,
+          "false_positive": 1,
+          "false_negative": 0,
+          "roc_auc": 0.9993872549,
+          "average_precision": 0.9996229261,
+          "brier": 0.038569901,
+          "train_n": 333
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.8823529412,
+          "average_precision": 0.9413233128,
+          "brier": 0.14100386,
+          "train_n": 333
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9708737864,
+          "balanced_accuracy": 0.9589460784,
+          "precision": 0.9615384615,
+          "recall": 0.9803921569,
+          "false_positive": 2,
+          "false_negative": 1,
+          "roc_auc": 0.9889705882,
+          "average_precision": 0.9935103472,
+          "brier": 0.0489216819,
+          "train_n": 333
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9442231076,
+        "balanced_accuracy": 0.934765625,
+        "precision": 0.9634146341,
+        "recall": 0.92578125,
+        "false_positive": 9,
+        "false_negative": 19,
+        "roc_auc": 0.9696044922,
+        "average_precision": 0.9834802587,
+        "brier": 0.0707312468
+      },
+      "fold_mean": {
+        "f1": 0.943665704,
+        "balanced_accuracy": 0.934808635,
+        "roc_auc": 0.9705363876,
+        "average_precision": 0.984912315,
+        "brier": 0.0707095222
+      },
+      "fold_sd": {
+        "f1": 0.0553362566,
+        "balanced_accuracy": 0.0664227043,
+        "roc_auc": 0.0498682536,
+        "average_precision": 0.024723124,
+        "brier": 0.0423556816
+      }
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "model_params": {
+        "model__C": 0.3,
+        "model__class_weight": "balanced"
+      },
+      "preprocessing_config": {
+        "config_version": 1,
+        "missing_tokens": [
+          "",
+          "?",
+          "NA",
+          "N/A",
+          "NULL",
+          "null"
+        ],
+        "invalid_feature_policy": "error",
+        "exact_duplicate_policy": "retain",
+        "duplicate_removal_justification": "",
+        "outlier_policy": "report_only",
+        "numeric_imputation": "median",
+        "categorical_imputation": "most_frequent",
+        "categorical_fill_value": "__MISSING__",
+        "numeric_scaling": "standard",
+        "iqr_clip_in_training_pipeline": false,
+        "stroke_unknown_smoking_as_missing": true,
+        "random_seed": 42,
+        "numeric_missing_indicator": false,
+        "deduplicate_training_profiles": true,
+        "solver_tolerance": 0.0001
+      },
+      "threshold": 0.5,
+      "folds": [
+        {
+          "fold": 0,
+          "n": 84,
+          "positive_n": 52,
+          "negative_n": 32,
+          "f1": 0.8936170213,
+          "balanced_accuracy": 0.9038461538,
+          "precision": 1.0,
+          "recall": 0.8076923077,
+          "false_positive": 0,
+          "false_negative": 10,
+          "roc_auc": 0.9891826923,
+          "average_precision": 0.9943212917,
+          "brier": 0.0773848568,
+          "train_n": 162
+        },
+        {
+          "fold": 1,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9591836735,
+          "balanced_accuracy": 0.9607843137,
+          "precision": 1.0,
+          "recall": 0.9215686275,
+          "false_positive": 0,
+          "false_negative": 4,
+          "roc_auc": 0.9950980392,
+          "average_precision": 0.9971479501,
+          "brier": 0.0568610702,
+          "train_n": 160
+        },
+        {
+          "fold": 2,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9375,
+          "balanced_accuracy": 0.9411764706,
+          "precision": 1.0,
+          "recall": 0.8823529412,
+          "false_positive": 0,
+          "false_negative": 6,
+          "roc_auc": 0.9963235294,
+          "average_precision": 0.9977005885,
+          "brier": 0.0600228895,
+          "train_n": 160
+        },
+        {
+          "fold": 3,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.8484848485,
+          "balanced_accuracy": 0.8180147059,
+          "precision": 0.875,
+          "recall": 0.8235294118,
+          "false_positive": 6,
+          "false_negative": 9,
+          "roc_auc": 0.8731617647,
+          "average_precision": 0.9361552335,
+          "brier": 0.1459251505,
+          "train_n": 163
+        },
+        {
+          "fold": 4,
+          "n": 83,
+          "positive_n": 51,
+          "negative_n": 32,
+          "f1": 0.9259259259,
+          "balanced_accuracy": 0.8808210784,
+          "precision": 0.8771929825,
+          "recall": 0.9803921569,
+          "false_positive": 7,
+          "false_negative": 1,
+          "roc_auc": 0.9914215686,
+          "average_precision": 0.9949369257,
+          "brier": 0.058816354,
+          "train_n": 163
+        }
+      ],
+      "oof": {
+        "n": 416,
+        "positive_n": 256,
+        "negative_n": 160,
+        "f1": 0.9131313131,
+        "balanced_accuracy": 0.90078125,
+        "precision": 0.9456066946,
+        "recall": 0.8828125,
+        "false_positive": 13,
+        "false_negative": 30,
+        "roc_auc": 0.9647949219,
+        "average_precision": 0.9805791003,
+        "brier": 0.0797962536
+      },
+      "fold_mean": {
+        "f1": 0.9129422938,
+        "balanced_accuracy": 0.9009285445,
+        "roc_auc": 0.9690375189,
+        "average_precision": 0.9840523979,
+        "brier": 0.0798020642
+      },
+      "fold_sd": {
+        "f1": 0.0431223528,
+        "balanced_accuracy": 0.0558796384,
+        "roc_auc": 0.0536719457,
+        "average_precision": 0.0268133739,
+        "brier": 0.0378682268
+      }
+    }
+  ],
+  "family_comparisons": [
+    {
+      "algorithm": "decision_tree",
+      "fold_mean": {
+        "f1": 0.9314540213,
+        "balanced_accuracy": 0.9116562971,
+        "roc_auc": 0.947120098,
+        "average_precision": 0.9515625702,
+        "brier": 0.0626433038
+      },
+      "fold_sd": {
+        "f1": 0.0538632361,
+        "balanced_accuracy": 0.0709973802,
+        "roc_auc": 0.0676853168,
+        "average_precision": 0.068989511,
+        "brier": 0.0540243875
+      }
+    },
+    {
+      "algorithm": "random_forest",
+      "fold_mean": {
+        "f1": 0.9479401994,
+        "balanced_accuracy": 0.9297841252,
+        "roc_auc": 0.9790181938,
+        "average_precision": 0.9871276313,
+        "brier": 0.0579886791
+      },
+      "fold_sd": {
+        "f1": 0.0550926286,
+        "balanced_accuracy": 0.0771392772,
+        "roc_auc": 0.0264635684,
+        "average_precision": 0.0153858108,
+        "brier": 0.0314048309
+      }
+    },
+    {
+      "algorithm": "knn",
+      "fold_mean": {
+        "f1": 0.9207268727,
+        "balanced_accuracy": 0.9167043741,
+        "roc_auc": 0.9509214744,
+        "average_precision": 0.9577801593,
+        "brier": 0.075852878
+      },
+      "fold_sd": {
+        "f1": 0.0527704456,
+        "balanced_accuracy": 0.0470637334,
+        "roc_auc": 0.042381788,
+        "average_precision": 0.0406621762,
+        "brier": 0.0471547241
+      }
+    }
+  ],
+  "threshold_sensitivity": [
+    {
+      "threshold": 0.05,
+      "n": 416,
+      "positive_n": 256,
+      "negative_n": 160,
+      "f1": 0.7901234568,
+      "balanced_accuracy": 0.575,
+      "precision": 0.6530612245,
+      "recall": 1.0,
+      "false_positive": 136,
+      "false_negative": 0,
+      "roc_auc": 0.9696044922,
+      "average_precision": 0.9834802587,
+      "brier": 0.0707312468
+    },
+    {
+      "threshold": 0.1,
+      "n": 416,
+      "positive_n": 256,
+      "negative_n": 160,
+      "f1": 0.8121990369,
+      "balanced_accuracy": 0.637890625,
+      "precision": 0.689373297,
+      "recall": 0.98828125,
+      "false_positive": 114,
+      "false_negative": 3,
+      "roc_auc": 0.9696044922,
+      "average_precision": 0.9834802587,
+      "brier": 0.0707312468
+    },
+    {
+      "threshold": 0.2,
+      "n": 416,
+      "positive_n": 256,
+      "negative_n": 160,
+      "f1": 0.8940754039,
+      "balanced_accuracy": 0.823828125,
+      "precision": 0.8272425249,
+      "recall": 0.97265625,
+      "false_positive": 52,
+      "false_negative": 7,
+      "roc_auc": 0.9696044922,
+      "average_precision": 0.9834802587,
+      "brier": 0.0707312468
+    },
+    {
+      "threshold": 0.3,
+      "n": 416,
+      "positive_n": 256,
+      "negative_n": 160,
+      "f1": 0.9196261682,
+      "balanced_accuracy": 0.87734375,
+      "precision": 0.8817204301,
+      "recall": 0.9609375,
+      "false_positive": 33,
+      "false_negative": 10,
+      "roc_auc": 0.9696044922,
+      "average_precision": 0.9834802587,
+      "brier": 0.0707312468
+    },
+    {
+      "threshold": 0.5,
+      "n": 416,
+      "positive_n": 256,
+      "negative_n": 160,
+      "f1": 0.9442231076,
+      "balanced_accuracy": 0.934765625,
+      "precision": 0.9634146341,
+      "recall": 0.92578125,
+      "false_positive": 9,
+      "false_negative": 19,
+      "roc_auc": 0.9696044922,
+      "average_precision": 0.9834802587,
+      "brier": 0.0707312468
+    },
+    {
+      "threshold": 0.7,
+      "n": 416,
+      "positive_n": 256,
+      "negative_n": 160,
+      "f1": 0.8571428571,
+      "balanced_accuracy": 0.868359375,
+      "precision": 0.9798994975,
+      "recall": 0.76171875,
+      "false_positive": 4,
+      "false_negative": 61,
+      "roc_auc": 0.9696044922,
+      "average_precision": 0.9834802587,
+      "brier": 0.0707312468
+    },
+    {
+      "threshold": 0.9,
+      "n": 416,
+      "positive_n": 256,
+      "negative_n": 160,
+      "f1": 0.742014742,
+      "balanced_accuracy": 0.794921875,
+      "precision": 1.0,
+      "recall": 0.58984375,
+      "false_positive": 0,
+      "false_negative": 105,
+      "roc_auc": 0.9696044922,
+      "average_precision": 0.9834802587,
+      "brier": 0.0707312468
+    }
+  ],
+  "calibration": [
+    {
+      "strategy": "baseline",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 115,
+      "mean_score": 0.1022879007,
+      "observed_rate": 0.0608695652
+    },
+    {
+      "strategy": "baseline",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 39,
+      "mean_score": 0.2880267931,
+      "observed_rate": 0.2051282051
+    },
+    {
+      "strategy": "baseline",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 42,
+      "mean_score": 0.5228529478,
+      "observed_rate": 0.5952380952
+    },
+    {
+      "strategy": "baseline",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 44,
+      "mean_score": 0.7001160833,
+      "observed_rate": 0.9318181818
+    },
+    {
+      "strategy": "baseline",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 176,
+      "mean_score": 0.9602987417,
+      "observed_rate": 0.9943181818
+    },
+    {
+      "strategy": "mean",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 115,
+      "mean_score": 0.1022879007,
+      "observed_rate": 0.0608695652
+    },
+    {
+      "strategy": "mean",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 39,
+      "mean_score": 0.2880267931,
+      "observed_rate": 0.2051282051
+    },
+    {
+      "strategy": "mean",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 42,
+      "mean_score": 0.5228529478,
+      "observed_rate": 0.5952380952
+    },
+    {
+      "strategy": "mean",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 44,
+      "mean_score": 0.7001160833,
+      "observed_rate": 0.9318181818
+    },
+    {
+      "strategy": "mean",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 176,
+      "mean_score": 0.9602987417,
+      "observed_rate": 0.9943181818
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 115,
+      "mean_score": 0.1022879007,
+      "observed_rate": 0.0608695652
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 39,
+      "mean_score": 0.2880267931,
+      "observed_rate": 0.2051282051
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 42,
+      "mean_score": 0.5228529478,
+      "observed_rate": 0.5952380952
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 44,
+      "mean_score": 0.7001160833,
+      "observed_rate": 0.9318181818
+    },
+    {
+      "strategy": "missing_indicator",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 176,
+      "mean_score": 0.9602987417,
+      "observed_rate": 0.9943181818
+    },
+    {
+      "strategy": "iqr_clip",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 115,
+      "mean_score": 0.1025008152,
+      "observed_rate": 0.0608695652
+    },
+    {
+      "strategy": "iqr_clip",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 39,
+      "mean_score": 0.2881266038,
+      "observed_rate": 0.2051282051
+    },
+    {
+      "strategy": "iqr_clip",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 42,
+      "mean_score": 0.5222741663,
+      "observed_rate": 0.5952380952
+    },
+    {
+      "strategy": "iqr_clip",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 42,
+      "mean_score": 0.6968253903,
+      "observed_rate": 0.9285714286
+    },
+    {
+      "strategy": "iqr_clip",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 178,
+      "mean_score": 0.9585345574,
+      "observed_rate": 0.9943820225
+    },
+    {
+      "strategy": "minmax",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 115,
+      "mean_score": 0.1009432296,
+      "observed_rate": 0.0608695652
+    },
+    {
+      "strategy": "minmax",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 39,
+      "mean_score": 0.2843840766,
+      "observed_rate": 0.2051282051
+    },
+    {
+      "strategy": "minmax",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 46,
+      "mean_score": 0.5301715789,
+      "observed_rate": 0.6304347826
+    },
+    {
+      "strategy": "minmax",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 38,
+      "mean_score": 0.7002423116,
+      "observed_rate": 0.9210526316
+    },
+    {
+      "strategy": "minmax",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 178,
+      "mean_score": 0.9586460356,
+      "observed_rate": 0.9943820225
+    },
+    {
+      "strategy": "robust",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 115,
+      "mean_score": 0.1021973339,
+      "observed_rate": 0.0608695652
+    },
+    {
+      "strategy": "robust",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 39,
+      "mean_score": 0.2877137505,
+      "observed_rate": 0.2051282051
+    },
+    {
+      "strategy": "robust",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 41,
+      "mean_score": 0.5222642325,
+      "observed_rate": 0.5853658537
+    },
+    {
+      "strategy": "robust",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 45,
+      "mean_score": 0.6972360185,
+      "observed_rate": 0.9333333333
+    },
+    {
+      "strategy": "robust",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 176,
+      "mean_score": 0.9602824715,
+      "observed_rate": 0.9943181818
+    },
+    {
+      "strategy": "no_scaling",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 114,
+      "mean_score": 0.094223,
+      "observed_rate": 0.0526315789
+    },
+    {
+      "strategy": "no_scaling",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 39,
+      "mean_score": 0.268018,
+      "observed_rate": 0.2051282051
+    },
+    {
+      "strategy": "no_scaling",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 45,
+      "mean_score": 0.495818,
+      "observed_rate": 0.6222222222
+    },
+    {
+      "strategy": "no_scaling",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 45,
+      "mean_score": 0.711608,
+      "observed_rate": 0.9333333333
+    },
+    {
+      "strategy": "no_scaling",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 173,
+      "mean_score": 0.96308,
+      "observed_rate": 0.9942196532
+    },
+    {
+      "strategy": "categorical_constant",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 115,
+      "mean_score": 0.1022879007,
+      "observed_rate": 0.0608695652
+    },
+    {
+      "strategy": "categorical_constant",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 39,
+      "mean_score": 0.2880267931,
+      "observed_rate": 0.2051282051
+    },
+    {
+      "strategy": "categorical_constant",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 42,
+      "mean_score": 0.5228529478,
+      "observed_rate": 0.5952380952
+    },
+    {
+      "strategy": "categorical_constant",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 44,
+      "mean_score": 0.7001160833,
+      "observed_rate": 0.9318181818
+    },
+    {
+      "strategy": "categorical_constant",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 176,
+      "mean_score": 0.9602987417,
+      "observed_rate": 0.9943181818
+    },
+    {
+      "strategy": "deduplicated",
+      "lower": 0.0,
+      "upper": 0.2,
+      "n": 100,
+      "mean_score": 0.1353783211,
+      "observed_rate": 0.04
+    },
+    {
+      "strategy": "deduplicated",
+      "lower": 0.2,
+      "upper": 0.4,
+      "n": 47,
+      "mean_score": 0.2906398573,
+      "observed_rate": 0.170212766
+    },
+    {
+      "strategy": "deduplicated",
+      "lower": 0.4,
+      "upper": 0.6,
+      "n": 51,
+      "mean_score": 0.4868355046,
+      "observed_rate": 0.6470588235
+    },
+    {
+      "strategy": "deduplicated",
+      "lower": 0.6,
+      "upper": 0.8,
+      "n": 45,
+      "mean_score": 0.6951022939,
+      "observed_rate": 0.8444444444
+    },
+    {
+      "strategy": "deduplicated",
+      "lower": 0.8,
+      "upper": 1.0,
+      "n": 173,
+      "mean_score": 0.9414426607,
+      "observed_rate": 1.0
+    }
+  ],
+  "subgroups": [
+    {
+      "field": "Gender",
+      "group": "Female",
+      "n": 149,
+      "positive_n": 134,
+      "negative_n": 15,
+      "precision": 0.9777777778,
+      "recall": 0.9850746269,
+      "f1": 0.9814126394,
+      "f1_ci95_bootstrap": [
+        0.9596995256,
+        0.9963905387
+      ],
+      "precision_ci95": [
+        0.9367021208,
+        0.9924142247
+      ],
+      "recall_ci95": [
+        0.9472140919,
+        0.9958974216
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "Gender",
+      "group": "Male",
+      "n": 267,
+      "positive_n": 122,
+      "negative_n": 145,
+      "precision": 0.9459459459,
+      "recall": 0.8606557377,
+      "f1": 0.9012875536,
+      "f1_ci95_bootstrap": [
+        0.8609594679,
+        0.9395642982
+      ],
+      "precision_ci95": [
+        0.8870629284,
+        0.9749940266
+      ],
+      "recall_ci95": [
+        0.7881457149,
+        0.9111460932
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "Age",
+      "group": "41\u201360",
+      "n": 229,
+      "positive_n": 139,
+      "negative_n": 90,
+      "precision": 0.9923664122,
+      "recall": 0.9352517986,
+      "f1": 0.962962963,
+      "f1_ci95_bootstrap": [
+        0.9384545455,
+        0.9833252818
+      ],
+      "precision_ci95": [
+        0.9580268121,
+        0.9986512457
+      ],
+      "recall_ci95": [
+        0.8815267879,
+        0.9655653757
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "Age",
+      "group": ">60",
+      "n": 60,
+      "positive_n": 38,
+      "negative_n": 22,
+      "precision": 0.925,
+      "recall": 0.9736842105,
+      "f1": 0.9487179487,
+      "f1_ci95_bootstrap": [
+        0.8857142857,
+        0.9882352941
+      ],
+      "precision_ci95": [
+        0.8013546984,
+        0.9741644432
+      ],
+      "recall_ci95": [
+        0.8650482156,
+        0.9953395324
+      ],
+      "flag": "descriptive"
+    },
+    {
+      "field": "Age",
+      "group": "\u226440",
+      "n": 127,
+      "positive_n": 79,
+      "negative_n": 48,
+      "precision": 0.9333333333,
+      "recall": 0.8860759494,
+      "f1": 0.9090909091,
+      "f1_ci95_bootstrap": [
+        0.8570935961,
+        0.9506280756
+      ],
+      "precision_ci95": [
+        0.8532474983,
+        0.9711903619
+      ],
+      "recall_ci95": [
+        0.7974501268,
+        0.938894898
+      ],
+      "flag": "descriptive"
+    }
+  ],
+  "importance": [
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Age",
+      "score_drop": 0.016025641
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polyuria",
+      "score_drop": 0.1049679487
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polydipsia",
+      "score_drop": 0.0929487179
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0064102564
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Genital thrush",
+      "score_drop": 0.0256410256
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Itching",
+      "score_drop": 0.0857371795
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Irritability",
+      "score_drop": 0.0969551282
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "delayed healing",
+      "score_drop": 0.0064102564
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "partial paresis",
+      "score_drop": 0.0196314103
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0352564103
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Alopecia",
+      "score_drop": 0.0096153846
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Gender",
+      "score_drop": 0.1049679487
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Age",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polyuria",
+      "score_drop": 0.1673815359
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polydipsia",
+      "score_drop": 0.0526960784
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0196078431
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "weakness",
+      "score_drop": -0.0098039216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polyphagia",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Genital thrush",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "visual blurring",
+      "score_drop": -0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Itching",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Irritability",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "delayed healing",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "partial paresis",
+      "score_drop": -0.0111315359
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0196078431
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Alopecia",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Gender",
+      "score_drop": 0.1041666667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Age",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polyuria",
+      "score_drop": 0.2131331699
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polydipsia",
+      "score_drop": 0.1878063725
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Genital thrush",
+      "score_drop": -0.015625
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Itching",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Irritability",
+      "score_drop": 0.0202205882
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "delayed healing",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "partial paresis",
+      "score_drop": 0.0464665033
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Alopecia",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Gender",
+      "score_drop": 0.1284722222
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Age",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polyuria",
+      "score_drop": 0.0866013072
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polydipsia",
+      "score_drop": 0.0767973856
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0025531046
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polyphagia",
+      "score_drop": 0.046875
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Genital thrush",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "visual blurring",
+      "score_drop": 0.0416666667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Irritability",
+      "score_drop": 0.0404411765
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "delayed healing",
+      "score_drop": 0.0196078431
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "partial paresis",
+      "score_drop": 0.0685253268
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Alopecia",
+      "score_drop": 0.022875817
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Obesity",
+      "score_drop": -0.0254289216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Gender",
+      "score_drop": 0.116625817
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Age",
+      "score_drop": 0.0729166667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polyuria",
+      "score_drop": 0.1355187908
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polydipsia",
+      "score_drop": 0.1453227124
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0625
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Genital thrush",
+      "score_drop": 0.0260416667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Itching",
+      "score_drop": 0.0416666667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Irritability",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "partial paresis",
+      "score_drop": 0.0104166667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "muscle stiffness",
+      "score_drop": 0.046875
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Alopecia",
+      "score_drop": 0.0625
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Gender",
+      "score_drop": 0.1002859477
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Age",
+      "score_drop": 0.016025641
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polyuria",
+      "score_drop": 0.1049679487
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polydipsia",
+      "score_drop": 0.0929487179
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0064102564
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Genital thrush",
+      "score_drop": 0.0256410256
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Itching",
+      "score_drop": 0.0857371795
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Irritability",
+      "score_drop": 0.0969551282
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "delayed healing",
+      "score_drop": 0.0064102564
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "partial paresis",
+      "score_drop": 0.0196314103
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0352564103
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Alopecia",
+      "score_drop": 0.0096153846
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Gender",
+      "score_drop": 0.1049679487
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Age",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polyuria",
+      "score_drop": 0.1673815359
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polydipsia",
+      "score_drop": 0.0526960784
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0196078431
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "weakness",
+      "score_drop": -0.0098039216
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polyphagia",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Genital thrush",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "visual blurring",
+      "score_drop": -0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Itching",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Irritability",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "delayed healing",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "partial paresis",
+      "score_drop": -0.0111315359
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0196078431
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Alopecia",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Gender",
+      "score_drop": 0.1041666667
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Age",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polyuria",
+      "score_drop": 0.2131331699
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polydipsia",
+      "score_drop": 0.1878063725
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Genital thrush",
+      "score_drop": -0.015625
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Itching",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Irritability",
+      "score_drop": 0.0202205882
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "delayed healing",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "partial paresis",
+      "score_drop": 0.0464665033
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Alopecia",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Gender",
+      "score_drop": 0.1284722222
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Age",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polyuria",
+      "score_drop": 0.0866013072
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polydipsia",
+      "score_drop": 0.0767973856
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0025531046
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polyphagia",
+      "score_drop": 0.046875
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Genital thrush",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "visual blurring",
+      "score_drop": 0.0416666667
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Irritability",
+      "score_drop": 0.0404411765
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "delayed healing",
+      "score_drop": 0.0196078431
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "partial paresis",
+      "score_drop": 0.0685253268
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Alopecia",
+      "score_drop": 0.022875817
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Obesity",
+      "score_drop": -0.0254289216
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Gender",
+      "score_drop": 0.116625817
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Age",
+      "score_drop": 0.0729166667
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polyuria",
+      "score_drop": 0.1355187908
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polydipsia",
+      "score_drop": 0.1453227124
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0625
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Genital thrush",
+      "score_drop": 0.0260416667
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Itching",
+      "score_drop": 0.0416666667
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Irritability",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "partial paresis",
+      "score_drop": 0.0104166667
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "muscle stiffness",
+      "score_drop": 0.046875
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Alopecia",
+      "score_drop": 0.0625
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Gender",
+      "score_drop": 0.1002859477
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Age",
+      "score_drop": 0.016025641
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polyuria",
+      "score_drop": 0.1049679487
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polydipsia",
+      "score_drop": 0.0929487179
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0064102564
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Genital thrush",
+      "score_drop": 0.0256410256
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Itching",
+      "score_drop": 0.0857371795
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Irritability",
+      "score_drop": 0.0969551282
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "delayed healing",
+      "score_drop": 0.0064102564
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "partial paresis",
+      "score_drop": 0.0356570513
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0352564103
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Alopecia",
+      "score_drop": 0.0096153846
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Gender",
+      "score_drop": 0.1049679487
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Age",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polyuria",
+      "score_drop": 0.1673815359
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polydipsia",
+      "score_drop": 0.0526960784
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0196078431
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "weakness",
+      "score_drop": -0.0098039216
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polyphagia",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Genital thrush",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "visual blurring",
+      "score_drop": -0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Itching",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Irritability",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "delayed healing",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "partial paresis",
+      "score_drop": -0.0111315359
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0196078431
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Alopecia",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Gender",
+      "score_drop": 0.1041666667
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Age",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polyuria",
+      "score_drop": 0.2131331699
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polydipsia",
+      "score_drop": 0.1878063725
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Genital thrush",
+      "score_drop": -0.015625
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Itching",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Irritability",
+      "score_drop": 0.0202205882
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "delayed healing",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "partial paresis",
+      "score_drop": 0.0464665033
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Alopecia",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Gender",
+      "score_drop": 0.1284722222
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Age",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polyuria",
+      "score_drop": 0.0866013072
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polydipsia",
+      "score_drop": 0.0767973856
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0025531046
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polyphagia",
+      "score_drop": 0.046875
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Genital thrush",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "visual blurring",
+      "score_drop": 0.0416666667
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Irritability",
+      "score_drop": 0.0404411765
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "delayed healing",
+      "score_drop": 0.0196078431
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "partial paresis",
+      "score_drop": 0.0685253268
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Alopecia",
+      "score_drop": 0.022875817
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Obesity",
+      "score_drop": -0.0254289216
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Gender",
+      "score_drop": 0.116625817
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Age",
+      "score_drop": 0.0729166667
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polyuria",
+      "score_drop": 0.1387867647
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polydipsia",
+      "score_drop": 0.1453227124
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0625
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Genital thrush",
+      "score_drop": 0.0260416667
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Itching",
+      "score_drop": 0.0416666667
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Irritability",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "partial paresis",
+      "score_drop": 0.0104166667
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "muscle stiffness",
+      "score_drop": 0.046875
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Alopecia",
+      "score_drop": 0.0625
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Gender",
+      "score_drop": 0.1002859477
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Age",
+      "score_drop": 0.0032051282
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polyuria",
+      "score_drop": 0.0961538462
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polydipsia",
+      "score_drop": 0.0769230769
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0288461538
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "weakness",
+      "score_drop": 0.0192307692
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Polyphagia",
+      "score_drop": -0.0352564103
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Genital thrush",
+      "score_drop": 0.0032051282
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "visual blurring",
+      "score_drop": -0.0288461538
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Itching",
+      "score_drop": 0.0192307692
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Irritability",
+      "score_drop": -0.0192307692
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "delayed healing",
+      "score_drop": 0.0064102564
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "partial paresis",
+      "score_drop": -0.0384615385
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "muscle stiffness",
+      "score_drop": -0.0128205128
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Alopecia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 0,
+      "feature": "Gender",
+      "score_drop": 0.0260416667
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Age",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polyuria",
+      "score_drop": 0.1465482026
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polydipsia",
+      "score_drop": 0.0324754902
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0039828431
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Genital thrush",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "visual blurring",
+      "score_drop": 0.0025531046
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Itching",
+      "score_drop": 0.03125
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Irritability",
+      "score_drop": 0.0019403595
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "partial paresis",
+      "score_drop": 0.0233864379
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "muscle stiffness",
+      "score_drop": -0.0032679739
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Alopecia",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 1,
+      "feature": "Gender",
+      "score_drop": 0.0494281046
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Age",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polyuria",
+      "score_drop": 0.0755718954
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polydipsia",
+      "score_drop": 0.069750817
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "weakness",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Genital thrush",
+      "score_drop": -0.0098039216
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "visual blurring",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Itching",
+      "score_drop": 0.0169526144
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Irritability",
+      "score_drop": -0.0098039216
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "delayed healing",
+      "score_drop": 0.0221609477
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "partial paresis",
+      "score_drop": 0.0163398693
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Alopecia",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Obesity",
+      "score_drop": -0.0032679739
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 2,
+      "feature": "Gender",
+      "score_drop": 0.0352328431
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Age",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polyuria",
+      "score_drop": 0.0702614379
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polydipsia",
+      "score_drop": 0.050755719
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0039828431
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "weakness",
+      "score_drop": 0.0261437908
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Polyphagia",
+      "score_drop": 0.0664828431
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Genital thrush",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "visual blurring",
+      "score_drop": 0.0196078431
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Itching",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Irritability",
+      "score_drop": 0.0175653595
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "delayed healing",
+      "score_drop": 0.022875817
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "partial paresis",
+      "score_drop": 0.0619893791
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Alopecia",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Obesity",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 3,
+      "feature": "Gender",
+      "score_drop": 0.1075367647
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Age",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polyuria",
+      "score_drop": 0.1198937908
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polydipsia",
+      "score_drop": 0.0919117647
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0084763072
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Polyphagia",
+      "score_drop": -0.0260416667
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Genital thrush",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "visual blurring",
+      "score_drop": 0.0104166667
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Irritability",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "partial paresis",
+      "score_drop": -0.0188929739
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Alopecia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "fold": 4,
+      "feature": "Gender",
+      "score_drop": 0.042994281
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Age",
+      "score_drop": -0.0128205128
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Polyuria",
+      "score_drop": 0.3048878205
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Polydipsia",
+      "score_drop": 0.0857371795
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Irritability",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "partial paresis",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "muscle stiffness",
+      "score_drop": -0.0032051282
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Alopecia",
+      "score_drop": 0.1037660256
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 0,
+      "feature": "Gender",
+      "score_drop": 0.1241987179
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Age",
+      "score_drop": 0.0163398693
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Polyuria",
+      "score_drop": 0.280126634
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Polydipsia",
+      "score_drop": 0.1205065359
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Irritability",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "partial paresis",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0339052288
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Alopecia",
+      "score_drop": -0.0098039216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 1,
+      "feature": "Gender",
+      "score_drop": 0.1341911765
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Age",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Polyuria",
+      "score_drop": 0.2554125817
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Polydipsia",
+      "score_drop": 0.2735906863
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Irritability",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "partial paresis",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Alopecia",
+      "score_drop": 0.0639297386
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 2,
+      "feature": "Gender",
+      "score_drop": 0.1259191176
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Age",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Polyuria",
+      "score_drop": 0.102124183
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Polydipsia",
+      "score_drop": 0.0884395425
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Irritability",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "partial paresis",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Alopecia",
+      "score_drop": 0.0483047386
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 3,
+      "feature": "Gender",
+      "score_drop": 0.1466503268
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Age",
+      "score_drop": 0.0702614379
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Polyuria",
+      "score_drop": 0.2709354575
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Polydipsia",
+      "score_drop": 0.2116013072
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Irritability",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "partial paresis",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "muscle stiffness",
+      "score_drop": -0.0078635621
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Alopecia",
+      "score_drop": 0.058619281
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "fold": 4,
+      "feature": "Gender",
+      "score_drop": 0.0286968954
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Age",
+      "score_drop": -0.0384615385
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Polyuria",
+      "score_drop": 0.1967147436
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Polydipsia",
+      "score_drop": 0.203125
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0412660256
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Polyphagia",
+      "score_drop": 0.0084134615
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "visual blurring",
+      "score_drop": -0.0120192308
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Itching",
+      "score_drop": 0.0520833333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Irritability",
+      "score_drop": 0.0096153846
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "partial paresis",
+      "score_drop": -0.0288461538
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Alopecia",
+      "score_drop": 0.0877403846
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 0,
+      "feature": "Gender",
+      "score_drop": 0.0637019231
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Age",
+      "score_drop": 0.0462622549
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Polyuria",
+      "score_drop": 0.2468341503
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Polydipsia",
+      "score_drop": 0.1901552288
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0410539216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Polyphagia",
+      "score_drop": 0.03125
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Genital thrush",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "visual blurring",
+      "score_drop": 0.015625
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Itching",
+      "score_drop": 0.03125
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Irritability",
+      "score_drop": 0.0339052288
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "delayed healing",
+      "score_drop": 0.0293096405
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "partial paresis",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Alopecia",
+      "score_drop": 0.0084763072
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Obesity",
+      "score_drop": 0.0163398693
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 1,
+      "feature": "Gender",
+      "score_drop": 0.1126429739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Age",
+      "score_drop": 0.0163398693
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Polyuria",
+      "score_drop": 0.2246732026
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Polydipsia",
+      "score_drop": 0.2513276144
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "visual blurring",
+      "score_drop": 0.0326797386
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Irritability",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "delayed healing",
+      "score_drop": 0.015625
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "partial paresis",
+      "score_drop": 0.046875
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Alopecia",
+      "score_drop": 0.03125
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 2,
+      "feature": "Gender",
+      "score_drop": 0.1128472222
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Age",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Polyuria",
+      "score_drop": 0.1053921569
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Polydipsia",
+      "score_drop": 0.0909926471
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Polyphagia",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "visual blurring",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Itching",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Irritability",
+      "score_drop": 0.0260416667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "delayed healing",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "partial paresis",
+      "score_drop": 0.0260416667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Alopecia",
+      "score_drop": 0.0221609477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Obesity",
+      "score_drop": 0.0123570261
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 3,
+      "feature": "Gender",
+      "score_drop": 0.1264297386
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Age",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Polyuria",
+      "score_drop": 0.2350898693
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Polydipsia",
+      "score_drop": 0.2474468954
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "sudden weight loss",
+      "score_drop": 0.015625
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "weakness",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Polyphagia",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Genital thrush",
+      "score_drop": 0.0416666667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "visual blurring",
+      "score_drop": 0.0104166667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Itching",
+      "score_drop": 0.0052083333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Irritability",
+      "score_drop": 0.0104166667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "delayed healing",
+      "score_drop": 0.0104166667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "partial paresis",
+      "score_drop": 0.03125
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0104166667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Alopecia",
+      "score_drop": 0.0221609477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Obesity",
+      "score_drop": 0.015625
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "fold": 4,
+      "feature": "Gender",
+      "score_drop": 0.0462622549
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Age",
+      "score_drop": -0.016025641
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Polyuria",
+      "score_drop": 0.0196314103
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Polydipsia",
+      "score_drop": -0.0100160256
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0268429487
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "weakness",
+      "score_drop": 0.0096153846
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Polyphagia",
+      "score_drop": -0.0064102564
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "visual blurring",
+      "score_drop": -0.0416666667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Itching",
+      "score_drop": 0.0360576923
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Irritability",
+      "score_drop": -0.0096153846
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "delayed healing",
+      "score_drop": 0.0072115385
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "partial paresis",
+      "score_drop": -0.0096153846
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "muscle stiffness",
+      "score_drop": -0.016025641
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Alopecia",
+      "score_drop": 0.0256410256
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Obesity",
+      "score_drop": -0.016025641
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 0,
+      "feature": "Gender",
+      "score_drop": 0.078125
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Age",
+      "score_drop": -0.0110294118
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Polyuria",
+      "score_drop": 0.0358455882
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Polydipsia",
+      "score_drop": -0.019505719
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "sudden weight loss",
+      "score_drop": 0.007250817
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "weakness",
+      "score_drop": -0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Polyphagia",
+      "score_drop": -0.0247140523
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Genital thrush",
+      "score_drop": -0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "visual blurring",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Itching",
+      "score_drop": -0.0116421569
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Irritability",
+      "score_drop": 0.0098039216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "delayed healing",
+      "score_drop": 0.0039828431
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "partial paresis",
+      "score_drop": -0.0149101307
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0294117647
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Alopecia",
+      "score_drop": 0.0006127451
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Obesity",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 1,
+      "feature": "Gender",
+      "score_drop": 0.1310253268
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Age",
+      "score_drop": 0.0196078431
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Polyuria",
+      "score_drop": 0.0392156863
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Polydipsia",
+      "score_drop": 0.1466503268
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0130718954
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "weakness",
+      "score_drop": 0.0559640523
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Polyphagia",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Genital thrush",
+      "score_drop": 0.0110294118
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "visual blurring",
+      "score_drop": 0.0163398693
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Itching",
+      "score_drop": 0.0364583333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Irritability",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "delayed healing",
+      "score_drop": 0.0299223856
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "partial paresis",
+      "score_drop": 0.022875817
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "muscle stiffness",
+      "score_drop": 0.022875817
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Alopecia",
+      "score_drop": 0.0163398693
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Obesity",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 2,
+      "feature": "Gender",
+      "score_drop": 0.1225490196
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Age",
+      "score_drop": -0.0052083333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Polyuria",
+      "score_drop": 0.0508578431
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Polydipsia",
+      "score_drop": 0.019505719
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "sudden weight loss",
+      "score_drop": -0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "weakness",
+      "score_drop": -0.03125
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Polyphagia",
+      "score_drop": -0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Genital thrush",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "visual blurring",
+      "score_drop": -0.0142973856
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Itching",
+      "score_drop": -0.0098039216
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Irritability",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "delayed healing",
+      "score_drop": 0.0422794118
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "partial paresis",
+      "score_drop": 0.0091911765
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0065359477
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Alopecia",
+      "score_drop": 0.0326797386
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Obesity",
+      "score_drop": 0.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 3,
+      "feature": "Gender",
+      "score_drop": 0.1773897059
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Age",
+      "score_drop": 0.0097017974
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Polyuria",
+      "score_drop": 0.1069240196
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Polydipsia",
+      "score_drop": 0.1270424837
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "sudden weight loss",
+      "score_drop": 0.0423815359
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "weakness",
+      "score_drop": -0.0130718954
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Polyphagia",
+      "score_drop": 0.0208333333
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Genital thrush",
+      "score_drop": 0.035130719
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "visual blurring",
+      "score_drop": 0.003880719
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Itching",
+      "score_drop": 0.1041666667
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Irritability",
+      "score_drop": 0.011744281
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "delayed healing",
+      "score_drop": 0.0715890523
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "partial paresis",
+      "score_drop": 0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "muscle stiffness",
+      "score_drop": 0.0494281046
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Alopecia",
+      "score_drop": -0.0032679739
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Obesity",
+      "score_drop": -0.0045955882
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "fold": 4,
+      "feature": "Gender",
+      "score_drop": 0.0625
+    }
+  ],
+  "importance_stability": [
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "mean_pairwise_spearman": 0.6002790378,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "mean_pairwise_spearman": 0.2738320761,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "mean_pairwise_spearman": 0.5513610199,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "mean_pairwise_spearman": 0.4614914549,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "mean_pairwise_spearman": 0.4480166442,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "mean_pairwise_spearman": 0.5533317592,
+      "fold_pairs": 10
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "mean_pairwise_spearman": 0.5513610199,
+      "fold_pairs": 10
+    }
+  ],
+  "importance_rank_comparisons": [
+    {
+      "strategy": "baseline",
+      "algorithm": "decision_tree",
+      "spearman_to_selected_baseline": 0.7097830773
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "knn",
+      "spearman_to_selected_baseline": 0.7264705882
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "logistic_regression",
+      "spearman_to_selected_baseline": 1.0
+    },
+    {
+      "strategy": "baseline",
+      "algorithm": "random_forest",
+      "spearman_to_selected_baseline": 0.7352941176
+    },
+    {
+      "strategy": "deduplicated",
+      "algorithm": "logistic_regression",
+      "spearman_to_selected_baseline": 0.5117647059
+    },
+    {
+      "strategy": "iqr_clip",
+      "algorithm": "logistic_regression",
+      "spearman_to_selected_baseline": 0.9970588235
+    },
+    {
+      "strategy": "mean",
+      "algorithm": "logistic_regression",
+      "spearman_to_selected_baseline": 1.0
+    }
+  ],
+  "missing_feature_sensitivity": [
+    {
+      "fold": 0,
+      "feature": "Age",
+      "mean_absolute_score_change": 0.0094108493
+    },
+    {
+      "fold": 0,
+      "feature": "Polyuria",
+      "mean_absolute_score_change": 0.0868388095
+    },
+    {
+      "fold": 0,
+      "feature": "Polydipsia",
+      "mean_absolute_score_change": 0.0471721224
+    },
+    {
+      "fold": 0,
+      "feature": "sudden weight loss",
+      "mean_absolute_score_change": 0.0133814453
+    },
+    {
+      "fold": 0,
+      "feature": "weakness",
+      "mean_absolute_score_change": 0.0130848775
+    },
+    {
+      "fold": 0,
+      "feature": "Polyphagia",
+      "mean_absolute_score_change": 0.0052932395
+    },
+    {
+      "fold": 0,
+      "feature": "Genital thrush",
+      "mean_absolute_score_change": 0.0263501492
+    },
+    {
+      "fold": 0,
+      "feature": "visual blurring",
+      "mean_absolute_score_change": 0.0113521196
+    },
+    {
+      "fold": 0,
+      "feature": "Itching",
+      "mean_absolute_score_change": 0.0583886108
+    },
+    {
+      "fold": 0,
+      "feature": "Irritability",
+      "mean_absolute_score_change": 0.0310861789
+    },
+    {
+      "fold": 0,
+      "feature": "delayed healing",
+      "mean_absolute_score_change": 0.004837823
+    },
+    {
+      "fold": 0,
+      "feature": "partial paresis",
+      "mean_absolute_score_change": 0.0250199898
+    },
+    {
+      "fold": 0,
+      "feature": "muscle stiffness",
+      "mean_absolute_score_change": 0.0223619995
+    },
+    {
+      "fold": 0,
+      "feature": "Alopecia",
+      "mean_absolute_score_change": 0.0164898743
+    },
+    {
+      "fold": 0,
+      "feature": "Obesity",
+      "mean_absolute_score_change": 0.0015050536
+    },
+    {
+      "fold": 0,
+      "feature": "Gender",
+      "mean_absolute_score_change": 0.0767433189
+    },
+    {
+      "fold": 1,
+      "feature": "Age",
+      "mean_absolute_score_change": 0.0165137458
+    },
+    {
+      "fold": 1,
+      "feature": "Polyuria",
+      "mean_absolute_score_change": 0.0858292153
+    },
+    {
+      "fold": 1,
+      "feature": "Polydipsia",
+      "mean_absolute_score_change": 0.0738637098
+    },
+    {
+      "fold": 1,
+      "feature": "sudden weight loss",
+      "mean_absolute_score_change": 0.0132745109
+    },
+    {
+      "fold": 1,
+      "feature": "weakness",
+      "mean_absolute_score_change": 0.0155362586
+    },
+    {
+      "fold": 1,
+      "feature": "Polyphagia",
+      "mean_absolute_score_change": 0.0117778579
+    },
+    {
+      "fold": 1,
+      "feature": "Genital thrush",
+      "mean_absolute_score_change": 0.0105374358
+    },
+    {
+      "fold": 1,
+      "feature": "visual blurring",
+      "mean_absolute_score_change": 0.0163247164
+    },
+    {
+      "fold": 1,
+      "feature": "Itching",
+      "mean_absolute_score_change": 0.0407810286
+    },
+    {
+      "fold": 1,
+      "feature": "Irritability",
+      "mean_absolute_score_change": 0.0283301549
+    },
+    {
+      "fold": 1,
+      "feature": "delayed healing",
+      "mean_absolute_score_change": 0.012754252
+    },
+    {
+      "fold": 1,
+      "feature": "partial paresis",
+      "mean_absolute_score_change": 0.0206151053
+    },
+    {
+      "fold": 1,
+      "feature": "muscle stiffness",
+      "mean_absolute_score_change": 0.0138939617
+    },
+    {
+      "fold": 1,
+      "feature": "Alopecia",
+      "mean_absolute_score_change": 0.0166126175
+    },
+    {
+      "fold": 1,
+      "feature": "Obesity",
+      "mean_absolute_score_change": 0.0017111451
+    },
+    {
+      "fold": 1,
+      "feature": "Gender",
+      "mean_absolute_score_change": 0.0470150151
+    },
+    {
+      "fold": 2,
+      "feature": "Age",
+      "mean_absolute_score_change": 0.0147868332
+    },
+    {
+      "fold": 2,
+      "feature": "Polyuria",
+      "mean_absolute_score_change": 0.096848211
+    },
+    {
+      "fold": 2,
+      "feature": "Polydipsia",
+      "mean_absolute_score_change": 0.0870324174
+    },
+    {
+      "fold": 2,
+      "feature": "sudden weight loss",
+      "mean_absolute_score_change": 0.017779925
+    },
+    {
+      "fold": 2,
+      "feature": "weakness",
+      "mean_absolute_score_change": 0.0076018649
+    },
+    {
+      "fold": 2,
+      "feature": "Polyphagia",
+      "mean_absolute_score_change": 0.0043977366
+    },
+    {
+      "fold": 2,
+      "feature": "Genital thrush",
+      "mean_absolute_score_change": 0.0104667079
+    },
+    {
+      "fold": 2,
+      "feature": "visual blurring",
+      "mean_absolute_score_change": 0.0013532011
+    },
+    {
+      "fold": 2,
+      "feature": "Itching",
+      "mean_absolute_score_change": 0.0454713801
+    },
+    {
+      "fold": 2,
+      "feature": "Irritability",
+      "mean_absolute_score_change": 0.009749692
+    },
+    {
+      "fold": 2,
+      "feature": "delayed healing",
+      "mean_absolute_score_change": 0.0075697606
+    },
+    {
+      "fold": 2,
+      "feature": "partial paresis",
+      "mean_absolute_score_change": 0.0346780683
+    },
+    {
+      "fold": 2,
+      "feature": "muscle stiffness",
+      "mean_absolute_score_change": 0.0123882127
+    },
+    {
+      "fold": 2,
+      "feature": "Alopecia",
+      "mean_absolute_score_change": 0.0057472128
+    },
+    {
+      "fold": 2,
+      "feature": "Obesity",
+      "mean_absolute_score_change": 0.0043032262
+    },
+    {
+      "fold": 2,
+      "feature": "Gender",
+      "mean_absolute_score_change": 0.0849481199
+    },
+    {
+      "fold": 3,
+      "feature": "Age",
+      "mean_absolute_score_change": 0.0116468514
+    },
+    {
+      "fold": 3,
+      "feature": "Polyuria",
+      "mean_absolute_score_change": 0.1989869908
+    },
+    {
+      "fold": 3,
+      "feature": "Polydipsia",
+      "mean_absolute_score_change": 0.0624408726
+    },
+    {
+      "fold": 3,
+      "feature": "sudden weight loss",
+      "mean_absolute_score_change": 0.0409435535
+    },
+    {
+      "fold": 3,
+      "feature": "weakness",
+      "mean_absolute_score_change": 0.0017097565
+    },
+    {
+      "fold": 3,
+      "feature": "Polyphagia",
+      "mean_absolute_score_change": 0.0090090597
+    },
+    {
+      "fold": 3,
+      "feature": "Genital thrush",
+      "mean_absolute_score_change": 0.0167255907
+    },
+    {
+      "fold": 3,
+      "feature": "visual blurring",
+      "mean_absolute_score_change": 0.0094626606
+    },
+    {
+      "fold": 3,
+      "feature": "Itching",
+      "mean_absolute_score_change": 0.0362726693
+    },
+    {
+      "fold": 3,
+      "feature": "Irritability",
+      "mean_absolute_score_change": 0.0340027733
+    },
+    {
+      "fold": 3,
+      "feature": "delayed healing",
+      "mean_absolute_score_change": 0.0145712782
+    },
+    {
+      "fold": 3,
+      "feature": "partial paresis",
+      "mean_absolute_score_change": 0.0254252553
+    },
+    {
+      "fold": 3,
+      "feature": "muscle stiffness",
+      "mean_absolute_score_change": 0.0059106779
+    },
+    {
+      "fold": 3,
+      "feature": "Alopecia",
+      "mean_absolute_score_change": 0.0135823018
+    },
+    {
+      "fold": 3,
+      "feature": "Obesity",
+      "mean_absolute_score_change": 0.0245156347
+    },
+    {
+      "fold": 3,
+      "feature": "Gender",
+      "mean_absolute_score_change": 0.0499575572
+    },
+    {
+      "fold": 4,
+      "feature": "Age",
+      "mean_absolute_score_change": 0.0116337894
+    },
+    {
+      "fold": 4,
+      "feature": "Polyuria",
+      "mean_absolute_score_change": 0.1191470985
+    },
+    {
+      "fold": 4,
+      "feature": "Polydipsia",
+      "mean_absolute_score_change": 0.065383918
+    },
+    {
+      "fold": 4,
+      "feature": "sudden weight loss",
+      "mean_absolute_score_change": 0.0119929387
+    },
+    {
+      "fold": 4,
+      "feature": "weakness",
+      "mean_absolute_score_change": 0.0007621186
+    },
+    {
+      "fold": 4,
+      "feature": "Polyphagia",
+      "mean_absolute_score_change": 0.0137458851
+    },
+    {
+      "fold": 4,
+      "feature": "Genital thrush",
+      "mean_absolute_score_change": 0.0081998697
+    },
+    {
+      "fold": 4,
+      "feature": "visual blurring",
+      "mean_absolute_score_change": 0.0019000427
+    },
+    {
+      "fold": 4,
+      "feature": "Itching",
+      "mean_absolute_score_change": 0.0362632169
+    },
+    {
+      "fold": 4,
+      "feature": "Irritability",
+      "mean_absolute_score_change": 0.0200222833
+    },
+    {
+      "fold": 4,
+      "feature": "delayed healing",
+      "mean_absolute_score_change": 0.0087359888
+    },
+    {
+      "fold": 4,
+      "feature": "partial paresis",
+      "mean_absolute_score_change": 0.0407888298
+    },
+    {
+      "fold": 4,
+      "feature": "muscle stiffness",
+      "mean_absolute_score_change": 0.013091928
+    },
+    {
+      "fold": 4,
+      "feature": "Alopecia",
+      "mean_absolute_score_change": 0.0132183455
+    },
+    {
+      "fold": 4,
+      "feature": "Obesity",
+      "mean_absolute_score_change": 0.0007506847
+    },
+    {
+      "fold": 4,
+      "feature": "Gender",
+      "mean_absolute_score_change": 0.0365442203
+    }
+  ],
+  "limitations": [
+    "Development-only OOF comparisons; reused Phase IV hyperparameters and threshold.",
+    "Fold scores share training data and are not independent confidence intervals.",
+    "Subgroups are descriptive, not fairness or clinical validation; row bootstrap and Wilson intervals can be optimistic when diabetes predictor profiles repeat.",
+    "Permutation importance is predictive association, not causation."
+  ]
+}

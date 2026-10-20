@@ -13,7 +13,8 @@ const nav = [
   {path: '/prediction', label: 'Prediction Lab', icon: 'M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z', group: 'INTELLIGENCE'},
   {path: '/models', label: 'ML Laboratory', icon: 'M3 3h18v18H3z M8 3v18 M3 9h18 M3 15h18', group: ''},
   {path: '/big-data', label: 'Big Data Monitor', icon: 'M12 2l9 5v10l-9 5-9-5V7z M3 7l9 5 9-5 M12 12v10', group: 'SYSTEMS'},
-  {path: '/research', label: 'Research & Reports', icon: 'M5 3h11l3 3v15H5z M8 9h8 M8 13h8 M8 17h5', group: ''}
+  {path: '/research', label: 'Research & Reports', icon: 'M5 3h11l3 3v15H5z M8 9h8 M8 13h8 M8 17h5', group: ''},
+  {path: '/research-lab', label: 'Research Laboratory', icon: 'M4 20h16 M6 17l4-6 4 3 4-9 M6 4h12', group: ''}
 ];
 @Component({selector: 'app-root', standalone: true, imports: [RouterOutlet, RouterLink, RouterLinkActive, BackgroundStudio], templateUrl: './app.html', styleUrl: './app.css'})
 export class App {

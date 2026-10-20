@@ -1,0 +1,38 @@
+{
+  "version": "phase7-v1",
+  "seed": 42,
+  "software": {
+    "python": "3.13.2",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1"
+  },
+  "phase4_split_sha256": {
+    "heart": "6f758a9456d0319a911509625ae30d8cd462710c4a582a047d7c600da5eb9724",
+    "diabetes": "b9e14a20d31b46fbbcdbc1a6ab93e35cf91e81216ec39411e99b10b5729db6cd",
+    "stroke": "76092b3c04ece2503acd83de6d558c5356c9593ff18455f389128e3faf4950fb"
+  },
+  "source_sha256": {
+    "heart": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+    "diabetes": "67594c0f11257688b57493798e70737b7156ba37a2e6ac75507ae3a35221a388",
+    "stroke": "83c150178a7a10439862a66b2703869aadc11f201c359436ae1df77d2b5e7485"
+  },
+  "artifacts": {
+    "reports/phase7/comparisons.csv": "03a3d27e35240f10e3fca9ae3e7c9e0eb020a535c7b639ecbe81a1c2a1664008",
+    "reports/phase7/diabetes.json": "c534c9049a40eb4954853a43cf24b2a31e0de0bdbee643172fb614318ecf0516",
+    "reports/phase7/diabetes_calibration.png": "7b9155df7a862624fe98b59f60572a1550bc665b3f69d682e6c24297ce0bd70d",
+    "reports/phase7/diabetes_comparison.png": "796b575a57247882fe7ccde0556deabd4390c43cda6909bc3bdbbe7079fe8b9e",
+    "reports/phase7/heart.json": "87371c3502613a45e891d7ce19d709916a35f567298bfea21b56914f3027cc22",
+    "reports/phase7/heart_calibration.png": "55e5f5fb39bd29eb99e8f78e28f2fff4149de4030f58c88cc660ad73366b1f6c",
+    "reports/phase7/heart_comparison.png": "683ed6fe8df4b68a969170e28fff796a8d48d78a4265e8fa1c3f5deaaddf6295",
+    "reports/phase7/importance.csv": "de088bb2e6cc7a2bb0abf92c997f29c4fe27bbdacdbc98c658e6282a6a8c7371",
+    "reports/phase7/importance_stability.csv": "b39255a60d86c4cbe282108f256c260e482e6ffbc59d3f2caef806236f6c71b4",
+    "reports/phase7/run.log": "cf65ba6ab1f3b43c89c5e96f8e0003289dc9239e0dc6d347bed8c8839774e3bf",
+    "reports/phase7/stroke.json": "4f5022e3fda4746a906f4fbf41b49868e9440c709f10d9ad7633257242efe661",
+    "reports/phase7/stroke_calibration.png": "1283b63e57f328cad3a2265150a2a3c82c2a074e3e44c08dc1b838e2fa72a506",
+    "reports/phase7/stroke_comparison.png": "892e8f4723256e371bd3b6b99fdddb6f8179a35eb7cab93e46705bab326b8ace",
+    "reports/phase7/subgroups.csv": "ddbe956332aad255b2d6340a0f0ae80d8926b4e675908d2d6bb664471d4a6573",
+    "reports/phase7/thresholds.csv": "450b1e5686a285c3f9a7d67e07f33a2eae927137acf4bc70bd624c54a6940ded"
+  }
+}
