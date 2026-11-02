@@ -1,4 +1,7 @@
+<div class="workspace-backdrop" aria-hidden="true">
 <div class="workspace-background" aria-hidden="true" [style.background-image]="'url('+appearance.background()+')'" [style.background-position]="appearance.settings().position+'% center'" [style.filter]="'brightness('+appearance.settings().brightness+') blur('+appearance.settings().blur+'px)'" ></div>
+<div class="workspace-glows"></div>
+</div>
 <a class="skip-link" href="#workspace-content">Skip to workspace</a>
 <button class="studio-launch btn secondary" type="button" (click)="studio.set(true)">◈ Background Studio</button>
 @if(studio()){<ms-background-studio (closed)="studio.set(false)"/>}

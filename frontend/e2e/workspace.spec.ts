@@ -1,18 +1,18 @@
 import { test, expect } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 import path from 'node:path';
-const shots=path.resolve('../docs/screenshots/phase6c');
-const routes=['command-center','datasets','analytics','prediction','models','big-data','research'];
+const shots=path.resolve('../docs/screenshots/frosted');
+const routes=['command-center','datasets','analytics','prediction','models','big-data','research','research-lab'];
 test.beforeAll(()=>mkdirSync(shots,{recursive:true}));
-test('seven real API routes, four widths, background and console',async({page})=>{
+test('frosted real API routes, four widths, background and console',async({page})=>{
  test.setTimeout(240000);const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
- for(const width of [1440,1280,768,390]){await page.setViewportSize({width,height:1000});for(const route of routes){await page.goto('/'+route);await expect(page.locator('h1')).toBeVisible();await expect(page.locator('.loading')).toHaveCount(0);await expect(page.locator('.workspace-background')).toHaveCSS('background-size','cover');await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);if(['datasets','analytics','models','big-data','command-center'].includes(route))await expect(page.locator('.holo-viewport canvas')).toHaveCount(1);await page.screenshot({path:path.join(shots,`${route}-${width}.png`),fullPage:true});}}
+ for(const width of [1440,1280,768,390]){await page.setViewportSize({width,height:1000});for(const route of routes){await page.goto('/'+route);await expect(page.locator('h1')).toBeVisible();await expect(page.locator('.loading')).toHaveCount(0);await expect(page.locator('.workspace-background')).toHaveCSS('background-size','cover');await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);if(['datasets','analytics','models','big-data','command-center'].includes(route))await expect(page.locator('.holo-viewport canvas')).toHaveCount(1);const pause=page.getByRole('button',{name:'Pause animation',exact:true});if(await pause.count())await pause.click();if(['command-center','prediction'].includes(route))await page.screenshot({path:path.join(shots,`${route}-${width}.png`),timeout:20000});}}
  expect(errors).toEqual([]);
 });
 test('background studio extracts colors, resets and supports keyboard close',async({page})=>{
  await page.goto('/command-center');await expect(page.locator('.holo-viewport canvas')).toHaveCount(1);const before=await page.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--holo-primary'));
  await page.getByRole('button',{name:'Background Studio'}).click();await expect(page.getByRole('dialog')).toBeVisible();await page.getByRole('button',{name:'Deep spectral field'}).click();await expect.poll(()=>page.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--holo-primary'))).not.toBe(before);
-  const brightness=page.getByRole('slider',{name:'Background brightness'});await brightness.focus();await brightness.press('Home');for(let i=0;i<6;i++)await brightness.press('ArrowRight');await expect(page.locator('.workspace-background')).toHaveCSS('filter','brightness(0.5) blur(2.4px)');await page.screenshot({path:path.join(shots,'background-studio.png')});
+  const brightness=page.getByRole('slider',{name:'Background brightness'});await brightness.focus();await brightness.press('Home');for(let i=0;i<6;i++)await brightness.press('ArrowRight');await expect(page.locator('.workspace-background')).toHaveCSS('filter','brightness(0.5) blur(12px)');await page.screenshot({path:path.join(shots,'background-studio.png')});
  await page.getByRole('button',{name:'Restore exact defaults'}).click();await expect.poll(()=>page.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--holo-primary'))).toBe(before);await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).toHaveCount(0);
 });
 test('real 3D geometry, camera interactions, 2D switch and cohort selection',async({page})=>{

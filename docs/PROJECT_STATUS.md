@@ -1,5 +1,12 @@
 # Project status
 
+## Frosted dashboard and layered scrolling — 2026-11-02
+
+- Owner-authorized UI follow-up: 50% dark glass tint with 12px backdrop blur, background brightness .65 and image blur 12px, plus a separate palette-colored glow layer. One page scrollbar drives two bounded slower background translations; reduced motion disables them. Existing Background Studio customization remains and saved settings migrate once.
+- **PASS:** Angular 36/36 unit tests, final production build, and final sequential Chromium selection 7/7 (4.1 minutes). Checked all eight routes at 1440/1280/768/390 px, computed surface tint, saved preferences/reset, parallax coverage, reduced motion, keyboard/mobile navigation and automated WCAG checks. Desktop/mobile screenshots visually inspected.
+- Earlier runs found and corrected the legacy .3 ultra-glass tint and an animation-frame timing assumption in the new test. Overlapping screenshot sweeps timed out; final sequential checks passed with paused scene animation and representative viewport captures. Historical Phase VI-C screenshots preserved.
+- Details and commands: [FROSTED_DASHBOARD.md](FROSTED_DASHBOARD.md). This was a frontend-only follow-up; datasets, model results and backend logic are unchanged. No next phase began.
+
 ## Phase VII — advanced healthcare AI research and reliability (2026-10-20)
 
 - **PASS:** Added a separate development-only data-quality laboratory for heart, diabetes and stroke using the frozen Phase IV split hashes, five CV folds, selected model parameters and thresholds. Fold-local comparisons cover imputation, missingness indicators, IQR clipping, scaling, categorical missingness, stroke smoking `Unknown`, and diabetes training-fold deduplication. Original source data, Phase IV models, registry, thresholds and held-out results were not changed.

@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, signal } from '@angular/core';
+import { Component, DestroyRef, NgZone, afterNextRender, inject, signal } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet, NavigationEnd } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { filter, interval, startWith, switchMap, catchError, of } from 'rxjs';
@@ -30,6 +30,34 @@ export class App {
   infraReady = signal<number | null>(null);
   refreshTime = signal<Date | null>(null);
   constructor() {
+    const zone = inject(NgZone);
+    afterNextRender(() => zone.runOutsideAngular(() => {
+      const host = document.querySelector<HTMLElement>('.workspace-backdrop');
+      if (!host || !window.matchMedia || typeof ResizeObserver === 'undefined') return;
+      const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let frame = 0;
+      const update = () => {
+        frame = 0;
+        const range = Math.max(0, document.documentElement.scrollHeight - innerHeight);
+        const progress = range ? Math.max(0, Math.min(1, scrollY / range)) : 0;
+        host.style.setProperty('--image-offset', `${motion.matches ? 0 : -progress * Math.min(range * .15, innerHeight * .12)}px`);
+        host.style.setProperty('--glow-offset', `${motion.matches ? 0 : -progress * Math.min(range * .3, innerHeight * .24)}px`);
+      };
+      const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+      window.addEventListener('scroll', schedule, {passive: true});
+      window.addEventListener('resize', schedule);
+      motion.addEventListener('change', schedule);
+      const observer = new ResizeObserver(schedule);
+      observer.observe(document.body);
+      update();
+      this.destroy.onDestroy(() => {
+        cancelAnimationFrame(frame);
+        observer.disconnect();
+        window.removeEventListener('scroll', schedule);
+        window.removeEventListener('resize', schedule);
+        motion.removeEventListener('change', schedule);
+      });
+    }));
     this.router.events.pipe(filter(e => e instanceof NavigationEnd), takeUntilDestroyed(this.destroy)).subscribe(() => {
       this.page.set(nav.find(n => n.path === this.router.url)?.label ?? 'Command Center');
       this.drawer.set(false);
