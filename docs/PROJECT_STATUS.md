@@ -1,5 +1,17 @@
 # Project status
 
+## Team contribution allocation document — 2026-11-03
+
+- Added `docs/TEAM.docx` with a proposed four-member split: data engineering and statistical analytics; machine learning and research; backend and big data infrastructure; frontend and interactive visualization. Includes detailed responsibilities, concrete deliverables, integration boundaries, presentation talking points, code/evidence references and editable member-name fields. The allocation requires team confirmation and does not attest historical individual authorship.
+- Documentation-only work. Preserved application code, data, model artifacts and the existing status entries. Retained research-only limitations, Power BI deployment gates, historical versus current Hadoop availability, and frontend acceptance limits.
+- Verification: DOCX ZIP integrity, XML parsing, native text extraction, role reference-path checks and six-section structural checks passed. Inspected macOS Quick Look thumbnails of all six separately packaged content sections; no visible clipping in those previews. The managed document runtime/dependency loader and bundled LibreOffice renderer are unavailable, and Microsoft Word computer-use access was not approved. Full paginated rendering and the actual combined document's Word page count remain unverified; six content sections have explicit page starts.
+
+## Project teaching guide — 2026-11-02
+
+- Added `MediScope_AI_Project_Guide.docx`, a beginner-oriented guide arranged into seven sections with explicit page breaks. Covers all eight Angular dashboard pages, source provenance, preparation versus fold-local preprocessing, model training and evaluation, saved-model inference, MongoDB/Hadoop, research experiments and limitations.
+- Documentation-only work; no application logic, datasets or model artifacts changed. Explanations checked against the current routes, prediction code, Phase I/IV/V/VII methods and saved findings; no new training or prediction results are claimed.
+- Verification: DOCX ZIP integrity and XML well-formedness checks passed; macOS Quick Look generated a readable content preview, which was inspected. Full paginated visual QA and final page-count verification remain unavailable: the skill's managed document runtime/renderer is absent and native Word computer-use startup failed. The intended length is 6–8 pages; actual Word pagination is not verified.
+
 ## Frosted dashboard and layered scrolling — 2026-11-02
 
 - Owner-authorized UI follow-up: 50% dark glass tint with 12px backdrop blur, background brightness .65 and image blur 12px, plus a separate palette-colored glow layer. One page scrollbar drives two bounded slower background translations; reduced motion disables them. Existing Background Studio customization remains and saved settings migrate once.
