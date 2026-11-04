@@ -101,7 +101,7 @@ Phase I uses the existing raw ZIPs. Install the preparation dependencies and cre
 .venv/bin/python -m pytest -q
 ```
 
-For the exact dependency versions verified on this Intel Mac and Python 3.13, use [requirements-phase1.lock.txt](requirements-phase1.lock.txt) in a fresh virtual environment: `.venv/bin/pip install -r requirements-phase1.lock.txt` followed by `.venv/bin/pip install --no-deps -e .`. The `pyproject.toml` extras remain the supported version ranges for other compatible machines.
+For the exact dependency versions verified on this Intel Mac and Python 3.13, use [requirements-phase1.lock.txt](requirements-phase1.lock.txt) in a fresh virtual environment: `.venv/bin/pip install -r requirements-phase1.lock.txt` followed by `.venv/bin/pip install --no-deps -e .`. The `pyproject.toml` extras remain the supported version ranges for all other compatible machines.
 
 Run one source using `--dataset uci_cleveland_heart`, `uci_early_diabetes`, `kaggle_stroke`, or `synthea_csv`. The default configuration is [data/metadata/preparation_config.json](data/metadata/preparation_config.json); supply a reviewed variant with `--config PATH`. Prepared CSVs are in `data/processed/`, quality JSON/Markdown in `reports/quality/`, table CSVs in `reports/tables/`, and figures in `reports/figures/`. Raw ZIPs are never modified. See [Phase I preparation guide](docs/PHASE1_DATA_PREPARATION.md) for policy, limitations, and exact output semantics.
 
