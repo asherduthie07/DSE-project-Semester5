@@ -6,6 +6,7 @@ Research-only Smart Healthcare Analytics and Disease Prediction System. Any late
 
 The seven-page Angular research frontend now uses the supplied blue technical background, a locally extracted color palette, transparent glass panels, a Background Studio and lazy Three.js scientific views. Precise ECharts views and accessible data tables remain available. Start FastAPI and Angular as in the Phase VI-B section, then open `http://127.0.0.1:4200/`. See [Phase VI-C verification](docs/PHASE6C_VERIFICATION.md), [design system](docs/HOLOGRAPHIC_DESIGN_SYSTEM.md), [3D mapping](docs/3D_VISUALIZATION_DATA_MAPPING.md), and [screenshots](docs/screenshots/phase6c/). Production redistribution of the supplied background awaits image-rights evidence.
 
+
 ## Phase VI-B: Dark Research Workspace (Angular)
 
 A seven-section research frontend is available under `frontend/`. Run the existing FastAPI backend, then `cd frontend && npm ci && npm start -- --host 127.0.0.1`. Open `http://127.0.0.1:4200/`. See the [frontend run guide](docs/HOW_TO_RUN_FRONTEND.md), [architecture](docs/PHASE6B_UI_ARCHITECTURE.md), [design system](docs/FRONTEND_DESIGN_SYSTEM.md), and [verification](docs/PHASE6B_VERIFICATION.md). Browser visual acceptance and screenshots remain open; no Clinical Workspace has been implemented.
@@ -22,6 +23,7 @@ The versioned read-only API exposes verified datasets, saved EDA, model comparis
 Open `http://127.0.0.1:8000/docs` for Swagger UI. See the [backend run guide](docs/HOW_TO_RUN_BACKEND.md), [API specification](docs/PHASE6_API_SPEC.md), and [verification](docs/PHASE6A_VERIFICATION.md). MongoDB/HDFS/YARN are optional for startup and current availability is reported separately from saved Phase V execution evidence. Angular integration is documented in the Phase VI-B section above.
 
 ## Phase V: MongoDB and Hadoop
+
 
 Phase V adds checksummed, idempotent PyMongo ingestion, documented aggregations, a local Docker Compose topology and a Python Hadoop Streaming encounter-count job. The local Intel Mac stack has been run: MongoDB, one HDFS DataNode and one YARN NodeManager were healthy, and a real Streaming job counted all 53,346 synthetic encounters with exact pandas reconciliation. During Phase VI-A verification, the Docker daemon socket was absent and the live services were unavailable. Windows runtime remains untested. Start with the [Phase V run guide](docs/HOW_TO_RUN_PHASE5.md), [live verification matrix](docs/PHASE5_VERIFICATION.md), [database schema](docs/MONGODB_SCHEMA.md) and [Hadoop architecture](docs/HADOOP_ARCHITECTURE.md).
 
@@ -70,6 +72,7 @@ python3 -m dashboard.app --check
 High-resolution PNG/SVG evidence is in `reports/figures/phase3/`; report tables are in `reports/tables/phase3/`. All disease analytics are research-only and have not been clinically validated.
 
 ## Phase II: exploratory data analysis
+
 
 Phase II reads the five verified Phase I prepared CSVs. It does not alter raw or prepared data. From the project root on macOS:
 
